@@ -15,6 +15,7 @@ CONFIG_PATH = 'data/config.json'
 IMAGE_MAP_PATH = 'assets/data/image_map.json'
 LEAGUE_MAP_PATH = 'assets/data/league_map.json'
 ASSETS_DIR = 'assets/logos'
+OUTPUT_DIR = '.'
 
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
