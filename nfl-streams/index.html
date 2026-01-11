@@ -1,199 +1,137 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <!-- SEO & METADATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch NFL Live Streams and Schedules</title>
-    <meta name="description" content="The Best Free NFL Live stream free online">
-    <meta name="keywords" content="NFL stream, watch NFL free, NFL live">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    {{META_KEYWORDS}}
     <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://totalsportek.top/nfl-streams/">
-    <meta property="og:site_name" content="StreamEast">
-    <meta property="og:title" content="Watch NFL Live Streams and Schedules">
-    <meta property="og:description" content="The Best Free NFL Live stream free online">
-    <meta property="og:image" content="https://totalsportek.top/assets/test-logo.webp">
-    <meta property="og:image:type" content="image/webp">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{META_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
+    <meta property="og:image:type" content="{{OG_MIME}}">
     
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
-    <link rel="canonical" href="https://totalsportek.top/nfl-streams/">
-    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    {{LOGO_PRELOAD}}
     
     <!-- SCHEMA -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": "https://totalsportek.top/#organization",
-      "name": "StreamEast",
-      "url": "https://totalsportek.top/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://totalsportek.top/assets/test-logo.webp",
-        "width": 512,
-        "height": 512
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://totalsportek.top/#website",
-      "url": "https://totalsportek.top/",
-      "name": "StreamEast",
-      "publisher": {
-        "@id": "https://totalsportek.top/#organization"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://totalsportek.top/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Watch NFL Live Streams and Schedules",
-          "item": "https://totalsportek.top/nfl-streams/"
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "@id": "https://totalsportek.top/nfl-streams/#webpage",
-      "url": "https://totalsportek.top/nfl-streams/",
-      "name": "Watch NFL Live Streams and Schedules",
-      "isPartOf": {
-        "@id": "https://totalsportek.top/#website"
-      },
-      "about": {
-        "@type": "SportsEvent",
-        "name": "Watch NFL Live Streams and Schedules"
-      },
-      "mainEntity": {
-        "@id": "https://totalsportek.top/nfl-streams/#events"
-      }
-    }
-  ]
-}</script>
+    {{SCHEMA_BLOCK}}
     
     <style>html { scroll-behavior: smooth; }</style>
 
     <style>
         :root {
             /* THEME VARIABLES */
-            --brand-primary: #d00000;
-            --brand-dark: #8a0000;
-            --status-green: #00e676;
-            --accent-gold: #ffd700;
-            --bg-body: #050505;
-            --bg-panel: #0f0f0f;
-            --border: #222222;
-            --text-main: #ffffff;
-            --text-muted: #888888;
+            --brand-primary: {{THEME_BRAND_PRIMARY}};
+            --brand-dark: {{THEME_BRAND_DARK}};
+            --status-green: {{THEME_STATUS_GREEN}};
+            --accent-gold: {{THEME_ACCENT_GOLD}};
+            --bg-body: {{THEME_BG_BODY}};
+            --bg-panel: {{THEME_BG_PANEL}};
+            --border: {{THEME_BORDER_COLOR}};
+            --text-main: {{THEME_TEXT_MAIN}};
+            --text-muted: {{THEME_TEXT_MUTED}};
             
-            --font-family-base: system-ui, -apple-system, sans-serif;
-            --font-family-headings: 'Courier New', monospace;
-            --container-max-width: 950px; 
-            --header-max-width: 1000px;
-            --border-radius-base: 5px; 
-            --button-border-radius: 21px;
-            --hero-pill-radius: 8px;
+            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
+            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
+            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}}; 
+            --header-max-width: {{THEME_HEADER_MAX_WIDTH}};
+            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}}; 
+            --button-border-radius: {{THEME_BUTTON_BORDER_RADIUS}};
+            --hero-pill-radius: {{THEME_HERO_PILL_RADIUS}};
             
             /* HEADER */
-            --header-bg: #050505;
-            --header-text-color: #aaaaaa;
-            --header-link-active-color: #ffffff;
-            --header-link-hover-color: #3e0a0a;
-            --header-highlight-color: #02ed12;
-            --header-border-bottom: 1px solid var(--border);
-            --logo-image-size: 40px;
+            --header-bg: {{THEME_HEADER_BG}};
+            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
+            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
+            --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
 
             /* HERO */
-            --hero-h1-color: #ffffff;
-            --hero-intro-color: #999999;
-            --hero-pill-bg: #111111;
-            --hero-pill-text: #cccccc;
-            --hero-pill-hover-bg: #2a0a0a;
-            --hero-pill-hover-text: #ffffff;
+            --hero-h1-color: {{THEME_HERO_H1_COLOR}};
+            --hero-intro-color: {{THEME_HERO_INTRO_COLOR}};
+            --hero-pill-bg: {{THEME_HERO_PILL_BG}};
+            --hero-pill-text: {{THEME_HERO_PILL_TEXT}};
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_HOVER_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_HOVER_TEXT}};
 
             /* MATCH ROWS */
-            --match-row-bg: #121212;
-            --match-row-border: #222222;
-            --match-row-live-border-left: 3px solid var(--brand-primary);
-            --match-row-live-bg-start: #1a0505;
-            --match-row-live-bg-end: #141414;
-            --match-row-hover-bg: #1a1a1a;
-            --match-row-hover-border: #444444;
-            --match-row-time-main-color: #888888;
-            --match-row-time-sub-color: #94a3b8;
-            --match-row-live-text-color: #d00000;
-            --match-row-team-name-color: #ffffff;
+            --match-row-bg: {{THEME_MATCH_ROW_BG}};
+            --match-row-border: {{THEME_MATCH_ROW_BORDER}};
+            --match-row-live-border-left: {{THEME_MATCH_ROW_LIVE_BORDER_LEFT}};
+            --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
+            --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
+            --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}};
+            --match-row-hover-border: {{THEME_MATCH_ROW_HOVER_BORDER}};
+            --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
+            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
+            --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
             
             /* BUTTONS */
-            --match-row-btn-watch-bg: #d00000;
-            --match-row-btn-watch-text: #ffffff;
-            --match-row-hd-badge-bg: rgba(0,0,0,0.3);
-            --match-row-hd-badge-text: #facc15;
-            --match-row-btn-notify-bg: transparent;
-            --match-row-btn-notify-border: #334155;
-            --match-row-btn-notify-text: #94a3b8;
+            --match-row-btn-watch-bg: {{THEME_MATCH_ROW_BTN_WATCH_BG}};
+            --match-row-btn-watch-text: {{THEME_MATCH_ROW_BTN_WATCH_TEXT}};
+            --match-row-hd-badge-bg: {{THEME_MATCH_ROW_HD_BADGE_BG}};
+            --match-row-hd-badge-text: {{THEME_MATCH_ROW_HD_BADGE_TEXT}};
+            --match-row-btn-notify-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_BG}};
+            --match-row-btn-notify-border: {{THEME_MATCH_ROW_BTN_NOTIFY_BORDER}};
+            --match-row-btn-notify-text: {{THEME_MATCH_ROW_BTN_NOTIFY_TEXT}};
             
             /* FOOTER */
-            --footer-bg-start: #0e0e0e;
-            --footer-bg-end: #050505;
-            --footer-border-top: 1px solid #334155;
-            --footer-link-color: #94a3b8;
-            --footer-link-hover-color: #f1f5f9;
+            --footer-bg-start: {{THEME_FOOTER_BG_START}};
+            --footer-bg-end: {{THEME_FOOTER_BG_END}};
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-link-color: {{THEME_FOOTER_LINK_COLOR}};
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
             
             /* SOCIALS */
-            --social-sidebar-bg: rgba(15, 23, 42, 0.8);
-            --social-sidebar-border: #334155;
-            --social-btn-bg: rgba(30, 41, 59, 0.8);
-            --social-btn-color: #94a3b8;
-            --mobile-footer-bg: #000000;
-            --mobile-footer-border-top: 1px solid #334155;
+            --social-sidebar-bg: {{THEME_SOCIAL_SIDEBAR_BG}};
+            --social-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
+            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}};
+            --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+            --mobile-footer-bg: {{THEME_MOBILE_FOOTER_BG}};
+            --mobile-footer-border-top: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
             
             /* ARTICLE */
-            --article-bg: #0a0606;
-            --article-text: #c2bcbc;
-            --article-line-height: 1.6;
-            --article-bullet: #0caca1;
-            --article-link: #b70b0b;
-            --article-h2-color: #d715e5;
-            --article-h2-border: 3px solid #34f80d;
+            --article-bg: {{THEME_ARTICLE_BG}};
+            --article-text: {{THEME_ARTICLE_TEXT}};
+            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
+            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
+            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
+            --article-h2-color: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
             
             /* LEAGUE CARDS */
-            --league-card-bg: #af1212;
-            --league-card-border: 3px solid #188ed8;
-            --league-card-text: #f1e9e9;
-            --league-card-radius: 20px;
-            --league-card-hover-bg: #93279b;
-            --league-card-hover-border: 3px solid #dea60d;
-            --league-card-hover-text: #0b0404;
+            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
+            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
+            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
+            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
+            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
+            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
+            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
 
             /* UTILS */
-            --scrollbar-thumb-color: #333333;
-            --back-to-top-bg: #d00000;
-            --back-to-top-icon-color: #ffffff;
-            --sys-status-bg: rgba(0, 0, 0, 0.1);
-            --sys-status-border: 1px solid #000000;
-            --sys-status-text: #000000;
-            --sys-status-dot-color: #000000;
-            --sys-status-radius: 20px;
+            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
+            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
+            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
+            --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
+            --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
+            --sys-status-dot-color: {{THEME_SYS_STATUS_DOT_COLOR}};
+            --sys-status-radius: {{THEME_SYS_STATUS_RADIUS}};
             
-            --section-logo-size: 22px;
+            --section-logo-size: {{THEME_SECTION_LOGO_SIZE}};
             --row-h-mob: 76px; --row-h-desk: 96px;
         }
 
@@ -216,8 +154,8 @@
 
         .logo-link { display: flex; align-items: center; gap: 10px; }
         .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; }
-        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; color: #ffffff; }
-        .logo-text span { color: #d00000; }
+        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; color: {{THEME_LOGO_P1_COLOR}}; }
+        .logo-text span { color: {{THEME_LOGO_P2_COLOR}}; }
         
         .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
         .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
@@ -231,18 +169,18 @@
         .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
 
         /* HERO */
-        .hero-section { background: radial-gradient(circle at top, #1c0202 0%, #000000 100%); padding: 40px 15px 15px 15px; border-bottom: 5px solid #4416e9; display: block; }
+        .hero-section { {{HERO_OUTER_STYLE}} display: {{DISPLAY_HERO}}; }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
-        .hero-inner { max-width: var(--container-max-width); margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
+        .hero-inner { {{HERO_INNER_STYLE}} display: flex; flex-direction: column; text-align: {{THEME_HERO_TEXT_ALIGN}}; align-items: {{THEME_HERO_ALIGN_ITEMS}}; }
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
-        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: 0 auto; margin-bottom: 20px; max-width: 800px; }
+        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: {{THEME_HERO_INTRO_MARGIN}}; margin-bottom: 20px; max-width: 800px; }
         
-        .cat-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 10px 5px; width: 100%; scrollbar-width: none; justify-content: center; }
-        .cat-pill { background: var(--hero-pill-bg); border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
-        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: #D00000; }
+        .cat-scroll { display: {{HERO_MENU_DISPLAY}}; gap: 10px; overflow-x: auto; padding: 10px 5px; width: 100%; scrollbar-width: none; justify-content: {{THEME_HERO_MENU_JUSTIFY}}; }
+        .cat-pill { background: var(--hero-pill-bg); border: 1px solid {{THEME_HERO_PILL_BORDER}}; padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
+        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: {{THEME_HERO_PILL_HOVER_BORDER}}; }
 
-        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
-        .sys-status .dot, .sys-status .live-dot { width: 10px; height: 10px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        .sys-status { display: {{THEME_SYS_STATUS_DISPLAY}}; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status .dot, .sys-status .live-dot { width: {{THEME_SYS_STATUS_DOT_SIZE}}; height: {{THEME_SYS_STATUS_DOT_SIZE}}; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         /* MATCH ROWS & SECTIONS */
         .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
@@ -291,7 +229,7 @@
         .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
         .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
         .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
-        .social-btn.telegram { color: #ce0909; } .social-btn.whatsapp { color: #bd1414; } .social-btn.reddit { color: #cc1e1e; } .social-btn.twitter { color: #297b19; }
+        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; } .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; }
         @media (max-width: 1024px) { .social-sidebar { display: none; } }
         
         .mobile-sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--mobile-footer-bg); backdrop-filter: blur(10px); border-top: var(--mobile-footer-border-top); padding: 0 5px; display: none; justify-content: space-between; align-items: center; z-index: 900; height: var(--mobile-footer-height); box-shadow: var(--mobile-footer-shadow); }
@@ -307,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: #af1212; border: 3px solid #188ed8; color: #f1e9e9; border-radius: 20px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: 3px solid #dea60d; background: #93279b; color: #0b0404; transform: translateY(-2px); }
+        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -316,89 +254,88 @@
 
     <div id="socialSidebar" class="social-sidebar"></div>
 
-    <header class="h-layout-standard">
+    <header class="{{HEADER_CLASSES}}">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" alt="StreamEast Logo" fetchpriority="high"> <div class="logo-text">Stream<span>East</span></div></a>
-            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
+            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
+            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
         </div>
     </header>
-    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
+    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
 
     <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="hero-inner">
-            <div class="sys-status"><div class="live-dot"></div> System Status: Online</div>
-            <h1>Watch NFL Live Streams and Schedules</h1>
-            <p class="entity-intro">The Best Free NFL Live stream free online</p> 
-            <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
+            <div class="sys-status"><div class="live-dot"></div> {{THEME_TEXT_SYS_STATUS}}</div>
+            <h1>{{H1_TITLE}}</h1>
+            <p class="entity-intro">{{HERO_TEXT}}</p> 
+            <div class="cat-scroll">{{HERO_PILLS}}</div>
         </div>
     </div>
 
     <main class="container">
         
         <!-- LIVE SECTION (Injected by master_engine.py) -->
-        <div id="live-list" style="display:none;">
-            <!-- Python replaces this with live rows -->
-        </div>
+        <div id="live-list"></div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
             <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
-                    Upcoming NFL Matches nnn
+                    {{TEXT_UPCOMING_TITLE}}
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list"></div>
+            <div id="schedule-list"><div class="match-row"><div class="col-time"><span class="time-main">09:30 PM</span><span class="time-sub">Jan 10</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/carolina-panthers.webp" class="t-img" alt="Carolina Panthers" loading="lazy" width="20" height="20"></div> Carolina Panthers</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/los-angeles-rams.webp" class="t-img" alt="Los Angeles Rams" loading="lazy" width="20" height="20"></div> Los Angeles Rams</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In -1101m</span></div></div><div class="col-action">
+        <button onclick="window.location.href='/watch/?livestream=8523375b073f3e93cfe26a79e556c61c'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=8523375b073f3e93cfe26a79e556c61c')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/chicago-bears.webp" class="t-img" alt="Chicago Bears" loading="lazy" width="20" height="20"></div> Chicago Bears</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/green-bay-packers.webp" class="t-img" alt="Green Bay Packers" loading="lazy" width="20" height="20"></div> Green Bay Packers</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In -891m</span></div></div><div class="col-action">
+        <button onclick="window.location.href='/watch/?livestream=c9e15a5432c3d1da2205735449702522'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=c9e15a5432c3d1da2205735449702522')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div><div class="match-row"><div class="col-time"><span class="time-main">06:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/jacksonville-jaguars.webp" class="t-img" alt="Jacksonville Jaguars" loading="lazy" width="20" height="20"></div> Jacksonville Jaguars</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/buffalo-bills.webp" class="t-img" alt="Buffalo Bills" loading="lazy" width="20" height="20"></div> Buffalo Bills</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2h</span></div></div><div class="col-action">
+        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=803276a963f24d2162e78c5a2eaf1e9e')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div><div class="match-row"><div class="col-time"><span class="time-main">09:30 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/philadelphia-eagles.webp" class="t-img" alt="Philadelphia Eagles" loading="lazy" width="20" height="20"></div> Philadelphia Eagles</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/san-francisco-49ers.webp" class="t-img" alt="San Francisco 49ers" loading="lazy" width="20" height="20"></div> San Francisco 49ers</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 5h</span></div></div><div class="col-action">
+        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=3398d76b4541e0dc93742c1316a274af')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:15 AM</span><span class="time-sub">Jan 12</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/new-england-patriots.webp" class="t-img" alt="New England Patriots" loading="lazy" width="20" height="20"></div> New England Patriots</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/los-angeles-chargers.webp" class="t-img" alt="Los Angeles Chargers" loading="lazy" width="20" height="20"></div> Los Angeles Chargers</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 9h</span></div></div><div class="col-action">
+        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=611a14e064f748d31bd9499dd9e29738')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:15 AM</span><span class="time-sub">Jan 13</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/pittsburgh-steelers.webp" class="t-img" alt="Pittsburgh Steelers" loading="lazy" width="20" height="20"></div> Pittsburgh Steelers</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/houston-texans.webp" class="t-img" alt="Houston Texans" loading="lazy" width="20" height="20"></div> Houston Texans</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div><div class="col-action">
+        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
+        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=282b13152b0feb07e3efafa8fbfdc62a')">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
+        </button>
+    </div></div></div>
         </div>
 
         <!-- ARTICLE -->
         <article class="seo-article">
-            
-<p>Experience the thrill of <strong>NFL</strong>, the premier competition in <strong>American Football</strong>. Whether you are a die-hard fan following the standings or a casual viewer catching a big game, <strong>totalsportek.top</strong> offers comprehensive access to every match of the 2025 season. We are dedicated to providing high-definition <strong>American Football streams</strong> that connect you directly to the stadium atmosphere.</p>
-
-<h2>Why NFL is the Pinnacle of American Football</h2>
-<p>The <strong>NFL</strong> represents the highest level of athletic performance in the world of American Football. With historic rivalries and world-class talent, every game carries significant weight. Our platform stacks the most important entities—from the star players to the iconic venues—ensuring you get the full context of the match.</p>
-<ul>
-    <li><strong>Complete American Football Schedule:</strong> Don't miss a single round. We track every NFL fixture in real-time.</li>
-    <li><strong>Adaptive HD Streaming:</strong> Our player optimizes American Football action for fast-paced movement, ensuring you see every play clearly.</li>
-    <li><strong>Cross-Device Compatibility:</strong> Watch NFL on your phone, tablet, or desktop without installing any apps.</li>
-</ul>
-
-<h2>How to Stream NFL Games on totalsportek.top</h2>
-<p>We make it easy to follow your favorite <strong>American Football teams</strong>. Simply locate your match in the schedule above. The list is sorted chronologically, prioritizing live NFL events so you can jump straight into the action. Our links are vetted for stability, ensuring a seamless viewing experience even during high-traffic <strong>NFL playoffs</strong> or finals.</p>
-
-<h3>NFL Streaming FAQ</h3>
-<p><strong>Is this service free?</strong><br>
-Yes. We believe that <strong>American Football</strong> fans shouldn't be locked behind paywalls. totalsportek.top provides open access to NFL streams.</p>
-
-<p><strong>What is the video quality?</strong><br>
-We aim for 1080p and 720p definition. <strong>American Football</strong> requires high frame rates to track the fast movement, and our streams are selected to handle this demand.</p>
+            {{LEAGUE_ARTICLE}}
         </article>
 
         <!-- FOOTER LEAGUES -->
         <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
             <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
-            <div class="leagues-grid"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏈</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏀</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">⚾</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏒</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🥊</span><span>UFC</span></a><a href="/premierleague-streams/" class="league-card"><span class="l-icon">⚽</span><span>Premier League</span></a><a href="/championsleague-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africacupofnations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/laliga-streams/" class="league-card"><span class="l-icon">⚽</span><span>La Liga</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🎾</span><span>Tennis</span></a></div>
+            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
         </div>
 
     </main>
 
-    <footer class="">
-        <div class="footer-grid cols-2">
-    <div>
-        <div class="f-head">Quick Links</div>
-        <div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div>
-    </div>
-    
-    <div class="f-brand">
-        <img src="/assets/test-logo.webp" class="logo-img" alt="StreamEast Logo" fetchpriority="high"> <div class="logo-text">Stream<span>East</span></div>
-        <div class="f-desc">Hello world</div>
-    </div>
-    </div>
-        <div class="copyright">Copyright</div>
+    <footer class="{{FOOTER_CLASSES}}">
+        {{FOOTER_GRID_CONTENT}}
+        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
     </footer>
 
     <div id="mobileFooter" class="mobile-sticky-footer"></div>
@@ -409,8 +346,8 @@ We aim for 1080p and 720p definition. <strong>American Football</strong> require
     </button>
 
     <script>
-        const SITE_DOMAIN = "https://totalsportek.top";
-        const SHARE_CONFIG = {"excluded": ["dmca", "contact", "about", "privacy"], "counts": {"telegram": 12000, "whatsapp": 14400, "reddit": 60077, "twitter": 5544}};
+        const SITE_DOMAIN = "https://{{DOMAIN}}";
+        const SHARE_CONFIG = { counts: { telegram: 1240, whatsapp: 850, reddit: 340, twitter: 510 } };
         
         window.addEventListener('DOMContentLoaded', () => {
             highlightActiveMenu();
