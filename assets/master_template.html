@@ -224,19 +224,17 @@
 
     <main class="container {{MAIN_CONTAINER_CLASSES}}">
         
-        <!-- DYNAMIC INJECTION MARKERS - PYTHON WILL REPLACE THESE -->
+       <!-- 1. LIVE SECTION -->
+        <div id="live-list" class="match-list" style="display:none;"></div>
         
-        <!-- 1. LIVE SECTION -->
-        <!-- DYNAMIC_SECTION_LIVE -->
-        
-        <!-- 2. WILDCARD SECTION -->
-        <!-- DYNAMIC_SECTION_WILDCARD -->
+        <!-- 2. WILDCARD SECTION (Optional, engine needs update to support this specific ID if not present) -->
+        <!-- For now, keep wildcard logic or standard priority logic -->
 
         <!-- 3. TOP UPCOMING -->
-        <!-- DYNAMIC_SECTION_TOP_UPCOMING -->
+        <div id="top-upcoming-container"></div>
 
         <!-- 4. GROUPED SPORTS -->
-        <!-- DYNAMIC_SECTION_GROUPED -->
+        <div id="grouped-container"></div>
         
         <div class="seo-article">{{ARTICLE_CONTENT}}</div>
 
