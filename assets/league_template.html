@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO & METADATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{META_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
+    <meta property="og:image:type" content="{{OG_MIME}}">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    {{LOGO_PRELOAD}}
+    
+    <!-- SCHEMA -->
+    {{SCHEMA_BLOCK}}
+    
+    <style>html { scroll-behavior: smooth; }</style>
+
+    <style>
+        :root {
+            /* --- DYNAMIC THEME VARIABLES --- */
+            --brand-primary: {{THEME_BRAND_PRIMARY}};
+            --brand-dark: {{THEME_BRAND_DARK}};
+            --status-green: {{THEME_STATUS_GREEN}};
+            --accent-gold: {{THEME_ACCENT_GOLD}};
+            --bg-body: {{THEME_BG_BODY}};
+            --bg-panel: {{THEME_BG_PANEL}};
+            --bg-glass: {{THEME_BG_GLASS}};
+            --border: {{THEME_BORDER_COLOR}};
+            --text-main: {{THEME_TEXT_MAIN}};
+            --text-muted: {{THEME_TEXT_MUTED}};
+            
+            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
+            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
+            --base-font-size: {{THEME_BASE_FONT_SIZE}}; 
+            --base-line-height: {{THEME_BASE_LINE_HEIGHT}}; 
+            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}}; 
+        --header-max-width: {{THEME_HEADER_MAX_WIDTH}};
+            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}}; 
+            --button-border-radius: {{THEME_BUTTON_BORDER_RADIUS}};
+        --hero-pill-radius: {{THEME_HERO_PILL_RADIUS}};
+            --card-shadow: {{THEME_CARD_SHADOW}};
+        /* FOOTER LEAGUE CARDS */
+            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
+            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
+            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}}; /* This is now full string "1px solid #..." */
+            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
+            
+            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
+            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
+
+            /* HEADER */
+            --header-bg: {{THEME_HEADER_BG}};
+            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
+            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
+        --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+        --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
+            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
+            --logo-text-p1-color: {{THEME_LOGO_P1_COLOR}};
+            --logo-text-p2-color: {{THEME_LOGO_P2_COLOR}};
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+        --static-h1-color: {{THEME_STATIC_H1_COLOR}};
+            --static-h1-border: {{THEME_STATIC_H1_BORDER}};
+        --sys-status-display: {{THEME_SYS_STATUS_DISPLAY}};
+
+            /* HERO */
+            
+            --hero-h1-color: {{THEME_HERO_H1_COLOR}};
+            --hero-intro-color: {{THEME_HERO_INTRO_COLOR}};
+            --hero-pill-bg: {{THEME_HERO_PILL_BG}};
+            --hero-pill-text: {{THEME_HERO_PILL_TEXT}};
+            --hero-pill-border: {{THEME_HERO_PILL_BORDER}};
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_HOVER_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_HOVER_TEXT}};
+            --hero-pill-hover-border: {{THEME_HERO_PILL_HOVER_BORDER}};
+
+            /* MATCH ROWS */
+            --match-row-bg: {{THEME_MATCH_ROW_BG}};
+            --match-row-border: {{THEME_MATCH_ROW_BORDER}};
+            --match-row-live-border-left: {{THEME_MATCH_ROW_LIVE_BORDER_LEFT}};
+            --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
+            --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
+            --match-row-hover-border: {{THEME_MATCH_ROW_HOVER_BORDER}};
+            --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}}; /* New: Hover BG */
+            --match-row-hover-transform: {{THEME_MATCH_ROW_HOVER_TRANSFORM}};
+            --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
+            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
+            --match-row-league-tag-color: {{THEME_MATCH_ROW_LEAGUE_TAG_COLOR}};
+            --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
+            
+            /* BUTTONS */
+            --match-row-btn-watch-bg: {{THEME_MATCH_ROW_BTN_WATCH_BG}};
+            --match-row-btn-watch-text: {{THEME_MATCH_ROW_BTN_WATCH_TEXT}};
+            --match-row-btn-watch-hover-bg: {{THEME_MATCH_ROW_BTN_WATCH_HOVER_BG}};
+            --match-row-btn-watch-hover-transform: {{THEME_MATCH_ROW_BTN_WATCH_HOVER_TRANSFORM}};
+            --match-row-hd-badge-bg: {{THEME_MATCH_ROW_HD_BADGE_BG}};
+            --match-row-hd-badge-border: {{THEME_MATCH_ROW_HD_BADGE_BORDER}};
+            --match-row-hd-badge-text: {{THEME_MATCH_ROW_HD_BADGE_TEXT}};
+            
+            --match-row-btn-notify-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_BG}};
+            --match-row-btn-notify-border: {{THEME_MATCH_ROW_BTN_NOTIFY_BORDER}};
+            --match-row-btn-notify-text: {{THEME_MATCH_ROW_BTN_NOTIFY_TEXT}};
+            --match-row-btn-notify-active-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_BG}};
+            --match-row-btn-notify-active-border: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_BORDER}};
+            --match-row-btn-notify-active-text: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_TEXT}};
+            
+            --match-row-btn-copy-link-color: {{THEME_MATCH_ROW_BTN_COPY_LINK_COLOR}};
+            --match-row-btn-copy-link-hover-color: {{THEME_MATCH_ROW_BTN_COPY_LINK_HOVER_COLOR}};
+
+            /* FOOTER */
+        --footer-text-align: {{THEME_FOOTER_TEXT_ALIGN_DESKTOP}};
+            --footer-bg-start: {{THEME_FOOTER_BG_START}};
+            --footer-bg-end: {{THEME_FOOTER_BG_END}};
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
+            --footer-link-color: {{THEME_FOOTER_LINK_COLOR}};
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-link-hover-transform: {{THEME_FOOTER_LINK_HOVER_TRANSFORM}};
+            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
+            --footer-desc-color: {{THEME_FOOTER_DESC_COLOR}};
+
+            /* SOCIALS (New Customizations) */
+            --social-sidebar-bg: {{THEME_SOCIAL_SIDEBAR_BG}};
+            --social-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
+            --social-sidebar-shadow: {{THEME_SOCIAL_SIDEBAR_SHADOW}};
+            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}};
+            --social-btn-border: {{THEME_SOCIAL_BTN_BORDER}};
+            --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+            --social-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}};
+            --social-btn-hover-border: {{THEME_SOCIAL_BTN_HOVER_BORDER}};
+            --social-btn-hover-transform: {{THEME_SOCIAL_BTN_HOVER_TRANSFORM}};
+            --social-count-color: {{THEME_SOCIAL_COUNT_COLOR}};
+            
+            --social-desktop-top: {{THEME_SOCIAL_DESKTOP_TOP}}; /* e.g. 50% */
+            --social-desktop-left: {{THEME_SOCIAL_DESKTOP_LEFT}}; /* e.g. 0 */
+            --social-desktop-scale: {{THEME_SOCIAL_DESKTOP_SCALE}}; /* e.g. 1.0 */
+            
+            --mobile-footer-bg: {{THEME_MOBILE_FOOTER_BG}};
+            --mobile-footer-border-top: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
+            --mobile-footer-shadow: {{THEME_MOBILE_FOOTER_SHADOW}};
+            --mobile-footer-height: {{THEME_MOBILE_FOOTER_HEIGHT}}; /* e.g. 60px */
+        /* ARTICLE STYLING */
+            --article-bg: {{THEME_ARTICLE_BG}};
+            --article-text: {{THEME_ARTICLE_TEXT}};
+            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
+            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
+            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
+            --article-h2-color: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-h3-color: {{THEME_ARTICLE_H3_COLOR}};
+            --article-h4-color: {{THEME_ARTICLE_H4_COLOR}};
+            
+            --copy-toast-bg: {{THEME_COPY_TOAST_BG}};
+            --copy-toast-text: {{THEME_COPY_TOAST_TEXT}};
+            --copy-toast-border: {{THEME_COPY_TOAST_BORDER}};
+
+            /* SHOW MORE BUTTON */
+            --show-more-btn-bg: {{THEME_SHOW_MORE_BTN_BG}};
+            --show-more-btn-border: {{THEME_SHOW_MORE_BTN_BORDER}};
+            --show-more-btn-text: {{THEME_SHOW_MORE_BTN_TEXT}};
+            --show-more-btn-radius: {{THEME_SHOW_MORE_BTN_RADIUS}}; /* New */
+            --show-more-btn-hover-bg: {{THEME_SHOW_MORE_BTN_HOVER_BG}};
+            --show-more-btn-hover-border: {{THEME_SHOW_MORE_BTN_HOVER_BORDER}};
+            --show-more-btn-hover-text: {{THEME_SHOW_MORE_BTN_HOVER_TEXT}};
+
+            /* UTILITY */
+            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
+            
+            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
+            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
+            --back-to-top-radius: {{THEME_BACK_TO_TOP_RADIUS}}; /* New */
+            --back-to-top-size: {{THEME_BACK_TO_TOP_SIZE}}; /* New */
+            
+            --sys-status-dot-color: {{THEME_SYS_STATUS_DOT_COLOR}};
+            --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
+            --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
+            --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
+        --sys-status-radius: {{THEME_SYS_STATUS_RADIUS}};
+        --sys-status-dot-size: {{THEME_SYS_STATUS_DOT_SIZE}};
+            
+            --section-logo-size: {{THEME_SECTION_LOGO_SIZE}}; /* New for CLS */
+            
+            --skeleton-gradient-start: {{THEME_SKELETON_GRADIENT_START}};
+            --skeleton-gradient-mid: {{THEME_SKELETON_GRADIENT_MID}};
+            --skeleton-gradient-end: {{THEME_SKELETON_GRADIENT_END}};
+
+            /* CLS FIXED HEIGHTS */
+            --row-h-mob: 76px;
+            --row-h-desk: 96px;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; padding-bottom: 80px; line-height: var(--base-line-height); }
+        a { text-decoration: none; color: inherit; transition: 0.2s; }
+        button { cursor: pointer; border: none; font-family: inherit; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        
+        /* SCROLLBAR */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: var(--bg-body); }
+        body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 4px; }
+
+        /* SKELETONS */
+        .skeleton { background: var(--skeleton-gradient-start); border-radius: var(--border-radius-base); animation: shimmer 1.5s infinite linear; background: linear-gradient(to right, var(--skeleton-gradient-start) 4%, var(--skeleton-gradient-mid) 25%, var(--skeleton-gradient-end) 36%); background-size: 1000px 100%; }
+        .skeleton-header { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid {{THEME_SKELETON_BORDER_COLOR}}; height: 38px; }
+        .sk-title { height: 22px; width: 140px; }
+        .sk-count { height: 15px; width: 80px; }
+        .skeleton-box { height: var(--row-h-mob); width: 100%; margin-bottom: 8px; border-radius: var(--border-radius-base); border: 1px solid {{THEME_SKELETON_BORDER_COLOR}}; }
+        @media (min-width: 768px) { .skeleton-box { height: var(--row-h-desk); } }
+        @keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+
+        /* --- RESTORED HERO STYLES --- */
+        h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
+
+        .entity-intro { 
+            color: var(--hero-intro-color); 
+            font-size: 0.9rem; 
+            line-height: 1.5; 
+            max-width: 800px; 
+            margin: {{THEME_HERO_INTRO_MARGIN}}; /* Dynamic Margin Injection */
+            margin-bottom: 20px;
+        }
+
+        .cat-scroll { 
+            display: flex; 
+            gap: 10px; 
+            overflow-x: auto;       /* Enable horizontal scroll */
+            padding: 10px 5px; 
+            width: 100%;            /* Force full width to allow scrolling */
+            justify-content: {{THEME_HERO_MENU_JUSTIFY}}; /* Dynamic Alignment */
+            
+            /* Hide Scrollbar & Smooth Scroll */
+            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;  /* IE */
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        .cat-scroll::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
+        .static-h1 {
+            color: var(--static-h1-color);
+            border-bottom: var(--static-h1-border); /* Use new variable */
+            /* ... keep existing font/margin ... */
+            font-family: var(--font-family-headings);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .cat-pill { 
+            background: var(--hero-pill-bg); 
+            border: 1px solid var(--hero-pill-border); 
+            padding: 8px 18px; 
+            border-radius: var(--hero-pill-radius);
+            font-weight: 700; 
+            font-size: 0.8rem; 
+            white-space: nowrap; 
+            color: var(--hero-pill-text); 
+            flex-shrink: 0; /* Prevent shrinking on mobile */
+        }
+        .cat-pill:hover, .cat-pill.active { border-color: var(--hero-pill-hover-border); color: var(--hero-pill-hover-text); background: var(--hero-pill-hover-bg); }
+        /* HEADER */
+        header { 
+            background: var(--header-bg); 
+            backdrop-filter: blur(10px); 
+            border-bottom: var(--header-border-bottom); 
+            height: 60px; width: 100%; position: relative; z-index: 100; 
+        }
+        @media (min-width: 900px) { header { position: fixed; top: 0; } body { padding-top: 60px; } }
+
+        .header-container { 
+            max-width: var(--header-max-width); /* UPDATE THIS */
+            margin: 0 auto; height: 100%; padding: 0 15px; 
+            display: flex; align-items: center; position: relative;
+        }
+
+        /* --- LAYOUT: STANDARD (Logo Left, Nav Right) --- */
+        .h-layout-standard .header-container { justify-content: space-between; }
+        .h-layout-standard .logo-link { order: 1; }
+        .h-layout-standard .nav-links { order: 2; }
+        .h-layout-standard .hamburger { order: 3; display: none; } /* Mobile default */
+
+        /* --- LAYOUT: INVERTED (Logo Right, Nav Left) --- */
+        .h-layout-inverted .header-container { justify-content: space-between; }
+        .h-layout-inverted .logo-link { order: 2; }
+        .h-layout-inverted .nav-links { order: 1; }
+        .h-layout-inverted .hamburger { order: 0; display: none; } /* Mobile default */
+
+        /* --- LAYOUT: CENTERED (Logo Center, Hamburger Only) --- */
+        .h-layout-center .header-container { justify-content: center; }
+        .h-layout-center .logo-link { margin: 0 auto; }
+        .h-layout-center .nav-links { display: none !important; } /* Always hide desktop nav links */
+        .h-layout-center .hamburger { 
+            display: block !important; position: absolute; top: 50%; transform: translateY(-50%); font-size: 1.6rem;
+        }
+        /* Icon Positioning for Center Layout */
+        .h-layout-center.h-icon-left .hamburger { left: 15px; }
+        .h-layout-center.h-icon-right .hamburger { right: 15px; }
+
+        /* ELEMENTS */
+        .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; box-shadow: 0 0 10px {{THEME_LOGO_IMAGE_SHADOW_COLOR}}; }
+        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; line-height: 1; }
+        .logo-text span { color: var(--logo-text-p2-color); }
+        .logo-text { color: var(--logo-text-p1-color); }
+        
+        .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
+        .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        
+        /* New Hover Color Logic */
+        .nav-links a:hover { color: var(--header-link-hover-color); }
+        .nav-links a.active { color: var(--header-link-active-color); border-bottom-color: var(--header-link-active-color); }
+        /* ADD THIS BLOCK */
+        .nav-links a.highlighted { 
+            color: var(--header-highlight-color) !important; 
+            border-bottom-color: var(--header-highlight-color) !important; 
+        }
+        .nav-links a.highlighted:hover { 
+            color: var(--header-highlight-hover) !important; 
+            border-bottom-color: var(--header-highlight-hover) !important; 
+        }
+        
+        /* Mobile Toggle Default Styles */
+        .hamburger { display: block; font-size: 1.4rem; color: var(--header-text-color); background: none; cursor: pointer; }
+        
+        /* Mobile Menu Panel */
+        .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); border-bottom: var(--header-border-bottom); display: none; flex-direction: column; z-index: 99; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
+        .mobile-menu a:hover { background: rgba(255,255,255,0.05); color: var(--header-link-hover-color); }
+        .mobile-menu a.active { color: var(--brand-primary); border-left: 4px solid var(--brand-primary); }
+
+        /* Responsive Visibility for Standard/Inverted */
+        @media (min-width: 900px) { 
+            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: flex; } 
+            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: none; } 
+        }
+        /* Mobile overrides for Standard/Inverted (ensure hamburger appears on small screens) */
+        @media (max-width: 899px) {
+            .h-layout-standard .header-container, .h-layout-inverted .header-container { justify-content: space-between; }
+            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: none; }
+            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: block; }
+            
+            /* Logic for Standard Mobile: Logo Left, Ham Right */
+            .h-layout-standard .logo-link { order: 1; }
+            .h-layout-standard .hamburger { order: 2; }
+            
+            /* Logic for Inverted Mobile: Ham Left, Logo Right */
+            .h-layout-inverted .logo-link { order: 2; }
+            .h-layout-inverted .hamburger { order: 1; }
+        }
+
+        /* SOCIALS */
+        .social-sidebar { 
+            position: fixed; left: 0; top: var(--social-desktop-top); transform: translateY(-50%) scale(var(--social-desktop-scale)); z-index: 90; 
+            display: flex; flex-direction: column; gap: 8px; 
+            background: var(--social-sidebar-bg); 
+            border: 1px solid var(--social-sidebar-border); 
+            border-left: none; padding: 12px 8px; 
+            border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; 
+            box-shadow: var(--social-sidebar-shadow); 
+            backdrop-filter: blur(5px); 
+        }
+        .social-btn { 
+            width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
+            align-items: center; justify-content: center; gap: 3px; 
+            color: var(--social-btn-color); background: var(--social-btn-bg); 
+            border: 1px solid var(--social-btn-border); border-radius: var(--border-radius-base); 
+            will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
+            cursor: pointer; 
+        }
+        .social-btn svg { width: 20px; height: 20px; fill: currentColor; display: block; }
+        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } 
+        .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; }
+        .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } 
+        .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; } 
+        .social-btn.copy { color: var(--social-btn-color); }
+        .social-btn:hover { 
+            background: var(--social-btn-hover-bg); 
+            border-color: var(--social-btn-hover-border); 
+            transform: var(--social-btn-hover-transform); 
+            box-shadow: 0 4px 10px {{THEME_SOCIAL_BTN_HOVER_SHADOW_COLOR}}; 
+        }
+        .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); letter-spacing: 0.3px; }
+        @media (max-width: 1024px) { .social-sidebar { display: none; } }
+
+        /* MOBILE FOOTER */
+        .mobile-sticky-footer { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: var(--mobile-footer-bg); backdrop-filter: blur(10px); 
+            border-top: var(--mobile-footer-border-top); padding: 0 5px; 
+            display: none; justify-content: space-between; align-items: center; 
+            z-index: 900; height: var(--mobile-footer-height); 
+            box-shadow: var(--mobile-footer-shadow); 
+        }
+        .mobile-sticky-footer .social-btn { border: none; flex: 1; height: 100%; padding: 0; border-radius: 0; transform: none !important; background: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; }
+        .mobile-sticky-footer .social-btn:active { background: {{THEME_MOBILE_FOOTER_BTN_ACTIVE_BG}}; }
+        .mobile-sticky-footer .s-count { display: block !important; font-size: 0.65rem; color: var(--social-count-color); margin: 0; line-height: 1; }
+        .mobile-sticky-footer svg { width: 20px; height: 20px; }
+        @media (max-width: 1024px) { .mobile-sticky-footer { display: flex; } }
+        
+        .copy-toast { 
+            position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); 
+            background: var(--copy-toast-bg); border: 1px solid var(--copy-toast-border); 
+            color: var(--copy-toast-text); padding: 8px 14px; font-size: 0.75rem; 
+            border-radius: var(--border-radius-base); z-index: 9999; opacity: 0; 
+            animation: fadeToast 1.6s ease forwards; 
+        }
+        @keyframes fadeToast { 0% { opacity: 0; transform: translate(-50%, 10px); } 20% { opacity: 1; transform: translate(-50%, 0); } 80% { opacity: 1; } 100% { opacity: 0; } }
+        @media (max-width: 768px) { .copy-toast { bottom: 85px; } }
+
+        /* HERO REFACTORED */
+        .hero-section {
+            /* Styles injected by build script based on mode (Full/Box) */
+            {{HERO_OUTER_STYLE}}
+            /* Bottom border applies to the whole section regardless of mode (based on previous request) */
+            display: {{DISPLAY_HERO}};
+        }
+        @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
+
+        .hero-inner {
+            /* Styles injected by build script (Width, BG if boxed, Alignment) */
+            {{HERO_INNER_STYLE}}
+            
+            /* Flex layout for alignment */
+            display: flex;
+            flex-direction: column;
+            text-align: {{THEME_HERO_TEXT_ALIGN}};
+            align-items: {{THEME_HERO_ALIGN_ITEMS}};
+        }
+        .entity-intro { 
+            color: var(--hero-intro-color); 
+            font-size: 0.9rem; 
+            line-height: 1.5; 
+            max-width: 800px; 
+            margin: {{THEME_HERO_INTRO_MARGIN}}; /* Dynamic Margin */
+            margin-bottom: 20px;
+        }
+        
+        /* Elements inside Hero */
+        .sys-status { 
+            display: var(--sys-status-display); /* Toggle Visibility */
+            align-items: center; gap: 8px; 
+            background: var(--sys-status-bg); 
+            border: var(--sys-status-border); /* Use calculated border */
+            color: var(--sys-status-text); 
+            border-radius: var(--sys-status-radius); /* Use variable */
+            
+            padding: 5px 14px; margin-bottom: 15px; 
+            font-size: 0.75rem; font-weight: 700;
+        }
+        .sys-status .dot, .sys-status .live-dot { 
+            width: var(--sys-status-dot-size); 
+            height: var(--sys-status-dot-size); 
+            background: var(--sys-status-dot-color); 
+            border-radius: 50%; 
+            box-shadow: 0 0 10px var(--sys-status-dot-color); 
+        }
+        
+        h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
+        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; line-height: 1.5; max-width: 800px; margin: 0 0 20px 0; }
+        
+        /* Hero Menu Visibility */
+        .cat-scroll { 
+            display: {{HERO_MENU_DISPLAY}}; 
+            gap: 10px; overflow-x: auto; padding: 10px 5px; 
+            justify-content: {{THEME_HERO_ALIGN_ITEMS}}; /* Matches hero alignment */
+            scrollbar-width: none; width: 100%; margin: 0;
+        }
+        #live-section .sec-head, #live-content-wrapper .sec-head { 
+            border-bottom: {{THEME_SEC_BORDER_LIVE}}; 
+        }
+        /* In assets/league_template.html */
+        #upcoming-container .sec-head { 
+            border-bottom: {{THEME_SEC_BORDER_LEAGUE_UPCOMING}}; 
+        }
+        #wildcard-container .sec-head { 
+            border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; 
+        }
+        #footer-leagues-section .sec-head { 
+            border-bottom: {{THEME_SEC_BORDER_LEAGUES}}; 
+        }
+        #grouped-container .sec-head {
+            border-bottom: {{THEME_SEC_BORDER_GROUPED}};
+        }
+        #grouped-container {
+    content-visibility: auto; /* Magic performance fix for Mobile */
+    contain-intrinsic-size: 1000px; /* Prevents scrollbar jumping */
+}
+        /* ARTICLE CSS */
+        .seo-article { 
+            background: var(--article-bg); 
+            color: var(--article-text); 
+            line-height: var(--article-line-height); 
+            padding: 20px; 
+            border-radius: var(--border-radius-base); 
+            margin-top: 40px; 
+        }
+        .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
+        .seo-article h3 { color: var(--article-h3-color); font-size: 1.25rem; margin-top: 25px; }
+        .seo-article h4 { color: var(--article-h4-color); font-size: 1.1rem; margin-top: 20px; }
+        .seo-article p { margin-bottom: 15px; }
+        .seo-article a { color: var(--article-link); text-decoration: underline; }
+        .seo-article ul, .seo-article ol { margin-left: 20px; margin-bottom: 15px; }
+        .seo-article li { margin-bottom: 5px; }
+        .seo-article li::marker { color: var(--article-bullet); }
+        .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
+        .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+        .sec-title { font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 10px; text-transform: uppercase; margin: 0; font-family: var(--font-family-headings); }
+        .sec-logo { width: var(--section-logo-size); height: var(--section-logo-size); object-fit: contain; }
+        .live-dot { width: 8px; height: 8px; background: var(--brand-primary); border-radius: 50%; box-shadow: 0 0 10px var(--brand-primary); }
+        .sec-right-link { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); cursor: pointer; text-decoration: none; }
+        .sec-right-link:hover { color: var(--brand-primary); text-decoration: underline; }
+        
+        /* MATCH ROW */
+        .match-row { 
+            display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; 
+            background: var(--match-row-bg); border: 1px solid var(--match-row-border); 
+            border-radius: var(--border-radius-base); padding: 10px 8px 5px 8px; margin-bottom: 8px; 
+            position: relative; transition: 0.2s; height: var(--row-h-mob); overflow: hidden;
+        }
+        .match-row:hover { border-color: var(--match-row-hover-border); background: var(--match-row-hover-bg); transform: var(--match-row-hover-transform); }
+        .match-row.live { border-left: var(--match-row-live-border-left); background: linear-gradient(90deg, var(--match-row-live-bg-start) 0%, var(--match-row-live-bg-end) 100%); }
+        @media (min-width: 768px) { .match-row { grid-template-columns: 80px 1fr 100px 110px; padding: 15px 20px 10px 20px; gap: 20px; height: var(--row-h-desk); } }
+        
+        .col-time { text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+        .time-label { font-size: 0.55rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+        .time-main { font-size: 0.75rem; font-weight: 700; color: var(--match-row-time-main-color); }
+        .time-sub { font-size: 0.6rem; color: var(--match-row-time-sub-color); }
+        .live-txt { color: var(--match-row-live-text-color); font-weight: 900; animation: blink 1.5s infinite; font-size: 0.65rem; }
+        
+        .teams-wrapper { display: flex; flex-direction: column; gap: 3px; overflow: hidden; justify-content: center; height: 100%; }
+        .league-tag { font-size: 0.6rem; color: var(--match-row-league-tag-color); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .team-name { font-size: 0.75rem; font-weight: 600; color: var(--match-row-team-name-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 6px; }
+        @media (min-width: 768px) { .team-name { font-size: 0.95rem; } }
+        
+        .logo-box { width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; margin-right: 4px; }
+        .t-img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+        .t-logo { width: 100%; height: 100%; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; }
+        
+        .col-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; justify-content: center; }
+        .meta-top { font-size: 0.7rem; font-weight: 700; color: var(--accent-gold); white-space: nowrap; }
+        
+        .col-action { margin-left: auto; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
+        
+        .btn-watch { 
+            background: var(--match-row-btn-watch-bg); color: var(--match-row-btn-watch-text); 
+            font-size: 0.65rem; font-weight: 800; padding: 6px 10px; 
+            border-radius: var(--button-border-radius); width: 100%; text-transform: uppercase; 
+            transition: 0.2s; box-shadow: 0 2px 5px {{THEME_BUTTON_SHADOW_COLOR}}; 
+            display:flex; align-items:center; justify-content:center; gap:5px; height: 26px; 
+        }
+        .btn-watch:hover { background: var(--match-row-btn-watch-hover-bg); transform: var(--match-row-btn-watch-hover-transform); }
+        
+        .hd-badge { background: var(--match-row-hd-badge-bg); padding: 1px 4px; border-radius: 3px; font-size: 0.55rem; border: 1px solid var(--match-row-hd-badge-border); color: var(--match-row-hd-badge-text); }
+        
+        .btn-notify { 
+            background: var(--match-row-btn-notify-bg); 
+            border: 1px solid var(--match-row-btn-notify-border); 
+            color: var(--match-row-btn-notify-text); 
+            padding: 0 10px;                  /* Fixes padding issue */
+            width: 100%;                      /* Fixes shrinking: forces button to fill the grid cell */
+            display: flex;                    /* layout fix */
+            align-items: center;              /* layout fix */
+            justify-content: center;          /* layout fix */
+            box-shadow: none; 
+            transition: all 0.25s ease; 
+            height: 26px; 
+            border-radius: var(--button-border-radius); /* Ensures rounded corners match other buttons */
+            font-size: 0.65rem; 
+            font-weight: 700; 
+        }
+        .btn-notify.active { border-color: var(--match-row-btn-notify-active-border); color: var(--match-row-btn-notify-active-text); background: var(--match-row-btn-notify-active-bg); cursor: default; }
+        
+        .btn-copy-link { background: none; border: none; color: var(--match-row-btn-copy-link-color); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: 0.2s; padding: 0; margin-top: 5px; }
+        .btn-copy-link:hover { color: var(--match-row-btn-copy-link-hover-color); }
+        .btn-copy-link svg { width: 12px; height: 12px; fill: currentColor; }
+
+        .show-more-btn { 
+            display: block; width: 100%; max-width: 300px; margin: 20px auto; 
+            background: var(--show-more-btn-bg); border: 1px solid var(--show-more-btn-border); 
+            color: var(--show-more-btn-text); padding: 12px; 
+            border-radius: var(--show-more-btn-radius); font-weight: 600; font-size: 0.85rem; 
+            transition:0.2s; cursor: pointer; 
+        }
+        .show-more-btn:hover { border-color: var(--show-more-btn-hover-border); color: var(--show-more-btn-hover-text); background: var(--show-more-btn-hover-bg); }
+        
+        .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
+        
+        .league-card { 
+            background: {{THEME_LEAGUE_CARD_BG}}; 
+            /* REMOVED "1px solid" because the variable already contains it */
+            border: {{THEME_LEAGUE_CARD_BORDER}}; 
+            color: {{THEME_LEAGUE_CARD_TEXT}};
+            /* Use the new radius variable */
+            border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; 
+            
+            padding: 10px 15px; 
+            display: flex; align-items: center; gap: 10px; 
+            transition: 0.2s; white-space: nowrap; overflow: hidden; 
+        }
+        
+        .league-card:hover { 
+            /* Use "border" instead of "border-color" to handle width/style changes */
+            border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; 
+            background: {{THEME_LEAGUE_CARD_HOVER_BG}}; 
+            color: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            transform: translateY(-2px); 
+        }
+        
+        .league-card span { 
+            font-size: 0.8rem; font-weight: 700; color: inherit; /* Inherit allows hover text change */
+            overflow: hidden; text-overflow: ellipsis; 
+        }
+        .l-icon { font-size: 1.1rem; }
+        
+        /* FOOTER LAYOUT */
+        footer { 
+            background: linear-gradient(180deg, var(--footer-bg-start) 0%, var(--footer-bg-end) 100%); 
+            border-top: var(--footer-border-top); 
+            padding: 60px 20px 30px 20px; 
+            margin-top: 60px; 
+        }
+
+        /* Base Grid (Mobile Default) */
+        .footer-grid { 
+            width: 100%; 
+            max-width: var(--container-max-width); 
+            margin: 0 auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 40px; 
+            text-align: center; /* Center on mobile for pro look */
+        }
+
+        /* DESKTOP LAYOUTS */
+        @media(min-width: 768px) { 
+            /* 2 COLUMNS: Extreme Left & Extreme Right */
+            .footer-grid.cols-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; /* Pushes items to edges */
+                align-items: flex-start;
+                text-align: left; 
+                flex-wrap: wrap; /* Allows 3rd item to wrap if present */
+            }
+            /* Force the 2nd column to align text to the right */
+            .footer-grid.cols-2 > div:nth-child(2) {
+                text-align: right;
+            }
+            /* If a 3rd element exists in 2-col mode, center it below */
+            .footer-grid.cols-2 > div:nth-child(3) {
+                width: 100%;
+                text-align: center;
+                margin-top: 40px;
+                border-top: 1px solid rgba(255,255,255,0.1); /* Subtle separator */
+                padding-top: 20px;
+            }
+
+            /* 3 COLUMNS: Equal Widths */
+            .footer-grid.cols-3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; /* Exactly 3 equal columns */
+                gap: 20px;
+                text-align: left;
+            }
+            /* Professional Alignment: Left | Center | Right */
+            .footer-grid.cols-3 > div:nth-child(1) { text-align: left; }
+            .footer-grid.cols-3 > div:nth-child(2) { text-align: center; }
+            .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
+        }
+
+        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
+        .f-desc { color: var(--footer-desc-color); font-size: 0.85rem; line-height: 1.6; max-width: 400px; margin: 0 auto; }
+        @media(min-width: 768px) { .f-desc { margin: 0; } }
+        .f-links { display: flex; flex-direction: column; gap: 12px; }
+        .f-link { color: var(--footer-link-color); font-size: 0.9rem; font-weight: 500; transition: 0.2s; }
+        .f-link:hover { color: var(--footer-link-hover-color); transform: var(--footer-link-hover-transform); }
+        .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
+        .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
+        
+        .back-to-top { 
+            position: fixed; bottom: 80px; right: 20px; 
+            background: var(--back-to-top-bg); width: var(--back-to-top-size); height: var(--back-to-top-size); 
+            border-radius: var(--back-to-top-radius); display: flex; align-items: center; justify-content: center; 
+            color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; visibility: hidden; 
+            transition: 0.3s; z-index: 90; 
+            box-shadow: var(--back-to-top-shadow); 
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top svg { width: 24px; height: 24px; fill: var(--back-to-top-icon-color); }
+        @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
+
+        @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div id="socialSidebar" class="social-sidebar"></div>
+
+    <header class="{{HEADER_CLASSES}}">
+        <div class="header-container">
+            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
+            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <div class="hero-inner">
+            <div class="sys-status"><div class="live-dot"></div> {{THEME_TEXT_SYS_STATUS}}</div>
+            <h1>{{H1_TITLE}}</h1>
+            <p class="entity-intro">{{HERO_TEXT}}</p> 
+            <div class="cat-scroll">{{HERO_PILLS}}</div>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- SKELETON (Visible on Load) -->
+        <div id="league-skeleton">
+             <div class="skeleton skeleton-header"><div class="sk-title"></div></div>
+             <div class="skeleton skeleton-box"></div>
+             <div class="skeleton skeleton-box"></div>
+             <div class="skeleton skeleton-box"></div>
+             <div class="skeleton skeleton-box"></div>
+        </div>
+        
+        <!-- LIVE SECTION -->
+        <div id="live-section" style="display:none;">
+            <div class="sec-head">
+                <h2 class="sec-title"><div class="live-dot"></div> {{TEXT_LIVE_SECTION_TITLE}}</h2>
+            </div>
+            <div id="live-list"></div>
+        </div>
+
+        <!-- UPCOMING SECTION -->
+        <div id="upcoming-container">
+            <div class="sec-head">
+                <h2 class="sec-title">
+    <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
+    {{TEXT_UPCOMING_TITLE}}
+</h2>
+            </div>
+            <!-- FIXED: Added style to ensure visibility and prevent collapse -->
+            <div id="schedule-list" style="min-height:100px; display:block;">
+                
+            </div>
+        </div>
+
+        <!-- ARTICLE -->
+        <article class="seo-article">
+            {{LEAGUE_ARTICLE}}
+        </article>
+
+        <!-- FOOTER LEAGUES -->
+        <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
+            <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
+            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
+        </div>
+
+    </main>
+
+    <footer class="{{FOOTER_CLASSES}}">
+        <!-- Dynamic Grid injected by Python based on Admin slots -->
+        {{FOOTER_GRID_CONTENT}}
+        
+        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
+    </footer>
+
+    <!-- MOBILE STICKY FOOTER -->
+    <div id="mobileFooter" class="mobile-sticky-footer"></div>
+
+    <button id="backToTop" class="back-to-top" onclick="window.scrollTo(0,0)">
+        <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <script>
+        const API_URL = "{{API_URL}}";
+        const TARGET_COUNTRY = "{{TARGET_COUNTRY}}"; 
+        const PARAM_LIVE = "{{PARAM_LIVE}}"; 
+        const PARAM_INFO = "{{PARAM_INFO}}";
+        const SITE_DOMAIN = "https://{{DOMAIN}}";
+        
+        // CRITICAL FIX: Ensure this is treated as a string literal
+        const PAGE_FILTER = "{{PAGE_FILTER}}"; 
+
+        const TEAM_TO_LEAGUE = {{JS_LEAGUE_MAP}}; 
+        const IMAGE_MAP = {{JS_IMAGE_MAP}};
+        const THEME_CONFIG = {{JS_THEME_CONFIG}};
+        const SHARE_CONFIG = { excluded: [], counts: {} }; 
+        const PRIORITIES = {{JS_PRIORITIES}}; 
+
+        const NAME_FIXES = {
+            "icehockey": "Ice Hockey", "fieldhockey": "Field Hockey",
+            "tabletennis": "Table Tennis", "americanfootball": "American Football",
+            "australianfootball": "AFL", "basketball": "Basketball",
+            "football": "Soccer", "soccer": "Soccer", "baseball": "Baseball",
+            "fighting": "Fighting", "mma": "MMA", "boxing": "Boxing",
+            "motorsport": "Motorsport", "golf": "Golf"
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            highlightActiveMenu();
+            setTimeout(renderSocials, 3000);
+            
+            // 1. INJECT LEAGUE LOGO (Smart Lookup)
+            if (IMAGE_MAP.leagues) {
+                const slug = (PAGE_FILTER || "").toLowerCase().replace(/[^a-z0-9]/g, '');
+                let imgUrl = IMAGE_MAP.leagues[PAGE_FILTER]; // Exact
+                if (!imgUrl) { // Fuzzy
+                    for (let key in IMAGE_MAP.leagues) {
+                        if (key.toLowerCase().replace(/[^a-z0-9]/g, '') === slug) { imgUrl = IMAGE_MAP.leagues[key]; break; }
+                    }
+                }
+                if (imgUrl) {
+                    const iconSpan = document.getElementById('upcoming-logo-container');
+                    if (iconSpan) {
+                        iconSpan.innerHTML = `<img src="${imgUrl}" alt="${PAGE_FILTER}" style="width:28px; height:28px; object-fit:contain; margin-right:6px;">`;
+                    }
+                }
+            }
+            
+            loadMatches();
+            
+            // 2. MOBILE MENU & BACK TO TOP
+            const ham = document.querySelector('.hamburger');
+            if(ham) ham.onclick = () => document.getElementById('mobileMenu').classList.toggle('active');
+            
+            window.addEventListener('scroll', () => {
+                const btn = document.getElementById('backToTop');
+                if(window.scrollY > 300) btn.classList.add('show');
+                else btn.classList.remove('show');
+            });
+        });
+
+        // ... (keep window scroll listener) ...
+
+        function resolveLeagueData(match) {
+            const hRaw = match.home_team || "";
+            const hSlug = slugify(hRaw);
+            const aSlug = slugify(match.away_team);
+
+            // 1. Strict Map Check (Both Teams must match the league)
+            if (TEAM_TO_LEAGUE && TEAM_TO_LEAGUE[hSlug] && TEAM_TO_LEAGUE[aSlug] && TEAM_TO_LEAGUE[hSlug] === TEAM_TO_LEAGUE[aSlug]) {
+                return { name: TEAM_TO_LEAGUE[hSlug], source: "Map" };
+            }
+            // 2. Map Fallback (Home Team only)
+            if (TEAM_TO_LEAGUE && TEAM_TO_LEAGUE[hSlug]) {
+                 return { name: TEAM_TO_LEAGUE[hSlug], source: "MapHome" };
+            }
+
+            // 3. Prefix Rule (The (:) logic)
+            // If home team is like "NFL: Patriots", use "NFL"
+            if (hRaw.includes(':')) {
+                const parts = hRaw.split(':');
+                const candidate = parts[0].trim();
+                // Basic validation to ensure it's a league/sport name
+                if (candidate.length > 1 && candidate.length < 25) {
+                    return { name: candidate, source: "Split" };
+                }
+            }
+
+            // 4. API Fallback with Name Correction
+            let apiName = (match.league || match.sport || "Other").trim();
+            const lowerApi = apiName.toLowerCase().replace(/\s/g, '');
+            // Fix "ICEHOCKEY" -> "Ice Hockey"
+            if(NAME_FIXES[lowerApi]) apiName = NAME_FIXES[lowerApi];
+            
+            return { name: apiName, source: "API" };
+        }
+
+        async function loadMatches() {
+            try {
+                const loadingEl = document.getElementById('loading-msg');
+                if(!API_URL || API_URL.includes("{{")) {
+                    if(loadingEl) loadingEl.innerText = "Error: API URL not configured.";
+                    return;
+                }
+
+                const res = await fetch(`${API_URL}?country=${TARGET_COUNTRY.toLowerCase()}`);
+                if (!res.ok) {
+                    if(loadingEl) loadingEl.innerText = "Error loading matches.";
+                    return;
+                }
+                const data = await res.json();
+                
+                const matches = [];
+                const len = data.matches.length;
+                
+                // CRITICAL FIX: Safe Lowercase Comparison
+                const filterLower = (PAGE_FILTER || "").trim().toLowerCase();
+
+                for(let i=0; i<len; i++) {
+                    const m = data.matches[i];
+                    if((m.home_team === 'TBA' || !m.home_team) && (m.away_team === 'TBA' || !m.away_team)) continue;
+                    
+                    if (!m.startTimeUnix && m.timestamp) m.startTimeUnix = new Date(m.timestamp).getTime();
+
+                    const resolved = resolveLeagueData(m);
+                    const mLeague = (m.league || "").toLowerCase();
+                    const mSport = (m.sport || "").toLowerCase();
+                    const resolvedLower = resolved.name.toLowerCase();
+
+                    // CHECK 1: Exact Name Match
+                    let matchFound = resolvedLower === filterLower;
+
+                    // CHECK 2: Fuzzy Containment (e.g. "NBA" inside "NBA Preseason")
+                    if (!matchFound && filterLower.length > 2) {
+                        if (resolvedLower.includes(filterLower) || mLeague.includes(filterLower) || mSport.includes(filterLower)) {
+                            matchFound = true;
+                        }
+                    }
+
+                    if (matchFound) {
+                        const homeSlug = slugify(m.home_team);
+                        const awaySlug = slugify(m.away_team);
+                        matches.push({
+                            ...m,
+                            displayHome: escapeHtml(getCleanTeamName(m.home_team, homeSlug, resolved.name)),
+                            displayAway: escapeHtml(getCleanTeamName(m.away_team, awaySlug, resolved.name)),
+                            finalLeague: resolved.name
+                        });
+                    }
+                }
+                renderApp(matches);
+            } catch(e) { 
+                console.error(e); 
+                const loadingEl = document.getElementById('loading-msg');
+                if(loadingEl) loadingEl.innerText = "Failed to load schedule.";
+            }
+        }
+
+        function renderApp(matches) {
+            const skel = document.getElementById('league-skeleton');
+            if(skel) skel.style.display = 'none';
+            const liveList = document.getElementById('live-list');
+            const schedList = document.getElementById('schedule-list');
+            const liveSec = document.getElementById('live-section');
+
+            const liveFrag = document.createDocumentFragment();
+            const schedFrag = document.createDocumentFragment();
+            let liveCount = 0;
+
+            // 1. Process Live Matches (Sort by Viewers High -> Low)
+            matches.filter(m => m.is_live)
+                   .sort((a,b) => (b.live_viewers || 0) - (a.live_viewers || 0))
+                   .forEach(m => {
+                       liveFrag.appendChild(createRow(m));
+                       liveCount++;
+                   });
+
+            // 2. Process Upcoming Matches (Sort by Time Soon -> Later)
+            matches.filter(m => !m.is_live)
+                   .sort((a,b) => a.startTimeUnix - b.startTimeUnix)
+                   .forEach(m => {
+                       schedFrag.appendChild(createRow(m));
+                   });
+
+            if (liveCount > 0) {
+                liveList.innerHTML = '';
+                liveList.appendChild(liveFrag);
+                liveSec.style.display = 'block';
+            }
+
+            schedList.innerHTML = '';
+            if (schedFrag.childElementCount > 0) {
+                schedList.appendChild(schedFrag);
+            } else {
+                schedList.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No upcoming ${PAGE_FILTER} matches scheduled.</div>`;
+            }
+            
+            // Generate Schema
+            if(window.generateDynamicSchema) generateDynamicSchema(matches.filter(m=>m.is_live), matches.filter(m=>!m.is_live));
+        }
+
+        function createRow(m) {
+            const div = document.createElement('div');
+            div.className = m.is_live ? 'match-row live' : 'match-row';
+            
+            let timeCol;
+            if (m.is_live) {
+                timeCol = `<span class="live-txt">LIVE</span><span class="time-sub">${m.status_text || "Now"}</span>`;
+            } else { 
+                const ft = formatMatchTime(m.startTimeUnix);
+                timeCol = `<span class="time-main">${ft.time}</span><span class="time-sub">${ft.date}</span>`; 
+            }
+
+            // LOGO LOGIC
+            const getLogo = (name) => {
+                if (IMAGE_MAP.teams && IMAGE_MAP.teams[name]) {
+                    const p = IMAGE_MAP.teams[name];
+                    const full = p.startsWith('/') ? p : '/' + p;
+                    return `<div class="logo-box"><img src="${full}" class="t-img" alt="${name}" loading="lazy" width="20" height="20"></div>`;
+                }
+                const c = ['#e53935','#d81b60','#8e24aa','#5e35b1','#3949ab','#1e88e5','#039be5','#00897b','#43a047','#7cb342','#c0ca33','#fdd835','#fb8c00'][(name.charCodeAt(0)||0)%13];
+                return `<div class="logo-box"><span class="t-logo" style="background:${c}">${name.charAt(0)}</span></div>`;
+            };
+
+            let teamsHtml = '';
+            const isSingle = (m.displayAway === 'TBA');
+            if (isSingle) {
+                teamsHtml = `<div class="team-name">${getLogo(m.displayHome)} ${m.displayHome}</div>`;
+            } else {
+                teamsHtml += `<div class="team-name">${getLogo(m.displayHome)} ${m.displayHome}</div>`;
+                teamsHtml += `<div class="team-name">${getLogo(m.displayAway)} ${m.displayAway}</div>`;
+            }
+
+            let metaHtml = '';
+            if (m.is_live) {
+                const v = m.live_viewers || 0;
+                let vText = v > 5000 ? `👀 ${(v/1000).toFixed(1)}k 🔥` : (v >= 1000 ? `👀 ${(v/1000).toFixed(1)}k 📈` : "⚡ Stable");
+                metaHtml = `<div class="meta-top">${vText}</div>`;
+            } else {
+                 metaHtml = `<div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">${m.status_text}</span></div>`;
+            }
+
+            // SMART TAG LOGIC (Unified with Master)
+            let tagText = m.finalLeague;
+            
+            if (!m.is_live) {
+                const filterLower = (PAGE_FILTER || "").toLowerCase();
+                const matchLeagueLower = m.finalLeague.toLowerCase();
+                // If match league matches current page filter, show Sport instead
+                if (matchLeagueLower === filterLower || matchLeagueLower.includes(filterLower)) {
+                    let rawSport = (m.sport || "General").trim();
+                    let sportKey = rawSport.toLowerCase().replace(/\s/g, '');
+                    tagText = NAME_FIXES[sportKey] ? NAME_FIXES[sportKey] : rawSport;
+                }
+            } // <--- THIS WAS MISSING!
+
+            let actionHtml = '';
+            const infoLink = `${SITE_DOMAIN}/watch/?${PARAM_INFO}=${m.id}`;
+            // FIXED: Added SVG Icon to Copy Button
+            const copyBtn = `<button class="btn-copy-link" onclick="copyText('${infoLink}')" style="background:none;border:none;color:var(--match-row-btn-copy-link-color, #64748b);font-size:0.65rem;font-weight:700;cursor:pointer;margin-top:5px;display:flex;align-items:center;gap:4px;justify-content:center;"><svg viewBox="0 0 24 24" style="width:12px;height:12px;fill:currentColor;"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button>`;
+
+            if (m.is_live) {
+                const liveLink = `${SITE_DOMAIN}/watch/?${PARAM_LIVE}=${m.id}`;
+                actionHtml = `<button onclick="window.location.href='${liveLink}'" class="btn-watch">{{TEXT_WATCH_BTN}} <span class="hd-badge">{{TEXT_HD_BADGE}}</span></button>`;
+            } else {
+                const start = m.startTimeUnix || Date.now();
+                if ((start - Date.now()) / 60000 <= 30) actionHtml = `<button onclick="window.location.href='${infoLink}'" class="btn-watch">{{TEXT_WATCH_BTN}} <span class="hd-badge">{{TEXT_HD_BADGE}}</span></button>` + copyBtn;
+                else actionHtml = `<button onclick="setNotify(this)" class="btn-notify" style="background:var(--match-row-btn-notify-bg, transparent);border:1px solid var(--match-row-btn-notify-border, #333);color:var(--match-row-btn-notify-text, #999);padding:4px 8px;border-radius:4px;font-size:0.65rem;width:100%;font-weight:700;">🔔 Notify</button>` + copyBtn;
+            }
+            
+            div.innerHTML = `<div class="col-time">${timeCol}</div><div class="teams-wrapper"><div class="league-tag">${tagText.toUpperCase()}</div>${teamsHtml}</div><div class="col-meta">${metaHtml}</div><div class="col-action">${actionHtml}</div>`;
+            return div;
+        }
+
+        // --- UTILS ---
+        function slugify(text) { return (text || "").toString().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/^-+|-+$/g, ''); }
+        function unslugify(slug) { return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '); }
+        function escapeHtml(text) { if (!text) return text; return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"); }
+        function copyText(text) { navigator.clipboard.writeText(text); const t = document.createElement('div'); t.className = 'copy-toast'; t.innerText = 'Link copied ✓'; document.body.appendChild(t); setTimeout(() => t.remove(), 1600); }
+        function highlightActiveMenu() { const path = window.location.pathname; document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { if(link.getAttribute('href') === path) link.classList.add('active'); }); }
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
+        function setNotify(btn) { btn.style.borderColor = "#22c55e"; btn.style.color = "#fff"; btn.style.background = "#22c55e"; btn.innerText = "✓ Set"; btn.disabled = true; }
+
+        function getCleanTeamName(rawName, slug, resolvedLeague) {
+            if (!rawName || rawName === "TBA" || slug === "tba") return "TBA";
+            if (TEAM_TO_LEAGUE && TEAM_TO_LEAGUE[slug]) return unslugify(slug);
+            let clean = rawName;
+            if (resolvedLeague) {
+                try {
+                    const safeLeague = resolvedLeague.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp(`^${safeLeague}:\\s*`, 'i');
+                    clean = clean.replace(regex, '');
+                } catch(e) {}
+            }
+            return clean.replace(/^(NHL|NBA|NFL|MLB|UFC):\s*/i, '').trim();
+        }
+
+        function formatMatchTime(unix) {
+            if (!unix || isNaN(unix)) return { time: "--:--", date: "Unknown" };
+            const isUK = (typeof TARGET_COUNTRY !== 'undefined' && TARGET_COUNTRY === 'UK');
+            const timeZone = isUK ? 'Europe/London' : 'America/New_York';
+            const suffix = isUK ? ' GMT' : ' ET';
+            try {
+                const d = new Date(unix);
+                const t = new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: '2-digit', hour12: true, timeZone}).format(d);
+                const dt = new Intl.DateTimeFormat('en-US', {month: 'short', day: 'numeric', timeZone}).format(d);
+                return { time: t + suffix, date: dt };
+            } catch (e) { return { time: "--:--", date: "Invalid" }; }
+        }
+
+        function renderSocials() {
+            const currentSlug = window.location.pathname.replace(/\//g, '');
+            if(SHARE_CONFIG.excluded.includes(currentSlug)) return;
+            
+            // FIX: Use window.location.href instead of SITE_DOMAIN
+            const makeUrl = (p) => {
+                const u = encodeURIComponent(window.location.href);
+                if(p==='telegram') return `https://t.me/share/url?url=${u}`;
+                if(p==='whatsapp') return `https://api.whatsapp.com/send?text=${u}`;
+                if(p==='reddit') return `https://www.reddit.com/submit?url=${u}`;
+                if(p==='twitter') return `https://twitter.com/intent/tweet?url=${u}`;
+                return null;
+            };
+
+            const icons = { 
+                telegram: '<svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.28L19.84 4c.75-.28 1.4.52 1.16 1.76l-2.8 13.2c-.2.9-1.09.9-1.8.6l-5.45-4.06-2.6 2.5c-.3.3-.55.55-1.1.55l.45-3.6z"/></svg>', 
+                whatsapp: '<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm4.43-6.03c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3C4.33 8.6 3.5 9.2 3.5 10.38c0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.1.15 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>', 
+                reddit: '<svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.34.34 0 0 1 .414-.261l2.975.542a1.25 1.25 0 0 1 .12-.052zM10.35 12c.759 0 1.374.615 1.374 1.375s-.615 1.375-1.374 1.375c-.76 0-1.375-.615-1.375-1.375S9.59 12 10.35 12zm3.3 4.87c-2.034 0-3.018-.916-3.018-.916s.984.916 3.018.916 3.018-.916 3.018-.916-.984.916-3.018.916zm.9-2.87c-.76 0-1.374-.615-1.374-1.375s.615-1.375 1.374-1.375c.759 0 1.374.615 1.374 1.375s-.615 1.375-1.374 1.375z"/></svg>', 
+                twitter: '<svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>', 
+                copy: '<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>' 
+            };
+
+            let html = '';
+            ['telegram', 'whatsapp', 'reddit', 'twitter', 'copy'].forEach(p => {
+                const count = SHARE_CONFIG.counts[p] ? ((n)=>(n>=1000?(n/1000).toFixed(1)+'k':n))(SHARE_CONFIG.counts[p]) : '';
+                
+                // FIX: Use window.location.href for copy action
+                const onclick = p === 'copy' ? `copyText(window.location.href)` : `window.open('${makeUrl(p)}', '_blank')`;
+                
+                html += `<div class="social-btn ${p}" onclick="${onclick}">${icons[p]}<span class="s-count">${count}</span></div>`;
+            });
+            
+            if(document.getElementById('socialSidebar')) document.getElementById('socialSidebar').innerHTML = html;
+            if(document.getElementById('mobileFooter')) document.getElementById('mobileFooter').innerHTML = html;
+        }
+
+        function generateDynamicSchema(liveList, upcomingList) {
+            const now = Date.now();
+            const existing = document.getElementById('dynamic-schema-script');
+            if (existing) existing.remove();
+            
+            // Limit to top 20 events for SEO performance
+            const allItems = [...liveList, ...upcomingList].slice(0, 20);
+            if (allItems.length === 0) return;
+
+            const mainImage = (document.querySelector('meta[property="og:image"]') || {}).content || `${SITE_DOMAIN}/assets/logo.png`;
+            
+            // LOGIC: Define Individual Sports (Person) vs Team Sports
+            const INDIVIDUAL_SPORTS = ['ufc', 'mma', 'boxing', 'tennis', 'golf', 'f1', 'motorsport', 'fighting', 'wwe', 'aew'];
+
+            const listItems = allItems.map((m, index) => {
+                const isLive = m.is_live;
+                
+                // 1. Detect Type (Person vs SportsTeam)
+                const leagueLower = (m.finalLeague || "").toLowerCase();
+                const isIndividual = INDIVIDUAL_SPORTS.some(s => leagueLower.includes(s));
+                const entityType = isIndividual ? "Person" : "SportsTeam";
+
+                // 2. Detect Single vs Double (Check TBA)
+                const isDouble = (m.displayAway && m.displayAway !== 'TBA');
+
+                // 3. Detect Logos (Rule: Only use if BOTH are present)
+                let hLogo = null, aLogo = null;
+                if (IMAGE_MAP.teams) {
+                    const hL = IMAGE_MAP.teams[m.displayHome];
+                    const aL = IMAGE_MAP.teams[m.displayAway];
+                    // Only apply if both exist and are valid URLs
+                    if (hL && aL) {
+                        hLogo = hL.startsWith('http') ? hL : SITE_DOMAIN + (hL.startsWith('/')?'':'/') + hL;
+                        aLogo = aL.startsWith('http') ? aL : SITE_DOMAIN + (aL.startsWith('/')?'':'/') + aL;
+                    }
+                }
+
+                // 4. Construct Entities
+                const homeEntity = { "@type": entityType, "name": m.displayHome };
+                if (hLogo) homeEntity.image = hLogo;
+
+                const eventName = isDouble ? `${m.displayHome} vs ${m.displayAway}` : m.displayHome;
+
+                // 5. Build Event Schema
+                const schemaUrl = `${SITE_DOMAIN}/watch/?${PARAM_INFO}=${m.id}`;
+                const schemaItem = {
+                    "@type": "SportsEvent",
+                    "startDate": new Date(m.startTimeUnix).toISOString(),
+                    "eventStatus": isLive ? "https://schema.org/EventLive" : "https://schema.org/EventScheduled",
+                    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                    "url": schemaUrl,
+                    "image": [ mainImage ], // Main event image (fallback to site logo)
+                    "name": eventName,
+                    "description": `Watch ${eventName} live stream. ${m.finalLeague}.`,
+                    "organizer": { "@id": `${SITE_DOMAIN}/#organization` },
+                    "offers": { 
+                        "@type": "Offer", 
+                        "price": "0", 
+                        "priceCurrency": "USD", 
+                        "availability": isLive ? "https://schema.org/InStock" : "https://schema.org/PreOrder", 
+                        "url": schemaUrl 
+                    },
+                    "homeTeam": homeEntity
+                };
+
+                // Add Away Team only if Double Match
+                if (isDouble) {
+                    const awayEntity = { "@type": entityType, "name": m.displayAway };
+                    if (aLogo) awayEntity.image = aLogo;
+                    schemaItem.awayTeam = awayEntity;
+                }
+
+                // Add Sport specification
+                if (m.finalLeague) {
+                    schemaItem.sport = m.finalLeague;
+                }
+
+                return { "@type": "ListItem", "position": index + 1, "item": schemaItem };
+            });
+
+            const schema = { 
+                "@context": "https://schema.org", 
+                "@type": "ItemList", 
+                "@id": `${window.location.href}#events`, 
+                "itemListElement": listItems 
+            };
+            
+            const script = document.createElement('script'); 
+            script.id = 'dynamic-schema-script'; 
+            script.type = 'application/ld+json'; 
+            script.textContent = JSON.stringify(schema); 
+            document.head.appendChild(script);
+        }
+    </script>
+</body>
+</html>

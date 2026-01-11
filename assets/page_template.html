@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO & METADATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{META_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    {{LOGO_PRELOAD}}
+    
+    <!-- SCHEMA -->
+    {{SCHEMA_BLOCK}}
+    
+    <style>html { scroll-behavior: smooth; }</style>
+
+    <style>
+        :root {
+            /* --- DYNAMIC THEME VARIABLES --- */
+            --brand-primary: {{THEME_BRAND_PRIMARY}};
+            --bg-body: {{THEME_BG_BODY}};
+            --bg-panel: {{THEME_BG_PANEL}};
+            --text-main: {{THEME_TEXT_MAIN}};
+            --text-muted: {{THEME_TEXT_MUTED}};
+            --border: {{THEME_BORDER_COLOR}};
+            
+            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
+            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
+            --base-font-size: {{THEME_BASE_FONT_SIZE}}; 
+            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}}; 
+            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}}; 
+
+            /* HEADER */
+            --header-bg: {{THEME_HEADER_BG}};
+            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
+            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
+            --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
+            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
+            --logo-text-p1-color: {{THEME_LOGO_P1_COLOR}};
+            --logo-text-p2-color: {{THEME_LOGO_P2_COLOR}};
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+        --sec-border-leagues: {{THEME_SEC_BORDER_LEAGUES}};
+
+            /* STATIC PAGE SPECIFIC */
+            --static-h1-color: {{THEME_STATIC_H1_COLOR}};
+
+            /* ARTICLE STYLING */
+            --article-bg: {{THEME_ARTICLE_BG}};
+            --article-text: {{THEME_ARTICLE_TEXT}};
+            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
+            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
+            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
+            --article-h2-color: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-h3-color: {{THEME_ARTICLE_H3_COLOR}};
+            --article-h3-border: {{THEME_ARTICLE_H3_BORDER}};
+            --article-h4-color: {{THEME_ARTICLE_H4_COLOR}};
+            --article-h4-border: {{THEME_ARTICLE_H4_BORDER}};
+
+            /* FOOTER */
+         --footer-text-align: {{THEME_FOOTER_TEXT_ALIGN_DESKTOP}};
+            --footer-bg-start: {{THEME_FOOTER_BG_START}};
+            --footer-bg-end: {{THEME_FOOTER_BG_END}};
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
+            --footer-link-color: {{THEME_FOOTER_LINK_COLOR}};
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
+            --footer-desc-color: {{THEME_FOOTER_DESC_COLOR}};
+        --static-h1-border: {{THEME_STATIC_H1_BORDER}};
+            
+            /* FOOTER LEAGUE CARDS */
+            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
+            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
+            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
+            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
+            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
+            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
+
+            /* UTILITY */
+            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
+            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
+            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
+            --back-to-top-radius: {{THEME_BACK_TO_TOP_RADIUS}};
+            --back-to-top-size: {{THEME_BACK_TO_TOP_SIZE}};
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; line-height: var(--base-line-height); }
+        a { text-decoration: none; color: inherit; transition: 0.2s; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: var(--bg-body); }
+        body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 4px; }
+
+        /* HEADER */
+        header { 
+            background: var(--header-bg); 
+            backdrop-filter: blur(10px); 
+            border-bottom: var(--header-border-bottom); 
+            height: 60px; width: 100%; position: relative; z-index: 100; 
+        }
+        @media (min-width: 900px) { header { position: fixed; top: 0; } body { padding-top: 60px; } }
+
+        .header-container { 
+            max-width: {{THEME_HEADER_MAX_WIDTH}};
+            margin: 0 auto; height: 100%; padding: 0 15px; 
+            display: flex; align-items: center; position: relative;
+        }
+
+        /* LAYOUT LOGIC (Standard/Inverted/Center) */
+        .h-layout-standard .header-container { justify-content: space-between; }
+        .h-layout-standard .logo-link { order: 1; }
+        .h-layout-standard .nav-links { order: 2; }
+        .h-layout-standard .hamburger { order: 3; display: none; }
+
+        .h-layout-inverted .header-container { justify-content: space-between; }
+        .h-layout-inverted .logo-link { order: 2; }
+        .h-layout-inverted .nav-links { order: 1; }
+        .h-layout-inverted .hamburger { order: 0; display: none; }
+
+        .h-layout-center .header-container { justify-content: center; }
+        .h-layout-center .logo-link { margin: 0 auto; }
+        .h-layout-center .nav-links { display: none !important; }
+        .h-layout-center .hamburger { display: block !important; position: absolute; top: 50%; transform: translateY(-50%); font-size: 1.6rem; }
+        .h-layout-center.h-icon-left .hamburger { left: 15px; }
+        .h-layout-center.h-icon-right .hamburger { right: 15px; }
+
+        .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; }
+        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; line-height: 1; }
+        .logo-text span { color: var(--logo-text-p2-color); }
+        .logo-text { color: var(--logo-text-p1-color); }
+        
+        .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
+        .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        .nav-links a:hover { color: var(--header-link-hover-color); }
+        .nav-links a.active { color: var(--header-link-active-color); border-bottom-color: var(--header-link-active-color); }
+        .nav-links a.highlighted { color: var(--header-highlight-color) !important; border-bottom-color: var(--header-highlight-color) !important; }
+        .nav-links a.highlighted:hover { color: var(--header-highlight-hover) !important; border-bottom-color: var(--header-highlight-hover) !important; }
+        
+        .hamburger { display: block; font-size: 1.4rem; color: var(--header-text-color); background: none; cursor: pointer; }
+        .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); border-bottom: var(--header-border-bottom); display: none; flex-direction: column; z-index: 99; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
+        .mobile-menu a:hover { background: rgba(255,255,255,0.05); color: var(--header-link-hover-color); }
+
+        @media (min-width: 900px) { 
+            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: flex; } 
+            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: none; } 
+        }
+        @media (max-width: 899px) {
+            .h-layout-standard .header-container, .h-layout-inverted .header-container { justify-content: space-between; }
+            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: none; }
+            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: block; }
+            .h-layout-standard .logo-link { order: 1; } .h-layout-standard .hamburger { order: 2; }
+            .h-layout-inverted .logo-link { order: 2; } .h-layout-inverted .hamburger { order: 1; }
+        }
+
+        /* MAIN CONTENT & H1 */
+        .container { max-width: var(--container-max-width); margin: 0 auto; padding: 40px 15px; min-height: 60vh; }
+        
+        .static-h1 {
+            color: var(--static-h1-color);
+    font-family: var(--font-family-headings);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-bottom: var(--static-h1-border); /* <--- Fixed to use dynamic variable */
+    text-align: {{H1_ALIGN}};               /* <--- Pre-adding for Feature #5 */
+    padding-bottom: 20px;
+        }
+
+        .seo-article { 
+            background: var(--article-bg); 
+            color: var(--article-text); 
+            line-height: var(--article-line-height); 
+            padding: 20px 0; /* No side padding for clean look on static pages */
+        }
+        .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
+        .seo-article h3 { color: var(--article-h3-color); border-bottom: var(--article-h3-border); font-size: 1.25rem; margin-top: 25px; }
+        .seo-article h4 { color: var(--article-h4-color); border-bottom: var(--article-h4-border); font-size: 1.1rem; margin-top: 20px; }
+        .seo-article p { margin-bottom: 15px; }
+        .seo-article a { color: var(--article-link); text-decoration: underline; }
+        .seo-article ul, .seo-article ol { margin-left: 20px; margin-bottom: 15px; list-style: disc; }
+        .seo-article li { margin-bottom: 5px; }
+        .seo-article li::marker { color: var(--article-bullet); }
+
+        /* FOOTER LEAGUES */
+        .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: var(--sec-border-leagues); }
+        .sec-title { font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 10px; text-transform: uppercase; margin: 0; font-family: var(--font-family-headings); }
+        .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
+        .league-card { background: var(--league-card-bg); border: var(--league-card-border); color: var(--league-card-text); border-radius: var(--league-card-radius); padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: var(--league-card-hover-border); background: var(--league-card-hover-bg); color: var(--league-card-hover-text); transform: translateY(-2px); }
+        .league-card span { font-size: 0.8rem; font-weight: 700; color: inherit; overflow: hidden; text-overflow: ellipsis; }
+        .l-icon { font-size: 1.1rem; }
+
+        /* FOOTER */
+        /* FOOTER LAYOUT */
+        footer { 
+            background: linear-gradient(180deg, var(--footer-bg-start) 0%, var(--footer-bg-end) 100%); 
+            border-top: var(--footer-border-top); 
+            padding: 60px 20px 30px 20px; 
+            margin-top: 60px; 
+        }
+
+        /* Base Grid (Mobile Default) */
+        .footer-grid { 
+            width: 100%; 
+            max-width: var(--container-max-width); 
+            margin: 0 auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 40px; 
+            text-align: center; /* Center on mobile for pro look */
+        }
+
+        /* DESKTOP LAYOUTS */
+        @media(min-width: 768px) { 
+            /* 2 COLUMNS: Extreme Left & Extreme Right */
+            .footer-grid.cols-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; /* Pushes items to edges */
+                align-items: flex-start;
+                text-align: left; 
+                flex-wrap: wrap; /* Allows 3rd item to wrap if present */
+            }
+            /* Force the 2nd column to align text to the right */
+            .footer-grid.cols-2 > div:nth-child(2) {
+                text-align: right;
+            }
+            /* If a 3rd element exists in 2-col mode, center it below */
+            .footer-grid.cols-2 > div:nth-child(3) {
+                width: 100%;
+                text-align: center;
+                margin-top: 40px;
+                border-top: 1px solid rgba(255,255,255,0.1); /* Subtle separator */
+                padding-top: 20px;
+            }
+
+            /* 3 COLUMNS: Equal Widths */
+            .footer-grid.cols-3 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; /* Exactly 3 equal columns */
+                gap: 20px;
+                text-align: left;
+            }
+            /* Professional Alignment: Left | Center | Right */
+            .footer-grid.cols-3 > div:nth-child(1) { text-align: left; }
+            .footer-grid.cols-3 > div:nth-child(2) { text-align: center; }
+            .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
+        }
+
+        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
+        .f-desc { color: var(--footer-desc-color); 
+    font-size: 0.85rem; 
+    line-height: 1.6; 
+    max-width: 400px; 
+    margin: 15px 0 0 0; }
+        .f-links { display: flex; flex-direction: column; gap: 12px; }
+        .f-link { color: var(--footer-link-color); font-size: 0.9rem; font-weight: 500; transition: 0.2s; }
+        .f-link:hover { color: var(--footer-link-hover-color); transform: translateX(5px); }
+        .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
+        .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
+
+        .back-to-top { 
+            position: fixed; bottom: 80px; right: 20px; 
+            background: var(--back-to-top-bg); width: var(--back-to-top-size); height: var(--back-to-top-size); 
+            border-radius: var(--back-to-top-radius); display: flex; align-items: center; justify-content: center; 
+            color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; visibility: hidden; 
+            transition: 0.3s; z-index: 90; 
+            box-shadow: var(--back-to-top-shadow); 
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top svg { width: 24px; height: 24px; fill: var(--back-to-top-icon-color); }
+        @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
+
+        @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header class="{{HEADER_CLASSES}}">
+        <div class="header-container">
+            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
+            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
+            <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
+
+    <main class="container">
+        <!-- DYNAMIC H1 for Static Page -->
+        <h1 class="static-h1">{{H1_TITLE}}</h1>
+
+        <!-- Content -->
+        <div class="seo-article">{{ARTICLE_CONTENT}}</div>
+
+        <!-- Footer Leagues -->
+        <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
+            <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
+            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
+        </div>
+    </main>
+
+    <footer class="{{FOOTER_CLASSES}}">
+        <!-- Dynamic Grid injected by Python based on Admin slots -->
+        {{FOOTER_GRID_CONTENT}}
+        
+        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" onclick="window.scrollTo(0,0)">
+        <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if(window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
+        });
+        const path = window.location.pathname; 
+        document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { 
+            if(link.getAttribute('href') === path) link.classList.add('active'); 
+        });
+    </script>
+</body>
+</html>
