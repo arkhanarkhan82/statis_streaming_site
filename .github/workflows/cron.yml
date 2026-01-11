@@ -35,22 +35,19 @@ jobs:
           git config --global user.name "CronBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # 1. Add Generated HTML Pages
-          git add index.html
-          git add watch/index.html
-          # Force add any new directory in root (e.g. nba-streams/)
-          git add *-streams/index.html || true
+          # 1. Add all files
+          git add .
           
-          # 2. Add Assets (Logos & Image Map ONLY)
-          git add assets/logos/
-          git add assets/data/image_map.json
-          
-          # CRITICAL: We do NOT add assets/data/league_map.json
-          # This ensures the bot never overwrites your Admin Panel work.
-
+          # 2. Check if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
+            # 3. Commit locally
             git commit -m "Auto-Update: Match Data [Skip CI]"
+            
+            # 4. FIX: Rebase (Pull latest changes) before pushing
+            git pull --rebase
+            
+            # 5. Push
             git push
           fi
