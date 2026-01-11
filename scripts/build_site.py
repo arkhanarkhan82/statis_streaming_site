@@ -60,6 +60,39 @@ def build_menu_html(menu_items, section):
         elif section == 'footer_static':
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
+    # ... existing code for build_menu_html function ...
+
+def build_footer_grid(cfg):
+    t = cfg.get('theme', {})
+    s = cfg.get('site_settings', {})
+    m = cfg.get('menus', {})
+    cols = str(t.get('footer_columns', '2'))
+    
+    p1 = s.get('title_part_1', 'Stream')
+    p2 = s.get('title_part_2', 'East')
+    logo_html = f'<div class="logo-text">{p1}<span>{p2}</span></div>'
+    if s.get('logo_url'): logo_html = f'<img src="{s.get("logo_url")}" class="logo-img"> {logo_html}'
+    
+    brand_html = f'<div class="f-brand">{logo_html}</div>'
+    disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if t.get('footer_show_disclaimer', True) else ''
+    brand_disc_html = f'<div class="f-brand">{logo_html}{disc_html}</div>'
+    links_html = f'<div><div class="f-head">Quick Links</div><div class="f-links">{build_menu_html(m.get("footer_static", []), "footer_static")}</div></div>'
+    
+    slots = [t.get('footer_slot_1', 'brand_disclaimer'), t.get('footer_slot_2', 'menu'), t.get('footer_slot_3', 'empty')]
+    
+    def get_content(k):
+        if k == 'brand': return brand_html
+        if k == 'disclaimer': return disc_html
+        if k == 'brand_disclaimer': return brand_disc_html
+        if k == 'menu': return links_html
+        return '<div></div>'
+
+    html = f'<div class="footer-grid cols-{cols}">'
+    html += get_content(slots[0])
+    html += get_content(slots[1])
+    if cols == '3': html += get_content(slots[2])
+    html += '</div>'
+    return html
 
 # ==========================================
 # 3. THEME ENGINE
