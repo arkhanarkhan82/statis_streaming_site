@@ -1,8 +1,8 @@
 // ==========================================
 // 1. CONFIGURATION
 // ==========================================
-const REPO_OWNER = 'arkhan66648'; 
-const REPO_NAME = 'project1';     
+const REPO_OWNER = 'arkhanarkhan82'; 
+const REPO_NAME = 'statis_streaming_site';     
 const FILE_PATH = 'data/config.json';
 const LEAGUE_FILE_PATH = 'assets/data/league_map.json'; 
 const BRANCH = 'main';
