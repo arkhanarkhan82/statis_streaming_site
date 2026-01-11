@@ -89,8 +89,10 @@ def get_status_text(ts, is_live):
 
 def calculate_score(m):
     score = 0
-    l = m['league']
-    s = m['sport']
+    # FIX: Ensure strings to prevent NoneType error
+    l = str(m.get('league') or '')
+    s = str(m.get('sport') or '')
+    
     # Admin Boost
     boost_str = str(PRIORITY_SETTINGS.get('_BOOST', '')).lower()
     boost = [x.strip() for x in boost_str.split(',') if x.strip()]
@@ -217,21 +219,17 @@ def fetch_and_process():
         # Normalize Names
         home = m.get('home_team') or m.get('home')
         away = m.get('away_team') or m.get('away')
-        league = m.get('league') or m.get('category')
-        sport = m.get('category') or m.get('sport')
         
-        # Normalize Timestamp (FIX: Ensure int before passing to ID gen)
+        # FIX: Ensure League/Sport are strings (Defaults to "General")
+        league = str(m.get('league') or m.get('category') or "General")
+        sport = str(m.get('category') or m.get('sport') or "General")
+        
+        # Normalize Timestamp (Previous Fix included here for safety)
         raw_ts = m.get('date') or m.get('timestamp') or 0
         try:
-            # Handle cases where API returns string "17320..." or ISO string
-            if isinstance(raw_ts, str) and not raw_ts.isdigit():
-                # If ISO string or date string, force 0 or parse (fallback to 0 for safety)
-                ts_int = 0
-            else:
-                ts_int = int(raw_ts)
+            ts_int = 0 if (isinstance(raw_ts, str) and not raw_ts.isdigit()) else int(raw_ts)
         except:
             ts_int = 0
-            
         clean_ts = normalize_time(ts_int)
         
         # Simple ID Gen
@@ -297,8 +295,12 @@ def inject_homepage(matches):
     upcoming = [m for m in matches if not m['is_live']]
     
     if wildcard_active:
-        # Filter for Wildcard
-        wc_matches = [m for m in upcoming if wildcard_cat in m['league'].lower() or wildcard_cat in m['sport'].lower()]
+        # Filter for Wildcard (FIX: Added safe string handling)
+        wc_matches = [
+            m for m in upcoming 
+            if wildcard_cat in (m.get('league') or '').lower() 
+            or wildcard_cat in (m.get('sport') or '').lower()
+        ]
         title = THEME.get('text_wildcard_title') or f"{wildcard_cat.title()} Matches"
         # Full Schedule for Wildcard
         wildcard_html = render_container(wc_matches, title, '🔥', None)
@@ -403,7 +405,12 @@ def main():
         slug = slugify(key) + "-streams"
         path = f"{slug}/index.html"
         if os.path.exists(path):
-            l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
+            # FIX: Added safe string handling for league/sport
+            l_matches = [
+                m for m in matches 
+                if key.lower() in (m.get('league') or '').lower() 
+                or key.lower() in (m.get('sport') or '').lower()
+            ]
             
             # Separate Live/Upcoming
             l_live = [m for m in l_matches if m['is_live']]
