@@ -1060,7 +1060,9 @@
     "Burnley": "/assets/logos/streamed/burnley.webp",
     "Australia": "/assets/logos/streamed/australia.webp",
     "England": "/assets/logos/streamed/england.webp",
-    "Northern Knights": "/assets/logos/streamed/northern-knights.webp"
+    "Northern Knights": "/assets/logos/streamed/northern-knights.webp",
+    "FC Juarez": "/assets/logos/streamed/fc-juarez.webp",
+    "Guadalajara": "/assets/logos/streamed/guadalajara.webp"
   },
   "leagues": {
     "TFF 1. Lig": "/assets/logos/leagues/tff-1-lig.webp",
