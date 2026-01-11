@@ -37,13 +37,19 @@ NAME_FIXES = {
 # ==========================================
 def load_json(path):
     if os.path.exists(path):
-        try: with open(path, 'r', encoding='utf-8') as f: return json.load(f)
-        except: return {}
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except:
+            return {}
     return {}
 
 def save_json(path, data):
-    try: with open(path, 'w', encoding='utf-8') as f: json.dump(data, f, indent=2)
-    except: pass
+    try:
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+    except:
+        pass
 
 config = load_json(CONFIG_PATH)
 image_map = load_json(IMAGE_MAP_PATH)
