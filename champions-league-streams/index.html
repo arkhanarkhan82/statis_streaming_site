@@ -113,13 +113,13 @@
             --article-h2-border: #05c0e6;
             
             /* LEAGUE CARDS */
-            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
-            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
-            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
-            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
-            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
-            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
-            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-bg: #bb1b1b;
+            --league-card-border: 3px solid #11494a;
+            --league-card-text: #e1dbdb;
+            --league-card-radius: 18px;
+            --league-card-hover-bg: #347ba8;
+            --league-card-hover-border: 3px solid #ad0b0b;
+            --league-card-hover-text: #222020;
 
             /* UTILS */
             --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
@@ -245,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
+        .league-card { background: #bb1b1b; border: 3px solid #11494a; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: 3px solid #ad0b0b; background: #347ba8; color: #222020; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -276,7 +276,9 @@
     <main class="container">
         
         <!-- LIVE SECTION (Injected by master_engine.py) -->
-        <div id="live-list"></div>
+        <div id="live-list" style="display:none;">
+            <!-- Python replaces this with live rows -->
+        </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
@@ -287,32 +289,7 @@
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list"><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">EHF CHAMPIONS LEAGUE, WOMEN, GROUP A</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/borussia-dortmund.webp" class="t-img" alt="Borussia Dortmund" loading="lazy" width="20" height="20"></div> Borussia Dortmund</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#334155">T</span></div> Team Esbjerg</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=cd7c1433503587e835a050239524f1b0'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=cd7c1433503587e835a050239524f1b0')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">CHAMPIONS LEAGUE WOMEN</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/bvb-dortmund-w.webp" class="t-img" alt="BVB Dortmund W" loading="lazy" width="20" height="20"></div> BVB Dortmund W</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/esbjerg-w.webp" class="t-img" alt="Esbjerg W" loading="lazy" width="20" height="20"></div> Esbjerg W</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=c050e790d01d261aef6c3a5c77106489'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=c050e790d01d261aef6c3a5c77106489')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">EHF CHAMPIONS LEAGUE, WOMEN, GROUP B</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/rk-krim-ljubljana.webp" class="t-img" alt="RK Krim Ljubljana" loading="lazy" width="20" height="20"></div> RK Krim Ljubljana</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/sola.webp" class="t-img" alt="Sola" loading="lazy" width="20" height="20"></div> Sola</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=4aeebafeb894a1958e545954bd584f96'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=4aeebafeb894a1958e545954bd584f96')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">EHF CHAMPIONS LEAGUE, WOMEN, GROUP B</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/rk-podravka.webp" class="t-img" alt="RK Podravka" loading="lazy" width="20" height="20"></div> RK Podravka</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/brest-bretagne.webp" class="t-img" alt="Brest Bretagne" loading="lazy" width="20" height="20"></div> Brest Bretagne</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=df006b2e1f8797cc1315e69ce1e1ad4e'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=df006b2e1f8797cc1315e69ce1e1ad4e')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">02:55 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">CHAMPIONS LEAGUE WOMEN</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/odense-w.webp" class="t-img" alt="Odense W" loading="lazy" width="20" height="20"></div> Odense W</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/csm-bucuresti-w.webp" class="t-img" alt="CSM Bucuresti W" loading="lazy" width="20" height="20"></div> CSM Bucuresti W</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=7d91e47b2e81365cf12c771938345c7a'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=7d91e47b2e81365cf12c771938345c7a')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div></div>
+            <div id="schedule-list"></div>
         </div>
 
         <!-- ARTICLE -->

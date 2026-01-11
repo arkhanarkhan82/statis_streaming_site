@@ -113,13 +113,13 @@
             --article-h2-border: #05c0e6;
             
             /* LEAGUE CARDS */
-            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
-            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
-            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
-            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
-            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
-            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
-            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-bg: #bb1b1b;
+            --league-card-border: 3px solid #11494a;
+            --league-card-text: #e1dbdb;
+            --league-card-radius: 18px;
+            --league-card-hover-bg: #347ba8;
+            --league-card-hover-border: 3px solid #ad0b0b;
+            --league-card-hover-text: #222020;
 
             /* UTILS */
             --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
@@ -245,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
+        .league-card { background: #bb1b1b; border: 3px solid #11494a; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: 3px solid #ad0b0b; background: #347ba8; color: #222020; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -276,7 +276,9 @@
     <main class="container">
         
         <!-- LIVE SECTION (Injected by master_engine.py) -->
-        <div id="live-list"></div>
+        <div id="live-list" style="display:none;">
+            <!-- Python replaces this with live rows -->
+        </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
@@ -287,12 +289,7 @@
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list"><div class="match-row"><div class="col-time"><span class="time-main">12:00 AM</span><span class="time-sub">Jan 25</span></div><div class="teams-wrapper"><div class="league-tag">UFC 324</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#334155">G</span></div> Gaethje vs. Pimblett</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 13d</span></div></div><div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=71dac46f847ffa940a9823a240e02501')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div></div>
+            <div id="schedule-list"></div>
         </div>
 
         <!-- ARTICLE -->

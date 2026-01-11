@@ -113,13 +113,13 @@
             --article-h2-border: #05c0e6;
             
             /* LEAGUE CARDS */
-            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
-            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
-            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
-            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
-            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
-            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
-            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-bg: #bb1b1b;
+            --league-card-border: 3px solid #11494a;
+            --league-card-text: #e1dbdb;
+            --league-card-radius: 18px;
+            --league-card-hover-bg: #347ba8;
+            --league-card-hover-border: 3px solid #ad0b0b;
+            --league-card-hover-text: #222020;
 
             /* UTILS */
             --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
@@ -245,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
+        .league-card { background: #bb1b1b; border: 3px solid #11494a; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: 3px solid #ad0b0b; background: #347ba8; color: #222020; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -276,7 +276,9 @@
     <main class="container">
         
         <!-- LIVE SECTION (Injected by master_engine.py) -->
-        <div id="live-list"></div>
+        <div id="live-list" style="display:none;">
+            <!-- Python replaces this with live rows -->
+        </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
@@ -287,37 +289,7 @@
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list"><div class="match-row"><div class="col-time"><span class="time-main">07:00 PM</span><span class="time-sub">Jan 08</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/atletico-madrid.webp" class="t-img" alt="Atletico Madrid" loading="lazy" width="20" height="20"></div> Atletico Madrid</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/real-madrid.webp" class="t-img" alt="Real Madrid" loading="lazy" width="20" height="20"></div> Real Madrid</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=ba54448c839a35eeb64af73e0a0cbc93'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=ba54448c839a35eeb64af73e0a0cbc93')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/leganes.webp" class="t-img" alt="Leganes" loading="lazy" width="20" height="20"></div> Leganes</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/real-valladolid.webp" class="t-img" alt="Real Valladolid" loading="lazy" width="20" height="20"></div> Real Valladolid</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=0107aa27e603e266fb98d163dd82634d'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=0107aa27e603e266fb98d163dd82634d')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">01:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/rayo-vallecano.webp" class="t-img" alt="Rayo Vallecano" loading="lazy" width="20" height="20"></div> Rayo Vallecano</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/mallorca.webp" class="t-img" alt="Mallorca" loading="lazy" width="20" height="20"></div> Mallorca</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">Started</span></div></div><div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=6f844c9cdbec6b7333b61e1aa2816be1'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=6f844c9cdbec6b7333b61e1aa2816be1')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">07:00 PM</span><span class="time-sub">Jan 11</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/barcelona.webp" class="t-img" alt="Barcelona" loading="lazy" width="20" height="20"></div> Barcelona</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/real-madrid.webp" class="t-img" alt="Real Madrid" loading="lazy" width="20" height="20"></div> Real Madrid</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2h</span></div></div><div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=c90a1a4ea9933f54d709702f5b48cc7b')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">08:00 PM</span><span class="time-sub">Jan 12</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/sevilla.webp" class="t-img" alt="Sevilla" loading="lazy" width="20" height="20"></div> Sevilla</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/tsdb/celta-vigo.webp" class="t-img" alt="Celta Vigo" loading="lazy" width="20" height="20"></div> Celta Vigo</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div><div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=11a6df6609d563e411c42f18f825f222')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div><div class="match-row"><div class="col-time"><span class="time-main">08:00 PM</span><span class="time-sub">Jan 13</span></div><div class="teams-wrapper"><div class="league-tag">LA LIGA</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/real-sociedad.webp" class="t-img" alt="Real Sociedad" loading="lazy" width="20" height="20"></div> Real Sociedad</div><div class="team-name"><div class="logo-box"><img src="https://totalsportek.top/assets/logos/streamed/osasuna.webp" class="t-img" alt="Osasuna" loading="lazy" width="20" height="20"></div> Osasuna</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div><div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=d1d17d4024f66369445f35c6ad35ba14')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div></div></div>
+            <div id="schedule-list"></div>
         </div>
 
         <!-- ARTICLE -->
