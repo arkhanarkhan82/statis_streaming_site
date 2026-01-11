@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO & METADATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best site</title>
+    <meta name="description" content="Best meta">
+    
+    <meta name="theme-color" content="#050505">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://totalsportek.top/">
+    <meta property="og:site_name" content="StreamEast">
+    <meta property="og:title" content="Best site">
+    <meta property="og:description" content="Best meta">
+    <meta property="og:image" content="/assets/test-logo.webp">
+    
+    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
+    <link rel="canonical" href="https://totalsportek.top/">
+    <link rel="preload" as="image" href="/assets/test-logo.webp">
+    
+    
+    
+    <style>html { scroll-behavior: smooth; }</style>
+
+    <style>
+        :root {
+            /* THEME VARIABLES INJECTED BY BUILD_SITE.PY */
+            --brand-primary: #d00000;
+            --brand-dark: #8a0000;
+            --bg-body: #050505;
+            --bg-panel: #0f0f0f;
+            --text-main: #ffffff;
+            --text-muted: #888888;
+            --border: #222222;
+            --accent-gold: #ffd700;
+            
+            --font-family-base: system-ui, -apple-system, sans-serif;
+            --font-family-headings: 'Courier New', monospace;
+            --container-max-width: 950px; 
+            --header-max-width: 1000px;
+            --border-radius-base: 0px; 
+            --button-border-radius: 21px;
+            --hero-pill-radius: 8px;
+            
+            --header-bg: #050505;
+            --header-text-color: #aaaaaa;
+            --header-link-active-color: #ffffff;
+            --header-link-hover-color: #3e0a0a;
+            --header-highlight-color: #02ed12;
+            --header-border-bottom: 1px solid var(--border);
+            --logo-image-size: 0px;
+
+            --hero-h1-color: #ffffff;
+            --hero-intro-color: #999999;
+            --hero-pill-bg: #111111;
+            --hero-pill-text: #cccccc;
+            --hero-pill-hover-bg: #2a0a0a;
+            --hero-pill-hover-text: #ffffff;
+
+            --match-row-bg: #121212;
+            --match-row-border: #222222;
+            --match-row-live-border-left: 3px solid var(--brand-primary);
+            --match-row-live-bg-start: #1a0505;
+            --match-row-live-bg-end: #141414;
+            --match-row-hover-bg: #1a1a1a;
+            --match-row-hover-border: #444444;
+            --match-row-time-main-color: #888888;
+            --match-row-time-sub-color: ;
+            --match-row-live-text-color: #d00000;
+            --match-row-team-name-color: #ffffff;
+            
+            --match-row-btn-watch-bg: #d00000;
+            --match-row-btn-watch-text: #ffffff;
+            --match-row-hd-badge-bg: ;
+            --match-row-hd-badge-text: ;
+            --match-row-btn-notify-bg: ;
+            --match-row-btn-notify-border: ;
+            --match-row-btn-notify-text: ;
+            
+            --footer-bg-start: #0e0e0e;
+            --footer-bg-end: #050505;
+            --footer-border-top: ;
+            --footer-link-color: #94a3b8;
+            --footer-link-hover-color: ;
+            
+            --social-sidebar-bg: ;
+            --social-sidebar-border: ;
+            --social-btn-bg: ;
+            --social-btn-color: ;
+            --mobile-footer-bg: #0a0a0a;
+            --mobile-footer-border-top: ;
+            
+            --back-to-top-bg: #d00000;
+            --back-to-top-icon-color: #ffffff;
+            --sys-status-bg: rgba(79, 250, 5, 0.15);
+            --sys-status-border: #01fe12;
+            --sys-status-text: #039900;
+            --sys-status-dot-color: #00c73c;
+            --sys-status-radius: 0px;
+            
+            --section-logo-size: 30px;
+            --row-h-mob: 76px; --row-h-desk: 96px;
+        }
+
+        /* RESET & BASE */
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; padding-bottom: 80px; line-height: 1.5; }
+        a { text-decoration: none; color: inherit; transition: 0.2s; }
+        button { cursor: pointer; border: none; font-family: inherit; }
+        
+        /* HEADER */
+        header { background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: var(--header-border-bottom); height: 60px; width: 100%; position: relative; z-index: 100; }
+        @media (min-width: 900px) { header { position: fixed; top: 0; } body { padding-top: 60px; } }
+        .header-container { max-width: var(--header-max-width); margin: 0 auto; height: 100%; padding: 0 15px; display: flex; align-items: center; justify-content: space-between; position: relative; }
+        
+        .h-layout-standard .header-container { justify-content: space-between; }
+        .h-layout-standard .logo-link { order: 1; } .h-layout-standard .nav-links { order: 2; }
+        .h-layout-center .header-container { justify-content: center; } 
+        .h-layout-center .hamburger { display: block !important; position: absolute; top: 50%; transform: translateY(-50%); left: 15px; }
+
+        .logo-link { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; }
+        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; color: #ffffff; }
+        .logo-text span { color: #d00000; }
+        
+        .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
+        .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
+        .nav-links a:hover { color: var(--header-link-hover-color); }
+        .hamburger { display: block; font-size: 1.4rem; color: var(--header-text-color); background: none; }
+        @media (min-width: 900px) { .nav-links { display: flex; } .hamburger { display: none; } }
+        
+        .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); border-bottom: var(--header-border-bottom); display: none; flex-direction: column; z-index: 99; }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
+
+        /* HERO */
+        .hero-section { background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px 15px 15px; display: block; }
+        @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
+        .hero-inner { max-width: var(--container-max-width); margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
+        h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
+        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: 0 auto; margin-bottom: 20px; max-width: 800px; }
+        
+        .cat-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 10px 5px; width: 100%; scrollbar-width: none; justify-content: center; }
+        .cat-pill { background: var(--hero-pill-bg); border: 1px solid {{THEME_HERO_PILL_BORDER}}; padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
+        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: {{THEME_HERO_PILL_HOVER_BORDER}}; }
+
+        /* SECTIONS & MATCHES */
+        .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
+        .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+        .sec-title { font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 10px; text-transform: uppercase; margin: 0; font-family: var(--font-family-headings); }
+        .sec-logo { width: var(--section-logo-size); height: var(--section-logo-size); object-fit: contain; }
+        .sec-right-link { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); cursor: pointer; text-decoration: none; }
+        .sec-right-link:hover { color: var(--brand-primary); text-decoration: underline; }
+        
+        .match-row { display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; background: var(--match-row-bg); border: 1px solid var(--match-row-border); border-radius: var(--border-radius-base); padding: 10px 8px 5px 8px; margin-bottom: 8px; height: var(--row-h-mob); transition:0.2s; }
+        .match-row:hover { border-color: var(--match-row-hover-border); background: var(--match-row-hover-bg); transform: translateY(-2px); }
+        .match-row.live { border-left: var(--match-row-live-border-left); background: linear-gradient(90deg, var(--match-row-live-bg-start) 0%, var(--match-row-live-bg-end) 100%); }
+        @media (min-width: 768px) { .match-row { grid-template-columns: 80px 1fr 100px 110px; padding: 15px 20px 10px 20px; gap: 20px; height: var(--row-h-desk); } }
+
+        .col-time { text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .time-main { font-size: 0.75rem; font-weight: 700; color: var(--match-row-time-main-color); }
+        .time-sub { font-size: 0.6rem; color: var(--match-row-time-sub-color); }
+        .live-txt { color: var(--match-row-live-text-color); font-weight: 900; animation: blink 1.5s infinite; font-size: 0.65rem; }
+
+        .teams-wrapper { display: flex; flex-direction: column; gap: 3px; overflow: hidden; justify-content: center; height: 100%; }
+        .league-tag { font-size: 0.6rem; color: var(--match-row-league-tag-color); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .team-name { font-size: 0.75rem; font-weight: 600; color: var(--match-row-team-name-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 6px; }
+        .logo-box { width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 4px; }
+        .t-img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+        .t-logo { width: 100%; height: 100%; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #fff; }
+        @media (min-width: 768px) { .team-name { font-size: 0.95rem; } }
+
+        .col-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; justify-content: center; }
+        .meta-top { font-size: 0.7rem; font-weight: 700; color: var(--accent-gold); white-space: nowrap; }
+        .col-action { margin-left: auto; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
+
+        /* BUTTONS */
+        .btn-watch { background: var(--match-row-btn-watch-bg); color: var(--match-row-btn-watch-text); font-size: 0.65rem; font-weight: 800; padding: 6px 10px; border-radius: var(--button-border-radius); width: 100%; text-transform: uppercase; display:flex; align-items:center; justify-content:center; gap:5px; height: 26px; }
+        .hd-badge { background: var(--match-row-hd-badge-bg); padding: 1px 4px; border-radius: 3px; font-size: 0.55rem; color: var(--match-row-hd-badge-text); border: 1px solid #ffffff50; }
+        .btn-notify { background: var(--match-row-btn-notify-bg); border: 1px solid var(--match-row-btn-notify-border); color: var(--match-row-btn-notify-text); padding: 0 10px; width: 100%; height: 26px; border-radius: var(--button-border-radius); font-size: 0.65rem; font-weight: 700; display:flex; align-items:center; justify-content:center; }
+        .btn-notify.active { background: #22c55e; border-color: #22c55e; color: white; }
+        .btn-copy-link { background: none; border: none; color: var(--match-row-btn-copy-link-color); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: 0.2s; padding: 0; margin-top: 5px; }
+
+        /* ARTICLE & FOOTER */
+        .seo-article { background: var(--article-bg); color: var(--article-text); padding: 20px; border-radius: var(--border-radius-base); margin-top: 40px; }
+        .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
+        .seo-article a { color: var(--article-link); text-decoration: underline; }
+
+        footer { background: linear-gradient(180deg, var(--footer-bg-start) 0%, var(--footer-bg-end) 100%); border-top: var(--footer-border-top); padding: 60px 20px 30px 20px; margin-top: 60px; }
+        .footer-grid { width: 100%; max-width: var(--container-max-width); margin: 0 auto; }
+        
+        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status .dot { width: {{THEME_SYS_STATUS_DOT_SIZE}}; height: {{THEME_SYS_STATUS_DOT_SIZE}}; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        
+        /* Your existing CSS for social sidebar, back-to-top etc. here (reused from above) */
+        .back-to-top { position: fixed; bottom: 80px; right: 20px; background: var(--back-to-top-bg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; transition: 0.3s; z-index: 90; }
+        .back-to-top.show { opacity: 1; }
+    </style>
+</head>
+<body>
+    
+    <div id="socialSidebar" class="social-sidebar"></div>
+
+    <header class="{{HEADER_CLASSES}}">
+        <div class="header-container">
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></a>
+            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
+
+    <div class="hero-section">
+        <div class="hero-inner">
+            <div class="sys-status"><div class="dot"></div> System Status: Online</div>
+            <h1>No. #1 Streaming Website</h1>
+            <p class="entity-intro">Best meta</p>
+            <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
+        </div>
+    </div>
+
+    <main class="container {{MAIN_CONTAINER_CLASSES}}">
+        
+       <!-- 1. LIVE SECTION -->
+        <div id="live-list" class="match-list" style="display:none;"></div>
+        
+        <!-- 2. WILDCARD SECTION (Optional, engine needs update to support this specific ID if not present) -->
+        <!-- For now, keep wildcard logic or standard priority logic -->
+
+        <!-- 3. TOP UPCOMING -->
+        <div id="top-upcoming-container"></div>
+
+        <!-- 4. GROUPED SPORTS -->
+        <div id="grouped-container"></div>
+        
+        <div class="seo-article"><p>Are you tired of expensive cable subscriptions, blackouts, and aggressive pop-up ads? Welcome to Sportsurge, the premier destination for live sports broadcast links.</p>
+<p>Sportsurge V3 has evolved. We help fans across the USA watch their favorite matches without the hassle. Whether it is Sunday Night Football, the NBA Playoffs, or NCAA College Football, Sportsurge offers a clean, seamless, and high-definition experience tailored just for you.</p>
+<h2>Why Sportsurge is the #1 Choice in the USA</h2>
+<p>While other sites are filled with spam, Sportsurge focuses on quality. Here is why we are the top-ranked directory for live sports:</p>
+<h3>1. The "No Pop-up" Promise</h3>
+<p>We understand that nothing ruins a game faster than intrusive ads. Unlike our competitors, we do not use annoying pop-up ads on our main directory. Our interface is clean, user-focused, and designed to get you to the game instantly.</p>
+<h3>2. Comprehensive US Sports Coverage</h3>
+<p>We don't just cover sports; we dominate the American market.</p>
+<ul>
+<li><strong>Sportsurge NFL:</strong>&nbsp;Access reliable links for every regular-season game, the Playoffs, and the Super Bowl.</li>
+<li><strong>Sportsurge NBA:</strong>&nbsp;From the tip-off to the Finals, catch every dunk and three-pointer.</li>
+<li><strong>College Football (NCAA):</strong>&nbsp;Follow your Alma Mater. We provide extensive coverage for FBSI, SEC, Big 10, and all major college conferences.</li>
+<li><strong>UFC &amp; Boxing:</strong>&nbsp;Watch the biggest PPV fights without the $80 price tag.</li>
+</ul>
+<h3>3. HD Quality &amp; Stability</h3>
+<p>Enjoy high-definition broadcast links that adapt to your internet speed. Whether you are on 5G or Wi-Fi, our links are ranked by reliability to ensure minimal buffering during critical moments.</p>
+<h2>What We Offer: The Sportsurge Directory</h2>
+<h3>American Football (NFL &amp; NCAA)</h3>
+<p>The heart of our platform. View official Sportsurge NFL broadcast links. We cover Monday Night Football, Thursday Night Football, and the entire Sunday slate. Don't miss the College Football Playoffs.</p>
+<h3>Basketball (NBA &amp; WNBA)</h3>
+<p>Follow the action with Sportsurge NBA coverage. We provide real-time links for every team, ensuring you never miss a buzzer-beater.</p>
+<h3>Motorsports (F1 &amp; NASCAR)</h3>
+<p>From the F1 grid to the NASCAR tracks, we provide high-speed links for high-speed sports.</p>
+<h3>Combat Sports (MMA, UFC, Boxing)</h3>
+<p>Sportsurge Boxing and MMA links ensure you have a ringside seat for every main event.</p>
+<h3>Soccer (Premier League, MLS, UCL)</h3>
+<p>While we focus on the US, we love the beautiful game. Stream matches from the Premier League, La Liga, and the Champions League.</p>
+<h3>Global Sports (Tennis, Hockey, Cricket)</h3>
+<p>Yes, we cover the world too. Find links for NHL Hockey, Grand Slam Tennis, and major Cricket leagues like the IPL and Big Bash.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Is Sportsurge free?</h3>
+<p>Yes. Sportsurge is a completely free aggregator. We believe sports should be accessible to everyone without expensive monthly fees.</p>
+<h3>How does Sportsurge work?</h3>
+<p>Think of us as a search engine for sports. We do not host content. Instead, we find and index the best available broadcast links from around the internet and organize them into an easy-to-read schedule.</p>
+<h3>Can I watch on mobile?</h3>
+<p>Absolutely. Sportsurge is optimized for all devices, including iPhones, Android smartphones, tablets, and desktops.</p>
+<h2>Start Watching Today</h2>
+<p>Join the thousands of sports fans who trust Sportsurge V3 for their live streaming needs. Whether you are a die-hard NFL fan or a casual viewer, we are your ultimate destination.</p>
+<p><strong>Sportsurge &ndash; Where the game never stops.</strong></p></div>
+
+        <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
+            <div class="sec-head" style="border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:15px;"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
+            <div class="leagues-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:10px;"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏆</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏆</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏆</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🏆</span><span>UFC</span></a><a href="/premier-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Premier League</span></a><a href="/champions-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula-1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africa-cup-of-nations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/la-liga-streams/" class="league-card"><span class="l-icon">🏆</span><span>La Liga</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🏆</span><span>Tennis</span></a></div>
+        </div>
+
+    </main>
+
+    <footer class="{{FOOTER_CLASSES}}">
+        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
+        <div class="copyright" style="margin-top:40px; border-top:1px solid var(--border); padding-top:20px; text-align:center; font-size:0.75rem; color:var(--text-muted);">Copyright</div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" onclick="window.scrollTo(0,0)">↑</button>
+
+    <script>
+        // No match fetching logic here!
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if(window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
+        });
+        
+        function copyText(text) { navigator.clipboard.writeText(text); alert('Copied!'); }
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
+        
+        // Socials & Menu Highlight logic remains...
+    </script>
+</body>
+</html>
