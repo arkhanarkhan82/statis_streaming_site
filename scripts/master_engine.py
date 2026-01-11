@@ -342,6 +342,7 @@ def main():
         with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
     # 3. INJECT INTO WATCH (watch/index.html)
+    # 3. INJECT INTO WATCH (watch/index.html)
     if os.path.exists('watch/index.html'):
         with open('watch/index.html', 'r', encoding='utf-8') as f: w_html = f.read()
         min_matches = [{
@@ -351,24 +352,19 @@ def main():
             'isSingleEvent': m['is_single_event'], 'originalId': m['originalId']
         } for m in final_matches]
         
-        # Replace JS Variable
-        # Look for window.MATCH_DATA = ...; or inject if not found (using a marker like <script>)
-        # Robust method: Replace the specific line we put in build_site.py
-        # But if build_site injects "window.MATCH_DATA = [];", we replace that.
-        # Actually, simpler to regex replace the script block or just the variable assignment.
+        json_str = json.dumps(min_matches)
         
-        # NOTE: In build_site.py, I didn't explicitly put window.MATCH_DATA = [] because I assumed Python handles it.
-        # Let's assume build_site puts: window.MATCH_DATA = [];
-        
-        # If build_site put a placeholder, we use that. 
-        # Strategy: Replace the first <script> tag content if it's our data block, 
-        # OR just search for a known string.
-        # Let's assume we search for the specific variable name.
+        # FIX: Use lambda for re.sub replacement to handle JSON backslashes/unicode safely
         if "window.MATCH_DATA =" in w_html:
-             w_html = re.sub(r'window\.MATCH_DATA\s*=\s*\[.*?\];', f'window.MATCH_DATA = {json.dumps(min_matches)};', w_html, flags=re.DOTALL)
+             w_html = re.sub(
+                 r'window\.MATCH_DATA\s*=\s*\[.*?\];', 
+                 lambda match: f'window.MATCH_DATA = {json_str};', 
+                 w_html, 
+                 flags=re.DOTALL
+             )
         else:
              # Fallback: inject after <script>
-             w_html = w_html.replace('<script>', f'<script>window.MATCH_DATA = {json.dumps(min_matches)};')
+             w_html = w_html.replace('<script>', f'<script>window.MATCH_DATA = {json_str};')
              
         with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(w_html)
 
