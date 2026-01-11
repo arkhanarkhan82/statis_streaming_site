@@ -1082,7 +1082,11 @@
     "Gloucester": "/assets/logos/upstreams/gloucester.webp",
     "Australia": "/assets/logos/upstreams/australia.webp",
     "England": "/assets/logos/upstreams/england.webp",
-    "Northern Knights": "/assets/logos/upstreams/northern-knights.webp"
+    "Northern Knights": "/assets/logos/upstreams/northern-knights.webp",
+    "Al Hazm": "/assets/logos/streamed/al-hazm.webp",
+    "Al-Najma": "/assets/logos/streamed/al-najma.webp",
+    "SD Huesca": "/assets/logos/streamed/sd-huesca.webp",
+    "China PR U23": "/assets/logos/streamed/china-pr-u23.webp"
   },
   "leagues": {
     "TFF 1. Lig": "/assets/logos/leagues/tff-1-lig.webp",
