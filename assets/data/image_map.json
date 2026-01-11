@@ -2503,7 +2503,10 @@
     "Sydney FC W": "/assets/logos/streamed/sydney-fc-w.webp",
     "Newcastle Jets FC W": "/assets/logos/streamed/newcastle-jets-fc-w.webp",
     "Al-Ittihad FC": "/assets/logos/streamed/al-ittihad-fc.webp",
-    "VfB Stuttgart": "/assets/logos/streamed/vfb-stuttgart.webp"
+    "VfB Stuttgart": "/assets/logos/streamed/vfb-stuttgart.webp",
+    "FSV Mainz 05": "/assets/logos/streamed/fsv-mainz-05.webp",
+    "1. FC Heidenheim": "/assets/logos/streamed/1-fc-heidenheim.webp",
+    "Hamburger SV": "/assets/logos/streamed/hamburger-sv.webp"
   },
   "leagues": {
     "Spengler Cup Final": "/assets/logos/leagues/spengler-cup-final.webp",
