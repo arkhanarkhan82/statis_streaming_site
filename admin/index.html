@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamCMS Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.2/tinymce.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cms-container">
+        <aside class="sidebar">
+            <div class="logo-area"><h2>⚡ StreamCMS</h2></div>
+            <nav>
+                <button class="nav-btn active" onclick="switchTab('general')">⚙️ General & SEO</button>
+                <button class="nav-btn" onclick="switchTab('theme')">🎨 Theme Designer</button>
+                <button class="nav-btn" onclick="switchTab('pages')">📄 Pages & Content</button>
+                <button class="nav-btn" onclick="switchTab('priorities')">📊 Priorities & Boost</button>
+                <button class="nav-btn" onclick="switchTab('leagues')">🏆 Leagues & Teams</button>
+                <button class="nav-btn" onclick="switchTab('menus')">🔗 Menus</button>
+                <button class="nav-btn" onclick="switchTab('social')">💬 Social Sharing</button>
+                <button class="nav-btn" onclick="switchTab('watch-settings')">📺 Watch Page Config</button>
+            </nav>
+            <div class="sidebar-footer">
+                <div id="buildStatusBox" class="build-box idle"><div class="status-dot"></div><span id="buildStatusText">Idle</span></div>
+                <button id="saveBtn" class="save-btn">💾 Save & Build Site</button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            
+            <!-- GENERAL -->
+            <section id="tab-general" class="tab-content active">
+                <div class="header-box"><h1>General Settings</h1></div>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Site Identity</h3>
+                        <label>Backend API URL</label>
+                        <input type="text" id="apiUrl" placeholder="https://your-api.com/api/sync">
+                        <label>Target Country</label>
+                        <select id="targetCountry" onchange="renderPriorities()">
+                            <option value="US">🇺🇸 USA</option>
+                            <option value="UK">🇬🇧 UK</option>
+                        </select>
+                        <div class="grid-2">
+                            <div><label>Brand Part 1</label><input type="text" id="titleP1"></div>
+                            <div><label>Brand Part 2</label><input type="text" id="titleP2"></div>
+                        </div>
+                        <label>Domain (e.g. site.com)</label><input type="text" id="siteDomain">
+                        <div class="grid-2" style="margin-top:15px; border-top:1px dashed #333; padding-top:15px;">
+    <div>
+        <label>Live Param (Default: stream)</label>
+        <input type="text" id="paramLive" placeholder="stream">
+    </div>
+    <div>
+        <label>Info/Copy Param (Default: info)</label>
+        <input type="text" id="paramInfo" placeholder="info">
+    </div>
+</div>
+                    </div>
+                    <div class="card">
+                        <h3>Assets & Logos</h3>
+                        <label>Logo URL</label><input type="text" id="logoUrl" placeholder="/images/logo.png">
+                        <label>Favicon URL</label><input type="text" id="faviconUrl" placeholder="/images/favicon.ico">
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Footer Settings</h3>
+                    <label>Copyright Text</label>
+                    <input type="text" id="footerCopyright" placeholder="© 2025 StreamEast. All rights reserved.">
+                    <label>Footer Disclaimer</label>
+                    <textarea id="footerDisclaimer" rows="3" placeholder="We do not host any content..."></textarea>
+                </div>
+            </section>
+
+            <!-- THEME DESIGNER -->
+            <section id="tab-theme" class="tab-content">
+                <div class="header-box">
+                    <h1>Theme Designer</h1>
+                    <!-- ADDED: Preset Buttons Group -->
+    <div style="display:flex; gap:10px;">
+        <button class="btn-secondary" style="border:1px solid #D00000; color:#ffcccc;" onclick="applyPreset('red')">🔴 Classic Red</button>
+        <button class="btn-secondary" style="border:1px solid #2563EB; color:#cce0ff;" onclick="applyPreset('blue')">🔵 Pro Blue</button>
+        <button class="btn-secondary" style="border:1px solid #16a34a; color:#ccffcc;" onclick="applyPreset('green')">🟢 Pitch Green</button>
+    </div>
+                </div>
+                <!-- === NEW CODE START: CONTEXT SWITCHER === -->
+<div class="context-switcher">
+    <span style="color:#aaa; font-size:0.9rem; font-weight:600;">Editing Mode:</span>
+    <div class="btn-group">
+        <button id="ctxBtn-home" class="ctx-btn active" onclick="switchThemeContext('home')">🏠 Homepage</button>
+        <button id="ctxBtn-league" class="ctx-btn" onclick="switchThemeContext('league')">🏆 League Pages</button>
+        <button id="ctxBtn-page" class="ctx-btn" onclick="switchThemeContext('page')">📄 Static Pages</button>
+        <button id="ctxBtn-watch" class="ctx-btn" onclick="switchThemeContext('watch')">📺 Watch Page</button>
+    </div>
+    <p class="desc" id="ctxDesc" style="margin-top:10px;">Editing global styles for the <strong>Homepage</strong>.</p>
+</div>
+<hr style="border:0; border-top:1px solid #333; margin: 20px 0;">
+<!-- === NEW CODE END === -->
+                <!-- WATCH THEME CONTROLS (Only visible in Watch Context) -->
+<div id="watchThemeControls" style="display:none;">
+    <div class="grid-3">
+        <!-- 1. LAYOUT & SIDEBARS -->
+        <div class="card">
+            <h3>📐 Layout & Sidebars</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="themeWatchSidebarSwap"> Swap Sidebars (Chat Left / Ad Right)</label>
+            </div>
+            <hr style="border-top:1px dashed #333; margin:10px 0;">
+            <label style="color:#facc15;">Left Sidebar Visibility</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="themeWatchShowAd1"> Top Advertisement</label>
+                <label><input type="checkbox" id="themeWatchShowDiscord"> Discord Widget</label>
+                <label><input type="checkbox" id="themeWatchShowAd2"> Bottom Advertisement</label>
+            </div>
+            
+            <h4 style="margin-top:15px; color:#aaa; font-size:0.8rem;">Discord Widget</h4>
+            <label>Position Order</label>
+            <select id="themeWatchDiscordOrder">
+                <option value="top">Top</option>
+                <option value="middle">Middle (Default)</option>
+                <option value="bottom">Bottom</option>
+            </select>
+            <div class="grid-2" style="margin-top:10px;">
+                <div><label>Title</label><input type="text" id="themeWatchDiscordTitle" placeholder="Join Discord"></div>
+                <div><label>Btn Text</label><input type="text" id="themeWatchDiscordBtnText" placeholder="Join"></div>
+            </div>
+        </div>
+
+        <!-- 2. CHAT WINDOW -->
+        <div class="card">
+            <h3>💬 Chat Window Styling</h3>
+            <label>Header Text</label>
+            <input type="text" id="themeWatchChatHeaderTitle" placeholder="Live Chat">
+            
+            <div class="color-grid mt-2">
+                <div><label>Header BG</label><input type="color" id="themeWatchChatHeaderBg"></div>
+                <div><label>Header Text</label><input type="color" id="themeWatchChatHeaderText"></div>
+                <div><label>Online Dot</label><input type="color" id="themeWatchChatDotColor"></div>
+            </div>
+            
+            <div class="range-wrapper">
+                <label>Dot Size</label>
+                <input type="number" id="themeWatchChatDotSize" placeholder="6 (px)">
+            </div>
+
+            <h4 style="margin-top:15px; color:#aaa; font-size:0.8rem;">Join Screen & Inputs</h4>
+            <div class="color-grid">
+                <div><label>Overlay BG</label><input type="color" id="themeWatchChatOverlayBg"></div>
+                <div><label>Input BG</label><input type="color" id="themeWatchChatInputBg"></div>
+                <div><label>Input Text</label><input type="color" id="themeWatchChatInputText"></div>
+            </div>
+            <div class="range-wrapper">
+                <label>Overlay Opacity: <span id="val_chatOp">0.9</span></label>
+                <input type="range" id="themeWatchChatOverlayOpacity" min="0" max="1" step="0.1" oninput="document.getElementById('val_chatOp').innerText=this.value">
+            </div>
+            <label>Join Button Text</label><input type="text" id="themeWatchChatJoinBtnText" placeholder="Join Room">
+        </div>
+
+        <!-- 3. INFO TABLE & TYPOGRAPHY -->
+        <div class="card">
+            <h3>📊 Info Table & Text</h3>
+            <div class="color-grid">
+                <div><label>Header BG</label><input type="color" id="themeWatchTableHeadBg"></div>
+                <div><label>Body BG</label><input type="color" id="themeWatchTableBodyBg"></div>
+                <div><label>Border Color</label><input type="color" id="themeWatchTableBorder"></div>
+                <div><label>Team Names</label><input type="color" id="themeWatchTeamColor"></div>
+                <div><label>VS Text</label><input type="color" id="themeWatchVsColor"></div>
+            </div>
+            <div class="range-wrapper">
+                <label>Table Radius</label>
+                <input type="number" id="themeWatchTableRadius" placeholder="6">
+            </div>
+            
+            <h4 style="margin-top:15px; color:#aaa; font-size:0.8rem;">Typography Sizes</h4>
+            <div class="grid-2">
+                <div><label>Team Name</label><input type="text" id="themeWatchTeamSize" placeholder="1.4rem"></div>
+                <div><label>VS Text</label><input type="text" id="themeWatchVsSize" placeholder="2rem"></div>
+            </div>
+        </div>
+
+        <!-- 4. BUTTONS & ACTIONS -->
+        <div class="card">
+            <h3>🔘 Buttons & Controls</h3>
+            
+            <h4 style="color:#22c55e; font-size:0.8rem;">Info Mode (Watch Button)</h4>
+            <div class="color-grid">
+                <div><label>Active BG</label><input type="color" id="themeWatchBtnBg"></div>
+                <div><label>Active Text</label><input type="color" id="themeWatchBtnText"></div>
+                <div><label>Disabled BG</label><input type="color" id="themeWatchBtnDisabledBg"></div>
+                <div><label>Disabled Text</label><input type="color" id="themeWatchBtnDisabledText"></div>
+            </div>
+            <label>Watch Button Text</label><input type="text" id="themeWatchBtnLabel" placeholder="Watch Live Stream">
+            <label>Disabled Button Text</label><input type="text" id="themeWatchBtnDisabledLabel" placeholder="Stream Starts Soon">
+
+            <h4 style="margin-top:15px; color:#3b82f6; font-size:0.8rem;">Stream Mode</h4>
+            <div class="color-grid">
+                <div><label>Info Btn BG</label><input type="color" id="themeWatchInfoBtnBg"></div>
+                <div><label>Info Btn Hover</label><input type="color" id="themeWatchInfoBtnHover"></div>
+                <div><label>Info Btn Text</label><input type="color" id="themeWatchInfoBtnText"></div>
+            </div>
+            <label>Info Button Label</label><input type="text" id="themeWatchInfoBtnLabel" placeholder="View Match Info">
+            
+            <label style="margin-top:10px;">Server Buttons</label>
+            <div class="color-grid">
+                <div><label>Active BG</label><input type="color" id="themeWatchServerActiveBg"></div>
+                <div><label>Text Color</label><input type="color" id="themeWatchServerText"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END WATCH CONTROLS -->
+</div>
+                
+                <!-- ROW 1: BASE -->
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>📐 Base & Typography</h3>
+                        <label>Font Stack (0ms Load)</label>
+                        <select id="themeFontBase">
+                            <option value="system-ui, -apple-system, sans-serif">Modern System (Default)</option>
+                            <option value="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">Neutral Sans</option>
+                            <option value="Georgia, Cambria, 'Times New Roman', serif">Classic Serif</option>
+                            <option value="'Courier New', Courier, monospace">Tech Monospace</option>
+                            <option value="'Impact', 'Arial Black', sans-serif">Bold Impact</option>
+                            <option value="'Trebuchet MS', 'Lucida Sans', sans-serif">Humanist</option>
+                        </select>
+                        <label>Heading Font</label>
+                        <select id="themeFontHeadings">
+                            <option value="inherit">Same as Base</option>
+                            <option value="'Arial Black', 'Helvetica', sans-serif">Heavy/Bold</option>
+                            <option value="Georgia, serif">Elegant Serif</option>
+                            <option value="'Courier New', monospace">Code/Tech</option>
+                        </select>
+                        <!-- Inside Base & Typography Card, after Heading Font select -->
+<!-- START: Wrapper for Static Page Controls -->
+<div id="staticPageControls" style="display:none; background:rgba(255,255,255,0.05); padding:10px; margin:10px 0; border-radius:6px; border-left: 3px solid #8b5cf6;">
+    <h4 style="margin:0 0 10px 0; font-size:0.8rem; color:#d8b4fe;">📄 Static Page Title Settings</h4>
+    
+    <label>Static H1 Alignment</label>
+    <select id="pageH1Align">
+        <option value="left">Left (Default)</option>
+        <option value="center">Center</option>
+        <option value="right">Right</option>
+    </select>
+
+    <label>Static H1 Color</label>
+    <input type="color" id="themeStaticH1Color">
+
+    <label>Static H1 Border Bottom</label>
+    <div class="input-group">
+        <input type="number" id="themeStaticH1BorderWidth" placeholder="Width (px)" value="1">
+        <input type="color" id="themeStaticH1BorderColor">
+    </div>
+</div>
+                        <div class="range-wrapper">
+                            <label>Global Radius: <span id="val_borderRadius">6px</span></label>
+                            <input type="range" id="themeBorderRadius" min="0" max="20" step="1" oninput="document.getElementById('val_borderRadius').innerText=this.value+'px'">
+                        </div>
+                        <!-- NEW: Button Radius -->
+                        <div class="range-wrapper">
+                            <label>Button Radius (Watch/Notify): <span id="val_btnRadius">4px</span></label>
+                            <input type="range" id="themeBtnRadius" min="0" max="30" step="1" oninput="document.getElementById('val_btnRadius').innerText=this.value+'px'">
+                        </div>
+                        <div class="range-wrapper">
+                            <label>Max Width: <span id="val_maxWidth">1100px</span></label>
+                            <input type="range" id="themeMaxWidth" min="800" max="1600" step="50" oninput="document.getElementById('val_maxWidth').innerText=this.value+'px'">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎨 Global Palette</h3>
+                        <div class="color-grid">
+                            <div><label>Brand Primary</label><input type="color" id="themeBrandPrimary"></div>
+                            <div><label>Brand Dark</label><input type="color" id="themeBrandDark"></div>
+                            <div><label>Accent Gold</label><input type="color" id="themeAccentGold"></div>
+                            <div><label>Status Green</label><input type="color" id="themeStatusGreen"></div>
+                            <div><label>Body BG</label><input type="color" id="themeBgBody"></div>
+                            <div><label>Panel BG</label><input type="color" id="themeBgPanel"></div>
+                            <div><label>Text Main</label><input type="color" id="themeTextMain"></div>
+                            <div><label>Text Muted</label><input type="color" id="themeTextMuted"></div>
+                            <div><label>Borders</label><input type="color" id="themeBorderColor"></div>
+                            <div><label>Scroll Thumb</label><input type="color" id="themeScrollThumb"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+    <h3>🏆 Footer Leagues Card</h3>
+    <div class="color-grid">
+        <div><label>Card BG</label><input type="color" id="themeLeagueCardBg"></div>
+        <div><label>Text Color</label><input type="color" id="themeLeagueCardText"></div>
+        <div><label>Border Color</label><input type="color" id="themeLeagueCardBorder"></div>
+        <div><label>Hover BG</label><input type="color" id="themeLeagueCardHoverBg"></div>
+        <div><label>Hover Text</label><input type="color" id="themeLeagueCardHoverText"></div>
+        <div><label>Hover Border</label><input type="color" id="themeLeagueCardHoverBorder"></div>
+    </div>
+    
+    <div class="range-wrapper">
+        <label>Border Width: <span id="val_lcBorderW">1px</span></label>
+        <input type="range" id="themeLeagueCardBorderWidth" min="0" max="5" step="1" 
+               oninput="document.getElementById('val_lcBorderW').innerText=this.value+'px'">
+    </div>
+
+    <div class="range-wrapper">
+        <label>Border Radius: <span id="val_lcRadius">6px</span></label>
+        <input type="range" id="themeLeagueCardRadius" min="0" max="20" step="1" 
+               oninput="document.getElementById('val_lcRadius').innerText=this.value+'px'">
+    </div>
+</div>
+
+                    <!-- Inside admin/index.html -> Theme Designer -> Header Card -->
+<div class="card">
+    <h3>🧭 Header Layout & Colors</h3>
+    
+    <!-- NEW: Layout Controls -->
+    <label>Layout Structure</label>
+    <select id="themeHeaderLayout" onchange="toggleHeaderInputs()">
+        <option value="standard">Standard (Logo Left - Menu Right)</option>
+        <option value="inverted">Inverted (Logo Right - Menu Left)</option>
+        <option value="center">Centered (Logo Center - Mobile Icon)</option>
+    </select>
+
+    <div id="headerIconPosGroup" style="display:none;">
+        <label>Menu Icon Position</label>
+        <select id="themeHeaderIconPos">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+    </div>
+    <div class="range-wrapper" style="margin-top: 15px; border-top: 1px dashed #444; padding-top: 15px;">
+        <label>Header Inner Width: <span id="val_headerWidth">1100px</span></label>
+        <input type="range" id="themeHeaderWidth" min="800" max="1800" step="10" 
+               oninput="document.getElementById('val_headerWidth').innerText=this.value+'px'">
+        <p style="font-size:0.7rem; color:#666; margin-top:5px;">Adjust to match your Box Hero width.</p>
+    </div>
+
+    <label class="mt-2">Colors</label>
+    <div class="color-grid">
+        <div><label>Background</label><input type="color" id="themeHeaderBg"></div>
+        <div><label>Text Color</label><input type="color" id="themeHeaderText"></div>
+        <div><label>Active Link</label><input type="color" id="themeHeaderActive"></div>
+        <!-- NEW: Hover Color -->
+        <div><label>Hover Link</label><input type="color" id="themeHeaderHover"></div>
+        <div><label>Highlight Color</label><input type="color" id="themeHeaderHighlightColor"></div>
+    <div><label>Highlight Hover</label><input type="color" id="themeHeaderHighlightHover"></div>
+    </div>
+
+    <label>Logo Text Colors</label>
+    <div class="color-grid">
+        <div><label>Part 1</label><input type="color" id="themeLogoP1"></div>
+        <div><label>Part 2</label><input type="color" id="themeLogoP2"></div>
+    </div>
+    <label>Border Bottom</label>
+    <select id="themeHeaderBorderBottom">
+        <option value="1px solid var(--border)">Thin Border</option>
+        <option value="none">None</option>
+        <option value="1px solid var(--brand-primary)">Brand Color</option>
+    </select>
+</div>
+                </div>
+
+                <!-- ROW 2: COMPONENTS -->
+                <div class="grid-3">
+                    <!-- admin/index.html -> Hero Section Card -->
+<!-- admin/index.html -> Hero Section Card -->
+<div class="card">
+    <h3>📢 Hero Configuration</h3>
+    
+    <!-- ROW 1: Layout & Visibility -->
+    <div class="grid-2" style="gap:10px;">
+        <div>
+            <label>Layout Mode</label>
+            <select id="themeHeroLayoutMode" onchange="toggleHeroBoxSettings()">
+                <option value="full">Full Width (Default)</option>
+                <option value="box">Boxed Layout</option>
+            </select>
+        </div>
+        <div>
+            <label>Content Alignment</label>
+            <select id="themeHeroAlign">
+                <option value="center">Center</option>
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+        <div>
+            <label>Hero Menu</label>
+            <select id="themeHeroMenuVisible">
+                <option value="flex">Show</option>
+                <option value="none">Hide</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- ROW 2: Background -->
+    <label class="mt-2">Background Source</label>
+    <select id="themeHeroBgStyle" onchange="toggleHeroInputs()">
+        <option value="solid">Solid Color</option>
+        <option value="gradient">Gradient</option>
+        <option value="image">Image (URL)</option>
+        <option value="transparent">Transparent</option>
+    </select>
+    
+    <div id="heroSolidInput" class="mt-2"><label>Solid Color</label><input type="color" id="themeHeroBgSolid"></div>
+    <div id="heroGradientInput" class="color-grid mt-2" style="display:none;">
+        <div><label>Grad Start</label><input type="color" id="themeHeroGradStart"></div>
+        <div><label>Grad End</label><input type="color" id="themeHeroGradEnd"></div>
+    </div>
+    <div id="heroImageInput" class="mt-2" style="display:none;">
+        <label>Image URL</label><input type="text" id="themeHeroBgImage">
+        <div class="range-wrapper"><label>Overlay Opacity</label><input type="range" id="themeHeroOverlayOpacity" min="0" max="1" step="0.1"></div>
+    </div>
+
+    <!-- ROW 3: Box Settings -->
+    <div id="heroBoxSettings" style="display:none; border:1px dashed #444; padding:10px; margin-top:15px; border-radius:6px;">
+        <h4 style="margin:0 0 10px 0; font-size:0.8rem; color:#facc15;">📦 Box Layout Settings</h4>
+        
+        <label>Box Max Width</label>
+        <input type="text" id="themeHeroBoxWidth" placeholder="e.g. 1000px">
+        
+        <label>Box Borders (Inner)</label>
+        <div class="grid-2" style="gap:5px;">
+            <input type="number" id="themeHeroBoxBorderWidth" placeholder="Width (px)" value="1">
+            <input type="color" id="themeHeroBoxBorderColor" value="#334155">
+        </div>
+        <div class="checkbox-group" style="margin-top:5px; display:flex; gap:15px; flex-wrap:wrap;">
+            <label style="font-size:0.75rem;"><input type="checkbox" id="themeHeroBorderTop"> Top</label>
+            <label style="font-size:0.75rem;"><input type="checkbox" id="themeHeroBorderBottomBox"> Bottom</label>
+            <label style="font-size:0.75rem;"><input type="checkbox" id="themeHeroBorderLeft"> Left</label>
+            <label style="font-size:0.75rem;"><input type="checkbox" id="themeHeroBorderRight"> Right</label>
+        </div>
+    </div>
+
+    <!-- ROW 4: Colors -->
+    <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Text & Elements</h4>
+    <div class="color-grid">
+        <div><label>H1 Color</label><input type="color" id="themeHeroH1"></div>
+        <div><label>Intro Text</label><input type="color" id="themeHeroIntro"></div>
+    </div>
+
+    <!-- ROW 5: Main Bottom Border (Separator) -->
+    <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Main Bottom Border</h4>
+    <div class="grid-2" style="gap:10px; margin-bottom:10px;">
+        <div>
+            <label style="margin-top:0;">Placement</label>
+            <select id="themeHeroMainBorderPos">
+                <option value="none">None</option>
+                <option value="full">Full Width (Screen)</option>
+                <option value="box" class="opt-box-only">Match Box Width</option>
+            </select>
+        </div>
+        <div>
+            <label style="margin-top:0;">Width (px)</label>
+            <input type="number" id="themeHeroMainBorderWidth" value="1">
+        </div>
+    </div>
+    <div style="margin-bottom:15px;">
+        <label style="margin-top:0;">Color</label>
+        <input type="color" id="themeHeroMainBorderColor" value="#334155">
+    </div>
+
+    <h4 style="margin:10px 0 5px 0; font-size:0.8rem; color:#aaa;">Category Pills</h4>
+    <!-- NEW: Pill Radius Control -->
+    <div class="range-wrapper" style="margin-bottom:10px;">
+        <label>Pill Radius: <span id="val_pillRadius">50px</span></label>
+        <input type="range" id="themeHeroPillRadius" min="0" max="50" step="1" oninput="document.getElementById('val_pillRadius').innerText=this.value+'px'">
+    </div>
+    <div class="color-grid">
+        <div><label>Pill BG</label><input type="color" id="themeHeroPillBg"></div>
+        <div><label>Pill Text</label><input type="color" id="themeHeroPillText"></div>
+        <div><label>Active BG</label><input type="color" id="themeHeroPillActiveBg"></div>
+        <div><label>Active Text</label><input type="color" id="themeHeroPillActiveText"></div>
+    </div>
+</div>
+
+                    <div class="card">
+                        <h3>⚔️ Match Rows</h3>
+                        <div class="color-grid">
+                            <div><label>Row BG</label><input type="color" id="themeMatchRowBg"></div>
+                            <div><label>Border</label><input type="color" id="themeMatchRowBorder"></div>
+                            <div><label>Team Name</label><input type="color" id="themeMatchTeamColor"></div>
+                            <div><label>Time Color</label><input type="color" id="themeMatchTimeColor"></div>
+                        </div>
+                        <h4 style="margin:10px 0 5px 0; font-size:0.8rem; color:#aaa;">Live Matches</h4>
+                        <div class="color-grid">
+                            <div><label>Live BG Start</label><input type="color" id="themeMatchLiveBgStart"></div>
+                            <div><label>Live BG End</label><input type="color" id="themeMatchLiveBgEnd"></div>
+                            <div><label>Live Text</label><input type="color" id="themeMatchLiveText"></div>
+                            <!-- NEW CODE START -->
+    <div style="grid-column: span 2;">
+        <label>Live Border Left</label>
+        <!-- We use text input so we can use "3px solid var(--brand-primary)" -->
+        <input type="text" id="themeMatchLiveBorder" placeholder="3px solid var(--brand-primary)">
+    </div>
+    <!-- NEW CODE END -->
+                        </div>
+                        <label>Row Height</label>
+                        <select id="themeRowHeight">
+                            <option value="compact">Compact (Data Dense)</option>
+                            <option value="standard">Standard (Balanced)</option>
+                            <option value="spacious">Spacious (Airy)</option>
+                        </select>
+                        <label>Buttons</label>
+                        <div class="color-grid">
+                            <div><label>Watch BG</label><input type="color" id="themeBtnWatchBg"></div>
+                            <div><label>Watch Text</label><input type="color" id="themeBtnWatchText"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+    <h3>🔻 Footer Layout & Content</h3>
+    
+    <!-- 1. Grid Configuration -->
+    <div class="grid-2" style="gap:10px; border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:15px;">
+        <div>
+            <label>Columns</label>
+            <select id="themeFooterCols" onchange="toggleFooterSlots()">
+                <option value="2">2 Columns</option>
+                <option value="3">3 Columns</option>
+            </select>
+        </div>
+        <div>
+            <label>Disclaimer</label>
+            <div class="checkbox-group" style="margin-top:10px;">
+                <label><input type="checkbox" id="themeFooterShowDisclaimer"> Show Disclaimer Text</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Slot Shuffling -->
+    <label style="color:#facc15;">⏹️ Column Slots (Left to Right)</label>
+    <div class="grid-3" style="gap:10px; margin-bottom:15px;">
+        <div>
+            <label>Slot 1</label>
+            <select id="themeFooterSlot1">
+                <option value="brand">Logo & Title</option>
+                <option value="disclaimer">Disclaimer Text</option>
+                <option value="brand_disclaimer">Logo + Disclaimer</option>
+                <option value="menu">Quick Links</option>
+                <option value="empty">Empty</option>
+            </select>
+        </div>
+        <div>
+            <label>Slot 2</label>
+            <select id="themeFooterSlot2">
+                <option value="menu">Quick Links</option>
+                <option value="brand">Logo & Title</option>
+                <option value="disclaimer">Disclaimer Text</option>
+                <option value="brand_disclaimer">Logo + Disclaimer</option>
+                <option value="empty">Empty</option>
+            </select>
+        </div>
+        <div id="footerSlot3Group" style="display:none;">
+            <label>Slot 3</label>
+            <select id="themeFooterSlot3">
+                <option value="disclaimer">Disclaimer Text</option>
+                <option value="brand">Logo & Title</option>
+                <option value="menu">Quick Links</option>
+                <option value="empty">Empty</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- 3. Styling -->
+    <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Colors & Align</h4>
+    <div class="color-grid">
+        <div><label>BG Start</label><input type="color" id="themeFooterBgStart"></div>
+        <div><label>BG End</label><input type="color" id="themeFooterBgEnd"></div>
+        <div><label>Text</label><input type="color" id="themeFooterText"></div>
+        <div><label>Links</label><input type="color" id="themeFooterLink"></div>
+    </div>
+    
+    <div class="grid-2" style="margin-top:10px;">
+        <div>
+            <label>Text Align</label>
+            <select id="themeFooterAlign">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+    </div>
+</div>
+                </div>
+
+                <!-- ROW 3: ADVANCED CUSTOMIZATION (NEW) -->
+                <div class="grid-3">
+                    
+                    <!-- CARD 1: CONTENT & LOGIC -->
+                    <div class="card">
+                        <h3>⚡ Content & Logic</h3>
+                        <div class="range-wrapper" style="margin-bottom:15px; border-bottom:1px solid #333; padding-bottom:10px;">
+                            <label style="color:#facc15;">🔥 Wildcard Category</label>
+                            <input type="text" id="themeWildcardCat" placeholder="e.g. NFL, Premier League">
+                            <small style="color:#666; font-size:0.7rem;">Shows full schedule, hides 'Top 5', sets Schema.</small>
+                        </div>
+
+                        <label>Hero Visibility</label>
+                        <select id="themeDisplayHero">
+                            <option value="block">Show Hero</option>
+                            <option value="none">Hide Hero</option>
+                        </select>
+
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Text Labels & Titles</h4>
+                        <div class="grid-2" style="gap:10px;">
+                            <div style="grid-column: span 2;">
+                                <label>Wildcard Title</label>
+                                <input type="text" id="themeTextWildcardTitle" placeholder="e.g. Featured Events">
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <label>Top 5 Title</label>
+                                <input type="text" id="themeTextTopUpcoming" placeholder="e.g. Top Matches">
+                            </div>
+                            <div><label>Status Text</label><input type="text" id="themeTextSysStatus" placeholder="System Status: Online"></div>
+                            <div class="checkbox-group" style="margin: 10px 0;">
+    <label><input type="checkbox" id="themeSysStatusVisible"> Show System Status Pill</label>
+</div>
+                            <div><label>Live Title</label><input type="text" id="themeTextLiveTitle" placeholder="Trending Live"></div>
+                            <div><label>Show More</label><input type="text" id="themeTextShowMore" placeholder="Show More"></div>
+                            <div><label>Watch Btn</label><input type="text" id="themeTextWatch" placeholder="WATCH"></div>
+                            <div><label>HD Badge</label><input type="text" id="themeTextHd" placeholder="HD"></div>
+                            <div><label>Link Text</label><input type="text" id="themeTextSectionLink" placeholder="View All"></div>
+                            <div><label>Prefix</label><input type="text" id="themeTextSectionPrefix" placeholder="Upcoming"></div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: SECTION BORDERS -->
+                    <div class="card">
+                        <h3>🎨 Section Borders</h3>
+                        <p style="font-size:0.75rem; color:#aaa; margin-bottom:15px;">Customize bottom borders for specific sections.</p>
+
+                        <!-- Live -->
+                        <label>Trending Live</label>
+                        <div class="input-group">
+                            <input type="number" id="themeLiveBorderWidth" placeholder="Width (px)" value="1">
+                            <input type="color" id="themeLiveBorderColor" value="#334155">
+                        </div>
+
+                        <!-- Upcoming -->
+                        <label>Top 5 Upcoming</label>
+                        <div class="input-group">
+                            <input type="number" id="themeUpcomingBorderWidth" placeholder="Width (px)" value="1">
+                            <input type="color" id="themeUpcomingBorderColor" value="#334155">
+                        </div>
+
+                        <!-- Wildcard -->
+                        <label>Wildcard Section</label>
+                        <div class="input-group">
+                            <input type="number" id="themeWildcardBorderWidth" placeholder="Width (px)" value="1">
+                            <input type="color" id="themeWildcardBorderColor" value="#334155">
+                        </div>
+                        
+                        <!-- Grouped Sports (Main List) -->
+                        <label>Grouped Sports/Leagues</label>
+                        <div class="input-group">
+                            <input type="number" id="themeGroupedBorderWidth" placeholder="Width (px)" value="1">
+                            <input type="color" id="themeGroupedBorderColor" value="#334155">
+                        </div>
+                        <label>League Page "Upcoming" (Inner)</label>
+    <div class="input-group">
+        <input type="number" id="themeLeagueUpcomingBorderWidth" placeholder="Width (px)" value="1">
+        <input type="color" id="themeLeagueUpcomingBorderColor" value="#334155">
+    </div>
+
+                        <!-- Footer Leagues -->
+                        <label>Footer Popular Leagues</label>
+                        <div class="input-group">
+                            <input type="number" id="themeLeaguesBorderWidth" placeholder="Width (px)" value="1">
+                            <input type="color" id="themeLeaguesBorderColor" value="#334155">
+                        </div>
+                        
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">"Show More" Button</h4>
+                        <div class="color-grid">
+                            <div><label>BG</label><input type="color" id="themeShowMoreBg"></div>
+                            <div><label>Text</label><input type="color" id="themeShowMoreText"></div>
+                        </div>
+                        <div class="range-wrapper">
+                            <label>Radius</label>
+                            <input type="text" id="themeShowMoreRadius" placeholder="30px">
+                        </div>
+                    </div>
+                    <!-- CARD 3: ARTICLE & TYPOGRAPHY -->
+<div class="card">
+    <h3>📝 SEO Article Styling</h3>
+    <p style="font-size:0.75rem; color:#aaa; margin-bottom:15px;">Styles for the bottom SEO article text.</p>
+
+    <div class="color-grid">
+        <div><label>Background</label><input type="color" id="themeArticleBg"></div>
+        <div><label>Text Color</label><input type="color" id="themeArticleText"></div>
+        <div><label>Bullets (UL)</label><input type="color" id="themeArticleBullet"></div>
+        <div><label>Links</label><input type="color" id="themeArticleLink"></div>
+    </div>
+    
+    <label>Line Height</label>
+    <input type="text" id="themeArticleLineHeight" placeholder="1.6">
+
+    <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Headings (H2)</h4>
+    <div class="color-grid">
+        <div><label>H2 Color</label><input type="color" id="themeArticleH2Color"></div>
+        <div><label>Border</label><input type="color" id="themeArticleH2BorderColor"></div>
+    </div>
+    <div class="input-group mt-2">
+        <input type="number" id="themeArticleH2BorderWidth" placeholder="Border Width (px)">
+    </div>
+
+    <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Sub-Headings (H3/H4)</h4>
+    <div class="color-grid">
+        <div><label>H3 Color</label><input type="color" id="themeArticleH3Color"></div>
+        <div><label>H4 Color</label><input type="color" id="themeArticleH4Color"></div>
+    </div>
+</div>
+
+                    <!-- CARD 3: FLOATING ELEMENTS -->
+                    <div class="card">
+                        <h3>📍 Floating & Extras</h3>
+                        
+                        <h4 style="margin:5px 0 5px 0; font-size:0.8rem; color:#aaa;">Back to Top</h4>
+                        <div class="color-grid">
+                            <div><label>BG</label><input type="color" id="themeBttBg"></div>
+                            <div><label>Icon</label><input type="color" id="themeBttIcon"></div>
+                        </div>
+                        <div class="grid-2" style="gap:10px; margin-top:5px;">
+                            <input type="text" id="themeBttSize" placeholder="Size (40px)">
+                            <input type="text" id="themeBttRadius" placeholder="Radius (50%)">
+                        </div>
+
+                        <h4 style="margin:10px 0 5px 0; font-size:0.8rem; color:#aaa;">Section Logo Size</h4>
+                        <div class="range-wrapper">
+                            <label>Size: <span id="val_secLogo">24px</span></label>
+                            <input type="range" id="themeSectionLogoSize" min="0" max="60" step="1" oninput="document.getElementById('val_secLogo').innerText=this.value+'px'">
+                        </div>
+
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Desktop Share (Left)</h4>
+                        <div class="grid-2" style="gap:10px;">
+                            <div><label>Top</label><input type="text" id="themeSocialDeskTop" placeholder="50%"></div>
+                            <div><label>Left</label><input type="text" id="themeSocialDeskLeft" placeholder="0"></div>
+                            <div><label>Scale</label><input type="text" id="themeSocialDeskScale" placeholder="1.0"></div>
+                        </div>
+
+                        <!-- SOCIAL COLORS -->
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Social Colors</h4>
+                        <div class="color-grid">
+                            <div><label>Telegram</label><input type="color" id="themeSocialTelegram"></div>
+                            <div><label>WhatsApp</label><input type="color" id="themeSocialWhatsapp"></div>
+                            <div><label>Reddit</label><input type="color" id="themeSocialReddit"></div>
+                            <div><label>Twitter</label><input type="color" id="themeSocialTwitter"></div>
+                        </div>
+
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Mobile Share (Bottom)</h4>
+                        <div class="grid-2" style="gap:10px;">
+                            <div><label>Height</label><input type="text" id="themeMobFootHeight" placeholder="60px"></div>
+                            <div><label>BG</label><input type="color" id="themeMobFootBg"></div>
+                        </div>
+
+                        <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Match Row Hover</h4>
+                        <div class="color-grid">
+                            <div><label>Hover BG</label><input type="color" id="themeMatchRowHoverBg"></div>
+                            <div><label>Hover Border</label><input type="color" id="themeMatchRowHoverBorder"></div>
+                        </div>
+                        <!-- Inside Floating & Extras Card (or a new card) -->
+<hr style="border-top:1px solid #444; margin: 15px 0;">
+<h4 style="margin:0 0 10px 0; font-size:0.8rem; color:#aaa;">System Status Pill Style</h4>
+
+<div class="color-grid">
+    <div><label>Text Color</label><input type="color" id="themeSysStatusText"></div>
+    <div><label>Background</label><input type="color" id="themeSysStatusBg"></div>
+    <div><label>Border Color</label><input type="color" id="themeSysStatusBorderColor"></div>
+    <div><label>Dot Color</label><input type="color" id="themeSysStatusDotColor"></div>
+</div>
+ <div class="grid-2" style="margin-top:10px; align-items:center;">
+    <div class="range-wrapper" style="margin-top:0;">
+        <label>BG Opacity: <span id="val_sysBgOp">0.1</span></label>
+        <input type="range" id="themeSysStatusBgOpacity" min="0" max="1" step="0.05" 
+               oninput="document.getElementById('val_sysBgOp').innerText=this.value">
+    </div>
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="themeSysStatusBgTransparent"> Force Transparent</label>
+    </div>
+</div>                       
+
+<div class="grid-2" style="gap:10px; margin-top:10px;">
+    <div>
+        <label>Border Width</label>
+        <input type="number" id="themeSysStatusBorderWidth" placeholder="px">
+    </div>
+    <div>
+        <label>Radius</label>
+        <input type="number" id="themeSysStatusRadius" placeholder="px">
+    </div>
+</div>
+
+<div class="range-wrapper">
+    <label>Dot Size: <span id="val_sysDot">8px</span></label>
+    <input type="range" id="themeSysStatusDotSize" min="4" max="15" step="1" 
+           oninput="document.getElementById('val_sysDot').innerText=this.value+'px'">
+</div>
+                    </div>
+                </div> <!-- Closing the grid-3 div -->
+            </section>
+
+            <!-- PAGES -->
+            <section id="tab-pages" class="tab-content">
+                <div class="header-box">
+                    <h1>Pages</h1>
+                    <button class="btn-primary" onclick="createNewPage()">+ New Page</button>
+                </div>
+                <div id="pageListView" class="card" style="padding:0;"><table class="data-table" id="pagesTable"><tbody></tbody></table></div>
+                
+                <div id="pageEditorView" style="display:none;">
+                    <div class="editor-toolbar">
+                        <button class="btn-secondary" onclick="closePageEditor()">← Back</button>
+                        <h3 id="editorPageTitleDisplay">Editing Page</h3>
+                    </div>
+                    <div class="grid-2">
+                        <div class="card">
+                            <label>Title</label><input type="text" id="pageTitle">
+                            <label>Slug</label><input type="text" id="pageSlug">
+                            <label>Layout</label><select id="pageLayout"><option value="home">Home</option><option value="page">Page</option><option value="watch">Watch</option></select>
+                        </div>
+                        <div class="card">
+                            <h3>Advanced SEO</h3>
+                            <label>Meta Title</label><input type="text" id="pageMetaTitle">
+                            <label>Meta Description</label><textarea id="pageMetaDesc" rows="2"></textarea>
+                            <label>Meta Keywords (Comma separated)</label><input type="text" id="pageMetaKeywords">
+                            <label>Canonical URL</label><input type="text" id="pageCanonical">
+                            
+                            <div class="checkbox-group" style="margin-top:15px; display:flex; flex-direction:column; gap:8px;">
+                                <!-- Dynamic Content: Org, Website, FAQ Editor -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding:0;"><textarea id="pageContentEditor"></textarea></div>
+                </div>
+<!-- === ENTITY STACKING & LEAGUE SETTINGS === -->
+<div class="card" style="margin-top:40px; border-color:#8b5cf6;">
+    <h3 style="color:#a78bfa;">🤖 Entity Stacking & League Config</h3>
+    <p class="desc">Configuration for generated League/Sport pages (e.g. /nba-streams/).<br>Variables: <code>{{NAME}}</code> (NBA), <code>{{YEAR}}</code> (2025).</p>
+    
+    <div class="grid-2">
+        <div style="grid-column: span 2; border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:15px;">
+            <h4 style="color:#fff; margin-bottom:10px;">🏷️ League Page Headers</h4>
+            <div class="grid-2">
+                <div>
+                    <label>H1 Title Template</label>
+                    <input type="text" id="tplLeagueH1" placeholder="Watch {{NAME}} Live Streams">
+                </div>
+                <div>
+                    <label>Intro Text / Meta Description</label>
+                    <input type="text" id="tplLeagueIntro" placeholder="The best free {{NAME}} streams online...">
+                </div>
+                
+                <div>
+                    <label>Upcoming Section Title</label>
+                    <input type="text" id="tplLeagueUpcomingTitle" placeholder="Upcoming {{NAME}} Schedule">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label style="color:#fff;">🏆 Bottom Article (League)</label>
+            <textarea id="tplLeagueArticle" rows="12" style="font-family:monospace; line-height:1.4; color:#d1d5db;" placeholder="<h1>Watch {{NAME}} Live...</h1>"></textarea>
+        </div>
+        <div>
+            <label style="color:#fff;">⚽ Bottom Article (Sport/Generic)</label>
+            <textarea id="tplSportArticle" rows="12" style="font-family:monospace; line-height:1.4; color:#d1d5db;" placeholder="<h1>{{NAME}} Live Streams...</h1>"></textarea>
+        </div>
+    </div>
+    <div style="margin-top:10px;">
+        <label>Exclude Pages (Comma separated)</label>
+        <input type="text" id="tplExcludePages" placeholder="home, about, contact">
+    </div>
+</div>
+<!-- === NEW CODE END === -->
+            </section>
+
+            <!-- PRIORITIES & BOOST -->
+            <section id="tab-priorities" class="tab-content">
+                <div class="header-box">
+                    <h1>Priorities & Boost</h1>
+                </div>
+                
+                <div class="card" style="border-color: #eab308;">
+                    <h3 style="color: #facc15;">🚀 Category Boost</h3>
+                    <p class="desc">Matches in these categories will appear immediately after the "Top 15 Upcoming" section, before any other league.</p>
+                    <label>Boost Categories (Comma separated)</label>
+                    <input type="text" id="prioBoost" placeholder="e.g. FIFA World Cup, Playoffs, Super Bowl">
+                </div>
+
+                <div class="card">
+                    <h3>Sorting for: <span id="prioLabel">US</span></h3>
+                    <div class="input-group">
+                        <input type="text" id="newSportName" placeholder="Name (e.g. Ice Hockey)">
+                        <button class="btn-primary" onclick="addPriorityRow()">Add</button>
+                    </div>
+                    <div id="priorityListContainer" class="menu-list"></div>
+                </div>
+            </section>
+
+            <!-- LEAGUES & TEAMS -->
+            <section id="tab-leagues" class="tab-content">
+                <div class="header-box">
+                    <h1>Leagues & Teams Map</h1>
+                    <div style="display:flex; gap:10px;">
+                        <button class="btn-secondary" onclick="copyAllLeaguesData()" title="Copy all leagues and teams to clipboard for AI verification">📋 Copy All Data</button>
+                        <button class="btn-primary" onclick="openLeagueModal()">+ Add League</button>
+                    </div>
+                </div>
+                <div class="desc" style="background: rgba(59, 130, 246, 0.1); padding: 15px; border-radius: 6px; border: 1px solid rgba(59, 130, 246, 0.3);">
+                    <strong>💡 Info:</strong> Teams are comma-separated. The system uses this map to assign logos and categories correctly. 
+                    Changes here update <code>league_map.json</code>.
+                </div>
+                <div id="leaguesContainer" class="grid-2">
+                    <!-- Dynamic Content populated by JS -->
+                </div>
+            </section>
+
+            <!-- MENUS -->
+            <section id="tab-menus" class="tab-content">
+                <div class="header-box"><h1>Menus</h1></div>
+                <div class="grid-2">
+                    <div class="card"><h3>Header</h3><div id="menu-header" class="menu-list"></div><button class="btn-add" onclick="openMenuModal('header')">+ Link</button></div>
+                    <div class="card"><h3>Hero Pills</h3><div id="menu-hero" class="menu-list"></div><button class="btn-add" onclick="openMenuModal('hero')">+ Link</button></div>
+                    <div class="card"><h3>Footer Static</h3><div id="menu-footer_static" class="menu-list"></div><button class="btn-add" onclick="openMenuModal('footer_static')">+ Link</button></div>
+                </div>
+            </section>
+
+            <!-- SOCIAL SHARING -->
+            <section id="tab-social" class="tab-content">
+                <div class="header-box"><h1>Social Sharing Manager</h1></div>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Fake Share Counts</h3>
+                        <p class="desc">Define the numbers displayed on the social buttons.</p>
+                        <label>Telegram Count</label><input type="number" id="socialTelegram" placeholder="1240">
+                        <label>WhatsApp Count</label><input type="number" id="socialWhatsapp" placeholder="850">
+                        <label>Reddit Count</label><input type="number" id="socialReddit" placeholder="340">
+                        <label>Twitter Count</label><input type="number" id="socialTwitter" placeholder="510">
+                    </div>
+                    <div class="card">
+                        <h3>Visibility Settings</h3>
+                        <label>Exclude on Pages (Comma separated slugs)</label>
+                        <textarea id="socialExcluded" rows="4" placeholder="dmca, contact, about"></textarea>
+                        <p class="desc">The social sidebar will be hidden on these pages.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- WATCH PAGE SETTINGS -->
+<section id="tab-watch-settings" class="tab-content">
+    <div class="header-box"><h1>Watch Page Configuration</h1></div>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Supabase Configuration</h3>
+            <p class="desc">Required for Live Chat functionality.</p>
+            <label>Project URL</label>
+            <input type="text" id="supaUrl" placeholder="https://your-project.supabase.co">
+            <label>Public API Key (Anon)</label>
+            <input type="password" id="supaKey" placeholder="eyJh...">
+        </div>
+        <div class="card">
+            <h3>Watch Page SEO</h3>
+            <label>Page Title (Info Mode)</label>
+            <input type="text" id="watchPageTitle" placeholder="Watch Live Sports">
+            <label>Meta Description</label>
+            <textarea id="watchPageDesc" rows="3" placeholder="Watch live streams in HD..."></textarea>
+        </div>
+    </div>
+    <div class="card">
+            <h3>📢 Watch Page Ads (HTML/JS)</h3>
+            <p class="desc" style="margin-bottom:10px;">Paste your full ad code (Script, Iframe, etc). Leave empty to hide.</p>
+            
+            <label>Mobile Top Ad (Under Menu)</label>
+            <textarea id="watchAdMobile" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            
+            <label style="margin-top:15px;">Sidebar Ad 1 (Top Left)</label>
+            <textarea id="watchAdSidebar1" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            
+            <label style="margin-top:15px;">Sidebar Ad 2 (Bottom Left)</label>
+            <textarea id="watchAdSidebar2" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+        </div>
+    <div class="card">
+        <h3>Watch Page Article</h3>
+        <p class="desc">SEO content displayed below the player/info table.</p>
+        <textarea id="watchPageArticle" rows="10" class="team-list-editor" placeholder="<h2>Live Streaming Guide</h2>..."></textarea>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <!-- MODALS -->
+    <div id="authModal" class="modal" style="display:none;"><div class="modal-content"><h3>Login</h3><input type="password" id="ghToken" placeholder="GitHub Token"><button class="save-btn" onclick="saveToken()">Access</button></div></div>
+    
+    <div id="menuModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>Add Link</h3>
+            <input type="hidden" id="menuTargetSection">
+            <label>Title</label><input type="text" id="menuTitleItem">
+            <label>URL</label><input type="text" id="menuUrlItem">
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="document.getElementById('menuModal').style.display='none'">Cancel</button>
+                <button class="btn-primary" onclick="saveMenuItem()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="leagueModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>Add New League</h3>
+            <label>League Name (e.g. Premier League)</label>
+            <input type="text" id="newLeagueNameInput" placeholder="Enter league name...">
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="document.getElementById('leagueModal').style.display='none'">Cancel</button>
+                <button class="btn-primary" onclick="saveNewLeague()">Add League</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
