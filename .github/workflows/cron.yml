@@ -35,12 +35,8 @@ jobs:
           git config --global user.name "CronBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # Add all generated files
-          git add index.html
-          git add league/
-          git add watch/
-          git add assets/data/image_map.json
-          git add assets/logos/
+          # Stage ALL changes (New pages, logos, image_map updates)
+          git add .
           
           # Check status and commit if changed
           if git diff --staged --quiet; then
