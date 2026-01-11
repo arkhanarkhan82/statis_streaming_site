@@ -375,9 +375,11 @@ def inject_watch_page(matches):
     if not os.path.exists('watch/index.html'): return
     with open('watch/index.html', 'r', encoding='utf-8') as f: html = f.read()
     
-    # Simple JSON injection for the JS to pick up (Watch page needs JS for player interaction)
+    # Simple JSON injection for the JS to pick up
     json_data = json.dumps(matches)
-    html = re.sub(r'// {{INJECTED_MATCH_DATA}}', f'window.MATCH_DATA = {json_data};', html)
+    
+    # FIX: Use .replace() instead of re.sub() to avoid regex errors with JSON unicode (\u...)
+    html = html.replace('// {{INJECTED_MATCH_DATA}}', f'window.MATCH_DATA = {json_data};')
     
     with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(html)
 
