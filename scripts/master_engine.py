@@ -214,14 +214,28 @@ def fetch_and_process():
     seen = set()
 
     def add_match(m, src):
-        # Normalize
+        # Normalize Names
         home = m.get('home_team') or m.get('home')
         away = m.get('away_team') or m.get('away')
         league = m.get('league') or m.get('category')
         sport = m.get('category') or m.get('sport')
         
+        # Normalize Timestamp (FIX: Ensure int before passing to ID gen)
+        raw_ts = m.get('date') or m.get('timestamp') or 0
+        try:
+            # Handle cases where API returns string "17320..." or ISO string
+            if isinstance(raw_ts, str) and not raw_ts.isdigit():
+                # If ISO string or date string, force 0 or parse (fallback to 0 for safety)
+                ts_int = 0
+            else:
+                ts_int = int(raw_ts)
+        except:
+            ts_int = 0
+            
+        clean_ts = normalize_time(ts_int)
+        
         # Simple ID Gen
-        uid = generate_match_id(sport, m.get('date', 0), home, away)
+        uid = generate_match_id(sport, clean_ts, home, away)
         if uid in seen: return
         seen.add(uid)
         
@@ -230,10 +244,10 @@ def fetch_and_process():
         final_matches.append({
             'id': uid, 'originalId': m.get('id'),
             'home': home, 'away': away, 'league': league, 'sport': sport,
-            'timestamp': normalize_time(m.get('date', 0) or m.get('timestamp', 0)),
+            'timestamp': clean_ts,
             'is_live': is_live,
             'is_single_event': not away or away == 'TBA',
-            'status_text': get_status_text(normalize_time(m.get('date',0)), is_live),
+            'status_text': get_status_text(clean_ts, is_live),
             'live_viewers': m.get('viewers', 0)
         })
 
