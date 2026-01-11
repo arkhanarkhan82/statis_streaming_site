@@ -29,7 +29,7 @@ DIRS = {
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
 STREAMED_IMG_BASE = "https://streamed.pk/api/images/badge/"
-TSDB_BASE_URL = "https://www.thesportsdb.com/api/v1/json/3" # Free tier key '3'
+TSDB_BASE_URL = "https://www.thesportsdb.com/api/v1/json/123" # Free tier key '3'
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
