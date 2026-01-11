@@ -17,7 +17,7 @@ IMAGE_MAP_PATH = 'assets/data/image_map.json'
 LEAGUE_MAP_PATH = 'assets/data/league_map.json'
 OUTPUT_DIR = '.' 
 
-# FOLDERS (Removed TSDB)
+# FOLDERS
 DIRS = {
     'streamed': 'assets/logos/streamed',
     'upstreams': 'assets/logos/upstreams',
@@ -80,29 +80,28 @@ for l_name, teams in league_map.items():
 
 def slugify(text):
     if not text: return ""
-    # Remove non-ascii and special chars to ensure valid filename
     text = re.sub(r'[^\w\s-]', '', str(text).lower())
     return re.sub(r'[-\s]+', '-', text).strip("-")
 
+def unslugify(slug):
+    return slug.replace('-', ' ').title()
+
 # ==========================================
-# 3. ASSET PIPELINE (Streamed & Upstreams Only)
+# 3. ASSET PIPELINE
 # ==========================================
 def download_and_process_image(url, folder, filename):
     if not url: return False
     
     # URL Normalization
     if not url.startswith('http'):
-        # Handle protocol-relative //
         if url.startswith('//'): url = f"https:{url}"
-        # Handle root-relative /images...
         elif url.startswith('/'): url = f"https://streamed.pk{url}"
-        # Handle bare filename
         else: url = f"{STREAMED_IMG_BASE}{url}.webp"
 
     try:
         r = requests.get(url, headers=HEADERS, timeout=5)
         if r.status_code != 200: return False
-        if len(r.content) < 100: return False # Skip empty files
+        if len(r.content) < 100: return False 
 
         img = Image.open(BytesIO(r.content))
         if img.mode != 'RGBA': img = img.convert('RGBA')
@@ -116,12 +115,12 @@ def download_and_process_image(url, folder, filename):
 
 def resolve_logo(name, type_key, payload_urls, source_provider):
     """
-    1. Check Local Map
-    2. Check Payloads (Save to /streamed, /upstreams, or /leagues)
+    1. Check Local Map (STOP if found).
+    2. Check Payloads -> Save to correct folder -> Update Map.
     """
     if not name or name == 'TBA': return None
     
-    # 1. LOCAL CHECK
+    # 1. CHECK LOCAL MAP
     if name in image_map[type_key]: 
         return image_map[type_key][name]
     
@@ -133,7 +132,7 @@ def resolve_logo(name, type_key, payload_urls, source_provider):
     if type_key == 'leagues':
         target_folder = DIRS['leagues']
     else:
-        # Separate team logos by provider
+        # Strict separation: Adstrim -> upstreams, Streamed -> streamed
         target_folder = DIRS['upstreams'] if source_provider == 'adstrim' else DIRS['streamed']
 
     # 2. DOWNLOAD CHECK
@@ -142,7 +141,6 @@ def resolve_logo(name, type_key, payload_urls, source_provider):
     for url in urls:
         if not url: continue
         if download_and_process_image(url, target_folder, filename):
-            # Save absolute path for website use (e.g., /assets/logos/...)
             rel_path = f"/{target_folder}/{filename}"
             image_map[type_key][name] = rel_path
             print(f"   [+] Saved {source_provider}: {name}")
@@ -259,13 +257,11 @@ def render_match_row(m):
     def get_logo(name):
         url = image_map['teams'].get(name)
         if url: 
-            # Ensure absolute path if relative
             if not url.startswith('http'): 
                 # If path starts with /, it's root relative (GOOD)
                 if not url.startswith('/'): url = f"/{url}"
                 url = f"https://{DOMAIN}{url}"
             return f'<div class="logo-box"><img src="{url}" class="t-img" loading="lazy"></div>'
-        # Fallback Letter Logo
         return f'<div class="logo-box"><span class="t-logo" style="background:#334155">{name[0] if name else "?"}</span></div>'
 
     if m['is_single_event']:
@@ -296,10 +292,10 @@ def render_section_content(matches):
 # 6. MAIN EXECUTION
 # ==========================================
 def main():
-    print("--- 🚀 Master Engine: Fetch & Inject ---")
+    print("--- 🚀 Master Engine: Assets & Data ---")
     ensure_dirs()
     
-    # 1. Fetch
+    # 1. Fetch APIs
     try:
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
         res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
@@ -310,7 +306,7 @@ def main():
     active_live_ids = set([m['id'] for m in res_live] if isinstance(res_live, list) else [])
     raw_matches = []
 
-    # 2. Streamed
+    # 2. Normalize Streamed
     for item in res_a:
         resolved = smart_resolve({
             'home_team': item.get('title', '').split(' vs ')[0] if 'title' in item else item.get('home', 'TBA'),
@@ -318,6 +314,7 @@ def main():
             'league': item.get('league') or item.get('category'),
             'sport': item.get('category')
         })
+        
         # Collect image payloads
         imgs_home = []
         if item.get('teams', {}).get('home', {}).get('badge'): imgs_home.append(item['teams']['home']['badge'])
@@ -331,7 +328,7 @@ def main():
             'is_live': item.get('id') in active_live_ids, 'viewers': 0
         })
 
-    # 3. Adstrim
+    # 3. Normalize Adstrim
     if 'data' in res_b:
         for item in res_b['data']:
             resolved = smart_resolve({ 'home_team': item.get('home_team'), 'away_team': item.get('away_team'), 'league': item.get('league'), 'sport': item.get('sport') })
@@ -349,7 +346,7 @@ def main():
                 'is_live': False, 'viewers': 0
             })
 
-    # 4. Finalize
+    # 4. Finalize & Asset Pipeline
     final_matches = []
     seen_ids = set()
     
@@ -358,11 +355,14 @@ def main():
     for m in raw_matches:
         uid = generate_match_id(m['resolved']['sport'], m['timestamp'], m['resolved']['home'], m['resolved']['away'])
         
-        # --- ASSET DOWNLOAD ---
+        # --- ASSET PIPELINE TRIGGER ---
+        # Determine source provider: 'adstrim' (upstreams) or 'streamed'
         provider = 'adstrim' if m['src'] == 'adstrim' else 'streamed'
+        
         resolve_logo(m['resolved']['home'], 'teams', m['img_payload']['home'], provider)
         resolve_logo(m['resolved']['away'], 'teams', m['img_payload']['away'], provider)
         resolve_logo(m['resolved']['league'], 'leagues', m['img_payload']['league'], provider)
+        # ------------------------------
 
         if uid in seen_ids:
             existing = next((x for x in final_matches if x['id'] == uid), None)
@@ -388,6 +388,7 @@ def main():
         obj['priority_score'] = calculate_score(obj)
         final_matches.append(obj)
 
+    # Save Updated Map
     save_json(IMAGE_MAP_PATH, image_map)
     final_matches.sort(key=lambda x: x['priority_score'], reverse=True)
 
@@ -418,6 +419,7 @@ def main():
                 grouped_html += f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🏆 {key}</h2>{link}</div><div>{render_section_content(grp)}</div></div>'
         
         html = re.sub(r'<div id="grouped-container".*?>.*?</div>', f'<div id="grouped-container">{grouped_html}</div>', html, flags=re.DOTALL)
+        
         with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
     # 6. INJECT WATCH
