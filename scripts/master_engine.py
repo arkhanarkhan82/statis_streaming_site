@@ -17,9 +17,8 @@ IMAGE_MAP_PATH = 'assets/data/image_map.json'
 LEAGUE_MAP_PATH = 'assets/data/league_map.json'
 OUTPUT_DIR = '.' 
 
-# FOLDER STRUCTURE (Strict Separation)
+# FOLDERS (Removed TSDB)
 DIRS = {
-    'tsdb': 'assets/logos/tsdb',
     'streamed': 'assets/logos/streamed',
     'upstreams': 'assets/logos/upstreams',
     'leagues': 'assets/logos/leagues'
@@ -29,8 +28,6 @@ DIRS = {
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
 STREAMED_IMG_BASE = "https://streamed.pk/api/images/badge/"
-# TSDB Free Tier
-TSDB_BASE_URL = "https://www.thesportsdb.com/api/v1/json/123"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -44,29 +41,24 @@ NAME_FIXES = {
 }
 
 # ==========================================
-# 2. UTILS & IO
+# 2. UTILS
 # ==========================================
 def load_json(path):
     if os.path.exists(path):
         try:
-            with open(path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except:
-            return {}
+            with open(path, 'r', encoding='utf-8') as f: return json.load(f)
+        except: return {}
     return {}
 
 def save_json(path, data):
     try:
-        with open(path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2)
-    except:
-        pass
+        with open(path, 'w', encoding='utf-8') as f: json.dump(data, f, indent=2)
+    except: pass
 
 def ensure_dirs():
     for d in DIRS.values():
         os.makedirs(d, exist_ok=True)
 
-# Load Data
 config = load_json(CONFIG_PATH)
 image_map = load_json(IMAGE_MAP_PATH)
 league_map = load_json(LEAGUE_MAP_PATH)
@@ -78,7 +70,6 @@ SITE_SETTINGS = config.get('site_settings', {})
 TARGET_COUNTRY = SITE_SETTINGS.get('target_country', 'US')
 PRIORITY_SETTINGS = config.get('sport_priorities', {}).get(TARGET_COUNTRY, {})
 DOMAIN = SITE_SETTINGS.get('domain', 'example.com')
-THEME = config.get('theme', {})
 
 PARAM_LIVE = SITE_SETTINGS.get('param_live', 'stream')
 PARAM_INFO = SITE_SETTINGS.get('param_info', 'info')
@@ -89,117 +80,72 @@ for l_name, teams in league_map.items():
 
 def slugify(text):
     if not text: return ""
-    return re.sub(r"\s+", "-", re.sub(r"[^\w\s-]", "", str(text).lower())).strip("-")
-
-def unslugify(slug):
-    return slug.replace('-', ' ').title()
+    # Remove non-ascii and special chars to ensure valid filename
+    text = re.sub(r'[^\w\s-]', '', str(text).lower())
+    return re.sub(r'[-\s]+', '-', text).strip("-")
 
 # ==========================================
-# 3. ASSET PIPELINE (3-Websites Check)
+# 3. ASSET PIPELINE (Streamed & Upstreams Only)
 # ==========================================
-
 def download_and_process_image(url, folder, filename):
-    """
-    Downloads raw image, validates it, resizes to 60x60, 
-    converts to WebP, and saves to specific folder.
-    """
     if not url: return False
     
-    # Handle relative URLs from Streamed
-    if not url.startswith('http') and not url.startswith('//'):
-        url = f"{STREAMED_IMG_BASE}{url}.webp"
-    if url.startswith('//'):
-        url = f"https:{url}"
+    # URL Normalization
+    if not url.startswith('http'):
+        # Handle protocol-relative //
+        if url.startswith('//'): url = f"https:{url}"
+        # Handle root-relative /images...
+        elif url.startswith('/'): url = f"https://streamed.pk{url}"
+        # Handle bare filename
+        else: url = f"{STREAMED_IMG_BASE}{url}.webp"
 
     try:
         r = requests.get(url, headers=HEADERS, timeout=5)
         if r.status_code != 200: return False
-        if len(r.content) < 100: return False # Skip empty/broken files
+        if len(r.content) < 100: return False # Skip empty files
 
-        # Open & Validate
         img = Image.open(BytesIO(r.content))
-        
-        # Convert to RGBA (for transparency)
-        if img.mode != 'RGBA': 
-            img = img.convert('RGBA')
-            
-        # Resize High Quality
+        if img.mode != 'RGBA': img = img.convert('RGBA')
         img = img.resize((60, 60), Image.Resampling.LANCZOS)
         
-        # Save path
         full_path = os.path.join(folder, filename)
         img.save(full_path, "WEBP", quality=90)
         return True
     except Exception:
         return False
 
-def fetch_from_tsdb(name, type_key):
-    """
-    Queries TheSportsDB API for high-quality transparent logos.
-    """
-    endpoint = "searchteams.php" if type_key == 'teams' else "searchleagues.php"
-    query_param = "t" if type_key == 'teams' else "l"
-    
-    try:
-        encoded = urllib.parse.quote(name)
-        url = f"{TSDB_BASE_URL}/{endpoint}?{query_param}={encoded}"
-        res = requests.get(url, headers=HEADERS, timeout=3).json()
-        
-        if type_key == 'teams' and res.get('teams'):
-            # Prefer badge -> logo -> jersey
-            t = res['teams'][0]
-            return t.get('strTeamBadge') or t.get('strTeamLogo')
-            
-        elif type_key == 'leagues':
-            # TSDB sometimes returns 'countrys' for leagues
-            if res.get('countrys'): return res['countrys'][0].get('strBadge')
-            if res.get('leagues'): return res['leagues'][0].get('strBadge')
-            
-    except: pass
-    return None
-
 def resolve_logo(name, type_key, payload_urls, source_provider):
     """
-    The Intelligence Center for Logos.
-    1. Local Map Check (Fastest)
-    2. TSDB Check (Highest Quality) -> Save to /tsdb
-    3. Payload Check (Source Specific) -> Save to /streamed or /upstreams
+    1. Check Local Map
+    2. Check Payloads (Save to /streamed, /upstreams, or /leagues)
     """
     if not name or name == 'TBA': return None
     
-    # 1. CHECK LOCAL MAP
+    # 1. LOCAL CHECK
     if name in image_map[type_key]: 
-        return image_map[type_key][name] # Return existing path
+        return image_map[type_key][name]
     
     slug = slugify(name)
+    if not slug: return None
     filename = f"{slug}.webp"
     
-    # 2. CHECK THE SPORTS DB (Layer 1 - Best Quality)
-    tsdb_url = fetch_from_tsdb(name, type_key)
-    if tsdb_url:
-        folder = DIRS['leagues'] if type_key == 'leagues' else DIRS['tsdb']
-        if download_and_process_image(tsdb_url, folder, filename):
-            rel_path = f"/{folder}/{filename}"
-            image_map[type_key][name] = rel_path
-            print(f"   [+] Asset: TSDB -> {name}")
-            return rel_path
-
-    # 3. CHECK PAYLOADS (Layer 2 - Source Provider)
-    # Determine target folder based on who provided the match
+    # Determine Folder
     if type_key == 'leagues':
         target_folder = DIRS['leagues']
     else:
-        # strict separation based on source
+        # Separate team logos by provider
         target_folder = DIRS['upstreams'] if source_provider == 'adstrim' else DIRS['streamed']
 
+    # 2. DOWNLOAD CHECK
     urls = [payload_urls] if isinstance(payload_urls, str) else list(payload_urls or [])
     
     for url in urls:
         if not url: continue
         if download_and_process_image(url, target_folder, filename):
+            # Save absolute path for website use (e.g., /assets/logos/...)
             rel_path = f"/{target_folder}/{filename}"
             image_map[type_key][name] = rel_path
-            print(f"   [+] Asset: {source_provider.upper()} -> {name}")
+            print(f"   [+] Saved {source_provider}: {name}")
             return rel_path
 
     return None
@@ -218,13 +164,13 @@ def smart_resolve(raw_match):
     final_league = "General"
     source_method = "API"
 
-    # 1. Map Check
+    # Map Check
     if h_slug in REVERSE_LEAGUE_MAP and a_slug in REVERSE_LEAGUE_MAP:
         if REVERSE_LEAGUE_MAP[h_slug] == REVERSE_LEAGUE_MAP[a_slug]:
             final_league = REVERSE_LEAGUE_MAP[h_slug]
             source_method = "MapStrict"
     
-    # 2. Colon Check
+    # Colon Check
     if source_method == "API" and ':' in raw_home:
         parts = raw_home.split(':')
         if len(parts) > 1 and 1 < len(parts[0].strip()) < 25:
@@ -232,12 +178,11 @@ def smart_resolve(raw_match):
             raw_home = parts[1].strip()
             source_method = "ColonSplit"
 
-    # 3. API Fallback
+    # API Fallback
     if source_method == "API":
         l_key = raw_league.lower().replace(' ', '')
         final_league = NAME_FIXES.get(l_key, raw_league.strip())
 
-    # Clean
     def clean(n, l):
         if not n or n == 'TBA': return 'TBA'
         if l: n = re.sub(re.escape(l) + r'[:\s-]*', '', n, flags=re.IGNORECASE)
@@ -259,12 +204,13 @@ def smart_resolve(raw_match):
 def generate_match_id(sport, start_unix, home, away):
     date = datetime.fromtimestamp(start_unix / 1000)
     date_key = date.strftime('%Y-%m-%d')
-    def clean(s): return re.sub(r'[^a-z0-9]', '', re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', (s or '').lower()))
-    teams = sorted([clean(home), clean(away)])
+    def c(s): return re.sub(r'[^a-z0-9]', '', re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', (s or '').lower()))
+    teams = sorted([c(home), c(away)])
     raw = f"{sport.lower()}-{date_key}-{teams[0]}v{teams[1]}"
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
 def normalize_time(ts):
+    if not ts: return 0
     if ts < 10000000000: return ts * 1000
     return ts
 
@@ -313,8 +259,13 @@ def render_match_row(m):
     def get_logo(name):
         url = image_map['teams'].get(name)
         if url: 
-            if not url.startswith('http'): url = f"https://{DOMAIN}{url}" if url.startswith('/') else f"https://{DOMAIN}/{url}"
+            # Ensure absolute path if relative
+            if not url.startswith('http'): 
+                # If path starts with /, it's root relative (GOOD)
+                if not url.startswith('/'): url = f"/{url}"
+                url = f"https://{DOMAIN}{url}"
             return f'<div class="logo-box"><img src="{url}" class="t-img" loading="lazy"></div>'
+        # Fallback Letter Logo
         return f'<div class="logo-box"><span class="t-logo" style="background:#334155">{name[0] if name else "?"}</span></div>'
 
     if m['is_single_event']:
@@ -345,10 +296,10 @@ def render_section_content(matches):
 # 6. MAIN EXECUTION
 # ==========================================
 def main():
-    print("--- 🚀 Master Engine: Assets & Data ---")
+    print("--- 🚀 Master Engine: Fetch & Inject ---")
     ensure_dirs()
     
-    # 1. Fetch APIs
+    # 1. Fetch
     try:
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
         res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
@@ -359,7 +310,7 @@ def main():
     active_live_ids = set([m['id'] for m in res_live] if isinstance(res_live, list) else [])
     raw_matches = []
 
-    # 2. Normalize Streamed
+    # 2. Streamed
     for item in res_a:
         resolved = smart_resolve({
             'home_team': item.get('title', '').split(' vs ')[0] if 'title' in item else item.get('home', 'TBA'),
@@ -367,8 +318,7 @@ def main():
             'league': item.get('league') or item.get('category'),
             'sport': item.get('category')
         })
-        
-        # Prepare Payloads
+        # Collect image payloads
         imgs_home = []
         if item.get('teams', {}).get('home', {}).get('badge'): imgs_home.append(item['teams']['home']['badge'])
         imgs_away = []
@@ -381,7 +331,7 @@ def main():
             'is_live': item.get('id') in active_live_ids, 'viewers': 0
         })
 
-    # 3. Normalize Adstrim
+    # 3. Adstrim
     if 'data' in res_b:
         for item in res_b['data']:
             resolved = smart_resolve({ 'home_team': item.get('home_team'), 'away_team': item.get('away_team'), 'league': item.get('league'), 'sport': item.get('sport') })
@@ -399,7 +349,7 @@ def main():
                 'is_live': False, 'viewers': 0
             })
 
-    # 4. Finalize & Asset Pipeline
+    # 4. Finalize
     final_matches = []
     seen_ids = set()
     
@@ -408,14 +358,11 @@ def main():
     for m in raw_matches:
         uid = generate_match_id(m['resolved']['sport'], m['timestamp'], m['resolved']['home'], m['resolved']['away'])
         
-        # --- ASSET PIPELINE TRIGGER ---
-        # Determine source provider: 'adstrim' (upstreams) or 'streamed'
+        # --- ASSET DOWNLOAD ---
         provider = 'adstrim' if m['src'] == 'adstrim' else 'streamed'
-        
         resolve_logo(m['resolved']['home'], 'teams', m['img_payload']['home'], provider)
         resolve_logo(m['resolved']['away'], 'teams', m['img_payload']['away'], provider)
         resolve_logo(m['resolved']['league'], 'leagues', m['img_payload']['league'], provider)
-        # ------------------------------
 
         if uid in seen_ids:
             existing = next((x for x in final_matches if x['id'] == uid), None)
@@ -441,14 +388,12 @@ def main():
         obj['priority_score'] = calculate_score(obj)
         final_matches.append(obj)
 
-    # Save Updated Map
     save_json(IMAGE_MAP_PATH, image_map)
     final_matches.sort(key=lambda x: x['priority_score'], reverse=True)
 
-    # 5. INJECT HTML INTO HOME
+    # 5. INJECT HOME
     if os.path.exists('index.html'):
         with open('index.html', 'r', encoding='utf-8') as f: html = f.read()
-        
         live = [m for m in final_matches if m['is_live']]
         upcoming = [m for m in final_matches if not m['is_live']]
         
@@ -473,7 +418,6 @@ def main():
                 grouped_html += f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🏆 {key}</h2>{link}</div><div>{render_section_content(grp)}</div></div>'
         
         html = re.sub(r'<div id="grouped-container".*?>.*?</div>', f'<div id="grouped-container">{grouped_html}</div>', html, flags=re.DOTALL)
-        
         with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
     # 6. INJECT WATCH
