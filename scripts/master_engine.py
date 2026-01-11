@@ -262,6 +262,12 @@ def generate_match_id(sport, start_unix, home, away):
     raw = f"{sport.lower()}-{date_key}-{teams[0]}v{teams[1]}"
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
+def normalize_time(ts):
+    if not ts: return 0
+    # If timestamp is in seconds (10 digits), convert to milliseconds
+    if ts < 10000000000: return ts * 1000
+    return ts
+
 def getStatusText(ts, is_live):
     if is_live: return "LIVE"
     diff = (ts - time.time()*1000) / 60000
