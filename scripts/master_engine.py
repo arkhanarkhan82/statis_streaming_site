@@ -233,7 +233,7 @@ def fetch_and_process():
             'timestamp': normalize_time(m.get('date', 0) or m.get('timestamp', 0)),
             'is_live': is_live,
             'is_single_event': not away or away == 'TBA',
-            'status_text': getStatusText(normalize_time(m.get('date',0)), is_live),
+            'status_text': get_status_text(normalize_time(m.get('date',0)), is_live),
             'live_viewers': m.get('viewers', 0)
         })
 
