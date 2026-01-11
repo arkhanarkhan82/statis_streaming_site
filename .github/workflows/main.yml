@@ -1,0 +1,48 @@
+name: Build StreamCMS
+
+on:
+  push:
+    paths:
+      - 'data/config.json'          # Trigger on Admin Save
+      - 'scripts/build_site.py'     # Trigger on Script Update
+      - 'assets/master_template.html' # Trigger on Template Update
+  workflow_dispatch:                # Manual Button
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write               # Required to commit generated HTML
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run Build Script
+        run: python scripts/build_site.py
+
+      - name: Commit & Push Generated Site
+        run: |
+          git config --global user.name "StreamCMS Bot"
+          git config --global user.email "bot@noreply.github.com"
+          
+          # Add the main index
+          git add index.html
+          
+          # Add generated directories (League pages and Custom Pages)
+          # We add everything, then check status
+          git add league/ || true
+          git add */index.html || true
+          
+          # Check if there are changes before committing to avoid errors
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-Build: Site Updated [Skip CI]"
+            git push
+          fi
