@@ -14,8 +14,8 @@ from io import BytesIO
 CONFIG_PATH = 'data/config.json'
 IMAGE_MAP_PATH = 'assets/data/image_map.json'
 LEAGUE_MAP_PATH = 'assets/data/league_map.json'
+OUTPUT_DIR = '.' 
 ASSETS_DIR = 'assets/logos'
-OUTPUT_DIR = '.'
 
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
@@ -35,24 +35,15 @@ NAME_FIXES = {
 # ==========================================
 # 2. UTILS
 # ==========================================
-# ==========================================
-# 2. UTILS
-# ==========================================
 def load_json(path):
     if os.path.exists(path):
-        try:
-            with open(path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except:
-            return {}
+        try: with open(path, 'r', encoding='utf-8') as f: return json.load(f)
+        except: return {}
     return {}
 
 def save_json(path, data):
-    try:
-        with open(path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2)
-    except:
-        pass
+    try: with open(path, 'w', encoding='utf-8') as f: json.dump(data, f, indent=2)
+    except: pass
 
 config = load_json(CONFIG_PATH)
 image_map = load_json(IMAGE_MAP_PATH)
@@ -62,6 +53,11 @@ SITE_SETTINGS = config.get('site_settings', {})
 TARGET_COUNTRY = SITE_SETTINGS.get('target_country', 'US')
 PRIORITY_SETTINGS = config.get('sport_priorities', {}).get(TARGET_COUNTRY, {})
 DOMAIN = SITE_SETTINGS.get('domain', 'example.com')
+THEME = config.get('theme', {})
+
+# Params for Links
+PARAM_LIVE = SITE_SETTINGS.get('param_live', 'stream')
+PARAM_INFO = SITE_SETTINGS.get('param_info', 'info')
 
 REVERSE_LEAGUE_MAP = {}
 for l_name, teams in league_map.items():
@@ -99,7 +95,7 @@ def format_display_time(unix_ms):
     return { "time": dt.strftime('%I:%M %p'), "date": dt.strftime('%b %d') }
 
 # ==========================================
-# 3. CORE LOGIC
+# 3. CORE DATA LOGIC
 # ==========================================
 def smart_resolve(raw_match):
     raw_home = raw_match.get('home_team') or 'TBA'
@@ -121,7 +117,7 @@ def smart_resolve(raw_match):
         parts = raw_home.split(':')
         if len(parts) > 1 and 1 < len(parts[0].strip()) < 25:
             final_league = parts[0].strip()
-            raw_home = parts[1].strip() # Auto clean home for next step
+            raw_home = parts[1].strip()
             source_method = "ColonSplit"
 
     if source_method == "API":
@@ -186,7 +182,11 @@ def resolve_and_fetch_logo(team_name, image_payload=None):
             except: continue
     return None
 
+# ==========================================
+# 4. HTML GENERATORS (VISUALS)
+# ==========================================
 def render_match_row(m):
+    # This generates the exact HTML needed for your CSS to style it properly
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
@@ -203,36 +203,47 @@ def render_match_row(m):
         if url: 
             if not url.startswith('http'): url = f"https://{DOMAIN}{url}" if url.startswith('/') else f"https://{DOMAIN}/{url}"
             return f'<div class="logo-box"><img src="{url}" class="t-img" loading="lazy"></div>'
-        return f'<div class="logo-box"><span class="t-logo" style="background:#333">{name[0] if name else "?"}</span></div>'
+        return f'<div class="logo-box"><span class="t-logo" style="background:#334155">{name[0] if name else "?"}</span></div>'
 
     if m['is_single_event']:
         teams_html = f'<div class="team-name">{get_logo(m["home"])} {m["home"]}</div>'
     else:
         teams_html = f'<div class="team-name">{get_logo(m["home"])} {m["home"]}</div><div class="team-name">{get_logo(m["away"])} {m["away"]}</div>'
 
-    p_live = SITE_SETTINGS.get('param_live', 'stream')
-    p_info = SITE_SETTINGS.get('param_info', 'info')
+    # Watch Button Logic
+    btn_label = THEME.get('text_watch_btn', 'WATCH')
+    hd_label = THEME.get('text_hd_badge', 'HD')
     
     if is_live:
-        btn = f'<button onclick="window.location.href=\'/watch/?{p_live}={m["id"]}\'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>'
+        # LIVE -> DIRECT LINK to ?stream=...
+        btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_LIVE}={m["id"]}\'" class="btn-watch">{btn_label} <span class="hd-badge">{hd_label}</span></button>'
     else:
         diff = (m['timestamp'] - time.time()*1000) / 60000
-        if diff <= 30: btn = f'<button onclick="window.location.href=\'/watch/?{p_info}={m["id"]}\'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>'
-        else: btn = '<button class="btn-notify">🔔 Notify</button>'
+        if diff <= 30:
+            # STARTING SOON -> DIRECT LINK to ?info=...
+            btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_INFO}={m["id"]}\'" class="btn-watch">{btn_label} <span class="hd-badge">{hd_label}</span></button>'
+        else:
+            # UPCOMING -> Notify Button
+            btn = '<button class="btn-notify">🔔 Notify</button>'
+            
+    # Copy Link Button with correct ?info= link
+    info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
+    copy_btn = f'<button class="btn-copy-link" onclick="copyText(\'{info_url}\')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button>'
 
-    return f'<div class="{row_class}"><div class="col-time">{time_html}</div><div class="teams-wrapper"><div class="league-tag">{m["league"].upper()}</div>{teams_html}</div><div class="col-meta">{meta_html}</div><div class="col-action">{btn}</div></div>'
+    tag = m['league'].upper()
+    return f'<div class="{row_class}"><div class="col-time">{time_html}</div><div class="teams-wrapper"><div class="league-tag">{tag}</div>{teams_html}</div><div class="col-meta">{meta_html}</div><div class="col-action">{btn}{copy_btn}</div></div>'
 
 def render_section_content(matches):
     if not matches: return ""
     return "".join([render_match_row(m) for m in matches])
 
 # ==========================================
-# 4. MAIN INJECTOR
+# 5. MAIN EXECUTION
 # ==========================================
 def main():
     print("--- 🚀 Master Engine: Fetch & Inject ---")
     
-    # 1. Fetch & Normalize
+    # 1. Fetch
     try:
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
         res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
@@ -294,7 +305,7 @@ def main():
             'timestamp': m['timestamp'], 'is_live': m['is_live'],
             'is_single_event': (not m['resolved']['away'] or m['resolved']['away']=='TBA'),
             'status_text': getStatusText(m['timestamp'], m['is_live']),
-            'stream_channels': [{'name': 'Main', 'url': c.get('url') or f"https://streamed.pk/player?id={c['id']}"} for c in m['channels']],
+            'stream_channels': [{ 'name': 'Main', 'url': c.get('url') or f"https://streamed.pk/player?id={c['id']}" } for c in m['channels']],
             'live_viewers': m['viewers']
         }
         obj['priority_score'] = calculate_score(obj)
@@ -304,29 +315,36 @@ def main():
     final_matches.sort(key=lambda x: x['priority_score'], reverse=True)
 
     # 2. INJECT INTO HOME (index.html)
+    # The build_site.py has already created index.html with markers like <!-- DYNAMIC_SECTION_LIVE -->
+    # We just replace those markers.
     if os.path.exists('index.html'):
         with open('index.html', 'r', encoding='utf-8') as f: html = f.read()
         
-        # Categorize
         live = [m for m in final_matches if m['is_live']]
         upcoming = [m for m in final_matches if not m['is_live']]
         
-        # Replace Live
         live_rows = render_section_content(live)
+        # Handle live section visibility based on content
         if live_rows:
-            html = re.sub(r'<div id="live-list".*?>.*?</div>', f'<div id="live-list">{live_rows}</div>', html, flags=re.DOTALL)
-            html = html.replace('style="display:none;"', '') # Unhide
+            html = html.replace('<!-- DYNAMIC_SECTION_LIVE -->', f'<div id="live-list" class="match-list">{live_rows}</div>')
+            html = html.replace('style="display:none;"', '') # Unhide live section container if hidden
         else:
-            # If no live matches, ensure it's hidden or empty
-            html = re.sub(r'<div id="live-list".*?>.*?</div>', '<div id="live-list"></div>', html, flags=re.DOTALL)
-            if 'id="live-section"' in html:
-                html = html.replace('<div id="live-section">', '<div id="live-section" style="display:none;">')
+            # Keep hidden if no live matches
+            html = html.replace('<!-- DYNAMIC_SECTION_LIVE -->', '')
+        
+        # Wildcard Injection
+        wildcard_cat = THEME.get('wildcard_category', '')
+        if wildcard_cat:
+             wc_matches = [m for m in upcoming if wildcard_cat.lower() in m['league'].lower()]
+             wc_html = render_section_content(wc_matches)
+             html = html.replace('<!-- DYNAMIC_SECTION_WILDCARD -->', f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🔥 {wildcard_cat}</h2></div><div>{wc_html}</div></div>' if wc_html else '')
 
-        # Replace Top 5
+        # Top 5 Injection
         top5 = upcoming[:5]
-        html = re.sub(r'<div id="top-upcoming-container".*?>.*?</div>', f'<div id="top-upcoming-container"><div class="section-box"><div class="sec-head"><h2 class="sec-title">📅 Upcoming</h2></div>{render_section_content(top5)}</div></div>', html, flags=re.DOTALL)
+        top_html = render_section_content(top5)
+        html = html.replace('<!-- DYNAMIC_SECTION_TOP_UPCOMING -->', f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">📅 Upcoming</h2></div><div>{top_html}</div></div>' if top_html else '')
 
-        # Replace Grouped
+        # Grouped Injection
         grouped_html = ""
         used_ids = set([m['id'] for m in live] + [m['id'] for m in top5])
         for key, settings in PRIORITY_SETTINGS.items():
@@ -336,13 +354,12 @@ def main():
                 for m in grp: used_ids.add(m['id'])
                 slug = slugify(key) + "-streams"
                 link = f'<a href="/{slug}/" class="sec-right-link">View All ></a>' if settings.get('hasLink') else ''
-                grouped_html += f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🏆 {key}</h2>{link}</div>{render_section_content(grp)}</div>'
+                grouped_html += f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🏆 {key}</h2>{link}</div><div>{render_section_content(grp)}</div></div>'
         
-        html = re.sub(r'<div id="grouped-container".*?>.*?</div>', f'<div id="grouped-container">{grouped_html}</div>', html, flags=re.DOTALL)
+        html = html.replace('<!-- DYNAMIC_SECTION_GROUPED -->', grouped_html)
         
         with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
-    # 3. INJECT INTO WATCH (watch/index.html)
     # 3. INJECT INTO WATCH (watch/index.html)
     if os.path.exists('watch/index.html'):
         with open('watch/index.html', 'r', encoding='utf-8') as f: w_html = f.read()
@@ -355,7 +372,7 @@ def main():
         
         json_str = json.dumps(min_matches)
         
-        # FIX: Use lambda for re.sub replacement to handle JSON backslashes/unicode safely
+        # Use Lambda to avoid regex backslash errors with JSON
         if "window.MATCH_DATA =" in w_html:
              w_html = re.sub(
                  r'window\.MATCH_DATA\s*=\s*\[.*?\];', 
@@ -364,13 +381,11 @@ def main():
                  flags=re.DOTALL
              )
         else:
-             # Fallback: inject after <script>
              w_html = w_html.replace('<script>', f'<script>window.MATCH_DATA = {json_str};')
              
         with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(w_html)
 
     # 4. INJECT INTO LEAGUES
-    # Iterate known league folders
     for key, settings in PRIORITY_SETTINGS.items():
         slug = slugify(key) + "-streams"
         path = os.path.join(OUTPUT_DIR, slug, 'index.html')
@@ -384,10 +399,12 @@ def main():
             live_rows = render_section_content(l_live)
             upc_rows = render_section_content(l_upc)
             
-            l_html = re.sub(r'<div id="live-list".*?>.*?</div>', f'<div id="live-list">{live_rows}</div>', l_html, flags=re.DOTALL)
-            if live_rows: l_html = l_html.replace('style="display:none;"', '')
+            # Use specific ID replacement for leagues (build_site put <div id="live-list">)
+            if live_rows:
+                l_html = re.sub(r'<div id="live-list"[^>]*>.*?</div>', f'<div id="live-list">{live_rows}</div>', l_html, flags=re.DOTALL)
+                l_html = l_html.replace('style="display:none;"', '')
             
-            l_html = re.sub(r'<div id="schedule-list".*?>.*?</div>', f'<div id="schedule-list">{upc_rows}</div>', l_html, flags=re.DOTALL)
+            l_html = re.sub(r'<div id="schedule-list"[^>]*>.*?</div>', f'<div id="schedule-list">{upc_rows}</div>', l_html, flags=re.DOTALL)
             
             with open(path, 'w', encoding='utf-8') as f: f.write(l_html)
 
