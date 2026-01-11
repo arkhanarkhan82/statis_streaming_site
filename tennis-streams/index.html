@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Tennis Live Streams and Schedules</title>
     <meta name="description" content="">
-    
-    <meta name="theme-color" content="#050505">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
     <meta property="og:title" content="Watch Tennis Live Streams and Schedules">
     <meta property="og:description" content="">
     <meta property="og:image" content="/assets/test-logo.webp">
-    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:type" content="{{OG_MIME}}">
     
     <meta name="robots" content="index, follow">
     <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
@@ -56,7 +56,7 @@
             --header-link-hover-color: #3e0a0a;
             --header-highlight-color: #02ed12;
             --header-border-bottom: 1px solid var(--border);
-            --logo-image-size: 0px;
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
 
             /* HERO */
             --hero-h1-color: #ffffff;
@@ -75,33 +75,33 @@
             --match-row-hover-bg: #1a1a1a;
             --match-row-hover-border: #444444;
             --match-row-time-main-color: #888888;
-            --match-row-time-sub-color: ;
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
             --match-row-live-text-color: #d00000;
             --match-row-team-name-color: #ffffff;
             
             /* BUTTONS */
             --match-row-btn-watch-bg: #d00000;
             --match-row-btn-watch-text: #ffffff;
-            --match-row-hd-badge-bg: ;
-            --match-row-hd-badge-text: ;
-            --match-row-btn-notify-bg: ;
-            --match-row-btn-notify-border: ;
-            --match-row-btn-notify-text: ;
+            --match-row-hd-badge-bg: {{THEME_MATCH_ROW_HD_BADGE_BG}};
+            --match-row-hd-badge-text: {{THEME_MATCH_ROW_HD_BADGE_TEXT}};
+            --match-row-btn-notify-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_BG}};
+            --match-row-btn-notify-border: {{THEME_MATCH_ROW_BTN_NOTIFY_BORDER}};
+            --match-row-btn-notify-text: {{THEME_MATCH_ROW_BTN_NOTIFY_TEXT}};
             
             /* FOOTER */
             --footer-bg-start: #0e0e0e;
             --footer-bg-end: #050505;
-            --footer-border-top: ;
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
             --footer-link-color: #94a3b8;
-            --footer-link-hover-color: ;
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
             
             /* SOCIALS */
-            --social-sidebar-bg: ;
-            --social-sidebar-border: ;
-            --social-btn-bg: ;
-            --social-btn-color: ;
+            --social-sidebar-bg: {{THEME_SOCIAL_SIDEBAR_BG}};
+            --social-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
+            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}};
+            --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
             --mobile-footer-bg: #0a0a0a;
-            --mobile-footer-border-top: ;
+            --mobile-footer-border-top: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
             
             /* ARTICLE */
             --article-bg: #0a0a0a;
@@ -110,23 +110,23 @@
             --article-bullet: #e907a1;
             --article-link: #df0c0c;
             --article-h2-color: #0400f0;
-            --article-h2-border: #05c0e6;
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
             
             /* LEAGUE CARDS */
             --league-card-bg: #bb1b1b;
-            --league-card-border: 3px solid #11494a;
+            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
             --league-card-text: #e1dbdb;
             --league-card-radius: 18px;
             --league-card-hover-bg: #347ba8;
-            --league-card-hover-border: 3px solid #ad0b0b;
+            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
             --league-card-hover-text: #222020;
 
             /* UTILS */
-            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
+            --scrollbar-thumb-color: #333333;
             --back-to-top-bg: #d00000;
             --back-to-top-icon-color: #ffffff;
-            --sys-status-bg: rgba(79, 250, 5, 0.15);
-            --sys-status-border: #01fe12;
+            --sys-status-bg: #4ffa05;
+            --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
             --sys-status-text: #039900;
             --sys-status-dot-color: #00c73c;
             --sys-status-radius: 0px;
@@ -169,9 +169,9 @@
         .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
 
         /* HERO */
-        .hero-section { background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px 15px 15px; display: block; }
+        .hero-section { background: #ffffff; padding: 40px 15px; display: block; }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
-        .hero-inner { max-width: var(--container-max-width); margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
+        .hero-inner { max-width: 950px; margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
         .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: 0 auto; margin-bottom: 20px; max-width: 800px; }
         
@@ -179,8 +179,8 @@
         .cat-pill { background: var(--hero-pill-bg); border: 1px solid {{THEME_HERO_PILL_BORDER}}; padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
         .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: {{THEME_HERO_PILL_HOVER_BORDER}}; }
 
-        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
-        .sys-status .dot, .sys-status .live-dot { width: {{THEME_SYS_STATUS_DOT_SIZE}}; height: {{THEME_SYS_STATUS_DOT_SIZE}}; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        .sys-status { display: {{THEME_SYS_STATUS_DISPLAY}}; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status .dot, .sys-status .live-dot { width: 10px; height: 10px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         /* MATCH ROWS & SECTIONS */
         .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
@@ -245,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: #bb1b1b; border: 3px solid #11494a; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: 3px solid #ad0b0b; background: #347ba8; color: #222020; transform: translateY(-2px); }
+        .league-card { background: #bb1b1b; border: {{THEME_LEAGUE_CARD_BORDER}}; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: #347ba8; color: #222020; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -256,7 +256,7 @@
 
     <header class="{{HEADER_CLASSES}}">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></a>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
         </div>
@@ -285,7 +285,7 @@
             <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
-                    Top 5 section title test
+                    {{TEXT_UPCOMING_TITLE}}
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
@@ -294,7 +294,7 @@
 
         <!-- ARTICLE -->
         <article class="seo-article">
-            
+            {{LEAGUE_ARTICLE}}
         </article>
 
         <!-- FOOTER LEAGUES -->
@@ -306,7 +306,7 @@
     </main>
 
     <footer class="{{FOOTER_CLASSES}}">
-        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
+        <div class="footer-grid" style="display:grid; gap:30px; grid-template-columns: repeat(3, 1fr);"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
         <div class="copyright">Copyright</div>
     </footer>
 
@@ -318,7 +318,7 @@
     </button>
 
     <script>
-        const SITE_DOMAIN = "https://totalsportek.top";
+        const SITE_DOMAIN = "https://{{DOMAIN}}";
         const SHARE_CONFIG = { counts: { telegram: 1240, whatsapp: 850, reddit: 340, twitter: 510 } };
         
         window.addEventListener('DOMContentLoaded', () => {
