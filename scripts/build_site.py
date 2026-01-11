@@ -10,7 +10,7 @@ CONFIG_PATH = 'data/config.json'
 TEMPLATE_MASTER = 'assets/master_template.html'
 TEMPLATE_WATCH = 'assets/watch_template.html'
 TEMPLATE_LEAGUE = 'assets/league_template.html'
-TEMPLATE_PAGE = 'assets/page_template.html' # For About/Contact/DMCA
+TEMPLATE_PAGE = 'assets/page_template.html'
 OUTPUT_DIR = '.' 
 
 # ==========================================
@@ -70,17 +70,14 @@ def apply_theme(html, config, page_data=None):
     SETTINGS = config.get('site_settings', {})
     MENUS = config.get('menus', {})
     
-    # 1. Variable Map (JSON Key -> CSS Var/Template Tag)
-    # This maps your Admin Panel keys to the CSS Variables in the <style> block
+    # 1. Variable Map
     vars = {
-        # Base Colors
         'brand_primary': 'THEME_BRAND_PRIMARY', 'brand_dark': 'THEME_BRAND_DARK',
         'accent_gold': 'THEME_ACCENT_GOLD', 'status_green': 'THEME_STATUS_GREEN',
         'bg_body': 'THEME_BG_BODY', 'bg_panel': 'THEME_BG_PANEL',
         'text_main': 'THEME_TEXT_MAIN', 'text_muted': 'THEME_TEXT_MUTED',
         'border_color': 'THEME_BORDER_COLOR',
         
-        # Typography & Layout
         'font_family_base': 'THEME_FONT_FAMILY_BASE',
         'font_family_headings': 'THEME_FONT_FAMILY_HEADINGS',
         'container_max_width': 'THEME_CONTAINER_MAX_WIDTH',
@@ -89,7 +86,6 @@ def apply_theme(html, config, page_data=None):
         'button_border_radius': 'THEME_BUTTON_BORDER_RADIUS',
         'hero_pill_radius': 'THEME_HERO_PILL_RADIUS',
         
-        # Header
         'header_bg': 'THEME_HEADER_BG', 'header_text_color': 'THEME_HEADER_TEXT_COLOR',
         'header_link_active_color': 'THEME_HEADER_LINK_ACTIVE_COLOR',
         'header_link_hover_color': 'THEME_HEADER_LINK_HOVER_COLOR',
@@ -98,13 +94,11 @@ def apply_theme(html, config, page_data=None):
         'logo_p1_color': 'THEME_LOGO_P1_COLOR', 'logo_p2_color': 'THEME_LOGO_P2_COLOR',
         'logo_image_size': 'THEME_LOGO_IMAGE_SIZE',
         
-        # Hero
         'hero_h1_color': 'THEME_HERO_H1_COLOR', 'hero_intro_color': 'THEME_HERO_INTRO_COLOR',
         'hero_pill_bg': 'THEME_HERO_PILL_BG', 'hero_pill_text': 'THEME_HERO_PILL_TEXT',
         'hero_pill_hover_bg': 'THEME_HERO_PILL_HOVER_BG', 'hero_pill_hover_text': 'THEME_HERO_PILL_HOVER_TEXT',
         'text_sys_status': 'THEME_TEXT_SYS_STATUS',
         
-        # Match Rows
         'match_row_bg': 'THEME_MATCH_ROW_BG', 'match_row_border': 'THEME_MATCH_ROW_BORDER',
         'match_row_live_border_left': 'THEME_MATCH_ROW_LIVE_BORDER_LEFT',
         'match_row_live_bg_start': 'THEME_MATCH_ROW_LIVE_BG_START',
@@ -125,7 +119,6 @@ def apply_theme(html, config, page_data=None):
         'match_row_btn_notify_text': 'THEME_MATCH_ROW_BTN_NOTIFY_TEXT',
         'match_row_btn_copy_link_color': 'THEME_MATCH_ROW_BTN_COPY_LINK_COLOR',
 
-        # Footer
         'footer_bg_start': 'THEME_FOOTER_BG_START', 'footer_bg_end': 'THEME_FOOTER_BG_END',
         'footer_border_top': 'THEME_FOOTER_BORDER_TOP', 'footer_link_color': 'THEME_FOOTER_LINK_COLOR',
         'footer_link_hover_color': 'THEME_FOOTER_LINK_HOVER_COLOR',
@@ -133,25 +126,21 @@ def apply_theme(html, config, page_data=None):
         'footer_desc_color': 'THEME_FOOTER_DESC_COLOR',
         'footer_heading_color': 'THEME_FOOTER_HEADING_COLOR',
         
-        # Article
         'article_bg': 'THEME_ARTICLE_BG', 'article_text': 'THEME_ARTICLE_TEXT',
         'article_line_height': 'THEME_ARTICLE_LINE_HEIGHT', 'article_bullet_color': 'THEME_ARTICLE_BULLET_COLOR',
         'article_link_color': 'THEME_ARTICLE_LINK_COLOR', 'article_h2_color': 'THEME_ARTICLE_H2_COLOR',
         'article_h2_border_color': 'THEME_ARTICLE_H2_BORDER', 'article_h3_color': 'THEME_ARTICLE_H3_COLOR',
         'article_h4_color': 'THEME_ARTICLE_H4_COLOR',
         
-        # Socials
         'social_sidebar_bg': 'THEME_SOCIAL_SIDEBAR_BG', 'social_sidebar_border': 'THEME_SOCIAL_SIDEBAR_BORDER',
         'social_btn_bg': 'THEME_SOCIAL_BTN_BG', 'social_btn_color': 'THEME_SOCIAL_BTN_COLOR',
         'mobile_footer_bg': 'THEME_MOBILE_FOOTER_BG', 'mobile_footer_border_top': 'THEME_MOBILE_FOOTER_BORDER_TOP',
         
-        # Misc
         'back_to_top_bg': 'THEME_BACK_TO_TOP_BG', 'back_to_top_icon_color': 'THEME_BACK_TO_TOP_ICON_COLOR',
         'sys_status_bg_color': 'THEME_SYS_STATUS_BG_COLOR', 'sys_status_border_color': 'THEME_SYS_STATUS_BORDER',
         'sys_status_text_color': 'THEME_SYS_STATUS_TEXT_COLOR', 'sys_status_dot_color': 'THEME_SYS_STATUS_DOT_COLOR',
         'sys_status_radius': 'THEME_SYS_STATUS_RADIUS', 'section_logo_size': 'THEME_SECTION_LOGO_SIZE',
         
-        # Watch specific (needed if passed)
         'chat_header_bg': 'THEME_CHAT_HEADER_BG', 'chat_header_text': 'THEME_CHAT_HEADER_TEXT',
         'chat_dot_color': 'THEME_CHAT_DOT_COLOR', 'chat_dot_size': 'THEME_CHAT_DOT_SIZE',
         'chat_input_bg': 'THEME_CHAT_INPUT_BG', 'chat_input_text': 'THEME_CHAT_INPUT_TEXT',
@@ -188,7 +177,7 @@ def apply_theme(html, config, page_data=None):
 
         html = html.replace(f'{{{{{tpl_key}}}}}', str(val))
 
-    # Apply Borders (width + color)
+    # Apply Borders
     for sec in ['live', 'upcoming', 'wildcard', 'leagues', 'grouped', 'league_upcoming']:
         w = ensure_unit(THEME.get(f'sec_border_{sec}_width', '1'))
         c = THEME.get(f'sec_border_{sec}_color', '#334155')
@@ -297,11 +286,11 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{THEME_META_COLOR}}', THEME.get('header_bg', '#000000'))
     html = html.replace('{{SCHEMA_BLOCK}}', '') 
 
-    # Page Content
-    html = html.replace('{{H1_TITLE}}', page_data.get('h1_title', site_name))
-    html = html.replace('{{H1_ALIGN}}', page_data.get('h1_align', 'left'))
-    html = html.replace('{{HERO_TEXT}}', page_data.get('hero_text', ''))
-    html = html.replace('{{ARTICLE_CONTENT}}', page_data.get('article', ''))
+    # Content Replacement with SAFETY CHECKS
+    html = html.replace('{{H1_TITLE}}', page_data.get('h1_title') or site_name)
+    html = html.replace('{{H1_ALIGN}}', page_data.get('h1_align') or 'left')
+    html = html.replace('{{HERO_TEXT}}', page_data.get('hero_text') or '')
+    html = html.replace('{{ARTICLE_CONTENT}}', page_data.get('article') or '')
     
     # Menus
     html = html.replace('{{HEADER_MENU}}', build_menu_html(MENUS.get('header', []), 'header'))
@@ -318,7 +307,7 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{FOOTER_LEAGUES}}', build_menu_html(f_leagues, 'footer_leagues'))
     
     # Footer Grid (requires config with logo html)
-    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config)) # Uses the helper
+    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config)) 
     html = html.replace('{{FOOTER_COPYRIGHT}}', SETTINGS.get('footer_copyright', ''))
     
     # Static Params
@@ -350,12 +339,6 @@ def main():
         'article': p_home.get('content'),
         'canonical_url': f"https://{config['site_settings']['domain']}/"
     })
-    
-    # Placeholder Markers for Master Engine
-    # Note: These comments must exist in master_template.html or be injected here.
-    # Assuming master_template.html ALREADY HAS <!-- DYNAMIC_SECTION_... --> 
-    # If not, we could inject them, but it's safer to have them in the template.
-    # master_template.html should contain <div id="live-section">...</div> which master_engine replaces.
     
     with open('index.html', 'w', encoding='utf-8') as f: f.write(home_html)
 
@@ -407,8 +390,6 @@ def main():
         html = html.replace('{{TEXT_LIVE_SECTION_TITLE}}', rep(articles.get('league_live_title', f"Live {key}")))
         html = html.replace('{{TEXT_UPCOMING_TITLE}}', rep(articles.get('league_upcoming_title', f"Upcoming {key}")))
         
-        # NOTE: master_engine.py will look for <div id="live-list"> and <div id="schedule-list"> to inject data
-        
         out = os.path.join(OUTPUT_DIR, slug)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
@@ -426,7 +407,7 @@ def main():
                 'meta_desc': p.get('meta_desc', ''),
                 'h1_title': p.get('title'),
                 'h1_align': p.get('h1_align', 'left'),
-                'hero_text': '', # Static pages usually don't have hero text, or use meta_desc
+                'hero_text': '', 
                 'article': p.get('content', ''),
                 'canonical_url': f"https://{config['site_settings']['domain']}/{p['slug']}/"
             }
