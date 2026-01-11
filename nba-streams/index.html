@@ -1,137 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <!-- SEO & METADATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{META_TITLE}}</title>
-    <meta name="description" content="{{META_DESC}}">
-    {{META_KEYWORDS}}
+    <title>Watch NBA Live Streams and Schedules</title>
+    <meta name="description" content="The Best Free NBA Live stream free online">
+    <meta name="keywords" content="NBA stream, watch NBA free, NBA live">
     <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{CANONICAL_URL}}">
-    <meta property="og:site_name" content="{{SITE_NAME}}">
-    <meta property="og:title" content="{{META_TITLE}}">
-    <meta property="og:description" content="{{META_DESC}}">
-    <meta property="og:image" content="{{OG_IMAGE}}">
-    <meta property="og:image:type" content="{{OG_MIME}}">
+    <meta property="og:url" content="https://totalsportek.top/nba-streams/">
+    <meta property="og:site_name" content="StreamEast">
+    <meta property="og:title" content="Watch NBA Live Streams and Schedules">
+    <meta property="og:description" content="The Best Free NBA Live stream free online">
+    <meta property="og:image" content="https://totalsportek.top/assets/test-logo.webp">
+    <meta property="og:image:type" content="image/webp">
     
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="{{FAVICON}}">
-    <link rel="canonical" href="{{CANONICAL_URL}}">
-    {{LOGO_PRELOAD}}
+    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
+    <link rel="canonical" href="https://totalsportek.top/nba-streams/">
+    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
     
     <!-- SCHEMA -->
-    {{SCHEMA_BLOCK}}
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://totalsportek.top/#organization",
+      "name": "StreamEast",
+      "url": "https://totalsportek.top/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://totalsportek.top/assets/test-logo.webp",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://totalsportek.top/#website",
+      "url": "https://totalsportek.top/",
+      "name": "StreamEast",
+      "publisher": {
+        "@id": "https://totalsportek.top/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://totalsportek.top/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Watch NBA Live Streams and Schedules",
+          "item": "https://totalsportek.top/nba-streams/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://totalsportek.top/nba-streams/#webpage",
+      "url": "https://totalsportek.top/nba-streams/",
+      "name": "Watch NBA Live Streams and Schedules",
+      "isPartOf": {
+        "@id": "https://totalsportek.top/#website"
+      },
+      "about": {
+        "@type": "SportsEvent",
+        "name": "Watch NBA Live Streams and Schedules"
+      },
+      "mainEntity": {
+        "@id": "https://totalsportek.top/nba-streams/#events"
+      }
+    }
+  ]
+}</script>
     
     <style>html { scroll-behavior: smooth; }</style>
 
     <style>
         :root {
             /* THEME VARIABLES */
-            --brand-primary: {{THEME_BRAND_PRIMARY}};
-            --brand-dark: {{THEME_BRAND_DARK}};
-            --status-green: {{THEME_STATUS_GREEN}};
-            --accent-gold: {{THEME_ACCENT_GOLD}};
-            --bg-body: {{THEME_BG_BODY}};
-            --bg-panel: {{THEME_BG_PANEL}};
-            --border: {{THEME_BORDER_COLOR}};
-            --text-main: {{THEME_TEXT_MAIN}};
-            --text-muted: {{THEME_TEXT_MUTED}};
+            --brand-primary: #d00000;
+            --brand-dark: #8a0000;
+            --status-green: #00e676;
+            --accent-gold: #ffd700;
+            --bg-body: #050505;
+            --bg-panel: #0f0f0f;
+            --border: #222222;
+            --text-main: #ffffff;
+            --text-muted: #888888;
             
-            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
-            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
-            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}}; 
-            --header-max-width: {{THEME_HEADER_MAX_WIDTH}};
-            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}}; 
-            --button-border-radius: {{THEME_BUTTON_BORDER_RADIUS}};
-            --hero-pill-radius: {{THEME_HERO_PILL_RADIUS}};
+            --font-family-base: system-ui, -apple-system, sans-serif;
+            --font-family-headings: 'Courier New', monospace;
+            --container-max-width: 950px; 
+            --header-max-width: 1000px;
+            --border-radius-base: 5px; 
+            --button-border-radius: 21px;
+            --hero-pill-radius: 8px;
             
             /* HEADER */
-            --header-bg: {{THEME_HEADER_BG}};
-            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
-            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
-            --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
-            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
-            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
-            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+            --header-bg: #050505;
+            --header-text-color: #aaaaaa;
+            --header-link-active-color: #ffffff;
+            --header-link-hover-color: #3e0a0a;
+            --header-highlight-color: #02ed12;
+            --header-border-bottom: 1px solid var(--border);
+            --logo-image-size: 40px;
 
             /* HERO */
-            --hero-h1-color: {{THEME_HERO_H1_COLOR}};
-            --hero-intro-color: {{THEME_HERO_INTRO_COLOR}};
-            --hero-pill-bg: {{THEME_HERO_PILL_BG}};
-            --hero-pill-text: {{THEME_HERO_PILL_TEXT}};
-            --hero-pill-hover-bg: {{THEME_HERO_PILL_HOVER_BG}};
-            --hero-pill-hover-text: {{THEME_HERO_PILL_HOVER_TEXT}};
+            --hero-h1-color: #ffffff;
+            --hero-intro-color: #999999;
+            --hero-pill-bg: #111111;
+            --hero-pill-text: #cccccc;
+            --hero-pill-hover-bg: #2a0a0a;
+            --hero-pill-hover-text: #ffffff;
 
             /* MATCH ROWS */
-            --match-row-bg: {{THEME_MATCH_ROW_BG}};
-            --match-row-border: {{THEME_MATCH_ROW_BORDER}};
-            --match-row-live-border-left: {{THEME_MATCH_ROW_LIVE_BORDER_LEFT}};
-            --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
-            --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
-            --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}};
-            --match-row-hover-border: {{THEME_MATCH_ROW_HOVER_BORDER}};
-            --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
-            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
-            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
-            --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
+            --match-row-bg: #121212;
+            --match-row-border: #222222;
+            --match-row-live-border-left: 3px solid var(--brand-primary);
+            --match-row-live-bg-start: #1a0505;
+            --match-row-live-bg-end: #141414;
+            --match-row-hover-bg: #1a1a1a;
+            --match-row-hover-border: #444444;
+            --match-row-time-main-color: #888888;
+            --match-row-time-sub-color: #94a3b8;
+            --match-row-live-text-color: #d00000;
+            --match-row-team-name-color: #ffffff;
             
             /* BUTTONS */
-            --match-row-btn-watch-bg: {{THEME_MATCH_ROW_BTN_WATCH_BG}};
-            --match-row-btn-watch-text: {{THEME_MATCH_ROW_BTN_WATCH_TEXT}};
-            --match-row-hd-badge-bg: {{THEME_MATCH_ROW_HD_BADGE_BG}};
-            --match-row-hd-badge-text: {{THEME_MATCH_ROW_HD_BADGE_TEXT}};
-            --match-row-btn-notify-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_BG}};
-            --match-row-btn-notify-border: {{THEME_MATCH_ROW_BTN_NOTIFY_BORDER}};
-            --match-row-btn-notify-text: {{THEME_MATCH_ROW_BTN_NOTIFY_TEXT}};
+            --match-row-btn-watch-bg: #d00000;
+            --match-row-btn-watch-text: #ffffff;
+            --match-row-hd-badge-bg: rgba(0,0,0,0.3);
+            --match-row-hd-badge-text: #facc15;
+            --match-row-btn-notify-bg: transparent;
+            --match-row-btn-notify-border: #334155;
+            --match-row-btn-notify-text: #94a3b8;
             
             /* FOOTER */
-            --footer-bg-start: {{THEME_FOOTER_BG_START}};
-            --footer-bg-end: {{THEME_FOOTER_BG_END}};
-            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
-            --footer-link-color: {{THEME_FOOTER_LINK_COLOR}};
-            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-bg-start: #0e0e0e;
+            --footer-bg-end: #050505;
+            --footer-border-top: 1px solid #334155;
+            --footer-link-color: #94a3b8;
+            --footer-link-hover-color: #f1f5f9;
             
             /* SOCIALS */
-            --social-sidebar-bg: {{THEME_SOCIAL_SIDEBAR_BG}};
-            --social-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
-            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}};
-            --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
-            --mobile-footer-bg: {{THEME_MOBILE_FOOTER_BG}};
-            --mobile-footer-border-top: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
+            --social-sidebar-bg: rgba(15, 23, 42, 0.8);
+            --social-sidebar-border: #334155;
+            --social-btn-bg: rgba(30, 41, 59, 0.8);
+            --social-btn-color: #94a3b8;
+            --mobile-footer-bg: #000000;
+            --mobile-footer-border-top: 1px solid #334155;
             
             /* ARTICLE */
-            --article-bg: {{THEME_ARTICLE_BG}};
-            --article-text: {{THEME_ARTICLE_TEXT}};
-            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
-            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
-            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
-            --article-h2-color: {{THEME_ARTICLE_H2_COLOR}};
-            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-bg: #0a0606;
+            --article-text: #c2bcbc;
+            --article-line-height: 1.6;
+            --article-bullet: #0caca1;
+            --article-link: #b70b0b;
+            --article-h2-color: #d715e5;
+            --article-h2-border: 3px solid #34f80d;
             
             /* LEAGUE CARDS */
-            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
-            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
-            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
-            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
-            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
-            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
-            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-bg: #af1212;
+            --league-card-border: 3px solid #188ed8;
+            --league-card-text: #f1e9e9;
+            --league-card-radius: 20px;
+            --league-card-hover-bg: #93279b;
+            --league-card-hover-border: 3px solid #dea60d;
+            --league-card-hover-text: #0b0404;
 
             /* UTILS */
-            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
-            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
-            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
-            --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
-            --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
-            --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
-            --sys-status-dot-color: {{THEME_SYS_STATUS_DOT_COLOR}};
-            --sys-status-radius: {{THEME_SYS_STATUS_RADIUS}};
+            --scrollbar-thumb-color: #333333;
+            --back-to-top-bg: #d00000;
+            --back-to-top-icon-color: #ffffff;
+            --sys-status-bg: rgba(0, 0, 0, 0.1);
+            --sys-status-border: 1px solid #000000;
+            --sys-status-text: #000000;
+            --sys-status-dot-color: #000000;
+            --sys-status-radius: 20px;
             
-            --section-logo-size: {{THEME_SECTION_LOGO_SIZE}};
+            --section-logo-size: 22px;
             --row-h-mob: 76px; --row-h-desk: 96px;
         }
 
@@ -154,8 +216,8 @@
 
         .logo-link { display: flex; align-items: center; gap: 10px; }
         .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; }
-        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; color: {{THEME_LOGO_P1_COLOR}}; }
-        .logo-text span { color: {{THEME_LOGO_P2_COLOR}}; }
+        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; color: #ffffff; }
+        .logo-text span { color: #d00000; }
         
         .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
         .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
@@ -169,18 +231,18 @@
         .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
 
         /* HERO */
-        .hero-section { {{HERO_OUTER_STYLE}} display: {{DISPLAY_HERO}}; }
+        .hero-section { background: radial-gradient(circle at top, #1c0202 0%, #000000 100%); padding: 40px 15px 15px 15px; border-bottom: 5px solid #4416e9; display: block; }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
-        .hero-inner { {{HERO_INNER_STYLE}} display: flex; flex-direction: column; text-align: {{THEME_HERO_TEXT_ALIGN}}; align-items: {{THEME_HERO_ALIGN_ITEMS}}; }
+        .hero-inner { max-width: var(--container-max-width); margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
-        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: {{THEME_HERO_INTRO_MARGIN}}; margin-bottom: 20px; max-width: 800px; }
+        .entity-intro { color: var(--hero-intro-color); font-size: 0.9rem; margin: 0 auto; margin-bottom: 20px; max-width: 800px; }
         
-        .cat-scroll { display: {{HERO_MENU_DISPLAY}}; gap: 10px; overflow-x: auto; padding: 10px 5px; width: 100%; scrollbar-width: none; justify-content: {{THEME_HERO_MENU_JUSTIFY}}; }
-        .cat-pill { background: var(--hero-pill-bg); border: 1px solid {{THEME_HERO_PILL_BORDER}}; padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
-        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: {{THEME_HERO_PILL_HOVER_BORDER}}; }
+        .cat-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 10px 5px; width: 100%; scrollbar-width: none; justify-content: center; }
+        .cat-pill { background: var(--hero-pill-bg); border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px; border-radius: var(--hero-pill-radius); font-weight: 700; font-size: 0.8rem; white-space: nowrap; color: var(--hero-pill-text); }
+        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); border-color: #D00000; }
 
-        .sys-status { display: {{THEME_SYS_STATUS_DISPLAY}}; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
-        .sys-status .dot, .sys-status .live-dot { width: {{THEME_SYS_STATUS_DOT_SIZE}}; height: {{THEME_SYS_STATUS_DOT_SIZE}}; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status .dot, .sys-status .live-dot { width: 10px; height: 10px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         /* MATCH ROWS & SECTIONS */
         .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
@@ -229,7 +291,7 @@
         .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
         .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
         .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
-        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; } .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; }
+        .social-btn.telegram { color: #ce0909; } .social-btn.whatsapp { color: #bd1414; } .social-btn.reddit { color: #cc1e1e; } .social-btn.twitter { color: #297b19; }
         @media (max-width: 1024px) { .social-sidebar { display: none; } }
         
         .mobile-sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--mobile-footer-bg); backdrop-filter: blur(10px); border-top: var(--mobile-footer-border-top); padding: 0 5px; display: none; justify-content: space-between; align-items: center; z-index: 900; height: var(--mobile-footer-height); box-shadow: var(--mobile-footer-shadow); }
@@ -245,8 +307,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
+        .league-card { background: #af1212; border: 3px solid #188ed8; color: #f1e9e9; border-radius: 20px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: 3px solid #dea60d; background: #93279b; color: #0b0404; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -254,22 +316,22 @@
 
     <div id="socialSidebar" class="social-sidebar"></div>
 
-    <header class="{{HEADER_CLASSES}}">
+    <header class="h-layout-standard">
         <div class="header-container">
-            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
-            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" alt="StreamEast Logo" fetchpriority="high"> <div class="logo-text">Stream<span>East</span></div></a>
+            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
         </div>
     </header>
-    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
+    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
 
     <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="hero-inner">
-            <div class="sys-status"><div class="live-dot"></div> {{THEME_TEXT_SYS_STATUS}}</div>
-            <h1>{{H1_TITLE}}</h1>
-            <p class="entity-intro">{{HERO_TEXT}}</p> 
-            <div class="cat-scroll">{{HERO_PILLS}}</div>
+            <div class="sys-status"><div class="live-dot"></div> System Status: Online</div>
+            <h1>Watch NBA Live Streams and Schedules</h1>
+            <p class="entity-intro">The Best Free NBA Live stream free online</p> 
+            <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
         </div>
     </div>
 
@@ -285,365 +347,58 @@
             <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
-                    {{TEXT_UPCOMING_TITLE}}
+                    Upcoming NBA Matches nnn
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list">
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">03:00 AM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/utah-jazz.webp" class="t-img" alt="Utah Jazz" loading="lazy" width="20" height="20"></div> Utah Jazz</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/charlotte-hornets.webp" class="t-img" alt="Charlotte Hornets" loading="lazy" width="20" height="20"></div> Charlotte Hornets</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In -767m</span></div></div>
-        <div class="col-action">
-        <button onclick="window.location.href='/watch/?livestream=9d219c32c5a37ea2f1e448fac3985f12'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=9d219c32c5a37ea2f1e448fac3985f12')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">08:00 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/orlando-magic.webp" class="t-img" alt="Orlando Magic" loading="lazy" width="20" height="20"></div> Orlando Magic</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/new-orleans-pelicans.webp" class="t-img" alt="New Orleans Pelicans" loading="lazy" width="20" height="20"></div> New Orleans Pelicans</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 4h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=0e144ddfc01c23e8467beba29fb005d4')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">08:30 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/memphis-grizzlies.webp" class="t-img" alt="Memphis Grizzlies" loading="lazy" width="20" height="20"></div> Memphis Grizzlies</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/brooklyn-nets.webp" class="t-img" alt="Brooklyn Nets" loading="lazy" width="20" height="20"></div> Brooklyn Nets</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 4h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=978cc12945dde48a19bc6d2bf6668584')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">11:00 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/toronto-raptors.webp" class="t-img" alt="Toronto Raptors" loading="lazy" width="20" height="20"></div> Toronto Raptors</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/philadelphia-76ers.webp" class="t-img" alt="Philadelphia 76ers" loading="lazy" width="20" height="20"></div> Philadelphia 76ers</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 7h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=c19c5e2431b9d1fa9c0736668f5fa8f8')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">11:00 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/portland-trail-blazers.webp" class="t-img" alt="Portland Trail Blazers" loading="lazy" width="20" height="20"></div> Portland Trail Blazers</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/new-york-knicks.webp" class="t-img" alt="New York Knicks" loading="lazy" width="20" height="20"></div> New York Knicks</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 7h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=659751610f645393cc3c436f4aa8086b')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:00 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/minnesota-timberwolves.webp" class="t-img" alt="Minnesota Timberwolves" loading="lazy" width="20" height="20"></div> Minnesota Timberwolves</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/san-antonio-spurs.webp" class="t-img" alt="San Antonio Spurs" loading="lazy" width="20" height="20"></div> San Antonio Spurs</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 8h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=3ee911693ab204a7b69c4995c123db65')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:00 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/oklahoma-city-thunder.webp" class="t-img" alt="Oklahoma City Thunder" loading="lazy" width="20" height="20"></div> Oklahoma City Thunder</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/miami-heat.webp" class="t-img" alt="Miami Heat" loading="lazy" width="20" height="20"></div> Miami Heat</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 8h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=7d41f5a5a8c172005c7fb719e6f8ccf8')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:30 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/indiana-pacers.webp" class="t-img" alt="Indiana Pacers" loading="lazy" width="20" height="20"></div> Indiana Pacers</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/boston-celtics.webp" class="t-img" alt="Boston Celtics" loading="lazy" width="20" height="20"></div> Boston Celtics</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 8h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=7a539309b03342b078503e5169b79dd6')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/denver-nuggets.webp" class="t-img" alt="Denver Nuggets" loading="lazy" width="20" height="20"></div> Denver Nuggets</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/milwaukee-bucks.webp" class="t-img" alt="Milwaukee Bucks" loading="lazy" width="20" height="20"></div> Milwaukee Bucks</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 9h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=ee7afc0898f9b6b091184ff06aa89e56')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/phoenix-suns.webp" class="t-img" alt="Phoenix Suns" loading="lazy" width="20" height="20"></div> Phoenix Suns</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/washington-wizards.webp" class="t-img" alt="Washington Wizards" loading="lazy" width="20" height="20"></div> Washington Wizards</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 9h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=192be3b93d8b9c25f1f7b6d37778a96f')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:30 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/golden-state-warriors.webp" class="t-img" alt="Golden State Warriors" loading="lazy" width="20" height="20"></div> Golden State Warriors</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/atlanta-hawks.webp" class="t-img" alt="Atlanta Hawks" loading="lazy" width="20" height="20"></div> Atlanta Hawks</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 9h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=058a07679e9bad78e4aeac8e98ff384d')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">02:00 AM</span><span class="time-sub">Jan 12</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/sacramento-kings.webp" class="t-img" alt="Sacramento Kings" loading="lazy" width="20" height="20"></div> Sacramento Kings</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/houston-rockets.webp" class="t-img" alt="Houston Rockets" loading="lazy" width="20" height="20"></div> Houston Rockets</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 10h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=5a6588d949a89a277b8e43a1d45b37a4')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:00 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/utah-jazz.webp" class="t-img" alt="Utah Jazz" loading="lazy" width="20" height="20"></div> Utah Jazz</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/cleveland-cavaliers.webp" class="t-img" alt="Cleveland Cavaliers" loading="lazy" width="20" height="20"></div> Cleveland Cavaliers</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=6b7cd771aa6d9084d015ade0158ad181')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:30 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/boston-celtics.webp" class="t-img" alt="Boston Celtics" loading="lazy" width="20" height="20"></div> Boston Celtics</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/indiana-pacers.webp" class="t-img" alt="Indiana Pacers" loading="lazy" width="20" height="20"></div> Indiana Pacers</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=03149f3080223ef1bcd1835a4735f007')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:30 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/philadelphia-76ers.webp" class="t-img" alt="Philadelphia 76ers" loading="lazy" width="20" height="20"></div> Philadelphia 76ers</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/toronto-raptors.webp" class="t-img" alt="Toronto Raptors" loading="lazy" width="20" height="20"></div> Toronto Raptors</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=cf755206b72a5f1eedda4e95b6db81d1')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:30 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/brooklyn-nets.webp" class="t-img" alt="Brooklyn Nets" loading="lazy" width="20" height="20"></div> Brooklyn Nets</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/dallas-mavericks.webp" class="t-img" alt="Dallas Mavericks" loading="lazy" width="20" height="20"></div> Dallas Mavericks</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=1df5a7358442461a4397841934861c73')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">03:00 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/los-angeles-lakers.webp" class="t-img" alt="Los Angeles Lakers" loading="lazy" width="20" height="20"></div> Los Angeles Lakers</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/sacramento-kings.webp" class="t-img" alt="Sacramento Kings" loading="lazy" width="20" height="20"></div> Sacramento Kings</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=5aeb456c9c967c97560548291bbef046')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">03:30 AM</span><span class="time-sub">Jan 13</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/charlotte-hornets.webp" class="t-img" alt="Charlotte Hornets" loading="lazy" width="20" height="20"></div> Charlotte Hornets</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/los-angeles-clippers.webp" class="t-img" alt="Los Angeles Clippers" loading="lazy" width="20" height="20"></div> Los Angeles Clippers</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 1d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=4e3894da0fc8380b66e089dfea83a061')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">12:30 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/phoenix-suns.webp" class="t-img" alt="Phoenix Suns" loading="lazy" width="20" height="20"></div> Phoenix Suns</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/miami-heat.webp" class="t-img" alt="Miami Heat" loading="lazy" width="20" height="20"></div> Miami Heat</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=1ead097b075443ffe41574fef61fdf41')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/san-antonio-spurs.webp" class="t-img" alt="San Antonio Spurs" loading="lazy" width="20" height="20"></div> San Antonio Spurs</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/oklahoma-city-thunder.webp" class="t-img" alt="Oklahoma City Thunder" loading="lazy" width="20" height="20"></div> Oklahoma City Thunder</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=2c3aad7782adb22a989a8ea5e0fa1ba2')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/denver-nuggets.webp" class="t-img" alt="Denver Nuggets" loading="lazy" width="20" height="20"></div> Denver Nuggets</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/new-orleans-pelicans.webp" class="t-img" alt="New Orleans Pelicans" loading="lazy" width="20" height="20"></div> New Orleans Pelicans</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=2f0b2f319bdf448b073a2aaa9f73838a')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/chicago-bulls.webp" class="t-img" alt="Chicago Bulls" loading="lazy" width="20" height="20"></div> Chicago Bulls</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/houston-rockets.webp" class="t-img" alt="Houston Rockets" loading="lazy" width="20" height="20"></div> Houston Rockets</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=0e17e5f9eef8b856798c27204bca47fb')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">01:00 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/minnesota-timberwolves.webp" class="t-img" alt="Minnesota Timberwolves" loading="lazy" width="20" height="20"></div> Minnesota Timberwolves</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/milwaukee-bucks.webp" class="t-img" alt="Milwaukee Bucks" loading="lazy" width="20" height="20"></div> Milwaukee Bucks</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=8420454236613b8ea239a9023968e044')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">03:30 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/atlanta-hawks.webp" class="t-img" alt="Atlanta Hawks" loading="lazy" width="20" height="20"></div> Atlanta Hawks</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/los-angeles-lakers.webp" class="t-img" alt="Los Angeles Lakers" loading="lazy" width="20" height="20"></div> Los Angeles Lakers</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=e33beed442807405822c0f3b8ae68312')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">04:00 AM</span><span class="time-sub">Jan 14</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/portland-trail-blazers.webp" class="t-img" alt="Portland Trail Blazers" loading="lazy" width="20" height="20"></div> Portland Trail Blazers</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/tsdb/golden-state-warriors.webp" class="t-img" alt="Golden State Warriors" loading="lazy" width="20" height="20"></div> Golden State Warriors</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 2d</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=017c990b6153caf6576911576269effb')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">09:00 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA G-LEAGUE</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/sioux-falls-skyforce.webp" class="t-img" alt="Sioux Falls Skyforce" loading="lazy" width="20" height="20"></div> Sioux Falls Skyforce</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/rip-city-remix.webp" class="t-img" alt="Rip City Remix" loading="lazy" width="20" height="20"></div> Rip City Remix</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 5h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=e1e364679c46125329b6b585cac3d563')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">09:30 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA G-LEAGUE</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/texas-legends.webp" class="t-img" alt="Texas Legends" loading="lazy" width="20" height="20"></div> Texas Legends</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/cleveland-charge.webp" class="t-img" alt="Cleveland Charge" loading="lazy" width="20" height="20"></div> Cleveland Charge</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 5h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=770d55d9ebc480af21955d2e3800cc5d')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    
-    <div class="match-row">
-        <div class="col-time"><span class="time-main">10:00 PM</span><span class="time-sub">Jan 11</span></div>
-        <div class="teams-wrapper"><div class="league-tag">NBA G-LEAGUE</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/mexico-city-capitanes.webp" class="t-img" alt="Mexico City Capitanes" loading="lazy" width="20" height="20"></div> Mexico City Capitanes</div><div class="team-name"><div class="logo-box"><img src="https://streameast.guru/assets/logos/streamed/santa-cruz-warriors.webp" class="t-img" alt="Santa Cruz Warriors" loading="lazy" width="20" height="20"></div> Santa Cruz Warriors</div></div>
-        <div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:2px;">Starts in</span><span class="meta-top" style="color:var(--accent-gold); font-size:0.75rem;">In 6h</span></div></div>
-        <div class="col-action">
-        <button onclick="this.classList.add('active');this.innerText='✓ Set';" class="btn-notify">🔔 Notify </button>
-        <button class="btn-copy-link" onclick="copyText('https://streameast.guru/watch/?livestream=45d24619176e307f8d4728d5bdd059da')">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link
-        </button>
-    </div>
-    </div>
-    </div>
+            <div id="schedule-list"></div>
         </div>
 
         <!-- ARTICLE -->
         <article class="seo-article">
-            {{LEAGUE_ARTICLE}}
+            
+<p>Experience the thrill of <strong>NBA</strong>, the premier competition in <strong>Basketball</strong>. Whether you are a die-hard fan following the standings or a casual viewer catching a big game, <strong>totalsportek.top</strong> offers comprehensive access to every match of the 2025 season. We are dedicated to providing high-definition <strong>Basketball streams</strong> that connect you directly to the stadium atmosphere.</p>
+
+<h2>Why NBA is the Pinnacle of Basketball</h2>
+<p>The <strong>NBA</strong> represents the highest level of athletic performance in the world of Basketball. With historic rivalries and world-class talent, every game carries significant weight. Our platform stacks the most important entities—from the star players to the iconic venues—ensuring you get the full context of the match.</p>
+<ul>
+    <li><strong>Complete Basketball Schedule:</strong> Don't miss a single round. We track every NBA fixture in real-time.</li>
+    <li><strong>Adaptive HD Streaming:</strong> Our player optimizes Basketball action for fast-paced movement, ensuring you see every play clearly.</li>
+    <li><strong>Cross-Device Compatibility:</strong> Watch NBA on your phone, tablet, or desktop without installing any apps.</li>
+</ul>
+
+<h2>How to Stream NBA Games on totalsportek.top</h2>
+<p>We make it easy to follow your favorite <strong>Basketball teams</strong>. Simply locate your match in the schedule above. The list is sorted chronologically, prioritizing live NBA events so you can jump straight into the action. Our links are vetted for stability, ensuring a seamless viewing experience even during high-traffic <strong>NBA playoffs</strong> or finals.</p>
+
+<h3>NBA Streaming FAQ</h3>
+<p><strong>Is this service free?</strong><br>
+Yes. We believe that <strong>Basketball</strong> fans shouldn't be locked behind paywalls. totalsportek.top provides open access to NBA streams.</p>
+
+<p><strong>What is the video quality?</strong><br>
+We aim for 1080p and 720p definition. <strong>Basketball</strong> requires high frame rates to track the fast movement, and our streams are selected to handle this demand.</p>
         </article>
 
         <!-- FOOTER LEAGUES -->
         <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
             <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
-            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
+            <div class="leagues-grid"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏈</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏀</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">⚾</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏒</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🥊</span><span>UFC</span></a><a href="/premierleague-streams/" class="league-card"><span class="l-icon">⚽</span><span>Premier League</span></a><a href="/championsleague-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africacupofnations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/laliga-streams/" class="league-card"><span class="l-icon">⚽</span><span>La Liga</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🎾</span><span>Tennis</span></a></div>
         </div>
 
     </main>
 
-    <footer class="{{FOOTER_CLASSES}}">
-        {{FOOTER_GRID_CONTENT}}
-        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
+    <footer class="">
+        <div class="footer-grid cols-2">
+    <div>
+        <div class="f-head">Quick Links</div>
+        <div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div>
+    </div>
+    
+    <div class="f-brand">
+        <img src="/assets/test-logo.webp" class="logo-img" alt="StreamEast Logo" fetchpriority="high"> <div class="logo-text">Stream<span>East</span></div>
+        <div class="f-desc">Hello world</div>
+    </div>
+    </div>
+        <div class="copyright">Copyright</div>
     </footer>
 
     <div id="mobileFooter" class="mobile-sticky-footer"></div>
@@ -654,8 +409,8 @@
     </button>
 
     <script>
-        const SITE_DOMAIN = "https://{{DOMAIN}}";
-        const SHARE_CONFIG = { counts: { telegram: 1240, whatsapp: 850, reddit: 340, twitter: 510 } };
+        const SITE_DOMAIN = "https://totalsportek.top";
+        const SHARE_CONFIG = {"excluded": ["dmca", "contact", "about", "privacy"], "counts": {"telegram": 12000, "whatsapp": 14400, "reddit": 60077, "twitter": 5544}};
         
         window.addEventListener('DOMContentLoaded', () => {
             highlightActiveMenu();
