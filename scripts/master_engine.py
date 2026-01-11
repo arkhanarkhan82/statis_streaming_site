@@ -29,7 +29,8 @@ DIRS = {
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
 STREAMED_IMG_BASE = "https://streamed.pk/api/images/badge/"
-TSDB_BASE_URL = "https://www.thesportsdb.com/api/v1/json/123" # Free tier key '3'
+# TSDB Free Tier
+TSDB_BASE_URL = "https://www.thesportsdb.com/api/v1/json/3"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -188,6 +189,7 @@ def resolve_logo(name, type_key, payload_urls, source_provider):
     if type_key == 'leagues':
         target_folder = DIRS['leagues']
     else:
+        # strict separation based on source
         target_folder = DIRS['upstreams'] if source_provider == 'adstrim' else DIRS['streamed']
 
     urls = [payload_urls] if isinstance(payload_urls, str) else list(payload_urls or [])
@@ -257,14 +259,12 @@ def smart_resolve(raw_match):
 def generate_match_id(sport, start_unix, home, away):
     date = datetime.fromtimestamp(start_unix / 1000)
     date_key = date.strftime('%Y-%m-%d')
-    def c(s): return re.sub(r'[^a-z0-9]', '', re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', (s or '').lower()))
-    teams = sorted([c(home), c(away)])
+    def clean(s): return re.sub(r'[^a-z0-9]', '', re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', (s or '').lower()))
+    teams = sorted([clean(home), clean(away)])
     raw = f"{sport.lower()}-{date_key}-{teams[0]}v{teams[1]}"
     return hashlib.md5(raw.encode('utf-8')).hexdigest()
 
 def normalize_time(ts):
-    if not ts: return 0
-    # If timestamp is in seconds (10 digits), convert to milliseconds
     if ts < 10000000000: return ts * 1000
     return ts
 
@@ -326,13 +326,16 @@ def render_match_row(m):
         btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_LIVE}={m["id"]}\'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>'
     else:
         diff = (m['timestamp'] - time.time()*1000) / 60000
-        if diff <= 30: btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_INFO}={m["id"]}\'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>'
-        else: btn = '<button class="btn-notify">🔔 Notify</button>'
+        if diff <= 30:
+            btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_INFO}={m["id"]}\'" class="btn-watch">WATCH <span class="hd-badge">HD</span></button>'
+        else:
+            btn = '<button class="btn-notify">🔔 Notify</button>'
 
     info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
     copy_btn = f'<button class="btn-copy-link" onclick="copyText(\'{info_url}\')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button>'
 
-    return f'<div class="{row_class}"><div class="col-time">{time_html}</div><div class="teams-wrapper"><div class="league-tag">{m["league"].upper()}</div>{teams_html}</div><div class="col-meta">{meta_html}</div><div class="col-action">{btn}{copy_btn}</div></div>'
+    tag = m['league'].upper()
+    return f'<div class="{row_class}"><div class="col-time">{time_html}</div><div class="teams-wrapper"><div class="league-tag">{tag}</div>{teams_html}</div><div class="col-meta">{meta_html}</div><div class="col-action">{btn}{copy_btn}</div></div>'
 
 def render_section_content(matches):
     if not matches: return ""
@@ -365,7 +368,7 @@ def main():
             'sport': item.get('category')
         })
         
-        # Prepare Payloads (List of potential URLs)
+        # Prepare Payloads
         imgs_home = []
         if item.get('teams', {}).get('home', {}).get('badge'): imgs_home.append(item['teams']['home']['badge'])
         imgs_away = []
@@ -378,13 +381,13 @@ def main():
             'is_live': item.get('id') in active_live_ids, 'viewers': 0
         })
 
-    # 3. Normalize Adstrim (Upstreams)
+    # 3. Normalize Adstrim
     if 'data' in res_b:
         for item in res_b['data']:
             resolved = smart_resolve({ 'home_team': item.get('home_team'), 'away_team': item.get('away_team'), 'league': item.get('league'), 'sport': item.get('sport') })
             chans = [{'source': 'adstrim', 'id': c.get('name'), 'type': 'embed', 'url': f"https://topembed.pw/channel/{c.get('name')}"} for c in item.get('channels',[])]
             
-            # Adstrim Images (often just one URL string, wrap in list)
+            # Adstrim Images
             imgs_home = [item.get('home_team_image')] if item.get('home_team_image') else []
             imgs_away = [item.get('away_team_image')] if item.get('away_team_image') else []
             imgs_league = [item.get('league_image')] if item.get('league_image') else []
@@ -405,12 +408,14 @@ def main():
     for m in raw_matches:
         uid = generate_match_id(m['resolved']['sport'], m['timestamp'], m['resolved']['home'], m['resolved']['away'])
         
-        # --- ASSET PIPELINE ---
-        # Pass the provider name ('streamed' or 'adstrim') to direct folder saving
-        provider = 'upstreams' if m['src'] == 'adstrim' else 'streamed'
+        # --- ASSET PIPELINE TRIGGER ---
+        # Determine source provider: 'adstrim' (upstreams) or 'streamed'
+        provider = 'adstrim' if m['src'] == 'adstrim' else 'streamed'
+        
         resolve_logo(m['resolved']['home'], 'teams', m['img_payload']['home'], provider)
         resolve_logo(m['resolved']['away'], 'teams', m['img_payload']['away'], provider)
         resolve_logo(m['resolved']['league'], 'leagues', m['img_payload']['league'], provider)
+        # ------------------------------
 
         if uid in seen_ids:
             existing = next((x for x in final_matches if x['id'] == uid), None)
@@ -443,6 +448,7 @@ def main():
     # 5. INJECT HTML INTO HOME
     if os.path.exists('index.html'):
         with open('index.html', 'r', encoding='utf-8') as f: html = f.read()
+        
         live = [m for m in final_matches if m['is_live']]
         upcoming = [m for m in final_matches if not m['is_live']]
         
@@ -467,6 +473,7 @@ def main():
                 grouped_html += f'<div class="section-box"><div class="sec-head"><h2 class="sec-title">🏆 {key}</h2>{link}</div><div>{render_section_content(grp)}</div></div>'
         
         html = re.sub(r'<div id="grouped-container".*?>.*?</div>', f'<div id="grouped-container">{grouped_html}</div>', html, flags=re.DOTALL)
+        
         with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
     # 6. INJECT WATCH
