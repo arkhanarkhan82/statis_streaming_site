@@ -4,14 +4,14 @@ on:
   schedule:
     - cron: '*/5 * * * *'  # Runs every 5 minutes
   repository_dispatch:
-    types: [trigger-cron]  # Allows external trigger via API (cron-job.org)
-  workflow_dispatch:       # Allows manual trigger button
+    types: [trigger-cron]
+  workflow_dispatch:
 
 jobs:
   run_master_engine:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # Required to push changes back to repo
+      contents: write
 
     steps:
       - name: Checkout Code
@@ -35,10 +35,19 @@ jobs:
           git config --global user.name "CronBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # Stage ALL changes (New pages, logos, image_map updates)
-          git add .
+          # 1. Add Generated HTML Pages
+          git add index.html
+          git add watch/index.html
+          # Force add any new directory in root (e.g. nba-streams/)
+          git add *-streams/index.html || true
           
-          # Check status and commit if changed
+          # 2. Add Assets (Logos & Image Map ONLY)
+          git add assets/logos/
+          git add assets/data/image_map.json
+          
+          # CRITICAL: We do NOT add assets/data/league_map.json
+          # This ensures the bot never overwrites your Admin Panel work.
+
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
