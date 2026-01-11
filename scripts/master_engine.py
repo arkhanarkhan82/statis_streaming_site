@@ -138,8 +138,8 @@ def smart_resolve(raw_match):
     The BRAIN of the operation.
     Determines correct League, Home Name, Away Name using 3-Level Logic.
     """
-    raw_home = raw_match.get('home_team', 'TBA')
-    raw_away = raw_match.get('away_team', 'TBA')
+    raw_home = raw_match.get('home_team') or 'TBA'
+    raw_away = raw_match.get('away_team') or 'TBA'
     raw_league = raw_match.get('league') or raw_match.get('category') or "General"
     
     h_slug = slugify(raw_home)
