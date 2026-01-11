@@ -1,7 +1,7 @@
 import json
 import os
-import shutil
 import re
+import shutil
 
 # ==========================================
 # 1. CONFIGURATION
@@ -10,6 +10,7 @@ CONFIG_PATH = 'data/config.json'
 TEMPLATE_MASTER = 'assets/master_template.html'
 TEMPLATE_WATCH = 'assets/watch_template.html'
 TEMPLATE_LEAGUE = 'assets/league_template.html'
+TEMPLATE_PAGE = 'assets/page_template.html' # For About/Contact/DMCA
 OUTPUT_DIR = '.' 
 
 # ==========================================
@@ -60,40 +61,8 @@ def build_menu_html(menu_items, section):
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
 
-def build_footer_grid(cfg):
-    t = cfg.get('theme', {})
-    s = cfg.get('site_settings', {})
-    m = cfg.get('menus', {})
-    cols = str(t.get('footer_columns', '2'))
-    
-    p1 = s.get('title_part_1', 'Stream')
-    p2 = s.get('title_part_2', 'East')
-    logo_html = f'<div class="logo-text">{p1}<span>{p2}</span></div>'
-    if s.get('logo_url'): logo_html = f'<img src="{s.get("logo_url")}" class="logo-img"> {logo_html}'
-    
-    brand_html = f'<div class="f-brand">{logo_html}</div>'
-    disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if t.get('footer_show_disclaimer', True) else ''
-    brand_disc_html = f'<div class="f-brand">{logo_html}{disc_html}</div>'
-    links_html = f'<div><div class="f-head">Quick Links</div><div class="f-links">{build_menu_html(m.get("footer_static", []), "footer_static")}</div></div>'
-    
-    slots = [t.get('footer_slot_1', 'brand_disclaimer'), t.get('footer_slot_2', 'menu'), t.get('footer_slot_3', 'empty')]
-    
-    def get_content(k):
-        if k == 'brand': return brand_html
-        if k == 'disclaimer': return disc_html
-        if k == 'brand_disclaimer': return brand_disc_html
-        if k == 'menu': return links_html
-        return '<div></div>'
-
-    html = f'<div class="footer-grid cols-{cols}">'
-    html += get_content(slots[0])
-    html += get_content(slots[1])
-    if cols == '3': html += get_content(slots[2])
-    html += '</div>'
-    return html
-
 # ==========================================
-# 3. RENDER ENGINE
+# 3. THEME ENGINE
 # ==========================================
 def apply_theme(html, config, page_data=None):
     if page_data is None: page_data = {}
@@ -101,14 +70,17 @@ def apply_theme(html, config, page_data=None):
     SETTINGS = config.get('site_settings', {})
     MENUS = config.get('menus', {})
     
-    # 1. Variables Map
-    mapping = {
+    # 1. Variable Map (JSON Key -> CSS Var/Template Tag)
+    # This maps your Admin Panel keys to the CSS Variables in the <style> block
+    vars = {
+        # Base Colors
         'brand_primary': 'THEME_BRAND_PRIMARY', 'brand_dark': 'THEME_BRAND_DARK',
         'accent_gold': 'THEME_ACCENT_GOLD', 'status_green': 'THEME_STATUS_GREEN',
         'bg_body': 'THEME_BG_BODY', 'bg_panel': 'THEME_BG_PANEL',
         'text_main': 'THEME_TEXT_MAIN', 'text_muted': 'THEME_TEXT_MUTED',
         'border_color': 'THEME_BORDER_COLOR',
         
+        # Typography & Layout
         'font_family_base': 'THEME_FONT_FAMILY_BASE',
         'font_family_headings': 'THEME_FONT_FAMILY_HEADINGS',
         'container_max_width': 'THEME_CONTAINER_MAX_WIDTH',
@@ -117,6 +89,7 @@ def apply_theme(html, config, page_data=None):
         'button_border_radius': 'THEME_BUTTON_BORDER_RADIUS',
         'hero_pill_radius': 'THEME_HERO_PILL_RADIUS',
         
+        # Header
         'header_bg': 'THEME_HEADER_BG', 'header_text_color': 'THEME_HEADER_TEXT_COLOR',
         'header_link_active_color': 'THEME_HEADER_LINK_ACTIVE_COLOR',
         'header_link_hover_color': 'THEME_HEADER_LINK_HOVER_COLOR',
@@ -125,11 +98,13 @@ def apply_theme(html, config, page_data=None):
         'logo_p1_color': 'THEME_LOGO_P1_COLOR', 'logo_p2_color': 'THEME_LOGO_P2_COLOR',
         'logo_image_size': 'THEME_LOGO_IMAGE_SIZE',
         
+        # Hero
         'hero_h1_color': 'THEME_HERO_H1_COLOR', 'hero_intro_color': 'THEME_HERO_INTRO_COLOR',
         'hero_pill_bg': 'THEME_HERO_PILL_BG', 'hero_pill_text': 'THEME_HERO_PILL_TEXT',
         'hero_pill_hover_bg': 'THEME_HERO_PILL_HOVER_BG', 'hero_pill_hover_text': 'THEME_HERO_PILL_HOVER_TEXT',
         'text_sys_status': 'THEME_TEXT_SYS_STATUS',
         
+        # Match Rows
         'match_row_bg': 'THEME_MATCH_ROW_BG', 'match_row_border': 'THEME_MATCH_ROW_BORDER',
         'match_row_live_border_left': 'THEME_MATCH_ROW_LIVE_BORDER_LEFT',
         'match_row_live_bg_start': 'THEME_MATCH_ROW_LIVE_BG_START',
@@ -148,27 +123,35 @@ def apply_theme(html, config, page_data=None):
         'match_row_btn_notify_bg': 'THEME_MATCH_ROW_BTN_NOTIFY_BG',
         'match_row_btn_notify_border': 'THEME_MATCH_ROW_BTN_NOTIFY_BORDER',
         'match_row_btn_notify_text': 'THEME_MATCH_ROW_BTN_NOTIFY_TEXT',
-        
+        'match_row_btn_copy_link_color': 'THEME_MATCH_ROW_BTN_COPY_LINK_COLOR',
+
+        # Footer
         'footer_bg_start': 'THEME_FOOTER_BG_START', 'footer_bg_end': 'THEME_FOOTER_BG_END',
         'footer_border_top': 'THEME_FOOTER_BORDER_TOP', 'footer_link_color': 'THEME_FOOTER_LINK_COLOR',
         'footer_link_hover_color': 'THEME_FOOTER_LINK_HOVER_COLOR',
         'footer_copyright_color': 'THEME_FOOTER_COPYRIGHT_COLOR',
         'footer_desc_color': 'THEME_FOOTER_DESC_COLOR',
+        'footer_heading_color': 'THEME_FOOTER_HEADING_COLOR',
         
+        # Article
         'article_bg': 'THEME_ARTICLE_BG', 'article_text': 'THEME_ARTICLE_TEXT',
         'article_line_height': 'THEME_ARTICLE_LINE_HEIGHT', 'article_bullet_color': 'THEME_ARTICLE_BULLET_COLOR',
         'article_link_color': 'THEME_ARTICLE_LINK_COLOR', 'article_h2_color': 'THEME_ARTICLE_H2_COLOR',
-        'article_h2_border_color': 'THEME_ARTICLE_H2_BORDER',
+        'article_h2_border_color': 'THEME_ARTICLE_H2_BORDER', 'article_h3_color': 'THEME_ARTICLE_H3_COLOR',
+        'article_h4_color': 'THEME_ARTICLE_H4_COLOR',
         
+        # Socials
         'social_sidebar_bg': 'THEME_SOCIAL_SIDEBAR_BG', 'social_sidebar_border': 'THEME_SOCIAL_SIDEBAR_BORDER',
         'social_btn_bg': 'THEME_SOCIAL_BTN_BG', 'social_btn_color': 'THEME_SOCIAL_BTN_COLOR',
         'mobile_footer_bg': 'THEME_MOBILE_FOOTER_BG', 'mobile_footer_border_top': 'THEME_MOBILE_FOOTER_BORDER_TOP',
         
+        # Misc
         'back_to_top_bg': 'THEME_BACK_TO_TOP_BG', 'back_to_top_icon_color': 'THEME_BACK_TO_TOP_ICON_COLOR',
         'sys_status_bg_color': 'THEME_SYS_STATUS_BG_COLOR', 'sys_status_border_color': 'THEME_SYS_STATUS_BORDER',
         'sys_status_text_color': 'THEME_SYS_STATUS_TEXT_COLOR', 'sys_status_dot_color': 'THEME_SYS_STATUS_DOT_COLOR',
         'sys_status_radius': 'THEME_SYS_STATUS_RADIUS', 'section_logo_size': 'THEME_SECTION_LOGO_SIZE',
         
+        # Watch specific (needed if passed)
         'chat_header_bg': 'THEME_CHAT_HEADER_BG', 'chat_header_text': 'THEME_CHAT_HEADER_TEXT',
         'chat_dot_color': 'THEME_CHAT_DOT_COLOR', 'chat_dot_size': 'THEME_CHAT_DOT_SIZE',
         'chat_input_bg': 'THEME_CHAT_INPUT_BG', 'chat_input_text': 'THEME_CHAT_INPUT_TEXT',
@@ -188,8 +171,8 @@ def apply_theme(html, config, page_data=None):
         'league_card_hover_border_color': 'THEME_LEAGUE_CARD_HOVER_BORDER'
     }
 
-    # Replace Variables
-    for json_key, tpl_key in mapping.items():
+    # Apply Variable Replacements
+    for json_key, tpl_key in vars.items():
         val = THEME.get(json_key, '')
         if 'radius' in json_key or 'size' in json_key or 'width' in json_key: val = ensure_unit(val)
         if json_key == 'sys_status_bg_color':
@@ -199,24 +182,28 @@ def apply_theme(html, config, page_data=None):
         if json_key == 'chat_overlay_bg':
              val = hex_to_rgba(THEME.get('chat_overlay_bg', '#000000'), THEME.get('chat_overlay_opacity', '0.9'))
              html = html.replace('{{THEME_CHAT_OVERLAY_BG_FINAL}}', val)
-        if 'border_color' in json_key and 'league' in json_key: # Fix specific for league card border string
+        if 'border_color' in json_key and 'league' in json_key: 
              w = ensure_unit(THEME.get('league_card_border_width', '1'))
              val = f"{w} solid {val}"
 
         html = html.replace(f'{{{{{tpl_key}}}}}', str(val))
 
-    # Borders
+    # Apply Borders (width + color)
     for sec in ['live', 'upcoming', 'wildcard', 'leagues', 'grouped', 'league_upcoming']:
         w = ensure_unit(THEME.get(f'sec_border_{sec}_width', '1'))
         c = THEME.get(f'sec_border_{sec}_color', '#334155')
         html = html.replace(f'{{{{THEME_SEC_BORDER_{sec.upper()}}}}}', f'{w} solid {c}')
 
-    # Texts
+    # Apply Text Labels
     html = html.replace('{{TEXT_LIVE_SECTION_TITLE}}', THEME.get('text_live_section_title', 'Trending Live'))
     html = html.replace('{{TEXT_UPCOMING_TITLE}}', THEME.get('text_top_upcoming_title', 'Upcoming Matches'))
-    html = html.replace('{{HERO_MENU_DISPLAY}}', THEME.get('hero_menu_visible', 'flex'))
+    html = html.replace('{{TEXT_SHOW_MORE}}', THEME.get('text_show_more', 'Show More'))
+    html = html.replace('{{TEXT_WATCH_BTN}}', THEME.get('text_watch_btn', 'WATCH'))
+    html = html.replace('{{TEXT_HD_BADGE}}', THEME.get('text_hd_badge', 'HD'))
+    html = html.replace('{{TEXT_SECTION_LINK}}', THEME.get('text_section_link', 'View All'))
+    html = html.replace('{{TEXT_SECTION_PREFIX}}', THEME.get('text_section_prefix', 'Upcoming'))
     
-    # Hero Layout
+    # Hero Layout Logic
     mode = THEME.get('hero_layout_mode', 'full')
     box_w = ensure_unit(THEME.get('hero_box_width', '1000px'))
     b_w = ensure_unit(THEME.get('hero_box_border_width', '1'))
@@ -242,8 +229,22 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{THEME_HERO_MENU_JUSTIFY}}', 'center' if THEME.get('hero_content_align')=='center' else 'flex-start')
     html = html.replace('{{THEME_HERO_INTRO_MARGIN}}', '0 auto' if THEME.get('hero_content_align')=='center' else '0')
     html = html.replace('{{DISPLAY_HERO}}', THEME.get('display_hero', 'block'))
+    html = html.replace('{{HERO_MENU_DISPLAY}}', THEME.get('hero_menu_visible', 'flex'))
+    html = html.replace('{{WILDCARD_CATEGORY}}', THEME.get('wildcard_category', ''))
+    html = html.replace('{{TEXT_WILDCARD_TITLE}}', THEME.get('text_wildcard_title', ''))
+    html = html.replace('{{THEME_TEXT_SYS_STATUS}}', THEME.get('text_sys_status', 'System Status: Online'))
+    html = html.replace('{{THEME_SYS_STATUS_DISPLAY}}', 'inline-flex' if THEME.get('sys_status_visible') else 'none')
 
-    # Watch Settings
+    # Socials & Colors
+    html = html.replace('{{THEME_SOCIAL_TELEGRAM_COLOR}}', THEME.get('social_telegram_color', '#0088cc'))
+    html = html.replace('{{THEME_SOCIAL_WHATSAPP_COLOR}}', THEME.get('social_whatsapp_color', '#25D366'))
+    html = html.replace('{{THEME_SOCIAL_REDDIT_COLOR}}', THEME.get('social_reddit_color', '#FF4500'))
+    html = html.replace('{{THEME_SOCIAL_TWITTER_COLOR}}', THEME.get('social_twitter_color', '#1DA1F2'))
+    html = html.replace('{{THEME_SOCIAL_DESKTOP_TOP}}', THEME.get('social_desktop_top', '50%'))
+    html = html.replace('{{THEME_SOCIAL_DESKTOP_SCALE}}', THEME.get('social_desktop_scale', '1.0'))
+    html = html.replace('{{THEME_MOBILE_FOOTER_HEIGHT}}', THEME.get('mobile_footer_height', '60px'))
+
+    # Watch Page Specifics
     html = html.replace('{{THEME_WATCH_SIDEBAR_SWAP}}', 'true' if THEME.get('watch_sidebar_swap') else 'false')
     html = html.replace('{{THEME_WATCH_SHOW_AD1}}', 'true' if THEME.get('watch_show_ad1') else 'false')
     html = html.replace('{{THEME_WATCH_SHOW_AD2}}', 'true' if THEME.get('watch_show_ad2') else 'false')
@@ -256,15 +257,8 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{THEME_WATCH_BTN_LABEL}}', THEME.get('watch_btn_label', 'Watch Live Stream'))
     html = html.replace('{{THEME_WATCH_BTN_DISABLED_LABEL}}', THEME.get('watch_btn_disabled_label', 'Stream Starts Soon'))
     html = html.replace('{{THEME_WATCH_INFO_BTN_LABEL}}', THEME.get('watch_info_btn_label', 'View Match Info'))
-    html = html.replace('{{THEME_SOCIAL_TELEGRAM_COLOR}}', THEME.get('social_telegram_color', '#0088cc'))
-    html = html.replace('{{THEME_SOCIAL_WHATSAPP_COLOR}}', THEME.get('social_whatsapp_color', '#25D366'))
-    html = html.replace('{{THEME_SOCIAL_REDDIT_COLOR}}', THEME.get('social_reddit_color', '#FF4500'))
-    html = html.replace('{{THEME_SOCIAL_TWITTER_COLOR}}', THEME.get('social_twitter_color', '#1DA1F2'))
-    html = html.replace('{{THEME_SOCIAL_DESKTOP_TOP}}', THEME.get('social_desktop_top', '50%'))
-    html = html.replace('{{THEME_SOCIAL_DESKTOP_SCALE}}', THEME.get('social_desktop_scale', '1.0'))
-    html = html.replace('{{THEME_MOBILE_FOOTER_HEIGHT}}', THEME.get('mobile_footer_height', '60px'))
 
-    # Watch Config Data
+    # Watch Ads & SEO (from config.watch_settings)
     w_conf = config.get('watch_settings', {})
     html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
@@ -275,10 +269,11 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
     html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
 
-    # Branding
+    # Branding & SEO
     p1 = SETTINGS.get('title_part_1', 'Stream')
     p2 = SETTINGS.get('title_part_2', 'East')
     site_name = f"{p1}{p2}"
+    
     logo_html = f'<div class="logo-text">{p1}<span>{p2}</span></div>'
     if SETTINGS.get('logo_url'): 
         logo_html = f'<img src="{SETTINGS.get("logo_url")}" class="logo-img"> {logo_html}'
@@ -287,9 +282,11 @@ def apply_theme(html, config, page_data=None):
         html = html.replace('{{LOGO_PRELOAD}}', '')
 
     html = html.replace('{{LOGO_HTML}}', logo_html)
+    config['_generated_logo_html'] = logo_html # Store for Footer
+    
     html = html.replace('{{SITE_NAME}}', site_name)
     html = html.replace('{{DOMAIN}}', SETTINGS.get('domain', 'example.com'))
-    html = html.replace('{{CANONICAL_URL}}', page_data.get('canonical_url', '#'))
+    html = html.replace('{{CANONICAL_URL}}', page_data.get('canonical_url', f"https://{SETTINGS.get('domain', 'example.com')}/"))
     html = html.replace('{{FAVICON}}', SETTINGS.get('favicon_url', ''))
     html = html.replace('{{OG_IMAGE}}', SETTINGS.get('logo_url', ''))
     html = html.replace('{{OG_MIME}}', 'image/png')
@@ -300,7 +297,9 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{THEME_META_COLOR}}', THEME.get('header_bg', '#000000'))
     html = html.replace('{{SCHEMA_BLOCK}}', '') 
 
+    # Page Content
     html = html.replace('{{H1_TITLE}}', page_data.get('h1_title', site_name))
+    html = html.replace('{{H1_ALIGN}}', page_data.get('h1_align', 'left'))
     html = html.replace('{{HERO_TEXT}}', page_data.get('hero_text', ''))
     html = html.replace('{{ARTICLE_CONTENT}}', page_data.get('article', ''))
     
@@ -308,7 +307,7 @@ def apply_theme(html, config, page_data=None):
     html = html.replace('{{HEADER_MENU}}', build_menu_html(MENUS.get('header', []), 'header'))
     html = html.replace('{{HERO_PILLS}}', build_menu_html(MENUS.get('hero', []), 'hero'))
     
-    # Auto-generate footer leagues based on priority
+    # Footer Links (Static + Auto Leagues)
     f_leagues = []
     country = SETTINGS.get('target_country', 'US')
     prio = config.get('sport_priorities', {}).get(country, {})
@@ -317,7 +316,9 @@ def apply_theme(html, config, page_data=None):
             f_leagues.append({'title': k, 'url': f"/{slugify(k)}-streams/"})
     
     html = html.replace('{{FOOTER_LEAGUES}}', build_menu_html(f_leagues, 'footer_leagues'))
-    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config))
+    
+    # Footer Grid (requires config with logo html)
+    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config)) # Uses the helper
     html = html.replace('{{FOOTER_COPYRIGHT}}', SETTINGS.get('footer_copyright', ''))
     
     # Static Params
@@ -335,7 +336,7 @@ def main():
     config = load_json(CONFIG_PATH)
     if not config: return
 
-    # 1. BUILD HOMEPAGE
+    # 1. BUILD HOMEPAGE (index.html)
     print(" > Building Index...")
     with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: master_tpl = f.read()
     
@@ -344,22 +345,28 @@ def main():
         'meta_title': p_home.get('meta_title'),
         'meta_desc': p_home.get('meta_desc'),
         'h1_title': p_home.get('title'),
+        'h1_align': p_home.get('h1_align'),
         'hero_text': p_home.get('meta_desc'),
         'article': p_home.get('content'),
         'canonical_url': f"https://{config['site_settings']['domain']}/"
     })
     
-    # Leave markers for Master Engine
-    # Note: Template already has <div id="live-section"> etc. 
-    # Master engine will regex replace those. We just save the styled skeleton.
+    # Placeholder Markers for Master Engine
+    # Note: These comments must exist in master_template.html or be injected here.
+    # Assuming master_template.html ALREADY HAS <!-- DYNAMIC_SECTION_... --> 
+    # If not, we could inject them, but it's safer to have them in the template.
+    # master_template.html should contain <div id="live-section">...</div> which master_engine replaces.
+    
     with open('index.html', 'w', encoding='utf-8') as f: f.write(home_html)
 
-    # 2. BUILD WATCH PAGE
+    # 2. BUILD WATCH PAGE (watch/index.html)
     print(" > Building Watch Page...")
     with open(TEMPLATE_WATCH, 'r', encoding='utf-8') as f: watch_tpl = f.read()
-    watch_html = apply_theme(watch_tpl, config, {})
-    # Master engine will find <script>...window.MATCH_DATA and inject there.
     
+    # Apply theme variables to watch template
+    watch_html = apply_theme(watch_tpl, config, {})
+    
+    # Ensure directory exists
     os.makedirs('watch', exist_ok=True)
     with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(watch_html)
 
@@ -381,6 +388,7 @@ def main():
         tpl_art = articles.get('league') if is_league else articles.get('sport')
         
         def rep(txt):
+            if not txt: return ""
             return txt.replace('{{NAME}}', key).replace('{{YEAR}}', '2025').replace('{{DOMAIN}}', config['site_settings']['domain'])
 
         p_data = {
@@ -393,17 +401,43 @@ def main():
         
         html = apply_theme(league_tpl, config, p_data)
         
-        # Inject League Specifics
+        # Inject League Specifics (Placeholders)
         html = html.replace('{{PAGE_FILTER}}', key)
         html = html.replace('{{LEAGUE_ARTICLE}}', p_data['article'])
         html = html.replace('{{TEXT_LIVE_SECTION_TITLE}}', rep(articles.get('league_live_title', f"Live {key}")))
         html = html.replace('{{TEXT_UPCOMING_TITLE}}', rep(articles.get('league_upcoming_title', f"Upcoming {key}")))
         
+        # NOTE: master_engine.py will look for <div id="live-list"> and <div id="schedule-list"> to inject data
+        
         out = os.path.join(OUTPUT_DIR, slug)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
 
-    print("✅ Build Complete.")
+    # 4. BUILD STATIC PAGES (About, Contact, etc)
+    print(" > Building Static Pages...")
+    if os.path.exists(TEMPLATE_PAGE):
+        with open(TEMPLATE_PAGE, 'r', encoding='utf-8') as f: page_tpl = f.read()
+        
+        for p in config.get('pages', []):
+            if p.get('slug') == 'home' or p.get('layout') == 'watch': continue
+            
+            p_data = {
+                'meta_title': p.get('meta_title', p['title']),
+                'meta_desc': p.get('meta_desc', ''),
+                'h1_title': p.get('title'),
+                'h1_align': p.get('h1_align', 'left'),
+                'hero_text': '', # Static pages usually don't have hero text, or use meta_desc
+                'article': p.get('content', ''),
+                'canonical_url': f"https://{config['site_settings']['domain']}/{p['slug']}/"
+            }
+            
+            html = apply_theme(page_tpl, config, p_data)
+            
+            out = os.path.join(OUTPUT_DIR, p['slug'])
+            os.makedirs(out, exist_ok=True)
+            with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
+
+    print("✅ Structure Build Complete.")
 
 if __name__ == "__main__":
     main()
