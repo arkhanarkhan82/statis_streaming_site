@@ -126,6 +126,18 @@ def tokenize_name(text):
     clean = re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs|at|united|city|real|inter|ac|sv)\b', '', text.lower())
     clean = re.sub(r'[^a-z0-9\s]', '', clean)
     return set(w for w in clean.split() if len(w) > 2)
+def normalize_sport(sport_raw, league_raw=""):
+    s = (sport_raw or "").lower().strip()
+    l = (league_raw or "").lower().strip()
+    
+    # Specific Overrides based on League Name
+    if 'nfl' in l or 'college football' in l: return 'American Football'
+    if 'nba' in l: return 'Basketball'
+    if 'nhl' in l: return 'Ice Hockey'
+    if 'ufc' in l: return 'MMA'
+    if 'f1' in l or 'formula' in l: return 'Formula 1'
+    
+    return SPORT_MAPPING.get(s, s.title() if s else "General")
 
 # (Point 11) Timezone Logic - Output Date String
 def get_display_time(unix_ms):
