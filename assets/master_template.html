@@ -254,7 +254,9 @@
     <main class="container">
         
         <!-- 1. TRENDING LIVE -->
-        <div id="live-section">
+        <!-- Python looks for 'live-section-container' -->
+        <div id="live-section-container">
+            <!-- Optional: Keep skeleton here if you want, but ensure the ID matches the Python regex -->
             <div id="live-sk-head" class="skeleton skeleton-header">
                 <div class="sk-title"></div><div class="sk-count"></div>
             </div>
@@ -263,29 +265,23 @@
                 <div class="skeleton skeleton-box"></div>
                 <div class="skeleton skeleton-box"></div>
             </div>
-            <div id="live-content-wrapper" style="display:none;">
-                <div class="sec-head">
-                    <h2 class="sec-title"><div class="live-dot" style="width:8px;height:8px;background:var(--brand-primary);border-radius:50%;display:inline-block;margin-right:8px;"></div> {{TEXT_LIVE_SECTION_TITLE}}</h2>
-                </div>
-                <!-- Python looks for this ID to inject rows -->
-                <div id="trending-list"></div>
-            </div>
         </div>
 
         <!-- 2. WILDCARD -->
-        <div id="wildcard-container"></div>
+        <div id="wildcard-section-container"></div>
 
         <!-- 3. TOP 5 -->
-        <div id="upcoming-skeleton">
-             <div class="skeleton skeleton-header"><div class="sk-title"></div></div>
-             <div class="skeleton skeleton-box"></div>
-             <div class="skeleton skeleton-box"></div>
-             <div class="skeleton skeleton-box"></div>
+        <div id="top5-section-container">
+             <div id="upcoming-skeleton">
+                 <div class="skeleton skeleton-header"><div class="sk-title"></div></div>
+                 <div class="skeleton skeleton-box"></div>
+                 <div class="skeleton skeleton-box"></div>
+                 <div class="skeleton skeleton-box"></div>
+            </div>
         </div>
-        <div id="top-upcoming-container"></div>
 
         <!-- 4. GROUPED -->
-        <div id="grouped-container"></div>
+        <div id="grouped-section-container"></div>
 
         <!-- 5. ARTICLE -->
         <div class="seo-article">{{ARTICLE_CONTENT}}</div>
