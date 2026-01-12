@@ -7,6 +7,8 @@ import re
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from PIL import Image
+from io import BytesIO
 
 # ==============================================================================
 # 1. CONFIGURATION & CONSTANTS
@@ -135,7 +137,6 @@ def normalize_sport(sport_raw, league_raw=""):
     if 'f1' in l or 'formula' in l: return 'Formula 1'
     return SPORT_MAPPING.get(s, s.title() if s else "General")
 
-# Timezone Logic
 def get_display_time(unix_ms):
     utc_dt = datetime.fromtimestamp(unix_ms / 1000, tz=timezone.utc)
     if TARGET_COUNTRY == 'UK':
@@ -168,7 +169,6 @@ def get_logo(name, type_key):
     letter = name[0] if name else "?"
     return f"fallback:{c}:{letter}" 
 
-# SEO ID Generation
 def generate_seo_id(home, away, original_id):
     h = slugify(home)
     a = slugify(away) if away and away != "TBA" else ""
@@ -186,8 +186,7 @@ def resolve_match_identity(raw_match):
     home = clean_team_name(raw_home)
     away = clean_team_name(raw_away)
     
-    # --- PARSING FIX: Parse Title if Home/Away are invalid ---
-    # Many streams come as TBA vs TBA but have the title in "A vs B" format
+    # --- PARSING FIX: Parse Title if Home/Away are invalid (TBA) ---
     if (not home or home == "TBA" or home == "") and raw_title:
         # Regex to find ' vs ' or ' v ' or ' - ' (case insensitive)
         split_parts = re.split(r'\s+(?:vs|v)\s+', raw_title, flags=re.IGNORECASE, maxsplit=1)
@@ -196,7 +195,6 @@ def resolve_match_identity(raw_match):
             home = clean_team_name(split_parts[0])
             away = clean_team_name(split_parts[1])
         else:
-            # Fallback check for single event title
             home = clean_team_name(raw_title)
 
     # Secondary check: If Home is valid but Away is TBA, check title again
@@ -210,7 +208,7 @@ def resolve_match_identity(raw_match):
     is_single = (not away or away == "TBA" or away == "")
     league_name = None
     
-    # Check Colon in name (League: Team)
+    # Check Colon in name
     if ":" in home:
         parts = home.split(":", 1)
         if len(parts) == 2:
@@ -229,7 +227,7 @@ def resolve_match_identity(raw_match):
         if a_slug in REVERSE_LEAGUE_MAP:
             if not league_name: league_name = REVERSE_LEAGUE_MAP[a_slug]
 
-    # Fallback to Adstrim provided league
+    # Fallback to Adstrim
     if not league_name and raw_match.get('adstrim_league'):
         league_name = raw_match['adstrim_league']
         
@@ -242,18 +240,15 @@ def resolve_match_identity(raw_match):
     return { "home": home, "away": away, "league": league_name, "sport": sport, "is_single": is_single }
 
 def is_fuzzy_match(m1, m2):
-    # Time diff > 20 mins means different match
     if abs(m1['timestamp'] - m2['timestamp']) > 20 * 60 * 1000: return False
     
     t1_h = tokenize_name(m1['home'])
     t2_h = tokenize_name(m2['home'])
     
-    # Overlap in home name tokens
     if not t1_h.isdisjoint(t2_h):
         if m1['is_single'] or m2['is_single']: return True
         t1_a = tokenize_name(m1['away'])
         t2_a = tokenize_name(m2['away'])
-        # Overlap in away name tokens
         if not t1_a.isdisjoint(t2_a): return True
         
     return False
@@ -308,6 +303,11 @@ def fetch_and_merge():
         raw_ts = item.get('date') or 0
         timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
         
+        # --- NEW: Capture Image Metadata from Streamed ---
+        teams = item.get('teams', {})
+        home_badge = teams.get('home', {}).get('badge')
+        away_badge = teams.get('away', {}).get('badge')
+        
         resolved = resolve_match_identity({
             'home_raw': item.get('home') or item.get('home_team'),
             'away_raw': item.get('away') or item.get('away_team'),
@@ -328,7 +328,15 @@ def fetch_and_merge():
             'timestamp': timestamp, 'is_live': is_live,
             'is_single': resolved['is_single'],
             'streams': item.get('sources', []),
-            'duration': None, 'live_viewers': 0
+            'duration': None, 'live_viewers': 0,
+            
+            # STORE IMAGE DATA FOR DOWNLOADER
+            '_img_meta': {
+                'source': 'streamed',
+                'home_id': home_badge,
+                'away_id': away_badge,
+                'poster': item.get('poster')
+            }
         })
         
         if is_live and item.get('sources'):
@@ -361,7 +369,6 @@ def fetch_and_merge():
             ad_streams = []
             if item.get('channels'):
                 for ch in item['channels']:
-                    # Normalize Adstrim link structure
                     ad_streams.append({
                         'source': 'adstrim', 
                         'id': ch.get('name'), 
@@ -382,32 +389,35 @@ def fetch_and_merge():
                 # MERGE DETECTED
                 target = matches[matched_idx]
                 
-                # Update names if existing was TBA but Adstrim is clean
+                # Update names if existing was TBA
                 if (target['home'] == 'TBA' or target['home'] == '') and resolved['home'] != 'TBA':
                     target['home'] = resolved['home']
                 if (target['away'] == 'TBA' or target['away'] == '') and resolved['away'] != 'TBA':
                     target['away'] = resolved['away']
                 
-                # Merge Streams (Avoid duplicates)
+                # Merge Streams
                 existing_urls = set(s.get('url') or s.get('id') for s in target['streams'])
                 for s in ad_streams:
-                    if s['id'] not in existing_urls: 
-                        target['streams'].append(s)
+                    if s['id'] not in existing_urls: target['streams'].append(s)
                 
                 if item.get('duration'): target['duration'] = item.get('duration')
                 
-                # Use Adstrim League if currently Generic OR if it's just the Sport name
+                # --- LEAGUE FIX: Use Adstrim League if currently generic ---
                 cur_l = target['league'].lower()
                 cur_s = target['sport'].lower()
-                
-                if resolved['league'] and (
-                    "general" in cur_l or 
-                    "other" in cur_l or 
-                    cur_l == cur_s
-                ):
+                if resolved['league'] and ("general" in cur_l or "other" in cur_l or cur_l == cur_s):
                     target['league'] = resolved['league']
+                
+                # MERGE IMAGE DATA
+                if '_img_meta' in target:
+                    target['_img_meta']['adstrim_home'] = item.get('home_team_image')
+                    target['_img_meta']['adstrim_away'] = item.get('away_team_image')
+                    target['_img_meta']['adstrim_league'] = item.get('league_image')
+                    target['_img_meta']['adstrim_home_dict'] = item.get('home_team_images')
+                    target['_img_meta']['adstrim_away_dict'] = item.get('away_team_images')
+
             else:
-                # NO MATCH - ADD NEW ENTRY
+                # ADD NEW
                 date_str = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
                 uid = hashlib.md5(f"{resolved['sport']}-{date_str}-{resolved['home']}".encode()).hexdigest()
                 
@@ -420,10 +430,20 @@ def fetch_and_merge():
                     'is_single': resolved['is_single'],
                     'streams': ad_streams,
                     'duration': item.get('duration'),
-                    'live_viewers': 0
+                    'live_viewers': 0,
+                    
+                    # STORE IMAGE DATA
+                    '_img_meta': {
+                        'source': 'adstrim',
+                        'adstrim_home': item.get('home_team_image'),
+                        'adstrim_away': item.get('away_team_image'),
+                        'adstrim_league': item.get('league_image'),
+                        'adstrim_home_dict': item.get('home_team_images'),
+                        'adstrim_away_dict': item.get('away_team_images')
+                    }
                 })
 
-    # 4. FINAL PROCESSING (Filtering & Scoring)
+    # 4. FINAL PROCESSING
     final_list = []
     now = time.time() * 1000
     
@@ -444,14 +464,13 @@ def fetch_and_merge():
         is_finished = now > end_time
         has_viewers = m['live_viewers'] > 0
         
-        # Point 1: Remove if finished AND no viewers
         if is_finished and not has_viewers: continue
             
         m['is_live'] = m['is_live'] or has_viewers or (m['timestamp'] <= now <= end_time)
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
         
-        # --- SCORING LOGIC UPDATED ---
+        # --- SCORING LOGIC ---
         score = 0
         l_low = m['league'].lower()
         
@@ -461,16 +480,15 @@ def fetch_and_merge():
             boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
             if any(b in l_low for b in boosts): score += 2000
             
-        # PENALTY: Downgrade 'TBA' names so real matches float to top
+        # PENALTY: Downgrade 'TBA' names
         if m['home'] == "TBA" or m['away'] == "TBA":
             score -= 5000
             
-        # BOOST: Give Adstrim/Merged matches a slight nudge
+        # BOOST: Give Adstrim/Merged matches a nudge
         if str(m['original_id']).startswith('ad_') or len(m['streams']) > 1:
             score += 500
 
         m['score'] = score
-        
         final_list.append(m)
         
     return final_list
@@ -504,7 +522,6 @@ def render_match_row(m, section_title=""):
     teams_html = render_team(m["home"])
     if not m['is_single']: teams_html += render_team(m["away"])
 
-    # URL: /watch/?info=ID
     info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
     
     svg_icon = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>'
@@ -513,7 +530,7 @@ def render_match_row(m, section_title=""):
     btn = ""
     diff = (m['timestamp'] - time.time()*1000) / 60000
     
-    # CHANGED: Use standard <a href> instead of javascript onclick
+    # Use standard <a href> tag
     if is_live or diff <= 30:
         btn = f'<a href="{info_url}" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></a>'
     else:
@@ -771,7 +788,7 @@ def build_homepage(matches):
     html = html.replace('style="display:none;"', '')
     html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
 
-    # UPDATED IDS: These match the fix applied to master_template.html
+    # UPDATED IDS for Injection
     if live_html:
         html = re.sub(r'<div id="live-section-container".*?</div>', f'<div id="live-section-container">{live_html}</div>', html, flags=re.DOTALL)
     else:
@@ -823,6 +840,118 @@ def inject_leagues(matches):
             print(f" > Updated {slug}")
 
 # ==============================================================================
+# 10. IMAGE DOWNLOADER & PROCESSOR
+# ==============================================================================
+def run_image_downloader(matches):
+    print(" > Checking for new images...")
+    
+    # Reload map to get latest state
+    img_map = load_json(IMAGE_MAP_PATH)
+    if 'teams' not in img_map: img_map['teams'] = {}
+    if 'leagues' not in img_map: img_map['leagues'] = {}
+    
+    updated = False
+    
+    # Ensure directories exist
+    dirs = [
+        'assets/logos/streamed', 
+        'assets/logos/upstreams', 
+        'assets/logos/leagues'
+    ]
+    for d in dirs:
+        if not os.path.exists(d): os.makedirs(d)
+
+    def process_and_save(url, save_path):
+        try:
+            # Fake headers to avoid 403s on some CDNs
+            h = {'User-Agent': 'Mozilla/5.0'}
+            r = requests.get(url, headers=h, timeout=5)
+            if r.status_code == 200:
+                img = Image.open(BytesIO(r.content))
+                
+                # Resize to 60x60
+                img = img.resize((60, 60), Image.Resampling.LANCZOS)
+                
+                # Save as WebP
+                img.save(save_path, 'WEBP', quality=90)
+                return True
+        except Exception as e:
+            pass
+        return False
+
+    for m in matches:
+        meta = m.get('_img_meta', {})
+        
+        # 1. PROCESS HOME TEAM
+        h_name = m['home']
+        if h_name and h_name != 'TBA' and h_name not in img_map['teams']:
+            success = False
+            
+            # Try Streamed (Priority: Cleanest)
+            if meta.get('home_id'):
+                url = f"https://streamed.pk/api/images/badge/{meta['home_id']}.webp"
+                fname = f"assets/logos/streamed/{slugify(h_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['teams'][h_name] = fname
+                    success = True
+                    updated = True
+            
+            # Try Adstrim (Fallback)
+            if not success and (meta.get('adstrim_home') or meta.get('adstrim_home_dict')):
+                url = meta.get('adstrim_home')
+                if meta.get('adstrim_home_dict') and isinstance(meta['adstrim_home_dict'], dict):
+                    url = meta['adstrim_home_dict'].get('sofascore') or url
+                
+                if url:
+                    fname = f"assets/logos/upstreams/{slugify(h_name)}.webp"
+                    if process_and_save(url, fname):
+                        img_map['teams'][h_name] = fname
+                        updated = True
+
+        # 2. PROCESS AWAY TEAM
+        a_name = m['away']
+        if a_name and a_name != 'TBA' and a_name not in img_map['teams']:
+            success = False
+            
+            # Try Streamed
+            if meta.get('away_id'):
+                url = f"https://streamed.pk/api/images/badge/{meta['away_id']}.webp"
+                fname = f"assets/logos/streamed/{slugify(a_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['teams'][a_name] = fname
+                    success = True
+                    updated = True
+            
+            # Try Adstrim
+            if not success and (meta.get('adstrim_away') or meta.get('adstrim_away_dict')):
+                url = meta.get('adstrim_away')
+                if meta.get('adstrim_away_dict') and isinstance(meta['adstrim_away_dict'], dict):
+                    url = meta['adstrim_away_dict'].get('sofascore') or url
+                
+                if url:
+                    fname = f"assets/logos/upstreams/{slugify(a_name)}.webp"
+                    if process_and_save(url, fname):
+                        img_map['teams'][a_name] = fname
+                        updated = True
+
+        # 3. PROCESS LEAGUE
+        l_name = m['league']
+        if l_name and l_name != m['sport'] and l_name not in img_map['leagues']:
+            if meta.get('adstrim_league'):
+                url = meta.get('adstrim_league')
+                fname = f"assets/logos/leagues/{slugify(l_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['leagues'][l_name] = fname
+                    updated = True
+
+    if updated:
+        print(" > Saving updated image map...")
+        with open(IMAGE_MAP_PATH, 'w', encoding='utf-8') as f:
+            json.dump(img_map, f, indent=4)
+    else:
+        print(" > No new images to download.")
+
+# ==============================================================================
 # 9. MAIN EXECUTION
 # ==============================================================================
 def main():
@@ -838,6 +967,8 @@ def main():
     
     inject_leagues(matches)
     print(" > League Pages Updated.")
+    
+    run_image_downloader(matches)
 
 if __name__ == "__main__":
     main()
