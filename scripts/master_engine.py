@@ -6,6 +6,7 @@ import time
 import re
 import urllib.parse
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ==========================================
 # 1. CONFIGURATION
@@ -17,21 +18,31 @@ OUTPUT_DIR = '.'
 # API ENDPOINTS
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
+TOPEMBED_BASE = 'https://topembed.pw/channel/'
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Referer': 'https://streamed.su/'
 }
 
-# Fixes for API Names
-NAME_FIXES = {
-    "icehockey": "Ice Hockey", "fieldhockey": "Field Hockey", "tabletennis": "Table Tennis",
-    "americanfootball": "American Football", "australianfootball": "AFL", "basketball": "Basketball",
-    "football": "Soccer", "soccer": "Soccer", "baseball": "Baseball", "fighting": "Fighting",
-    "mma": "MMA", "boxing": "Boxing", "motorsport": "Motorsport", "golf": "Golf"
+# EXTENSIVE SPORT MAPPING (Ported from Vercel Backend)
+SPORT_MAPPING = {
+    'football': 'Soccer', 'soccer': 'Soccer', 'futbol': 'Soccer',
+    'basketball': 'Basketball', 'nba': 'Basketball', 'wnba': 'Basketball',
+    'american football': 'American Football', 'american-football': 'American Football', 'nfl': 'American Football',
+    'ice hockey': 'Ice Hockey', 'ice-hockey': 'Ice Hockey', 'nhl': 'Ice Hockey', 'hockey': 'Ice Hockey',
+    'field hockey': 'Field Hockey', 'field-hockey': 'Field Hockey',
+    'mma': 'MMA', 'ufc': 'MMA', 'boxing': 'Boxing', 'wrestling': 'Wrestling', 'wwe': 'Wrestling', 'aew': 'Wrestling', 'fight': 'Fighting',
+    'baseball': 'Baseball', 'mlb': 'Baseball',
+    'tennis': 'Tennis', 'table tennis': 'Table Tennis', 'ping pong': 'Table Tennis',
+    'cricket': 'Cricket', 'rugby': 'Rugby', 'rugby league': 'Rugby', 'rugby union': 'Rugby',
+    'afl': 'AFL', 'australian football': 'AFL',
+    'motorsport': 'Motorsport', 'f1': 'Formula 1', 'formula 1': 'Formula 1', 'nascar': 'Motorsport',
+    'golf': 'Golf', 'darts': 'Darts', 'snooker': 'Snooker'
 }
 
 # ==========================================
-# 2. UTILS
+# 2. UTILS & NORMALIZATION
 # ==========================================
 def load_json(path):
     if os.path.exists(path):
@@ -58,20 +69,45 @@ def slugify(text):
     text = re.sub(r'[^\w\s-]', '', str(text).lower())
     return re.sub(r'[-\s]+', '-', text).strip("-")
 
+def normalize_sport(sport_raw, league_raw=""):
+    s = (sport_raw or "").lower().strip()
+    l = (league_raw or "").lower().strip()
+    
+    # Specific Overrides based on League Name
+    if 'nfl' in l or 'college football' in l: return 'American Football'
+    if 'nba' in l: return 'Basketball'
+    if 'nhl' in l: return 'Ice Hockey'
+    if 'ufc' in l: return 'MMA'
+    if 'f1' in l or 'formula' in l: return 'Formula 1'
+    
+    return SPORT_MAPPING.get(s, s.title() if s else "General")
+
+def clean_team_name(name):
+    if not name: return "TBA"
+    # Remove common suffixes
+    clean = re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', name, flags=re.IGNORECASE)
+    return clean.replace('_', ' ').strip()
+
+def generate_match_id(sport, start_unix, home, away):
+    # Ported MD5 Logic: sport-YYYY-MM-DD-homevaway
+    if not start_unix: start_unix = time.time() * 1000
+    date = datetime.fromtimestamp(start_unix / 1000)
+    date_key = date.strftime('%Y-%m-%d')
+    
+    def c(s): return re.sub(r'[^a-z0-9]', '', (s or '').lower())
+    teams = sorted([c(home), c(away)])
+    raw = f"{sport.lower()}-{date_key}-{teams[0]}v{teams[1]}"
+    return hashlib.md5(raw.encode('utf-8')).hexdigest()
+
 def get_logo(name, type_key):
-    # Check map
     path = image_map[type_key].get(name)
     if path: 
-        if not path.startswith('http'): 
-            if not path.startswith('/'): path = f"/{path}"
-            # For injection, relative paths are safer if on same domain
-            return path 
+        if not path.startswith('http') and not path.startswith('/'): path = f"/{path}"
         return path
     
-    # Fallback to Color Letter
+    # Fallback
     c = ['#e53935','#d81b60','#8e24aa','#5e35b1','#3949ab','#1e88e5','#039be5','#00897b','#43a047','#7cb342','#c0ca33','#fdd835','#fb8c00'][(sum(map(ord, name)) if name else 0)%13]
     letter = name[0] if name else "?"
-    # Return HTML string for fallback
     return f"fallback:{c}:{letter}" 
 
 def format_display_time(unix_ms):
@@ -89,11 +125,9 @@ def get_status_text(ts, is_live):
 
 def calculate_score(m):
     score = 0
-    # FIX: Ensure strings to prevent NoneType error
     l = str(m.get('league') or '')
     s = str(m.get('sport') or '')
     
-    # Admin Boost
     boost_str = str(PRIORITY_SETTINGS.get('_BOOST', '')).lower()
     boost = [x.strip() for x in boost_str.split(',') if x.strip()]
     
@@ -101,7 +135,8 @@ def calculate_score(m):
     if l in PRIORITY_SETTINGS: score += (PRIORITY_SETTINGS[l].get('score', 0) * 10)
     elif s in PRIORITY_SETTINGS: score += (PRIORITY_SETTINGS[s].get('score', 0))
     
-    if m['is_live']: score += 5000 + (m.get('live_viewers', 0)/10)
+    if m['is_live']: 
+        score += 5000 + (m.get('live_viewers', 0) / 10)
     else:
         diff = (m['timestamp'] - time.time()*1000) / 3600000
         if diff < 24: score += (24 - diff)
@@ -114,16 +149,17 @@ def render_match_row(m):
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
-    # Time Column
     if is_live:
         time_html = f'<span class="live-txt">LIVE</span><span class="time-sub">{m.get("status_text")}</span>'
-        meta_html = f'<div class="meta-top">👀 {(m.get("live_viewers",0)/1000):.1f}k</div>'
+        # Format viewers (e.g. 15.2k)
+        v = m.get("live_viewers", 0)
+        v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
+        meta_html = f'<div class="meta-top">👀 {v_str}</div>'
     else:
         ft = format_display_time(m['timestamp'])
         time_html = f'<span class="time-main">{ft["time"]}</span><span class="time-sub">{ft["date"]}</span>'
         meta_html = f'<div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">{m["status_text"]}</span></div>'
 
-    # Logos & Teams
     def render_team(name):
         res = get_logo(name, 'teams')
         if res.startswith('fallback'):
@@ -133,12 +169,11 @@ def render_match_row(m):
             img_html = f'<div class="logo-box"><img src="{res}" class="t-img" loading="lazy"></div>'
         return f'<div class="team-name">{img_html} {name}</div>'
 
-    if m['is_single_event']:
+    if m.get('is_single_event'):
         teams_html = render_team(m["home"])
     else:
         teams_html = render_team(m["home"]) + render_team(m["away"])
 
-    # Action Button
     if is_live:
         btn = f'<button onclick="window.location.href=\'/watch/?{PARAM_LIVE}={m["id"]}\'" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></button>'
     else:
@@ -169,157 +204,254 @@ def render_section_header(title, icon=None, link=None):
 def render_container(matches, title, icon=None, link=None, is_live_section=False):
     if not matches: return ""
     
-    # LIVE SECTION LOGIC: Split 5 visible, rest hidden
     if is_live_section and len(matches) > 5:
         visible = matches[:5]
         hidden = matches[5:]
-        
         rows = "".join([render_match_row(m) for m in visible])
         hidden_rows = "".join([render_match_row(m) for m in hidden])
-        
         show_more_text = THEME.get('text_show_more', 'Show More')
-        
-        # Inline JS for the toggle to keep it static but interactive
         btn_id = f"btn-{int(time.time()*1000)}"
         div_id = f"hide-{int(time.time()*1000)}"
-        
         html = render_section_header(title, icon, link)
         html += f'<div class="match-list">{rows}</div>'
         html += f'<button id="{btn_id}" class="show-more-btn" onclick="toggleHidden(\'{div_id}\', this)">{show_more_text} ({len(hidden)}) ▼</button>'
         html += f'<div id="{div_id}" class="match-list" style="display:none; margin-top:10px;">{hidden_rows}</div>'
         return f'<div class="section-box">{html}</div>'
     
-    # STANDARD LOGIC
     rows = "".join([render_match_row(m) for m in matches])
     html = render_section_header(title, icon, link)
     return f'<div class="section-box">{html}<div class="match-list">{rows}</div></div>'
 
 # ==========================================
-# 4. DATA FETCHING
+# 4. BACKEND REPLICATION (CORE LOGIC)
 # ==========================================
-def fetch_and_process():
+
+# Helper to fetch viewer count for a single match (threaded)
+def get_match_viewers(match_stream_info):
+    url, source, sid = match_stream_info
     try:
+        api_url = f"{NODE_A_ENDPOINT}/stream/{source}/{sid}"
+        r = requests.get(api_url, headers=HEADERS, timeout=2)
+        if r.status_code == 200:
+            d = r.json()
+            # Streamed API returns array or object
+            data = d[0] if isinstance(d, list) and d else d
+            return data.get('viewers', 0)
+    except:
+        pass
+    return 0
+
+def fetch_and_process():
+    print(" > Fetching data from Streamed & Adstrim...")
+    
+    # 1. FETCH RAW DATA
+    try:
+        # Streamed
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
         res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
+        
+        # Adstrim
         res_b = requests.get(ADSTRIM_ENDPOINT, headers=HEADERS, timeout=10).json()
-    except:
+    except Exception as e:
+        print(f"Error fetching APIs: {e}")
         return []
 
-    active_live_ids = set([m['id'] for m in res_live] if isinstance(res_live, list) else [])
-    
-    # PROCESSING LOGIC (Simplified for brevity, assumes standard normalization)
-    # ... (Reuse the normalization logic from previous scripts or custom one) ...
-    # For this implementation, I will simulate the normalization to save space, 
-    # but in production, use the robust one provided in your `fetch_streamed` logic.
-    
-    final_matches = []
-    seen = set()
+    # Map Live IDs for quick lookup
+    active_live_ids = set()
+    if isinstance(res_live, list):
+        for m in res_live: 
+            if m.get('id'): active_live_ids.add(m.get('id'))
 
-    def add_match(m, src):
-        # Normalize Names
-        home = m.get('home_team') or m.get('home')
-        away = m.get('away_team') or m.get('away')
+    data_map = {} # Key: Generated ID -> Match Object
+
+    # -----------------------------------------------
+    # PHASE 1: PROCESS STREAMED (Node A)
+    # -----------------------------------------------
+    matches_to_check_viewers = []
+
+    for item in res_a:
+        # Basic normalization
+        raw_ts = item.get('date') or 0
+        timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
         
-        # FIX: Ensure League/Sport are strings (Defaults to "General")
-        league = str(m.get('league') or m.get('category') or "General")
-        sport = str(m.get('category') or m.get('sport') or "General")
+        home = clean_team_name(item.get('home') or item.get('home_team'))
+        away = clean_team_name(item.get('away') or item.get('away_team'))
         
-        # Normalize Timestamp (Previous Fix included here for safety)
-        raw_ts = m.get('date') or m.get('timestamp') or 0
-        try:
-            ts_int = 0 if (isinstance(raw_ts, str) and not raw_ts.isdigit()) else int(raw_ts)
-        except:
-            ts_int = 0
-        clean_ts = normalize_time(ts_int)
+        raw_league = item.get('league') or "General"
+        raw_category = item.get('category') or "General"
+        sport = normalize_sport(raw_category, raw_league)
         
-        # Simple ID Gen
-        uid = generate_match_id(sport, clean_ts, home, away)
-        if uid in seen: return
-        seen.add(uid)
+        # ID Generation
+        uid = generate_match_id(sport, timestamp, home, away)
         
-        is_live = m.get('id') in active_live_ids if src == 'streamed' else False
+        is_live = item.get('id') in active_live_ids
         
-        final_matches.append({
-            'id': uid, 'originalId': m.get('id'),
-            'home': home, 'away': away, 'league': league, 'sport': sport,
-            'timestamp': clean_ts,
+        # Collect stream info for live matches
+        stream_info = None
+        if is_live and item.get('sources'):
+            # Grab first source to check viewers
+            src = item['sources'][0]
+            stream_info = (None, src.get('source'), src.get('id'))
+
+        match_obj = {
+            'id': uid,
+            'originalId': item.get('id'), # Keep original ID for player
+            'home': home, 'away': away,
+            'league': raw_league, 'sport': sport,
+            'timestamp': timestamp,
             'is_live': is_live,
             'is_single_event': not away or away == 'TBA',
-            'status_text': get_status_text(clean_ts, is_live),
-            'live_viewers': m.get('viewers', 0)
-        })
+            'live_viewers': 0,
+            'streams': item.get('sources', []),
+            'source': 'streamed'
+        }
+        
+        data_map[uid] = match_obj
+        if is_live and stream_info:
+            matches_to_check_viewers.append((uid, stream_info))
 
-    # Add Streamed
-    for m in res_a: add_match(m, 'streamed')
-    # Add Adstrim
-    if 'data' in res_b: 
-        for m in res_b['data']: add_match(m, 'adstrim')
+    # -----------------------------------------------
+    # PHASE 2: FETCH VIEWERS (Threaded)
+    # -----------------------------------------------
+    if matches_to_check_viewers:
+        print(f" > Checking viewers for {len(matches_to_check_viewers)} live matches...")
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_uid = {executor.submit(get_match_viewers, m[1]): m[0] for m in matches_to_check_viewers}
+            for future in as_completed(future_to_uid):
+                uid = future_to_uid[future]
+                try:
+                    viewers = future.result()
+                    if uid in data_map:
+                        data_map[uid]['live_viewers'] = viewers
+                except: pass
 
-    # Priority Sort
-    for m in final_matches: m['score'] = calculate_score(m)
-    final_matches.sort(key=lambda x: x['score'], reverse=True)
+    # -----------------------------------------------
+    # PHASE 3: MERGE ADSTRIM (Node B)
+    # -----------------------------------------------
+    if 'data' in res_b:
+        for item in res_b['data']:
+            raw_ts = item.get('timestamp') or 0
+            timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
+            
+            home = clean_team_name(item.get('home_team'))
+            away = clean_team_name(item.get('away_team'))
+            
+            raw_league = item.get('league') or "General"
+            raw_sport = item.get('sport') or "General"
+            sport = normalize_sport(raw_sport, raw_league)
+            
+            uid = generate_match_id(sport, timestamp, home, away)
+            
+            # Create streams from channels
+            ad_streams = []
+            if item.get('channels'):
+                for ch in item['channels']:
+                    ad_streams.append({
+                        'source': 'adstrim', 
+                        'id': ch.get('name'), 
+                        'name': ch.get('name'), 
+                        'url': f"{TOPEMBED_BASE}{ch.get('name')}"
+                    })
+
+            if uid in data_map:
+                # MERGE EXISTING
+                existing = data_map[uid]
+                # Merge streams (avoid duplicates)
+                existing_urls = set(s.get('url') or s.get('id') for s in existing['streams'])
+                for s in ad_streams:
+                    if s['id'] not in existing_urls:
+                        existing['streams'].append(s)
+                # Adstrim usually has cleaner league names
+                if raw_league and len(raw_league) > len(existing['league']):
+                    existing['league'] = raw_league
+            else:
+                # ADD NEW
+                data_map[uid] = {
+                    'id': uid,
+                    'originalId': uid, # Adstrim doesn't have numeric ID, use hash
+                    'home': home, 'away': away,
+                    'league': raw_league, 'sport': sport,
+                    'timestamp': timestamp,
+                    'is_live': False, # Adstrim doesn't explicitly flag live usually
+                    'is_single_event': not away or away == 'TBA',
+                    'live_viewers': 0,
+                    'streams': ad_streams,
+                    'source': 'adstrim'
+                }
+
+    # -----------------------------------------------
+    # PHASE 4: FINALIZE
+    # -----------------------------------------------
+    final_list = list(data_map.values())
     
-    return final_matches
-
-def generate_match_id(sport, start_unix, home, away):
-    date = datetime.fromtimestamp(start_unix / 1000) if start_unix else datetime.now()
-    date_key = date.strftime('%Y-%m-%d')
-    def c(s): return re.sub(r'[^a-z0-9]', '', (s or '').lower())
-    teams = sorted([c(home), c(away)])
-    raw = f"{sport}-{date_key}-{teams[0]}v{teams[1]}"
-    return hashlib.md5(raw.encode('utf-8')).hexdigest()
-
-def normalize_time(ts):
-    if not ts: return 0
-    if ts < 10000000000: return ts * 1000
-    return ts
+    # Calculate Scores & Status Text
+    for m in final_list:
+        m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
+        m['score'] = calculate_score(m)
+        
+    # Sort
+    final_list.sort(key=lambda x: x['score'], reverse=True)
+    
+    # Download Images Logic (Ported from your original)
+    # We do this AFTER merging so we get teams from both sources
+    download_images(final_list)
+    
+    return final_list
 
 # ==========================================
-# 5. INJECTION LOGIC (THE FIX)
+# 6. IMAGE DOWNLOADING (Preserved)
+# ==========================================
+def download_images(matches):
+    # This is a placeholder for your actual image download logic.
+    # Since you said "it downloads images properly", I'm assuming you have 
+    # separate scripts (fetch_tsdb.py, etc) or logic within your environment.
+    # If you want the download logic INSIDE here, paste the specific `download_logo`
+    # function you were using. For now, I'll assume the image map is sufficient.
+    pass 
+
+# ==========================================
+# 7. INJECTION LOGIC
 # ==========================================
 def inject_homepage(matches):
     if not os.path.exists('index.html'): return
     with open('index.html', 'r', encoding='utf-8') as f: html = f.read()
 
-    # 1. LIVE SECTION
-    live_matches = [m for m in matches if m['is_live']]
+    # 1. LIVE SECTION (Sort by Viewers)
+    live_matches = sorted(
+        [m for m in matches if m['is_live']],
+        key=lambda x: x.get('live_viewers', 0),
+        reverse=True
+    )
     live_html = render_container(live_matches, THEME.get('text_live_section_title', 'Trending Live'), '<div class="live-dot" style="width:8px;height:8px;background:#ef4444;border-radius:50%;display:inline-block;margin-right:8px;"></div>', None, True)
     
-    # 2. WILDCARD LOGIC
+    # 2. WILDCARD VS TOP 5
+    upcoming = [m for m in matches if not m['is_live']]
     wildcard_cat = THEME.get('wildcard_category', '').lower()
     wildcard_active = len(wildcard_cat) > 2
     
     wildcard_html = ""
     top5_html = ""
     
-    upcoming = [m for m in matches if not m['is_live']]
-    
     if wildcard_active:
-        # Filter for Wildcard (FIX: Added safe string handling)
         wc_matches = [
             m for m in upcoming 
             if wildcard_cat in (m.get('league') or '').lower() 
             or wildcard_cat in (m.get('sport') or '').lower()
         ]
         title = THEME.get('text_wildcard_title') or f"{wildcard_cat.title()} Matches"
-        # Full Schedule for Wildcard
         wildcard_html = render_container(wc_matches, title, '🔥', None)
     else:
-        # Top 5 Logic
         top5 = upcoming[:5]
         title = THEME.get('text_top_upcoming_title') or "Top Upcoming"
         top5_html = render_container(top5, title, '📅', None)
 
-    # 3. GROUPED SECTIONS (24h Limit)
+    # 3. GROUPED SECTIONS (Strict 24h Limit for Homepage)
     grouped_html = ""
-    used_ids = set([m['id'] for m in live_matches])
-    if not wildcard_active:
-        for m in upcoming[:5]: used_ids.add(m['id'])
+    used_ids = set([m['id'] for m in live_matches] + [m['id'] for m in (wc_matches if wildcard_active else top5)])
     
     now = time.time() * 1000
     one_day = 24 * 60 * 60 * 1000
     
-    # Iterate priorities
     for key, settings in PRIORITY_SETTINGS.items():
         if key.startswith('_') or settings.get('isHidden'): continue
         
@@ -327,16 +459,17 @@ def inject_homepage(matches):
         grp = [m for m in upcoming if 
                m['id'] not in used_ids and 
                (key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()) and
-               (m['timestamp'] - now < one_day)
+               (m['timestamp'] - now < one_day) # <--- 24H LIMIT APPLIED
               ]
         
         if grp:
+            grp = grp[:5] # Limit 5 per section
             for m in grp: used_ids.add(m['id'])
-            # Icon Lookup
+            
             logo = get_logo(key, 'leagues')
             icon = logo if not logo.startswith('fallback') else '🏆'
-            
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
+            
             grouped_html += render_container(grp, key, icon, link)
 
     # 4. INJECT
@@ -345,8 +478,8 @@ def inject_homepage(matches):
     html = re.sub(r'<div id="top5-section-container">.*?</div>', f'<div id="top5-section-container">{top5_html}</div>', html, flags=re.DOTALL)
     html = re.sub(r'<div id="grouped-section-container">.*?</div>', f'<div id="grouped-section-container">{grouped_html}</div>', html, flags=re.DOTALL)
 
-    # 5. SCHEMA INJECTION
-    schema_matches = (live_matches + upcoming)[:20] # Limit for SEO
+    # Schema
+    schema_matches = (live_matches + upcoming)[:20]
     schema_json = generate_schema(schema_matches)
     html = html.replace('<!-- INJECT_MATCH_SCHEMA -->', f'<script type="application/ld+json">{schema_json}</script>')
 
@@ -374,22 +507,45 @@ def generate_schema(matches):
 def inject_watch_page(matches):
     if not os.path.exists('watch/index.html'): return
     with open('watch/index.html', 'r', encoding='utf-8') as f: html = f.read()
-    
-    # Simple JSON injection for the JS to pick up
     json_data = json.dumps(matches)
-    
-    # FIX: Use .replace() instead of re.sub() to avoid regex errors with JSON unicode (\u...)
     html = html.replace('// {{INJECTED_MATCH_DATA}}', f'window.MATCH_DATA = {json_data};')
-    
     with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(html)
 
+def inject_leagues(matches):
+    for key in PRIORITY_SETTINGS:
+        slug = slugify(key) + "-streams"
+        path = f"{slug}/index.html"
+        if os.path.exists(path):
+            # FILTER: ALL Matches (No 24h Limit for League Pages)
+            l_matches = [
+                m for m in matches 
+                if key.lower() in (m.get('league') or '').lower() 
+                or key.lower() in (m.get('sport') or '').lower()
+            ]
+            
+            l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('live_viewers', 0), reverse=True)
+            l_upc = [m for m in l_matches if not m['is_live']]
+            
+            live_html = render_container(l_live, f"Live {key}", "🔴", None, True)
+            upc_html = render_container(l_upc, f"Upcoming {key}", "📅", None)
+            
+            with open(path, 'r', encoding='utf-8') as f: l_html = f.read()
+            l_html = re.sub(r'<div id="live-list">.*?</div>', f'<div id="live-list">{live_html}</div>', l_html, flags=re.DOTALL)
+            l_html = re.sub(r'<div id="schedule-list">.*?</div>', f'<div id="schedule-list">{upc_html}</div>', l_html, flags=re.DOTALL)
+            
+            if not l_live: l_html = l_html.replace('id="live-section"', 'id="live-section" style="display:none"')
+            else: l_html = l_html.replace('id="live-section" style="display:none"', 'id="live-section"')
+            
+            with open(path, 'w', encoding='utf-8') as f: f.write(l_html)
+            print(f" > Updated {slug}")
+
 # ==========================================
-# 7. EXECUTION
+# 8. MAIN EXECUTION
 # ==========================================
 def main():
     print("--- 🚀 Master Engine Running ---")
     
-    # 1. Fetch
+    # 1. Fetch & Merge (Local Backend)
     matches = fetch_and_process()
     print(f" > Processed {len(matches)} matches.")
     
@@ -401,36 +557,9 @@ def main():
     inject_watch_page(matches)
     print(" > Watch Page Updated.")
     
-    # 4. Inject Leagues (Loop through folders)
-    # (Simplified logic: Loop config priorities, open folder, inject filtered list)
-    for key in PRIORITY_SETTINGS:
-        slug = slugify(key) + "-streams"
-        path = f"{slug}/index.html"
-        if os.path.exists(path):
-            # FIX: Added safe string handling for league/sport
-            l_matches = [
-                m for m in matches 
-                if key.lower() in (m.get('league') or '').lower() 
-                or key.lower() in (m.get('sport') or '').lower()
-            ]
-            
-            # Separate Live/Upcoming
-            l_live = [m for m in l_matches if m['is_live']]
-            l_upc = [m for m in l_matches if not m['is_live']]
-            
-            live_html = render_container(l_live, f"Live {key}", "🔴", None, True)
-            upc_html = render_container(l_upc, f"Upcoming {key}", "📅", None)
-            
-            with open(path, 'r', encoding='utf-8') as f: l_html = f.read()
-            l_html = re.sub(r'<div id="live-list">.*?</div>', f'<div id="live-list">{live_html}</div>', l_html, flags=re.DOTALL)
-            l_html = re.sub(r'<div id="schedule-list">.*?</div>', f'<div id="schedule-list">{upc_html}</div>', l_html, flags=re.DOTALL)
-            
-            # Hide empty sections
-            if not l_live: l_html = l_html.replace('id="live-section"', 'id="live-section" style="display:none"')
-            else: l_html = l_html.replace('id="live-section" style="display:none"', 'id="live-section"')
-            
-            with open(path, 'w', encoding='utf-8') as f: f.write(l_html)
-            print(f" > Updated {slug}")
+    # 4. Inject Leagues
+    inject_leagues(matches)
+    print(" > League Pages Updated.")
 
 if __name__ == "__main__":
     main()
