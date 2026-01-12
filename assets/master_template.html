@@ -24,10 +24,10 @@
     <link rel="canonical" href="{{CANONICAL_URL}}">
     {{LOGO_PRELOAD}}
     
-    <!-- STATIC SCHEMAS (Organization, WebSite) -->
+    <!-- SCHEMA -->
     {{SCHEMA_BLOCK}}
     
-    <!-- DYNAMIC MATCH SCHEMA (Injected by Master Engine) -->
+    <!-- DYNAMIC MATCH SCHEMA (Injected by Engine) -->
     <!-- INJECT_MATCH_SCHEMA -->
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -54,19 +54,25 @@
             --border-radius-base: {{THEME_BORDER_RADIUS_BASE}};
             --button-border-radius: {{THEME_BUTTON_BORDER_RADIUS}};
             
-            /* COMPONENT SPECIFIC */
+            /* HEADER */
             --header-bg: {{THEME_HEADER_BG}};
             --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
             --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
             --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
             --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
             
+            /* HERO */
             --hero-pill-bg: {{THEME_HERO_PILL_BG}};
             --hero-pill-text: {{THEME_HERO_PILL_TEXT}};
-            --hero-pill-hover-bg: {{THEME_HERO_PILL_HOVER_BG}};
-            --hero-pill-hover-text: {{THEME_HERO_PILL_HOVER_TEXT}};
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_ACTIVE_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_ACTIVE_TEXT}};
             --hero-pill-radius: {{THEME_HERO_PILL_RADIUS}};
+            --hero-h1-color: {{THEME_HERO_H1_COLOR}};
+            --hero-intro-color: {{THEME_HERO_INTRO_COLOR}};
 
+            /* MATCH ROWS */
             --match-row-bg: {{THEME_MATCH_ROW_BG}};
             --match-row-border: {{THEME_MATCH_ROW_BORDER}};
             --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}};
@@ -74,34 +80,50 @@
             --match-row-live-border-left: {{THEME_MATCH_ROW_LIVE_BORDER_LEFT}};
             --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
             --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
+            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
             
             --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
             --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
-            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
             
+            /* BUTTONS */
             --btn-watch-bg: {{THEME_MATCH_ROW_BTN_WATCH_BG}};
             --btn-watch-text: {{THEME_MATCH_ROW_BTN_WATCH_TEXT}};
-            
+            --show-more-btn-bg: {{THEME_SHOW_MORE_BTN_BG}};
+            --show-more-btn-text: {{THEME_SHOW_MORE_BTN_TEXT}};
+            --show-more-radius: {{THEME_SHOW_MORE_BTN_RADIUS}};
+
+            /* FOOTER */
             --footer-bg-start: {{THEME_FOOTER_BG_START}};
             --footer-bg-end: {{THEME_FOOTER_BG_END}};
             --footer-text: {{THEME_FOOTER_DESC_COLOR}};
             --footer-link: {{THEME_FOOTER_LINK_COLOR}};
             
+            /* ARTICLE */
             --article-bg: {{THEME_ARTICLE_BG}};
             --article-text: {{THEME_ARTICLE_TEXT}};
             --article-link: {{THEME_ARTICLE_LINK_COLOR}};
             --article-h2: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
             
+            /* EXTRAS */
             --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
             --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
             --sys-status-dot: {{THEME_SYS_STATUS_DOT_COLOR}};
             --sys-status-display: {{THEME_SYS_STATUS_DISPLAY}};
+            --sys-status-radius: {{THEME_SYS_STATUS_RADIUS}};
             
             --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
             --section-logo-size: {{THEME_SECTION_LOGO_SIZE}};
+            
+            /* SOCIAL */
+            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}}; --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+            --social-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}}; 
+            --social-desk-top: {{THEME_SOCIAL_DESKTOP_TOP}};
+            --social-desk-scale: {{THEME_SOCIAL_DESKTOP_SCALE}};
         }
 
-        /* CSS RESET & BASE */
+        /* --- CSS RESET --- */
         * { box-sizing: border-box; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: 14px; line-height: 1.5; padding-bottom: 80px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
@@ -109,15 +131,22 @@
         
         /* HEADER & HERO */
         header { background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: var(--header-border-bottom); height: 60px; position: sticky; top: 0; z-index: 100; }
-        .header-container { max-width: var(--header-max-width); margin: 0 auto; padding: 0 15px; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+        .header-container { max-width: var(--header-max-width); margin: 0 auto; padding: 0 15px; height: 100%; display: flex; align-items: center; position: relative; }
+        
+        /* LAYOUTS */
+        .h-layout-standard .header-container { justify-content: space-between; }
+        .h-layout-standard .logo-link { order: 1; } .h-layout-standard .nav-links { order: 2; }
+        .h-layout-center .header-container { justify-content: center; } .h-layout-center .nav-links { display:none; }
+        
         .logo-link { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.4rem; text-transform: uppercase; font-style: italic; }
-        .logo-img { width: var(--logo-image-size); height: var(--logo-image-size); border-radius: 6px; }
+        .logo-img { width: var(--logo-image-size); height: var(--logo-image-size); border-radius: 6px; object-fit: cover; }
         
         .nav-links { display: flex; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
         .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
         .nav-links a:hover { color: var(--header-link-hover-color); }
-        .nav-links a.highlighted { color: var(--header-highlight-color) !important; }
-        .hamburger { display: none; font-size: 1.5rem; background: none; color: var(--text-main); }
+        .nav-links a.highlighted { color: var(--header-highlight-color) !important; border-bottom-color: var(--header-highlight-color) !important; }
+        
+        .hamburger { display: none; font-size: 1.5rem; background: none; color: var(--text-main); position:absolute; right:15px; }
         @media(max-width: 900px) { .nav-links { display: none; } .hamburger { display: block; } }
         
         .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); display: none; flex-direction: column; border-bottom: 1px solid var(--border); }
@@ -167,27 +196,34 @@
         .btn-notify { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; font-size: 0.7rem; padding: 6px; border-radius: var(--button-border-radius); width: 100%; }
         .btn-notify.active { background: var(--status-green); color: white; border-color: var(--status-green); }
 
-        .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; border-radius: 6px; margin-top: 10px; }
+        .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--show-more-btn-bg); border: 1px solid var(--border); color: var(--show-more-btn-text); font-weight: 700; border-radius: var(--show-more-radius); margin-top: 10px; }
         .show-more-btn:hover { color: var(--text-main); border-color: var(--brand-primary); }
 
         /* ARTICLE & FOOTER */
         .seo-article { background: var(--article-bg); color: var(--article-text); padding: 30px; border-radius: 8px; margin-top: 40px; }
-        .seo-article h2 { color: var(--article-h2); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 20px; }
+        .seo-article h2 { color: var(--article-h2); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 20px; }
         .seo-article a { color: var(--article-link); text-decoration: underline; }
 
         footer { background: linear-gradient(to bottom, var(--footer-bg-start), var(--footer-bg-end)); padding: 50px 20px; margin-top: 50px; border-top: 1px solid var(--border); }
         .footer-grid { display: grid; gap: 30px; max-width: var(--container-max-width); margin: 0 auto; }
-        @media(min-width: 768px) { .footer-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media(min-width: 768px) { .footer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); } .footer-grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+        
         .copyright { text-align: center; margin-top: 40px; font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
 
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
         .league-card { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); padding: 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; }
         .league-card:hover { border-color: var(--brand-primary); color: var(--text-main); }
 
-        .sys-status { display: var(--sys-status-display); align-items: center; gap: 8px; padding: 6px 12px; border-radius: 20px; background: var(--sys-status-bg); color: var(--sys-status-text); border: 1px solid var(--sys-status-border); font-size: 0.75rem; font-weight: 700; margin-bottom: 15px; }
-        .sys-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sys-status-dot); box-shadow: 0 0 8px var(--sys-status-dot); }
+        .sys-status { display: var(--sys-status-display); align-items: center; gap: 8px; padding: 6px 12px; border-radius: var(--sys-status-radius); background: var(--sys-status-bg); color: var(--sys-status-text); border: var(--sys-status-border); font-size: 0.75rem; font-weight: 700; margin-bottom: 15px; }
+        .sys-status .dot { width: var(--sys-status-dot); height: var(--sys-status-dot); border-radius: 50%; background: var(--sys-status-dot-color); box-shadow: 0 0 8px var(--sys-status-dot-color); }
 
         @keyframes blink { 0% {opacity:1} 50% {opacity:0.5} 100% {opacity:1} }
+        
+        /* BORDERS - INJECTED VIA ID from ENGINE */
+        #live-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_LIVE}}; }
+        #wildcard-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; }
+        #top5-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_UPCOMING}}; }
+        #grouped-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_GROUPED}}; }
     </style>
 </head>
 <body>
@@ -210,32 +246,20 @@
     </div>
 
     <main class="container">
-        <!-- 
-            PYTHON INJECTION ZONES 
-            The master_engine.py script will look for these specific IDs and replace the innerHTML.
-        -->
+        
+        <!-- 1. TRENDING LIVE -->
+        <div id="live-section-container"></div>
 
-        <!-- 1. TRENDING LIVE SECTION (Populated by Python) -->
-        <div id="live-section-container">
-            <!-- ENGINE INJECTS LIVE MATCHES HERE -->
-        </div>
+        <!-- 2. WILDCARD -->
+        <div id="wildcard-section-container"></div>
 
-        <!-- 2. WILDCARD SECTION (Populated only if Wildcard Category is set) -->
-        <div id="wildcard-section-container">
-            <!-- ENGINE INJECTS WILDCARD MATCHES HERE -->
-        </div>
+        <!-- 3. TOP 5 -->
+        <div id="top5-section-container"></div>
 
-        <!-- 3. TOP 5 UPCOMING (Populated only if Wildcard is NOT set) -->
-        <div id="top5-section-container">
-            <!-- ENGINE INJECTS TOP 5 HERE -->
-        </div>
+        <!-- 4. GROUPED -->
+        <div id="grouped-section-container"></div>
 
-        <!-- 4. GROUPED SPORTS/LEAGUES (Populated by Python) -->
-        <div id="grouped-section-container">
-            <!-- ENGINE INJECTS GROUPED SCHEDULES HERE -->
-        </div>
-
-        <!-- 5. SEO ARTICLE -->
+        <!-- 5. ARTICLE -->
         <div class="seo-article">{{ARTICLE_CONTENT}}</div>
 
         <!-- 6. FOOTER LEAGUES -->
@@ -250,18 +274,12 @@
         <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
     </footer>
 
-    <!-- No Client-Side Data Fetching Scripts -->
     <script>
-        // Minimal UI logic
         function toggleHidden(id, btn) {
             const el = document.getElementById(id);
-            if(el) { 
-                el.style.display = (el.style.display === 'none') ? 'block' : 'none'; 
-                btn.style.display = 'none'; // Hide button after click
-            }
+            if(el) { el.style.display = (el.style.display === 'none') ? 'block' : 'none'; btn.style.display = 'none'; }
         }
         function copyText(text) { navigator.clipboard.writeText(text); alert('Link Copied!'); }
-        function setNotify(btn) { btn.innerText = '✓ Set'; btn.style.color = '#22c55e'; btn.style.borderColor = '#22c55e'; }
     </script>
 </body>
 </html>
