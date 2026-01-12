@@ -29,6 +29,7 @@ HEADERS = {
     'Referer': 'https://streamed.su/'
 }
 
+# (Point 12) Match Duration Defaults (Minutes)
 SPORT_DURATIONS = {
     'cricket': 480, 'baseball': 210, 'american football': 200, 
     'basketball': 170, 'ice hockey': 170, 'tennis': 180, 'golf': 300,
@@ -36,6 +37,7 @@ SPORT_DURATIONS = {
     'default': 130
 }
 
+# (Point 4/7) Sport Mapping
 SPORT_MAPPING = {
     'football': 'Soccer', 'soccer': 'Soccer', 'futbol': 'Soccer',
     'basketball': 'Basketball', 'nba': 'Basketball', 'wnba': 'Basketball',
@@ -52,7 +54,7 @@ SPORT_MAPPING = {
 }
 
 # ==============================================================================
-# 2. UTILITIES
+# 2. UTILITIES & LOADERS
 # ==============================================================================
 def load_json(path):
     if os.path.exists(path):
@@ -77,8 +79,10 @@ def hex_to_rgba(hex_code, opacity):
         g = int(hex_code[2:4], 16)
         b = int(hex_code[4:6], 16)
         return f"rgba({r}, {g}, {b}, {opacity})"
-    except: return hex_code
+    except:
+        return hex_code
 
+# Load Configs
 config = load_json(CONFIG_PATH)
 image_map = load_json(IMAGE_MAP_PATH)
 if 'teams' not in image_map: image_map['teams'] = {}
@@ -92,6 +96,7 @@ PARAM_LIVE = SITE_SETTINGS.get('param_live', 'stream')
 PARAM_INFO = SITE_SETTINGS.get('param_info', 'info')
 THEME = config.get('theme', {})
 
+# (Point 3 & 6) Build Reverse League Map
 REVERSE_LEAGUE_MAP = {}
 league_data = load_json(LEAGUE_MAP_PATH)
 if league_data:
@@ -101,7 +106,7 @@ if league_data:
                 REVERSE_LEAGUE_MAP[team_slug.lower().strip()] = league_name
 
 # ==============================================================================
-# 3. TEXT & MATCHING
+# 3. TEXT & DATA NORMALIZATION
 # ==============================================================================
 def slugify(text):
     if not text: return ""
@@ -130,6 +135,7 @@ def normalize_sport(sport_raw, league_raw=""):
     if 'f1' in l or 'formula' in l: return 'Formula 1'
     return SPORT_MAPPING.get(s, s.title() if s else "General")
 
+# (Point 11) Timezone Logic
 def get_display_time(unix_ms):
     utc_dt = datetime.fromtimestamp(unix_ms / 1000, tz=timezone.utc)
     if TARGET_COUNTRY == 'UK':
@@ -146,6 +152,7 @@ def get_status_text(ts, is_live):
     if is_live: return "LIVE"
     now_ms = time.time() * 1000
     diff_min = (ts - now_ms) / 60000
+    
     if diff_min < 0: return "Started" 
     if diff_min < 60: return f"In {int(diff_min)}m"
     h = diff_min / 60
@@ -161,6 +168,7 @@ def get_logo(name, type_key):
     letter = name[0] if name else "?"
     return f"fallback:{c}:{letter}" 
 
+# (Point 18) SEO ID Generation
 def generate_seo_id(home, away, original_id):
     h = slugify(home)
     a = slugify(away) if away and away != "TBA" else ""
@@ -168,7 +176,7 @@ def generate_seo_id(home, away, original_id):
     return f"{base}-{original_id}"
 
 # ==============================================================================
-# 4. RESOLUTION LOGIC
+# 4. CORE LOGIC: RESOLUTION & MATCHING
 # ==============================================================================
 def resolve_match_identity(raw_match):
     raw_home = raw_match.get('home_raw') or ''
@@ -185,6 +193,7 @@ def resolve_match_identity(raw_match):
     is_single = (not away or away == "TBA" or away == "")
     league_name = None
     
+    # (Point 6) Check Colon
     if ":" in raw_home:
         parts = raw_home.split(":", 1)
         if len(parts) == 2:
@@ -193,17 +202,21 @@ def resolve_match_identity(raw_match):
                 league_name = lc
                 home = clean_team_name(parts[1])
     
+    # (Point 3, 6) Reverse Map Lookup (PRIORITY)
     h_slug = slugify(home)
-    if h_slug in REVERSE_LEAGUE_MAP: league_name = REVERSE_LEAGUE_MAP[h_slug]
+    if h_slug in REVERSE_LEAGUE_MAP:
+        league_name = REVERSE_LEAGUE_MAP[h_slug]
     
     if not is_single:
         a_slug = slugify(away)
         if a_slug in REVERSE_LEAGUE_MAP:
             if not league_name: league_name = REVERSE_LEAGUE_MAP[a_slug]
 
+    # (Point 6) Fallback to Adstrim
     if not league_name and raw_match.get('adstrim_league'):
         league_name = raw_match['adstrim_league']
         
+    # (Point 7) Fallback to Sport
     if not league_name or league_name.lower() in ["other", "general"]:
         league_name = normalize_sport(raw_match.get('sport_raw'), "")
 
@@ -226,7 +239,7 @@ def is_fuzzy_match(m1, m2):
     return False
 
 # ==============================================================================
-# 5. FETCH & MERGE
+# 5. DATA FETCHING & PROCESSING ENGINE
 # ==============================================================================
 def get_viewers(stream_info):
     url, src, sid = stream_info
@@ -243,21 +256,39 @@ def fetch_and_merge():
     print(" > Fetching APIs...")
     matches = []
     
+    res_a = []
+    res_live = []
+    res_b = {'data': []}
+
+    # (Point 8) Isolated Try/Except Blocks so one failure doesn't kill all
     try:
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
-        res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
-        res_b = requests.get(ADSTRIM_ENDPOINT, headers=HEADERS, timeout=10).json()
-    except Exception as e:
-        print(f"API Error: {e}")
-        return []
+        print(f"   - Streamed All: {len(res_a)} raw items")
+    except Exception as e: print(f"   ! Streamed All Failed: {e}")
 
-    active_live_ids = set(m.get('id') for m in res_live if m.get('id'))
+    try:
+        res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
+        print(f"   - Streamed Live: {len(res_live)} raw items")
+    except Exception as e: print(f"   ! Streamed Live Failed: {e}")
+
+    try:
+        res_b = requests.get(ADSTRIM_ENDPOINT, headers=HEADERS, timeout=10).json()
+        count_b = len(res_b.get('data', [])) if res_b else 0
+        print(f"   - Adstrim: {count_b} raw items")
+    except Exception as e: print(f"   ! Adstrim Failed: {e}")
+
+    active_live_ids = set()
+    if isinstance(res_live, list):
+        for m in res_live: 
+            if m.get('id'): active_live_ids.add(m.get('id'))
+
+    data_map = {} 
     viewers_to_check = []
 
-    # 1. STREAMED
+    # 1. STREAMED PROCESSING
     for item in res_a:
         raw_ts = item.get('date') or 0
-        ts = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
+        timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
         
         resolved = resolve_match_identity({
             'home_raw': item.get('home') or item.get('home_team'),
@@ -267,7 +298,7 @@ def fetch_and_merge():
             'adstrim_league': None 
         })
         
-        date_str = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
+        date_str = datetime.fromtimestamp(timestamp / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
         uid = hashlib.md5(f"{resolved['sport']}-{date_str}-{resolved['home']}".encode()).hexdigest()
         is_live = item.get('id') in active_live_ids
         
@@ -276,7 +307,7 @@ def fetch_and_merge():
             'original_id': item.get('id'),
             'home': resolved['home'], 'away': resolved['away'],
             'league': resolved['league'], 'sport': resolved['sport'],
-            'timestamp': ts, 'is_live': is_live,
+            'timestamp': timestamp, 'is_live': is_live,
             'is_single': resolved['is_single'],
             'streams': item.get('sources', []),
             'duration': None, 'live_viewers': 0
@@ -286,8 +317,9 @@ def fetch_and_merge():
             src = item['sources'][0]
             viewers_to_check.append((len(matches)-1, (None, src.get('source'), src.get('id'))))
 
-    # 2. VIEWERS
+    # 2. VIEWERS CHECK
     if viewers_to_check:
+        print(f" > Checking viewers for {len(viewers_to_check)} matches...")
         with ThreadPoolExecutor(max_workers=10) as ex:
             future_map = {ex.submit(get_viewers, m[1]): m[0] for m in viewers_to_check}
             for fut in as_completed(future_map):
@@ -295,7 +327,7 @@ def fetch_and_merge():
                 try: matches[idx]['live_viewers'] = fut.result()
                 except: pass
 
-    # 3. ADSTRIM MERGE (FIX: Overwrite TBA)
+    # 3. ADSTRIM MERGE
     if 'data' in res_b:
         for item in res_b['data']:
             raw_ts = item.get('timestamp') or 0
@@ -323,10 +355,10 @@ def fetch_and_merge():
                     break
             
             if matched_idx > -1:
-                # MERGE EXISTING
+                # MERGE
                 target = matches[matched_idx]
                 
-                # Fix TBA Names (CRITICAL FIX)
+                # Fix TBA/Empty Names
                 if (target['home'] == 'TBA' or target['home'] == '') and resolved['home'] != 'TBA':
                     target['home'] = resolved['home']
                 if (target['away'] == 'TBA' or target['away'] == '') and resolved['away'] != 'TBA':
@@ -339,7 +371,7 @@ def fetch_and_merge():
                 
                 if item.get('duration'): target['duration'] = item.get('duration')
                 
-                # Use Adstrim League if better
+                # Use Adstrim League if currently Generic
                 if "general" in target['league'].lower() and resolved['league']:
                     target['league'] = resolved['league']
             else:
@@ -359,9 +391,11 @@ def fetch_and_merge():
                     'live_viewers': 0
                 })
 
-    # 4. FILTERING
+    # 4. FINAL PROCESSING (Points 1, 12, 18)
     final_list = []
     now = time.time() * 1000
+    
+    print(f" > Raw matches before filtering: {len(matches)}")
     
     for m in matches:
         dur_mins = m.get('duration')
@@ -385,7 +419,6 @@ def fetch_and_merge():
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
         
-        # Score
         score = 0
         l_low = m['league'].lower()
         if m['is_live']: score += 10000 + m['live_viewers']
@@ -405,6 +438,7 @@ def render_match_row(m, section_title=""):
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
+    # (Point 13) Live Section UI
     if is_live:
         time_html = f'<span class="live-txt">LIVE</span><span class="time-sub">{m.get("status_text")}</span>'
         v = m.get("live_viewers", 0)
@@ -427,16 +461,16 @@ def render_match_row(m, section_title=""):
     teams_html = render_team(m["home"])
     if not m['is_single']: teams_html += render_team(m["away"])
 
-    # URL Safe Encoding
+    # (Point 19 & 18) Watch Buttons
+    # URL: /watch/?info=ID
     info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
     
-    # SVG Icon (Fixed String Construction)
+    # SVG Icon Fixed
     svg_icon = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>'
     copy_btn = f'<button class="btn-copy-link" onclick="copyText(\'{info_url}\')">{svg_icon} Link</button>'
 
-    # Watch Button Logic
     btn = ""
-    # Live OR Starts within 30 min -> Watch Button
+    # Live OR Starts within 30 min -> Watch Button with ?info link
     diff = (m['timestamp'] - time.time()*1000) / 60000
     if is_live or diff <= 30:
         btn = f'<button onclick="window.location.href=\'{info_url}\'" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></button>'
@@ -484,7 +518,7 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
     return f'<div class="section-box">{header}<div class="match-list">{rows_html}</div>{hidden_html}</div>'
 
 # ==============================================================================
-# 7. TEMPLATE INJECTION
+# 7. TEMPLATE INJECTION (FIXED)
 # ==============================================================================
 def apply_theme_to_template(html, page_data=None):
     if page_data is None: page_data = {}
@@ -688,23 +722,22 @@ def build_homepage(matches):
     home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
     html = apply_theme_to_template(tpl, home_data)
     
-    # CLEAN INJECTION LOGIC (Point 20 Fixed)
+    # CLEAN INJECTION (Robust Regex for Containers)
     html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
-    
     html = html.replace('style="display:none;"', '')
     html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
 
-    # Container Replacements
+    # Replaces container IDs with actual content
     if live_html:
-        html = html.replace('<div id="live-section-container"></div>', f'<div id="live-section-container">{live_html}</div>')
+        html = re.sub(r'<div id="live-section-container".*?</div>', f'<div id="live-section-container">{live_html}</div>', html, flags=re.DOTALL)
     else:
-        html = html.replace('<div id="live-section-container"></div>', '<div id="live-section-container" style="display:none"></div>')
+        html = re.sub(r'<div id="live-section-container".*?</div>', '<div id="live-section-container" style="display:none"></div>', html, flags=re.DOTALL)
 
-    html = html.replace('<div id="wildcard-section-container"></div>', f'<div id="wildcard-section-container">{wc_html}</div>' if wc_html else '<div id="wildcard-section-container" style="display:none"></div>')
-    html = html.replace('<div id="top5-section-container"></div>', f'<div id="top5-section-container">{top5_html}</div>' if top5_html else '<div id="top5-section-container" style="display:none"></div>')
-    html = html.replace('<div id="grouped-section-container"></div>', f'<div id="grouped-section-container">{grouped_html}</div>' if grouped_html else '<div id="grouped-section-container" style="display:none"></div>')
+    html = re.sub(r'<div id="wildcard-section-container".*?</div>', f'<div id="wildcard-section-container">{wc_html}</div>' if wc_html else '<div id="wildcard-section-container" style="display:none"></div>', html, flags=re.DOTALL)
+    html = re.sub(r'<div id="top5-section-container".*?</div>', f'<div id="top5-section-container">{top5_html}</div>' if top5_html else '<div id="top5-section-container" style="display:none"></div>', html, flags=re.DOTALL)
+    html = re.sub(r'<div id="grouped-section-container".*?</div>', f'<div id="grouped-section-container">{grouped_html}</div>' if grouped_html else '<div id="grouped-section-container" style="display:none"></div>', html, flags=re.DOTALL)
 
     schema = json.dumps({
         "@context": "https://schema.org", "@type": "ItemList",
@@ -752,7 +785,7 @@ def inject_leagues(matches):
 def main():
     print("--- 🚀 Master Engine Running ---")
     matches = fetch_and_merge()
-    print(f" > Processed {len(matches)} matches.")
+    print(f" > Total Valid Matches: {len(matches)}")
     
     build_homepage(matches)
     print(" > Homepage Built.")
