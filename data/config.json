@@ -206,7 +206,7 @@
   "sport_priorities": {
     "US": {
       "_HIDE_OTHERS": false,
-      "_BOOST": "nhl",
+      "_BOOST": "",
       "NFL": {
         "score": 100,
         "isLeague": true,
