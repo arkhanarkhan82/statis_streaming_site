@@ -660,7 +660,14 @@
         "FCSB": "assets/logos/upstreams/fcsb.webp",
         "Mafra": "assets/logos/upstreams/mafra.webp",
         "UD Santarem": "assets/logos/upstreams/ud-santarem.webp",
-        "Casa Pia": "assets/logos/upstreams/casa-pia.webp"
+        "Casa Pia": "assets/logos/upstreams/casa-pia.webp",
+        "U23 Asian Cup: Iran U23": "assets/logos/streamed/u23-asian-cup-iran-u23.webp",
+        "U23 Asian Cup: Thailand U23": "assets/logos/streamed/u23-asian-cup-thailand-u23.webp",
+        "China PR U23": "assets/logos/streamed/china-pr-u23.webp",
+        "Kotaro Mochizuki": "assets/logos/upstreams/kotaro-mochizuki.webp",
+        "Toshiki Karigyo": "assets/logos/upstreams/toshiki-karigyo.webp",
+        "Yui Chikaraishi": "assets/logos/upstreams/yui-chikaraishi.webp",
+        "Michiru Furuya": "assets/logos/upstreams/michiru-furuya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
