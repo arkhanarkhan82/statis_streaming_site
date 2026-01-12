@@ -344,6 +344,9 @@ def fetch_and_process():
             raw_sport = item.get('sport') or "General"
             sport = normalize_sport(raw_sport, raw_league)
             
+            # CAPTURE DURATION (The Fix)
+            ad_duration = item.get('duration') 
+            
             uid = generate_match_id(sport, timestamp, home, away)
             
             ad_streams = []
@@ -360,17 +363,21 @@ def fetch_and_process():
                 for s in ad_streams:
                     if s['id'] not in existing_urls: existing['streams'].append(s)
                 if raw_league and len(raw_league) > len(existing['league']): existing['league'] = raw_league
+                
+                # UPDATE DURATION IF EXISTS
+                if ad_duration: existing['duration'] = ad_duration
             else:
                 data_map[uid] = {
                     'id': uid, 'originalId': uid,
                     'home': home, 'away': away,
                     'league': raw_league, 'sport': sport,
                     'timestamp': timestamp,
-                    'is_live': False, # Default false, will check time next
+                    'is_live': False, 
                     'is_single_event': not away or away == 'TBA',
                     'live_viewers': 0,
                     'streams': ad_streams,
-                    'source': 'adstrim'
+                    'source': 'adstrim',
+                    'duration': ad_duration # Store it
                 }
 
     # -----------------------------------------------
@@ -380,14 +387,20 @@ def fetch_and_process():
     now = time.time() * 1000
     
     for m in final_list:
-        # A. Determine Sport Duration
-        s_lower = m['sport'].lower()
-        dur_mins = SPORT_DURATIONS.get('default')
-        for k, v in SPORT_DURATIONS.items():
-            if k in s_lower: 
-                dur_mins = v
-                break
+        # A. Determine Duration (Priority: API Specific -> Sport Default -> General Default)
+        dur_mins = m.get('duration')
+        if not dur_mins:
+            s_lower = m['sport'].lower()
+            dur_mins = SPORT_DURATIONS.get('default')
+            for k, v in SPORT_DURATIONS.items():
+                if k in s_lower: 
+                    dur_mins = v
+                    break
         
+        # Ensure integer
+        try: dur_mins = int(dur_mins)
+        except: dur_mins = 130
+
         # B. Calculate End Time
         start_time = m['timestamp']
         end_time = start_time + (dur_mins * 60 * 1000)
