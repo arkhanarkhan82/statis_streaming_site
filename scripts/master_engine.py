@@ -150,15 +150,35 @@ def get_display_time(unix_ms):
     return { "time": time_str, "date": date_str }
 
 def get_status_text(ts, is_live):
-    if is_live: return "LIVE"
     now_ms = time.time() * 1000
-    diff_min = (ts - now_ms) / 60000
     
-    if diff_min < 0: return "Started" 
-    if diff_min < 60: return f"In {int(diff_min)}m"
-    h = diff_min / 60
-    if h < 24: return f"In {int(h)}h"
-    return f"In {int(h/24)}d"
+    # 1. LIVE MATCH: Calculate Playing Time (Elapsed)
+    if is_live:
+        diff = now_ms - ts
+        if diff < 0: return "0'" # Handle small time sync skew
+        
+        mins = int(diff / 60000)
+        h = mins // 60
+        m = mins % 60
+        
+        if h > 0: return f"{h}h {m:02d}'" # Format: 1h 05'
+        return f"{m}'"                   # Format: 45'
+
+    # 2. UPCOMING MATCH: Calculate Countdown
+    diff = ts - now_ms
+    if diff < 0: return "Starting" # Technically started but not marked live yet
+    
+    secs = int(diff / 1000)
+    d = secs // 86400
+    h = (secs % 86400) // 3600
+    m = (secs % 3600) // 60
+    
+    parts = []
+    if d > 0: parts.append(f"{d}d")
+    if d > 0 or h > 0: parts.append(f"{h}h") # Show hours if days exist or hours exist
+    parts.append(f"{m}m") # Always show minutes
+    
+    return " ".join(parts)
 
 def get_logo(name, type_key):
     path = image_map[type_key].get(name)
@@ -532,15 +552,21 @@ def render_match_row(m, section_title=""):
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
+    # --- UPDATED TIME DISPLAY LOGIC ---
     if is_live:
-        time_html = f'<span class="live-txt">LIVE</span><span class="time-sub">{m.get("status_text")}</span>'
+        # Show Playing Time (calculated in get_status_text) in the main slot
+        # Show "LIVE" in the sub-slot
+        time_html = f'<span class="live-txt">{m.get("status_text")}</span><span class="time-sub">LIVE</span>'
+        
         v = m.get("live_viewers", 0)
         v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
         meta_html = f'<div class="meta-top">👀 {v_str}</div>'
     else:
         ft = get_display_time(m['timestamp'])
+        # m["status_text"] now contains the detailed "1d 2h 30m" string
         time_html = f'<span class="time-main">{ft["time"]}</span><span class="time-sub">{ft["date"]}</span>'
         meta_html = f'<div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">{m["status_text"]}</span></div>'
+    # ----------------------------------
 
     def render_team(name):
         res = get_logo(name, 'teams')
