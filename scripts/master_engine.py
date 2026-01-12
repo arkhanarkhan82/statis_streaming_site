@@ -29,7 +29,7 @@ HEADERS = {
     'Referer': 'https://streamed.su/'
 }
 
-# (Point 12) Match Duration Defaults (Minutes)
+# Match Duration Defaults (Minutes)
 SPORT_DURATIONS = {
     'cricket': 480, 'baseball': 210, 'american football': 200, 
     'basketball': 170, 'ice hockey': 170, 'tennis': 180, 'golf': 300,
@@ -37,7 +37,7 @@ SPORT_DURATIONS = {
     'default': 130
 }
 
-# (Point 4/7) Sport Mapping
+# Sport Mapping
 SPORT_MAPPING = {
     'football': 'Soccer', 'soccer': 'Soccer', 'futbol': 'Soccer',
     'basketball': 'Basketball', 'nba': 'Basketball', 'wnba': 'Basketball',
@@ -96,7 +96,7 @@ PARAM_LIVE = SITE_SETTINGS.get('param_live', 'stream')
 PARAM_INFO = SITE_SETTINGS.get('param_info', 'info')
 THEME = config.get('theme', {})
 
-# (Point 3 & 6) Build Reverse League Map
+# Build Reverse League Map
 REVERSE_LEAGUE_MAP = {}
 league_data = load_json(LEAGUE_MAP_PATH)
 if league_data:
@@ -135,7 +135,7 @@ def normalize_sport(sport_raw, league_raw=""):
     if 'f1' in l or 'formula' in l: return 'Formula 1'
     return SPORT_MAPPING.get(s, s.title() if s else "General")
 
-# (Point 11) Timezone Logic
+# Timezone Logic
 def get_display_time(unix_ms):
     utc_dt = datetime.fromtimestamp(unix_ms / 1000, tz=timezone.utc)
     if TARGET_COUNTRY == 'UK':
@@ -168,7 +168,7 @@ def get_logo(name, type_key):
     letter = name[0] if name else "?"
     return f"fallback:{c}:{letter}" 
 
-# (Point 18) SEO ID Generation
+# SEO ID Generation
 def generate_seo_id(home, away, original_id):
     h = slugify(home)
     a = slugify(away) if away and away != "TBA" else ""
@@ -186,23 +186,40 @@ def resolve_match_identity(raw_match):
     home = clean_team_name(raw_home)
     away = clean_team_name(raw_away)
     
-    if not home or home == "TBA":
-        if raw_title and " v " not in raw_title and " vs " not in raw_title:
-            home = raw_title.strip()
+    # --- PARSING FIX: Parse Title if Home/Away are invalid ---
+    # Many streams come as TBA vs TBA but have the title in "A vs B" format
+    if (not home or home == "TBA" or home == "") and raw_title:
+        # Regex to find ' vs ' or ' v ' or ' - ' (case insensitive)
+        split_parts = re.split(r'\s+(?:vs|v)\s+', raw_title, flags=re.IGNORECASE, maxsplit=1)
+        
+        if len(split_parts) == 2:
+            home = clean_team_name(split_parts[0])
+            away = clean_team_name(split_parts[1])
+        else:
+            # Fallback check for single event title
+            home = clean_team_name(raw_title)
+
+    # Secondary check: If Home is valid but Away is TBA, check title again
+    if (not away or away == "TBA") and raw_title and home and home != "TBA":
+         split_parts = re.split(r'\s+(?:vs|v)\s+', raw_title, flags=re.IGNORECASE, maxsplit=1)
+         if len(split_parts) == 2:
+             if clean_team_name(split_parts[0]) == home:
+                 away = clean_team_name(split_parts[1])
+    # -------------------------------------------------
     
     is_single = (not away or away == "TBA" or away == "")
     league_name = None
     
-    # (Point 6) Check Colon
-    if ":" in raw_home:
-        parts = raw_home.split(":", 1)
+    # Check Colon in name (League: Team)
+    if ":" in home:
+        parts = home.split(":", 1)
         if len(parts) == 2:
             lc = parts[0].strip()
             if len(lc) > 2 and not any(char.isdigit() for char in lc):
                 league_name = lc
                 home = clean_team_name(parts[1])
     
-    # (Point 3, 6) Reverse Map Lookup (PRIORITY)
+    # Reverse Map Lookup
     h_slug = slugify(home)
     if h_slug in REVERSE_LEAGUE_MAP:
         league_name = REVERSE_LEAGUE_MAP[h_slug]
@@ -212,11 +229,11 @@ def resolve_match_identity(raw_match):
         if a_slug in REVERSE_LEAGUE_MAP:
             if not league_name: league_name = REVERSE_LEAGUE_MAP[a_slug]
 
-    # (Point 6) Fallback to Adstrim
+    # Fallback to Adstrim provided league
     if not league_name and raw_match.get('adstrim_league'):
         league_name = raw_match['adstrim_league']
         
-    # (Point 7) Fallback to Sport
+    # Fallback to Sport
     if not league_name or league_name.lower() in ["other", "general"]:
         league_name = normalize_sport(raw_match.get('sport_raw'), "")
 
@@ -225,15 +242,18 @@ def resolve_match_identity(raw_match):
     return { "home": home, "away": away, "league": league_name, "sport": sport, "is_single": is_single }
 
 def is_fuzzy_match(m1, m2):
+    # Time diff > 20 mins means different match
     if abs(m1['timestamp'] - m2['timestamp']) > 20 * 60 * 1000: return False
     
     t1_h = tokenize_name(m1['home'])
     t2_h = tokenize_name(m2['home'])
     
+    # Overlap in home name tokens
     if not t1_h.isdisjoint(t2_h):
         if m1['is_single'] or m2['is_single']: return True
         t1_a = tokenize_name(m1['away'])
         t2_a = tokenize_name(m2['away'])
+        # Overlap in away name tokens
         if not t1_a.isdisjoint(t2_a): return True
         
     return False
@@ -260,7 +280,6 @@ def fetch_and_merge():
     res_live = []
     res_b = {'data': []}
 
-    # (Point 8) Isolated Try/Except Blocks so one failure doesn't kill all
     try:
         res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
         print(f"   - Streamed All: {len(res_a)} raw items")
@@ -282,10 +301,9 @@ def fetch_and_merge():
         for m in res_live: 
             if m.get('id'): active_live_ids.add(m.get('id'))
 
-    data_map = {} 
     viewers_to_check = []
 
-    # 1. STREAMED PROCESSING
+    # 1. STREAMED PROCESSING (Node A)
     for item in res_a:
         raw_ts = item.get('date') or 0
         timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
@@ -327,7 +345,7 @@ def fetch_and_merge():
                 try: matches[idx]['live_viewers'] = fut.result()
                 except: pass
 
-    # 3. ADSTRIM MERGE
+    # 3. ADSTRIM MERGE (Node B)
     if 'data' in res_b:
         for item in res_b['data']:
             raw_ts = item.get('timestamp') or 0
@@ -343,7 +361,13 @@ def fetch_and_merge():
             ad_streams = []
             if item.get('channels'):
                 for ch in item['channels']:
-                    ad_streams.append({'source': 'adstrim', 'id': ch.get('name'), 'name': ch.get('name'), 'url': f"{TOPEMBED_BASE}{ch.get('name')}"})
+                    # Normalize Adstrim link structure
+                    ad_streams.append({
+                        'source': 'adstrim', 
+                        'id': ch.get('name'), 
+                        'name': ch.get('name'), 
+                        'url': f"{TOPEMBED_BASE}{ch.get('name')}"
+                    })
 
             # Fuzzy Match
             matched_idx = -1
@@ -355,19 +379,20 @@ def fetch_and_merge():
                     break
             
             if matched_idx > -1:
-                # MERGE
+                # MERGE DETECTED
                 target = matches[matched_idx]
                 
-                # Fix TBA/Empty Names
+                # Update names if existing was TBA but Adstrim is clean
                 if (target['home'] == 'TBA' or target['home'] == '') and resolved['home'] != 'TBA':
                     target['home'] = resolved['home']
                 if (target['away'] == 'TBA' or target['away'] == '') and resolved['away'] != 'TBA':
                     target['away'] = resolved['away']
                 
-                # Merge Streams
+                # Merge Streams (Avoid duplicates)
                 existing_urls = set(s.get('url') or s.get('id') for s in target['streams'])
                 for s in ad_streams:
-                    if s['id'] not in existing_urls: target['streams'].append(s)
+                    if s['id'] not in existing_urls: 
+                        target['streams'].append(s)
                 
                 if item.get('duration'): target['duration'] = item.get('duration')
                 
@@ -375,7 +400,7 @@ def fetch_and_merge():
                 if "general" in target['league'].lower() and resolved['league']:
                     target['league'] = resolved['league']
             else:
-                # ADD NEW
+                # NO MATCH - ADD NEW ENTRY
                 date_str = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
                 uid = hashlib.md5(f"{resolved['sport']}-{date_str}-{resolved['home']}".encode()).hexdigest()
                 
@@ -391,7 +416,7 @@ def fetch_and_merge():
                     'live_viewers': 0
                 })
 
-    # 4. FINAL PROCESSING (Points 1, 12, 18)
+    # 4. FINAL PROCESSING (Filtering & Scoring)
     final_list = []
     now = time.time() * 1000
     
@@ -419,12 +444,24 @@ def fetch_and_merge():
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
         
+        # --- SCORING LOGIC UPDATED ---
         score = 0
         l_low = m['league'].lower()
+        
         if m['is_live']: score += 10000 + m['live_viewers']
+
         if '_BOOST' in PRIORITY_SETTINGS:
             boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
             if any(b in l_low for b in boosts): score += 2000
+            
+        # PENALTY: Downgrade 'TBA' names so real matches float to top
+        if m['home'] == "TBA" or m['away'] == "TBA":
+            score -= 5000
+            
+        # BOOST: Give Adstrim/Merged matches a slight nudge
+        if str(m['original_id']).startswith('ad_') or len(m['streams']) > 1:
+            score += 500
+
         m['score'] = score
         
         final_list.append(m)
@@ -438,7 +475,6 @@ def render_match_row(m, section_title=""):
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
-    # (Point 13) Live Section UI
     if is_live:
         time_html = f'<span class="live-txt">LIVE</span><span class="time-sub">{m.get("status_text")}</span>'
         v = m.get("live_viewers", 0)
@@ -461,19 +497,18 @@ def render_match_row(m, section_title=""):
     teams_html = render_team(m["home"])
     if not m['is_single']: teams_html += render_team(m["away"])
 
-    # (Point 19 & 18) Watch Buttons
     # URL: /watch/?info=ID
     info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
     
-    # SVG Icon Fixed
     svg_icon = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>'
     copy_btn = f'<button class="btn-copy-link" onclick="copyText(\'{info_url}\')">{svg_icon} Link</button>'
 
     btn = ""
-    # Live OR Starts within 30 min -> Watch Button with ?info link
     diff = (m['timestamp'] - time.time()*1000) / 60000
+    
+    # CHANGED: Use standard <a href> instead of javascript onclick
     if is_live or diff <= 30:
-        btn = f'<button onclick="window.location.href=\'{info_url}\'" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></button>'
+        btn = f'<a href="{info_url}" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></a>'
     else:
         btn = '<button class="btn-notify">🔔 Notify</button>'
 
@@ -518,7 +553,7 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
     return f'<div class="section-box">{header}<div class="match-list">{rows_html}</div>{hidden_html}</div>'
 
 # ==============================================================================
-# 7. TEMPLATE INJECTION (FIXED)
+# 7. TEMPLATE INJECTION
 # ==============================================================================
 def apply_theme_to_template(html, page_data=None):
     if page_data is None: page_data = {}
@@ -671,7 +706,7 @@ def build_homepage(matches):
         with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: tpl = f.read()
     except: return
 
-    live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: (x.get('live_viewers',0), x.get('score',0)), reverse=True)
+    live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: (x.get('score',0)), reverse=True)
     upcoming = [m for m in matches if not m['is_live']]
     upcoming.sort(key=lambda x: x['timestamp'])
 
@@ -722,14 +757,14 @@ def build_homepage(matches):
     home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
     html = apply_theme_to_template(tpl, home_data)
     
-    # CLEAN INJECTION (Robust Regex for Containers)
+    # Clean Skeletons
     html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = html.replace('style="display:none;"', '')
     html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
 
-    # Replaces container IDs with actual content
+    # UPDATED IDS: These match the fix applied to master_template.html
     if live_html:
         html = re.sub(r'<div id="live-section-container".*?</div>', f'<div id="live-section-container">{live_html}</div>', html, flags=re.DOTALL)
     else:
@@ -763,8 +798,9 @@ def inject_leagues(matches):
         path = f"{slug}/index.html"
         if os.path.exists(path):
             l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
-            l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('live_viewers',0), reverse=True)
+            l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
             l_upc = [m for m in l_matches if not m['is_live']]
+            l_upc.sort(key=lambda x: x['timestamp'])
             
             live_html = render_container(l_live, f"Live {key}", "🔴", None, True)
             upc_html = render_container(l_upc, f"Upcoming {key}", "📅", None)
