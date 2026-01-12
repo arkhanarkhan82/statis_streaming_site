@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFL Bite</title>
     <meta name="description" content="tfdhgdfgd">
-    
-    <meta name="theme-color" content="#050505">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
@@ -31,8 +31,8 @@
         :root {
             /* --- DYNAMIC THEME VARIABLES --- */
             --brand-primary: #d00000;
-            --bg-body: #050505;
-            --bg-panel: #0f0f0f;
+            --bg-body: #2d0101;
+            --bg-panel: #0c0f3b;
             --text-main: #ffffff;
             --text-muted: #888888;
             --border: #222222;
@@ -49,15 +49,15 @@
             --header-link-active-color: #ffffff;
             --header-link-hover-color: #3e0a0a;
             --header-highlight-color: #02ed12;
-            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
+            --header-highlight-hover: #bf1d1d;
             --header-border-bottom: 1px solid var(--border);
             --logo-text-p1-color: #ffffff;
             --logo-text-p2-color: #d00000;
-            --logo-image-size: 0px;
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
         --sec-border-leagues: 6px solid #aae114;
 
             /* STATIC PAGE SPECIFIC */
-            --static-h1-color: {{THEME_STATIC_H1_COLOR}};
+            --static-h1-color: #fc1d1d;
 
             /* ARTICLE STYLING */
             --article-bg: #0a0a0a;
@@ -66,23 +66,23 @@
             --article-bullet: #e907a1;
             --article-link: #df0c0c;
             --article-h2-color: #0400f0;
-            --article-h2-border: #05c0e6;
+            --article-h2-border: 3px solid #05c0e6;
             --article-h3-color: #4ff906;
-            --article-h3-border: {{THEME_ARTICLE_H3_BORDER}};
+            --article-h3-border: 1px solid #334155;
             --article-h4-color: #df2707;
-            --article-h4-border: {{THEME_ARTICLE_H4_BORDER}};
+            --article-h4-border: 1px solid #334155;
 
             /* FOOTER */
-         --footer-text-align: {{THEME_FOOTER_TEXT_ALIGN_DESKTOP}};
+         --footer-text-align: right;
             --footer-bg-start: #0e0e0e;
             --footer-bg-end: #050505;
-            --footer-border-top: ;
-            --footer-heading-color: ;
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
             --footer-link-color: #94a3b8;
-            --footer-link-hover-color: ;
-            --footer-copyright-color: ;
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
             --footer-desc-color: #64748b;
-        --static-h1-border: {{THEME_STATIC_H1_BORDER}};
+        --static-h1-border: 3px solid #0d34f8;
             
             /* FOOTER LEAGUE CARDS */
             --league-card-bg: #bb1b1b;
@@ -94,12 +94,12 @@
             --league-card-hover-border: 3px solid #ad0b0b;
 
             /* UTILITY */
-            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
-            --back-to-top-bg: #d00000;
+            --scrollbar-thumb-color: #333333;
+            --back-to-top-bg: #0b3bf9;
             --back-to-top-icon-color: #ffffff;
             --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
-            --back-to-top-radius: {{THEME_BACK_TO_TOP_RADIUS}};
-            --back-to-top-size: {{THEME_BACK_TO_TOP_SIZE}};
+            --back-to-top-radius: ;
+            --back-to-top-size: ;
         }
 
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -184,7 +184,7 @@
     font-size: 2.2rem;
     margin-bottom: 30px;
     border-bottom: var(--static-h1-border); /* <--- Fixed to use dynamic variable */
-    text-align: left;               /* <--- Pre-adding for Feature #5 */
+    text-align: None;               /* <--- Pre-adding for Feature #5 */
     padding-bottom: 20px;
         }
 
@@ -298,9 +298,9 @@
     </style>
 </head>
 <body>
-    <header class="{{HEADER_CLASSES}}">
+    <header class="h-layout-standard">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></a>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="box-shadow: 0 0 10px rgba(0,0,0,0)"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
@@ -321,9 +321,9 @@
         </div>
     </main>
 
-    <footer class="{{FOOTER_CLASSES}}">
+    <footer class="">
         <!-- Dynamic Grid injected by Python based on Admin slots -->
-        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
+        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img"> <div class="logo-text">Stream<span>East</span></div><div class="f-desc">Hello world</div></div><div class="f-desc">Hello world</div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
         
         <div class="copyright">Copyright</div>
     </footer>
