@@ -230,6 +230,26 @@
         #wildcard-container .sec-head { border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; }
         #top-upcoming-container .sec-head { border-bottom: {{THEME_SEC_BORDER_UPCOMING}}; }
         #grouped-container .sec-head { border-bottom: {{THEME_SEC_BORDER_GROUPED}}; }
+
+        .social-sidebar { position: fixed; top: {{THEME_SOCIAL_DESK_TOP}}; left: {{THEME_SOCIAL_DESK_LEFT}}; transform: scale({{THEME_SOCIAL_DESK_SCALE}}); display: flex; flex-direction: column; gap: 10px; z-index: 99; }
+        .soc-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); font-size: 0; }
+        .soc-btn:hover { width: 140px; border-radius: 30px; padding-left: 15px; justify-content: flex-start; }
+        .soc-btn:hover span { font-size: 0.85rem; font-weight: 700; margin-left: 10px; display: block; }
+        .soc-btn span { display: none; }
+        
+        .soc-btn.telegram { background: {{THEME_SOCIAL_TELEGRAM}}; }
+        .soc-btn.whatsapp { background: {{THEME_SOCIAL_WHATSAPP}}; }
+        .soc-btn.reddit { background: {{THEME_SOCIAL_REDDIT}}; }
+        .soc-btn.twitter { background: {{THEME_SOCIAL_TWITTER}}; }
+        
+        /* Icon SVGs (Inline for simplicity) */
+        .telegram::before { content: '✈️'; font-size: 1.2rem; }
+        .whatsapp::before { content: '📞'; font-size: 1.2rem; }
+        .reddit::before { content: '👽'; font-size: 1.2rem; }
+        .twitter::before { content: '🐦'; font-size: 1.2rem; }
+        
+        @media(max-width: 900px) { .social-sidebar { display: none; } }
+        
     </style>
 </head>
 <body>
@@ -281,6 +301,12 @@
             <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
         </div>
     </main>
+    <div class="social-sidebar">
+        <a href="#" class="soc-btn telegram"><span>Telegram</span></a>
+        <a href="#" class="soc-btn whatsapp"><span>WhatsApp</span></a>
+        <a href="#" class="soc-btn reddit"><span>Reddit</span></a>
+        <a href="#" class="soc-btn twitter"><span>Twitter</span></a>
+    </div>
 
     <footer>
         {{FOOTER_GRID_CONTENT}}
