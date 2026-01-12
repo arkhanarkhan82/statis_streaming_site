@@ -683,7 +683,10 @@
         "Nana Kawagishi": "assets/logos/upstreams/nana-kawagishi.webp",
         "Ai Yamaguchi": "assets/logos/upstreams/ai-yamaguchi.webp",
         "Damir Dzumhur": "assets/logos/upstreams/damir-dzumhur.webp",
-        "Alexander Shevchenko": "assets/logos/upstreams/alexander-shevchenko.webp"
+        "Alexander Shevchenko": "assets/logos/upstreams/alexander-shevchenko.webp",
+        "Manisa FK": "assets/logos/upstreams/manisa-fk.webp",
+        "Krasava": "assets/logos/upstreams/krasava.webp",
+        "Ol Nicosia": "assets/logos/upstreams/ol-nicosia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -759,6 +762,9 @@
         "Egypt League Cup": "assets/logos/leagues/egypt-league-cup.webp",
         "China - CBA": "assets/logos/leagues/china-cba.webp",
         "Brazil - NBB": "assets/logos/leagues/brazil-nbb.webp",
-        "Mexico - League MX - Clausura": "assets/logos/leagues/mexico-league-mx-clausura.webp"
+        "Mexico - League MX - Clausura": "assets/logos/leagues/mexico-league-mx-clausura.webp",
+        "Turkey Lig 1": "assets/logos/leagues/turkey-lig-1.webp",
+        "1st Division": "assets/logos/leagues/1st-division.webp",
+        "Cyprus League": "assets/logos/leagues/cyprus-league.webp"
     }
 }
