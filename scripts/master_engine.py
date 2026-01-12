@@ -850,11 +850,15 @@ def build_homepage(matches):
                (m['timestamp'] - now_ms < one_day)]
         
         if grp:
-            grp = grp[:5]
+            # FIX: Show full 24h schedule (Removed [:5] limit)
+            # This ensures all matches are marked as used and don't fall into "Other"
             for m in grp: used_ids.add(m['id'])
+            
             logo = get_logo(key, 'leagues')
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
+            
+            # Render full list directly (No "Show More" button)
             grouped_html += render_container(grp, key, icon, link)
 
     # STRICT MODE FIX: Check _HIDE_OTHERS
