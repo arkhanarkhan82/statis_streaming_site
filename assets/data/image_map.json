@@ -802,7 +802,28 @@
         "Prathyusha Rachapudi": "assets/logos/upstreams/prathyusha-rachapudi.webp",
         "Saumya Ronde": "assets/logos/upstreams/saumya-ronde.webp",
         "Anadolu Efes Istanbul": "assets/logos/streamed/anadolu-efes-istanbul.webp",
-        "Hellas Verona . Bologna": "assets/logos/streamed/hellas-verona-bologna.webp"
+        "Hellas Verona . Bologna": "assets/logos/streamed/hellas-verona-bologna.webp",
+        "Bayern Munich Basketball": "assets/logos/streamed/bayern-munich-basketball.webp",
+        "Panathinaikos Athens Basketball": "assets/logos/streamed/panathinaikos-athens-basketball.webp",
+        "Vasco da Gama RJ U20": "assets/logos/upstreams/vasco-da-gama-rj-u20.webp",
+        "Cuiaba U20": "assets/logos/upstreams/cuiaba-u20.webp",
+        "Santos U20": "assets/logos/upstreams/santos-u20.webp",
+        "Atletico Alagoinhas U20": "assets/logos/upstreams/atletico-alagoinhas-u20.webp",
+        "Gremio RS U20": "assets/logos/upstreams/gremio-rs-u20.webp",
+        "Athletico PR U20": "assets/logos/upstreams/athletico-pr-u20.webp",
+        "Ceara U20": "assets/logos/upstreams/ceara-u20.webp",
+        "Kashish Bhatia": "assets/logos/upstreams/kashish-bhatia.webp",
+        "Danica Fernando": "assets/logos/upstreams/danica-fernando.webp",
+        "Harry Wendelken": "assets/logos/upstreams/harry-wendelken.webp",
+        "Stefan Kozlov": "assets/logos/upstreams/stefan-kozlov.webp",
+        "Mathys Erhard": "assets/logos/upstreams/mathys-erhard.webp",
+        "Hynek Barton": "assets/logos/upstreams/hynek-barton.webp",
+        "Mika Brunold": "assets/logos/upstreams/mika-brunold.webp",
+        "Tiago Pereira": "assets/logos/upstreams/tiago-pereira.webp",
+        "Henri Squire": "assets/logos/upstreams/henri-squire.webp",
+        "Lui Maxted": "assets/logos/upstreams/lui-maxted.webp",
+        "Alastair Gray": "assets/logos/upstreams/alastair-gray.webp",
+        "Giles Hussey": "assets/logos/upstreams/giles-hussey.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -881,6 +902,7 @@
         "Mexico - League MX - Clausura": "assets/logos/leagues/mexico-league-mx-clausura.webp",
         "Turkey Lig 1": "assets/logos/leagues/turkey-lig-1.webp",
         "1st Division": "assets/logos/leagues/1st-division.webp",
-        "Cyprus League": "assets/logos/leagues/cyprus-league.webp"
+        "Cyprus League": "assets/logos/leagues/cyprus-league.webp",
+        "English Premier League II": "assets/logos/leagues/english-premier-league-ii.webp"
     }
 }
