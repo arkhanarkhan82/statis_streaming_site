@@ -443,7 +443,8 @@ def fetch_and_merge():
                 
                 matches.append({
                     '_uid': uid,
-                    'original_id': f"ad_{item.get('id')}",
+                    # LINK FIX: Use short hash to prevent duplicating team names in URL
+                    'original_id': f"ad_{hashlib.md5(item.get('id', '').encode()).hexdigest()[:8]}",
                     'home': resolved['home'], 'away': resolved['away'],
                     'league': resolved['league'], 'sport': resolved['sport'],
                     'timestamp': ts, 'is_live': False,
@@ -484,7 +485,29 @@ def fetch_and_merge():
         is_finished = now > end_time
         has_viewers = m['live_viewers'] > 0
         
-        if is_finished and not has_viewers: continue
+        # --- REMOVAL LOGIC START ---
+        
+        # Rule 1: Duration End
+        # If match time is over AND no one is watching -> Remove
+        if is_finished and not has_viewers: 
+            continue
+
+        # Rule 2: Bad Data (Garbage Collection)
+        # We need to preserve Single Events (where Title exists but Away is empty).
+        # In our engine, if a Title exists, it is stored in m['home'].
+        # So: has_valid_home_or_title is TRUE if we have a Home Team OR a Match Title.
+        
+        has_valid_home_or_title = (m['home'] and m['home'] != 'TBA' and m['home'] != '')
+        has_valid_away = (m['away'] and m['away'] != 'TBA' and m['away'] != '')
+        
+        # DELETE condition:
+        # 1. No Live Viewers
+        # 2. AND No Valid Home Team (and No Title)
+        # 3. AND No Valid Away Team
+        if not has_viewers and not has_valid_home_or_title and not has_valid_away:
+            continue
+            
+        # --- REMOVAL LOGIC END ---
             
         m['is_live'] = m['is_live'] or has_viewers or (m['timestamp'] <= now <= end_time)
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
@@ -556,7 +579,8 @@ def render_match_row(m, section_title=""):
     if is_live:
         # Show Playing Time (calculated in get_status_text) in the main slot
         # Show "LIVE" in the sub-slot
-        time_html = f'<span class="live-txt">{m.get("status_text")}</span><span class="time-sub">LIVE</span>'
+        # Show Playing Time + Sport Name
+        time_html = f'<span class="live-txt">{m.get("status_text")}</span><span class="time-sub">{m["sport"].upper()}</span>'
         
         v = m.get("live_viewers", 0)
         v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
