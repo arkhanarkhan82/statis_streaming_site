@@ -17,10 +17,13 @@ OUTPUT_DIR = '.'
 # ==========================================
 def load_json(path):
     if os.path.exists(path):
-        with open(path, 'r', encoding='utf-8') as f: return json.load(f)
+        try:
+            with open(path, 'r', encoding='utf-8') as f: return json.load(f)
+        except: return {}
     return {}
 
 def ensure_unit(val, unit='px'):
+    if val is None: return f"0{unit}"
     s_val = str(val).strip()
     if not s_val: return f"0{unit}"
     if s_val.isdigit(): return f"{s_val}{unit}"
@@ -60,10 +63,18 @@ def build_footer_grid(config, active_theme):
     m = config.get('menus', {})
     cols = str(t.get('footer_columns', '2'))
     
+    # Re-use the Logic for Logo Generation to ensure consistency
     p1 = s.get('title_part_1', 'Stream')
     p2 = s.get('title_part_2', 'East')
-    logo_html = f'<div class="logo-text">{p1}<span>{p2}</span></div>'
-    if s.get('logo_url'): logo_html = f'<img src="{s.get("logo_url")}" class="logo-img"> {logo_html}'
+    
+    # Explicitly calculate size again for Footer to be safe
+    logo_size = ensure_unit(t.get('logo_image_size', '40px'))
+    
+    logo_html = f'<div class="logo-text" style="color:{t.get("logo_p1_color")};">{p1}<span style="color:{t.get("logo_p2_color")};">{p2}</span></div>'
+    
+    if s.get('logo_url'): 
+        # Inject Inline Style for Safety
+        logo_html = f'<img src="{s.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px;"> {logo_html}'
     
     brand_html = f'<div class="f-brand">{logo_html}</div>'
     disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if t.get('footer_show_disclaimer', True) else ''
@@ -79,7 +90,6 @@ def build_footer_grid(config, active_theme):
         if k == 'menu': return links_html
         return '<div></div>'
 
-    # Add specific classes for CSS grid handling
     html = f'<div class="footer-grid cols-{cols}">'
     html += get_content(slots[0])
     html += get_content(slots[1])
@@ -88,13 +98,12 @@ def build_footer_grid(config, active_theme):
     return html
 
 # ==========================================
-# 3. THEME ENGINE (Restored Full Power)
+# 3. THEME ENGINE
 # ==========================================
 def apply_theme(html, config, page_data=None, theme_context='home'):
     if page_data is None: page_data = {}
     
     # 1. MERGE THEME CONTEXT
-    # Base Theme -> Context Theme (Home/League/Page/Watch)
     THEME = config.get('theme', {}).copy()
     
     if theme_context == 'league':
@@ -107,7 +116,23 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     SETTINGS = config.get('site_settings', {})
     MENUS = config.get('menus', {})
     
-    # 2. GENERATE DERIVED VARIABLES (Borders, Colors)
+    # 2. SET CRITICAL DEFAULTS (Fixes "Full Size Logo" issue)
+    if 'logo_image_size' not in THEME or not THEME['logo_image_size']:
+        THEME['logo_image_size'] = '40px'
+    
+    # Ensure Units for all sizing variables
+    size_keys = [
+        'border_radius_base', 'container_max_width', 'header_max_width', 
+        'hero_pill_radius', 'button_border_radius', 'logo_image_size', 
+        'section_logo_size', 'sys_status_radius', 'sys_status_dot_size', 
+        'league_card_radius', 'watch_table_radius', 'chat_dot_size',
+        'hero_box_width'
+    ]
+    for key in size_keys:
+        if key in THEME: THEME[key] = ensure_unit(THEME[key])
+        else: THEME[key] = '0px' # Prevent {{VAR}} from breaking CSS
+
+    # 3. GENERATE DERIVED VARIABLES
     def make_border(w_key, c_key):
         w = ensure_unit(THEME.get(w_key, '1'))
         c = THEME.get(c_key, '#334155')
@@ -129,12 +154,10 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     THEME['static_h1_border'] = make_border('static_h1_border_width', 'static_h1_border_color')
     THEME['sys_status_border'] = make_border('sys_status_border_width', 'sys_status_border_color')
 
-    # Chat Overlay Opacity
     chat_op = THEME.get('chat_overlay_opacity', '0.9')
     chat_hex = THEME.get('chat_overlay_bg', '#0f172a')
     THEME['chat_overlay_bg_final'] = hex_to_rgba(chat_hex, chat_op)
 
-    # System Status Background
     s_bg_hex = THEME.get('sys_status_bg_color', '#22c55e')
     s_bg_op = THEME.get('sys_status_bg_opacity', '0.1')
     if str(THEME.get('sys_status_bg_transparent', False)).lower() == 'true':
@@ -142,17 +165,9 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     else:
         THEME['sys_status_bg_color'] = hex_to_rgba(s_bg_hex, s_bg_op)
 
-    # Visibility Toggles
     THEME['sys_status_display'] = 'inline-flex' if THEME.get('sys_status_visible', True) else 'none'
 
-    # Ensure Units
-    for key in ['border_radius_base', 'container_max_width', 'header_max_width', 'hero_pill_radius', 
-                'button_border_radius', 'logo_image_size', 'section_logo_size', 
-                'sys_status_radius', 'sys_status_dot_size', 'league_card_radius', 
-                'watch_table_radius', 'chat_dot_size']:
-        if key in THEME: THEME[key] = ensure_unit(THEME[key])
-
-    # 3. TEXT REPLACEMENTS
+    # 4. TEXT REPLACEMENTS
     replacements = {
         'META_TITLE': page_data.get('meta_title', ''),
         'META_DESC': page_data.get('meta_desc', ''),
@@ -173,11 +188,10 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
         'PARAM_INFO': SETTINGS.get('param_info', 'info'),
         'DOMAIN': SETTINGS.get('domain', ''),
         
-        # Text Labels
         'TEXT_LIVE_SECTION_TITLE': THEME.get('text_live_section_title', 'Trending Live'),
         'TEXT_WILDCARD_TITLE': THEME.get('text_wildcard_title', ''),
         'TEXT_TOP_UPCOMING_TITLE': THEME.get('text_top_upcoming_title', 'Top Upcoming'),
-        'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches'), # For League Pages
+        'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches'), 
         'TEXT_SHOW_MORE': THEME.get('text_show_more', 'Show More'),
         'TEXT_WATCH_BTN': THEME.get('text_watch_btn', 'WATCH'),
         'TEXT_HD_BADGE': THEME.get('text_hd_badge', 'HD'),
@@ -187,7 +201,7 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
         'PAGE_FILTER': page_data.get('page_filter', '')
     }
 
-    # Inject Variables {{THEME_KEY}}
+    # Inject Theme Variables
     for k, v in THEME.items():
         placeholder = f"{{{{THEME_{k.upper()}}}}}"
         html = html.replace(placeholder, str(v))
@@ -195,12 +209,11 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     for k, v in replacements.items():
         html = html.replace(f"{{{{{k}}}}}", str(v))
 
-    # 4. STRUCTURAL INJECTIONS
+    # 5. STRUCTURAL INJECTIONS
     html = html.replace('{{HEADER_MENU}}', build_menu_html(MENUS.get('header', []), 'header'))
     html = html.replace('{{HERO_PILLS}}', build_menu_html(MENUS.get('hero', []), 'hero'))
     html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config, THEME))
     
-    # Auto Leagues Footer
     country = SETTINGS.get('target_country', 'US')
     prio = config.get('sport_priorities', {}).get(country, {})
     f_leagues = []
@@ -209,28 +222,31 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
             f_leagues.append({'title': k, 'url': f"/{k.lower().replace(' ','-').replace('^[^a-z0-9]','')}-streams/"})
     html = html.replace('{{FOOTER_LEAGUES}}', build_menu_html(f_leagues, 'footer_leagues'))
 
-    # Logo HTML
+    # 6. LOGO HTML (WITH INLINE FIX)
     p1 = SETTINGS.get('title_part_1', 'Stream')
     p2 = SETTINGS.get('title_part_2', 'East')
+    logo_size = THEME.get('logo_image_size', '40px') # Ensure default exists
+    
     logo_html = f'<div class="logo-text" style="color:{THEME.get("logo_p1_color")};">{p1}<span style="color:{THEME.get("logo_p2_color")};">{p2}</span></div>'
+    
     if SETTINGS.get('logo_url'): 
-        logo_html = f'<img src="{SETTINGS.get("logo_url")}" class="logo-img" style="box-shadow: 0 0 10px {THEME.get("logo_image_shadow_color","rgba(0,0,0,0)")}"> {logo_html}'
+        # INJECT INLINE STYLES FOR SAFETY
+        logo_html = f'<img src="{SETTINGS.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px {THEME.get("logo_image_shadow_color","rgba(0,0,0,0)")}"> {logo_html}'
+        
     html = html.replace('{{LOGO_HTML}}', logo_html)
 
-    # 5. HEADER LAYOUT CLASSES
+    # 7. HEADER & HERO LOGIC
     h_layout = THEME.get('header_layout', 'standard')
     h_icon = THEME.get('header_icon_pos', 'left')
     header_class = f"h-layout-{h_layout}"
     if h_layout == 'center': header_class += f" h-icon-{h_icon}"
     html = html.replace('{{HEADER_CLASSES}}', header_class)
-    html = html.replace('{{FOOTER_CLASSES}}', '') # Reserved for future
+    html = html.replace('{{FOOTER_CLASSES}}', '')
 
-    # 6. HERO STYLING (Box vs Full)
     mode = THEME.get('hero_layout_mode', 'full')
     box_w = ensure_unit(THEME.get('hero_box_width', '1000px'))
-    
-    # Background Logic
     h_style = THEME.get('hero_bg_style', 'solid')
+    
     if h_style == 'gradient':
         hero_bg = f"background: radial-gradient(circle at top, {THEME.get('hero_gradient_start')} 0%, {THEME.get('hero_gradient_end')} 100%);"
     elif h_style == 'image':
@@ -240,7 +256,6 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     else:
         hero_bg = f"background: {THEME.get('hero_bg_solid')};"
 
-    # Box Borders
     box_b_str = f"{ensure_unit(THEME.get('hero_box_border_width', '1'))} solid {THEME.get('hero_box_border_color')}"
     box_border_css = ""
     if THEME.get('hero_border_top'): box_border_css += f"border-top: {box_b_str}; "
@@ -248,7 +263,6 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     if THEME.get('hero_border_left'): box_border_css += f"border-left: {box_b_str}; "
     if THEME.get('hero_border_right'): box_border_css += f"border-right: {box_b_str}; "
 
-    # Main Bottom Border
     main_pos = THEME.get('hero_main_border_pos', 'full')
     main_border_str = f"border-bottom: {ensure_unit(THEME.get('hero_main_border_width'))} solid {THEME.get('hero_main_border_color')};" if main_pos != 'none' else ""
 
@@ -265,22 +279,18 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     html = html.replace('{{HERO_OUTER_STYLE}}', hero_outer)
     html = html.replace('{{HERO_INNER_STYLE}}', hero_inner)
 
-    # Hero Alignment
     align = THEME.get('hero_content_align', 'center')
     html = html.replace('{{THEME_HERO_TEXT_ALIGN}}', align)
     html = html.replace('{{THEME_HERO_ALIGN_ITEMS}}', 'center' if align == 'center' else ('flex-start' if align == 'left' else 'flex-end'))
     html = html.replace('{{THEME_HERO_INTRO_MARGIN}}', '0 auto' if align == 'center' else ('0' if align == 'left' else '0 0 0 auto'))
     html = html.replace('{{HERO_MENU_DISPLAY}}', THEME.get('hero_menu_visible', 'flex'))
     html = html.replace('{{THEME_HERO_MENU_JUSTIFY}}', 'center' if align == 'center' else ('flex-start' if align == 'left' else 'flex-end'))
-    
-    # Hide Hero if needed (for Pages)
     html = html.replace('{{DISPLAY_HERO}}', THEME.get('display_hero', 'block'))
 
-    # 7. JS INJECTIONS
+    # 8. DATA INJECTIONS
     html = html.replace('{{JS_THEME_CONFIG}}', json.dumps(THEME))
     html = html.replace('{{JS_PRIORITIES}}', json.dumps(prio))
     
-    # Load League Map for JS
     l_map = load_json('assets/data/league_map.json')
     reverse_map = {}
     if l_map:
@@ -289,7 +299,6 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     html = html.replace('{{JS_LEAGUE_MAP}}', json.dumps(reverse_map))
     html = html.replace('{{JS_IMAGE_MAP}}', json.dumps(load_json('assets/data/image_map.json')))
 
-    # 8. WATCH PAGE SPECIFICS
     w_conf = config.get('watch_settings', {})
     html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
@@ -300,7 +309,6 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
     html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
     
-    # Default League Article Placeholder
     html = html.replace('{{LEAGUE_ARTICLE}}', '')
     html = html.replace('{{SCHEMA_BLOCK}}', '')
 
@@ -314,12 +322,11 @@ def main():
     config = load_json(CONFIG_PATH)
     if not config: return
 
-    # 1. BUILD PAGES
     print(" > Building Pages...")
     try:
         with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: master_tpl = f.read()
         with open(TEMPLATE_WATCH, 'r', encoding='utf-8') as f: watch_tpl = f.read()
-        page_tpl = master_tpl # Fallback
+        page_tpl = master_tpl 
         if os.path.exists(TEMPLATE_PAGE):
             with open(TEMPLATE_PAGE, 'r', encoding='utf-8') as f: page_tpl = f.read()
     except Exception as e:
@@ -330,7 +337,6 @@ def main():
         slug = page.get('slug')
         layout = page.get('layout', 'page')
         
-        # Decide Template & Context
         if layout == 'home':
             tpl = master_tpl
             ctx = 'home'
@@ -341,7 +347,6 @@ def main():
             tpl = page_tpl
             ctx = 'page'
         
-        # Page Data
         p_data = {
             'meta_title': page.get('meta_title'),
             'meta_desc': page.get('meta_desc'),
@@ -352,22 +357,18 @@ def main():
             'canonical_url': f"https://{config['site_settings']['domain']}/{slug}/" if slug != 'home' else f"https://{config['site_settings']['domain']}/"
         }
         
-        # Render
         html = apply_theme(tpl, config, p_data, ctx)
         
-        # Clean up specific placeholders based on layout
         if layout == 'watch':
             html = html.replace('{{DISPLAY_HERO}}', 'none')
         elif layout == 'page':
-            html = html.replace('{{DISPLAY_HERO}}', 'none') # Static pages usually use H1 not Hero
+            html = html.replace('{{DISPLAY_HERO}}', 'none')
             html = html.replace('</head>', '<style>#live-section, #upcoming-container, #grouped-container { display: none !important; }</style></head>')
         
-        # Save
         out = OUTPUT_DIR if slug == 'home' else os.path.join(OUTPUT_DIR, slug)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
 
-    # 2. BUILD LEAGUE PAGES
     print(" > Building League Skeletons...")
     if os.path.exists(TEMPLATE_LEAGUE):
         with open(TEMPLATE_LEAGUE, 'r', encoding='utf-8') as f: league_tpl = f.read()
@@ -383,7 +384,6 @@ def main():
             is_league = settings.get('isLeague', False)
             tpl_art = articles.get('league') if is_league else articles.get('sport')
             
-            # Simple Variable Replacement for Article
             def rep(txt):
                 if not txt: return ""
                 return txt.replace('{{NAME}}', key).replace('{{YEAR}}', '2025').replace('{{DOMAIN}}', config['site_settings']['domain'])
@@ -394,7 +394,7 @@ def main():
                 'hero_text': rep(articles.get('league_intro', '')),
                 'article': rep(tpl_art),
                 'canonical_url': f"https://{config['site_settings']['domain']}/{slug}/",
-                'page_filter': key, # Important for JS to filter matches
+                'page_filter': key, 
                 'upcoming_title': rep(articles.get('league_upcoming_title', f"Upcoming {key}"))
             }
             
