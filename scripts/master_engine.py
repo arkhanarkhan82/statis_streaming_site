@@ -470,23 +470,47 @@ def fetch_and_merge():
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
         
-        # --- SCORING LOGIC ---
+        # --- SCORING LOGIC FIX: Viewers > 100 OR Admin Priority ---
         score = 0
         l_low = m['league'].lower()
-        
-        if m['is_live']: score += 10000 + m['live_viewers']
+        s_low = m['sport'].lower()
 
+        # 1. Determine Admin Score & Boost Status
+        admin_score = 0
+        is_boosted = False
+        
+        # Check Boosts
         if '_BOOST' in PRIORITY_SETTINGS:
             boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
-            if any(b in l_low for b in boosts): score += 2000
-            
-        # PENALTY: Downgrade 'TBA' names
+            if any(b in l_low or b in s_low for b in boosts): is_boosted = True
+
+        # Check Priority List (Loop keys to match partials like "Premier League" in "English Premier League")
+        for k, v in PRIORITY_SETTINGS.items():
+            if k.startswith('_'): continue
+            if k.lower() in l_low or k.lower() in s_low:
+                admin_score = v.get('score', 0)
+                break # Stop at first match
+
+        # 2. Calculate Final Sort Score
+        if m['is_live']:
+            # RULE: If viewers > 100, sort by Viewers. Else sort by Admin Score/Boost.
+            if m['live_viewers'] > 100:
+                # 1 Million base ensures these are always top, sorted by viewers
+                score = 1000000 + m['live_viewers']
+            else:
+                # Below 100 viewers: Boosted > High Admin Score > Low Admin Score
+                base = 500000 if is_boosted else 0
+                score = base + (admin_score * 1000) + m['live_viewers']
+        else:
+            # Upcoming: Boosted > Admin Score > Time (inverted timestamp)
+            base = 500000 if is_boosted else 0
+            # We add a large multiplier to admin_score to outweigh timestamp differences
+            # We SUBTRACT timestamp because smaller timestamp (sooner) is better, but we sort Reverse=True
+            score = base + (admin_score * 1000000) - m['timestamp']
+
+        # Penalize TBA
         if m['home'] == "TBA" or m['away'] == "TBA":
-            score -= 5000
-            
-        # BOOST: Give Adstrim/Merged matches a nudge
-        if str(m['original_id']).startswith('ad_') or len(m['streams']) > 1:
-            score += 500
+            score -= 9000000 # Send to absolute bottom
 
         m['score'] = score
         final_list.append(m)
@@ -730,9 +754,10 @@ def build_homepage(matches):
         with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: tpl = f.read()
     except: return
 
-    live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: (x.get('score',0)), reverse=True)
+    # SORTING FIX: Use the calculated 'score' for both Live and Upcoming
+    live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
     upcoming = [m for m in matches if not m['is_live']]
-    upcoming.sort(key=lambda x: x['timestamp'])
+    upcoming.sort(key=lambda x: x.get('score',0), reverse=True)
 
     used_ids = set(m['id'] for m in live_matches)
 
@@ -774,9 +799,11 @@ def build_homepage(matches):
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
             grouped_html += render_container(grp, key, icon, link)
 
-    other_matches = [m for m in upcoming if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
-    if other_matches:
-        grouped_html += render_container(other_matches[:10], "Upcoming Other", "⚽", None)
+    # STRICT MODE FIX: Check _HIDE_OTHERS
+    if not PRIORITY_SETTINGS.get('_HIDE_OTHERS'):
+        other_matches = [m for m in upcoming if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
+        if other_matches:
+            grouped_html += render_container(other_matches[:10], "Upcoming Other", "⚽", None)
 
     home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
     html = apply_theme_to_template(tpl, home_data)
