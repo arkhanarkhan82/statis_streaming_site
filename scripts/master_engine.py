@@ -24,6 +24,13 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Referer': 'https://streamed.su/'
 }
+# Match Duration Defaults (Minutes) - Ported from Vercel Backend
+SPORT_DURATIONS = {
+    'cricket': 480, 'baseball': 210, 'american football': 200, 
+    'basketball': 170, 'ice hockey': 170, 'tennis': 180, 'golf': 300,
+    'soccer': 125, 'rugby': 125, 'fight': 180, 'boxing': 180, 'mma': 180,
+    'default': 130
+}
 
 # EXTENSIVE SPORT MAPPING (Ported from Vercel Backend)
 SPORT_MAPPING = {
@@ -256,7 +263,7 @@ def fetch_and_process():
         print(f"Error fetching APIs: {e}")
         return []
 
-    # Map Live IDs for quick lookup
+    # Map Live IDs for quick lookup (Streamed)
     active_live_ids = set()
     if isinstance(res_live, list):
         for m in res_live: 
@@ -284,22 +291,16 @@ def fetch_and_process():
         # ID Generation
         uid = generate_match_id(sport, timestamp, home, away)
         
-        is_live = item.get('id') in active_live_ids
+        # Base Live Status from API
+        is_api_live = item.get('id') in active_live_ids
         
-        # Collect stream info for live matches
-        stream_info = None
-        if is_live and item.get('sources'):
-            # Grab first source to check viewers
-            src = item['sources'][0]
-            stream_info = (None, src.get('source'), src.get('id'))
-
         match_obj = {
             'id': uid,
-            'originalId': item.get('id'), # Keep original ID for player
+            'originalId': item.get('id'), 
             'home': home, 'away': away,
             'league': raw_league, 'sport': sport,
             'timestamp': timestamp,
-            'is_live': is_live,
+            'is_live': is_api_live, # Will be updated in Finalize
             'is_single_event': not away or away == 'TBA',
             'live_viewers': 0,
             'streams': item.get('sources', []),
@@ -307,8 +308,11 @@ def fetch_and_process():
         }
         
         data_map[uid] = match_obj
-        if is_live and stream_info:
-            matches_to_check_viewers.append((uid, stream_info))
+        
+        # Collect info to fetch viewers if API says live or starting very soon
+        if is_api_live and item.get('sources'):
+            src = item['sources'][0]
+            matches_to_check_viewers.append((uid, (None, src.get('source'), src.get('id'))))
 
     # -----------------------------------------------
     # PHASE 2: FETCH VIEWERS (Threaded)
@@ -342,37 +346,27 @@ def fetch_and_process():
             
             uid = generate_match_id(sport, timestamp, home, away)
             
-            # Create streams from channels
             ad_streams = []
             if item.get('channels'):
                 for ch in item['channels']:
                     ad_streams.append({
-                        'source': 'adstrim', 
-                        'id': ch.get('name'), 
-                        'name': ch.get('name'), 
+                        'source': 'adstrim', 'id': ch.get('name'), 'name': ch.get('name'), 
                         'url': f"{TOPEMBED_BASE}{ch.get('name')}"
                     })
 
             if uid in data_map:
-                # MERGE EXISTING
                 existing = data_map[uid]
-                # Merge streams (avoid duplicates)
                 existing_urls = set(s.get('url') or s.get('id') for s in existing['streams'])
                 for s in ad_streams:
-                    if s['id'] not in existing_urls:
-                        existing['streams'].append(s)
-                # Adstrim usually has cleaner league names
-                if raw_league and len(raw_league) > len(existing['league']):
-                    existing['league'] = raw_league
+                    if s['id'] not in existing_urls: existing['streams'].append(s)
+                if raw_league and len(raw_league) > len(existing['league']): existing['league'] = raw_league
             else:
-                # ADD NEW
                 data_map[uid] = {
-                    'id': uid,
-                    'originalId': uid, # Adstrim doesn't have numeric ID, use hash
+                    'id': uid, 'originalId': uid,
                     'home': home, 'away': away,
                     'league': raw_league, 'sport': sport,
                     'timestamp': timestamp,
-                    'is_live': False, # Adstrim doesn't explicitly flag live usually
+                    'is_live': False, # Default false, will check time next
                     'is_single_event': not away or away == 'TBA',
                     'live_viewers': 0,
                     'streams': ad_streams,
@@ -380,20 +374,39 @@ def fetch_and_process():
                 }
 
     # -----------------------------------------------
-    # PHASE 4: FINALIZE
+    # PHASE 4: FINALIZE & TIME-BASED LIVE LOGIC
     # -----------------------------------------------
     final_list = list(data_map.values())
+    now = time.time() * 1000
     
-    # Calculate Scores & Status Text
     for m in final_list:
+        # A. Determine Sport Duration
+        s_lower = m['sport'].lower()
+        dur_mins = SPORT_DURATIONS.get('default')
+        for k, v in SPORT_DURATIONS.items():
+            if k in s_lower: 
+                dur_mins = v
+                break
+        
+        # B. Calculate End Time
+        start_time = m['timestamp']
+        end_time = start_time + (dur_mins * 60 * 1000)
+        
+        # C. Check if "Effective Live" (Time-based OR Viewers OR API Flag)
+        is_time_live = start_time <= now <= end_time
+        has_viewers = m.get('live_viewers', 0) > 0
+        
+        # Force LIVE if: API says so OR Has Viewers OR Time is valid
+        m['is_live'] = m['is_live'] or has_viewers or is_time_live
+        
+        # D. Update Status Text & Score
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['score'] = calculate_score(m)
         
     # Sort
     final_list.sort(key=lambda x: x['score'], reverse=True)
     
-    # Download Images Logic (Ported from your original)
-    # We do this AFTER merging so we get teams from both sources
+    # Download Images Logic (Preserved)
     download_images(final_list)
     
     return final_list
