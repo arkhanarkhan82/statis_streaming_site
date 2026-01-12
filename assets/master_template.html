@@ -27,9 +27,6 @@
     <!-- SCHEMA -->
     {{SCHEMA_BLOCK}}
     
-    <!-- DYNAMIC MATCH SCHEMA (Injected by Engine) -->
-    <!-- INJECT_MATCH_SCHEMA -->
-    
     <style>html { scroll-behavior: smooth; }</style>
 
     <style>
@@ -116,11 +113,9 @@
             --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
             --section-logo-size: {{THEME_SECTION_LOGO_SIZE}};
             
-            /* SOCIAL */
-            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}}; --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
-            --social-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}}; 
-            --social-desk-top: {{THEME_SOCIAL_DESKTOP_TOP}};
-            --social-desk-scale: {{THEME_SOCIAL_DESKTOP_SCALE}};
+            --skeleton-gradient-start: {{THEME_SKELETON_GRADIENT_START}};
+            --skeleton-gradient-mid: {{THEME_SKELETON_GRADIENT_MID}};
+            --skeleton-gradient-end: {{THEME_SKELETON_GRADIENT_END}};
         }
 
         /* --- CSS RESET --- */
@@ -163,12 +158,21 @@
         .cat-pill { background: var(--hero-pill-bg); color: var(--hero-pill-text); padding: 8px 16px; border-radius: var(--hero-pill-radius); white-space: nowrap; font-weight: 700; font-size: 0.8rem; border: 1px solid transparent; }
         .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); }
 
+        /* SKELETONS */
+        .skeleton { background: var(--skeleton-gradient-start); border-radius: var(--border-radius-base); animation: shimmer 1.5s infinite linear; background: linear-gradient(to right, var(--skeleton-gradient-start) 4%, var(--skeleton-gradient-mid) 25%, var(--skeleton-gradient-end) 36%); background-size: 1000px 100%; }
+        .skeleton-header { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border); height: 38px; }
+        .sk-title { height: 22px; width: 140px; }
+        .sk-count { height: 15px; width: 80px; }
+        .skeleton-box { height: 76px; width: 100%; margin-bottom: 8px; border-radius: var(--border-radius-base); border: 1px solid var(--border); }
+        @media (min-width: 768px) { .skeleton-box { height: 96px; } }
+        @keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+
         /* MAIN LAYOUT */
         .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
         .section-box { margin-bottom: 30px; }
         .sec-head { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 10px; }
         .sec-title { margin: 0; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; font-family: var(--font-family-headings); display: flex; align-items: center; gap: 10px; }
-        .sec-link { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+        .sec-right-link { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
         .sec-logo { width: var(--section-logo-size); height: var(--section-logo-size); object-fit: contain; }
 
         /* MATCH ROWS */
@@ -187,6 +191,7 @@
         .team-name { font-weight: 600; color: var(--match-row-team-name-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
         .logo-box { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; flex-shrink: 0; }
         .t-img { width: 100%; height: 100%; object-fit: contain; }
+        .t-logo { display:flex; align-items:center; justify-content:center; width:100%; height:100%; border-radius:50%; font-size:0.7rem; color:#fff; font-weight:700; }
 
         .col-meta { text-align: right; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); }
         .col-action { text-align: center; }
@@ -194,7 +199,8 @@
         .btn-watch { background: var(--btn-watch-bg); color: var(--btn-watch-text); font-weight: 800; font-size: 0.7rem; padding: 6px 12px; border-radius: var(--button-border-radius); display: block; width: 100%; text-transform: uppercase; }
         .btn-watch:hover { filter: brightness(1.1); transform: scale(1.05); }
         .btn-notify { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; font-size: 0.7rem; padding: 6px; border-radius: var(--button-border-radius); width: 100%; }
-        .btn-notify.active { background: var(--status-green); color: white; border-color: var(--status-green); }
+        .btn-copy-link { background:transparent; border:none; color:var(--text-muted); font-size:0.65rem; margin-top:4px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:4px; }
+        .btn-copy-link:hover { color: var(--brand-primary); }
 
         .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--show-more-btn-bg); border: 1px solid var(--border); color: var(--show-more-btn-text); font-weight: 700; border-radius: var(--show-more-radius); margin-top: 10px; }
         .show-more-btn:hover { color: var(--text-main); border-color: var(--brand-primary); }
@@ -219,11 +225,11 @@
 
         @keyframes blink { 0% {opacity:1} 50% {opacity:0.5} 100% {opacity:1} }
         
-        /* BORDERS - INJECTED VIA ID from ENGINE */
-        #live-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_LIVE}}; }
-        #wildcard-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; }
-        #top5-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_UPCOMING}}; }
-        #grouped-section-container .sec-head { border-bottom: {{THEME_SEC_BORDER_GROUPED}}; }
+        /* BORDERS */
+        #live-section .sec-head { border-bottom: {{THEME_SEC_BORDER_LIVE}}; }
+        #wildcard-container .sec-head { border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; }
+        #top-upcoming-container .sec-head { border-bottom: {{THEME_SEC_BORDER_UPCOMING}}; }
+        #grouped-container .sec-head { border-bottom: {{THEME_SEC_BORDER_GROUPED}}; }
     </style>
 </head>
 <body>
@@ -248,16 +254,38 @@
     <main class="container">
         
         <!-- 1. TRENDING LIVE -->
-        <div id="live-section-container"></div>
+        <div id="live-section">
+            <div id="live-sk-head" class="skeleton skeleton-header">
+                <div class="sk-title"></div><div class="sk-count"></div>
+            </div>
+            <div id="live-skeleton">
+                <div class="skeleton skeleton-box"></div>
+                <div class="skeleton skeleton-box"></div>
+                <div class="skeleton skeleton-box"></div>
+            </div>
+            <div id="live-content-wrapper" style="display:none;">
+                <div class="sec-head">
+                    <h2 class="sec-title"><div class="live-dot" style="width:8px;height:8px;background:var(--brand-primary);border-radius:50%;display:inline-block;margin-right:8px;"></div> {{TEXT_LIVE_SECTION_TITLE}}</h2>
+                </div>
+                <!-- Python looks for this ID to inject rows -->
+                <div id="trending-list"></div>
+            </div>
+        </div>
 
         <!-- 2. WILDCARD -->
-        <div id="wildcard-section-container"></div>
+        <div id="wildcard-container"></div>
 
         <!-- 3. TOP 5 -->
-        <div id="top5-section-container"></div>
+        <div id="upcoming-skeleton">
+             <div class="skeleton skeleton-header"><div class="sk-title"></div></div>
+             <div class="skeleton skeleton-box"></div>
+             <div class="skeleton skeleton-box"></div>
+             <div class="skeleton skeleton-box"></div>
+        </div>
+        <div id="top-upcoming-container"></div>
 
         <!-- 4. GROUPED -->
-        <div id="grouped-section-container"></div>
+        <div id="grouped-container"></div>
 
         <!-- 5. ARTICLE -->
         <div class="seo-article">{{ARTICLE_CONTENT}}</div>
