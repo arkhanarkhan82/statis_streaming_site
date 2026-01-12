@@ -470,7 +470,7 @@ def fetch_and_merge():
         m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
         m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
         
-        # --- SCORING LOGIC FIX: Viewers > 100 OR Admin Priority ---
+        # --- SCORING LOGIC FIX: Boost Math Correction ---
         score = 0
         l_low = m['league'].lower()
         s_low = m['sport'].lower()
@@ -484,33 +484,34 @@ def fetch_and_merge():
             boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
             if any(b in l_low or b in s_low for b in boosts): is_boosted = True
 
-        # Check Priority List (Loop keys to match partials like "Premier League" in "English Premier League")
+        # Check Priority List
         for k, v in PRIORITY_SETTINGS.items():
             if k.startswith('_'): continue
             if k.lower() in l_low or k.lower() in s_low:
                 admin_score = v.get('score', 0)
-                break # Stop at first match
+                break 
 
         # 2. Calculate Final Sort Score
         if m['is_live']:
-            # RULE: If viewers > 100, sort by Viewers. Else sort by Admin Score/Boost.
             if m['live_viewers'] > 100:
-                # 1 Million base ensures these are always top, sorted by viewers
-                score = 1000000 + m['live_viewers']
+                # 1 Billion base ensures Viral content is #1
+                score = 1000000000 + m['live_viewers']
             else:
-                # Below 100 viewers: Boosted > High Admin Score > Low Admin Score
-                base = 500000 if is_boosted else 0
+                # Boost Base: 500 Million (Beats any Admin Score)
+                base = 500000000 if is_boosted else 0
                 score = base + (admin_score * 1000) + m['live_viewers']
         else:
-            # Upcoming: Boosted > Admin Score > Time (inverted timestamp)
-            base = 500000 if is_boosted else 0
-            # We add a large multiplier to admin_score to outweigh timestamp differences
-            # We SUBTRACT timestamp because smaller timestamp (sooner) is better, but we sort Reverse=True
+            # Upcoming
+            # Boost Base: 500 Million (Beats any Admin Score)
+            base = 500000000 if is_boosted else 0
+            
+            # Admin Score: Max 100 * 1M = 100 Million
+            # Total Score = 500M (Boost) + 100M (Score) - Timestamp
             score = base + (admin_score * 1000000) - m['timestamp']
 
         # Penalize TBA
         if m['home'] == "TBA" or m['away'] == "TBA":
-            score -= 9000000 # Send to absolute bottom
+            score -= 9000000000 # Absolute bottom
 
         m['score'] = score
         final_list.append(m)
