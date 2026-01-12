@@ -396,8 +396,15 @@ def fetch_and_merge():
                 
                 if item.get('duration'): target['duration'] = item.get('duration')
                 
-                # Use Adstrim League if currently Generic
-                if "general" in target['league'].lower() and resolved['league']:
+                # Use Adstrim League if currently Generic OR if it's just the Sport name
+                cur_l = target['league'].lower()
+                cur_s = target['sport'].lower()
+                
+                if resolved['league'] and (
+                    "general" in cur_l or 
+                    "other" in cur_l or 
+                    cur_l == cur_s
+                ):
                     target['league'] = resolved['league']
             else:
                 # NO MATCH - ADD NEW ENTRY
