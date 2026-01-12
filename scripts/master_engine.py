@@ -786,11 +786,27 @@ def build_homepage(matches):
     home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
     html = apply_theme_to_template(tpl, home_data)
     
+    # 4. Inject Content
+    # Remove skeletons
+    html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL) # Remove header too
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
-    html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
     
-    html = re.sub(r'<div id="trending-list".*?</div>', f'<div id="trending-list" class="match-list">{live_html}</div>', html, flags=re.DOTALL)
+    # Unhide wrapper
+    html = html.replace('style="display:none;"', '') # Unhide everything broadly or specific below:
+    html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
+
+    # DIRECT REPLACEMENT (Simple string replace is safer than regex for IDs)
+    if live_html:
+        # Use the specific container IDs from master_template.html
+        html = html.replace('<div id="live-section">', f'<div id="live-section">{live_html}<div style="display:none">') 
+        # Note: The trick above hides the original inner HTML by opening a hidden div that swallows the original skeleton
+        # But a cleaner way is just regex on the ID container:
+        html = re.sub(r'<div id="live-section">.*?</div>', f'<div id="live-section">{live_html}</div>', html, flags=re.DOTALL)
+    else:
+        # Hide if empty
+        html = html.replace('id="live-section"', 'id="live-section" style="display:none"')
+
     html = re.sub(r'<div id="wildcard-container">.*?</div>', f'<div id="wildcard-container">{wc_html}</div>', html, flags=re.DOTALL)
     html = re.sub(r'<div id="top-upcoming-container">.*?</div>', f'<div id="top-upcoming-container">{top5_html}</div>', html, flags=re.DOTALL)
     html = re.sub(r'<div id="grouped-container">.*?</div>', f'<div id="grouped-container">{grouped_html}</div>', html, flags=re.DOTALL)
