@@ -899,7 +899,18 @@
         "Schalke": "assets/logos/upstreams/schalke.webp",
         "Rio Ave": "assets/logos/upstreams/rio-ave.webp",
         "Os Belenenses": "assets/logos/upstreams/os-belenenses.webp",
-        "1\u00ba Dezembro": "assets/logos/upstreams/1\u00ba-dezembro.webp"
+        "1\u00ba Dezembro": "assets/logos/upstreams/1\u00ba-dezembro.webp",
+        "Hamburg SV . Borussia M\u00f6nchengladbach": "assets/logos/upstreams/hamburg-sv-borussia-m\u00f6nchengladbach.webp",
+        "Victoria Mboko": "assets/logos/upstreams/victoria-mboko.webp",
+        "Anna Kalinskaya": "assets/logos/upstreams/anna-kalinskaya.webp",
+        "Xinyu Wang": "assets/logos/upstreams/xinyu-wang.webp",
+        "Talia Gibson": "assets/logos/upstreams/talia-gibson.webp",
+        "Fabian Marozsan": "assets/logos/upstreams/fabian-marozsan.webp",
+        "Emma Raducanu": "assets/logos/upstreams/emma-raducanu.webp",
+        "Maria Camila Osorio Serrano": "assets/logos/upstreams/maria-camila-osorio-serrano.webp",
+        "Yulia Putintseva": "assets/logos/upstreams/yulia-putintseva.webp",
+        "Dalma Galfi": "assets/logos/upstreams/dalma-galfi.webp",
+        "Sara Gvozdenovic": "assets/logos/upstreams/sara-gvozdenovic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -987,6 +998,10 @@
         "ATP - Auckland (NZL)": "assets/logos/leagues/atp-auckland-nzl.webp",
         "ATP - Australian Open - Qualifiers": "assets/logos/leagues/atp-australian-open-qualifiers.webp",
         "WTA - Australian Open - Qualifiers": "assets/logos/leagues/wta-australian-open-qualifiers.webp",
-        "WTA - Hobart (AUS)": "assets/logos/leagues/wta-hobart-aus.webp"
+        "WTA - Hobart (AUS)": "assets/logos/leagues/wta-hobart-aus.webp",
+        "ATP - Adelaide (AUS)": "assets/logos/leagues/atp-adelaide-aus.webp",
+        "WTA - Adelaide (AUS)": "assets/logos/leagues/wta-adelaide-aus.webp",
+        "WTA Adelaide": "assets/logos/leagues/wta-adelaide.webp",
+        "WTA Hobart": "assets/logos/leagues/wta-hobart.webp"
     }
 }
