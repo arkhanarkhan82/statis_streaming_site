@@ -182,9 +182,10 @@ def generate_seo_id(home, away, original_id):
 
 # (Point 3, 6, 7, 9, 10) Intelligent League/Team Resolver
 def resolve_match_identity(raw_match):
-    raw_home = raw_match.get('home_raw', '')
-    raw_away = raw_match.get('away_raw', '')
-    raw_title = raw_match.get('title_raw', '')
+    # Fix: Use 'or' to handle None values coming from the API
+    raw_home = raw_match.get('home_raw') or ''
+    raw_away = raw_match.get('away_raw') or ''
+    raw_title = raw_match.get('title_raw') or ''
     
     # 1. Clean Names
     home = clean_team_name(raw_home)
