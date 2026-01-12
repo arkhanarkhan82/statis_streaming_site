@@ -24,10 +24,10 @@
     <link rel="canonical" href="https://totalsportek.top/">
     <link rel="preload" as="image" href="/assets/test-logo.webp">
     
-    <!-- STATIC SCHEMAS (Organization, WebSite) -->
+    <!-- SCHEMA -->
     
     
-    <!-- DYNAMIC MATCH SCHEMA (Injected by Master Engine) -->
+    <!-- DYNAMIC MATCH SCHEMA (Injected by Engine) -->
     <!-- INJECT_MATCH_SCHEMA -->
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -54,19 +54,25 @@
             --border-radius-base: 0px;
             --button-border-radius: 21px;
             
-            /* COMPONENT SPECIFIC */
+            /* HEADER */
             --header-bg: #050505;
             --header-text-color: #aaaaaa;
             --header-link-active-color: #ffffff;
             --header-link-hover-color: #3e0a0a;
+            --header-highlight-color: #02ed12;
+            --header-highlight-hover: #bf1d1d;
             --header-border-bottom: 1px solid var(--border);
             
+            /* HERO */
             --hero-pill-bg: #111111;
             --hero-pill-text: #cccccc;
-            --hero-pill-hover-bg: #2a0a0a;
-            --hero-pill-hover-text: #ffffff;
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_ACTIVE_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_ACTIVE_TEXT}};
             --hero-pill-radius: 8px;
+            --hero-h1-color: #ffffff;
+            --hero-intro-color: #999999;
 
+            /* MATCH ROWS */
             --match-row-bg: #121212;
             --match-row-border: #222222;
             --match-row-hover-bg: #1a1a1a;
@@ -74,34 +80,50 @@
             --match-row-live-border-left: 3px solid var(--brand-primary);
             --match-row-live-bg-start: #1a0505;
             --match-row-live-bg-end: #141414;
+            --match-row-live-text-color: #d00000;
             
             --match-row-team-name-color: #ffffff;
             --match-row-time-main-color: #888888;
-            --match-row-live-text-color: #d00000;
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
             
+            /* BUTTONS */
             --btn-watch-bg: #d00000;
             --btn-watch-text: #ffffff;
-            
+            --show-more-btn-bg: #151515;
+            --show-more-btn-text: #cccccc;
+            --show-more-radius: ;
+
+            /* FOOTER */
             --footer-bg-start: #0e0e0e;
             --footer-bg-end: #050505;
             --footer-text: #64748b;
             --footer-link: #94a3b8;
             
+            /* ARTICLE */
             --article-bg: #0a0a0a;
             --article-text: #e5e0e0;
             --article-link: #df0c0c;
             --article-h2: #0400f0;
+            --article-h2-border: 3px solid #05c0e6;
             
+            /* EXTRAS */
             --sys-status-bg: rgba(79, 250, 5, 0.15);
             --sys-status-text: #039900;
             --sys-status-dot: #00c73c;
             --sys-status-display: none;
+            --sys-status-radius: 0px;
             
             --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
             --section-logo-size: 30px;
+            
+            /* SOCIAL */
+            --social-btn-bg: {{THEME_SOCIAL_BTN_BG}}; --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+            --social-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}}; 
+            --social-desk-top: ;
+            --social-desk-scale: ;
         }
 
-        /* CSS RESET & BASE */
+        /* --- CSS RESET --- */
         * { box-sizing: border-box; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: 14px; line-height: 1.5; padding-bottom: 80px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
@@ -109,15 +131,22 @@
         
         /* HEADER & HERO */
         header { background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: var(--header-border-bottom); height: 60px; position: sticky; top: 0; z-index: 100; }
-        .header-container { max-width: var(--header-max-width); margin: 0 auto; padding: 0 15px; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+        .header-container { max-width: var(--header-max-width); margin: 0 auto; padding: 0 15px; height: 100%; display: flex; align-items: center; position: relative; }
+        
+        /* LAYOUTS */
+        .h-layout-standard .header-container { justify-content: space-between; }
+        .h-layout-standard .logo-link { order: 1; } .h-layout-standard .nav-links { order: 2; }
+        .h-layout-center .header-container { justify-content: center; } .h-layout-center .nav-links { display:none; }
+        
         .logo-link { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.4rem; text-transform: uppercase; font-style: italic; }
-        .logo-img { width: var(--logo-image-size); height: var(--logo-image-size); border-radius: 6px; }
+        .logo-img { width: var(--logo-image-size); height: var(--logo-image-size); border-radius: 6px; object-fit: cover; }
         
         .nav-links { display: flex; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
         .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
         .nav-links a:hover { color: var(--header-link-hover-color); }
-        .nav-links a.highlighted { color: var(--header-highlight-color) !important; }
-        .hamburger { display: none; font-size: 1.5rem; background: none; color: var(--text-main); }
+        .nav-links a.highlighted { color: var(--header-highlight-color) !important; border-bottom-color: var(--header-highlight-color) !important; }
+        
+        .hamburger { display: none; font-size: 1.5rem; background: none; color: var(--text-main); position:absolute; right:15px; }
         @media(max-width: 900px) { .nav-links { display: none; } .hamburger { display: block; } }
         
         .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); display: none; flex-direction: column; border-bottom: 1px solid var(--border); }
@@ -167,27 +196,34 @@
         .btn-notify { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; font-size: 0.7rem; padding: 6px; border-radius: var(--button-border-radius); width: 100%; }
         .btn-notify.active { background: var(--status-green); color: white; border-color: var(--status-green); }
 
-        .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; border-radius: 6px; margin-top: 10px; }
+        .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--show-more-btn-bg); border: 1px solid var(--border); color: var(--show-more-btn-text); font-weight: 700; border-radius: var(--show-more-radius); margin-top: 10px; }
         .show-more-btn:hover { color: var(--text-main); border-color: var(--brand-primary); }
 
         /* ARTICLE & FOOTER */
         .seo-article { background: var(--article-bg); color: var(--article-text); padding: 30px; border-radius: 8px; margin-top: 40px; }
-        .seo-article h2 { color: var(--article-h2); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 20px; }
+        .seo-article h2 { color: var(--article-h2); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 20px; }
         .seo-article a { color: var(--article-link); text-decoration: underline; }
 
         footer { background: linear-gradient(to bottom, var(--footer-bg-start), var(--footer-bg-end)); padding: 50px 20px; margin-top: 50px; border-top: 1px solid var(--border); }
         .footer-grid { display: grid; gap: 30px; max-width: var(--container-max-width); margin: 0 auto; }
-        @media(min-width: 768px) { .footer-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media(min-width: 768px) { .footer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); } .footer-grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+        
         .copyright { text-align: center; margin-top: 40px; font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
 
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
         .league-card { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); padding: 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; }
         .league-card:hover { border-color: var(--brand-primary); color: var(--text-main); }
 
-        .sys-status { display: var(--sys-status-display); align-items: center; gap: 8px; padding: 6px 12px; border-radius: 20px; background: var(--sys-status-bg); color: var(--sys-status-text); border: 1px solid var(--sys-status-border); font-size: 0.75rem; font-weight: 700; margin-bottom: 15px; }
-        .sys-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sys-status-dot); box-shadow: 0 0 8px var(--sys-status-dot); }
+        .sys-status { display: var(--sys-status-display); align-items: center; gap: 8px; padding: 6px 12px; border-radius: var(--sys-status-radius); background: var(--sys-status-bg); color: var(--sys-status-text); border: var(--sys-status-border); font-size: 0.75rem; font-weight: 700; margin-bottom: 15px; }
+        .sys-status .dot { width: var(--sys-status-dot); height: var(--sys-status-dot); border-radius: 50%; background: var(--sys-status-dot-color); box-shadow: 0 0 8px var(--sys-status-dot-color); }
 
         @keyframes blink { 0% {opacity:1} 50% {opacity:0.5} 100% {opacity:1} }
+        
+        /* BORDERS - INJECTED VIA ID from ENGINE */
+        #live-section-container .sec-head { border-bottom: 3px solid #e70856; }
+        #wildcard-section-container .sec-head { border-bottom: 1px solid #334155; }
+        #top5-section-container .sec-head { border-bottom: 4px solid #1152a7; }
+        #grouped-section-container .sec-head { border-bottom: 3px solid #00b37d; }
     </style>
 </head>
 <body>
@@ -210,32 +246,20 @@
     </div>
 
     <main class="container">
-        <!-- 
-            PYTHON INJECTION ZONES 
-            The master_engine.py script will look for these specific IDs and replace the innerHTML.
-        -->
+        
+        <!-- 1. TRENDING LIVE -->
+        <div id="live-section-container"></div>
 
-        <!-- 1. TRENDING LIVE SECTION (Populated by Python) -->
-        <div id="live-section-container">
-            <!-- ENGINE INJECTS LIVE MATCHES HERE -->
-        </div>
+        <!-- 2. WILDCARD -->
+        <div id="wildcard-section-container"></div>
 
-        <!-- 2. WILDCARD SECTION (Populated only if Wildcard Category is set) -->
-        <div id="wildcard-section-container">
-            <!-- ENGINE INJECTS WILDCARD MATCHES HERE -->
-        </div>
+        <!-- 3. TOP 5 -->
+        <div id="top5-section-container"></div>
 
-        <!-- 3. TOP 5 UPCOMING (Populated only if Wildcard is NOT set) -->
-        <div id="top5-section-container">
-            <!-- ENGINE INJECTS TOP 5 HERE -->
-        </div>
+        <!-- 4. GROUPED -->
+        <div id="grouped-section-container"></div>
 
-        <!-- 4. GROUPED SPORTS/LEAGUES (Populated by Python) -->
-        <div id="grouped-section-container">
-            <!-- ENGINE INJECTS GROUPED SCHEDULES HERE -->
-        </div>
-
-        <!-- 5. SEO ARTICLE -->
+        <!-- 5. ARTICLE -->
         <div class="seo-article"><p>Are you tired of expensive cable subscriptions, blackouts, and aggressive pop-up ads? Welcome to Sportsurge, the premier destination for live sports broadcast links.</p>
 <p>Sportsurge V3 has evolved. We help fans across the USA watch their favorite matches without the hassle. Whether it is Sunday Night Football, the NBA Playoffs, or NCAA College Football, Sportsurge offers a clean, seamless, and high-definition experience tailored just for you.</p>
 <h2>Why Sportsurge is the #1 Choice in the USA</h2>
@@ -288,18 +312,12 @@
         <div class="copyright">Copyright</div>
     </footer>
 
-    <!-- No Client-Side Data Fetching Scripts -->
     <script>
-        // Minimal UI logic
         function toggleHidden(id, btn) {
             const el = document.getElementById(id);
-            if(el) { 
-                el.style.display = (el.style.display === 'none') ? 'block' : 'none'; 
-                btn.style.display = 'none'; // Hide button after click
-            }
+            if(el) { el.style.display = (el.style.display === 'none') ? 'block' : 'none'; btn.style.display = 'none'; }
         }
         function copyText(text) { navigator.clipboard.writeText(text); alert('Link Copied!'); }
-        function setNotify(btn) { btn.innerText = '✓ Set'; btn.style.color = '#22c55e'; btn.style.borderColor = '#22c55e'; }
     </script>
 </body>
 </html>
