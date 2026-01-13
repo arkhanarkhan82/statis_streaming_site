@@ -466,6 +466,10 @@ def fetch_and_process():
         viewers = sm.get('_totalViewers', 0) if sm else 0
         duration = int(am.get('duration')) if am and am.get('duration') else SPORT_DURATIONS.get('default', 130)
         end_time = ts + (duration * 60 * 1000)
+        # --- FILTER: REMOVE EXPIRED MATCHES ---
+        if now_ms > end_time and viewers == 0:
+            continue
+        # --------------------------------------
         
         is_live = False
         status_text = ""
