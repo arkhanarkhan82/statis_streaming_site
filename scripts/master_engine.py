@@ -19,7 +19,6 @@ LEAGUE_MAP_PATH = 'assets/data/league_map.json'
 TEMPLATE_MASTER = 'assets/master_template.html'
 TEMPLATE_WATCH = 'assets/watch_template.html'
 TEMPLATE_LEAGUE = 'assets/league_template.html'
-OUTPUT_DIR = '.' 
 
 # API ENDPOINTS
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
@@ -37,22 +36,6 @@ SPORT_DURATIONS = {
     'basketball': 170, 'ice hockey': 170, 'tennis': 180, 'golf': 300,
     'soccer': 125, 'rugby': 125, 'fight': 180, 'boxing': 180, 'mma': 180,
     'default': 130
-}
-
-# Sport Mapping
-SPORT_MAPPING = {
-    'football': 'Soccer', 'soccer': 'Soccer', 'futbol': 'Soccer',
-    'basketball': 'Basketball', 'nba': 'Basketball', 'wnba': 'Basketball',
-    'american football': 'American Football', 'american-football': 'American Football', 'nfl': 'American Football',
-    'ice hockey': 'Ice Hockey', 'ice-hockey': 'Ice Hockey', 'nhl': 'Ice Hockey', 'hockey': 'Ice Hockey',
-    'field hockey': 'Field Hockey', 'field-hockey': 'Field Hockey',
-    'mma': 'MMA', 'ufc': 'MMA', 'boxing': 'Boxing', 'wrestling': 'Wrestling', 'wwe': 'Wrestling', 'aew': 'Wrestling', 'fight': 'Fighting',
-    'baseball': 'Baseball', 'mlb': 'Baseball',
-    'tennis': 'Tennis', 'table tennis': 'Table Tennis', 'ping pong': 'Table Tennis',
-    'cricket': 'Cricket', 'rugby': 'Rugby', 'rugby league': 'Rugby', 'rugby union': 'Rugby',
-    'afl': 'AFL', 'australian football': 'AFL',
-    'motorsport': 'Motorsport', 'f1': 'Formula 1', 'formula 1': 'Formula 1', 'nascar': 'Motorsport',
-    'golf': 'Golf', 'darts': 'Darts', 'snooker': 'Snooker'
 }
 
 # ==============================================================================
@@ -84,11 +67,18 @@ def hex_to_rgba(hex_code, opacity):
     except:
         return hex_code
 
+def slugify(text):
+    if not text: return ""
+    text = re.sub(r'[^\w\s-]', '', str(text).lower())
+    return re.sub(r'[-\s]+', '-', text).strip("-")
+
 # Load Configs
 config = load_json(CONFIG_PATH)
 image_map = load_json(IMAGE_MAP_PATH)
 if 'teams' not in image_map: image_map['teams'] = {}
 if 'leagues' not in image_map: image_map['leagues'] = {}
+
+LEAGUE_MAP = load_json(LEAGUE_MAP_PATH) # Loaded directly for logic use
 
 SITE_SETTINGS = config.get('site_settings', {})
 TARGET_COUNTRY = SITE_SETTINGS.get('target_country', 'US')
@@ -98,45 +88,594 @@ PARAM_LIVE = SITE_SETTINGS.get('param_live', 'stream')
 PARAM_INFO = SITE_SETTINGS.get('param_info', 'info')
 THEME = config.get('theme', {})
 
-# Build Reverse League Map
-REVERSE_LEAGUE_MAP = {}
-league_data = load_json(LEAGUE_MAP_PATH)
-if league_data:
-    for league_name, teams_list in league_data.items():
-        if isinstance(teams_list, list):
-            for team_slug in teams_list:
-                REVERSE_LEAGUE_MAP[team_slug.lower().strip()] = league_name
+# ==============================================================================
+# 3. NEW LOGIC: PORTS FROM JS (INDEX.HTML)
+# ==============================================================================
+
+def normalize(s):
+    if not s: return ""
+    # JS: s.toLowerCase().replace(/[^a-z0-9]+/g, "").trim()
+    return re.sub(r'[^a-z0-9]+', '', str(s).lower()).strip()
+
+def extract_teams(match):
+    """
+    Port of extractTeams(match) from JS.
+    Modifies match dict in place.
+    """
+    title = match.get('title') or ""
+    parts = [p.strip() for p in title.split(":")]
+
+    if len(parts) >= 2:
+        match['league'] = parts[0]
+        match['_leagueSource'] = "title"
+        title = parts[-1] # Take the last part as the actual title
+    
+    # Store clean title back
+    match['title_clean'] = title
+
+    teams = match.get('teams', {})
+    home_name = teams.get('home', {}).get('name')
+    away_name = teams.get('away', {}).get('name')
+
+    if home_name or away_name:
+        return # Teams already exist
+
+    # Regex for "vs" or "v" or "vs."
+    vs_match = re.search(r'(.+?)\s+vs\.?\s+(.+)', title, re.IGNORECASE)
+    if vs_match:
+        match['teams'] = {
+            'home': {'name': vs_match.group(1).strip(), 'badge': ''},
+            'away': {'name': vs_match.group(2).strip(), 'badge': ''}
+        }
+    else:
+        match['teams'] = {
+            'home': {'name': '', 'badge': ''},
+            'away': {'name': '', 'badge': ''}
+        }
+
+def resolve_league(match):
+    """
+    Port of resolveLeague(match) from JS.
+    """
+    teams = match.get('teams', {})
+    home = teams.get('home', {}).get('name')
+    away = teams.get('away', {}).get('name')
+    
+    # 1. Try to find league by teams in LEAGUE_MAP
+    if home and away:
+        h_norm = normalize(home)
+        a_norm = normalize(away)
+        
+        for league, team_list in LEAGUE_MAP.items():
+            # Normalize team list for comparison
+            normalized_list = [normalize(t) for t in team_list] if isinstance(team_list, list) else []
+            if h_norm in normalized_list and a_norm in normalized_list:
+                match['league'] = league
+                match['_leagueSource'] = "map"
+                return
+
+    # 2. Try to find league by Title (Strict)
+    title = match.get('title_clean') or match.get('title') or ""
+    title_lower = title.lower()
+    
+    for league in LEAGUE_MAP.keys():
+        if league.lower() in title_lower:
+            match['league'] = league
+            match['_leagueSource'] = "title"
+            return
+
+    # 3. Loose Title Match
+    if not home and not away and not match.get('league'):
+        for league in LEAGUE_MAP.keys():
+            if league.lower() in title_lower:
+                match['league'] = league
+                match['_leagueSource'] = "map-title"
+                return
+
+    # 4. Existing API Source
+    if match.get('league'):
+        if not match.get('_leagueSource'): match['_leagueSource'] = "api"
+        return
+
+    # Fallback
+    match['league'] = ""
+    match['_leagueSource'] = "unknown"
+
+def teams_match(a, b):
+    """
+    Port of teamsMatch(a, b) from JS.
+    a and b are dicts with {home, away}.
+    """
+    if not a or not b: return False
+    
+    ah = normalize(a.get('home'))
+    aa = normalize(a.get('away'))
+    bh = normalize(b.get('home'))
+    ba = normalize(b.get('away'))
+    
+    return (ah == bh and aa == ba) or (ah == ba and aa == bh)
+
+def titles_match(t1, t2):
+    """
+    Port of titlesMatch(t1, t2) from JS.
+    """
+    if not t1 or not t2: return False
+    
+    stop_words = {"in","at","the","vs","on","day","match"}
+    
+    w1 = set(w for w in t1.lower().split() if w not in stop_words)
+    w2 = set(w for w in t2.lower().split() if w not in stop_words)
+    
+    common = w1.intersection(w2)
+    return len(common) >= 2
+
+def merge_matches(streamed_list, adstrim_list):
+    """
+    Port of mergeMatches(streamed, adstrim) from JS.
+    """
+    TIME_WINDOW_MS = 20 * 60 * 1000
+    used_adstrim_indices = set()
+    merged = []
+    
+    for sm in streamed_list:
+        found_am = None
+        
+        # Raw Timestamp from Streamed is usually in seconds or ms? 
+        # API says 'date' (unix seconds). Let's convert to MS for comparison.
+        sm_date = sm.get('date', 0)
+        sm_ms = sm_date * 1000 if sm_date < 10000000000 else sm_date
+        
+        sm_sport = normalize(sm.get('category'))
+        
+        sm_teams = sm.get('teams', {})
+        sm_h_name = sm_teams.get('home', {}).get('name')
+        sm_a_name = sm_teams.get('away', {}).get('name')
+        
+        for i, am in enumerate(adstrim_list):
+            if i in used_adstrim_indices: continue
+            
+            # Time Check
+            am_ts = am.get('timestamp', 0)
+            am_ms = am_ts * 1000 if am_ts < 10000000000 else am_ts
+            
+            if abs(sm_ms - am_ms) > TIME_WINDOW_MS: continue
+            
+            # Sport Check
+            am_sport = normalize(am.get('sport'))
+            if sm_sport and am_sport and sm_sport != am_sport: continue
+            
+            # Match Logic
+            am_h = am.get('home_team')
+            am_a = am.get('away_team')
+            
+            matched = False
+            
+            if sm_h_name or sm_a_name or am_h or am_a:
+                # Teams Present -> Use teamsMatch
+                t1 = {'home': sm_h_name, 'away': sm_a_name}
+                t2 = {'home': am_h, 'away': am_a}
+                if teams_match(t1, t2):
+                    matched = True
+            else:
+                # Teams Missing -> Use titlesMatch
+                t1_title = sm.get('title_clean') or sm.get('title')
+                t2_title = am.get('title')
+                if titles_match(t1_title, t2_title):
+                    matched = True
+            
+            if matched:
+                found_am = am
+                used_adstrim_indices.add(i)
+                break # Stop looking for this streamed match
+        
+        merged.append({'sm': sm, 'am': found_am})
+        
+    # Add remaining Adstrim
+    for i, am in enumerate(adstrim_list):
+        if i not in used_adstrim_indices:
+            merged.append({'sm': None, 'am': am})
+            
+    return merged
 
 # ==============================================================================
-# 3. TEXT & DATA NORMALIZATION
+# 4. DATA FETCHING & PROCESSING ENGINE
 # ==============================================================================
-def slugify(text):
-    if not text: return ""
-    text = re.sub(r'[^\w\s-]', '', str(text).lower())
-    return re.sub(r'[-\s]+', '-', text).strip("-")
 
-def clean_team_name(name):
-    if not name or name == 'TBA': return "TBA"
-    clean = re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs)\b', '', name, flags=re.IGNORECASE)
-    clean = clean.replace('_', ' ').strip()
-    return clean
+def get_stream_details(source, sid):
+    """
+    Fetches detailed stream info (embeds, language, hd) from Streamed API.
+    Returns list of stream objects.
+    """
+    try:
+        url = f"{NODE_A_ENDPOINT}/stream/{source}/{sid}"
+        r = requests.get(url, headers=HEADERS, timeout=3)
+        if r.status_code == 200:
+            return r.json()
+    except:
+        pass
+    return []
 
-def tokenize_name(text):
-    if not text: return set()
-    clean = re.sub(r'\b(fc|cf|sc|afc|ec|club|v|vs|at|united|city|real|inter|ac|sv)\b', '', text.lower())
-    clean = re.sub(r'[^a-z0-9\s]', '', clean)
-    return set(w for w in clean.split() if len(w) > 2)
+def fetch_and_process():
+    print(" > Fetching APIs...")
+    
+    # 1. Fetch RAW
+    try:
+        res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
+        print(f"   - Streamed Raw: {len(res_a)}")
+    except Exception as e:
+        print(f"   ! Streamed Failed: {e}")
+        res_a = []
 
-def normalize_sport(sport_raw, league_raw=""):
-    s = (sport_raw or "").lower().strip()
-    l = (league_raw or "").lower().strip()
-    if 'nfl' in l or 'college football' in l: return 'American Football'
-    if 'nba' in l: return 'Basketball'
-    if 'nhl' in l: return 'Ice Hockey'
-    if 'ufc' in l: return 'MMA'
-    if 'f1' in l or 'formula' in l: return 'Formula 1'
-    return SPORT_MAPPING.get(s, s.title() if s else "General")
+    try:
+        res_b_json = requests.get(ADSTRIM_ENDPOINT, headers=HEADERS, timeout=10).json()
+        res_b = res_b_json.get('data', [])
+        print(f"   - Adstrim Raw: {len(res_b)}")
+    except Exception as e:
+        print(f"   ! Adstrim Failed: {e}")
+        res_b = []
 
+    # 2. Process Streamed (Extract Teams, Resolve League)
+    # We do this IN PLACE before merging
+    valid_streamed = []
+    
+    # 2a. Prepare threading for stream details
+    stream_detail_jobs = {}
+    
+    with ThreadPoolExecutor(max_workers=15) as executor:
+        for m in res_a:
+            extract_teams(m)
+            resolve_league(m)
+            
+            # Filter Logic: Keep it valid? 
+            # In index.html logic, we keep everything.
+            
+            # Queue Stream Details Fetch
+            m['_streamEmbeds'] = {} # Initialize container
+            if m.get('sources'):
+                for src in m['sources']:
+                    s_source = src.get('source')
+                    s_id = src.get('id')
+                    future = executor.submit(get_stream_details, s_source, s_id)
+                    stream_detail_jobs[future] = (m, s_source)
+            
+            valid_streamed.append(m)
+        
+        # Collect Stream Details
+        print(f" > Fetching inner stream details for {len(stream_detail_jobs)} sources...")
+        for future in as_completed(stream_detail_jobs):
+            match_obj, src_name = stream_detail_jobs[future]
+            try:
+                details = future.result()
+                if details:
+                    # Store exactly as in JS logic: dict key = source name
+                    match_obj['_streamEmbeds'][src_name] = details
+                    
+                    # Calculate total viewers for this match
+                    current_v = match_obj.get('_totalViewers', 0)
+                    for d in details:
+                        current_v += d.get('viewers', 0)
+                    match_obj['_totalViewers'] = current_v
+            except:
+                pass
+
+    # 3. Merge
+    print(" > Merging matches...")
+    merged_raw = merge_matches(valid_streamed, res_b)
+    
+    final_list = []
+    
+    for item in merged_raw:
+        sm = item['sm']
+        am = item['am']
+        
+        # --- CONSTRUCT FINAL OBJECT ---
+        
+        # 1. Teams
+        home = ""
+        away = ""
+        
+        if sm:
+            home = sm.get('teams', {}).get('home', {}).get('name')
+            away = sm.get('teams', {}).get('away', {}).get('name')
+        
+        # Fallback to Adstrim if empty
+        if not home and am: home = am.get('home_team')
+        if not away and am: away = am.get('away_team')
+        
+        # 2. Title
+        # JS Logic: sm.title || am.title || joined teams
+        title = ""
+        if sm: title = sm.get('title')
+        if not title and am: title = am.get('title')
+        if not title and home and away: title = f"{home} vs {away}"
+        
+        # 3. League
+        # JS Logic: if both match, use am.league. Else sm.league || am.league || category || sport
+        league = ""
+        sm_l = sm.get('league') if sm else ""
+        am_l = am.get('league') if am else ""
+        
+        if sm_l and am_l and normalize(sm_l) == normalize(am_l):
+            league = am_l
+        else:
+            league = sm_l or am_l
+            if not league:
+                league = sm.get('category') if sm else (am.get('sport') if am else "")
+                
+        # 4. Sport
+        sport = ""
+        if sm: sport = sm.get('category')
+        if not sport and am: sport = am.get('sport')
+        if not sport: sport = "General"
+        
+        # 5. Timing
+        # Prefer Streamed date, else Adstrim timestamp
+        ts = 0
+        if sm and sm.get('date'):
+            ts = sm['date']
+            if ts < 10000000000: ts *= 1000
+        elif am and am.get('timestamp'):
+            ts = am['timestamp']
+            if ts < 10000000000: ts *= 1000
+            
+        # 6. Streams
+        # Combine sm._streamEmbeds and am.channels
+        streams = []
+        
+        # From Streamed
+        if sm and '_streamEmbeds' in sm:
+            for src_key, details_list in sm['_streamEmbeds'].items():
+                for d in details_list:
+                    streams.append({
+                        'source': 'streamed',
+                        'type': src_key,
+                        'name': f"{src_key} {d.get('streamNo','')}",
+                        'url': d.get('embedUrl'), # Use embedUrl specifically
+                        'hd': d.get('hd', False),
+                        'lang': d.get('language', '')
+                    })
+        
+        # From Adstrim
+        if am and am.get('channels'):
+            for ch in am['channels']:
+                # JS: embedUrl: `https://topembed.pw/channel/${c.name}`
+                streams.append({
+                    'source': 'adstrim',
+                    'name': ch.get('name'),
+                    'url': f"{TOPEMBED_BASE}{ch.get('name')}",
+                    'hd': False,
+                    'lang': ''
+                })
+
+        # 7. Images Meta (For Downloader)
+        img_meta = {
+            'home_name': home,
+            'away_name': away,
+            'league_name': league,
+            'sm_home_badge': sm.get('teams', {}).get('home', {}).get('badge') if sm else None,
+            'sm_away_badge': sm.get('teams', {}).get('away', {}).get('badge') if sm else None,
+            'am_home_img': am.get('home_team_image') if am else None,
+            'am_away_img': am.get('away_team_image') if am else None,
+            'am_home_dict': am.get('home_team_images') if am else None,
+            'am_away_dict': am.get('away_team_images') if am else None,
+            'am_league_img': am.get('league_image') or am.get('league_images') if am else None
+        }
+
+        # 8. Status & Scoring
+        now_ms = time.time() * 1000
+        viewers = sm.get('_totalViewers', 0) if sm else 0
+        duration = int(am.get('duration')) if am and am.get('duration') else SPORT_DURATIONS.get('default', 130)
+        end_time = ts + (duration * 60 * 1000)
+        
+        is_live = False
+        status_text = ""
+        
+        # Determine Live
+        if viewers > 0: is_live = True
+        elif ts <= now_ms <= end_time: is_live = True
+        
+        # Calculate Status Text
+        if is_live:
+            diff = now_ms - ts
+            if diff < 0: mins = 0
+            else: mins = int(diff / 60000)
+            h, m = divmod(mins, 60)
+            status_text = f"{h}h {m:02d}'" if h > 0 else f"{m}'"
+        else:
+            diff = ts - now_ms
+            if diff < 0: status_text = "Starting"
+            else:
+                secs = int(diff / 1000)
+                d = secs // 86400
+                h = (secs % 86400) // 3600
+                m = (secs % 3600) // 60
+                p = []
+                if d > 0: p.append(f"{d}d")
+                if d > 0 or h > 0: p.append(f"{h}h")
+                p.append(f"{m}m")
+                status_text = " ".join(p)
+
+        # Generate ID
+        # SEO Friendly ID
+        h_s = slugify(home)
+        a_s = slugify(away)
+        base = f"{h_s}-vs-{a_s}" if a_s else h_s
+        if not base: base = slugify(title)
+        
+        # Unique Hash
+        uid_raw = f"{ts}-{home}-{away}"
+        uid = hashlib.md5(uid_raw.encode()).hexdigest()
+        seo_id = f"{base}-{uid[:8]}"
+        
+        # Clean Names
+        def clean_name(n):
+            if not n or n == 'TBA': return "TBA"
+            return n.replace('_', ' ').strip()
+        
+        home = clean_name(home)
+        away = clean_name(away)
+        
+        # SCORING (For Sorting)
+        score = 0
+        l_low = league.lower()
+        s_low = sport.lower()
+        
+        admin_score = 0
+        is_boosted = False
+        
+        if '_BOOST' in PRIORITY_SETTINGS:
+            boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
+            if any(b in l_low or b in s_low for b in boosts): is_boosted = True
+
+        for k, v in PRIORITY_SETTINGS.items():
+            if k.startswith('_'): continue
+            if k.lower() in l_low or k.lower() in s_low:
+                admin_score = v.get('score', 0)
+                break
+
+        if is_live:
+            if viewers > 100: score = 10**19 + viewers
+            else:
+                base = 5 * 10**18 if is_boosted else 0
+                score = base + (admin_score * 10**15) + viewers
+        else:
+            base = 5 * 10**18 if is_boosted else 0
+            score = base + (admin_score * 10**15) - ts
+
+        final_list.append({
+            'id': seo_id,
+            'home': home, 'away': away,
+            'title': title, # Backup title
+            'league': league, 'sport': sport,
+            'timestamp': ts,
+            'is_live': is_live,
+            'status_text': status_text,
+            'viewers': viewers,
+            'streams': streams,
+            'score': score,
+            'is_single': (not away or away == "TBA"),
+            '_img_meta': img_meta
+        })
+
+    return final_list
+
+# ==============================================================================
+# 5. IMAGE CHECKER & DOWNLOADER (60x60 WebP)
+# ==============================================================================
+def run_image_downloader(matches):
+    print(" > Checking for new images (Resize 60x60 WebP)...")
+    
+    # Reload map to get latest state
+    img_map = load_json(IMAGE_MAP_PATH)
+    if 'teams' not in img_map: img_map['teams'] = {}
+    if 'leagues' not in img_map: img_map['leagues'] = {}
+    
+    updated = False
+    
+    # Ensure directories exist
+    dirs = [
+        'assets/logos/streamed', 
+        'assets/logos/upstreams', 
+        'assets/logos/leagues'
+    ]
+    for d in dirs:
+        if not os.path.exists(d): os.makedirs(d, exist_ok=True)
+
+    def process_and_save(url, save_path):
+        try:
+            h = {'User-Agent': 'Mozilla/5.0'}
+            r = requests.get(url, headers=h, timeout=5)
+            if r.status_code == 200:
+                img = Image.open(BytesIO(r.content))
+                
+                # --- REQUIREMENT: Resize to 60x60 ---
+                img = img.resize((60, 60), Image.Resampling.LANCZOS)
+                
+                # --- REQUIREMENT: Convert to WEBP ---
+                img.save(save_path, 'WEBP', quality=90)
+                return True
+        except Exception:
+            pass
+        return False
+
+    for m in matches:
+        meta = m.get('_img_meta', {})
+        
+        # 1. PROCESS HOME TEAM
+        h_name = m['home']
+        if h_name and h_name != 'TBA' and h_name not in img_map['teams']:
+            success = False
+            
+            # Try Streamed (Priority)
+            if meta.get('sm_home_badge'):
+                url = f"https://streamed.pk/api/images/badge/{meta['sm_home_badge']}.webp"
+                fname = f"assets/logos/streamed/{slugify(h_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['teams'][h_name] = fname
+                    success = True
+                    updated = True
+            
+            # Try Adstrim
+            if not success:
+                url = meta.get('am_home_img')
+                # Check dict
+                if not url and meta.get('am_home_dict'):
+                    d = meta['am_home_dict']
+                    if isinstance(d, dict): url = d.get('sofascore') or d.get('flashscore')
+                
+                if url:
+                    fname = f"assets/logos/upstreams/{slugify(h_name)}.webp"
+                    if process_and_save(url, fname):
+                        img_map['teams'][h_name] = fname
+                        updated = True
+
+        # 2. PROCESS AWAY TEAM
+        a_name = m['away']
+        if a_name and a_name != 'TBA' and a_name not in img_map['teams']:
+            success = False
+            
+            # Try Streamed
+            if meta.get('sm_away_badge'):
+                url = f"https://streamed.pk/api/images/badge/{meta['sm_away_badge']}.webp"
+                fname = f"assets/logos/streamed/{slugify(a_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['teams'][a_name] = fname
+                    success = True
+                    updated = True
+            
+            # Try Adstrim
+            if not success:
+                url = meta.get('am_away_img')
+                if not url and meta.get('am_away_dict'):
+                    d = meta['am_away_dict']
+                    if isinstance(d, dict): url = d.get('sofascore') or d.get('flashscore')
+                
+                if url:
+                    fname = f"assets/logos/upstreams/{slugify(a_name)}.webp"
+                    if process_and_save(url, fname):
+                        img_map['teams'][a_name] = fname
+                        updated = True
+
+        # 3. PROCESS LEAGUE
+        l_name = m['league']
+        if l_name and l_name not in img_map['leagues']:
+            url = meta.get('am_league_img')
+            if url:
+                fname = f"assets/logos/leagues/{slugify(l_name)}.webp"
+                if process_and_save(url, fname):
+                    img_map['leagues'][l_name] = fname
+                    updated = True
+
+    if updated:
+        print(" > Saving updated image map...")
+        with open(IMAGE_MAP_PATH, 'w', encoding='utf-8') as f:
+            json.dump(img_map, f, indent=4)
+    else:
+        print(" > No new images to download.")
+
+# ==============================================================================
+# 6. HTML RENDERERS
+# ==============================================================================
 def get_display_time(unix_ms):
     utc_dt = datetime.fromtimestamp(unix_ms / 1000, tz=timezone.utc)
     if TARGET_COUNTRY == 'UK':
@@ -149,37 +688,6 @@ def get_display_time(unix_ms):
         date_str = local_dt.strftime('%b %d')
     return { "time": time_str, "date": date_str }
 
-def get_status_text(ts, is_live):
-    now_ms = time.time() * 1000
-    
-    # 1. LIVE MATCH: Calculate Playing Time (Elapsed)
-    if is_live:
-        diff = now_ms - ts
-        if diff < 0: return "0'" # Handle small time sync skew
-        
-        mins = int(diff / 60000)
-        h = mins // 60
-        m = mins % 60
-        
-        if h > 0: return f"{h}h {m:02d}'" # Format: 1h 05'
-        return f"{m}'"                   # Format: 45'
-
-    # 2. UPCOMING MATCH: Calculate Countdown
-    diff = ts - now_ms
-    if diff < 0: return "Starting" # Technically started but not marked live yet
-    
-    secs = int(diff / 1000)
-    d = secs // 86400
-    h = (secs % 86400) // 3600
-    m = (secs % 3600) // 60
-    
-    parts = []
-    if d > 0: parts.append(f"{d}d")
-    if d > 0 or h > 0: parts.append(f"{h}h") # Show hours if days exist or hours exist
-    parts.append(f"{m}m") # Always show minutes
-    
-    return " ".join(parts)
-
 def get_logo(name, type_key):
     path = image_map[type_key].get(name)
     if path: 
@@ -189,408 +697,19 @@ def get_logo(name, type_key):
     letter = name[0] if name else "?"
     return f"fallback:{c}:{letter}" 
 
-def generate_seo_id(home, away, original_id):
-    h = slugify(home)
-    a = slugify(away) if away and away != "TBA" else ""
-    base = f"{h}-vs-{a}" if a else h
-    return f"{base}-{original_id}"
-
-# ==============================================================================
-# 4. CORE LOGIC: RESOLUTION & MATCHING
-# ==============================================================================
-def resolve_match_identity(raw_match):
-    raw_home = raw_match.get('home_raw') or ''
-    raw_away = raw_match.get('away_raw') or ''
-    raw_title = raw_match.get('title_raw') or ''
-    
-    home = clean_team_name(raw_home)
-    away = clean_team_name(raw_away)
-    
-    # --- PARSING FIX: Parse Title if Home/Away are invalid (TBA) ---
-    if (not home or home == "TBA" or home == "") and raw_title:
-        # Regex to find ' vs ' or ' v ' or ' - ' (case insensitive)
-        split_parts = re.split(r'\s+(?:vs|v)\s+', raw_title, flags=re.IGNORECASE, maxsplit=1)
-        
-        if len(split_parts) == 2:
-            home = clean_team_name(split_parts[0])
-            away = clean_team_name(split_parts[1])
-        else:
-            home = clean_team_name(raw_title)
-
-    # Secondary check: If Home is valid but Away is TBA, check title again
-    if (not away or away == "TBA") and raw_title and home and home != "TBA":
-         split_parts = re.split(r'\s+(?:vs|v)\s+', raw_title, flags=re.IGNORECASE, maxsplit=1)
-         if len(split_parts) == 2:
-             if clean_team_name(split_parts[0]) == home:
-                 away = clean_team_name(split_parts[1])
-    # -------------------------------------------------
-    
-    is_single = (not away or away == "TBA" or away == "")
-    league_name = None
-    
-    # Check Colon in name
-    if ":" in home:
-        parts = home.split(":", 1)
-        if len(parts) == 2:
-            lc = parts[0].strip()
-            if len(lc) > 2 and not any(char.isdigit() for char in lc):
-                league_name = lc
-                home = clean_team_name(parts[1])
-    
-    # Reverse Map Lookup
-    h_slug = slugify(home)
-    if h_slug in REVERSE_LEAGUE_MAP:
-        league_name = REVERSE_LEAGUE_MAP[h_slug]
-    
-    if not is_single:
-        a_slug = slugify(away)
-        if a_slug in REVERSE_LEAGUE_MAP:
-            if not league_name: league_name = REVERSE_LEAGUE_MAP[a_slug]
-
-    # Fallback to Adstrim
-    if not league_name and raw_match.get('adstrim_league'):
-        league_name = raw_match['adstrim_league']
-        
-    # Fallback to Sport
-    if not league_name or league_name.lower() in ["other", "general"]:
-        league_name = normalize_sport(raw_match.get('sport_raw'), "")
-
-    sport = normalize_sport(raw_match.get('sport_raw'), league_name)
-
-    return { "home": home, "away": away, "league": league_name, "sport": sport, "is_single": is_single }
-
-def is_fuzzy_match(m1, m2):
-    if abs(m1['timestamp'] - m2['timestamp']) > 20 * 60 * 1000: return False
-    
-    t1_h = tokenize_name(m1['home'])
-    t2_h = tokenize_name(m2['home'])
-    
-    if not t1_h.isdisjoint(t2_h):
-        if m1['is_single'] or m2['is_single']: return True
-        t1_a = tokenize_name(m1['away'])
-        t2_a = tokenize_name(m2['away'])
-        if not t1_a.isdisjoint(t2_a): return True
-        
-    return False
-
-# ==============================================================================
-# 5. DATA FETCHING & PROCESSING ENGINE
-# ==============================================================================
-def get_viewers(stream_info):
-    url, src, sid = stream_info
-    try:
-        r = requests.get(f"{NODE_A_ENDPOINT}/stream/{src}/{sid}", headers=HEADERS, timeout=2)
-        if r.status_code == 200:
-            d = r.json()
-            data = d[0] if isinstance(d, list) and d else d
-            return data.get('viewers', 0)
-    except: pass
-    return 0
-
-def fetch_and_merge():
-    print(" > Fetching APIs...")
-    matches = []
-    
-    res_a = []
-    res_live = []
-    res_b = {'data': []}
-
-    try:
-        res_a = requests.get(f"{NODE_A_ENDPOINT}/matches/all", headers=HEADERS, timeout=10).json()
-        print(f"   - Streamed All: {len(res_a)} raw items")
-    except Exception as e: print(f"   ! Streamed All Failed: {e}")
-
-    try:
-        res_live = requests.get(f"{NODE_A_ENDPOINT}/matches/live", headers=HEADERS, timeout=10).json()
-        print(f"   - Streamed Live: {len(res_live)} raw items")
-    except Exception as e: print(f"   ! Streamed Live Failed: {e}")
-
-    try:
-        res_b = requests.get(ADSTRIM_ENDPOINT, headers=HEADERS, timeout=10).json()
-        count_b = len(res_b.get('data', [])) if res_b else 0
-        print(f"   - Adstrim: {count_b} raw items")
-    except Exception as e: print(f"   ! Adstrim Failed: {e}")
-
-    active_live_ids = set()
-    if isinstance(res_live, list):
-        for m in res_live: 
-            if m.get('id'): active_live_ids.add(m.get('id'))
-
-    viewers_to_check = []
-
-    # 1. STREAMED PROCESSING (Node A)
-    for item in res_a:
-        raw_ts = item.get('date') or 0
-        timestamp = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
-        
-        # --- NEW: Capture Image Metadata from Streamed ---
-        teams = item.get('teams', {})
-        home_badge = teams.get('home', {}).get('badge')
-        away_badge = teams.get('away', {}).get('badge')
-        
-        resolved = resolve_match_identity({
-            'home_raw': item.get('home') or item.get('home_team'),
-            'away_raw': item.get('away') or item.get('away_team'),
-            'title_raw': item.get('title'),
-            'sport_raw': item.get('category'),
-            'adstrim_league': None 
-        })
-        
-        date_str = datetime.fromtimestamp(timestamp / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
-        uid = hashlib.md5(f"{resolved['sport']}-{date_str}-{resolved['home']}".encode()).hexdigest()
-        is_live = item.get('id') in active_live_ids
-        
-        matches.append({
-            '_uid': uid,
-            'original_id': item.get('id'),
-            'home': resolved['home'], 'away': resolved['away'],
-            'league': resolved['league'], 'sport': resolved['sport'],
-            'timestamp': timestamp, 'is_live': is_live,
-            'is_single': resolved['is_single'],
-            'streams': item.get('sources', []),
-            'duration': None, 'live_viewers': 0,
-            
-            # STORE IMAGE DATA FOR DOWNLOADER
-            '_img_meta': {
-                'source': 'streamed',
-                'home_id': home_badge,
-                'away_id': away_badge,
-                'poster': item.get('poster')
-            }
-        })
-        
-        if is_live and item.get('sources'):
-            src = item['sources'][0]
-            viewers_to_check.append((len(matches)-1, (None, src.get('source'), src.get('id'))))
-
-    # 2. VIEWERS CHECK
-    if viewers_to_check:
-        print(f" > Checking viewers for {len(viewers_to_check)} matches...")
-        with ThreadPoolExecutor(max_workers=10) as ex:
-            future_map = {ex.submit(get_viewers, m[1]): m[0] for m in viewers_to_check}
-            for fut in as_completed(future_map):
-                idx = future_map[fut]
-                try: matches[idx]['live_viewers'] = fut.result()
-                except: pass
-
-    # 3. ADSTRIM MERGE (Node B)
-    if 'data' in res_b:
-        for item in res_b['data']:
-            raw_ts = item.get('timestamp') or 0
-            ts = raw_ts * 1000 if raw_ts < 10000000000 else raw_ts
-            
-            resolved = resolve_match_identity({
-                'home_raw': item.get('home_team'),
-                'away_raw': item.get('away_team'),
-                'sport_raw': item.get('sport'),
-                'adstrim_league': item.get('league')
-            })
-            
-            ad_streams = []
-            if item.get('channels'):
-                for ch in item['channels']:
-                    ad_streams.append({
-                        'source': 'adstrim', 
-                        'id': ch.get('name'), 
-                        'name': ch.get('name'), 
-                        'url': f"{TOPEMBED_BASE}{ch.get('name')}"
-                    })
-
-            # Fuzzy Match
-            matched_idx = -1
-            candidate = {'timestamp': ts, 'home': resolved['home'], 'away': resolved['away'], 'is_single': resolved['is_single']}
-            
-            for i, m in enumerate(matches):
-                if is_fuzzy_match(m, candidate):
-                    matched_idx = i
-                    break
-            
-            if matched_idx > -1:
-                # MERGE DETECTED
-                target = matches[matched_idx]
-                
-                # Update names if existing was TBA
-                if (target['home'] == 'TBA' or target['home'] == '') and resolved['home'] != 'TBA':
-                    target['home'] = resolved['home']
-                if (target['away'] == 'TBA' or target['away'] == '') and resolved['away'] != 'TBA':
-                    target['away'] = resolved['away']
-                
-                # Merge Streams
-                existing_urls = set(s.get('url') or s.get('id') for s in target['streams'])
-                for s in ad_streams:
-                    if s['id'] not in existing_urls: target['streams'].append(s)
-                
-                if item.get('duration'): target['duration'] = item.get('duration')
-                
-                # --- LEAGUE FIX: Use Adstrim League if currently generic ---
-                cur_l = target['league'].lower()
-                cur_s = target['sport'].lower()
-                if resolved['league'] and ("general" in cur_l or "other" in cur_l or cur_l == cur_s):
-                    target['league'] = resolved['league']
-                
-                # MERGE IMAGE DATA
-                if '_img_meta' in target:
-                    target['_img_meta']['adstrim_home'] = item.get('home_team_image')
-                    target['_img_meta']['adstrim_away'] = item.get('away_team_image')
-                    target['_img_meta']['adstrim_league'] = item.get('league_image')
-                    target['_img_meta']['adstrim_home_dict'] = item.get('home_team_images')
-                    target['_img_meta']['adstrim_away_dict'] = item.get('away_team_images')
-
-            else:
-                # ADD NEW
-                date_str = datetime.fromtimestamp(ts / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
-                uid = hashlib.md5(f"{resolved['sport']}-{date_str}-{resolved['home']}".encode()).hexdigest()
-                
-                matches.append({
-                    '_uid': uid,
-                    # LINK FIX: Use short hash to prevent duplicating team names in URL
-                    'original_id': f"ad_{hashlib.md5(item.get('id', '').encode()).hexdigest()[:8]}",
-                    'home': resolved['home'], 'away': resolved['away'],
-                    'league': resolved['league'], 'sport': resolved['sport'],
-                    'timestamp': ts, 'is_live': False,
-                    'is_single': resolved['is_single'],
-                    'streams': ad_streams,
-                    'duration': item.get('duration'),
-                    'live_viewers': 0,
-                    
-                    # STORE IMAGE DATA
-                    '_img_meta': {
-                        'source': 'adstrim',
-                        'adstrim_home': item.get('home_team_image'),
-                        'adstrim_away': item.get('away_team_image'),
-                        'adstrim_league': item.get('league_image'),
-                        'adstrim_home_dict': item.get('home_team_images'),
-                        'adstrim_away_dict': item.get('away_team_images')
-                    }
-                })
-
-    # 4. FINAL PROCESSING
-    final_list = []
-    now = time.time() * 1000
-    
-    print(f" > Raw matches before filtering: {len(matches)}")
-    
-    for m in matches:
-        dur_mins = m.get('duration')
-        if not dur_mins:
-            s_low = m['sport'].lower()
-            dur_mins = SPORT_DURATIONS.get('default')
-            for k, v in SPORT_DURATIONS.items():
-                if k in s_low: dur_mins = v; break
-        
-        try: dur_mins = int(dur_mins)
-        except: dur_mins = 130
-        
-        end_time = m['timestamp'] + (dur_mins * 60 * 1000)
-        is_finished = now > end_time
-        has_viewers = m['live_viewers'] > 0
-        
-        # --- REMOVAL LOGIC START ---
-        
-        # Rule 1: Duration End
-        # If match time is over AND no one is watching -> Remove
-        if is_finished and not has_viewers: 
-            continue
-
-        # Rule 2: Bad Data (Garbage Collection)
-        # We need to preserve Single Events (where Title exists but Away is empty).
-        # In our engine, if a Title exists, it is stored in m['home'].
-        # So: has_valid_home_or_title is TRUE if we have a Home Team OR a Match Title.
-        
-        has_valid_home_or_title = (m['home'] and m['home'] != 'TBA' and m['home'] != '')
-        has_valid_away = (m['away'] and m['away'] != 'TBA' and m['away'] != '')
-        
-        # DELETE condition:
-        # 1. No Live Viewers
-        # 2. AND No Valid Home Team (and No Title)
-        # 3. AND No Valid Away Team
-        if not has_viewers and not has_valid_home_or_title and not has_valid_away:
-            continue
-            
-        # --- REMOVAL LOGIC END ---
-            
-        m['is_live'] = m['is_live'] or has_viewers or (m['timestamp'] <= now <= end_time)
-        m['status_text'] = get_status_text(m['timestamp'], m['is_live'])
-        m['id'] = generate_seo_id(m['home'], m['away'], m['original_id'])
-        
-        # --- SCORING LOGIC FIX: Strict Admin Priority > Timestamp ---
-        score = 0
-        l_low = m['league'].lower()
-        s_low = m['sport'].lower()
-
-        # 1. Determine Admin Score & Boost Status
-        admin_score = 0
-        is_boosted = False
-        
-        # Check Boosts
-        if '_BOOST' in PRIORITY_SETTINGS:
-            boosts = [x.strip().lower() for x in PRIORITY_SETTINGS['_BOOST'].split(',')]
-            if any(b in l_low or b in s_low for b in boosts): is_boosted = True
-
-        # Check Priority List
-        for k, v in PRIORITY_SETTINGS.items():
-            if k.startswith('_'): continue
-            # Fuzzy match: "Premier League" finds "Premier League 2" (inherits score 90)
-            # This is acceptable, but exact matches will sort by time within the same score.
-            if k.lower() in l_low or k.lower() in s_low:
-                admin_score = v.get('score', 0)
-                break 
-
-        # 2. Calculate Final Sort Score
-        # We use 10^15 (Quadrillion) multipliers to outweigh the Timestamp (10^12)
-        
-        if m['is_live']:
-            if m['live_viewers'] > 100:
-                # Viral Rule: >100 Viewers beats everything. Base 10 Quintillion.
-                score = 10000000000000000000 + m['live_viewers']
-            else:
-                # Live (Low Viewers): Boosted > Admin Score > Viewers
-                # Boost Base: 5 Quintillion
-                base = 5000000000000000000 if is_boosted else 0
-                score = base + (admin_score * 1000000000000000) + m['live_viewers']
-        else:
-            # Upcoming: Boosted > Admin Score > Time
-            # Boost Base: 5 Quintillion
-            base = 5000000000000000000 if is_boosted else 0
-            
-            # Admin Score Weight: 1 Quadrillion (10^15)
-            # Timestamp Weight: ~1.7 Trillion (10^12)
-            # Formula: Base + (Score * 1Q) - Timestamp
-            # Result: A score of 100 (100Q) - Timestamp is ALWAYS higher than Score 99 (99Q) - Timestamp
-            score = base + (admin_score * 1000000000000000) - m['timestamp']
-
-        # Penalize TBA (Absolute Bottom)
-        if m['home'] == "TBA" or m['away'] == "TBA":
-            score -= 90000000000000000000 
-
-        m['score'] = score
-        final_list.append(m)
-        
-    return final_list
-
-# ==============================================================================
-# 6. HTML RENDERERS
-# ==============================================================================
 def render_match_row(m, section_title=""):
     is_live = m['is_live']
     row_class = "match-row live" if is_live else "match-row"
     
-    # --- UPDATED TIME DISPLAY LOGIC ---
     if is_live:
-        # Show Playing Time (calculated in get_status_text) in the main slot
-        # Show "LIVE" in the sub-slot
-        # Show Playing Time + Sport Name
-        time_html = f'<span class="live-txt">{m.get("status_text")}</span><span class="time-sub">{m["sport"].upper()}</span>'
-        
-        v = m.get("live_viewers", 0)
+        time_html = f'<span class="live-txt">{m["status_text"]}</span><span class="time-sub">{m["sport"].upper()}</span>'
+        v = m.get("viewers", 0)
         v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
         meta_html = f'<div class="meta-top">👀 {v_str}</div>'
     else:
         ft = get_display_time(m['timestamp'])
-        # m["status_text"] now contains the detailed "1d 2h 30m" string
         time_html = f'<span class="time-main">{ft["time"]}</span><span class="time-sub">{ft["date"]}</span>'
         meta_html = f'<div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">{m["status_text"]}</span></div>'
-    # ----------------------------------
 
     def render_team(name):
         res = get_logo(name, 'teams')
@@ -601,8 +720,12 @@ def render_match_row(m, section_title=""):
             img_html = f'<div class="logo-box"><img src="{res}" class="t-img" loading="lazy"></div>'
         return f'<div class="team-name">{img_html} {name}</div>'
 
-    teams_html = render_team(m["home"])
-    if not m['is_single']: teams_html += render_team(m["away"])
+    # Handle Missing Teams -> Show Title
+    if m['home'] == "TBA" and m['away'] == "TBA" and m['title']:
+        teams_html = f'<div class="team-name" style="justify-content:center; font-weight:600;">{m["title"]}</div>'
+    else:
+        teams_html = render_team(m["home"])
+        if not m['is_single']: teams_html += render_team(m["away"])
 
     info_url = f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
     
@@ -612,7 +735,6 @@ def render_match_row(m, section_title=""):
     btn = ""
     diff = (m['timestamp'] - time.time()*1000) / 60000
     
-    # Use standard <a href> tag
     if is_live or diff <= 30:
         btn = f'<a href="{info_url}" class="btn-watch">{THEME.get("text_watch_btn","WATCH")} <span class="hd-badge">{THEME.get("text_hd_badge","HD")}</span></a>'
     else:
@@ -658,9 +780,6 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
 
     return f'<div class="section-box">{header}<div class="match-list">{rows_html}</div>{hidden_html}</div>'
 
-# ==============================================================================
-# 7. TEMPLATE INJECTION
-# ==============================================================================
 def apply_theme_to_template(html, page_data=None):
     if page_data is None: page_data = {}
     
@@ -765,7 +884,9 @@ def apply_theme_to_template(html, page_data=None):
 
     html = html.replace('{{JS_THEME_CONFIG}}', json.dumps(THEME))
     html = html.replace('{{JS_PRIORITIES}}', json.dumps(PRIORITY_SETTINGS))
-    html = html.replace('{{JS_LEAGUE_MAP}}', json.dumps(REVERSE_LEAGUE_MAP))
+    # Note: LEAGUE_MAP is global now, but we can pass config's REVERSE Map if needed. 
+    # For now passing empty to not break JS, or rebuild reverse map if frontend needs it.
+    html = html.replace('{{JS_LEAGUE_MAP}}', '{}') 
     html = html.replace('{{JS_IMAGE_MAP}}', json.dumps(image_map))
     
     w_conf = config.get('watch_settings', {})
@@ -804,7 +925,7 @@ def build_footer_grid(config, active_theme):
     return f'<div class="footer-grid cols-{active_theme.get("footer_columns","2")}"><div class="f-brand">Brand</div><div>Menu</div></div>'
 
 # ==============================================================================
-# 8. BUILDERS
+# 7. BUILDERS
 # ==============================================================================
 def build_homepage(matches):
     print(" > Building Homepage...")
@@ -812,11 +933,15 @@ def build_homepage(matches):
         with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: tpl = f.read()
     except: return
 
-    # SORTING FIX: Use the calculated 'score' for both Live and Upcoming
     live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
-    upcoming = [m for m in matches if not m['is_live']]
-    upcoming.sort(key=lambda x: x.get('score',0), reverse=True)
-
+    
+    # 24H Rule for Homepage (Except Wildcard)
+    now_ms = time.time() * 1000
+    one_day = 24 * 60 * 60 * 1000
+    
+    upcoming_full = [m for m in matches if not m['is_live']]
+    upcoming_full.sort(key=lambda x: x.get('score',0), reverse=True)
+    
     used_ids = set(m['id'] for m in live_matches)
 
     live_html = render_container(live_matches, THEME.get('text_live_section_title'), '🔴', None, True)
@@ -827,57 +952,51 @@ def build_homepage(matches):
     top5_html = ""
 
     if wc_active:
-        wc_m = [m for m in upcoming if wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()]
+        # Wildcard can show beyond 24h
+        wc_m = [m for m in upcoming_full if wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()]
         for m in wc_m: used_ids.add(m['id'])
         wc_html = render_container(wc_m, THEME.get('text_wildcard_title'), '🔥', None)
     else:
         top5 = []
-        for m in upcoming:
-            if m['id'] not in used_ids and len(top5) < 5:
+        for m in upcoming_full:
+            if m['id'] not in used_ids and len(top5) < 5 and (m['timestamp'] - now_ms < one_day):
                 top5.append(m)
                 used_ids.add(m['id'])
         top5_html = render_container(top5, THEME.get('text_top_upcoming_title'), '📅', None)
 
     grouped_html = ""
-    now_ms = time.time() * 1000
-    one_day = 24 * 60 * 60 * 1000
     
     for key, settings in PRIORITY_SETTINGS.items():
         if key.startswith('_') or settings.get('isHidden'): continue
         
-        grp = [m for m in upcoming if m['id'] not in used_ids and 
+        # 24H Filter for Homepage Groups
+        grp = [m for m in upcoming_full if m['id'] not in used_ids and 
                (key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()) and 
                (m['timestamp'] - now_ms < one_day)]
         
         if grp:
-            # FIX: Show full 24h schedule (Removed [:5] limit)
-            # This ensures all matches are marked as used and don't fall into "Other"
             for m in grp: used_ids.add(m['id'])
             
             logo = get_logo(key, 'leagues')
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
             
-            # Render full list directly (No "Show More" button)
             grouped_html += render_container(grp, key, icon, link)
 
-    # STRICT MODE FIX: Check _HIDE_OTHERS
     if not PRIORITY_SETTINGS.get('_HIDE_OTHERS'):
-        other_matches = [m for m in upcoming if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
+        other_matches = [m for m in upcoming_full if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
         if other_matches:
             grouped_html += render_container(other_matches[:10], "Upcoming Other", "⚽", None)
 
     home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
     html = apply_theme_to_template(tpl, home_data)
     
-    # Clean Skeletons
     html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = html.replace('style="display:none;"', '')
     html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
 
-    # UPDATED IDS for Injection
     if live_html:
         html = re.sub(r'<div id="live-section-container".*?</div>', f'<div id="live-section-container">{live_html}</div>', html, flags=re.DOTALL)
     else:
@@ -887,13 +1006,14 @@ def build_homepage(matches):
     html = re.sub(r'<div id="top5-section-container".*?</div>', f'<div id="top5-section-container">{top5_html}</div>' if top5_html else '<div id="top5-section-container" style="display:none"></div>', html, flags=re.DOTALL)
     html = re.sub(r'<div id="grouped-section-container".*?</div>', f'<div id="grouped-section-container">{grouped_html}</div>' if grouped_html else '<div id="grouped-section-container" style="display:none"></div>', html, flags=re.DOTALL)
 
+    # Schema
     schema = json.dumps({
         "@context": "https://schema.org", "@type": "ItemList",
         "itemListElement": [{
             "@type": "SportsEvent", "name": f"{m['home']} vs {m['away']}" if not m['is_single'] else m['home'],
             "startDate": datetime.fromtimestamp(m['timestamp']/1000).isoformat(),
             "url": f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
-        } for m in (live_matches + upcoming)[:20]]
+        } for m in (live_matches + upcoming_full)[:20]]
     })
     html = html.replace('{{SCHEMA_BLOCK}}', f'<script type="application/ld+json">{schema}</script>')
 
@@ -912,6 +1032,8 @@ def inject_leagues(matches):
         if os.path.exists(path):
             l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
             l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
+            
+            # REQUIREMENT: Show Full Schedule on League Pages (No 24h filter)
             l_upc = [m for m in l_matches if not m['is_live']]
             l_upc.sort(key=lambda x: x['timestamp'])
             
@@ -929,123 +1051,11 @@ def inject_leagues(matches):
             print(f" > Updated {slug}")
 
 # ==============================================================================
-# 10. IMAGE DOWNLOADER & PROCESSOR
-# ==============================================================================
-def run_image_downloader(matches):
-    print(" > Checking for new images...")
-    
-    # Reload map to get latest state
-    img_map = load_json(IMAGE_MAP_PATH)
-    if 'teams' not in img_map: img_map['teams'] = {}
-    if 'leagues' not in img_map: img_map['leagues'] = {}
-    
-    updated = False
-    
-    # Ensure directories exist
-    dirs = [
-        'assets/logos/streamed', 
-        'assets/logos/upstreams', 
-        'assets/logos/leagues'
-    ]
-    for d in dirs:
-        if not os.path.exists(d): os.makedirs(d)
-
-    def process_and_save(url, save_path):
-        try:
-            # Fake headers to avoid 403s on some CDNs
-            h = {'User-Agent': 'Mozilla/5.0'}
-            r = requests.get(url, headers=h, timeout=5)
-            if r.status_code == 200:
-                img = Image.open(BytesIO(r.content))
-                
-                # Resize to 60x60
-                img = img.resize((60, 60), Image.Resampling.LANCZOS)
-                
-                # Save as WebP
-                img.save(save_path, 'WEBP', quality=90)
-                return True
-        except Exception as e:
-            pass
-        return False
-
-    for m in matches:
-        meta = m.get('_img_meta', {})
-        
-        # 1. PROCESS HOME TEAM
-        h_name = m['home']
-        if h_name and h_name != 'TBA' and h_name not in img_map['teams']:
-            success = False
-            
-            # Try Streamed (Priority: Cleanest)
-            if meta.get('home_id'):
-                url = f"https://streamed.pk/api/images/badge/{meta['home_id']}.webp"
-                fname = f"assets/logos/streamed/{slugify(h_name)}.webp"
-                if process_and_save(url, fname):
-                    img_map['teams'][h_name] = fname
-                    success = True
-                    updated = True
-            
-            # Try Adstrim (Fallback)
-            if not success and (meta.get('adstrim_home') or meta.get('adstrim_home_dict')):
-                url = meta.get('adstrim_home')
-                if meta.get('adstrim_home_dict') and isinstance(meta['adstrim_home_dict'], dict):
-                    url = meta['adstrim_home_dict'].get('sofascore') or url
-                
-                if url:
-                    fname = f"assets/logos/upstreams/{slugify(h_name)}.webp"
-                    if process_and_save(url, fname):
-                        img_map['teams'][h_name] = fname
-                        updated = True
-
-        # 2. PROCESS AWAY TEAM
-        a_name = m['away']
-        if a_name and a_name != 'TBA' and a_name not in img_map['teams']:
-            success = False
-            
-            # Try Streamed
-            if meta.get('away_id'):
-                url = f"https://streamed.pk/api/images/badge/{meta['away_id']}.webp"
-                fname = f"assets/logos/streamed/{slugify(a_name)}.webp"
-                if process_and_save(url, fname):
-                    img_map['teams'][a_name] = fname
-                    success = True
-                    updated = True
-            
-            # Try Adstrim
-            if not success and (meta.get('adstrim_away') or meta.get('adstrim_away_dict')):
-                url = meta.get('adstrim_away')
-                if meta.get('adstrim_away_dict') and isinstance(meta['adstrim_away_dict'], dict):
-                    url = meta['adstrim_away_dict'].get('sofascore') or url
-                
-                if url:
-                    fname = f"assets/logos/upstreams/{slugify(a_name)}.webp"
-                    if process_and_save(url, fname):
-                        img_map['teams'][a_name] = fname
-                        updated = True
-
-        # 3. PROCESS LEAGUE
-        l_name = m['league']
-        if l_name and l_name != m['sport'] and l_name not in img_map['leagues']:
-            if meta.get('adstrim_league'):
-                url = meta.get('adstrim_league')
-                fname = f"assets/logos/leagues/{slugify(l_name)}.webp"
-                if process_and_save(url, fname):
-                    img_map['leagues'][l_name] = fname
-                    updated = True
-
-    if updated:
-        print(" > Saving updated image map...")
-        with open(IMAGE_MAP_PATH, 'w', encoding='utf-8') as f:
-            json.dump(img_map, f, indent=4)
-    else:
-        print(" > No new images to download.")
-
-# ==============================================================================
-# 9. MAIN EXECUTION
+# 8. MAIN EXECUTION
 # ==============================================================================
 def main():
-    print("--- 🚀 Master Engine Running ---")
-    matches = fetch_and_merge()
+    print("--- 🚀 Master Engine Running (Strict Port) ---")
+    matches = fetch_and_process()
     print(f" > Total Valid Matches: {len(matches)}")
     
     build_homepage(matches)
