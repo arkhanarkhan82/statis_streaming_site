@@ -1959,7 +1959,9 @@
         "Lizette Cabrera": "assets/logos/upstreams/lizette-cabrera.webp",
         "Linda Klimovicova": "assets/logos/upstreams/linda-klimovicova.webp",
         "Benjamin Hassan": "assets/logos/upstreams/benjamin-hassan.webp",
-        "Jaime Faria": "assets/logos/upstreams/jaime-faria.webp"
+        "Jaime Faria": "assets/logos/upstreams/jaime-faria.webp",
+        "Pride of Gall Hill": "assets/logos/upstreams/pride-of-gall-hill.webp",
+        "St Andrew Lions": "assets/logos/upstreams/st-andrew-lions.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2141,6 +2143,7 @@
         "The Ashes": "assets/logos/leagues/the-ashes.webp",
         "Spain - SuperCup": "assets/logos/leagues/spain-supercup.webp",
         "New Zealand - Super Smash": "assets/logos/leagues/new-zealand-super-smash.webp",
-        "German Bundesliga": "assets/logos/leagues/german-bundesliga.webp"
+        "German Bundesliga": "assets/logos/leagues/german-bundesliga.webp",
+        "Barbados - Premier League": "assets/logos/leagues/barbados-premier-league.webp"
     }
 }
