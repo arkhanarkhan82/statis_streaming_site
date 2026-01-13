@@ -1919,7 +1919,9 @@
         "FC Ingolstadt 04": "assets/logos/streamed/fc-ingolstadt-04.webp",
         "Lorient": "assets/logos/streamed/lorient.webp",
         "Tanzania U19": "assets/logos/streamed/tanzania-u19.webp",
-        "Anthony Moukarzel": "assets/logos/upstreams/anthony-moukarzel.webp"
+        "Anthony Moukarzel": "assets/logos/upstreams/anthony-moukarzel.webp",
+        "LDLC ASVEL Villeurbanne": "assets/logos/streamed/ldlc-asvel-villeurbanne.webp",
+        "Hapoel IBI Tel Aviv": "assets/logos/streamed/hapoel-ibi-tel-aviv.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
