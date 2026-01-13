@@ -1663,7 +1663,20 @@
         "Verona": "assets/logos/upstreams/verona.webp",
         "Augsburg": "assets/logos/upstreams/augsburg.webp",
         "Como": "assets/logos/upstreams/como.webp",
-        "Akanksha Dileep Nitture": "assets/logos/upstreams/akanksha-dileep-nitture.webp"
+        "Akanksha Dileep Nitture": "assets/logos/upstreams/akanksha-dileep-nitture.webp",
+        "St Johns": "assets/logos/streamed/st-johns.webp",
+        "Marquette": "assets/logos/streamed/marquette.webp",
+        "U23 Asian Cup: TBA": "assets/logos/streamed/u23-asian-cup-tba.webp",
+        "East End Lions": "assets/logos/upstreams/east-end-lions.webp",
+        "Luawa": "assets/logos/upstreams/luawa.webp",
+        "Buriram United": "assets/logos/upstreams/buriram-united.webp",
+        "Pattani": "assets/logos/upstreams/pattani.webp",
+        "Sisaket United": "assets/logos/upstreams/sisaket-united.webp",
+        "Ratchaburi Mitr Phol": "assets/logos/upstreams/ratchaburi-mitr-phol.webp",
+        "Bangkok United": "assets/logos/upstreams/bangkok-united.webp",
+        "Emma Navarro": "assets/logos/upstreams/emma-navarro.webp",
+        "Daria Kasatkina": "assets/logos/upstreams/daria-kasatkina.webp",
+        "Jaqueline Adina Cristian": "assets/logos/upstreams/jaqueline-adina-cristian.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1826,6 +1839,8 @@
         "Coupe de France": "assets/logos/leagues/coupe-de-france.webp",
         "EuroCup - Gr.B": "assets/logos/leagues/eurocup-grb.webp",
         "Latvia - LBL 2": "assets/logos/leagues/latvia-lbl-2.webp",
-        "Portugal - League 2": "assets/logos/leagues/portugal-league-2.webp"
+        "Portugal - League 2": "assets/logos/leagues/portugal-league-2.webp",
+        "Sierra Leone - Premier League": "assets/logos/leagues/sierra-leone-premier-league.webp",
+        "Thailand - Cup FA": "assets/logos/leagues/thailand-cup-fa.webp"
     }
 }
