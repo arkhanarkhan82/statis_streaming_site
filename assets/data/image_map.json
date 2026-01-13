@@ -1603,7 +1603,36 @@
         "Maximus Jones": "assets/logos/upstreams/maximus-jones.webp",
         "Beibit Zhukayev": "assets/logos/upstreams/beibit-zhukayev.webp",
         "Sumit Nagal": "assets/logos/upstreams/sumit-nagal.webp",
-        "Kaichi Uchida": "assets/logos/upstreams/kaichi-uchida.webp"
+        "Kaichi Uchida": "assets/logos/upstreams/kaichi-uchida.webp",
+        "Chapada": "assets/logos/upstreams/chapada.webp",
+        "Mixto MT": "assets/logos/upstreams/mixto-mt.webp",
+        "Nishesh Basavareddy": "assets/logos/upstreams/nishesh-basavareddy.webp",
+        "Sebastian Ofner": "assets/logos/upstreams/sebastian-ofner.webp",
+        "Roberto Carballes Baena": "assets/logos/upstreams/roberto-carballes-baena.webp",
+        "Gilles Arnaud Bailly": "assets/logos/upstreams/gilles-arnaud-bailly.webp",
+        "Martin Damm Jr": "assets/logos/upstreams/martin-damm-jr.webp",
+        "Titouan Droguet": "assets/logos/upstreams/titouan-droguet.webp",
+        "Zeynep Sonmez": "assets/logos/upstreams/zeynep-sonmez.webp",
+        "Julia Riera": "assets/logos/upstreams/julia-riera.webp",
+        "Yoshihito Nishioka": "assets/logos/upstreams/yoshihito-nishioka.webp",
+        "George Loffhagen": "assets/logos/upstreams/george-loffhagen.webp",
+        "Lucia Bronzetti": "assets/logos/upstreams/lucia-bronzetti.webp",
+        "Mary Stoiana": "assets/logos/upstreams/mary-stoiana.webp",
+        "Yulia Starodubtseva": "assets/logos/upstreams/yulia-starodubtseva.webp",
+        "Despina Papamichail": "assets/logos/upstreams/despina-papamichail.webp",
+        "Viktoria Hruncakova": "assets/logos/upstreams/viktoria-hruncakova.webp",
+        "Viktoriya Tomova": "assets/logos/upstreams/viktoriya-tomova.webp",
+        "Guiomar Maristany de Reales": "assets/logos/upstreams/guiomar-maristany-de-reales.webp",
+        "Tatiana Prozorova": "assets/logos/upstreams/tatiana-prozorova.webp",
+        "Brandon Holt": "assets/logos/upstreams/brandon-holt.webp",
+        "Giulio Zeppieri": "assets/logos/upstreams/giulio-zeppieri.webp",
+        "Rei Sakamoto": "assets/logos/upstreams/rei-sakamoto.webp",
+        "Colton Smith": "assets/logos/upstreams/colton-smith.webp",
+        "Justina Mikulskyte": "assets/logos/upstreams/justina-mikulskyte.webp",
+        "Anastasia Gasanova": "assets/logos/upstreams/anastasia-gasanova.webp",
+        "Ewan Ogura": "assets/logos/upstreams/ewan-ogura.webp",
+        "Marcel Musil": "assets/logos/upstreams/marcel-musil.webp",
+        "Ryusuke Horiuchi": "assets/logos/upstreams/ryusuke-horiuchi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1761,6 +1790,7 @@
         "CE 2026 - Gr.C": "assets/logos/leagues/ce-2026-grc.webp",
         "Turkey - Federation Cup": "assets/logos/leagues/turkey-federation-cup.webp",
         "Basketball EuroCup": "assets/logos/leagues/basketball-eurocup.webp",
-        "Club Friendly Games": "assets/logos/leagues/club-friendly-games.webp"
+        "Club Friendly Games": "assets/logos/leagues/club-friendly-games.webp",
+        "ECHL": "assets/logos/leagues/echl.webp"
     }
 }
