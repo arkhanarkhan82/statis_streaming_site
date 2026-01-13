@@ -1535,7 +1535,15 @@
         "Ben Shelton": "assets/logos/upstreams/ben-shelton.webp",
         "Francisco Comesana": "assets/logos/upstreams/francisco-comesana.webp",
         "Jenson Brooksby": "assets/logos/upstreams/jenson-brooksby.webp",
-        "Luciano Darderi": "assets/logos/upstreams/luciano-darderi.webp"
+        "Luciano Darderi": "assets/logos/upstreams/luciano-darderi.webp",
+        "Cameron Norrie": "assets/logos/upstreams/cameron-norrie.webp",
+        "Reilly Opelka": "assets/logos/upstreams/reilly-opelka.webp",
+        "Tommy Paul": "assets/logos/upstreams/tommy-paul.webp",
+        "Tallon Griekspoor": "assets/logos/upstreams/tallon-griekspoor.webp",
+        "Ugo Humbert": "assets/logos/upstreams/ugo-humbert.webp",
+        "Thanasi Kokkinakis": "assets/logos/upstreams/thanasi-kokkinakis.webp",
+        "Valentin Vacherot": "assets/logos/upstreams/valentin-vacherot.webp",
+        "Alejandro Davidovich Fokina": "assets/logos/upstreams/alejandro-davidovich-fokina.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1686,6 +1694,7 @@
         "ATP Australian Open": "assets/logos/leagues/atp-australian-open.webp",
         "Big Bash League": "assets/logos/leagues/big-bash-league.webp",
         "Egypt Cup": "assets/logos/leagues/egypt-cup.webp",
-        "Europe Cup - Gr.M": "assets/logos/leagues/europe-cup-grm.webp"
+        "Europe Cup - Gr.M": "assets/logos/leagues/europe-cup-grm.webp",
+        "The Masters 2026": "assets/logos/leagues/the-masters-2026.webp"
     }
 }
