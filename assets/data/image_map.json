@@ -1923,7 +1923,11 @@
         "LDLC ASVEL Villeurbanne": "assets/logos/streamed/ldlc-asvel-villeurbanne.webp",
         "Hapoel IBI Tel Aviv": "assets/logos/streamed/hapoel-ibi-tel-aviv.webp",
         "Aleksandar Mihailovic": "assets/logos/upstreams/aleksandar-mihailovic.webp",
-        "Astro Pilipovic": "assets/logos/upstreams/astro-pilipovic.webp"
+        "Astro Pilipovic": "assets/logos/upstreams/astro-pilipovic.webp",
+        "Honka": "assets/logos/upstreams/honka.webp",
+        "Helsinki": "assets/logos/upstreams/helsinki.webp",
+        "Pyrinto Tampere": "assets/logos/upstreams/pyrinto-tampere.webp",
+        "LoKoKo Bisons": "assets/logos/upstreams/lokoko-bisons.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
