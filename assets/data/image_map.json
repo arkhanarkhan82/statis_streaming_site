@@ -1912,7 +1912,9 @@
         "Al-Ittihad FC": "assets/logos/streamed/al-ittihad-fc.webp",
         "1. FC Magdeburg": "assets/logos/streamed/1-fc-magdeburg.webp",
         "Fenerbahce Beko Istanbul": "assets/logos/streamed/fenerbahce-beko-istanbul.webp",
-        "Valencia Basket": "assets/logos/streamed/valencia-basket.webp"
+        "Valencia Basket": "assets/logos/streamed/valencia-basket.webp",
+        "Pooja Ingale": "assets/logos/upstreams/pooja-ingale.webp",
+        "Soha Sadiq": "assets/logos/upstreams/soha-sadiq.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2093,6 +2095,7 @@
         "European Rugby Champions Cup": "assets/logos/leagues/european-rugby-champions-cup.webp",
         "The Ashes": "assets/logos/leagues/the-ashes.webp",
         "Spain - SuperCup": "assets/logos/leagues/spain-supercup.webp",
-        "New Zealand - Super Smash": "assets/logos/leagues/new-zealand-super-smash.webp"
+        "New Zealand - Super Smash": "assets/logos/leagues/new-zealand-super-smash.webp",
+        "German Bundesliga": "assets/logos/leagues/german-bundesliga.webp"
     }
 }
