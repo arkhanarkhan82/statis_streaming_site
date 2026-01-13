@@ -1596,7 +1596,10 @@
         "Kurumi Tamura": "assets/logos/upstreams/kurumi-tamura.webp",
         "U23 Asian Cup: UAE U23": "assets/logos/streamed/u23-asian-cup-uae-u23.webp",
         "Dmitry Dolzhenkov": "assets/logos/upstreams/dmitry-dolzhenkov.webp",
-        "Kanna Soeda": "assets/logos/upstreams/kanna-soeda.webp"
+        "Kanna Soeda": "assets/logos/upstreams/kanna-soeda.webp",
+        "Noritaka Koizumi": "assets/logos/upstreams/noritaka-koizumi.webp",
+        "Yuka Matsumoto": "assets/logos/upstreams/yuka-matsumoto.webp",
+        "Emi Nakajima": "assets/logos/upstreams/emi-nakajima.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1752,6 +1755,8 @@
         "Women's Premier League": "assets/logos/leagues/womens-premier-league.webp",
         "CE 2026 - Gr.A": "assets/logos/leagues/ce-2026-gra.webp",
         "CE 2026 - Gr.C": "assets/logos/leagues/ce-2026-grc.webp",
-        "Turkey - Federation Cup": "assets/logos/leagues/turkey-federation-cup.webp"
+        "Turkey - Federation Cup": "assets/logos/leagues/turkey-federation-cup.webp",
+        "Basketball EuroCup": "assets/logos/leagues/basketball-eurocup.webp",
+        "Club Friendly Games": "assets/logos/leagues/club-friendly-games.webp"
     }
 }
