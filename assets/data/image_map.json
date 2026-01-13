@@ -1330,7 +1330,17 @@
         "Franco Agamenone": "assets/logos/upstreams/franco-agamenone.webp",
         "Susana Souhrada": "assets/logos/upstreams/susana-souhrada.webp",
         "Vladislav Melnic": "assets/logos/upstreams/vladislav-melnic.webp",
-        "Lautaro Midon": "assets/logos/upstreams/lautaro-midon.webp"
+        "Lautaro Midon": "assets/logos/upstreams/lautaro-midon.webp",
+        "Bodo/Glimt": "assets/logos/upstreams/bodoglimt.webp",
+        "Diosgyori VTK": "assets/logos/upstreams/diosgyori-vtk.webp",
+        "Tapiolan Honka (W)": "assets/logos/upstreams/tapiolan-honka-w.webp",
+        "ToPo (W)": "assets/logos/upstreams/topo-w.webp",
+        "Al Arabi": "assets/logos/upstreams/al-arabi.webp",
+        "Deportivo Norte": "assets/logos/upstreams/deportivo-norte.webp",
+        "Quilmes": "assets/logos/upstreams/quilmes.webp",
+        "Jujuy Basquet": "assets/logos/upstreams/jujuy-basquet.webp",
+        "Gorica": "assets/logos/upstreams/gorica.webp",
+        "Radomlje": "assets/logos/upstreams/radomlje.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1474,6 +1484,7 @@
         "Champions League - Play-in": "assets/logos/leagues/champions-league-play-in.webp",
         "India Open": "assets/logos/leagues/india-open.webp",
         "India Open (W)": "assets/logos/leagues/india-open-w.webp",
-        "India Open - Double": "assets/logos/leagues/india-open-double.webp"
+        "India Open - Double": "assets/logos/leagues/india-open-double.webp",
+        "Finland - Korisliiga (W)": "assets/logos/leagues/finland-korisliiga-w.webp"
     }
 }
