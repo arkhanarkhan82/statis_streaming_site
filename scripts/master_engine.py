@@ -965,10 +965,27 @@ def build_homepage(matches):
         wc_html = render_container(wc_m, THEME.get('text_wildcard_title'), '🔥', None)
     else:
         top5 = []
+        used_leagues_in_top5 = set()
+        
         for m in upcoming_full:
-            if m['id'] not in used_ids and len(top5) < 5 and (m['timestamp'] - now_ms < one_day):
-                top5.append(m)
-                used_ids.add(m['id'])
+            if len(top5) >= 5: break
+            
+            # Skip if ID used or outside 24h window
+            if m['id'] in used_ids or (m['timestamp'] - now_ms >= one_day):
+                continue
+            
+            # Diversity Check: Ensure we haven't added this league yet
+            # Use league name, fallback to sport if league is empty
+            l_key = m['league'] if m['league'] else m['sport']
+            
+            if l_key in used_leagues_in_top5:
+                continue
+                
+            # Add to list
+            top5.append(m)
+            used_ids.add(m['id'])
+            used_leagues_in_top5.add(l_key)
+            
         top5_html = render_container(top5, THEME.get('text_top_upcoming_title'), '📅', None)
 
     grouped_html = ""
