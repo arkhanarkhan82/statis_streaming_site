@@ -1499,7 +1499,15 @@
         "Pavel Savelov": "assets/logos/upstreams/pavel-savelov.webp",
         "Marcel Zielinski": "assets/logos/upstreams/marcel-zielinski.webp",
         "Taha Baadi": "assets/logos/upstreams/taha-baadi.webp",
-        "Micah Braswell": "assets/logos/upstreams/micah-braswell.webp"
+        "Micah Braswell": "assets/logos/upstreams/micah-braswell.webp",
+        "Marlon Vankan": "assets/logos/upstreams/marlon-vankan.webp",
+        "Egor Agafonov": "assets/logos/upstreams/egor-agafonov.webp",
+        "Lea Nilsson": "assets/logos/upstreams/lea-nilsson.webp",
+        "Jael Molongo": "assets/logos/upstreams/jael-molongo.webp",
+        "Marcel Volz": "assets/logos/upstreams/marcel-volz.webp",
+        "Max van Nunen": "assets/logos/upstreams/max-van-nunen.webp",
+        "Kira Pavlova": "assets/logos/upstreams/kira-pavlova.webp",
+        "Ya Yi Yang": "assets/logos/upstreams/ya-yi-yang.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1648,6 +1656,8 @@
         "WASL Gulf League, Group B": "assets/logos/leagues/wasl-gulf-league-group-b.webp",
         "\u00c9lite 2": "assets/logos/leagues/\u00e9lite-2.webp",
         "ATP Australian Open": "assets/logos/leagues/atp-australian-open.webp",
-        "Big Bash League": "assets/logos/leagues/big-bash-league.webp"
+        "Big Bash League": "assets/logos/leagues/big-bash-league.webp",
+        "Egypt Cup": "assets/logos/leagues/egypt-cup.webp",
+        "Europe Cup - Gr.M": "assets/logos/leagues/europe-cup-grm.webp"
     }
 }
