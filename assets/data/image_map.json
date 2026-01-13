@@ -1914,7 +1914,10 @@
         "Fenerbahce Beko Istanbul": "assets/logos/streamed/fenerbahce-beko-istanbul.webp",
         "Valencia Basket": "assets/logos/streamed/valencia-basket.webp",
         "Pooja Ingale": "assets/logos/upstreams/pooja-ingale.webp",
-        "Soha Sadiq": "assets/logos/upstreams/soha-sadiq.webp"
+        "Soha Sadiq": "assets/logos/upstreams/soha-sadiq.webp",
+        "SSV Jahn Regensburg": "assets/logos/streamed/ssv-jahn-regensburg.webp",
+        "FC Ingolstadt 04": "assets/logos/streamed/fc-ingolstadt-04.webp",
+        "Lorient": "assets/logos/streamed/lorient.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
