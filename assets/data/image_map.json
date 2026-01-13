@@ -1489,7 +1489,17 @@
         "Jack Kennedy": "assets/logos/upstreams/jack-kennedy.webp",
         "Strong Kirchheimer": "assets/logos/upstreams/strong-kirchheimer.webp",
         "Quinn Vandecasteele": "assets/logos/upstreams/quinn-vandecasteele.webp",
-        "Daniel Milavsky": "assets/logos/upstreams/daniel-milavsky.webp"
+        "Daniel Milavsky": "assets/logos/upstreams/daniel-milavsky.webp",
+        "Real Betis": "assets/logos/streamed/real-betis.webp",
+        "Oana Georgeta Simion": "assets/logos/upstreams/oana-georgeta-simion.webp",
+        "Maria Penalver Aguilo": "assets/logos/upstreams/maria-penalver-aguilo.webp",
+        "Maria Muratova": "assets/logos/upstreams/maria-muratova.webp",
+        "Daria Khomutsianskaya": "assets/logos/upstreams/daria-khomutsianskaya.webp",
+        "Attila Dominik Boros": "assets/logos/upstreams/attila-dominik-boros.webp",
+        "Pavel Savelov": "assets/logos/upstreams/pavel-savelov.webp",
+        "Marcel Zielinski": "assets/logos/upstreams/marcel-zielinski.webp",
+        "Taha Baadi": "assets/logos/upstreams/taha-baadi.webp",
+        "Micah Braswell": "assets/logos/upstreams/micah-braswell.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1637,6 +1647,7 @@
         "Finland - Korisliiga (W)": "assets/logos/leagues/finland-korisliiga-w.webp",
         "WASL Gulf League, Group B": "assets/logos/leagues/wasl-gulf-league-group-b.webp",
         "\u00c9lite 2": "assets/logos/leagues/\u00e9lite-2.webp",
-        "ATP Australian Open": "assets/logos/leagues/atp-australian-open.webp"
+        "ATP Australian Open": "assets/logos/leagues/atp-australian-open.webp",
+        "Big Bash League": "assets/logos/leagues/big-bash-league.webp"
     }
 }
