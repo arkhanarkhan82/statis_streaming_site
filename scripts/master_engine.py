@@ -1030,29 +1030,72 @@ def inject_watch_page(matches):
     with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(html)
 
 def inject_leagues(matches):
-    for key in PRIORITY_SETTINGS:
+    # 1. Load the Master League Template ONCE
+    if not os.path.exists(TEMPLATE_LEAGUE):
+        print(" ! Error: League template not found.")
+        return
+
+    with open(TEMPLATE_LEAGUE, 'r', encoding='utf-8') as f:
+        tpl_master = f.read()
+
+    print(" > Updating League Pages...")
+
+    for key, settings in PRIORITY_SETTINGS.items():
+        if key.startswith('_'): continue
+        
         slug = slugify(key) + "-streams"
-        path = f"{slug}/index.html"
-        if os.path.exists(path):
-            l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
-            l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
-            
-            # REQUIREMENT: Show Full Schedule on League Pages (No 24h filter)
-            l_upc = [m for m in l_matches if not m['is_live']]
-            l_upc.sort(key=lambda x: x['timestamp'])
-            
-            live_html = render_container(l_live, f"Live {key}", "🔴", None, True)
-            upc_html = render_container(l_upc, f"Upcoming {key}", "📅", None)
-            
-            with open(path, 'r', encoding='utf-8') as f: l_html = f.read()
-            l_html = re.sub(r'<div id="live-list">.*?</div>', f'<div id="live-list">{live_html}</div>', l_html, flags=re.DOTALL)
-            l_html = re.sub(r'<div id="schedule-list">.*?</div>', f'<div id="schedule-list">{upc_html}</div>', l_html, flags=re.DOTALL)
-            
-            display_style = 'block' if l_live else 'none'
-            l_html = re.sub(r'id="live-section" style="display:.*?"', f'id="live-section" style="display:{display_style}"', l_html)
-            
-            with open(path, 'w', encoding='utf-8') as f: f.write(l_html)
-            print(f" > Updated {slug}")
+        out_dir = os.path.join(OUTPUT_DIR, slug)
+        out_path = os.path.join(out_dir, 'index.html')
+        
+        # Only update if the folder exists (Fixes existing pages)
+        if not os.path.exists(out_dir): continue
+
+        # 2. Filter Matches for this League
+        # REQUIREMENT: Full Schedule (No 24h limit)
+        l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
+        l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
+        l_upc = [m for m in l_matches if not m['is_live']]
+        l_upc.sort(key=lambda x: x['timestamp'])
+
+        # 3. Prepare Page Data
+        # We construct specific metadata for this league
+        p_data = {
+            'meta_title': settings.get('meta_title', f"{key} Live Streams & Schedule"),
+            'meta_desc': settings.get('meta_desc', f"Watch {key} live streams free. Full schedule, HD links and live scores."),
+            'h1_title': settings.get('h1_title', f"{key} Streams"),
+            'hero_text': settings.get('hero_text', f"The best place to watch {key} matches live."),
+            'upcoming_title': f"Upcoming {key}",
+            'canonical_url': f"https://{DOMAIN}/{slug}/"
+        }
+
+        # 4. Apply Theme to Fresh Template
+        html = apply_theme_to_template(tpl_master, p_data)
+
+        # 5. Inject LIVE Section
+        # We replace the entire <div id="live-list"> block
+        if l_live:
+            # Render the full container (Box + Header)
+            live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
+            html = re.sub(r'<div id="live-list".*?>.*?</div>', f'<div id="live-list">{live_content}</div>', html, flags=re.DOTALL)
+        else:
+            # Hide it
+            html = re.sub(r'<div id="live-list".*?>.*?</div>', '<div id="live-list" style="display:none;"></div>', html, flags=re.DOTALL)
+
+        # 6. Inject UPCOMING Section
+        # Template has <div id="schedule-list"></div>. We inject ONLY the rows.
+        rows_html = "".join([render_match_row(m, key) for m in l_upc]) if l_upc else '<div class="match-row" style="justify-content:center;">No upcoming matches found.</div>'
+        html = html.replace('<div id="schedule-list"></div>', f'<div id="schedule-list">{rows_html}</div>')
+
+        # 7. Optional: Update League Icon in Header
+        logo_url = get_logo(key, 'leagues')
+        if not logo_url.startswith('fallback'):
+            # Replace the 📅 icon with the actual league logo
+            img_tag = f'<img src="{logo_url}" style="width:24px; height:24px; object-fit:contain; margin-right:8px;">'
+            html = re.sub(r'<span id="upcoming-logo-container".*?>.*?</span>', img_tag, html)
+
+        # 8. Overwrite the File
+        with open(out_path, 'w', encoding='utf-8') as f: f.write(html)
+        print(f"   - Rebuilt {slug}")
 
 # ==============================================================================
 # 8. MAIN EXECUTION
