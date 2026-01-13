@@ -19,6 +19,9 @@ LEAGUE_MAP_PATH = 'assets/data/league_map.json'
 TEMPLATE_MASTER = 'assets/master_template.html'
 TEMPLATE_WATCH = 'assets/watch_template.html'
 TEMPLATE_LEAGUE = 'assets/league_template.html'
+# >>> ADD THIS LINE BELOW <<<
+OUTPUT_DIR = '.' 
+# ---------------------------
 
 # API ENDPOINTS
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
