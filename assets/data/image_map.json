@@ -1261,7 +1261,22 @@
         "Lahti": "assets/logos/upstreams/lahti.webp",
         "Kouvot Kouvola": "assets/logos/upstreams/kouvot-kouvola.webp",
         "Ogre": "assets/logos/upstreams/ogre.webp",
-        "Keila": "assets/logos/upstreams/keila.webp"
+        "Keila": "assets/logos/upstreams/keila.webp",
+        "Novi Pazar": "assets/logos/upstreams/novi-pazar.webp",
+        "Akhmat": "assets/logos/upstreams/akhmat.webp",
+        "Louisa Chirico": "assets/logos/upstreams/louisa-chirico.webp",
+        "Yue Yuan": "assets/logos/upstreams/yue-yuan.webp",
+        "Joint  Kenin": "assets/logos/upstreams/joint-kenin.webp",
+        "Women's Singles R1 Adelaide International 2026": "assets/logos/upstreams/womens-singles-r1-adelaide-international-2026.webp",
+        "Tsitsipas  Vukic": "assets/logos/upstreams/tsitsipas-vukic.webp",
+        "Men's Singles R1 Adelaide International 2026": "assets/logos/upstreams/mens-singles-r1-adelaide-international-2026.webp",
+        "WTA 250 Hobart: Selekhmeteva": "assets/logos/upstreams/wta-250-hobart-selekhmeteva.webp",
+        "Linette": "assets/logos/upstreams/linette.webp",
+        "Andreeva  Bouzkova": "assets/logos/upstreams/andreeva-bouzkova.webp",
+        "Women's Singles R2 Adelaide International 2026": "assets/logos/upstreams/womens-singles-r2-adelaide-international-2026.webp",
+        "Servette Geneve": "assets/logos/upstreams/servette-geneve.webp",
+        "Odbojka": "assets/logos/upstreams/odbojka.webp",
+        "Bundesliga: Duren - Friedrichshafen": "assets/logos/upstreams/bundesliga-duren-friedrichshafen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1398,6 +1413,8 @@
         "Israeli Basketball Super League": "assets/logos/leagues/israeli-basketball-super-league.webp",
         "Iceland Women's Basketball Premier League": "assets/logos/leagues/iceland-womens-basketball-premier-league.webp",
         "NBA G League": "assets/logos/leagues/nba-g-league.webp",
-        "Finland - Korisliiga": "assets/logos/leagues/finland-korisliiga.webp"
+        "Finland - Korisliiga": "assets/logos/leagues/finland-korisliiga.webp",
+        "Adelaide International": "assets/logos/leagues/adelaide-international.webp",
+        "1. Bundesliga": "assets/logos/leagues/1-bundesliga.webp"
     }
 }
