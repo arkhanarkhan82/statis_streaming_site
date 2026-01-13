@@ -1564,7 +1564,36 @@
         "Iceland": "assets/logos/upstreams/iceland.webp",
         "Faroe Islands": "assets/logos/upstreams/faroe-islands.webp",
         "Hungary": "assets/logos/upstreams/hungary.webp",
-        "Poland": "assets/logos/upstreams/poland.webp"
+        "Poland": "assets/logos/upstreams/poland.webp",
+        "Darussafaka": "assets/logos/upstreams/darussafaka.webp",
+        "Shilin Xu": "assets/logos/upstreams/shilin-xu.webp",
+        "Anastasiia Firman": "assets/logos/upstreams/anastasiia-firman.webp",
+        "Malkia Ngounoue": "assets/logos/upstreams/malkia-ngounoue.webp",
+        "Carson Tanguilig": "assets/logos/upstreams/carson-tanguilig.webp",
+        "Jiangxue Han": "assets/logos/upstreams/jiangxue-han.webp",
+        "Janae PrEaston": "assets/logos/upstreams/janae-preaston.webp",
+        "Kylie Collins": "assets/logos/upstreams/kylie-collins.webp",
+        "India Houghton": "assets/logos/upstreams/india-houghton.webp",
+        "Goztepe SK": "assets/logos/upstreams/goztepe-sk.webp",
+        "Rachel Gailis": "assets/logos/upstreams/rachel-gailis.webp",
+        "Carolina Bohrer Martins": "assets/logos/upstreams/carolina-bohrer-martins.webp",
+        "Alexa Karatancheva": "assets/logos/upstreams/alexa-karatancheva.webp",
+        "Sofia Johnson": "assets/logos/upstreams/sofia-johnson.webp",
+        "Jaeda Daniel": "assets/logos/upstreams/jaeda-daniel.webp",
+        "Kallista Liu": "assets/logos/upstreams/kallista-liu.webp",
+        "Rose Marie Nijkamp": "assets/logos/upstreams/rose-marie-nijkamp.webp",
+        "Maya Iyengar": "assets/logos/upstreams/maya-iyengar.webp",
+        "Juliana Singeorzan": "assets/logos/upstreams/juliana-singeorzan.webp",
+        "Emily Seibold": "assets/logos/upstreams/emily-seibold.webp",
+        "Sara Daavettila": "assets/logos/upstreams/sara-daavettila.webp",
+        "Olivia Lincer": "assets/logos/upstreams/olivia-lincer.webp",
+        "Vivian Wolff": "assets/logos/upstreams/vivian-wolff.webp",
+        "Lucia Peyre": "assets/logos/upstreams/lucia-peyre.webp",
+        "Kenzie Nguyen": "assets/logos/upstreams/kenzie-nguyen.webp",
+        "Victoria Hu": "assets/logos/upstreams/victoria-hu.webp",
+        "Jaume Munar": "assets/logos/upstreams/jaume-munar.webp",
+        "Francisco Cerundolo": "assets/logos/upstreams/francisco-cerundolo.webp",
+        "Kurumi Tamura": "assets/logos/upstreams/kurumi-tamura.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1719,6 +1748,7 @@
         "The Masters 2026": "assets/logos/leagues/the-masters-2026.webp",
         "Women's Premier League": "assets/logos/leagues/womens-premier-league.webp",
         "CE 2026 - Gr.A": "assets/logos/leagues/ce-2026-gra.webp",
-        "CE 2026 - Gr.C": "assets/logos/leagues/ce-2026-grc.webp"
+        "CE 2026 - Gr.C": "assets/logos/leagues/ce-2026-grc.webp",
+        "Turkey - Federation Cup": "assets/logos/leagues/turkey-federation-cup.webp"
     }
 }
