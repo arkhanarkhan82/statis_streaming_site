@@ -1543,7 +1543,28 @@
         "Ugo Humbert": "assets/logos/upstreams/ugo-humbert.webp",
         "Thanasi Kokkinakis": "assets/logos/upstreams/thanasi-kokkinakis.webp",
         "Valentin Vacherot": "assets/logos/upstreams/valentin-vacherot.webp",
-        "Alejandro Davidovich Fokina": "assets/logos/upstreams/alejandro-davidovich-fokina.webp"
+        "Alejandro Davidovich Fokina": "assets/logos/upstreams/alejandro-davidovich-fokina.webp",
+        "Jordan U23": "assets/logos/streamed/jordan-u23.webp",
+        "Famalicao": "assets/logos/upstreams/famalicao.webp",
+        "Leixoes": "assets/logos/upstreams/leixoes.webp",
+        "Sporting Cp": "assets/logos/upstreams/sporting-cp.webp",
+        "Elisabetta Cocciaretto": "assets/logos/upstreams/elisabetta-cocciaretto.webp",
+        "Ann Li": "assets/logos/upstreams/ann-li.webp",
+        "Eliot Spizzirri": "assets/logos/upstreams/eliot-spizzirri.webp",
+        "Taylah PrEaston": "assets/logos/upstreams/taylah-preaston.webp",
+        "Renata Zarazua": "assets/logos/upstreams/renata-zarazua.webp",
+        "Antonia Ruzic": "assets/logos/upstreams/antonia-ruzic.webp",
+        "Solana Sierra": "assets/logos/upstreams/solana-sierra.webp",
+        "Olga Danilovic": "assets/logos/upstreams/olga-danilovic.webp",
+        "Czech": "assets/logos/upstreams/czech.webp",
+        "Portugal": "assets/logos/upstreams/portugal.webp",
+        "ROmania": "assets/logos/upstreams/romania.webp",
+        "Slovenia": "assets/logos/upstreams/slovenia.webp",
+        "Montenegro": "assets/logos/upstreams/montenegro.webp",
+        "Iceland": "assets/logos/upstreams/iceland.webp",
+        "Faroe Islands": "assets/logos/upstreams/faroe-islands.webp",
+        "Hungary": "assets/logos/upstreams/hungary.webp",
+        "Poland": "assets/logos/upstreams/poland.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -1695,6 +1716,9 @@
         "Big Bash League": "assets/logos/leagues/big-bash-league.webp",
         "Egypt Cup": "assets/logos/leagues/egypt-cup.webp",
         "Europe Cup - Gr.M": "assets/logos/leagues/europe-cup-grm.webp",
-        "The Masters 2026": "assets/logos/leagues/the-masters-2026.webp"
+        "The Masters 2026": "assets/logos/leagues/the-masters-2026.webp",
+        "Women's Premier League": "assets/logos/leagues/womens-premier-league.webp",
+        "CE 2026 - Gr.A": "assets/logos/leagues/ce-2026-gra.webp",
+        "CE 2026 - Gr.C": "assets/logos/leagues/ce-2026-grc.webp"
     }
 }
