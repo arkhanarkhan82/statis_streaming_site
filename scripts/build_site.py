@@ -100,195 +100,306 @@ def build_footer_grid(config, active_theme):
 # ==========================================
 # 3. THEME ENGINE
 # ==========================================
-def apply_theme(html, config, page_data=None, theme_context='home'):
-    if page_data is None: page_data = {}
+def render_page(template, config, page_data, theme_override=None):
+    s = config.get('site_settings', {})
+    base_theme = config.get('theme', {}).copy()
     
-    # 1. MERGE THEME CONTEXT
-    THEME = config.get('theme', {}).copy()
+    # Merge Theme Override (League/Page specific)
+    if theme_override:
+        base_theme.update(theme_override)
+    t = base_theme
     
-    if theme_context == 'league':
-        THEME.update(config.get('theme_league', {}))
-    elif theme_context == 'page':
-        THEME.update(config.get('theme_page', {}))
-    elif theme_context == 'watch':
-        THEME.update(config.get('theme_watch', {}))
+    m = config.get('menus', {})
+    html = template
+    
+    # --- COMPREHENSIVE THEME DEFAULTS (Restoring Lost Features) ---
+    defaults = {
+        # 1. Colors & Base
+        'brand_primary': '#D00000', 'brand_dark': '#8a0000', 'accent_gold': '#FFD700', 'status_green': '#22c55e',
+        'bg_body': '#050505', 'bg_panel': '#1e293b', 'bg_glass': 'rgba(30, 41, 59, 0.7)',
+        'text_main': '#f1f5f9', 'text_muted': '#94a3b8', 'border_color': '#334155', 'scrollbar_thumb_color': '#475569',
+        
+        # 2. Typography & Layout
+        'font_family_base': 'system-ui, -apple-system, sans-serif', 'font_family_headings': 'inherit',
+        'base_font_size': '14px', 'base_line_height': '1.5',
+        'container_max_width': '1100px', 'header_max_width': '1100px',
+        'border_radius_base': '6px', 'button_border_radius': '4px', 'hero_pill_radius': '50px',
+        
+        # 3. Header & Logo
+        'header_bg': 'rgba(5, 5, 5, 0.8)', 'header_text_color': '#f1f5f9', 
+        'header_link_active_color': '#D00000', 'header_link_hover_color': '#ffffff',
+        'header_highlight_color': '#FFD700', 'header_highlight_hover': '#ffea70',
+        'header_border_bottom': '1px solid #334155', 'header_layout': 'standard', 'header_icon_pos': 'left',
+        'logo_p1_color': '#f1f5f9', 'logo_p2_color': '#D00000', 'logo_image_size': '40px',
+        'logo_image_shadow_color': 'rgba(208, 0, 0, 0.3)', # RESTORED
 
-    SETTINGS = config.get('site_settings', {})
-    MENUS = config.get('menus', {})
-    
-    # 2. SET CRITICAL DEFAULTS (Fixes "Full Size Logo" issue)
-    if 'logo_image_size' not in THEME or not THEME['logo_image_size']:
-        THEME['logo_image_size'] = '40px'
-    
-    # Ensure Units for all sizing variables
-    size_keys = [
-        'border_radius_base', 'container_max_width', 'header_max_width', 
-        'hero_pill_radius', 'button_border_radius', 'logo_image_size', 
-        'section_logo_size', 'sys_status_radius', 'sys_status_dot_size', 
-        'league_card_radius', 'watch_table_radius', 'chat_dot_size',
-        'hero_box_width'
-    ]
-    for key in size_keys:
-        if key in THEME: THEME[key] = ensure_unit(THEME[key])
-        else: THEME[key] = '0px' # Prevent {{VAR}} from breaking CSS
+        # 4. Hero Section
+        'hero_bg_style': 'solid', 'hero_bg_solid': '#1a0505', 
+        'hero_gradient_start': '#1a0505', 'hero_gradient_end': '#000000',
+        'hero_bg_image_url': '', 'hero_bg_image_overlay_opacity': '0.7',
+        'hero_h1_color': '#ffffff', 'hero_intro_color': '#94a3b8',
+        'hero_pill_bg': 'rgba(255,255,255,0.05)', 'hero_pill_text': '#f1f5f9', 'hero_pill_border': 'rgba(255,255,255,0.1)',
+        'hero_pill_hover_bg': '#D00000', 'hero_pill_hover_text': '#ffffff', 'hero_pill_hover_border': '#D00000',
+        'hero_layout_mode': 'full', 'hero_content_align': 'center', 'hero_menu_visible': 'flex',
+        'hero_box_width': '1000px', 'hero_box_border_width': '1', 'hero_box_border_color': '#334155',
+        'hero_border_top': False, 'hero_border_left': False, 'hero_border_right': False, 'hero_border_bottom_box': False,
+        'hero_main_border_pos': 'full', 'hero_main_border_width': '1', 'hero_main_border_color': '#334155',
+        'display_hero': 'block',
+        
+        # 5. Footer
+        'footer_columns': '2', 'footer_bg_start': '#0f172a', 'footer_bg_end': '#020617', 
+        'footer_border_top': '1px solid #334155', 'footer_heading_color': '#94a3b8', 
+        'footer_link_color': '#64748b', 'footer_link_hover_color': '#f1f5f9',
+        'footer_link_hover_transform': 'translateX(5px)',
+        'footer_copyright_color': '#475569', 'footer_desc_color': '#64748b', 'footer_brand_color': '#ffffff', # RESTORED
+        'footer_text_align_desktop': 'left', # RESTORED
+        
+        # 6. League Cards (Footer & Page)
+        'league_card_bg': 'rgba(30, 41, 59, 0.5)', 'league_card_text': '#f1f5f9',
+        'league_card_border_width': '1', 'league_card_border_color': '#334155', 'league_card_radius': '6',
+        'league_card_hover_bg': '#1e293b', 'league_card_hover_text': '#ffffff', 'league_card_hover_border_color': '#D00000',
 
-    # 3. GENERATE DERIVED VARIABLES
-    def make_border(w_key, c_key):
-        w = ensure_unit(THEME.get(w_key, '1'))
-        c = THEME.get(c_key, '#334155')
-        return f"{w} solid {c}"
+        # 7. Static Page Elements
+        'static_h1_color': '#f1f5f9', 'static_h1_align': 'left',
+        'static_h1_border_width': '1', 'static_h1_border_color': '#334155',
+        
+        # 8. System Status Pill
+        'sys_status_visible': True, 'text_sys_status': 'System Status: Online',
+        'sys_status_text_color': '#22c55e', 'sys_status_dot_color': '#22c55e', 
+        'sys_status_bg_color': 'rgba(34, 197, 94, 0.1)', 'sys_status_border_color': 'rgba(34, 197, 94, 0.2)',
+        'sys_status_border_width': '1', 'sys_status_radius': '20', 'sys_status_dot_size': '8',
 
-    THEME['sec_border_live'] = make_border('sec_border_live_width', 'sec_border_live_color')
-    THEME['sec_border_upcoming'] = make_border('sec_border_upcoming_width', 'sec_border_upcoming_color')
-    THEME['sec_border_wildcard'] = make_border('sec_border_wildcard_width', 'sec_border_wildcard_color')
-    THEME['sec_border_leagues'] = make_border('sec_border_leagues_width', 'sec_border_leagues_color')
-    THEME['sec_border_grouped'] = make_border('sec_border_grouped_width', 'sec_border_grouped_color')
-    THEME['sec_border_league_upcoming'] = make_border('sec_border_league_upcoming_width', 'sec_border_league_upcoming_color')
+        # 9. Watch Page & Chat
+        'watch_sidebar_swap': False, 'watch_show_ad1': True, 'watch_show_discord': True, 'watch_show_ad2': True,
+        'watch_discord_order': 'middle', 'watch_discord_title': 'Join Discord', 'watch_discord_btn_text': 'Join',
+        'chat_header_bg': 'rgba(0,0,0,0.4)', 'chat_header_text': '#ffffff', 'chat_header_title': 'Live Chat',
+        'chat_dot_color': '#22c55e', 'chat_dot_size': '6px', 'chat_join_btn_text': 'Join Room',
+        'chat_overlay_bg': 'rgba(15, 23, 42, 0.6)', 'chat_input_bg': '#000000', 'chat_input_text': '#ffffff',
+        
+        'watch_table_head_bg': 'rgba(255,255,255,0.03)', 'watch_table_body_bg': '#1e293b',
+        'watch_table_border': '#334155', 'watch_table_radius': '6',
+        'watch_team_color': '#ffffff', 'watch_vs_color': 'rgba(255,255,255,0.1)',
+        'watch_team_size': '1.4rem', 'watch_vs_size': '2rem',
+        
+        'watch_btn_bg': '#D00000', 'watch_btn_text': '#ffffff', 'watch_btn_label': 'Watch Live Stream',
+        'watch_btn_disabled_bg': '#1e293b', 'watch_btn_disabled_text': '#94a3b8', 'watch_btn_disabled_label': 'Stream Starts Soon',
+        'watch_info_btn_bg': '#1e293b', 'watch_info_btn_text': '#ffffff', 'watch_info_btn_hover': '#334155', 'watch_info_btn_label': 'View Match Info',
+        'watch_server_active_bg': '#D00000', 'watch_server_text': '#94a3b8',
+
+        # 10. Socials & Floating
+        'social_sidebar_bg': 'rgba(15, 23, 42, 0.8)', 'social_sidebar_border': '#334155', 'social_sidebar_shadow': '0 4px 10px rgba(0,0,0,0.3)',
+        'social_btn_bg': 'rgba(30, 41, 59, 0.8)', 'social_btn_border': '#334155', 'social_btn_color': '#94a3b8',
+        'social_btn_hover_bg': '#1e293b', 'social_btn_hover_border': '#D00000', 
+        'social_btn_hover_transform': 'translateX(5px)', 'social_btn_hover_shadow_color': 'rgba(0,0,0,0.3)', # RESTORED
+        'social_count_color': '#64748b', 
+        'social_desktop_top': '50%', 'social_desktop_left': '0', 'social_desktop_scale': '1.0',
+        'social_telegram_color': '#0088cc', 'social_whatsapp_color': '#25D366', 
+        'social_reddit_color': '#FF4500', 'social_twitter_color': '#1DA1F2',
+        
+        'mobile_footer_bg': 'rgba(5, 5, 5, 0.9)', 'mobile_footer_border_top': '1px solid #334155',
+        'mobile_footer_shadow': '0 -4px 10px rgba(0,0,0,0.5)', 'mobile_footer_height': '60px',
+        'mobile_footer_btn_active_bg': 'rgba(255,255,255,0.1)', # RESTORED
+        
+        'copy_toast_bg': '#22c55e', 'copy_toast_text': '#ffffff', 'copy_toast_border': '#16a34a',
+        'back_to_top_bg': '#D00000', 'back_to_top_icon_color': '#ffffff', 'back_to_top_shadow': '0 4px 10px rgba(208,0,0,0.4)',
+        'back_to_top_radius': '50%', 'back_to_top_size': '40px',
+
+        # 11. Borders & Skeletons
+        'sec_border_live_width': '1', 'sec_border_live_color': '#334155',
+        'sec_border_upcoming_width': '1', 'sec_border_upcoming_color': '#334155',
+        'sec_border_wildcard_width': '1', 'sec_border_wildcard_color': '#334155',
+        'sec_border_leagues_width': '1', 'sec_border_leagues_color': '#334155',
+        'sec_border_grouped_width': '1', 'sec_border_grouped_color': '#334155',
+        'sec_border_league_upcoming_width': '1', 'sec_border_league_upcoming_color': '#334155',
+        
+        'skeleton_gradient_start': '#1e293b', 'skeleton_gradient_mid': '#334155', 'skeleton_gradient_end': '#1e293b', # RESTORED
+        'skeleton_border_color': '#334155', 
+
+        # 12. Match Row (Static Styling)
+        'match_row_bg': '#1e293b', 'match_row_border': '#334155', 
+        'match_row_live_border_left': '4px solid #22c55e', 'match_row_live_bg_start': 'rgba(34, 197, 94, 0.1)',
+        'match_row_live_bg_end': 'transparent', 'match_row_hover_border': '#D00000', 
+        'match_row_hover_bg': '#1e293b', 'match_row_hover_transform': 'translateY(-2px)',
+        'match_row_time_main_color': '#f1f5f9', 'match_row_time_sub_color': '#94a3b8',
+        'match_row_live_text_color': '#22c55e', 'match_row_league_tag_color': '#94a3b8', 'match_row_team_name_color': '#f1f5f9',
+        
+        'match_row_btn_watch_bg': '#D00000', 'match_row_btn_watch_text': '#ffffff', 
+        'match_row_btn_watch_hover_bg': '#b91c1c', 'match_row_btn_watch_hover_transform': 'scale(1.05)',
+        'match_row_hd_badge_bg': 'rgba(0,0,0,0.3)', 'match_row_hd_badge_border': 'rgba(255,255,255,0.2)', 'match_row_hd_badge_text': '#facc15',
+        'match_row_btn_notify_bg': 'transparent', 'match_row_btn_notify_border': '#334155', 'match_row_btn_notify_text': '#94a3b8',
+        'match_row_btn_notify_active_bg': '#22c55e', 'match_row_btn_notify_active_border': '#22c55e', 'match_row_btn_notify_active_text': '#ffffff',
+        'match_row_btn_copy_link_color': '#64748b', 'match_row_btn_copy_link_hover_color': '#D00000',
+        
+        'show_more_btn_bg': '#1e293b', 'show_more_btn_border': '#334155', 'show_more_btn_text': '#94a3b8',
+        'show_more_btn_radius': '30px', 
+        'show_more_btn_hover_bg': '#D00000', 'show_more_btn_hover_border': '#D00000', 'show_more_btn_hover_text': '#ffffff',
+        
+        'button_shadow_color': 'rgba(0,0,0,0.2)', 'card_shadow': '0 4px 6px -1px rgba(0,0,0,0.1)', # RESTORED
+        'section_logo_size': '24px',
+
+        # 13. Article Styling
+        'article_bg': 'transparent', 'article_text': '#94a3b8', 'article_line_height': '1.6',
+        'article_bullet_color': '#D00000', 'article_link_color': '#D00000',
+        'article_h2_color': '#f1f5f9', 'article_h2_border_width': '0', 'article_h2_border_color': '#334155',
+        'article_h3_color': '#f1f5f9', 'article_h4_color': '#cbd5e1'
+    }
+
+    # Populate theme dictionary from defaults + config override
+    theme = {}
+    for k, v in defaults.items():
+        val = t.get(k)
+        if k in ['border_radius_base', 'container_max_width', 'base_font_size', 'logo_image_size', 'button_border_radius', 
+                 'show_more_btn_radius', 'back_to_top_size', 'header_max_width', 'section_logo_size', 'hero_pill_radius', 'hero_box_width', 'hero_box_border_width', 'hero_main_border_width',
+                 'league_card_radius', 'sys_status_radius', 'sys_status_dot_size', 'watch_table_radius', 'chat_dot_size']:
+            if val: val = ensure_unit(val, 'px')
+        theme[k] = val if val is not None and val != "" else v
+
+    # --- BORDER LOGIC ---
+    def make_border(w, c): return f"{ensure_unit(w, 'px')} solid {c}"
+    theme['sec_border_live'] = make_border(theme.get('sec_border_live_width'), theme.get('sec_border_live_color'))
+    theme['sec_border_upcoming'] = make_border(theme.get('sec_border_upcoming_width'), theme.get('sec_border_upcoming_color'))
+    theme['sec_border_wildcard'] = make_border(theme.get('sec_border_wildcard_width'), theme.get('sec_border_wildcard_color'))
+    theme['sec_border_leagues'] = make_border(theme.get('sec_border_leagues_width'), theme.get('sec_border_leagues_color'))
+    theme['sec_border_grouped'] = make_border(theme.get('sec_border_grouped_width'), theme.get('sec_border_grouped_color'))
+    theme['sec_border_league_upcoming'] = make_border(theme.get('sec_border_league_upcoming_width'), theme.get('sec_border_league_upcoming_color'))
     
-    THEME['article_h2_border'] = make_border('article_h2_border_width', 'article_h2_border_color')
-    THEME['article_h3_border'] = make_border('article_h3_border_width', 'article_h3_border_color')
-    THEME['article_h4_border'] = make_border('article_h4_border_width', 'article_h4_border_color')
+    theme['article_h2_border'] = make_border(theme.get('article_h2_border_width'), theme.get('article_h2_border_color'))
+    theme['article_h3_border'] = make_border(theme.get('article_h3_border_width'), theme.get('article_h3_border_color'))
+    theme['article_h4_border'] = make_border(theme.get('article_h4_border_width'), theme.get('article_h4_border_color'))
     
-    THEME['league_card_border'] = make_border('league_card_border_width', 'league_card_border_color')
-    THEME['league_card_hover_border'] = make_border('league_card_border_width', 'league_card_hover_border_color')
-    THEME['static_h1_border'] = make_border('static_h1_border_width', 'static_h1_border_color')
-    THEME['sys_status_border'] = make_border('sys_status_border_width', 'sys_status_border_color')
+    theme['league_card_border'] = make_border(theme.get('league_card_border_width'), theme.get('league_card_border_color'))
+    theme['league_card_hover_border'] = make_border(theme.get('league_card_border_width'), theme.get('league_card_hover_border_color'))
+    theme['static_h1_border'] = make_border(theme.get('static_h1_border_width'), theme.get('static_h1_border_color'))
+    theme['sys_status_border'] = make_border(theme.get('sys_status_border_width'), theme.get('sys_status_border_color'))
 
-    chat_op = THEME.get('chat_overlay_opacity', '0.9')
-    chat_hex = THEME.get('chat_overlay_bg', '#0f172a')
-    THEME['chat_overlay_bg_final'] = hex_to_rgba(chat_hex, chat_op)
+    # --- COLOR TRANSFORMATIONS ---
+    chat_op = theme.get('chat_overlay_opacity', '0.9')
+    chat_hex = theme.get('chat_overlay_bg', '#0f172a')
+    theme['chat_overlay_bg_final'] = hex_to_rgba(chat_hex, chat_op)
 
-    s_bg_hex = THEME.get('sys_status_bg_color', '#22c55e')
-    s_bg_op = THEME.get('sys_status_bg_opacity', '0.1')
-    if str(THEME.get('sys_status_bg_transparent', False)).lower() == 'true':
-        THEME['sys_status_bg_color'] = 'transparent'
+    s_bg_hex = theme.get('sys_status_bg_color', '#22c55e')
+    s_bg_op = theme.get('sys_status_bg_opacity', '0.1')
+    if str(theme.get('sys_status_bg_transparent', False)).lower() == 'true':
+        theme['sys_status_bg_color'] = 'transparent'
     else:
-        THEME['sys_status_bg_color'] = hex_to_rgba(s_bg_hex, s_bg_op)
+        theme['sys_status_bg_color'] = hex_to_rgba(s_bg_hex, s_bg_op)
 
-    THEME['sys_status_display'] = 'inline-flex' if THEME.get('sys_status_visible', True) else 'none'
+    theme['sys_status_display'] = 'inline-flex' if theme.get('sys_status_visible', True) else 'none'
 
-    # 4. TEXT REPLACEMENTS
+    # --- TEXT REPLACEMENTS ---
     replacements = {
         'META_TITLE': page_data.get('meta_title', ''),
         'META_DESC': page_data.get('meta_desc', ''),
-        'SITE_NAME': f"{SETTINGS.get('title_part_1','')}{SETTINGS.get('title_part_2','')}",
-        'CANONICAL_URL': page_data.get('canonical_url', ''),
-        'FAVICON': SETTINGS.get('favicon_url', ''),
-        'OG_IMAGE': SETTINGS.get('logo_url', ''),
         'H1_TITLE': page_data.get('h1_title', ''),
-        'H1_ALIGN': page_data.get('h1_align', THEME.get('static_h1_align', 'left')),
+        'H1_ALIGN': page_data.get('h1_align', theme.get('static_h1_align', 'left')),
         'HERO_TEXT': page_data.get('hero_text', ''),
         'ARTICLE_CONTENT': page_data.get('article', ''),
-        'FOOTER_COPYRIGHT': SETTINGS.get('footer_copyright', ''),
-        'THEME_TEXT_SYS_STATUS': THEME.get('text_sys_status', 'System Status: Online'),
-        'LOGO_PRELOAD': f'<link rel="preload" as="image" href="{SETTINGS.get("logo_url")}">' if SETTINGS.get('logo_url') else '',
-        'API_URL': SETTINGS.get('api_url', ''),
-        'TARGET_COUNTRY': SETTINGS.get('target_country', 'US'),
-        'PARAM_LIVE': SETTINGS.get('param_live', 'stream'),
-        'PARAM_INFO': SETTINGS.get('param_info', 'info'),
-        'DOMAIN': SETTINGS.get('domain', ''),
+        'FOOTER_COPYRIGHT': s.get('footer_copyright', ''),
+        'THEME_TEXT_SYS_STATUS': theme.get('text_sys_status', 'System Status: Online'),
+        'LOGO_PRELOAD': f'<link rel="preload" as="image" href="{s.get("logo_url")}" fetchpriority="high">' if s.get('logo_url') else '',
+        'API_URL': s.get('api_url', ''),
+        'TARGET_COUNTRY': s.get('target_country', 'US'),
+        'PARAM_LIVE': s.get('param_live', 'stream'),
+        'PARAM_INFO': s.get('param_info', 'info'),
+        'DOMAIN': s.get('domain', ''),
         
-        'TEXT_LIVE_SECTION_TITLE': THEME.get('text_live_section_title', 'Trending Live'),
-        'TEXT_WILDCARD_TITLE': THEME.get('text_wildcard_title', ''),
-        'TEXT_TOP_UPCOMING_TITLE': THEME.get('text_top_upcoming_title', 'Top Upcoming'),
-        'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches'), 
-        'TEXT_SHOW_MORE': THEME.get('text_show_more', 'Show More'),
-        'TEXT_WATCH_BTN': THEME.get('text_watch_btn', 'WATCH'),
-        'TEXT_HD_BADGE': THEME.get('text_hd_badge', 'HD'),
-        'TEXT_SECTION_LINK': THEME.get('text_section_link', 'View All'),
-        'TEXT_SECTION_PREFIX': THEME.get('text_section_prefix', 'Upcoming'),
-        'WILDCARD_CATEGORY': THEME.get('wildcard_category', ''),
-        'PAGE_FILTER': page_data.get('page_filter', '')
+        'TEXT_SHOW_MORE': theme.get('text_show_more', 'Show More'),
+        'TEXT_WATCH_BTN': theme.get('text_watch_btn', 'WATCH'),
+        'TEXT_HD_BADGE': theme.get('text_hd_badge', 'HD'),
+        'TEXT_SECTION_LINK': theme.get('text_section_link', 'View All'),
+        'TEXT_SECTION_PREFIX': theme.get('text_section_prefix', 'Upcoming'),
+        'WILDCARD_CATEGORY': theme.get('wildcard_category', ''),
+        'PAGE_FILTER': page_data.get('page_filter', ''),
+        
+        # NOTE: Dynamic Match Section Titles (Live, Wildcard, Top 5) are removed from here.
+        # They will be injected by master_engine.py.
+        # However, for League/Sport pages, we still need the "Upcoming" title as that header is outside the injection zone.
+        'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches')
     }
 
     # Inject Theme Variables
-    for k, v in THEME.items():
+    for k, v in theme.items():
         placeholder = f"{{{{THEME_{k.upper()}}}}}"
         html = html.replace(placeholder, str(v))
 
     for k, v in replacements.items():
         html = html.replace(f"{{{{{k}}}}}", str(v))
 
-    # 5. STRUCTURAL INJECTIONS
-    html = html.replace('{{HEADER_MENU}}', build_menu_html(MENUS.get('header', []), 'header'))
-    html = html.replace('{{HERO_PILLS}}', build_menu_html(MENUS.get('hero', []), 'hero'))
-    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config, THEME))
+    # --- STRUCTURAL INJECTIONS ---
+    html = html.replace('{{HEADER_MENU}}', build_menu_html(m.get('header', []), 'header'))
+    html = html.replace('{{HERO_PILLS}}', build_menu_html(m.get('hero', []), 'hero'))
+    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config, theme))
     
-    country = SETTINGS.get('target_country', 'US')
+    country = s.get('target_country', 'US')
     prio = config.get('sport_priorities', {}).get(country, {})
     f_leagues = []
     for k, v in prio.items():
         if not k.startswith('_') and v.get('hasLink'):
-            f_leagues.append({'title': k, 'url': f"/{k.lower().replace(' ','-').replace('^[^a-z0-9]','')}-streams/"})
+            # Simple slugify for footer links
+            slug = k.lower().replace(' ', '-').replace('^[^a-z0-9]','') + "-streams"
+            f_leagues.append({'title': k, 'url': f"/{slug}/"})
     html = html.replace('{{FOOTER_LEAGUES}}', build_menu_html(f_leagues, 'footer_leagues'))
 
-    # 6. LOGO HTML (WITH INLINE FIX)
-    p1 = SETTINGS.get('title_part_1', 'Stream')
-    p2 = SETTINGS.get('title_part_2', 'East')
-    logo_size = THEME.get('logo_image_size', '40px') # Ensure default exists
+    # --- LOGO ---
+    p1 = s.get('title_part_1', 'Stream')
+    p2 = s.get('title_part_2', 'East')
+    logo_size = theme.get('logo_image_size', '40px')
     
-    logo_html = f'<div class="logo-text" style="color:{THEME.get("logo_p1_color")};">{p1}<span style="color:{THEME.get("logo_p2_color")};">{p2}</span></div>'
-    
-    if SETTINGS.get('logo_url'): 
-        # INJECT INLINE STYLES FOR SAFETY
-        logo_html = f'<img src="{SETTINGS.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px {THEME.get("logo_image_shadow_color","rgba(0,0,0,0)")}"> {logo_html}'
+    logo_html = f'<div class="logo-text" style="color:{theme.get("logo_p1_color")};">{p1}<span style="color:{theme.get("logo_p2_color")};">{p2}</span></div>'
+    if s.get('logo_url'): 
+        logo_html = f'<img src="{s.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px {theme.get("logo_image_shadow_color")};"> {logo_html}'
         
+    config['_generated_logo_html'] = logo_html 
     html = html.replace('{{LOGO_HTML}}', logo_html)
 
-    # 7. HEADER & HERO LOGIC
-    h_layout = THEME.get('header_layout', 'standard')
-    h_icon = THEME.get('header_icon_pos', 'left')
-    header_class = f"h-layout-{h_layout}"
-    if h_layout == 'center': header_class += f" h-icon-{h_icon}"
+    # --- LAYOUTS ---
+    h_layout = theme.get('header_layout', 'standard')
+    h_icon = theme.get('header_icon_pos', 'left')
+    header_class = f"h-layout-{h_layout}{' h-icon-'+h_icon if h_layout=='center' else ''}"
     html = html.replace('{{HEADER_CLASSES}}', header_class)
     html = html.replace('{{FOOTER_CLASSES}}', '')
 
-    mode = THEME.get('hero_layout_mode', 'full')
-    box_w = ensure_unit(THEME.get('hero_box_width', '1000px'))
-    h_style = THEME.get('hero_bg_style', 'solid')
+    # Hero Logic
+    mode = theme.get('hero_layout_mode', 'full')
+    box_w = ensure_unit(theme.get('hero_box_width', '1000px'))
+    h_style = theme.get('hero_bg_style', 'solid')
     
     if h_style == 'gradient':
-        hero_bg = f"background: radial-gradient(circle at top, {THEME.get('hero_gradient_start')} 0%, {THEME.get('hero_gradient_end')} 100%);"
+        hero_bg = f"background: radial-gradient(circle at top, {theme.get('hero_gradient_start')} 0%, {theme.get('hero_gradient_end')} 100%);"
     elif h_style == 'image':
-        hero_bg = f"background: linear-gradient(rgba(0,0,0,{THEME.get('hero_bg_image_overlay_opacity')}), rgba(0,0,0,{THEME.get('hero_bg_image_overlay_opacity')})), url('{THEME.get('hero_bg_image_url')}'); background-size: cover;"
+        hero_bg = f"background: linear-gradient(rgba(0,0,0,{theme.get('hero_bg_image_overlay_opacity')}), rgba(0,0,0,{theme.get('hero_bg_image_overlay_opacity')})), url('{theme.get('hero_bg_image_url')}'); background-size: cover;"
     elif h_style == 'transparent':
         hero_bg = "background: transparent;"
     else:
-        hero_bg = f"background: {THEME.get('hero_bg_solid')};"
+        hero_bg = f"background: {theme.get('hero_bg_solid')};"
 
-    box_b_str = f"{ensure_unit(THEME.get('hero_box_border_width', '1'))} solid {THEME.get('hero_box_border_color')}"
-    box_border_css = ""
-    if THEME.get('hero_border_top'): box_border_css += f"border-top: {box_b_str}; "
-    if THEME.get('hero_border_bottom_box'): box_border_css += f"border-bottom: {box_b_str}; "
-    if THEME.get('hero_border_left'): box_border_css += f"border-left: {box_b_str}; "
-    if THEME.get('hero_border_right'): box_border_css += f"border-right: {box_b_str}; "
+    box_b_str = f"{ensure_unit(theme.get('hero_box_border_width'), 'px')} solid {theme.get('hero_box_border_color')}"
+    box_css = ""
+    if theme.get('hero_border_top'): box_css += f"border-top: {box_b_str}; "
+    if theme.get('hero_border_bottom_box'): box_css += f"border-bottom: {box_b_str}; "
+    if theme.get('hero_border_left'): box_css += f"border-left: {box_b_str}; "
+    if theme.get('hero_border_right'): box_css += f"border-right: {box_b_str}; "
 
-    main_pos = THEME.get('hero_main_border_pos', 'full')
-    main_border_str = f"border-bottom: {ensure_unit(THEME.get('hero_main_border_width'))} solid {THEME.get('hero_main_border_color')};" if main_pos != 'none' else ""
+    main_pos = theme.get('hero_main_border_pos', 'full')
+    main_border_str = f"border-bottom: {ensure_unit(theme.get('hero_main_border_width'), 'px')} solid {theme.get('hero_main_border_color')};" if main_pos != 'none' else ""
 
     if mode == 'box':
-        hero_outer = f"background: transparent; padding: 40px 15px;"
-        if main_pos == 'full': hero_outer += f" {main_border_str}"
-        hero_inner = f"{hero_bg} max-width: {box_w}; margin: 0 auto; padding: 30px; border-radius: {ensure_unit(THEME.get('border_radius_base'))}; {box_border_css}"
-        if main_pos == 'box': hero_inner += f" {main_border_str}"
+        html = html.replace('{{HERO_OUTER_STYLE}}', f"background: transparent; padding: 40px 15px; {' '+main_border_str if main_pos=='full' else ''}")
+        html = html.replace('{{HERO_INNER_STYLE}}', f"{hero_bg} max-width: {box_w}; margin: 0 auto; padding: 30px; border-radius: {ensure_unit(theme.get('border_radius_base'))}; {box_css} {' '+main_border_str if main_pos=='box' else ''}")
     else:
-        hero_outer = f"{hero_bg} padding: 40px 15px;"
-        if main_pos == 'full': hero_outer += f" {main_border_str}"
-        hero_inner = f"max-width: {ensure_unit(THEME.get('container_max_width'))}; margin: 0 auto;"
+        html = html.replace('{{HERO_OUTER_STYLE}}', f"{hero_bg} padding: 40px 15px; {' '+main_border_str if main_pos=='full' else ''}")
+        html = html.replace('{{HERO_INNER_STYLE}}', f"max-width: {ensure_unit(theme.get('container_max_width'))}; margin: 0 auto;")
 
-    html = html.replace('{{HERO_OUTER_STYLE}}', hero_outer)
-    html = html.replace('{{HERO_INNER_STYLE}}', hero_inner)
-
-    align = THEME.get('hero_content_align', 'center')
+    align = theme.get('hero_content_align', 'center')
     html = html.replace('{{THEME_HERO_TEXT_ALIGN}}', align)
     html = html.replace('{{THEME_HERO_ALIGN_ITEMS}}', 'center' if align == 'center' else ('flex-start' if align == 'left' else 'flex-end'))
     html = html.replace('{{THEME_HERO_INTRO_MARGIN}}', '0 auto' if align == 'center' else ('0' if align == 'left' else '0 0 0 auto'))
-    html = html.replace('{{HERO_MENU_DISPLAY}}', THEME.get('hero_menu_visible', 'flex'))
+    html = html.replace('{{HERO_MENU_DISPLAY}}', theme.get('hero_menu_visible', 'flex'))
     html = html.replace('{{THEME_HERO_MENU_JUSTIFY}}', 'center' if align == 'center' else ('flex-start' if align == 'left' else 'flex-end'))
-    html = html.replace('{{DISPLAY_HERO}}', THEME.get('display_hero', 'block'))
+    html = html.replace('{{DISPLAY_HERO}}', theme.get('display_hero', 'block'))
 
-    # 8. DATA INJECTIONS
-    html = html.replace('{{JS_THEME_CONFIG}}', json.dumps(THEME))
+    # --- JSON INJECTIONS ---
+    html = html.replace('{{JS_THEME_CONFIG}}', json.dumps(theme))
     html = html.replace('{{JS_PRIORITIES}}', json.dumps(prio))
     
     l_map = load_json('assets/data/league_map.json')
@@ -309,6 +420,7 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
     html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
     html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
     
+    # Cleaning up placeholders that Master Engine will fill
     html = html.replace('{{LEAGUE_ARTICLE}}', '')
     html = html.replace('{{SCHEMA_BLOCK}}', '')
 
@@ -320,92 +432,141 @@ def apply_theme(html, config, page_data=None, theme_context='home'):
 def main():
     print("--- 🔨 Building Site Structure ---")
     config = load_json(CONFIG_PATH)
-    if not config: return
-
-    print(" > Building Pages...")
-    try:
-        with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: master_tpl = f.read()
-        with open(TEMPLATE_WATCH, 'r', encoding='utf-8') as f: watch_tpl = f.read()
-        page_tpl = master_tpl 
-        if os.path.exists(TEMPLATE_PAGE):
-            with open(TEMPLATE_PAGE, 'r', encoding='utf-8') as f: page_tpl = f.read()
-    except Exception as e:
-        print(f"Error loading templates: {e}")
+    if not config: 
+        print("❌ Config not found!")
         return
+
+    try:
+        with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: master_template_content = f.read()
+        with open(WATCH_TEMPLATE_PATH, 'r', encoding='utf-8') as f: watch_template_content = f.read()
+        
+        page_template_content = master_template_content # Fallback
+        if os.path.exists(TEMPLATE_PAGE):
+            with open(TEMPLATE_PAGE, 'r', encoding='utf-8') as f: page_template_content = f.read()
+            
+    except FileNotFoundError:
+        print("❌ Template file not found")
+        return
+
+    print("📄 Building Pages...")
+    
+    # Get Theme Contexts
+    theme_page_conf = config.get('theme_page', {}) 
+    if not theme_page_conf: theme_page_conf = config.get('theme', {})
+
+    theme_watch_conf = config.get('theme_watch', {})
+    if not theme_watch_conf: theme_watch_conf = config.get('theme', {})
 
     for page in config.get('pages', []):
         slug = page.get('slug')
-        layout = page.get('layout', 'page')
+        if not slug: continue
         
-        if layout == 'home':
-            tpl = master_tpl
-            ctx = 'home'
-        elif layout == 'watch':
-            tpl = watch_tpl
-            ctx = 'watch'
-        else:
-            tpl = page_tpl
-            ctx = 'page'
+        layout = page.get('layout')
         
-        p_data = {
-            'meta_title': page.get('meta_title'),
-            'meta_desc': page.get('meta_desc'),
-            'h1_title': page.get('title'),
-            'h1_align': page.get('h1_align'),
-            'hero_text': page.get('meta_desc'),
-            'article': page.get('content'),
-            'canonical_url': f"https://{config['site_settings']['domain']}/{slug}/" if slug != 'home' else f"https://{config['site_settings']['domain']}/"
-        }
-        
-        html = apply_theme(tpl, config, p_data, ctx)
-        
-        if layout == 'watch':
-            html = html.replace('{{DISPLAY_HERO}}', 'none')
-        elif layout == 'page':
-            html = html.replace('{{DISPLAY_HERO}}', 'none')
-            html = html.replace('</head>', '<style>#live-section, #upcoming-container, #grouped-container { display: none !important; }</style></head>')
-        
-        out = OUTPUT_DIR if slug == 'home' else os.path.join(OUTPUT_DIR, slug)
-        os.makedirs(out, exist_ok=True)
-        with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
+        final_template = master_template_content
+        active_theme_override = None
 
-    print(" > Building League Skeletons...")
-    if os.path.exists(TEMPLATE_LEAGUE):
-        with open(TEMPLATE_LEAGUE, 'r', encoding='utf-8') as f: league_tpl = f.read()
+        if layout == 'watch':
+            final_template = watch_template_content
+            active_theme_override = theme_watch_conf 
+            
+            # Fallback for the static page load (before JS runs)
+            page['meta_title'] = "Watch Live Sports"
+            page['meta_desc'] = "Live sports streaming coverage."
+        elif layout == 'page':
+            final_template = page_template_content
+            active_theme_override = theme_page_conf 
         
-        country = config['site_settings'].get('target_country', 'US')
-        prio = config.get('sport_priorities', {}).get(country, {})
+        # Render
+        final_html = render_page(final_template, config, page, theme_override=active_theme_override)
+        
+        out_dir = os.path.join(OUTPUT_DIR, slug) if slug != 'home' else OUTPUT_DIR
+        os.makedirs(out_dir, exist_ok=True)
+        with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
+            f.write(final_html)
+    
+    # ==========================================
+    # 5. BUILD LEAGUE PAGES
+    # ==========================================
+    print("🏆 Building League Pages...")
+    
+    league_template_content = None
+    if os.path.exists(TEMPLATE_LEAGUE):
+        with open(TEMPLATE_LEAGUE, 'r', encoding='utf-8') as f:
+            league_template_content = f.read()
+    
+    if league_template_content:
+        target_country = config.get('site_settings', {}).get('target_country', 'US')
+        priorities = config.get('sport_priorities', {}).get(target_country, {})
         articles = config.get('articles', {})
         
-        for key, settings in prio.items():
-            if key.startswith('_') or not settings.get('hasLink'): continue
-            
-            slug = key.lower().replace(' ', '-').replace('^[^a-z0-9]','') + "-streams"
-            is_league = settings.get('isLeague', False)
-            tpl_art = articles.get('league') if is_league else articles.get('sport')
-            
-            def rep(txt):
-                if not txt: return ""
-                return txt.replace('{{NAME}}', key).replace('{{YEAR}}', '2025').replace('{{DOMAIN}}', config['site_settings']['domain'])
+        theme_league = config.get('theme_league', {})
+        if not theme_league: theme_league = config.get('theme', {})
 
-            p_data = {
-                'meta_title': rep(articles.get('league_h1', f"Watch {key} Live")),
-                'h1_title': rep(articles.get('league_h1', f"Watch {key} Live")),
-                'hero_text': rep(articles.get('league_intro', '')),
-                'article': rep(tpl_art),
+        domain = config.get('site_settings', {}).get('domain', 'example.com')
+
+        for name, data in priorities.items():
+            if name.startswith('_') or not data.get('hasLink'): continue
+            
+            slug = name.lower().replace(' ', '-').replace('^[^a-z0-9]','') + "-streams"
+            is_league = data.get('isLeague', False)
+            
+            # 1. Prepare Variables
+            vars_map = {'{{NAME}}': name, '{{YEAR}}': "2025", '{{DOMAIN}}': config['site_settings']['domain']}
+            
+            def replace_vars(text, v_map):
+                if not text: return ""
+                for k, v in v_map.items():
+                    text = text.replace(k, v)
+                return text
+
+            # 2. Define Content
+            p_h1 = replace_vars(articles.get('league_h1', 'Watch {{NAME}} Live'), vars_map)
+            p_intro = replace_vars(articles.get('league_intro', ''), vars_map)
+            
+            # NOTE: Section titles for Leagues are still relevant as Master Engine uses regex to replace list items,
+            # BUT in league_template.html, the header is part of the static HTML block ABOVE the regex target.
+            # So we MUST provide this title here.
+            sec_upc = replace_vars(articles.get('league_upcoming_title', 'Upcoming {{NAME}}'), vars_map)
+            
+            raw_art = articles.get('league', '') if is_league else articles.get('sport', '')
+            final_art = replace_vars(raw_art, vars_map)
+
+            # 3. PAGE DATA Construction
+            page_data = {
+                'title': p_h1, 
+                'meta_title': p_h1,
+                'meta_desc': p_intro, 
+                'hero_h1': p_h1, 
+                'hero_text': p_intro,
                 'canonical_url': f"https://{config['site_settings']['domain']}/{slug}/",
-                'page_filter': key, 
-                'upcoming_title': rep(articles.get('league_upcoming_title', f"Upcoming {key}"))
+                'slug': slug, 
+                'layout': 'league', 
+                'content': final_art,
+                'meta_keywords': f"{name} stream, watch {name} free, {name} live",
+                'schemas': {'org': True, 'website': True},
+                'upcoming_title': sec_upc
             }
-            
-            html = apply_theme(league_tpl, config, p_data, 'league')
-            html = html.replace('{{LEAGUE_ARTICLE}}', p_data['article'])
-            
-            out = os.path.join(OUTPUT_DIR, slug)
-            os.makedirs(out, exist_ok=True)
-            with open(os.path.join(out, 'index.html'), 'w', encoding='utf-8') as f: f.write(html)
 
-    print("✅ Structure Build Complete.")
+            # 4. Render
+            html = render_page(league_template_content, config, page_data, theme_override=theme_league)
+            
+            # 5. Injections
+            html = html.replace('{{PAGE_FILTER}}', name)
+            html = html.replace('{{LEAGUE_ARTICLE}}', final_art)
+            # We inject this because it's static in the template
+            html = html.replace('{{TEXT_UPCOMING_TITLE}}', sec_upc) 
+            html = html.replace('{{HERO_PILLS}}', build_menu_html(config.get('menus', {}).get('hero', []), 'hero'))
+            
+            # 6. Write File
+            out_dir = os.path.join(OUTPUT_DIR, slug)
+            os.makedirs(out_dir, exist_ok=True)
+            with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
+                f.write(html)
+            
+            print(f"   -> Built: {slug} (Filter: {name})")
+
+    print("✅ Build Complete.")
 
 if __name__ == "__main__":
     main()
