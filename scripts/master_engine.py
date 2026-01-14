@@ -1078,7 +1078,10 @@ def inject_watch_page(matches):
     pattern = r'(//\s*\{\{INJECTED_MATCH_DATA\}\}|window\.MATCH_DATA\s*=\s*\[.*?\];)'
     
     if re.search(pattern, html, flags=re.DOTALL):
-        html = re.sub(pattern, data_string, html, flags=re.DOTALL)
+        # FIX: Use lambda to prevent "bad escape \u" error from JSON match data
+        html = re.sub(pattern, lambda _: data_string, html, flags=re.DOTALL)
+        
+        # 5. Save
         
         # 5. Save
         with open(target_file, 'w', encoding='utf-8') as f:
