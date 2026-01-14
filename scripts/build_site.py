@@ -7,10 +7,10 @@ import re
 # ==========================================
 CONFIG_PATH = 'data/config.json'
 # Renamed to match the calls in main()
-TEMPLATE_PATH = 'assets/master_template.html'
+TEMPLATE_MASTER = 'assets/master_template.html' # Fixed variable name
 WATCH_TEMPLATE_PATH = 'assets/watch_template.html'
-LEAGUE_TEMPLATE_PATH = 'assets/league_template.html'
-PAGE_TEMPLATE_PATH = 'assets/page_template.html'
+TEMPLATE_LEAGUE = 'assets/league_template.html' # Fixed variable name
+TEMPLATE_PAGE = 'assets/page_template.html'     # Fixed variable name
 OUTPUT_DIR = '.'
 
 # ==========================================
