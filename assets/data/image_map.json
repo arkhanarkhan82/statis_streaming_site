@@ -2493,7 +2493,16 @@
         "TNT Katropa": "assets/logos/upstreams/tnt-katropa.webp",
         "Aryan Shah": "assets/logos/upstreams/aryan-shah.webp",
         "Luca Pow": "assets/logos/upstreams/luca-pow.webp",
-        "Bor Artnak": "assets/logos/upstreams/bor-artnak.webp"
+        "Bor Artnak": "assets/logos/upstreams/bor-artnak.webp",
+        "Ports Authority": "assets/logos/upstreams/ports-authority.webp",
+        "Real de Banjul": "assets/logos/upstreams/real-de-banjul.webp",
+        "Samger": "assets/logos/upstreams/samger.webp",
+        "LASK Linz": "assets/logos/upstreams/lask-linz.webp",
+        "Jagiellonia Bialystok": "assets/logos/upstreams/jagiellonia-bialystok.webp",
+        "Viktoria Plzen": "assets/logos/upstreams/viktoria-plzen.webp",
+        "Sonderjyske": "assets/logos/upstreams/sonderjyske.webp",
+        "Pusk\u00e1s Akad\u00e9mia": "assets/logos/upstreams/pusk\u00e1s-akad\u00e9mia.webp",
+        "FC Slovan Liberec": "assets/logos/upstreams/fc-slovan-liberec.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2721,6 +2730,8 @@
         "NBA Basketball": "assets/logos/leagues/nba-basketball.webp",
         "3. Liga": "assets/logos/leagues/3-liga.webp",
         "New Zealand in India, 3 ODI Series": "assets/logos/leagues/new-zealand-in-india-3-odi-series.webp",
-        "Saudi Professional League": "assets/logos/leagues/saudi-professional-league.webp"
+        "Saudi Professional League": "assets/logos/leagues/saudi-professional-league.webp",
+        "One Day International": "assets/logos/leagues/one-day-international.webp",
+        "U23 AFC Asian Cup, Knockout stage": "assets/logos/leagues/u23-afc-asian-cup-knockout-stage.webp"
     }
 }
