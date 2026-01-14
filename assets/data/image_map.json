@@ -2518,7 +2518,16 @@
         "SC Bern": "assets/logos/upstreams/sc-bern.webp",
         "Kloten": "assets/logos/upstreams/kloten.webp",
         "SSC Napoli": "assets/logos/upstreams/ssc-napoli.webp",
-        "Parma Calcio": "assets/logos/upstreams/parma-calcio.webp"
+        "Parma Calcio": "assets/logos/upstreams/parma-calcio.webp",
+        "Apollon": "assets/logos/upstreams/apollon.webp",
+        "Anorthosis": "assets/logos/upstreams/anorthosis.webp",
+        "Florida Everblades": "assets/logos/upstreams/florida-everblades.webp",
+        "Jacksonville Icemen": "assets/logos/upstreams/jacksonville-icemen.webp",
+        "RoKi Hockey": "assets/logos/upstreams/roki-hockey.webp",
+        "HC Lugano": "assets/logos/upstreams/hc-lugano.webp",
+        "EHC Biel-Bienne": "assets/logos/upstreams/ehc-biel-bienne.webp",
+        "HC Ambr\u00ec-Piotta": "assets/logos/upstreams/hc-ambr\u00ec-piotta.webp",
+        "Daphnee M.Perricard": "assets/logos/upstreams/daphnee-mperricard.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
