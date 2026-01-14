@@ -726,6 +726,27 @@ def inject_leagues(matches):
 
         with open(target_file, 'r', encoding='utf-8') as f:
             html = f.read()
+            # A. Inject League Logo (Replace Calendar Icon)
+        logo_url = get_logo(key, 'leagues')
+        # Only replace if we have a real image, otherwise keep the 📅 fallback
+        if logo_url and "fallback" not in logo_url:
+            img_tag = f'<img src="{logo_url}" alt="{key}" style="width:28px; height:28px; object-fit:contain; margin-right:8px;">'
+            # Regex to find the specific logo container span and replace it
+            html = re.sub(r'<span id="upcoming-logo-container".*?>.*?</span>', img_tag, html, flags=re.DOTALL)
+
+        # B. Inject Section Border (Dynamic Editing Feature)
+        # Get specific border settings for "League Page Upcoming"
+        w = ensure_unit(THEME.get('sec_border_league_upcoming_width', '1'))
+        c = THEME.get('sec_border_league_upcoming_color', '#334155')
+        border_style = f'style="border-bottom: {w} solid {c};"'
+        
+        # Regex to find the .sec-head inside #upcoming-container and inject the inline style
+        # This overrides any default CSS with the specific Admin setting
+        html = re.sub(
+            r'(<div id="upcoming-container">\s*<div class="sec-head")', 
+            f'\\1 {border_style}', 
+            html
+        )
 
         if l_live:
             live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
