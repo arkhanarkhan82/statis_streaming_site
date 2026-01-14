@@ -619,18 +619,28 @@ def build_homepage(matches):
         top5_title = THEME.get('text_top_upcoming_title', 'Top Upcoming')
         top5_html = render_container(top5, top5_title, '📅', None)
 
+    # Grouped Section
     grouped_html = ""
+    # 1. Get the prefix from Theme settings
+    prefix = THEME.get('text_section_prefix', '').strip()
+
     for key, settings in PRIORITY_SETTINGS.items():
         if key.startswith('_') or settings.get('isHidden'): continue
+        
         grp = [m for m in upcoming_full if m['id'] not in used_ids and 
                (key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()) and 
                (m['timestamp'] - now_ms < one_day)]
+        
         if grp:
             for m in grp: used_ids.add(m['id'])
             logo = get_logo(key, 'leagues')
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
-            grouped_html += render_container(grp, key, icon, link)
+            
+            # 2. Apply Prefix to Title (e.g. "Upcoming" + " " + "NFL")
+            display_title = f"{prefix} {key}" if prefix else key
+            
+            grouped_html += render_container(grp, display_title, icon, link)
             # RESTORED: Upcoming Other Section
     if not PRIORITY_SETTINGS.get('_HIDE_OTHERS'):
         # Filter: Not used yet AND starts within 24 hours
