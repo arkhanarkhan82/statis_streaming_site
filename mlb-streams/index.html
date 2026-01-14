@@ -4,8 +4,8 @@
     <!-- SEO & METADATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLB Live Streams & Schedule</title>
-    <meta name="description" content="Watch MLB live streams free. Full schedule, HD links and live scores.">
+    <title>Watch MLB Live Streams and Schedules</title>
+    <meta name="description" content="">
     {{META_KEYWORDS}}
     <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
@@ -13,8 +13,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://totalsportek.top/mlb-streams/">
     <meta property="og:site_name" content="StreamEast">
-    <meta property="og:title" content="MLB Live Streams & Schedule">
-    <meta property="og:description" content="Watch MLB live streams free. Full schedule, HD links and live scores.">
+    <meta property="og:title" content="Watch MLB Live Streams and Schedules">
+    <meta property="og:description" content="">
     <meta property="og:image" content="/assets/test-logo.webp">
     <meta property="og:image:type" content="{{OG_MIME}}">
     
@@ -45,7 +45,7 @@
             --font-family-headings: 'Courier New', monospace;
             --container-max-width: 950px; 
             --header-max-width: 1000px;
-            --border-radius-base: 0px; 
+            --border-radius-base: 5px; 
             --button-border-radius: 21px;
             --hero-pill-radius: 8px;
             
@@ -56,7 +56,7 @@
             --header-link-hover-color: #3e0a0a;
             --header-highlight-color: #02ed12;
             --header-border-bottom: 1px solid var(--border);
-            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+            --logo-image-size: 40px;
 
             /* HERO */
             --hero-h1-color: #ffffff;
@@ -100,38 +100,38 @@
             --social-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
             --social-btn-bg: {{THEME_SOCIAL_BTN_BG}};
             --social-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
-            --mobile-footer-bg: #0a0a0a;
+            --mobile-footer-bg: #000000;
             --mobile-footer-border-top: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
             
             /* ARTICLE */
-            --article-bg: #0a0a0a;
-            --article-text: #e5e0e0;
+            --article-bg: #0a0606;
+            --article-text: #c2bcbc;
             --article-line-height: ;
-            --article-bullet: #e907a1;
-            --article-link: #df0c0c;
-            --article-h2-color: #0400f0;
-            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-bullet: #0caca1;
+            --article-link: #b70b0b;
+            --article-h2-color: #d715e5;
+            --article-h2-border: 3px solid #34f80d;
             
             /* LEAGUE CARDS */
-            --league-card-bg: #bb1b1b;
-            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
-            --league-card-text: #e1dbdb;
-            --league-card-radius: 18px;
-            --league-card-hover-bg: #347ba8;
-            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
-            --league-card-hover-text: #222020;
+            --league-card-bg: #af1212;
+            --league-card-border: 3px solid #188ed8;
+            --league-card-text: #f1e9e9;
+            --league-card-radius: 20px;
+            --league-card-hover-bg: #93279b;
+            --league-card-hover-border: 3px solid #dea60d;
+            --league-card-hover-text: #0b0404;
 
             /* UTILS */
             --scrollbar-thumb-color: #333333;
             --back-to-top-bg: #d00000;
             --back-to-top-icon-color: #ffffff;
-            --sys-status-bg: rgba(79, 250, 5, 0.15);
-            --sys-status-border: 0px solid #01fe12;
-            --sys-status-text: #039900;
-            --sys-status-dot-color: #00c73c;
+            --sys-status-bg: rgba(0, 0, 0, 0.5);
+            --sys-status-border: 0px solid #000000;
+            --sys-status-text: #000000;
+            --sys-status-dot-color: #000000;
             --sys-status-radius: 0px;
             
-            --section-logo-size: 30px;
+            --section-logo-size: 22px;
             --row-h-mob: 76px; --row-h-desk: 96px;
         }
 
@@ -169,7 +169,7 @@
         .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
 
         /* HERO */
-        .hero-section { background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px;  border-bottom: 5px solid #4416e9; display: block; }
+        .hero-section { background: radial-gradient(circle at top, #1c0202 0%, #000000 100%); padding: 40px 15px; border-bottom: 5px solid #4416e9; display: ; }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
         .hero-inner { max-width: 950px; margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
@@ -229,7 +229,7 @@
         .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
         .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
         .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
-        .social-btn.telegram { color: #a2ba2c; } .social-btn.whatsapp { color: #dadd08; } .social-btn.reddit { color: #9bd719; } .social-btn.twitter { color: #8ed50b; }
+        .social-btn.telegram { color: #ce0909; } .social-btn.whatsapp { color: #bd1414; } .social-btn.reddit { color: #cc1e1e; } .social-btn.twitter { color: #297b19; }
         @media (max-width: 1024px) { .social-sidebar { display: none; } }
         
         .mobile-sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--mobile-footer-bg); backdrop-filter: blur(10px); border-top: var(--mobile-footer-border-top); padding: 0 5px; display: none; justify-content: space-between; align-items: center; z-index: 900; height: var(--mobile-footer-height); box-shadow: var(--mobile-footer-shadow); }
@@ -245,8 +245,8 @@
         .seo-article a { color: var(--article-link); text-decoration: underline; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: #bb1b1b; border: {{THEME_LEAGUE_CARD_BORDER}}; color: #e1dbdb; border-radius: 18px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: #347ba8; color: #222020; transform: translateY(-2px); }
+        .league-card { background: #af1212; border: 3px solid #188ed8; color: #f1e9e9; border-radius: 20px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
+        .league-card:hover { border: 3px solid #dea60d; background: #93279b; color: #0b0404; transform: translateY(-2px); }
         .l-icon { font-size: 1.1rem; }
     </style>
 </head>
@@ -257,18 +257,18 @@
     <header class="h-layout-standard">
         <div class="header-container">
             <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(0,0,0,0)"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
-            <nav class="nav-links" id="desktopNav"><a href="#" class="">Schedule</a><a href="/#faqs" class="">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
+            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
         </div>
     </header>
-    <div class="mobile-menu" id="mobileMenu"><a href="#" class="">Schedule</a><a href="/#faqs" class="">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
+    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
 
     <!-- HERO SECTION -->
     <div class="hero-section">
         <div class="hero-inner">
             <div class="sys-status"><div class="live-dot"></div> System Status: Online</div>
-            <h1>MLB Streams</h1>
-            <p class="entity-intro">The best place to watch MLB matches live.</p> 
+            <h1>Watch MLB Live Streams and Schedules</h1>
+            <p class="entity-intro">The Best Free MLB Live stream free online</p> 
             <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
         </div>
     </div>
@@ -276,18 +276,20 @@
     <main class="container">
         
         <!-- LIVE SECTION (Injected by master_engine.py) -->
-        <div id="live-list" style="display:none;"></div>
+        <div id="live-list" style="display:none;">
+            <!-- Python replaces this with live rows -->
+        </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
             <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
-                    Upcoming MLB
+                    Upcoming MLB Matches nnn
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
-            <div id="schedule-list"><div class="match-row" style="justify-content:center;">No upcoming matches found.</div></div>
+            <div id="schedule-list"></div>
         </div>
 
         <!-- ARTICLE -->
@@ -304,7 +306,7 @@
     </main>
 
     <footer class="">
-        <div class="footer-grid cols-3"><div class="f-brand">Brand</div><div>Menu</div></div>
+        <div class="footer-grid cols-2"><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div><div class="f-desc">Hello world</div></div></div>
         <div class="copyright">Copyright</div>
     </footer>
 
