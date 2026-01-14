@@ -9,18 +9,20 @@
     {{META_KEYWORDS}}
     <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
-    <!-- OPEN GRAPH -->
+    <!-- OPEN GRAPH & SOCIAL -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://totalsportek.top/nba/">
-    <meta property="og:site_name" content="StreamEast">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:title" content="dgdfgd">
     <meta property="og:description" content="dgdfgdgdgd">
-    <meta property="og:image" content="/assets/test-logo.webp">
+    <meta property="og:image" content="{{OG_IMAGE}}">
     
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
-    <link rel="canonical" href="https://totalsportek.top/nba/">
-    <link rel="preload" as="image" href="/assets/test-logo.webp">
+    <!-- ROBOTS -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
     
     <!-- SCHEMA -->
     
@@ -28,21 +30,27 @@
     <style>html { scroll-behavior: smooth; }</style>
 
     <style>
+        /* CSS VARIABLES INJECTED BY BUILD_SITE.PY */
         :root {
-            /* --- DYNAMIC THEME VARIABLES --- */
+            /* COLORS */
             --brand-primary: #d00000;
-            --bg-body: #2d0101;
-            --bg-panel: #0c0f3b;
+            --brand-dark: #8a0000;
+            --accent-gold: #ffd700;
+            --status-green: #00e676;
+            --bg-body: #050505;
+            --bg-panel: #0f0f0f;
             --text-main: #ffffff;
             --text-muted: #888888;
             --border: #222222;
             
+            /* TYPOGRAPHY & LAYOUT */
             --font-family-base: system-ui, -apple-system, sans-serif;
             --font-family-headings: 'Courier New', monospace;
-            --base-font-size: {{THEME_BASE_FONT_SIZE}}; 
-            --container-max-width: 950px; 
-            --border-radius-base: 0px; 
-
+            --container-max-width: 950px;
+            --header-max-width: 1000px;
+            --border-radius-base: 0px;
+            --button-border-radius: 21px;
+            
             /* HEADER */
             --header-bg: #050505;
             --header-text-color: #aaaaaa;
@@ -51,296 +59,268 @@
             --header-highlight-color: #02ed12;
             --header-highlight-hover: #bf1d1d;
             --header-border-bottom: 1px solid var(--border);
-            --logo-text-p1-color: #ffffff;
-            --logo-text-p2-color: #d00000;
-            --logo-image-size: 40px;
-        --sec-border-leagues: 6px solid #aae114;
+            
+            /* HERO */
+            --hero-pill-bg: #111111;
+            --hero-pill-text: #cccccc;
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_ACTIVE_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_ACTIVE_TEXT}};
+            --hero-pill-radius: 8px;
+            --hero-h1-color: #ffffff;
+            --hero-intro-color: #999999;
 
-            /* STATIC PAGE SPECIFIC */
-            --static-h1-color: #fc1d1d;
-
-            /* ARTICLE STYLING */
-            --article-bg: #0a0a0a;
-            --article-text: #e5e0e0;
-            --article-line-height: ;
-            --article-bullet: #e907a1;
-            --article-link: #df0c0c;
-            --article-h2-color: #0400f0;
-            --article-h2-border: 3px solid #05c0e6;
-            --article-h3-color: #4ff906;
-            --article-h3-border: 1px solid #334155;
-            --article-h4-color: #df2707;
-            --article-h4-border: 1px solid #334155;
+            /* MATCH ROWS */
+            --match-row-bg: #121212;
+            --match-row-border: #222222;
+            --match-row-hover-bg: #1a1a1a;
+            --match-row-hover-border: #444444;
+            --match-row-live-border-left: 3px solid var(--brand-primary);
+            --match-row-live-bg-start: #1a0505;
+            --match-row-live-bg-end: #141414;
+            --match-row-live-text-color: #d00000;
+            
+            --match-row-team-name-color: #ffffff;
+            --match-row-time-main-color: #888888;
+            --match-row-time-sub-color: #94a3b8;
+            
+            /* BUTTONS */
+            --btn-watch-bg: #d00000;
+            --btn-watch-text: #ffffff;
+            --show-more-btn-bg: #151515;
+            --show-more-btn-text: #cccccc;
+            --show-more-radius: 30px;
 
             /* FOOTER */
-         --footer-text-align: right;
             --footer-bg-start: #0e0e0e;
             --footer-bg-end: #050505;
-            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
-            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
-            --footer-link-color: #94a3b8;
-            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
-            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
-            --footer-desc-color: #64748b;
-        --static-h1-border: 3px solid #0d34f8;
+            --footer-text: #64748b;
+            --footer-link: #94a3b8;
             
-            /* FOOTER LEAGUE CARDS */
-            --league-card-bg: #bb1b1b;
-            --league-card-text: #e1dbdb;
-            --league-card-border: 3px solid #11494a;
-            --league-card-radius: 18px;
-            --league-card-hover-bg: #347ba8;
-            --league-card-hover-text: #222020;
-            --league-card-hover-border: 3px solid #ad0b0b;
-
-            /* UTILITY */
-            --scrollbar-thumb-color: #333333;
-            --back-to-top-bg: #0b3bf9;
-            --back-to-top-icon-color: #ffffff;
-            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
-            --back-to-top-radius: ;
-            --back-to-top-size: ;
+            /* ARTICLE */
+            --article-bg: #0a0a0a;
+            --article-text: #e5e0e0;
+            --article-link: #df0c0c;
+            --article-h2: #0400f0;
+            --article-h2-border: 3px solid #05c0e6;
+            
+            /* EXTRAS */
+            --sys-status-bg: rgba(79, 250, 5, 0.1);
+            --sys-status-text: #039900;
+            --sys-status-dot: #00c73c;
+            --sys-status-display: none;
+            --sys-status-radius: 20;
+            
+            --logo-image-size: 40px;
+            --section-logo-size: 30px;
+            
+            --skeleton-gradient-start: #1e293b;
+            --skeleton-gradient-mid: #334155;
+            --skeleton-gradient-end: #1e293b;
         }
 
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; line-height: var(--base-line-height); }
+        /* --- CSS RESET --- */
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: 14px; line-height: 1.5; padding-bottom: 80px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
-        ul { list-style: none; padding: 0; margin: 0; }
+        button { cursor: pointer; font-family: inherit; border: none; }
         
-        body::-webkit-scrollbar { width: 8px; }
-        body::-webkit-scrollbar-track { background: var(--bg-body); }
-        body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 4px; }
-
-        /* HEADER */
-        header { 
-            background: var(--header-bg); 
-            backdrop-filter: blur(10px); 
-            border-bottom: var(--header-border-bottom); 
-            height: 60px; width: 100%; position: relative; z-index: 100; 
-        }
-        @media (min-width: 900px) { header { position: fixed; top: 0; } body { padding-top: 60px; } }
-
-        .header-container { 
-            max-width: 1000px;
-            margin: 0 auto; height: 100%; padding: 0 15px; 
-            display: flex; align-items: center; position: relative;
-        }
-
-        /* LAYOUT LOGIC (Standard/Inverted/Center) */
+        /* HEADER & HERO */
+        header { background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: var(--header-border-bottom); height: 60px; position: sticky; top: 0; z-index: 100; }
+        .header-container { max-width: var(--header-max-width); margin: 0 auto; padding: 0 15px; height: 100%; display: flex; align-items: center; position: relative; }
+        
+        /* LAYOUTS */
         .h-layout-standard .header-container { justify-content: space-between; }
-        .h-layout-standard .logo-link { order: 1; }
-        .h-layout-standard .nav-links { order: 2; }
-        .h-layout-standard .hamburger { order: 3; display: none; }
-
-        .h-layout-inverted .header-container { justify-content: space-between; }
-        .h-layout-inverted .logo-link { order: 2; }
-        .h-layout-inverted .nav-links { order: 1; }
-        .h-layout-inverted .hamburger { order: 0; display: none; }
-
-        .h-layout-center .header-container { justify-content: center; }
-        .h-layout-center .logo-link { margin: 0 auto; }
-        .h-layout-center .nav-links { display: none !important; }
-        .h-layout-center .hamburger { display: block !important; position: absolute; top: 50%; transform: translateY(-50%); font-size: 1.6rem; }
-        .h-layout-center.h-icon-left .hamburger { left: 15px; }
-        .h-layout-center.h-icon-right .hamburger { right: 15px; }
-
-        .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-        .logo-img { height: var(--logo-image-size); width: var(--logo-image-size); border-radius: var(--border-radius-base); object-fit: cover; }
-        .logo-text { font-size: 1.4rem; font-weight: 900; font-style: italic; letter-spacing: -1px; text-transform: uppercase; line-height: 1; }
-        .logo-text span { color: var(--logo-text-p2-color); }
-        .logo-text { color: var(--logo-text-p1-color); }
+        .h-layout-standard .logo-link { order: 1; } .h-layout-standard .nav-links { order: 2; }
+        .h-layout-center .header-container { justify-content: center; } .h-layout-center .nav-links { display:none; }
         
-        .nav-links { display: none; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
-        .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        .logo-link { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.4rem; text-transform: uppercase; font-style: italic; }
+        .logo-img { width: var(--logo-image-size); height: var(--logo-image-size); border-radius: 6px; object-fit: cover; }
+        
+        .nav-links { display: flex; gap: 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; color: var(--header-text-color); height: 100%; }
+        .nav-links a { display: flex; align-items: center; height: 100%; border-bottom: 2px solid transparent; }
         .nav-links a:hover { color: var(--header-link-hover-color); }
-        .nav-links a.active { color: var(--header-link-active-color); border-bottom-color: var(--header-link-active-color); }
         .nav-links a.highlighted { color: var(--header-highlight-color) !important; border-bottom-color: var(--header-highlight-color) !important; }
-        .nav-links a.highlighted:hover { color: var(--header-highlight-hover) !important; border-bottom-color: var(--header-highlight-hover) !important; }
         
-        .hamburger { display: block; font-size: 1.4rem; color: var(--header-text-color); background: none; cursor: pointer; }
-        .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); border-bottom: var(--header-border-bottom); display: none; flex-direction: column; z-index: 99; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .hamburger { display: none; font-size: 1.5rem; background: none; color: var(--text-main); position:absolute; right:15px; }
+        @media(max-width: 900px) { .nav-links { display: none; } .hamburger { display: block; } }
+        
+        .mobile-menu { position: absolute; top: 60px; left: 0; width: 100%; background: var(--bg-panel); display: none; flex-direction: column; border-bottom: 1px solid var(--border); }
         .mobile-menu.active { display: flex; }
-        .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
-        .mobile-menu a:hover { background: rgba(255,255,255,0.05); color: var(--header-link-hover-color); }
+        .mobile-menu a { padding: 15px; border-bottom: 1px solid var(--border); font-weight: 700; color: var(--text-muted); }
 
-        @media (min-width: 900px) { 
-            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: flex; } 
-            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: none; } 
-        }
-        @media (max-width: 899px) {
-            .h-layout-standard .header-container, .h-layout-inverted .header-container { justify-content: space-between; }
-            .h-layout-standard .nav-links, .h-layout-inverted .nav-links { display: none; }
-            .h-layout-standard .hamburger, .h-layout-inverted .hamburger { display: block; }
-            .h-layout-standard .logo-link { order: 1; } .h-layout-standard .hamburger { order: 2; }
-            .h-layout-inverted .logo-link { order: 2; } .h-layout-inverted .hamburger { order: 1; }
-        }
-
-        /* MAIN CONTENT & H1 */
-        .container { max-width: var(--container-max-width); margin: 0 auto; padding: 40px 15px; min-height: 60vh; }
+        /* HERO */
+        .hero-section { background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px;  border-bottom: 5px solid #4416e9; display: block; }
+        .hero-inner { max-width: 950px; margin: 0 auto; display: flex; flex-direction: column; text-align: center; align-items: center; }
+        h1 { font-family: var(--font-family-headings); color: var(--hero-h1-color); margin: 0 0 15px 0; font-size: 1.8rem; line-height: 1.2; }
+        .entity-intro { color: var(--hero-intro-color); margin: 0 auto; margin-bottom: 20px; max-width: 800px; }
         
-        .static-h1 {
-            color: var(--static-h1-color);
-    font-family: var(--font-family-headings);
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-    border-bottom: var(--static-h1-border); /* <--- Fixed to use dynamic variable */
-    text-align: None;               /* <--- Pre-adding for Feature #5 */
-    padding-bottom: 20px;
-        }
+        .cat-scroll { display: flex; gap: 10px; overflow-x: auto; width: 100%; scrollbar-width: none; justify-content: center; padding-bottom: 5px; }
+        .cat-pill { background: var(--hero-pill-bg); color: var(--hero-pill-text); padding: 8px 16px; border-radius: var(--hero-pill-radius); white-space: nowrap; font-weight: 700; font-size: 0.8rem; border: 1px solid transparent; }
+        .cat-pill:hover { background: var(--hero-pill-hover-bg); color: var(--hero-pill-hover-text); }
 
-        .seo-article { 
-            background: var(--article-bg); 
-            color: var(--article-text); 
-            line-height: var(--article-line-height); 
-            padding: 20px 0; /* No side padding for clean look on static pages */
-        }
-        .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
-        .seo-article h3 { color: var(--article-h3-color); border-bottom: var(--article-h3-border); font-size: 1.25rem; margin-top: 25px; }
-        .seo-article h4 { color: var(--article-h4-color); border-bottom: var(--article-h4-border); font-size: 1.1rem; margin-top: 20px; }
-        .seo-article p { margin-bottom: 15px; }
+        /* SKELETONS */
+        .skeleton { background: var(--skeleton-gradient-start); border-radius: var(--border-radius-base); animation: shimmer 1.5s infinite linear; background: linear-gradient(to right, var(--skeleton-gradient-start) 4%, var(--skeleton-gradient-mid) 25%, var(--skeleton-gradient-end) 36%); background-size: 1000px 100%; }
+        .skeleton-header { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border); height: 38px; }
+        .sk-title { height: 22px; width: 140px; }
+        .sk-count { height: 15px; width: 80px; }
+        .skeleton-box { height: 76px; width: 100%; margin-bottom: 8px; border-radius: var(--border-radius-base); border: 1px solid var(--border); }
+        @media (min-width: 768px) { .skeleton-box { height: 96px; } }
+        @keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+
+        /* MAIN LAYOUT */
+        .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
+        .section-box { margin-bottom: 30px; }
+        .sec-head { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 10px; border-bottom: 1px solid var(--border); margin-bottom: 10px; }
+        .sec-title { margin: 0; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; font-family: var(--font-family-headings); display: flex; align-items: center; gap: 10px; }
+        .sec-right-link { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+        .sec-logo { width: var(--section-logo-size); height: var(--section-logo-size); object-fit: contain; }
+
+        /* MATCH ROWS */
+        .match-row { display: grid; grid-template-columns: 50px 1fr 60px 80px; align-items: center; gap: 10px; background: var(--match-row-bg); border: 1px solid var(--match-row-border); border-radius: var(--border-radius-base); padding: 10px; margin-bottom: 8px; transition: 0.2s; }
+        .match-row:hover { background: var(--match-row-hover-bg); border-color: var(--match-row-hover-border); transform: translateY(-2px); }
+        .match-row.live { background: linear-gradient(90deg, var(--match-row-live-bg-start), var(--match-row-live-bg-end)); border-left: var(--match-row-live-border-left); }
+        @media(min-width:768px) { .match-row { grid-template-columns: 80px 1fr 120px 120px; padding: 15px; } }
+
+        .col-time { text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .time-main { font-weight: 700; color: var(--match-row-time-main-color); font-size: 0.8rem; }
+        .time-sub { font-size: 0.65rem; color: var(--match-row-time-sub-color); }
+        .live-txt { color: var(--match-row-live-text-color); font-weight: 900; animation: blink 1.5s infinite; }
+
+        .teams-wrapper { display: flex; flex-direction: column; justify-content: center; gap: 4px; overflow: hidden; }
+        .league-tag { font-size: 0.6rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+        .team-name { font-weight: 600; color: var(--match-row-team-name-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+        .logo-box { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; flex-shrink: 0; }
+        .t-img { width: 100%; height: 100%; object-fit: contain; }
+        .t-logo { display:flex; align-items:center; justify-content:center; width:100%; height:100%; border-radius:50%; font-size:0.7rem; color:#fff; font-weight:700; }
+
+        .col-meta { text-align: right; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); }
+        .col-action { text-align: center; }
+        
+        .btn-watch { background: var(--btn-watch-bg); color: var(--btn-watch-text); font-weight: 800; font-size: 0.7rem; padding: 6px 12px; border-radius: var(--button-border-radius); display: block; width: 100%; text-transform: uppercase; }
+        .btn-watch:hover { filter: brightness(1.1); transform: scale(1.05); }
+        .btn-notify { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 700; font-size: 0.7rem; padding: 6px; border-radius: var(--button-border-radius); width: 100%; }
+        .btn-copy-link { background:transparent; border:none; color:var(--text-muted); font-size:0.65rem; margin-top:4px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:4px; }
+        .btn-copy-link:hover { color: var(--brand-primary); }
+
+        .show-more-btn { display: block; width: 100%; padding: 12px; background: var(--show-more-btn-bg); border: 1px solid var(--border); color: var(--show-more-btn-text); font-weight: 700; border-radius: var(--show-more-radius); margin-top: 10px; }
+        .show-more-btn:hover { color: var(--text-main); border-color: var(--brand-primary); }
+
+        /* ARTICLE & FOOTER */
+        .seo-article { background: var(--article-bg); color: var(--article-text); padding: 30px; border-radius: 8px; margin-top: 40px; }
+        .seo-article h2 { color: var(--article-h2); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 20px; }
         .seo-article a { color: var(--article-link); text-decoration: underline; }
-        .seo-article ul, .seo-article ol { margin-left: 20px; margin-bottom: 15px; list-style: disc; }
-        .seo-article li { margin-bottom: 5px; }
-        .seo-article li::marker { color: var(--article-bullet); }
 
-        /* FOOTER LEAGUES */
-        .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: var(--sec-border-leagues); }
-        .sec-title { font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 10px; text-transform: uppercase; margin: 0; font-family: var(--font-family-headings); }
-        .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: var(--league-card-bg); border: var(--league-card-border); color: var(--league-card-text); border-radius: var(--league-card-radius); padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: var(--league-card-hover-border); background: var(--league-card-hover-bg); color: var(--league-card-hover-text); transform: translateY(-2px); }
-        .league-card span { font-size: 0.8rem; font-weight: 700; color: inherit; overflow: hidden; text-overflow: ellipsis; }
-        .l-icon { font-size: 1.1rem; }
+        footer { background: linear-gradient(to bottom, var(--footer-bg-start), var(--footer-bg-end)); padding: 50px 20px; margin-top: 50px; border-top: 1px solid var(--border); }
+        .footer-grid { display: grid; gap: 30px; max-width: var(--container-max-width); margin: 0 auto; }
+        @media(min-width: 768px) { .footer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); } .footer-grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+        
+        .copyright { text-align: center; margin-top: 40px; font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
 
-        /* FOOTER */
-        /* FOOTER LAYOUT */
-        footer { 
-            background: linear-gradient(180deg, var(--footer-bg-start) 0%, var(--footer-bg-end) 100%); 
-            border-top: var(--footer-border-top); 
-            padding: 60px 20px 30px 20px; 
-            margin-top: 60px; 
-        }
+        .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+        .league-card { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-muted); padding: 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; }
+        .league-card:hover { border-color: var(--brand-primary); color: var(--text-main); }
 
-        /* Base Grid (Mobile Default) */
-        .footer-grid { 
-            width: 100%; 
-            max-width: var(--container-max-width); 
-            margin: 0 auto; 
-            display: flex; 
-            flex-direction: column; 
-            gap: 40px; 
-            text-align: center; /* Center on mobile for pro look */
-        }
+        .sys-status { display: var(--sys-status-display); align-items: center; gap: 8px; padding: 6px 12px; border-radius: var(--sys-status-radius); background: var(--sys-status-bg); color: var(--sys-status-text); border: var(--sys-status-border); font-size: 0.75rem; font-weight: 700; margin-bottom: 15px; }
+        .sys-status .dot { width: var(--sys-status-dot); height: var(--sys-status-dot); border-radius: 50%; background: var(--sys-status-dot-color); box-shadow: 0 0 8px var(--sys-status-dot-color); }
 
-        /* DESKTOP LAYOUTS */
-        @media(min-width: 768px) { 
-            /* 2 COLUMNS: Extreme Left & Extreme Right */
-            .footer-grid.cols-2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between; /* Pushes items to edges */
-                align-items: flex-start;
-                text-align: left; 
-                flex-wrap: wrap; /* Allows 3rd item to wrap if present */
-            }
-            /* Force the 2nd column to align text to the right */
-            .footer-grid.cols-2 > div:nth-child(2) {
-                text-align: right;
-            }
-            /* If a 3rd element exists in 2-col mode, center it below */
-            .footer-grid.cols-2 > div:nth-child(3) {
-                width: 100%;
-                text-align: center;
-                margin-top: 40px;
-                border-top: 1px solid rgba(255,255,255,0.1); /* Subtle separator */
-                padding-top: 20px;
-            }
+        @keyframes blink { 0% {opacity:1} 50% {opacity:0.5} 100% {opacity:1} }
+        
+        /* BORDERS */
+        #live-section .sec-head { border-bottom: 3px solid #e70856; }
+        #wildcard-container .sec-head { border-bottom: 1px solid #334155; }
+        #top-upcoming-container .sec-head { border-bottom: 4px solid #1152a7; }
+        #grouped-container .sec-head { border-bottom: 3px solid #00b37d; }
 
-            /* 3 COLUMNS: Equal Widths */
-            .footer-grid.cols-3 {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr; /* Exactly 3 equal columns */
-                gap: 20px;
-                text-align: left;
-            }
-            /* Professional Alignment: Left | Center | Right */
-            .footer-grid.cols-3 > div:nth-child(1) { text-align: left; }
-            .footer-grid.cols-3 > div:nth-child(2) { text-align: center; }
-            .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
-        }
-
-        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
-        .f-desc { color: var(--footer-desc-color); 
-    font-size: 0.85rem; 
-    line-height: 1.6; 
-    max-width: 400px; 
-    margin: 15px 0 0 0; }
-        .f-links { display: flex; flex-direction: column; gap: 12px; }
-        .f-link { color: var(--footer-link-color); font-size: 0.9rem; font-weight: 500; transition: 0.2s; }
-        .f-link:hover { color: var(--footer-link-hover-color); transform: translateX(5px); }
-        .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
-        .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
-
-        .back-to-top { 
-            position: fixed; bottom: 80px; right: 20px; 
-            background: var(--back-to-top-bg); width: var(--back-to-top-size); height: var(--back-to-top-size); 
-            border-radius: var(--back-to-top-radius); display: flex; align-items: center; justify-content: center; 
-            color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; visibility: hidden; 
-            transition: 0.3s; z-index: 90; 
-            box-shadow: var(--back-to-top-shadow); 
-        }
-        .back-to-top.show { opacity: 1; visibility: visible; }
-        .back-to-top svg { width: 24px; height: 24px; fill: var(--back-to-top-icon-color); }
-        @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
-
-        @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+        .social-sidebar { position: fixed; top: {{THEME_SOCIAL_DESK_TOP}}; left: {{THEME_SOCIAL_DESK_LEFT}}; transform: scale({{THEME_SOCIAL_DESK_SCALE}}); display: flex; flex-direction: column; gap: 10px; z-index: 99; }
+        .soc-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); font-size: 0; }
+        .soc-btn:hover { width: 140px; border-radius: 30px; padding-left: 15px; justify-content: flex-start; }
+        .soc-btn:hover span { font-size: 0.85rem; font-weight: 700; margin-left: 10px; display: block; }
+        .soc-btn span { display: none; }
+        
+        .soc-btn.telegram { background: {{THEME_SOCIAL_TELEGRAM}}; }
+        .soc-btn.whatsapp { background: {{THEME_SOCIAL_WHATSAPP}}; }
+        .soc-btn.reddit { background: {{THEME_SOCIAL_REDDIT}}; }
+        .soc-btn.twitter { background: {{THEME_SOCIAL_TWITTER}}; }
+        
+        /* Icon SVGs (Inline for simplicity) */
+        .telegram::before { content: '✈️'; font-size: 1.2rem; }
+        .whatsapp::before { content: '📞'; font-size: 1.2rem; }
+        .reddit::before { content: '👽'; font-size: 1.2rem; }
+        .twitter::before { content: '🐦'; font-size: 1.2rem; }
+        
+        @media(max-width: 900px) { .social-sidebar { display: none; } }
+        
     </style>
 </head>
 <body>
     <header class="h-layout-standard">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(0,0,0,0)"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(208, 0, 0, 0.3);"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
     </header>
     <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
 
-    <main class="container">
-        <!-- DYNAMIC H1 for Static Page -->
-        <h1 class="static-h1">Streameast - #1 NBA Streaming Site</h1>
+    <div class="hero-section">
+        <div class="hero-inner">
+            <div class="sys-status"><div class="dot"></div> System Status: Online</div>
+            <h1></h1>
+            <p class="entity-intro"></p>
+            <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
+        </div>
+    </div>
 
-        <!-- Content -->
+    <main class="container">
+        
+        <!-- 1. TRENDING LIVE -->
+        <!-- Python looks for markers inside this container -->
+        <div id="live-section-container">
+            <!-- LIVE_START --><!-- LIVE_END -->
+        </div>
+
+        <!-- 2. WILDCARD -->
+        <div id="wildcard-section-container">
+            <!-- WC_START --><!-- WC_END -->
+        </div>
+
+        <!-- 3. TOP 5 -->
+        <div id="top5-section-container">
+            <!-- TOP5_START --><!-- TOP5_END -->
+        </div>
+
+        <!-- 4. GROUPED -->
+        <div id="grouped-section-container">
+            <!-- GROUPED_START --><!-- GROUPED_END -->
+        </div>
+
+        <!-- 5. ARTICLE -->
         <div class="seo-article"></div>
 
-        <!-- Footer Leagues -->
-        <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
+        <!-- 6. FOOTER LEAGUES -->
+        <div class="section-box" style="margin-top:50px;">
             <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
             <div class="leagues-grid"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏆</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏆</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏆</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🏆</span><span>UFC</span></a><a href="/premier-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Premier League</span></a><a href="/champions-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula-1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africa-cup-of-nations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/la-liga-streams/" class="league-card"><span class="l-icon">🏆</span><span>La Liga</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🏆</span><span>Tennis</span></a></div>
         </div>
     </main>
+    <div class="social-sidebar">
+        <a href="#" class="soc-btn telegram"><span>Telegram</span></a>
+        <a href="#" class="soc-btn whatsapp"><span>WhatsApp</span></a>
+        <a href="#" class="soc-btn reddit"><span>Reddit</span></a>
+        <a href="#" class="soc-btn twitter"><span>Twitter</span></a>
+    </div>
 
-    <footer class="">
-        <!-- Dynamic Grid injected by Python based on Admin slots -->
-        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div><div class="f-desc">Hello world</div></div><div class="f-desc">Hello world</div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
-        
+    <footer>
+        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div><div class="f-desc">Hello world</div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div><div></div></div>
         <div class="copyright">Copyright</div>
     </footer>
 
-    <button id="backToTop" class="back-to-top" onclick="window.scrollTo(0,0)">
-        <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
-    </button>
-
     <script>
-        window.addEventListener('scroll', () => {
-            const btn = document.getElementById('backToTop');
-            if(window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
-        });
-        const path = window.location.pathname; 
-        document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { 
-            if(link.getAttribute('href') === path) link.classList.add('active'); 
-        });
+        function toggleHidden(id, btn) {
+            const el = document.getElementById(id);
+            if(el) { el.style.display = (el.style.display === 'none') ? 'block' : 'none'; btn.style.display = 'none'; }
+        }
+        function copyText(text) { navigator.clipboard.writeText(text); alert('Link Copied!'); }
     </script>
 </body>
 </html>

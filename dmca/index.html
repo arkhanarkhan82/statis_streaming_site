@@ -11,16 +11,16 @@
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://totalsportek.top/dmca/">
-    <meta property="og:site_name" content="StreamEast">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:title" content="DMCA Policy">
     <meta property="og:description" content="sdssdfs">
-    <meta property="og:image" content="/assets/test-logo.webp">
+    <meta property="og:image" content="{{OG_IMAGE}}">
     
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
-    <link rel="canonical" href="https://totalsportek.top/dmca/">
-    <link rel="preload" as="image" href="/assets/test-logo.webp">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
     
     <!-- SCHEMA -->
     
@@ -39,7 +39,7 @@
             
             --font-family-base: system-ui, -apple-system, sans-serif;
             --font-family-headings: 'Courier New', monospace;
-            --base-font-size: {{THEME_BASE_FONT_SIZE}}; 
+            --base-font-size: 14px; 
             --container-max-width: 950px; 
             --border-radius-base: 0px; 
 
@@ -62,25 +62,25 @@
             /* ARTICLE STYLING */
             --article-bg: #0a0a0a;
             --article-text: #e5e0e0;
-            --article-line-height: ;
+            --article-line-height: 1.6;
             --article-bullet: #e907a1;
             --article-link: #df0c0c;
             --article-h2-color: #0400f0;
             --article-h2-border: 3px solid #05c0e6;
             --article-h3-color: #4ff906;
-            --article-h3-border: 1px solid #334155;
+            --article-h3-border: 0px solid None;
             --article-h4-color: #df2707;
-            --article-h4-border: 1px solid #334155;
+            --article-h4-border: 0px solid None;
 
             /* FOOTER */
          --footer-text-align: right;
             --footer-bg-start: #0e0e0e;
             --footer-bg-end: #050505;
-            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
-            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
+            --footer-border-top: 1px solid #334155;
+            --footer-heading-color: #94a3b8;
             --footer-link-color: #94a3b8;
-            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
-            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
+            --footer-link-hover-color: #f1f5f9;
+            --footer-copyright-color: #475569;
             --footer-desc-color: #64748b;
         --static-h1-border: 3px solid #0d34f8;
             
@@ -97,9 +97,9 @@
             --scrollbar-thumb-color: #333333;
             --back-to-top-bg: #0b3bf9;
             --back-to-top-icon-color: #ffffff;
-            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
-            --back-to-top-radius: ;
-            --back-to-top-size: ;
+            --back-to-top-shadow: 0 4px 10px rgba(208,0,0,0.4);
+            --back-to-top-radius: 50%;
+            --back-to-top-size: 40px;
         }
 
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -269,7 +269,7 @@
             .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
         }
 
-        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
+        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: #ffffff; letter-spacing: -1px; }
         .f-desc { color: var(--footer-desc-color); 
     font-size: 0.85rem; 
     line-height: 1.6; 
@@ -296,11 +296,11 @@
         @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
     </style>
-<style>#live-section, #upcoming-container, #grouped-container { display: none !important; }</style></head>
+</head>
 <body>
     <header class="h-layout-standard">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(0,0,0,0)"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(208, 0, 0, 0.3);"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
@@ -309,20 +309,10 @@
 
     <main class="container">
         <!-- DYNAMIC H1 for Static Page -->
-        <h1 class="static-h1">DMCA Policy</h1>
+        <h1 class="static-h1"></h1>
 
         <!-- Content -->
-        <div class="seo-article"><p>Welcome to&nbsp;<strong>Sportsurge</strong>, your go-to destination for live sports schedules and streaming links! We are dedicated to providing sports enthusiasts with the latest match schedules and access to freely available streaming links for major sporting events, including&nbsp;<strong><a href="https://sportsurge.shop/NCAA/">NCAA</a>, NBA, Soccer, WWE, Boxing,&nbsp;<a href="https://sportsurge.shop/UFC/">MMA</a>, F1, and more</strong>.</p>
-<h3><strong>Our Mission</strong></h3>
-<p>At&nbsp;<strong>Sportsurge</strong>, our goal is to help sports fans find the best free streaming options available on the internet. We understand the excitement of watching live games, and we strive to make it easier for users to access their favorite sports matches without hassle.</p>
-<h3><strong>How We Work</strong></h3>
-<p>We do&nbsp;<strong>not</strong>&nbsp;host or store any video content or streaming media on our website. Instead, we gather publicly available streaming links from third-party websites and embed them to share with our audience. Our platform functions as an aggregator, ensuring that sports lovers can conveniently find streams that are already freely accessible on the internet.</p>
-<h3><strong>Copyright &amp;&nbsp;<a href="https://sportsurge.shop/disclaimer/">Disclaimer</a></strong></h3>
-<p>We&nbsp;<strong>strictly</strong>&nbsp;advise our users to watch matches through legal streaming platforms and avoid any copyrighted content. While we do not host any videos or streams ourselves, the links provided on our platform lead to third-party sources that may host the streams. If you have concerns regarding copyright materials, we recommend checking the&nbsp;<strong>embed link</strong>&nbsp;from the page's source code and reaching out to the original video hosting website for resolution.</p>
-<p>Additionally, any advertisements displayed inside the media player&nbsp;<strong>do not belong to us</strong>. The ad revenue generated within the video player is solely managed by the site that originally hosted the video.</p>
-<h3><strong>Your Responsibility</strong></h3>
-<p>By using&nbsp;<strong>Sportsurge</strong>, you acknowledge that we are not responsible for any copyright issues related to the embedded streams. We encourage all users to support official broadcasting platforms and watch their favorite sports through legitimate services whenever possible.</p>
-<p>For any inquiries, feel free to contact us. Enjoy the game, and stay updated with&nbsp;<strong><a href="https://sportsurge.shop/">Sportsurge</a></strong>!&nbsp;</p></div>
+        <div class="seo-article"></div>
 
         <!-- Footer Leagues -->
         <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
@@ -333,7 +323,7 @@
 
     <footer class="">
         <!-- Dynamic Grid injected by Python based on Admin slots -->
-        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div><div class="f-desc">Hello world</div></div><div class="f-desc">Hello world</div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div></div>
+        <div class="footer-grid cols-3"><div class="f-brand"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div><div class="f-desc">Hello world</div></div><div><div class="f-head">Quick Links</div><div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div></div><div></div></div>
         
         <div class="copyright">Copyright</div>
     </footer>
