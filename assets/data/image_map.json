@@ -2479,7 +2479,10 @@
         "Dhakshineswar Suresh": "assets/logos/upstreams/dhakshineswar-suresh.webp",
         "Zumra Balkan": "assets/logos/upstreams/zumra-balkan.webp",
         "Alexandra Shubladze": "assets/logos/upstreams/alexandra-shubladze.webp",
-        "Macedonia de North": "assets/logos/upstreams/macedonia-de-north.webp"
+        "Macedonia de North": "assets/logos/upstreams/macedonia-de-north.webp",
+        "Zlin B": "assets/logos/upstreams/zlin-b.webp",
+        "India": "assets/logos/upstreams/india.webp",
+        "New Zealand": "assets/logos/upstreams/new-zealand.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2705,6 +2708,8 @@
         "NHL Hockey": "assets/logos/leagues/nhl-hockey.webp",
         "Cricket NZ Super Smash": "assets/logos/leagues/cricket-nz-super-smash.webp",
         "NBA Basketball": "assets/logos/leagues/nba-basketball.webp",
-        "3. Liga": "assets/logos/leagues/3-liga.webp"
+        "3. Liga": "assets/logos/leagues/3-liga.webp",
+        "New Zealand in India, 3 ODI Series": "assets/logos/leagues/new-zealand-in-india-3-odi-series.webp",
+        "Saudi Professional League": "assets/logos/leagues/saudi-professional-league.webp"
     }
 }
