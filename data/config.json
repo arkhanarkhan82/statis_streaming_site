@@ -422,14 +422,16 @@
         "schedule": true,
         "faq_list": [],
         "website": true,
-        "faq": false
+        "faq": false,
+        "about": false
       },
       "title": "No. #1 Streaming Website",
       "layout": "home",
       "meta_title": "Best site",
       "meta_desc": "Best meta",
       "meta_keywords": "gfchbcg,gdgd,gfhfg",
-      "canonical_url": "https://streameast.com"
+      "canonical_url": "https://streameast.com",
+      "h1_align": "left"
     },
     {
       "id": "p_1766332109964",
