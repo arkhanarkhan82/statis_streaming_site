@@ -2561,7 +2561,12 @@
         "Sao Paulo": "assets/logos/streamed/sao-paulo.webp",
         "S\u00e3o Bernardo": "assets/logos/streamed/s\u00e3o-bernardo.webp",
         "Al Khaleej Saihat": "assets/logos/streamed/al-khaleej-saihat.webp",
-        "Al Okhdood": "assets/logos/streamed/al-okhdood.webp"
+        "Al Okhdood": "assets/logos/streamed/al-okhdood.webp",
+        "Neom SC": "assets/logos/upstreams/neom-sc.webp",
+        "FC St Pauli": "assets/logos/upstreams/fc-st-pauli.webp",
+        "Ras Beograd (W)": "assets/logos/upstreams/ras-beograd-w.webp",
+        "Atlas Paphos (W)": "assets/logos/upstreams/atlas-paphos-w.webp",
+        "Madison Keys": "assets/logos/upstreams/madison-keys.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
