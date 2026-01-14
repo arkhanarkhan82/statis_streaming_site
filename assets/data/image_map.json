@@ -2432,7 +2432,17 @@
         "Tanvi Sharma": "assets/logos/upstreams/tanvi-sharma.webp",
         "Zhiyi Wang": "assets/logos/upstreams/zhiyi-wang.webp",
         "Cheuk Yiu Lee": "assets/logos/upstreams/cheuk-yiu-lee.webp",
-        "Matthew Thomson": "assets/logos/upstreams/matthew-thomson.webp"
+        "Matthew Thomson": "assets/logos/upstreams/matthew-thomson.webp",
+        "Mirassol U20": "assets/logos/upstreams/mirassol-u20.webp",
+        "Cruzeiro MG U20": "assets/logos/upstreams/cruzeiro-mg-u20.webp",
+        "Ponte Preta U20": "assets/logos/upstreams/ponte-preta-u20.webp",
+        "Chiangrai United": "assets/logos/upstreams/chiangrai-united.webp",
+        "Prime Bangkok": "assets/logos/upstreams/prime-bangkok.webp",
+        "Chapecoense U20": "assets/logos/upstreams/chapecoense-u20.webp",
+        "Ferroviaria SP U20": "assets/logos/upstreams/ferroviaria-sp-u20.webp",
+        "XV de Jau U20": "assets/logos/upstreams/xv-de-jau-u20.webp",
+        "Guarani SP U20": "assets/logos/upstreams/guarani-sp-u20.webp",
+        "Alize Lim": "assets/logos/upstreams/alize-lim.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2654,6 +2664,8 @@
         "Bahrain - Premier League": "assets/logos/leagues/bahrain-premier-league.webp",
         "Mineiro M\u00f3dulo I ": "assets/logos/leagues/mineiro-m\u00f3dulo-i.webp",
         "Costa Rica - Primera Division - Clausura": "assets/logos/leagues/costa-rica-primera-division-clausura.webp",
-        "Latvian Hockey League": "assets/logos/leagues/latvian-hockey-league.webp"
+        "Latvian Hockey League": "assets/logos/leagues/latvian-hockey-league.webp",
+        "NHL Hockey": "assets/logos/leagues/nhl-hockey.webp",
+        "Cricket NZ Super Smash": "assets/logos/leagues/cricket-nz-super-smash.webp"
     }
 }
