@@ -2543,7 +2543,13 @@
         "Bombada": "assets/logos/upstreams/bombada.webp",
         "Boca Juniors": "assets/logos/upstreams/boca-juniors.webp",
         "Minas": "assets/logos/upstreams/minas.webp",
-        "EAU U23": "assets/logos/upstreams/eau-u23.webp"
+        "EAU U23": "assets/logos/upstreams/eau-u23.webp",
+        "Anadolu Efes SK": "assets/logos/streamed/anadolu-efes-sk.webp",
+        "Bayern M\u00fcnchen Basketball": "assets/logos/streamed/bayern-m\u00fcnchen-basketball.webp",
+        "Panathinaikos BC": "assets/logos/streamed/panathinaikos-bc.webp",
+        "Maccabi Tel Aviv BC": "assets/logos/streamed/maccabi-tel-aviv-bc.webp",
+        "BC \u017dalgiris": "assets/logos/streamed/bc-\u017ealgiris.webp",
+        "KK Crvena zvezda": "assets/logos/streamed/kk-crvena-zvezda.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
