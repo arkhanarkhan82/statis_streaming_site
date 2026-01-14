@@ -2506,7 +2506,11 @@
         "Tapiolan Honka II": "assets/logos/upstreams/tapiolan-honka-ii.webp",
         "Pantterit": "assets/logos/upstreams/pantterit.webp",
         "Franca": "assets/logos/upstreams/franca.webp",
-        "Universidad de Concepcion": "assets/logos/upstreams/universidad-de-concepcion.webp"
+        "Universidad de Concepcion": "assets/logos/upstreams/universidad-de-concepcion.webp",
+        "AZ Hav\u00ed\u0159ov": "assets/logos/upstreams/az-hav\u00ed\u0159ov.webp",
+        "HC Spartak Uhersky Brod": "assets/logos/upstreams/hc-spartak-uhersky-brod.webp",
+        "Olle Wallin": "assets/logos/upstreams/olle-wallin.webp",
+        "Oscar Brown": "assets/logos/upstreams/oscar-brown.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
