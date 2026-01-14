@@ -6,11 +6,12 @@ import re
 # 1. CONFIGURATION
 # ==========================================
 CONFIG_PATH = 'data/config.json'
-TEMPLATE_MASTER = 'assets/master_template.html'
-TEMPLATE_WATCH = 'assets/watch_template.html'
-TEMPLATE_LEAGUE = 'assets/league_template.html'
-TEMPLATE_PAGE = 'assets/page_template.html'
-OUTPUT_DIR = '.' 
+# Renamed to match the calls in main()
+TEMPLATE_PATH = 'assets/master_template.html'
+WATCH_TEMPLATE_PATH = 'assets/watch_template.html'
+LEAGUE_TEMPLATE_PATH = 'assets/league_template.html'
+PAGE_TEMPLATE_PATH = 'assets/page_template.html'
+OUTPUT_DIR = '.'
 
 # ==========================================
 # 2. UTILS
