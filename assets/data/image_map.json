@@ -2594,7 +2594,9 @@
         "Georgia": "assets/logos/streamed/georgia.webp",
         "Mississippi": "assets/logos/streamed/mississippi.webp",
         "Western Kentucky": "assets/logos/streamed/western-kentucky.webp",
-        "Missouri State": "assets/logos/streamed/missouri-state.webp"
+        "Missouri State": "assets/logos/streamed/missouri-state.webp",
+        "Southern Methodist": "assets/logos/streamed/southern-methodist.webp",
+        "Pacific": "assets/logos/streamed/pacific.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
