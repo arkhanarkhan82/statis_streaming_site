@@ -2566,7 +2566,14 @@
         "FC St Pauli": "assets/logos/upstreams/fc-st-pauli.webp",
         "Ras Beograd (W)": "assets/logos/upstreams/ras-beograd-w.webp",
         "Atlas Paphos (W)": "assets/logos/upstreams/atlas-paphos-w.webp",
-        "Madison Keys": "assets/logos/upstreams/madison-keys.webp"
+        "Madison Keys": "assets/logos/upstreams/madison-keys.webp",
+        "H Raanana": "assets/logos/upstreams/h-raanana.webp",
+        "Partizan Mozzart Bet": "assets/logos/upstreams/partizan-mozzart-bet.webp",
+        "IF Bjorkloven": "assets/logos/upstreams/if-bjorkloven.webp",
+        "MoDo Hockey": "assets/logos/upstreams/modo-hockey.webp",
+        "AIK": "assets/logos/upstreams/aik.webp",
+        "Ostersund": "assets/logos/upstreams/ostersund.webp",
+        "Vimmerby": "assets/logos/upstreams/vimmerby.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2798,6 +2805,8 @@
         "One Day International": "assets/logos/leagues/one-day-international.webp",
         "U23 AFC Asian Cup, Knockout stage": "assets/logos/leagues/u23-afc-asian-cup-knockout-stage.webp",
         "Champions League America - Gr.C": "assets/logos/leagues/champions-league-america-grc.webp",
-        "AFC - Cup Asiei U23 - Playoff": "assets/logos/leagues/afc-cup-asiei-u23-playoff.webp"
+        "AFC - Cup Asiei U23 - Playoff": "assets/logos/leagues/afc-cup-asiei-u23-playoff.webp",
+        "Basketball Euroleague": "assets/logos/leagues/basketball-euroleague.webp",
+        "Sweden HockeyAllsvenskan": "assets/logos/leagues/sweden-hockeyallsvenskan.webp"
     }
 }
