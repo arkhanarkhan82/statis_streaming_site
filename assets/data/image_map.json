@@ -2614,7 +2614,10 @@
         "Feirense": "assets/logos/upstreams/feirense.webp",
         "Porto B": "assets/logos/upstreams/porto-b.webp",
         "Petrolul PloiEasti": "assets/logos/upstreams/petrolul-ploieasti.webp",
-        "Universitatea Craiova": "assets/logos/upstreams/universitatea-craiova.webp"
+        "Universitatea Craiova": "assets/logos/upstreams/universitatea-craiova.webp",
+        "Pierre-Hugues Herbert": "assets/logos/upstreams/pierre-hugues-herbert.webp",
+        "Wu Yibing": "assets/logos/upstreams/wu-yibing.webp",
+        "Coleman Wong": "assets/logos/upstreams/coleman-wong.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2848,6 +2851,7 @@
         "Champions League America - Gr.C": "assets/logos/leagues/champions-league-america-grc.webp",
         "AFC - Cup Asiei U23 - Playoff": "assets/logos/leagues/afc-cup-asiei-u23-playoff.webp",
         "Basketball Euroleague": "assets/logos/leagues/basketball-euroleague.webp",
-        "Sweden HockeyAllsvenskan": "assets/logos/leagues/sweden-hockeyallsvenskan.webp"
+        "Sweden HockeyAllsvenskan": "assets/logos/leagues/sweden-hockeyallsvenskan.webp",
+        "Tennis": "assets/logos/leagues/tennis.webp"
     }
 }
