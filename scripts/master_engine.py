@@ -935,14 +935,19 @@ def build_footer_grid(config, active_theme):
 # 7. BUILDERS
 # ==============================================================================
 def build_homepage(matches):
-    print(" > Building Homepage...")
-    try:
-        with open(TEMPLATE_MASTER, 'r', encoding='utf-8') as f: tpl = f.read()
-    except: return
+    print(" > Injecting matches into Homepage...")
+    
+    # 1. Read the EXISTING index.html (Created by build_site.py)
+    if not os.path.exists('index.html'):
+        print(" ! Error: index.html not found. Run build_site.py first.")
+        return
+        
+    with open('index.html', 'r', encoding='utf-8') as f:
+        html = f.read()
 
+    # 2. Filter Matches
     live_matches = sorted([m for m in matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
     
-    # 24H Rule for Homepage (Except Wildcard)
     now_ms = time.time() * 1000
     one_day = 24 * 60 * 60 * 1000
     
@@ -951,171 +956,174 @@ def build_homepage(matches):
     
     used_ids = set(m['id'] for m in live_matches)
 
-    live_html = render_container(live_matches, THEME.get('text_live_section_title'), '🔴', None, True)
+    # 3. Generate HTML Fragments (Only Content)
+    
+    # Live Section
+    live_html = render_container(live_matches, THEME.get('text_live_section_title', 'Trending Live'), '🔴', None, True)
 
+    # Wildcard or Top 5
     wc_cat = THEME.get('wildcard_category', '').lower()
     wc_active = len(wc_cat) > 2
     wc_html = ""
     top5_html = ""
 
     if wc_active:
-        # Wildcard can show beyond 24h
         wc_m = [m for m in upcoming_full if wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()]
         for m in wc_m: used_ids.add(m['id'])
-        wc_html = render_container(wc_m, THEME.get('text_wildcard_title'), '🔥', None)
+        wc_html = render_container(wc_m, THEME.get('text_wildcard_title', 'Featured'), '🔥', None)
     else:
         top5 = []
-        used_leagues_in_top5 = set()
-        
+        used_leagues = set()
         for m in upcoming_full:
             if len(top5) >= 5: break
+            if m['id'] in used_ids or (m['timestamp'] - now_ms >= one_day): continue
             
-            # Skip if ID used or outside 24h window
-            if m['id'] in used_ids or (m['timestamp'] - now_ms >= one_day):
-                continue
+            # Simple diversity check
+            l_key = m['league'] or m['sport']
+            if l_key in used_leagues: continue
             
-            # Diversity Check: Ensure we haven't added this league yet
-            # Use league name, fallback to sport if league is empty
-            l_key = m['league'] if m['league'] else m['sport']
-            
-            if l_key in used_leagues_in_top5:
-                continue
-                
-            # Add to list
             top5.append(m)
             used_ids.add(m['id'])
-            used_leagues_in_top5.add(l_key)
-            
-        top5_html = render_container(top5, THEME.get('text_top_upcoming_title'), '📅', None)
+            used_leagues.add(l_key)
+        top5_html = render_container(top5, THEME.get('text_top_upcoming_title', 'Top Upcoming'), '📅', None)
 
+    # Grouped Section
     grouped_html = ""
-    
     for key, settings in PRIORITY_SETTINGS.items():
         if key.startswith('_') or settings.get('isHidden'): continue
         
-        # 24H Filter for Homepage Groups
         grp = [m for m in upcoming_full if m['id'] not in used_ids and 
                (key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()) and 
                (m['timestamp'] - now_ms < one_day)]
         
         if grp:
             for m in grp: used_ids.add(m['id'])
-            
             logo = get_logo(key, 'leagues')
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
-            
             grouped_html += render_container(grp, key, icon, link)
 
-    if not PRIORITY_SETTINGS.get('_HIDE_OTHERS'):
-        other_matches = [m for m in upcoming_full if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
-        if other_matches:
-            grouped_html += render_container(other_matches[:10], "Upcoming Other", "⚽", None)
-
-    home_data = next((p for p in config.get('pages', []) if p['slug'] == 'home'), {})
-    html = apply_theme_to_template(tpl, home_data)
+    # 4. INJECTION (Regex Replace)
+    # We look for the specific ID containers and replace ONLY their inner content
     
+    # Inject Live
+    if live_html:
+        html = re.sub(r'(<div id="live-section-container"[^>]*>).*?(</div>)', f'\\1{live_html}\\2', html, flags=re.DOTALL)
+        # Ensure wrapper is visible
+        html = html.replace('id="live-content-wrapper" style="display:none;"', 'id="live-content-wrapper"') 
+    else:
+        html = re.sub(r'(<div id="live-section-container"[^>]*>).*?(</div>)', '\\1\\2', html, flags=re.DOTALL)
+        # Hide wrapper if empty
+        html = html.replace('id="live-content-wrapper"', 'id="live-content-wrapper" style="display:none;"')
+
+    # Inject Wildcard
+    html = re.sub(r'(<div id="wildcard-section-container"[^>]*>).*?(</div>)', f'\\1{wc_html}\\2', html, flags=re.DOTALL)
+    
+    # Inject Top 5
+    html = re.sub(r'(<div id="top5-section-container"[^>]*>).*?(</div>)', f'\\1{top5_html}\\2', html, flags=re.DOTALL)
+    
+    # Inject Grouped
+    html = re.sub(r'(<div id="grouped-section-container"[^>]*>).*?(</div>)', f'\\1{grouped_html}\\2', html, flags=re.DOTALL)
+
+    # Remove Skeletons (CSS logic usually handles this, but good to clean up)
     html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
-    html = html.replace('style="display:none;"', '')
-    html = html.replace('<div id="live-content-wrapper" style="display:none;">', '<div id="live-content-wrapper">')
 
-    if live_html:
-        html = re.sub(r'<div id="live-section-container".*?</div>', f'<div id="live-section-container">{live_html}</div>', html, flags=re.DOTALL)
-    else:
-        html = re.sub(r'<div id="live-section-container".*?</div>', '<div id="live-section-container" style="display:none"></div>', html, flags=re.DOTALL)
-
-    html = re.sub(r'<div id="wildcard-section-container".*?</div>', f'<div id="wildcard-section-container">{wc_html}</div>' if wc_html else '<div id="wildcard-section-container" style="display:none"></div>', html, flags=re.DOTALL)
-    html = re.sub(r'<div id="top5-section-container".*?</div>', f'<div id="top5-section-container">{top5_html}</div>' if top5_html else '<div id="top5-section-container" style="display:none"></div>', html, flags=re.DOTALL)
-    html = re.sub(r'<div id="grouped-section-container".*?</div>', f'<div id="grouped-section-container">{grouped_html}</div>' if grouped_html else '<div id="grouped-section-container" style="display:none"></div>', html, flags=re.DOTALL)
-
-    # Schema
-    schema = json.dumps({
+    # Update Schema (Optional but recommended for SEO freshness)
+    schema_data = {
         "@context": "https://schema.org", "@type": "ItemList",
         "itemListElement": [{
-            "@type": "SportsEvent", "name": f"{m['home']} vs {m['away']}" if not m['is_single'] else m['home'],
+            "@type": "SportsEvent", 
+            "name": f"{m['home']} vs {m['away']}" if not m['is_single'] else m['home'],
             "startDate": datetime.fromtimestamp(m['timestamp']/1000).isoformat(),
             "url": f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
         } for m in (live_matches + upcoming_full)[:20]]
-    })
-    html = html.replace('{{SCHEMA_BLOCK}}', f'<script type="application/ld+json">{schema}</script>')
+    }
+    # Regex to find the schema script and replace it
+    html = re.sub(r'(<script type="application/ld\+json">).*?(</script>)', f'\\1{json.dumps(schema_data)}\\2', html, flags=re.DOTALL)
 
+    # 5. Save
     with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
 
 def inject_watch_page(matches):
-    if not os.path.exists('watch/index.html'): return
-    with open('watch/index.html', 'r', encoding='utf-8') as f: html = f.read()
-    html = html.replace('// {{INJECTED_MATCH_DATA}}', f'window.MATCH_DATA = {json.dumps(matches)};')
-    with open('watch/index.html', 'w', encoding='utf-8') as f: f.write(html)
-
-def inject_leagues(matches):
-    # 1. Load the Master League Template ONCE
-    if not os.path.exists(TEMPLATE_LEAGUE):
-        print(" ! Error: League template not found.")
+    print(" > Injecting matches into Watch Page...")
+    target_file = 'watch/index.html'
+    
+    # 1. Check if file exists (Created by build_site.py)
+    if not os.path.exists(target_file):
+        print(f" ! Watch page not found at {target_file}")
         return
 
-    with open(TEMPLATE_LEAGUE, 'r', encoding='utf-8') as f:
-        tpl_master = f.read()
+    # 2. Read File
+    with open(target_file, 'r', encoding='utf-8') as f:
+        html = f.read()
 
-    print(" > Updating League Pages...")
+    # 3. Prepare injection data
+    # We inject the full list so the JS frontend can handle routing/display
+    data_string = f"window.MATCH_DATA = {json.dumps(matches)};"
+
+    # 4. Regex Injection
+    # This regex looks for EITHER:
+    # A) The initial placeholder comment: // {{INJECTED_MATCH_DATA}}
+    # B) OR An existing variable assignment: window.MATCH_DATA = [...];
+    # This ensures it works immediately after build_site.py AND on subsequent updates.
+    pattern = r'(//\s*\{\{INJECTED_MATCH_DATA\}\}|window\.MATCH_DATA\s*=\s*\[.*?\];)'
+    
+    if re.search(pattern, html, flags=re.DOTALL):
+        html = re.sub(pattern, data_string, html, flags=re.DOTALL)
+        
+        # 5. Save
+        with open(target_file, 'w', encoding='utf-8') as f:
+            f.write(html)
+        print("   - Watch data updated.")
+    else:
+        print("   ! Injection marker not found in watch page.")
+
+def inject_leagues(matches):
+    print(" > Injecting matches into League Pages...")
 
     for key, settings in PRIORITY_SETTINGS.items():
         if key.startswith('_'): continue
         
         slug = slugify(key) + "-streams"
-        out_dir = os.path.join(OUTPUT_DIR, slug)
-        out_path = os.path.join(out_dir, 'index.html')
+        target_file = os.path.join(OUTPUT_DIR, slug, 'index.html')
         
-        # Only update if the folder exists (Fixes existing pages)
-        if not os.path.exists(out_dir): continue
+        # 1. Check if file exists (Created by build_site.py)
+        if not os.path.exists(target_file): 
+            continue
 
-        # 2. Filter Matches for this League
-        # REQUIREMENT: Full Schedule (No 24h limit)
+        # 2. Filter Matches
         l_matches = [m for m in matches if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower()]
         l_live = sorted([m for m in l_matches if m['is_live']], key=lambda x: x.get('score',0), reverse=True)
         l_upc = [m for m in l_matches if not m['is_live']]
         l_upc.sort(key=lambda x: x['timestamp'])
 
-        # 3. Prepare Page Data
-        # We construct specific metadata for this league
-        p_data = {
-            'meta_title': settings.get('meta_title', f"{key} Live Streams & Schedule"),
-            'meta_desc': settings.get('meta_desc', f"Watch {key} live streams free. Full schedule, HD links and live scores."),
-            'h1_title': settings.get('h1_title', f"{key} Streams"),
-            'hero_text': settings.get('hero_text', f"The best place to watch {key} matches live."),
-            'upcoming_title': f"Upcoming {key}",
-            'canonical_url': f"https://{DOMAIN}/{slug}/"
-        }
+        # 3. Read File
+        with open(target_file, 'r', encoding='utf-8') as f:
+            html = f.read()
 
-        # 4. Apply Theme to Fresh Template
-        html = apply_theme_to_template(tpl_master, p_data)
-
-        # 5. Inject LIVE Section
-        # We replace the entire <div id="live-list"> block
+        # 4. Inject LIVE Section
         if l_live:
-            # Render the full container (Box + Header)
             live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
-            html = re.sub(r'<div id="live-list".*?>.*?</div>', f'<div id="live-list">{live_content}</div>', html, flags=re.DOTALL)
+            # Replace inner content of #live-list
+            html = re.sub(r'(<div id="live-list"[^>]*>).*?(</div>)', f'\\1{live_content}\\2', html, flags=re.DOTALL)
+            # Show the section container
+            html = html.replace('id="live-section" style="display:none;"', 'id="live-section"')
         else:
-            # Hide it
-            html = re.sub(r'<div id="live-list".*?>.*?</div>', '<div id="live-list" style="display:none;"></div>', html, flags=re.DOTALL)
+            # Empty the list
+            html = re.sub(r'(<div id="live-list"[^>]*>).*?(</div>)', '\\1\\2', html, flags=re.DOTALL)
+            # Hide the section container
+            html = html.replace('id="live-section"', 'id="live-section" style="display:none;"')
 
-        # 6. Inject UPCOMING Section
-        # Template has <div id="schedule-list"></div>. We inject ONLY the rows.
+        # 5. Inject UPCOMING Section
+        # Matches <div id="schedule-list">...</div>
         rows_html = "".join([render_match_row(m, key) for m in l_upc]) if l_upc else '<div class="match-row" style="justify-content:center;">No upcoming matches found.</div>'
-        html = html.replace('<div id="schedule-list"></div>', f'<div id="schedule-list">{rows_html}</div>')
+        html = re.sub(r'(<div id="schedule-list"[^>]*>).*?(</div>)', f'\\1{rows_html}\\2', html, flags=re.DOTALL)
 
-        # 7. Optional: Update League Icon in Header
-        logo_url = get_logo(key, 'leagues')
-        if not logo_url.startswith('fallback'):
-            # Replace the 📅 icon with the actual league logo
-            img_tag = f'<img src="{logo_url}" style="width:24px; height:24px; object-fit:contain; margin-right:8px;">'
-            html = re.sub(r'<span id="upcoming-logo-container".*?>.*?</span>', img_tag, html)
-
-        # 8. Overwrite the File
-        with open(out_path, 'w', encoding='utf-8') as f: f.write(html)
-        print(f"   - Rebuilt {slug}")
+        # 6. Save
+        with open(target_file, 'w', encoding='utf-8') as f: f.write(html)
+        print(f"   - Updated {slug}")
 
 # ==============================================================================
 # 8. MAIN EXECUTION
