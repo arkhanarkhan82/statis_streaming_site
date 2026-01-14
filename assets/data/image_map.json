@@ -2610,7 +2610,11 @@
         "Caen Calvados": "assets/logos/upstreams/caen-calvados.webp",
         "Hyeres Toulon": "assets/logos/upstreams/hyeres-toulon.webp",
         "Roanne": "assets/logos/upstreams/roanne.webp",
-        "Achilles Belkovics": "assets/logos/upstreams/achilles-belkovics.webp"
+        "Achilles Belkovics": "assets/logos/upstreams/achilles-belkovics.webp",
+        "Feirense": "assets/logos/upstreams/feirense.webp",
+        "Porto B": "assets/logos/upstreams/porto-b.webp",
+        "Petrolul PloiEasti": "assets/logos/upstreams/petrolul-ploieasti.webp",
+        "Universitatea Craiova": "assets/logos/upstreams/universitatea-craiova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
