@@ -1006,29 +1006,27 @@ def build_homepage(matches):
     # 4. INJECTION (Regex Replace)
     # We look for the specific ID containers and replace ONLY their inner content
     
+    # 4. INJECTION (Regex Replace using Markers)
+    # This safely replaces everything between START and END comments
+    
     # Inject Live
     if live_html:
-        html = re.sub(r'(<div id="live-section-container"[^>]*>).*?(</div>)', f'\\1{live_html}\\2', html, flags=re.DOTALL)
-        # Ensure wrapper is visible
-        html = html.replace('id="live-content-wrapper" style="display:none;"', 'id="live-content-wrapper"') 
+        html = re.sub(r'<!-- LIVE_START -->.*?<!-- LIVE_END -->', f'<!-- LIVE_START -->{live_html}<!-- LIVE_END -->', html, flags=re.DOTALL)
+        # Handle wrapper visibility (simple string replace is fine here)
+        html = html.replace('id="live-content-wrapper" style="display:none;"', 'id="live-content-wrapper"')
     else:
-        html = re.sub(r'(<div id="live-section-container"[^>]*>).*?(</div>)', '\\1\\2', html, flags=re.DOTALL)
-        # Hide wrapper if empty
+        # Clear content but keep markers
+        html = re.sub(r'<!-- LIVE_START -->.*?<!-- LIVE_END -->', '<!-- LIVE_START --><!-- LIVE_END -->', html, flags=re.DOTALL)
         html = html.replace('id="live-content-wrapper"', 'id="live-content-wrapper" style="display:none;"')
 
     # Inject Wildcard
-    html = re.sub(r'(<div id="wildcard-section-container"[^>]*>).*?(</div>)', f'\\1{wc_html}\\2', html, flags=re.DOTALL)
+    html = re.sub(r'<!-- WC_START -->.*?<!-- WC_END -->', f'<!-- WC_START -->{wc_html}<!-- WC_END -->', html, flags=re.DOTALL)
     
     # Inject Top 5
-    html = re.sub(r'(<div id="top5-section-container"[^>]*>).*?(</div>)', f'\\1{top5_html}\\2', html, flags=re.DOTALL)
+    html = re.sub(r'<!-- TOP5_START -->.*?<!-- TOP5_END -->', f'<!-- TOP5_START -->{top5_html}<!-- TOP5_END -->', html, flags=re.DOTALL)
     
     # Inject Grouped
-    html = re.sub(r'(<div id="grouped-section-container"[^>]*>).*?(</div>)', f'\\1{grouped_html}\\2', html, flags=re.DOTALL)
-
-    # Remove Skeletons (CSS logic usually handles this, but good to clean up)
-    html = re.sub(r'<div id="live-sk-head".*?</div>', '', html, flags=re.DOTALL)
-    html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
-    html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
+    html = re.sub(r'<!-- GROUPED_START -->.*?<!-- GROUPED_END -->', f'<!-- GROUPED_START -->{grouped_html}<!-- GROUPED_END -->', html, flags=re.DOTALL)
 
     # Update Schema (Optional but recommended for SEO freshness)
     # Update Schema (Optional but recommended for SEO freshness)
@@ -1116,20 +1114,16 @@ def inject_leagues(matches):
         # 4. Inject LIVE Section
         if l_live:
             live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
-            # Replace inner content of #live-list
-            html = re.sub(r'(<div id="live-list"[^>]*>).*?(</div>)', f'\\1{live_content}\\2', html, flags=re.DOTALL)
-            # Show the section container
-            html = html.replace('id="live-section" style="display:none;"', 'id="live-section"')
+            html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', f'<!-- L_LIVE_START -->{live_content}<!-- L_LIVE_END -->', html, flags=re.DOTALL)
+            html = html.replace('id="live-list" style="display:none;"', 'id="live-list"')
         else:
-            # Empty the list
-            html = re.sub(r'(<div id="live-list"[^>]*>).*?(</div>)', '\\1\\2', html, flags=re.DOTALL)
-            # Hide the section container
-            html = html.replace('id="live-section"', 'id="live-section" style="display:none;"')
+            html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', '<!-- L_LIVE_START --><!-- L_LIVE_END -->', html, flags=re.DOTALL)
+            html = html.replace('id="live-list"', 'id="live-list" style="display:none;"')
 
         # 5. Inject UPCOMING Section
-        # Matches <div id="schedule-list">...</div>
         rows_html = "".join([render_match_row(m, key) for m in l_upc]) if l_upc else '<div class="match-row" style="justify-content:center;">No upcoming matches found.</div>'
-        html = re.sub(r'(<div id="schedule-list"[^>]*>).*?(</div>)', f'\\1{rows_html}\\2', html, flags=re.DOTALL)
+        
+        html = re.sub(r'<!-- L_SCHED_START -->.*?<!-- L_SCHED_END -->', f'<!-- L_SCHED_START -->{rows_html}<!-- L_SCHED_END -->', html, flags=re.DOTALL)
 
         # 6. Save
         with open(target_file, 'w', encoding='utf-8') as f: f.write(html)
