@@ -1031,6 +1031,7 @@ def build_homepage(matches):
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
 
     # Update Schema (Optional but recommended for SEO freshness)
+    # Update Schema (Optional but recommended for SEO freshness)
     schema_data = {
         "@context": "https://schema.org", "@type": "ItemList",
         "itemListElement": [{
@@ -1041,7 +1042,13 @@ def build_homepage(matches):
         } for m in (live_matches + upcoming_full)[:20]]
     }
     # Regex to find the schema script and replace it
-    html = re.sub(r'(<script type="application/ld\+json">).*?(</script>)', f'\\1{json.dumps(schema_data)}\\2', html, flags=re.DOTALL)
+    # FIX: Use lambda to prevent "bad escape \u" error from JSON unicode characters
+    html = re.sub(
+        r'(<script type="application/ld\+json">).*?(</script>)', 
+        lambda m: f"{m.group(1)}{json.dumps(schema_data)}{m.group(2)}", 
+        html, 
+        flags=re.DOTALL
+    )
 
     # 5. Save
     with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
