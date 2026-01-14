@@ -2529,7 +2529,21 @@
         "HC Ambr\u00ec-Piotta": "assets/logos/upstreams/hc-ambr\u00ec-piotta.webp",
         "Daphnee M.Perricard": "assets/logos/upstreams/daphnee-mperricard.webp",
         "Mondo Basket (W)": "assets/logos/upstreams/mondo-basket-w.webp",
-        "Sturm Graz": "assets/logos/upstreams/sturm-graz.webp"
+        "Sturm Graz": "assets/logos/upstreams/sturm-graz.webp",
+        "Kiryat Shmona": "assets/logos/upstreams/kiryat-shmona.webp",
+        "Bagdala (W)": "assets/logos/upstreams/bagdala-w.webp",
+        "Nibak (W)": "assets/logos/upstreams/nibak-w.webp",
+        "ZKK Karaburma (W)": "assets/logos/upstreams/zkk-karaburma-w.webp",
+        "Sloga Pozega (W)": "assets/logos/upstreams/sloga-pozega-w.webp",
+        "Academic Plovdiv": "assets/logos/upstreams/academic-plovdiv.webp",
+        "Botev 2012 Vratsa": "assets/logos/upstreams/botev-2012-vratsa.webp",
+        "Omonia": "assets/logos/upstreams/omonia.webp",
+        "AEK Larnaca": "assets/logos/upstreams/aek-larnaca.webp",
+        "Greater Tomorrow": "assets/logos/upstreams/greater-tomorrow.webp",
+        "Bombada": "assets/logos/upstreams/bombada.webp",
+        "Boca Juniors": "assets/logos/upstreams/boca-juniors.webp",
+        "Minas": "assets/logos/upstreams/minas.webp",
+        "EAU U23": "assets/logos/upstreams/eau-u23.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -2759,6 +2773,8 @@
         "New Zealand in India, 3 ODI Series": "assets/logos/leagues/new-zealand-in-india-3-odi-series.webp",
         "Saudi Professional League": "assets/logos/leagues/saudi-professional-league.webp",
         "One Day International": "assets/logos/leagues/one-day-international.webp",
-        "U23 AFC Asian Cup, Knockout stage": "assets/logos/leagues/u23-afc-asian-cup-knockout-stage.webp"
+        "U23 AFC Asian Cup, Knockout stage": "assets/logos/leagues/u23-afc-asian-cup-knockout-stage.webp",
+        "Champions League America - Gr.C": "assets/logos/leagues/champions-league-america-grc.webp",
+        "AFC - Cup Asiei U23 - Playoff": "assets/logos/leagues/afc-cup-asiei-u23-playoff.webp"
     }
 }
