@@ -2596,7 +2596,20 @@
         "Western Kentucky": "assets/logos/streamed/western-kentucky.webp",
         "Missouri State": "assets/logos/streamed/missouri-state.webp",
         "Southern Methodist": "assets/logos/streamed/southern-methodist.webp",
-        "Pacific": "assets/logos/streamed/pacific.webp"
+        "Pacific": "assets/logos/streamed/pacific.webp",
+        "Texas Tech": "assets/logos/streamed/texas-tech.webp",
+        "Utah": "assets/logos/streamed/utah.webp",
+        "KTP Kotka": "assets/logos/upstreams/ktp-kotka.webp",
+        "Korikobrat": "assets/logos/upstreams/korikobrat.webp",
+        "Poitiers 86": "assets/logos/upstreams/poitiers-86.webp",
+        "ASA": "assets/logos/upstreams/asa.webp",
+        "Hermine Nantes": "assets/logos/upstreams/hermine-nantes.webp",
+        "Blois": "assets/logos/upstreams/blois.webp",
+        "Aix Maurienne Savoie": "assets/logos/upstreams/aix-maurienne-savoie.webp",
+        "SPO Rouen": "assets/logos/upstreams/spo-rouen.webp",
+        "Caen Calvados": "assets/logos/upstreams/caen-calvados.webp",
+        "Hyeres Toulon": "assets/logos/upstreams/hyeres-toulon.webp",
+        "Roanne": "assets/logos/upstreams/roanne.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
