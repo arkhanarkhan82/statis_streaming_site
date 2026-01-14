@@ -2586,7 +2586,15 @@
         "Pustertal Wolfe": "assets/logos/upstreams/pustertal-wolfe.webp",
         "KAC Klagenfurt": "assets/logos/upstreams/kac-klagenfurt.webp",
         "Zkk Proleter Novi Sad (W)": "assets/logos/upstreams/zkk-proleter-novi-sad-w.webp",
-        "Rudar 1903 (W)": "assets/logos/upstreams/rudar-1903-w.webp"
+        "Rudar 1903 (W)": "assets/logos/upstreams/rudar-1903-w.webp",
+        "Cincinnati": "assets/logos/streamed/cincinnati.webp",
+        "Colorado": "assets/logos/streamed/colorado.webp",
+        "LSU": "assets/logos/streamed/lsu.webp",
+        "Kentucky": "assets/logos/streamed/kentucky.webp",
+        "Georgia": "assets/logos/streamed/georgia.webp",
+        "Mississippi": "assets/logos/streamed/mississippi.webp",
+        "Western Kentucky": "assets/logos/streamed/western-kentucky.webp",
+        "Missouri State": "assets/logos/streamed/missouri-state.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
