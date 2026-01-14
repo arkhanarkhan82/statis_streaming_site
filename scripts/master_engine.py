@@ -648,7 +648,7 @@ def build_homepage(matches):
         
         if other_matches:
             # Removed limit ([:10]) and removed icon (None)
-            grouped_html += render_container(other_matches, "Upcoming Other", 🏆, None)
+            grouped_html += render_container(other_matches, "Upcoming Other", "🏆", None)
 
     # Injection with Markers
     if live_html:
