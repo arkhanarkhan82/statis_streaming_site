@@ -631,6 +631,14 @@ def build_homepage(matches):
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
             grouped_html += render_container(grp, key, icon, link)
+            # RESTORED: Upcoming Other Section
+    if not PRIORITY_SETTINGS.get('_HIDE_OTHERS'):
+        # Filter: Not used yet AND starts within 24 hours
+        other_matches = [m for m in upcoming_full if m['id'] not in used_ids and (m['timestamp'] - now_ms < one_day)]
+        
+        if other_matches:
+            # Removed limit ([:10]) and removed icon (None)
+            grouped_html += render_container(other_matches, "Upcoming Other", None, None)
 
     # Injection with Markers
     if live_html:
