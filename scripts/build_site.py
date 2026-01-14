@@ -53,7 +53,23 @@ def build_menu_html(menu_items, section):
         elif section == 'hero':
             html += f'<a href="{url}" class="cat-pill">{title}</a>'
         elif section == 'footer_leagues':
-            html += f'<a href="{url}" class="league-card"><span class="l-icon">🏆</span><span>{title}</span></a>'
+            # Restore Emoji Logic
+            icon = "🏆"
+            t_low = title.lower()
+            if "soccer" in t_low or "premier" in t_low or "liga" in t_low: icon = "⚽"
+            elif "nba" in t_low or "basket" in t_low: icon = "🏀"
+            elif "nfl" in t_low or "football" in t_low: icon = "🏈"
+            elif "mlb" in t_low or "baseball" in t_low: icon = "⚾"
+            elif "ufc" in t_low or "boxing" in t_low: icon = "🥊"
+            elif "f1" in t_low or "motor" in t_low: icon = "🏎️"
+            elif "cricket" in t_low: icon = "🏏"
+            elif "rugby" in t_low: icon = "🏉"
+            elif "tennis" in t_low: icon = "🎾"
+            elif "golf" in t_low: icon = "⛳"
+            elif "hockey" in t_low or "nhl" in t_low: icon = "🏒"
+            
+            # Use specific CSS class for styling
+            html += f'<a href="{url}" class="league-card"><span class="l-icon">{icon}</span><span>{title}</span></a>'
         elif section == 'footer_static':
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
@@ -214,7 +230,31 @@ def render_page(template, config, page_data, theme_override=None):
         'sec_border_league_upcoming_width': '1', 'sec_border_league_upcoming_color': '#334155',
         
         'skeleton_gradient_start': '#1e293b', 'skeleton_gradient_mid': '#334155', 'skeleton_gradient_end': '#1e293b', # RESTORED
-        'skeleton_border_color': '#334155', 
+        'skeleton_border_color': '#334155',
+        'social_sidebar_bg': 'rgba(15, 23, 42, 0.8)',
+        'social_sidebar_border': '#334155',
+        'social_sidebar_shadow': '0 4px 10px rgba(0,0,0,0.3)',
+        'social_btn_bg': 'rgba(30, 41, 59, 0.8)',
+        'social_btn_border': '#334155',
+        'social_btn_color': '#94a3b8',
+        'social_btn_hover_bg': '#1e293b',
+        'social_btn_hover_border': '#D00000',
+        'social_btn_hover_transform': 'translateX(5px)',
+        'social_count_color': '#64748b',
+        'mobile_footer_bg': 'rgba(5, 5, 5, 0.9)',
+        'mobile_footer_border_top': '1px solid #334155',
+        'mobile_footer_shadow': '0 -4px 10px rgba(0,0,0,0.5)',
+        'mobile_footer_height': '60px',
+        
+        # League Cards
+        'league_card_bg': 'rgba(30, 41, 59, 0.5)',
+        'league_card_text': '#f1f5f9',
+        'league_card_border_width': '1',
+        'league_card_border_color': '#334155',
+        'league_card_radius': '6',
+        'league_card_hover_bg': '#1e293b',
+        'league_card_hover_text': '#ffffff',
+        'league_card_hover_border_color': '#D00000',
 
         # 12. Match Row (Static Styling)
         'match_row_bg': '#1e293b', 'match_row_border': '#334155', 
@@ -286,15 +326,17 @@ def render_page(template, config, page_data, theme_override=None):
         theme['sys_status_bg_color'] = hex_to_rgba(s_bg_hex, s_bg_op)
 
     theme['sys_status_display'] = 'inline-flex' if theme.get('sys_status_visible', True) else 'none'
+    # Calculate values first to ensure fallbacks
+    h1_text = page_data.get('h1_title') or page_data.get('title') or ""
+    hero_txt = page_data.get('hero_text') or page_data.get('meta_desc') or ""
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
         'META_TITLE': page_data.get('meta_title', ''),
         'META_DESC': page_data.get('meta_desc', ''),
-        'H1_TITLE': page_data.get('h1_title', ''),
+        'H1_TITLE': h1_text, # Updated
         'H1_ALIGN': page_data.get('h1_align', theme.get('static_h1_align', 'left')),
-        'HERO_TEXT': page_data.get('hero_text', ''),
-        'ARTICLE_CONTENT': page_data.get('article', ''),
+        'HERO_TEXT': hero_txt, # Updated
         'FOOTER_COPYRIGHT': s.get('footer_copyright', ''),
         'THEME_TEXT_SYS_STATUS': theme.get('text_sys_status', 'System Status: Online'),
         'LOGO_PRELOAD': f'<link rel="preload" as="image" href="{s.get("logo_url")}" fetchpriority="high">' if s.get('logo_url') else '',
@@ -421,8 +463,19 @@ def render_page(template, config, page_data, theme_override=None):
     html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
     html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
     
-    # Cleaning up placeholders that Master Engine will fill
-    html = html.replace('{{LEAGUE_ARTICLE}}', '')
+    # --- ARTICLE CONTENT LOGIC ---
+    raw_content = page_data.get('content') or page_data.get('article') or ''
+    
+    if not raw_content or raw_content.strip() == "":
+        # If content is empty, try to remove the container to avoid empty spacing
+        html = html.replace('<div class="seo-article">{{ARTICLE_CONTENT}}</div>', '')
+        html = html.replace('<article class="seo-article">\n            {{LEAGUE_ARTICLE}}\n        </article>', '')
+        # Fallback cleanup
+        html = html.replace('{{ARTICLE_CONTENT}}', '') 
+        html = html.replace('{{LEAGUE_ARTICLE}}', '')
+    else:
+        html = html.replace('{{ARTICLE_CONTENT}}', raw_content)
+
     html = html.replace('{{SCHEMA_BLOCK}}', '')
 
     return html
