@@ -228,12 +228,43 @@
         .back-to-top.show { opacity: 1; }
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
-        .social-sidebar { position: fixed; left: 0; top: var(--social-desktop-top); transform: translateY(-50%) scale(var(--social-desktop-scale)); z-index: 90; display: flex; flex-direction: column; gap: 8px; background: var(--social-sidebar-bg); border: 1px solid var(--social-sidebar-border); border-left: none; padding: 12px 8px; border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; box-shadow: var(--social-sidebar-shadow); backdrop-filter: blur(5px); }
-        .social-btn { width: 44px; padding: 6px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--social-btn-color); background: var(--social-btn-bg); border: 1px solid var(--social-btn-border); border-radius: var(--border-radius-base); cursor: pointer; transition:0.2s; }
-        .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
-        .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
-        .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
-        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; } .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; }
+         /* SOCIALS */
+        .social-sidebar { 
+            position: fixed; 
+            left: {{THEME_SOCIAL_DESK_LEFT}}; /* Use dynamic left */
+            top: {{THEME_SOCIAL_DESK_TOP}};   /* Changed DESKTOP to DESK */
+            transform: translateY(-50%) scale({{THEME_SOCIAL_DESK_SCALE}}); /* Changed DESKTOP to DESK */
+            z-index: 90; 
+            display: flex; flex-direction: column; gap: 8px; 
+            background: var(--soc-sidebar-bg); 
+            border: 1px solid var(--soc-sidebar-border); 
+            border-left: none; padding: 12px 8px; 
+            border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; 
+            box-shadow: var(--soc-sidebar-shadow); 
+            backdrop-filter: blur(5px); 
+        }
+        .social-btn { 
+            width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
+            align-items: center; justify-content: center; gap: 3px; 
+            color: var(--soc-btn-color); background: var(--soc-btn-bg); 
+            border: 1px solid var(--soc-btn-border); border-radius: var(--border-radius-base); 
+            will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
+            cursor: pointer; 
+        }
+        .social-btn svg { width: 20px; height: 20px; fill: currentColor; display: block; }
+        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } 
+        .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; }
+        .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } 
+        .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; } 
+        .social-btn.copy { color: var(--soc-btn-color); }
+        
+        .social-btn:hover { 
+            background: var(--soc-btn-hover-bg); 
+            border-color: var(--soc-btn-hover-border); 
+            transform: var(--soc-btn-hover-transform); 
+            box-shadow: 0 4px 10px var(--soc-btn-shadow); 
+        }
+        .s-count { font-size: 0.65rem; font-weight: 700; color: var(--soc-count); letter-spacing: 0.3px; }
         @media (max-width: 1024px) { .social-sidebar { display: none; } }
         
         .mobile-sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--mobile-footer-bg); backdrop-filter: blur(10px); border-top: var(--mobile-footer-border-top); padding: 0 5px; display: none; justify-content: space-between; align-items: center; z-index: 900; height: var(--mobile-footer-height); box-shadow: var(--mobile-footer-shadow); }
