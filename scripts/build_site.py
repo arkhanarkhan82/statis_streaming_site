@@ -421,9 +421,17 @@ def render_page(template, config, page_data, theme_override=None):
     }
 
     # Inject Theme Variables
+    # Inject Theme Variables (With JS Boolean Safety)
     for k, v in theme.items():
         placeholder = f"{{{{THEME_{k.upper()}}}}}"
-        html = html.replace(placeholder, str(v))
+        
+        # Convert Python Booleans to JS lowercase strings
+        if v is True: safe_val = "true"
+        elif v is False: safe_val = "false"
+        elif v is None: safe_val = ""
+        else: safe_val = str(v)
+        
+        html = html.replace(placeholder, safe_val)
 
     for k, v in replacements.items():
         html = html.replace(f"{{{{{k}}}}}", str(v))
