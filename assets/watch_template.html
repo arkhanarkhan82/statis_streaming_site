@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="robots" content="index, follow"> 
     
+    <!-- OPTIMIZATION: Defer Supabase to unblock rendering -->
+    
     <link rel="icon" href="{{FAVICON}}">
     <link rel="canonical" href="{{CANONICAL_URL}}">
     {{LOGO_PRELOAD}}
@@ -134,7 +136,7 @@
             --w-srv-text: {{THEME_WATCH_SERVER_TEXT}};
         }
 
-        /* --- CSS RESET & BASE --- */
+        /* --- BASE --- */
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: 14px; overflow-x: hidden; padding-bottom: 80px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
@@ -156,9 +158,9 @@
         .sk-article { width: 100%; height: 400px; margin-top: 20px; } 
         .mh-sk-full { width: 100%; height: 100%; border-radius: var(--border-radius-base); background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); }
         .sk-mobile-ad { display: none; width: 100%; height: 90px; margin-bottom: 20px; border-radius: var(--border-radius-base); }
+        @media (max-width: 1000px) { .sk-mobile-ad { display: block; } }
         .sk-table-body { width: 100%; height: 400px; margin-top: 0; border-top: none; border-radius: 0 0 var(--border-radius-base) var(--border-radius-base); }
         .hidden-load { display: none !important; }
-        @media (max-width: 1000px) { .sk-mobile-ad { display: block; } }
 
         /* --- HEADER --- */
         header { background: var(--header-bg); backdrop-filter: blur(10px); border-bottom: var(--header-border-bottom); height: 60px; width: 100%; position: relative; z-index: 100; }
@@ -194,55 +196,88 @@
         .f-desc { color: var(--footer-desc-color); font-size: 0.85rem; line-height: 1.6; max-width: 400px; margin: 0 auto; }
         @media(min-width: 768px) { .f-desc { margin: 0; } }
         .f-links { display: flex; flex-direction: column; gap: 12px; }
-        .f-link { color: var(--footer-link-color); font-size: 0.9rem; font-weight: 500; transition: 0.2s; }
+        .f-link { color: var(--footer-link-color); font-size: 0.9rem; font-weight: 500; }
         .f-link:hover { color: var(--footer-link-hover-color); transform: var(--footer-link-hover-transform); }
         .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
         .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
 
-        /* --- WATCH PAGE LAYOUT --- */
+        /* --- WATCH PAGE LAYOUT (Grid Area System) --- */
         .watch-container { max-width: 900px; margin: 0 auto; padding: 20px 15px; display: block; width: 100%; }
         
+        /* Desktop Mode */
         .watch-container.active-mode {
             max-width: 1600px !important; 
             width: 98%; 
             display: grid; 
-            grid-template-areas: "sidebar-left main sidebar-right" "sidebar-left article sidebar-right";
+            /* Define Areas for Left Sidebar, Main Content, Right Sidebar, and Article (under Main) */
+            grid-template-areas: 
+                "sidebar-left main sidebar-right"
+                "sidebar-left article sidebar-right";
             grid-template-columns: 300px 1fr 340px; 
             gap: 15px; 
             align-items: start;
         }
 
-        .sidebar-left { grid-area: sidebar-left; width: 100%; }
-        .sidebar-right { grid-area: sidebar-right; width: 100%; background: var(--bg-panel); border: 1px solid var(--border); border-radius: var(--border-radius-base); overflow: hidden; height: 600px; min-height: 0; }
+        /* GRID ASSIGNMENTS */
+        .sidebar-left { grid-area: sidebar-left; }
+        .sidebar-right { grid-area: sidebar-right; }
         .layout-main { grid-area: main; min-width: 0; }
-        .article-section-wrapper { grid-area: article; display: block; width: 100%; margin-top: 20px; min-width: 0; }
+        
+        .article-section-wrapper { 
+            grid-area: article; 
+            display: block; 
+            width: 100%; 
+            margin-top: 20px;
+            min-width: 0; 
+        }
 
+        /* SWAP SIDEBARS: Rearrange Areas & Widths */
         .watch-container.swap-sidebars {
-            grid-template-areas: "sidebar-right main sidebar-left" "sidebar-right article sidebar-left";
+            grid-template-areas: 
+                "sidebar-right main sidebar-left"
+                "sidebar-right article sidebar-left";
+            /* Right is usually Chat (Wider), Left is Ad (Narrower). Swap widths. */
             grid-template-columns: 340px 1fr 300px; 
         }
 
+        /* SIDEBAR STYLES */
         .layout-sidebar { position: -webkit-sticky; position: sticky; top: 70px; height: calc(100vh - 80px); display: none; flex-direction: column; gap: 10px; }
         .layout-sidebar.active { display: flex; }
+        
+        .sidebar-left { width: 100%; } /* Width controlled by Grid */
+        .sidebar-right { width: 100%; background: var(--bg-panel); border: 1px solid var(--border); border-radius: var(--border-radius-base); overflow: hidden; height: 600px; min-height: 0; }
 
         /* ELEMENTS */
         .mobile-top-ad { width: 100%; height: 90px; background: #000; margin-bottom: 20px; display: none; align-items: center; justify-content: center; color: #444; border: 1px solid var(--border); border-radius: var(--border-radius-base); }
         .ad-box { width: 300px; height: 250px; background: #000; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem; border: 1px solid var(--border); border-radius: var(--border-radius-base); flex-shrink: 0; margin: 0 auto; }
 
-        /* Vis Helper */
-        aside.layout-sidebar.hide-ad1 div#real-left-ad1, aside.layout-sidebar.hide-ad1 div#sk-left-ad1 { display: none !important; }
-        aside.layout-sidebar.hide-ad2 div#real-left-ad2, aside.layout-sidebar.hide-ad2 div#sk-left-ad2 { display: none !important; }
-        aside.layout-sidebar.hide-discord a#real-left-disc, aside.layout-sidebar.hide-discord div#sk-left-disc { display: none !important; }
+        /* VISIBILITY UTILITIES (Force Hide) */
+        aside.layout-sidebar.hide-ad1 div#real-left-ad1,
+        aside.layout-sidebar.hide-ad1 div#sk-left-ad1 { display: none !important; }
 
+        aside.layout-sidebar.hide-ad2 div#real-left-ad2,
+        aside.layout-sidebar.hide-ad2 div#sk-left-ad2 { display: none !important; }
+
+        aside.layout-sidebar.hide-discord div#real-left-disc,
+        aside.layout-sidebar.hide-discord div#sk-left-disc { display: none !important; }
+
+        /* MOBILE RESPONSIVE */
         @media (max-width: 1300px) { 
-            .watch-container.active-mode, .watch-container.swap-sidebars { 
-                grid-template-areas: "main sidebar-right" "article sidebar-right";
+            .watch-container.active-mode, 
+            .watch-container.swap-sidebars { 
+                grid-template-areas: 
+                    "main sidebar-right"
+                    "article sidebar-right";
                 grid-template-columns: 1fr 340px; 
             }
             .sidebar-left { display: none !important; } 
         }
+        
         @media (max-width: 1000px) { 
-            .watch-container.active-mode, .watch-container.swap-sidebars { display: flex; flex-direction: column; } 
+            .watch-container.active-mode,
+            .watch-container.swap-sidebars { 
+                display: flex; flex-direction: column; 
+            } 
             .sidebar-left .sk-ad { display: none !important; }
             .mobile-top-ad { display: flex; order: 1; }
             .layout-main { order: 2; width: 100%; }
@@ -252,22 +287,37 @@
             .layout-sidebar { height: auto; }
         }
 
-        /* INFO CARD */
+        /* --- INFO HEADER --- */
         .info-card { background: var(--bg-panel); border: 1px solid var(--w-table-border); border-radius: var(--w-table-radius); padding: 0; margin-top: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; }
-        .mh-fixed-container { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); height: 150px; border-bottom: 1px solid var(--w-table-border); background: var(--w-table-head-bg); }
+        
+        .mh-fixed-container {
+            display: grid; 
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr);
+            height: 150px; border-bottom: 1px solid var(--w-table-border);
+            background: var(--w-table-head-bg);
+        }
+
+        /* SINGLE TEAM MODE HEADER STYLES */
         .mh-fixed-container.single-mode { grid-template-columns: 1fr; }
-        .mh-fixed-container.single-mode .mh-home, .mh-fixed-container.single-mode .mh-away { display: none !important; }
+        .mh-fixed-container.single-mode .mh-home,
+        .mh-fixed-container.single-mode .mh-away { display: none !important; }
         .mh-fixed-container.single-mode .mh-center { padding-top: 15px; justify-content: flex-start; }
         .single-logo-wrapper { width: 45px; height: 45px; margin: 5px auto 5px auto; border-radius: 50%; }
         .single-logo-img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }
 
         .mh-col { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; position: relative; height: 100%; width: 100%; }
         .mh-center { text-align: center; z-index: 2; gap: 8px; }
+        
         .mh-team-logo { width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.3s ease-in; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }
         .mh-team-logo.loaded { opacity: 1; }
         .logo-wrapper { width: 28px; height: 28px; margin-top: 8px; position: relative; border-radius: 50%; }
         
-        .mh-team-name-sm { font-size: var(--w-team-size); font-weight: 700; color: var(--w-team-color); text-align: center; line-height: 1.2; width: 100%; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; padding: 0 4px; }
+        .mh-team-name-sm { 
+            font-size: var(--w-team-size); font-weight: 700; color: var(--w-team-color); 
+            text-align: center; line-height: 1.2; width: 100%; overflow: hidden; 
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+            word-wrap: break-word; word-break: break-word; hyphens: auto; padding: 0 4px; 
+        }
         .mh-team-name-lg { font-size: var(--w-team-size); font-weight: 800; color: var(--w-team-color); text-align: center; text-transform: uppercase; font-family: var(--font-family-headings); }
         
         @media (min-width: 768px) { 
@@ -278,6 +328,7 @@
             .logo-wrapper { width: 45px; height: 45px; }
         }
         .mh-vs { font-size: calc(var(--w-vs-size) * 0.8); min-height: 40px; display: block; font-weight: 900; color: var(--w-vs-color); margin: 0; line-height: 1.2; font-family: var(--font-family-headings); }
+
         .mh-league { font-size: 0.7rem; font-weight: 700; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 1px; margin: 0; }
         .mh-timer { font-size: 0.9rem; font-weight: 700; color: var(--text-muted); margin: 0; background: rgba(0,0,0,0.3); padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); }
         .mh-timer.live { color: #ef4444; border-color: #ef4444; animation: pulse 2s infinite; }
@@ -296,9 +347,10 @@
         .copy-link-btn { width: 50px; display: flex; align-items: center; justify-content: center; background: var(--bg-panel); border: 1px solid var(--border); color: var(--text-main); border-radius: var(--button-border-radius); cursor: pointer; transition: 0.2s; }
         .copy-link-btn:hover { border-color: var(--brand-primary); color: var(--brand-primary); }
 
-        /* STREAM CONTROLS */
+        /* --- STREAM CONTROL & DISCORD --- */
         .player-container { background: #000; border-radius: var(--border-radius-base); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; padding-top: 56.25%; }
         .player-frame { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        
         .stream-controls { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px; align-items: flex-start; justify-content: space-between; }
         .server-area { flex: 1; min-width: 250px; }
         .server-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; display: block; }
@@ -308,12 +360,13 @@
         .srv-btn.active { background: var(--w-srv-active-bg); border-color: var(--w-srv-active-bg); color: #fff; }
         .srv-toggle { background: transparent; border: 1px dashed var(--border); color: var(--text-muted); font-size: 0.8rem; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-top: 5px; display: none; width: 100%; }
         .srv-toggle:hover { color: #fff; border-color: var(--text-muted); }
+        
         .info-btn-area { width: 100%; max-width: 200px; display: flex; justify-content: flex-end; }
         .info-goto-btn { background: var(--w-info-btn-bg); color: var(--w-info-btn-text); border: 1px solid var(--w-table-border); padding: 10px 15px; border-radius: var(--button-border-radius); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: 0.2s; width: 100%; text-align: center; }
         .info-goto-btn:hover { background: var(--w-info-btn-hover); }
         @media (max-width: 600px) { .stream-controls { flex-direction: column; } .info-btn-area { max-width: 100%; } }
 
-        /* DISCORD */
+        /* DISCORD WIDGET */
         .discord-box { background: #5865F2; color: #fff; border-radius: var(--border-radius-base); padding: 10px; display: flex; align-items: center; justify-content: space-between; transition: 0.2s; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); height: 70px; max-width: 300px; width: 100%; margin: 0 auto; box-sizing: border-box;}
         .discord-box:hover { background: #4752C4; transform: translateY(-2px); }
         .dc-left { display: flex; align-items: center; gap: 12px; }
@@ -322,7 +375,7 @@
         .dc-text p { margin: 2px 0 0 0; font-size: 0.75rem; opacity: 0.9; }
         .dc-btn { background: #fff; color: #5865F2; font-size: 0.8rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; white-space: nowrap; }
 
-        /* CHAT */
+        /* --- CHAT --- */
         .chat-header { padding: 10px; background: var(--chat-header-bg); color: var(--chat-header-text); border-bottom: 1px solid var(--border); font-weight: 700; font-size: 0.9rem; display: flex; justify-content: space-between; align-items: center; }
         .chat-wrapper { display: flex; flex-direction: column; height: 100%; position: relative; background: var(--bg-panel); }
         .chat-messages { flex: 1; overflow-y: hidden; padding: 10px; display: flex; flex-direction: column; gap: 8px; transition: 0.3s; }
@@ -344,7 +397,7 @@
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .dummy-msg { animation: slideIn 0.3s ease forwards; }
 
-        /* UTILS */
+        /* --- UTILS --- */
         .seo-article { background: var(--article-bg); color: var(--article-text); line-height: var(--article-line-height); padding: 20px; border-radius: var(--border-radius-base); }
         .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
         .seo-article p { margin-bottom: 15px; }
@@ -376,9 +429,12 @@
         .error-box { text-align: center; padding: 40px; border: 1px solid var(--border); background: rgba(239,68,68,0.1); color: #fca5a5; border-radius: var(--border-radius-base); margin-top: 20px; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
         
+        /* FOOTER LEAGUES */
         #footer-leagues-section { display: block; }
+        /* When in stream mode, keep it visible (as requested) but hide article */
         .stream-mode #footer-leagues-section { display: block !important; margin-top: 30px; }
         .stream-mode #seo-article-container { display: none !important; }
+        
         #stream-h1 { font-family: var(--font-family-headings); }
     </style>
 </head>
@@ -577,8 +633,7 @@
     </button>
 
     <script>
-        const API_URL = "{{API_URL}}";
-        // --- MOVED TO TOP to prevent ReferenceError if injection breaks ---
+        // --- 1. CONFIGURATION (Moved to Top) ---
         const PARAM_LIVE = "{{PARAM_LIVE}}"; 
         const PARAM_INFO = "{{PARAM_INFO}}";
         const TARGET_COUNTRY = "{{TARGET_COUNTRY}}";
@@ -588,19 +643,13 @@
         const SUPA_URL = "{{SUPABASE_URL}}";
         const SUPA_KEY = "{{SUPABASE_KEY}}"; 
         
-        // --- INJECTION POINT MOVED DOWN ---
+        // --- 2. MATCH DATA INJECTION (By Master Engine) ---
         // {{INJECTED_MATCH_DATA}}
-        // ----------------------------------
+        // --------------------------------------------------
         
         const LEAGUE_MAP = {{JS_LEAGUE_MAP}}; 
         const IMAGE_MAP = {{JS_IMAGE_MAP}};
         const SHARE_CONFIG = { counts: { telegram: 1240, whatsapp: 850, reddit: 340, twitter: 510 } };
-        const NAME_FIXES = {
-            "icehockey": "Ice Hockey", "fieldhockey": "Field Hockey", "tabletennis": "Table Tennis", 
-            "americanfootball": "American Football", "australianfootball": "AFL", "basketball": "Basketball", 
-            "football": "Football", "soccer": "Soccer", "baseball": "Baseball", "fighting": "Fighting", 
-            "mma": "MMA", "boxing": "Boxing", "motorsport": "Motorsport", "golf": "Golf"
-        };
 
         const W_CONFIG = {
             sidebar_swap: {{THEME_WATCH_SIDEBAR_SWAP}}, 
@@ -759,29 +808,28 @@
             const mhContainer = document.getElementById('mhFixed');
             const singleLogoCont = document.getElementById('singleLogoContainer');
 
-            // --- FIX: Define the missing image URL helper ---
-            const getImgUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
-
             const hLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.home];
             const aLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.away];
+            
+            // --- FIX: ADDED MISSING HELPER ---
+            const getImgUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
 
             if (m.isSingleEvent) {
                 mhContainer.classList.add('single-mode');
                 hCol.innerHTML = ''; aCol.innerHTML = '';
                 centerH1.innerText = m.home; centerH1.style.fontSize = "1.5rem"; 
-                if (hLogo) { 
-                    singleLogoCont.style.display = 'block'; 
-                    singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; 
-                }
+                if (hLogo) { singleLogoCont.style.display = 'block'; singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; }
                 document.getElementById('tr-home').style.display = 'none'; document.getElementById('tr-away').style.display = 'none';
                 const sRow = document.getElementById('tr-single');
                 if(sRow) { sRow.style.display = 'table-row'; document.getElementById('tbl-event').innerText = m.home; }
             } else {
                 mhContainer.classList.remove('single-mode'); singleLogoCont.style.display = 'none';
                 
-                hCol.innerHTML = hLogo ? `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>` : `<div class="mh-team-name-lg">${m.home}</div>`;
+                if(hLogo) hCol.innerHTML = `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
+                else hCol.innerHTML = `<div class="mh-team-name-lg">${m.home}</div>`;
                 
-                aCol.innerHTML = aLogo ? `<div class="mh-team-name-sm">${m.away}</div><div class="logo-wrapper"><img src="${getImgUrl(aLogo)}" class="mh-team-logo" alt="${m.away}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>` : `<div class="mh-team-name-lg">${m.away}</div>`;
+                if(aLogo) aCol.innerHTML = `<div class="mh-team-name-sm">${m.away}</div><div class="logo-wrapper"><img src="${getImgUrl(aLogo)}" class="mh-team-logo" alt="${m.away}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
+                else aCol.innerHTML = `<div class="mh-team-name-lg">${m.away}</div>`;
                 
                 centerH1.innerText = "VS";
                 document.getElementById('tr-home').style.display = 'table-row'; document.getElementById('tr-away').style.display = 'table-row';
@@ -888,12 +936,13 @@
 
             const backBtn = document.getElementById('gotoInfoBtn');
             if (backBtn) backBtn.onclick = () => window.location.href = `?${PARAM_INFO}=${currentUrlId}`;
+            revealContent();
         }
 
         function extractHash(str) { return str ? String(str).split('-').pop() : null; }
         function showError(msg) { showView('error'); setText('errorView', msg); }
         function setText(id, txt) { const el = document.getElementById(id); if(el) el.innerText = txt || '--'; }
-        function getSportIcon(n) { n=(n||"").toLowerCase(); if(n.includes('soccer')||n.includes('premier')) return '⚽'; if(n.includes('basket')) return '🏀'; if(n.includes('football')) return '🏈'; if(n.includes('baseball')) return '⚾'; if(n.includes('fight')||n.includes('ufc')) return '🥊'; if(n.includes('motor')) return '🏎️'; return '🏆'; }
+        function getSportIcon(n) { n=(n||"").toLowerCase(); if(n.includes('soccer')||n.includes('premier')) return '⚽'; if(n.includes('basket')) return '🏀'; if(n.includes('football')) return '🏈'; if(n.includes('baseball')) return '⚾'; if(n.includes('fight')||n.includes('ufc')||n.includes('box')) return '🥊'; if(n.includes('motor')||n.includes('f1')) return '🏎️'; return '🏆'; }
         
         function generateArticle(m) { 
             const c = document.getElementById('seo-article-container'); 
@@ -905,9 +954,32 @@
             }
         }
 
+        // --- FIX: ADDED REVEALCONTENT FUNCTION ---
+        function revealContent() {
+            const isMobile = window.innerWidth <= 1000;
+            const skels = ['sk-mobile-top-ad', 'sk-left-ad1', 'sk-left-disc', 'sk-left-ad2', 'sk-chat', 'sk-article', 'sk-info-table-body'];
+            skels.forEach(id => { const el = document.getElementById(id); if(el) el.style.display = 'none'; });
+
+            const alwaysShow = ['real-mobile-top-ad', 'real-left-disc', 'real-chat', 'seo-article-container'];
+            const sidebarAds = ['real-left-ad1', 'real-left-ad2'];
+
+            alwaysShow.forEach(id => { const el = document.getElementById(id); if(el) el.classList.remove('hidden-load'); });
+
+            if (!isMobile) {
+                sidebarAds.forEach(id => { const el = document.getElementById(id); if(el) el.classList.remove('hidden-load'); });
+            } else {
+                sidebarAds.forEach(id => { const el = document.getElementById(id); if(el) el.style.display = 'none'; });
+            }
+        }
+
         function showView(id) { 
-            ['emptyView', 'errorView', 'streamView', 'infoView'].forEach(v => { document.getElementById(v).style.display = 'none'; });
-            document.getElementById(id + 'View').style.display = 'block';
+            ['emptyView', 'errorView', 'streamView', 'infoView'].forEach(v => { 
+                const el = document.getElementById(v); 
+                if(el) { el.classList.add('hidden-load'); el.style.display = 'none'; }
+            });
+            const v = document.getElementById(id + 'View'); 
+            if(v) { v.classList.remove('hidden-load'); v.style.display = 'block'; }
+            
             const isContent = (id === 'stream' || id === 'info');
             const mainContainer = document.querySelector('.watch-container');
             if (isContent) mainContainer.classList.add('active-mode'); else mainContainer.classList.remove('active-mode');
@@ -987,7 +1059,7 @@
                 if(p==='twitter') return `https://twitter.com/intent/tweet?url=${u}`;
                 return null;
             };
-            const icons = { telegram: '<svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.28L19.84 4c.75-.28 1.4.52 1.16 1.76l-2.8 13.2c-.2.9-1.09.9-1.8.6l-5.45-4.06-2.6 2.5c-.3.3-.55.55-1.1.55l.45-3.6z"/></svg>', whatsapp: '<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm4.43-6.03c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3C4.33 8.6 3.5 9.2 3.5 10.38c0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.1.15 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>', reddit: '<svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.22 14.11c-.13.26-.35.45-.6.54-.25.09-.52.1-.78.01-.8-.28-1.76-.43-2.77-.43s-1.97.15-2.77.43c-.26.09-.53.08-.78-.01-.25-.09-.47-.28-.6-.54-.15-.3-.19-.64-.11-.96.08-.32.28-.59.56-.75.9-.53 2.05-.83 3.28-.88l.66-3.11 2.16.46c.04-.2.15-.38.31-.51s.36-.2.55-.17c.2.03.38.15.51.31.13.16.2.36.17.55l-2.16-.46-.66 3.11c1.23.05 2.38.35 3.28.88.28.16.48.43.56.75.08.32.04.66-.11.96zM12 11.25c-.97 0-1.75.78-1.75 1.75s.78 1.75 1.75 1.75 1.75-.78 1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75zm-3.25-2.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25zm6.5 0c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25z"/></svg>', twitter: '<svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>', copy: '<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>' };
+            const icons = { telegram: '<svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.28L19.84 4c.75-.28 1.4.52 1.16 1.76l-2.8 13.2c-.2.9-1.09.9-1.8.6l-5.45-4.06-2.6 2.5c-.3.3-.55.55-1.1.55l.45-3.6z"/></svg>', whatsapp: '<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm4.43-6.03c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3C4.33 8.6 3.5 9.2 3.5 10.38c0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.1.15 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>', reddit: '<svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.22 14.11c-.13.26-.35.45-.6.54-.25.09-.52.1-.78.01-.8-.28-1.76-.43-2.77-.43s-1.97.15-2.77.43c-.26.09-.53.08-.78-.01-.25-.09-.47-.28-.6-.54-.15-.3-.19-.64-.11-.96.08-.32.28-.59.56-.75.9-.53 2.05-.83 3.28-.88l.66-3.11 2.16.46c.04-.2.15-.38.31-.51s.36-.2.55-.17c.2.03.38.15.51.31.13.16.2.36.17.55l-2.16-.46-.66 3.11c1.23.05 2.38.35 3.28.88.28.16.48.43.56.75.08.32.04.66-.11.96zM12 11.25c-.97 0-1.75.78-1.75 1.75s.78 1.75 1.75 1.75 1.75-.78 1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75zm-3.25-2.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25 1.25-1.25-.56-1.25-1.25z"/></svg>', twitter: '<svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>', copy: '<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>' };
             let html = '';
             ['telegram', 'whatsapp', 'reddit', 'twitter', 'copy'].forEach(p => {
                 const count = SHARE_CONFIG.counts[p] ? ((n)=>(n>=1000?(n/1000).toFixed(1)+'k':n))(SHARE_CONFIG.counts[p]) : '';
@@ -1013,32 +1085,33 @@
                 return new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',timeZone:isUK?'Europe/London':'America/New_York'}).format(d);
             } catch(e) { return "--"; }
         }
-        // --- ADD THIS MISSING FUNCTION ---
+        
+        // --- FIX: RESTORED GENERATE SCHEMA ---
         function generateSchema(m) {
-            // 1. Remove duplicate schema if exists
             const oldScript = document.getElementById('dynamic-schema');
             if(oldScript) oldScript.remove();
 
-            // 2. Resolve URLs & Images
             const pageUrl = window.location.href;
-            
-            // Get Logo from the Header Image
             const headerLogoEl = document.querySelector('.logo-img');
             const siteLogo = headerLogoEl ? headerLogoEl.src : (document.querySelector('link[rel="icon"]')?.href || `https://${DOMAIN}/logo.png`);
+            
             const getFullUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
 
-            // 3. Logic: Detect Person vs Team Sport
+            // Time & Status Logic
+            const startTime = new Date(m.timestamp).getTime(); 
+            const durationMs = 180 * 60 * 1000; 
+            const expectedEndTime = new Date(startTime + durationMs).toISOString(); 
+            const eventStatus = m.isLive ? "https://schema.org/EventLive" : "https://schema.org/EventScheduled";
+
+            // Logo Resolution
+            const hLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.home]) ? getFullUrl(IMAGE_MAP.teams[m.home]) : null;
+            const aLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.away]) ? getFullUrl(IMAGE_MAP.teams[m.away]) : null;
+
+            // Logic: Detect Person vs Team
             const personSports = ['tennis', 'tabletennis', 'badminton', 'boxing', 'mma', 'ufc', 'fighting', 'snooker', 'darts', 'wrestling', 'golf'];
             const normSport = (m.sport || "").toLowerCase().replace(/\s/g, '');
             const isPersonSport = personSports.includes(normSport);
 
-            // 4. Calculate End Time (Approximate)
-            const startTime = new Date(m.timestamp).getTime();
-            const durationMs = 180 * 60 * 1000; // Default 3 hours
-            const expectedEndTime = new Date(startTime + durationMs).toISOString();
-            const eventStatus = m.isLive ? "https://schema.org/EventLive" : "https://schema.org/EventScheduled";
-
-            // 5. Build Graph
             const graph = [
                 {
                     "@type": "Organization",
@@ -1065,7 +1138,6 @@
                 }
             ];
 
-            // 6. Define the Event
             const eventName = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
             
             const eventSchema = {
@@ -1077,14 +1149,11 @@
                 "eventStatus": eventStatus,
                 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
                 "sport": m.sport,
+                "competition": { "@type": "SportsOrganization", "name": m.league },
                 "url": pageUrl,
                 "image": [siteLogo], 
                 "organizer": { "@id": `https://${DOMAIN}/#organization` }
             };
-
-            // 7. Handle Competitors
-            const hLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.home]) ? getFullUrl(IMAGE_MAP.teams[m.home]) : null;
-            const aLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.away]) ? getFullUrl(IMAGE_MAP.teams[m.away]) : null;
 
             if (m.isSingleEvent) {
                 const performer = { "@type": "Organization", "name": m.home };
@@ -1107,7 +1176,6 @@
                 eventSchema.awayTeam = t2;
             }
 
-            // 8. Add VideoObject ONLY if Live (BroadcastEvent)
             if (m.isLive) {
                 eventSchema.subjectOf = {
                     "@type": "VideoObject",
@@ -1124,7 +1192,6 @@
 
             graph.push(eventSchema);
 
-            // 9. Inject into Head
             const el = document.createElement('script');
             el.id = 'dynamic-schema';
             el.type = 'application/ld+json';
