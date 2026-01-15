@@ -559,17 +559,25 @@
                 let isStreamMode = !!streamParamVal;
 
                 // --- DATA LOOKUP (No Fetch) ---
-                currentHash = extractHash(activeId);
-                if (!currentHash) { showError("Invalid Match ID."); return; }
+                // --- DATA LOOKUP (No Fetch) ---
+currentHash = extractHash(activeId);
+if (!currentHash) { showError("Invalid Match ID."); return; }
 
-                const allMatches = window.MATCH_DATA || [];
-                // Matches already normalized by Python
-                const normData = allMatches.find(m => m.id === currentHash || m.originalId === currentHash);
-                
-                if (!normData) { showError("Match not found or ended."); return; }
+const allMatches = window.MATCH_DATA || [];
+// Matches already normalized by Python
+const normData = allMatches.find(m => m.id === currentHash || m.originalId === currentHash);
 
-                // Determine Date Strings for UI
-                const d = new Date(normData.startTimeUnix);
+if (!normData) { showError("Match not found or ended."); return; }
+
+// --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
+normData.startTimeUnix = normData.timestamp;       // <<< FIX HERE: Map timestamp
+normData.isSingleEvent = normData.is_single;       // <<< FIX HERE: Map single event logic
+normData.stream_channels = normData.streams || []; // <<< FIX HERE: Map stream list
+// -------------------------------------------------------------
+
+// Determine Date Strings for UI
+// Now normData.startTimeUnix exists because we mapped it above
+const d = new Date(normData.startTimeUnix);
                 const isUK = TARGET_COUNTRY === 'UK';
                 const timeZone = isUK ? 'Europe/London' : 'America/New_York';
                 const timeStr = new Intl.DateTimeFormat('en-US', {hour:'numeric',minute:'2-digit',hour12:true,timeZone}).format(d) + (isUK?' GMT':' ET');
