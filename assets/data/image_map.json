@@ -2959,7 +2959,17 @@
         "Afghanistan": "assets/logos/streamed/afghanistan.webp",
         "Nacional SP U20": "assets/logos/upstreams/nacional-sp-u20.webp",
         "ALM Evreux": "assets/logos/upstreams/alm-evreux.webp",
-        "Orleans Loiret": "assets/logos/upstreams/orleans-loiret.webp"
+        "Orleans Loiret": "assets/logos/upstreams/orleans-loiret.webp",
+        "Parma W": "assets/logos/streamed/parma-w.webp",
+        "AC Milan W": "assets/logos/streamed/ac-milan-w.webp",
+        "Pyramids": "assets/logos/upstreams/pyramids.webp",
+        "Petrojet": "assets/logos/upstreams/petrojet.webp",
+        "Al Ahly": "assets/logos/upstreams/al-ahly.webp",
+        "El Gaish": "assets/logos/upstreams/el-gaish.webp",
+        "Peli-Karhut II (W)": "assets/logos/upstreams/peli-karhut-ii-w.webp",
+        "Al-Wakrah": "assets/logos/upstreams/al-wakrah.webp",
+        "Al Duhail": "assets/logos/upstreams/al-duhail.webp",
+        "Mumbai Indians W": "assets/logos/upstreams/mumbai-indians-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3238,6 +3248,7 @@
         "USA - NBA": "assets/logos/leagues/usa-nba.webp",
         "Liga Portugal Betclic": "assets/logos/leagues/liga-portugal-betclic.webp",
         "Finland - Division 1A": "assets/logos/leagues/finland-division-1a.webp",
-        "ICC U19 World Cup": "assets/logos/leagues/icc-u19-world-cup.webp"
+        "ICC U19 World Cup": "assets/logos/leagues/icc-u19-world-cup.webp",
+        "Stars League": "assets/logos/leagues/stars-league.webp"
     }
 }
