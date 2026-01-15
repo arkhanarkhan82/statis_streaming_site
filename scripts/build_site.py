@@ -370,6 +370,7 @@ def render_page(template, config, page_data, theme_override=None):
     replacements = {
         'META_TITLE': page_data.get('meta_title', ''),
         'META_DESC': page_data.get('meta_desc', ''),
+        'META_KEYWORDS': f'<meta name="keywords" content="{page_data.get("meta_keywords")}">' if page_data.get("meta_keywords") else '', # <--- ADDED
         'H1_TITLE': h1_text, # Updated
         'H1_ALIGN': page_data.get('h1_align', theme.get('static_h1_align', 'left')),
         'HERO_TEXT': hero_txt, # Updated
@@ -566,9 +567,25 @@ def main():
         elif layout == 'page':
             final_template = page_template_content
             active_theme_override = theme_page_conf 
+            # RESTORED: Full Page Data Construction including Keywords and Schemas
+        p_data = {
+            'title': page.get('title'),
+            'meta_title': page.get('meta_title'),
+            'meta_desc': page.get('meta_desc'),
+            'meta_keywords': page.get('meta_keywords', ''), # Restored
+            'h1_title': page.get('title'),
+            'h1_align': page.get('h1_align'),
+            'hero_text': page.get('meta_desc'), # Fallback hero text
+            'content': page.get('content'),     # This is the Article/Body content
+            'article': page.get('content'),     # Alias for compatibility
+            'canonical_url': page.get('canonical_url') or (f"https://{config['site_settings']['domain']}/{slug}/" if slug != 'home' else f"https://{config['site_settings']['domain']}/"),
+            'slug': slug,
+            'layout': layout,
+            'schemas': page.get('schemas', {})  # Restored Schema Config
+        }
         
         # Render
-        final_html = render_page(final_template, config, page, theme_override=active_theme_override)
+        final_html = render_page(final_template, config, p_data, theme_override=active_theme_override)
         
         out_dir = os.path.join(OUTPUT_DIR, slug) if slug != 'home' else OUTPUT_DIR
         os.makedirs(out_dir, exist_ok=True)
