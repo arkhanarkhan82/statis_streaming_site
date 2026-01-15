@@ -2898,7 +2898,15 @@
         "Allen M.": "assets/logos/upstreams/allen-m.webp",
         "Bianca Elena Barbulescu": "assets/logos/upstreams/bianca-elena-barbulescu.webp",
         "Flamengo SP U20": "assets/logos/upstreams/flamengo-sp-u20.webp",
-        "Sao Jose": "assets/logos/upstreams/sao-jose.webp"
+        "Sao Jose": "assets/logos/upstreams/sao-jose.webp",
+        "Estac Troyes": "assets/logos/streamed/estac-troyes.webp",
+        "Catanzaro": "assets/logos/streamed/catanzaro.webp",
+        "Padova": "assets/logos/streamed/padova.webp",
+        "Mantova": "assets/logos/streamed/mantova.webp",
+        "Zimbabwe": "assets/logos/streamed/zimbabwe.webp",
+        "FC Midtjylland": "assets/logos/upstreams/fc-midtjylland.webp",
+        "Ferencv\u00e1ros TC": "assets/logos/upstreams/ferencv\u00e1ros-tc.webp",
+        "Young Boys": "assets/logos/upstreams/young-boys.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3169,6 +3177,7 @@
         "Tennis ATP": "assets/logos/leagues/tennis-atp.webp",
         "Buenos Aires, Argentina": "assets/logos/leagues/buenos-aires-argentina.webp",
         "Glasgow, Great Britain": "assets/logos/leagues/glasgow-great-britain.webp",
-        "Cricket ICC U19 World Cup": "assets/logos/leagues/cricket-icc-u19-world-cup.webp"
+        "Cricket ICC U19 World Cup": "assets/logos/leagues/cricket-icc-u19-world-cup.webp",
+        "Asian Cup U23": "assets/logos/leagues/asian-cup-u23.webp"
     }
 }
