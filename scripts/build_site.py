@@ -114,26 +114,32 @@ def build_footer_grid(config, active_theme):
     t = active_theme
     s = config.get('site_settings', {})
     m = config.get('menus', {})
-    cols = str(t.get('footer_columns', '2'))
     
-    # Re-use the Logic for Logo Generation to ensure consistency
+    cols = str(t.get('footer_columns', '2'))
+    show_disclaimer = t.get('footer_show_disclaimer', True)
+    align = t.get('footer_text_align_desktop', 'left') # Get Admin Setting
+    
+    # 1. Generate Footer-Specific Logo (Respects Footer Brand Color)
+    # The Header logo might be dark, but Footer usually needs light text.
+    f_brand_color = t.get('footer_brand_color', '#ffffff')
     p1 = s.get('title_part_1', 'Stream')
     p2 = s.get('title_part_2', 'East')
+    p2_color = t.get('logo_p2_color', '#D00000') # Accent usually stays same
     
-    # Explicitly calculate size again for Footer to be safe
-    logo_size = ensure_unit(t.get('logo_image_size', '40px'))
-    
-    logo_html = f'<div class="logo-text" style="color:{t.get("logo_p1_color")};">{p1}<span style="color:{t.get("logo_p2_color")};">{p2}</span></div>'
+    logo_html = f'<div class="logo-text" style="color:{f_brand_color};">{p1}<span style="color:{p2_color};">{p2}</span></div>'
     
     if s.get('logo_url'): 
-        # Inject Inline Style for Safety
+        logo_size = ensure_unit(t.get('logo_image_size', '40px'))
+        # Added shadow variable specifically for footer image if needed
         logo_html = f'<img src="{s.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px;"> {logo_html}'
     
+    # 2. Content Blocks
     brand_html = f'<div class="f-brand">{logo_html}</div>'
-    disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if t.get('footer_show_disclaimer', True) else ''
+    disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if show_disclaimer else ''
     brand_disc_html = f'<div class="f-brand">{logo_html}{disc_html}</div>'
     links_html = f'<div><div class="f-head">Quick Links</div><div class="f-links">{build_menu_html(m.get("footer_static", []), "footer_static")}</div></div>'
     
+    # 3. Slot Logic
     slots = [t.get('footer_slot_1', 'brand_disclaimer'), t.get('footer_slot_2', 'menu'), t.get('footer_slot_3', 'empty')]
     
     def get_content(k):
@@ -143,11 +149,14 @@ def build_footer_grid(config, active_theme):
         if k == 'menu': return links_html
         return '<div></div>'
 
-    html = f'<div class="footer-grid cols-{cols}">'
+    # 4. Construct Grid with Alignment Override
+    # We inject 'style="text-align: {align}"' to force the Admin preference
+    html = f'<div class="footer-grid cols-{cols}" style="text-align:{align};">'
     html += get_content(slots[0])
     html += get_content(slots[1])
     if cols == '3': html += get_content(slots[2])
     html += '</div>'
+    
     return html
 
 # ==========================================
@@ -254,7 +263,7 @@ def render_page(template, config, page_data, theme_override=None):
         'mobile_footer_btn_active_bg': 'rgba(255,255,255,0.1)', # RESTORED
         
         'copy_toast_bg': '#22c55e', 'copy_toast_text': '#ffffff', 'copy_toast_border': '#16a34a',
-        'back_to_top_bg': '#D00000', 'back_to_top_icon_color': '#ffffff', 'back_to_top_shadow': '0 4px 10px rgba(208,0,0,0.4)',
+        'back_to_top_bg': '#D00000', 'back_to_top_icon_color': '#ffffff', 'back_to_top_shadow': '0 4px 10px rgba(0,0,0,0.3)',
         'back_to_top_radius': '50%', 'back_to_top_size': '40px',
 
         # 11. Borders & Skeletons
