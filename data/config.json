@@ -727,7 +727,7 @@
     "static_h1_align": "",
     "static_h1_border_width": "",
     "static_h1_border_color": "#000000",
-    "sys_status_visible": false,
+    "sys_status_visible": true,
     "sys_status_text_color": "#000000",
     "sys_status_bg_color": "#000000",
     "sys_status_border_color": "#000000",
