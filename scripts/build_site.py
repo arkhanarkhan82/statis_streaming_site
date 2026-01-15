@@ -12,6 +12,42 @@ WATCH_TEMPLATE_PATH = 'assets/watch_template.html'
 TEMPLATE_LEAGUE = 'assets/league_template.html' # Fixed variable name
 TEMPLATE_PAGE = 'assets/page_template.html'     # Fixed variable name
 OUTPUT_DIR = '.'
+# ==========================================
+# SMART ENTITY MAPPING (LEAGUE -> SPORT)
+# ==========================================
+LEAGUE_PARENT_MAP = {
+    # SOCCER
+    "Premier League": "Soccer", "La Liga": "Soccer", "Bundesliga": "Soccer", 
+    "Serie A": "Soccer", "Ligue 1": "Soccer", "Champions League": "Soccer", 
+    "Europa League": "Soccer", "MLS": "Soccer", "Eredivisie": "Soccer",
+    "FA Cup": "Soccer", "Carabao Cup": "Soccer", "Copa America": "Soccer",
+    "Euro 2024": "Soccer", "World Cup": "Soccer", "Liga MX": "Soccer",
+    
+    # BASKETBALL
+    "NBA": "Basketball", "NCAA": "Basketball", "EuroLeague": "Basketball", 
+    "WNBA": "Basketball", "College Basketball": "Basketball",
+    
+    # AMERICAN FOOTBALL
+    "NFL": "American Football", "NCAA Football": "American Football", 
+    "College Football": "American Football", "Super Bowl": "American Football",
+    "XFL": "American Football", "CFL": "American Football",
+    
+    # FIGHTING
+    "UFC": "MMA", "Bellator": "MMA", "PFL": "MMA", "Boxing": "Boxing",
+    "WWE": "Pro Wrestling", "AEW": "Pro Wrestling",
+    
+    # MOTORSPORTS
+    "F1": "Formula 1", "Formula 1": "Motorsport", "NASCAR": "Motorsport", 
+    "MotoGP": "Motorsport", "IndyCar": "Motorsport",
+    
+    # OTHERS
+    "MLB": "Baseball", "NHL": "Ice Hockey", "AFL": "Australian Rules Football",
+    "NRL": "Rugby", "Rugby Union": "Rugby", "Six Nations": "Rugby",
+    "Cricket": "Cricket", "IPL": "Cricket", "Big Bash": "Cricket",
+    "Tennis": "Tennis", "Wimbledon": "Tennis", "US Open": "Tennis",
+    "Golf": "Golf", "PGA Tour": "Golf", "LIV Golf": "Golf",
+    "Darts": "Darts", "Snooker": "Snooker"
+}
 
 # ==========================================
 # 2. UTILS
