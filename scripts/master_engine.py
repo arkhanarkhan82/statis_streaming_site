@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import hashlib
+import base64
 import time
 import re
 import urllib.parse
@@ -300,10 +301,19 @@ def fetch_and_process():
         if sm and '_streamEmbeds' in sm:
             for src_key, details_list in sm['_streamEmbeds'].items():
                 for d in details_list:
-                    streams.append({'source': 'streamed', 'type': src_key, 'name': f"{src_key} {d.get('streamNo','')}", 'url': d.get('embedUrl'), 'hd': d.get('hd', False), 'lang': d.get('language', '')})
+                    raw_url = d.get('embedUrl', '')
+                    # ENCODE URL TO BASE64
+                    enc_url = base64.b64encode(raw_url.encode('utf-8')).decode('utf-8') if raw_url else ""
+                    
+                    streams.append({'source': 'streamed', 'type': src_key, 'name': f"{src_key} {d.get('streamNo','')}", 'url': enc_url, 'hd': d.get('hd', False), 'lang': d.get('language', '')})
+                    
         if am and am.get('channels'):
             for ch in am['channels']:
-                streams.append({'source': 'adstrim', 'name': ch.get('name'), 'url': f"{TOPEMBED_BASE}{ch.get('name')}", 'hd': False, 'lang': ''})
+                raw_url = f"{TOPEMBED_BASE}{ch.get('name')}"
+                # ENCODE URL TO BASE64
+                enc_url = base64.b64encode(raw_url.encode('utf-8')).decode('utf-8')
+                
+                streams.append({'source': 'adstrim', 'name': ch.get('name'), 'url': enc_url, 'hd': False, 'lang': ''})
 
         img_meta = {
             'home_name': home, 'away_name': away, 'league_name': league,
