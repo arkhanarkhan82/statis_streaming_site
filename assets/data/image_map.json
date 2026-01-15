@@ -3105,7 +3105,17 @@
         "Alvaro Leal": "assets/logos/upstreams/alvaro-leal.webp",
         "Richard Kuhl": "assets/logos/upstreams/richard-kuhl.webp",
         "Al Masry": "assets/logos/upstreams/al-masry.webp",
-        "Zamalek": "assets/logos/upstreams/zamalek.webp"
+        "Zamalek": "assets/logos/upstreams/zamalek.webp",
+        "Bauru": "assets/logos/upstreams/bauru.webp",
+        "Paulistano": "assets/logos/upstreams/paulistano.webp",
+        "Regatas Corrientes": "assets/logos/upstreams/regatas-corrientes.webp",
+        "CA San Lorenzo Almagro": "assets/logos/upstreams/ca-san-lorenzo-almagro.webp",
+        "Ferro Carril OEaste": "assets/logos/upstreams/ferro-carril-oeaste.webp",
+        "Day 7": "assets/logos/upstreams/day-7.webp",
+        "Hobart International 2026": "assets/logos/upstreams/hobart-international-2026.webp",
+        "Salomon Adam Thomasen": "assets/logos/upstreams/salomon-adam-thomasen.webp",
+        "Nadeem Dalvi": "assets/logos/upstreams/nadeem-dalvi.webp",
+        "Mikkel Langemark": "assets/logos/upstreams/mikkel-langemark.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3390,6 +3400,7 @@
         "Portugal - League 3 - Gr.A": "assets/logos/leagues/portugal-league-3-gra.webp",
         "Bahrain Darts Masters": "assets/logos/leagues/bahrain-darts-masters.webp",
         "Sweden Hockey SHL": "assets/logos/leagues/sweden-hockey-shl.webp",
-        "Bahrain Darts Masters 2026": "assets/logos/leagues/bahrain-darts-masters-2026.webp"
+        "Bahrain Darts Masters 2026": "assets/logos/leagues/bahrain-darts-masters-2026.webp",
+        "Italy Serie A": "assets/logos/leagues/italy-serie-a.webp"
     }
 }
