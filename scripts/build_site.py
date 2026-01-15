@@ -564,9 +564,43 @@ def main():
             
             slug = name.lower().replace(' ', '-').replace('^[^a-z0-9]','') + "-streams"
             is_league = data.get('isLeague', False)
+            # Entity Intelligence (Parent Sport) - RESTORED LOGIC
+            parent_sport = LEAGUE_PARENT_MAP.get(name)
+            
+            if not parent_sport:
+                lower_name = name.lower()
+                # Enhanced detection logic
+                if "ncaa" in lower_name: 
+                    if "basket" in lower_name: parent_sport = "Basketball"
+                    elif "football" in lower_name: parent_sport = "American Football"
+                    else: parent_sport = "College Sports"
+                elif "football" in lower_name or "soccer" in lower_name: parent_sport = "Soccer"
+                elif "basket" in lower_name: parent_sport = "Basketball"
+                elif "fight" in lower_name or "ufc" in lower_name or "boxing" in lower_name or "mma" in lower_name: parent_sport = "Combat Sports"
+                elif "racing" in lower_name or "motor" in lower_name or "f1" in lower_name: parent_sport = "Motorsport"
+                elif "tennis" in lower_name: parent_sport = "Tennis"
+                elif "golf" in lower_name: parent_sport = "Golf"
+                elif "rugby" in lower_name: parent_sport = "Rugby"
+                elif "cricket" in lower_name: parent_sport = "Cricket"
+                elif "hockey" in lower_name or "nhl" in lower_name: parent_sport = "Ice Hockey"
+                elif "baseball" in lower_name or "mlb" in lower_name: parent_sport = "Baseball"
+                else: parent_sport = name # Absolute fallback
+
+            # Ensure it is a string for replacement
+            parent_sport = str(parent_sport)
+            # Get Site Title parts
+            sett = config.get('site_settings', {})
+            site_title_full = f"{sett.get('title_part_1', '')}{sett.get('title_part_2', '')}"
             
             # 1. Prepare Variables
-            vars_map = {'{{NAME}}': name, '{{YEAR}}': "2025", '{{DOMAIN}}': config['site_settings']['domain']}
+            # 1. Prepare Variables
+            vars_map = {
+                '{{NAME}}': name, 
+                '{{SPORT}}': parent_sport, 
+                '{{YEAR}}': "2025", 
+                '{{DOMAIN}}': sett.get('domain', ''),
+                '{{SITE_TITLE}}': site_title_full  # <--- New Shortcode Added
+            }
             
             def replace_vars(text, v_map):
                 if not text: return ""
