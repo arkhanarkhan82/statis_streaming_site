@@ -813,22 +813,32 @@
             const hLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.home];
             const aLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.away];
             
-            // --- FIX: ADDED MISSING HELPER ---
             const getImgUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
 
+            // --- CORRECTED LOGIC BLOCK ---
             if (m.isSingleEvent) {
+                // SINGLE EVENT MODE
                 mhContainer.classList.add('single-mode');
                 hCol.innerHTML = ''; aCol.innerHTML = '';
                 centerH1.innerText = m.title || m.home; centerH1.style.fontSize = "1.5rem"; 
-                if (hLogo) { singleLogoCont.style.display = 'block'; singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; }
-                document.getElementById('tr-home').style.display = 'none'; document.getElementById('tr-away').style.display = 'none';
+                
+                if (hLogo) { 
+                    singleLogoCont.style.display = 'block'; 
+                    singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; 
+                }
+                
+                document.getElementById('tr-home').style.display = 'none'; 
+                document.getElementById('tr-away').style.display = 'none';
+                
                 const sRow = document.getElementById('tr-single');
                 if(sRow) { 
                     sRow.style.display = 'table-row'; 
-                    // Use Title if available, otherwise fallback to Home
                     document.getElementById('tbl-event').innerText = m.title || m.home; 
-                } else {
-                mhContainer.classList.remove('single-mode'); singleLogoCont.style.display = 'none';
+                }
+            } else {
+                // VS MODE (Standard)
+                mhContainer.classList.remove('single-mode'); 
+                singleLogoCont.style.display = 'none';
                 
                 if(hLogo) hCol.innerHTML = `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
                 else hCol.innerHTML = `<div class="mh-team-name-lg">${m.home}</div>`;
@@ -837,10 +847,16 @@
                 else aCol.innerHTML = `<div class="mh-team-name-lg">${m.away}</div>`;
                 
                 centerH1.innerText = "VS";
-                document.getElementById('tr-home').style.display = 'table-row'; document.getElementById('tr-away').style.display = 'table-row';
-                const sRow = document.getElementById('tr-single'); if(sRow) sRow.style.display = 'none';
-                setText('tbl-home', m.home); setText('tbl-away', m.away);
+                document.getElementById('tr-home').style.display = 'table-row'; 
+                document.getElementById('tr-away').style.display = 'table-row';
+                
+                const sRow = document.getElementById('tr-single'); 
+                if(sRow) sRow.style.display = 'none';
+                
+                setText('tbl-home', m.home); 
+                setText('tbl-away', m.away);
             }
+            // -----------------------------
 
             setText('mhLeague', m.league); setText('tbl-league', m.league); setText('tbl-sport', m.sport); setText('tbl-date', m.dateOnly); setText('tbl-time', m.timeOnly);
 
@@ -870,9 +886,12 @@
             if(realTable) realTable.classList.remove('hidden-load');
 
             const now = Date.now();
-            const diffMins = (m.startTimeUnix - now) / 60000;
+            const startTimeMs = new Date(m.timestamp).getTime();
+            const diffMins = (startTimeMs - now) / 60000;
             const btn = document.getElementById('startWatchBtn');
-            
+            const copyBtn = document.getElementById('copyPageBtn');
+            copyBtn.onclick = () => copyText(window.location.href);
+
             if (m.isLive || diffMins <= 30) {
                 btn.className = "big-watch-btn"; 
                 btn.innerHTML = `📺 ${W_CONFIG.text_watch_btn || "Watch Live Stream"}`;
@@ -886,7 +905,7 @@
             document.title = applyShortcodes(W_SEO.title_tpl, m);
             generateArticle(m);
             generateSchema(m);
-            revealContent(); // This will now run because the script won't crash above
+            revealContent(); 
             document.getElementById('articleWrapper').classList.add('active');
         }
 
