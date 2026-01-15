@@ -247,7 +247,8 @@ def fetch_and_process():
             valid_streamed.append(m)
         
         # Get current time once before the loop
-        current_time_now = time.time()
+        # Get current time in MILLISECONDS to match the API data
+        current_time_ms = time.time() * 1000
 
         for future in as_completed(stream_detail_jobs):
             match_obj, src_name = stream_detail_jobs[future]
@@ -256,13 +257,15 @@ def fetch_and_process():
                 if details:
                     match_obj['_streamEmbeds'][src_name] = details
                     
-                    # --- MODIFICATION START: Only count viewers if match has started ---
+                    # Get match start and normalize to milliseconds
                     match_start = match_obj.get('date', 0)
-                    if match_start <= current_time_now:
+                    match_start_ms = match_start * 1000 if match_start < 10000000000 else match_start
+                    
+                    # FIX: Compare milliseconds to milliseconds
+                    if match_start_ms <= current_time_ms:
                         current_v = match_obj.get('_totalViewers', 0)
                         for d in details: current_v += d.get('viewers', 0)
                         match_obj['_totalViewers'] = current_v
-                    # --- MODIFICATION END ---
                     
             except: pass
 
