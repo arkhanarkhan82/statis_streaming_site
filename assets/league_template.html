@@ -424,6 +424,17 @@
         function copyText(text) { navigator.clipboard.writeText(text); const t = document.createElement('div'); t.className = 'copy-toast'; t.innerText = 'Link copied ✓'; document.body.appendChild(t); setTimeout(() => t.remove(), 1600); }
         function highlightActiveMenu() { const path = window.location.pathname; document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { if(link.getAttribute('href') === path) link.classList.add('active'); }); }
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
+        // --- ADD THIS FUNCTION HERE ---
+        function toggleHidden(divId, btn) {
+            const div = document.getElementById(divId);
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                btn.innerText = 'Show Less ▲';
+            } else {
+                div.style.display = 'none';
+                btn.innerText = 'Show More ▼';
+            }
+        }
 
         function renderSocials() {
             const makeUrl = (p) => {
