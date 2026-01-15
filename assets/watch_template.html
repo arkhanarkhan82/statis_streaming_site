@@ -759,25 +759,29 @@
             const mhContainer = document.getElementById('mhFixed');
             const singleLogoCont = document.getElementById('singleLogoContainer');
 
+            // --- FIX: Define the missing image URL helper ---
+            const getImgUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
+
             const hLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.home];
             const aLogo = IMAGE_MAP.teams && IMAGE_MAP.teams[m.away];
-            const getImgUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
 
             if (m.isSingleEvent) {
                 mhContainer.classList.add('single-mode');
                 hCol.innerHTML = ''; aCol.innerHTML = '';
                 centerH1.innerText = m.home; centerH1.style.fontSize = "1.5rem"; 
-                if (hLogo) { singleLogoCont.style.display = 'block'; singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; }
+                if (hLogo) { 
+                    singleLogoCont.style.display = 'block'; 
+                    singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; 
+                }
                 document.getElementById('tr-home').style.display = 'none'; document.getElementById('tr-away').style.display = 'none';
                 const sRow = document.getElementById('tr-single');
                 if(sRow) { sRow.style.display = 'table-row'; document.getElementById('tbl-event').innerText = m.home; }
             } else {
                 mhContainer.classList.remove('single-mode'); singleLogoCont.style.display = 'none';
-                if(hLogo) hCol.innerHTML = `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
-                else hCol.innerHTML = `<div class="mh-team-name-lg">${m.home}</div>`;
                 
-                if(aLogo) aCol.innerHTML = `<div class="mh-team-name-sm">${m.away}</div><div class="logo-wrapper"><img src="${getImgUrl(aLogo)}" class="mh-team-logo" alt="${m.away}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
-                else aCol.innerHTML = `<div class="mh-team-name-lg">${m.away}</div>`;
+                hCol.innerHTML = hLogo ? `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>` : `<div class="mh-team-name-lg">${m.home}</div>`;
+                
+                aCol.innerHTML = aLogo ? `<div class="mh-team-name-sm">${m.away}</div><div class="logo-wrapper"><img src="${getImgUrl(aLogo)}" class="mh-team-logo" alt="${m.away}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>` : `<div class="mh-team-name-lg">${m.away}</div>`;
                 
                 centerH1.innerText = "VS";
                 document.getElementById('tr-home').style.display = 'table-row'; document.getElementById('tr-away').style.display = 'table-row';
@@ -789,14 +793,28 @@
 
             const timerEl = document.getElementById('mhTimer');
             const countdownEl = document.getElementById('tbl-countdown');
+            const statusLabelEl = countdownEl ? countdownEl.previousElementSibling : null;
             
             if (m.isLive) {
                 timerEl.classList.add('live'); timerEl.innerText = m.statusText || "LIVE"; 
-                if(countdownEl) { countdownEl.innerText = m.statusText || "Live"; countdownEl.style.color = "#ef4444"; }
+                if(countdownEl && statusLabelEl) { 
+                    statusLabelEl.innerText = "Playing";
+                    countdownEl.innerText = m.statusText || "Live"; 
+                    countdownEl.style.color = "#ef4444"; 
+                }
             } else {
                 timerEl.classList.remove('live'); timerEl.innerText = m.statusText ? `Starts in ${m.statusText}` : m.dateOnly;
-                if(countdownEl) { countdownEl.innerText = m.statusText || "Upcoming"; countdownEl.style.color = "var(--accent-gold)"; }
+                if(countdownEl && statusLabelEl) { 
+                    statusLabelEl.innerText = "Starts In";
+                    countdownEl.innerText = m.statusText || "Upcoming"; 
+                    countdownEl.style.color = "var(--accent-gold)"; 
+                }
             }
+
+            const skTable = document.getElementById('sk-info-table-body');
+            const realTable = document.getElementById('real-info-table');
+            if(skTable) skTable.style.display = 'none';
+            if(realTable) realTable.classList.remove('hidden-load');
 
             const now = Date.now();
             const diffMins = (m.startTimeUnix - now) / 60000;
@@ -814,6 +832,8 @@
 
             document.title = applyShortcodes(W_SEO.title_tpl, m);
             generateArticle(m);
+            generateSchema(m);
+            revealContent(); // This will now run because the script won't crash above
             document.getElementById('articleWrapper').classList.add('active');
         }
 
