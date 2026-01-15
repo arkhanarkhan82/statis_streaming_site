@@ -332,10 +332,26 @@
             const ham = document.querySelector('.hamburger');
             if(ham) ham.onclick = () => document.getElementById('mobileMenu').classList.toggle('active');
             
-            window.addEventListener('scroll', () => {
-                const btn = document.getElementById('backToTop');
-                if(window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
-            });
+            let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            
+            // 1. Clear existing timer so it stays visible while scrolling
+            clearTimeout(scrollTimeout);
+            
+            if(window.scrollY > 300) {
+                // 2. Show button
+                btn.classList.add('show');
+                
+                // 3. Hide after 2.5 seconds of inactivity
+                scrollTimeout = setTimeout(() => {
+                    btn.classList.remove('show');
+                }, 2500);
+            } else {
+                // 4. Hide immediately if near top
+                btn.classList.remove('show');
+            }
+        });
         });
 
         function copyText(text) { navigator.clipboard.writeText(text); const t = document.createElement('div'); t.className = 'copy-toast'; t.innerText = 'Link copied ✓'; document.body.appendChild(t); setTimeout(() => t.remove(), 1600); }
