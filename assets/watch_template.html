@@ -560,12 +560,15 @@
 
                 // --- DATA LOOKUP (No Fetch) ---
                 // --- DATA LOOKUP (No Fetch) ---
-currentHash = extractHash(activeId);
-if (!currentHash) { showError("Invalid Match ID."); return; }
+// --- DATA LOOKUP (No Fetch) ---
+                currentHash = extractHash(activeId);
+                // Allow activeId lookup even if hash extraction looks weird
+                if (!activeId && !currentHash) { showError("Invalid Match ID."); return; }
 
-const allMatches = window.MATCH_DATA || [];
-// Matches already normalized by Python
-const normData = allMatches.find(m => m.id === currentHash || m.originalId === currentHash);
+                const allMatches = window.MATCH_DATA || [];
+                
+                // FIX: Check for exact ID match (activeId) OR if the ID ends with the hash
+                const normData = allMatches.find(m => m.id === activeId || (currentHash && m.id.endsWith(currentHash)));
 
 if (!normData) { showError("Match not found or ended."); return; }
 
