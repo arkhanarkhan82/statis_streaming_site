@@ -1013,6 +1013,127 @@
                 return new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',timeZone:isUK?'Europe/London':'America/New_York'}).format(d);
             } catch(e) { return "--"; }
         }
+        // --- ADD THIS MISSING FUNCTION ---
+        function generateSchema(m) {
+            // 1. Remove duplicate schema if exists
+            const oldScript = document.getElementById('dynamic-schema');
+            if(oldScript) oldScript.remove();
+
+            // 2. Resolve URLs & Images
+            const pageUrl = window.location.href;
+            
+            // Get Logo from the Header Image
+            const headerLogoEl = document.querySelector('.logo-img');
+            const siteLogo = headerLogoEl ? headerLogoEl.src : (document.querySelector('link[rel="icon"]')?.href || `https://${DOMAIN}/logo.png`);
+            const getFullUrl = (p) => p.startsWith('http') ? p : `https://${DOMAIN}${p.startsWith('/')?'':'/'}${p}`;
+
+            // 3. Logic: Detect Person vs Team Sport
+            const personSports = ['tennis', 'tabletennis', 'badminton', 'boxing', 'mma', 'ufc', 'fighting', 'snooker', 'darts', 'wrestling', 'golf'];
+            const normSport = (m.sport || "").toLowerCase().replace(/\s/g, '');
+            const isPersonSport = personSports.includes(normSport);
+
+            // 4. Calculate End Time (Approximate)
+            const startTime = new Date(m.timestamp).getTime();
+            const durationMs = 180 * 60 * 1000; // Default 3 hours
+            const expectedEndTime = new Date(startTime + durationMs).toISOString();
+            const eventStatus = m.isLive ? "https://schema.org/EventLive" : "https://schema.org/EventScheduled";
+
+            // 5. Build Graph
+            const graph = [
+                {
+                    "@type": "Organization",
+                    "@id": `https://${DOMAIN}/#organization`,
+                    "name": SITE_NAME,
+                    "url": `https://${DOMAIN}/`,
+                    "logo": { "@type": "ImageObject", "url": siteLogo, "width": 512, "height": 512 }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": `https://${DOMAIN}/#website`,
+                    "url": `https://${DOMAIN}/`,
+                    "name": SITE_NAME,
+                    "publisher": { "@id": `https://${DOMAIN}/#organization` }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": `${pageUrl}#webpage`,
+                    "url": pageUrl,
+                    "name": document.title,
+                    "description": document.querySelector('meta[name="description"]')?.content,
+                    "isPartOf": { "@id": `https://${DOMAIN}/#website` },
+                    "mainEntity": { "@id": `${pageUrl}#sportsevent` }
+                }
+            ];
+
+            // 6. Define the Event
+            const eventName = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+            
+            const eventSchema = {
+                "@type": "SportsEvent",
+                "@id": `${pageUrl}#sportsevent`,
+                "name": eventName,
+                "startDate": new Date(startTime).toISOString(),
+                "endDate": expectedEndTime,
+                "eventStatus": eventStatus,
+                "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                "sport": m.sport,
+                "url": pageUrl,
+                "image": [siteLogo], 
+                "organizer": { "@id": `https://${DOMAIN}/#organization` }
+            };
+
+            // 7. Handle Competitors
+            const hLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.home]) ? getFullUrl(IMAGE_MAP.teams[m.home]) : null;
+            const aLogo = (IMAGE_MAP.teams && IMAGE_MAP.teams[m.away]) ? getFullUrl(IMAGE_MAP.teams[m.away]) : null;
+
+            if (m.isSingleEvent) {
+                const performer = { "@type": "Organization", "name": m.home };
+                if(hLogo) performer.logo = hLogo;
+                eventSchema.performer = [ performer ];
+            } 
+            else if (isPersonSport) {
+                const p1 = { "@type": "Person", "name": m.home };
+                if(hLogo) p1.image = hLogo;
+                const p2 = { "@type": "Person", "name": m.away };
+                if(aLogo) p2.image = aLogo;
+                eventSchema.competitor = [ p1, p2 ];
+            } 
+            else {
+                const t1 = { "@type": "SportsTeam", "name": m.home };
+                if(hLogo) t1.logo = hLogo;
+                const t2 = { "@type": "SportsTeam", "name": m.away };
+                if(aLogo) t2.logo = aLogo;
+                eventSchema.homeTeam = t1;
+                eventSchema.awayTeam = t2;
+            }
+
+            // 8. Add VideoObject ONLY if Live (BroadcastEvent)
+            if (m.isLive) {
+                eventSchema.subjectOf = {
+                    "@type": "VideoObject",
+                    "@id": `${pageUrl}#video`,
+                    "name": `${eventName} Live Stream`,
+                    "description": `Watch ${eventName} live stream online coverage on ${SITE_NAME}.`,
+                    "thumbnailUrl": siteLogo, 
+                    "uploadDate": new Date(startTime).toISOString(),
+                    "isLiveBroadcast": true,
+                    "contentUrl": pageUrl,
+                    "embedUrl": pageUrl
+                };
+            }
+
+            graph.push(eventSchema);
+
+            // 9. Inject into Head
+            const el = document.createElement('script');
+            el.id = 'dynamic-schema';
+            el.type = 'application/ld+json';
+            el.textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": graph
+            });
+            document.head.appendChild(el);
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
 </body>
