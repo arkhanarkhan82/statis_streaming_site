@@ -375,7 +375,16 @@ def render_page(template, config, page_data, theme_override=None):
     else:
         theme['sys_status_bg_color'] = hex_to_rgba(s_bg_hex, s_bg_op)
 
-    theme['sys_status_display'] = 'inline-flex' if theme.get('sys_status_visible', True) else 'none'
+    # ROBUST VISIBILITY CHECK
+    # Handles boolean True/False and string "true"/"false" from JSON
+    raw_vis = theme.get('sys_status_visible', True)
+    is_visible = True
+    if str(raw_vis).lower() == 'false':
+        is_visible = False
+    elif raw_vis is False:
+        is_visible = False
+        
+    theme['sys_status_display'] = 'inline-flex' if is_visible else 'none'
     # Calculate values first to ensure fallbacks
     h1_text = page_data.get('h1_title') or page_data.get('title') or ""
     hero_txt = page_data.get('hero_text') or page_data.get('meta_desc') or ""
