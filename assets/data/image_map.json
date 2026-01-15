@@ -2911,7 +2911,17 @@
         "Young Lions": "assets/logos/upstreams/young-lions.webp",
         "Kaua Santos": "assets/logos/upstreams/kaua-santos.webp",
         "Filip Swahn": "assets/logos/upstreams/filip-swahn.webp",
-        "Zhe Ying Wu": "assets/logos/upstreams/zhe-ying-wu.webp"
+        "Zhe Ying Wu": "assets/logos/upstreams/zhe-ying-wu.webp",
+        "Jelgava": "assets/logos/upstreams/jelgava.webp",
+        "Liepaja/LSSS": "assets/logos/upstreams/liepajalsss.webp",
+        "Lublin (W)": "assets/logos/upstreams/lublin-w.webp",
+        "Gambian Dutch Lions": "assets/logos/upstreams/gambian-dutch-lions.webp",
+        "Steve Biko": "assets/logos/upstreams/steve-biko.webp",
+        "Nancy": "assets/logos/upstreams/nancy.webp",
+        "Matthew Waring": "assets/logos/upstreams/matthew-waring.webp",
+        "Dominik Kopriva": "assets/logos/upstreams/dominik-kopriva.webp",
+        "Jing Yao Pang": "assets/logos/upstreams/jing-yao-pang.webp",
+        "Tse Tu Hsin": "assets/logos/upstreams/tse-tu-hsin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3184,6 +3194,8 @@
         "Glasgow, Great Britain": "assets/logos/leagues/glasgow-great-britain.webp",
         "Cricket ICC U19 World Cup": "assets/logos/leagues/cricket-icc-u19-world-cup.webp",
         "Asian Cup U23": "assets/logos/leagues/asian-cup-u23.webp",
-        "Cricket Big Bash League": "assets/logos/leagues/cricket-big-bash-league.webp"
+        "Cricket Big Bash League": "assets/logos/leagues/cricket-big-bash-league.webp",
+        "Hobart, Australia": "assets/logos/leagues/hobart-australia.webp",
+        "Auckland, New Zealand": "assets/logos/leagues/auckland-new-zealand.webp"
     }
 }
