@@ -941,7 +941,12 @@
                     btn.onclick = () => {
                         document.querySelectorAll('.srv-btn').forEach(b => b.classList.remove('active'));
                         btn.classList.add('active');
-                        player.src = ch.url;
+                        // DECODE ON CLICK
+                        try {
+                            player.src = atob(ch.url);
+                        } catch(e) {
+                            player.src = ch.url;
+                        }
                     };
                     if(idx >= MAX_VISIBLE) { btn.style.display = 'none'; btn.classList.add('hidden-srv'); }
                     serverBox.appendChild(btn);
