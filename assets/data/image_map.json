@@ -3144,7 +3144,13 @@
         "UC San Diego": "assets/logos/streamed/uc-san-diego.webp",
         "Cal State-Northridge": "assets/logos/streamed/cal-state-northridge.webp",
         "Michael van Gerwen": "assets/logos/upstreams/michael-van-gerwen.webp",
-        "Alexis Toylo": "assets/logos/upstreams/alexis-toylo.webp"
+        "Alexis Toylo": "assets/logos/upstreams/alexis-toylo.webp",
+        "Harshini N Nagaraj": "assets/logos/upstreams/harshini-n-nagaraj.webp",
+        "Ella McDonald": "assets/logos/upstreams/ella-mcdonald.webp",
+        "Ryotaro Matsumura": "assets/logos/upstreams/ryotaro-matsumura.webp",
+        "Janae Preston": "assets/logos/upstreams/janae-preston.webp",
+        "Sophie La Cour": "assets/logos/upstreams/sophie-la-cour.webp",
+        "Oleksii Titov": "assets/logos/upstreams/oleksii-titov.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3430,6 +3436,8 @@
         "Bahrain Darts Masters": "assets/logos/leagues/bahrain-darts-masters.webp",
         "Sweden Hockey SHL": "assets/logos/leagues/sweden-hockey-shl.webp",
         "Bahrain Darts Masters 2026": "assets/logos/leagues/bahrain-darts-masters-2026.webp",
-        "Italy Serie A": "assets/logos/leagues/italy-serie-a.webp"
+        "Italy Serie A": "assets/logos/leagues/italy-serie-a.webp",
+        "Adelaide, Australia": "assets/logos/leagues/adelaide-australia.webp",
+        "Nonthaburi 2, Thailand": "assets/logos/leagues/nonthaburi-2-thailand.webp"
     }
 }
