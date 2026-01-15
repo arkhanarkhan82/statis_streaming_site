@@ -606,7 +606,7 @@
     "text_main": "#ffffff",
     "text_muted": "#888888",
     "border_color": "#222222",
-    "scrollbar_thumb_color": "#333333",
+    "scrollbar_thumb_color": "#07dad6",
     "header_bg": "#050505",
     "header_text_color": "#aaaaaa",
     "header_link_active_color": "#ffffff",
