@@ -173,6 +173,10 @@ def render_page(template, config, page_data, theme_override=None):
     
     m = config.get('menus', {})
     html = template
+    # FIX: Remap Admin keys (desktop) to Template keys (desk) if they exist
+    if 'social_desktop_top' in t: t['social_desk_top'] = t.pop('social_desktop_top')
+    if 'social_desktop_left' in t: t['social_desk_left'] = t.pop('social_desktop_left')
+    if 'social_desktop_scale' in t: t['social_desk_scale'] = t.pop('social_desktop_scale')
     
     # --- COMPREHENSIVE THEME DEFAULTS (Restoring Lost Features) ---
     defaults = {
@@ -254,7 +258,8 @@ def render_page(template, config, page_data, theme_override=None):
         'social_btn_hover_bg': '#1e293b', 'social_btn_hover_border': '#D00000', 
         'social_btn_hover_transform': 'translateX(5px)', 'social_btn_hover_shadow_color': 'rgba(0,0,0,0.3)', # RESTORED
         'social_count_color': '#64748b', 
-        'social_desktop_top': '50%', 'social_desktop_left': '0', 'social_desktop_scale': '1.0',
+        # FIX: Renamed keys to match CSS template placeholders (desk vs desktop)
+        'social_desk_top': '50%', 'social_desk_left': '0', 'social_desk_scale': '1.0',
         'social_telegram_color': '#0088cc', 'social_whatsapp_color': '#25D366', 
         'social_reddit_color': '#FF4500', 'social_twitter_color': '#1DA1F2',
         
