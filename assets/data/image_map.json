@@ -3158,7 +3158,24 @@
         "Green Bay": "assets/logos/streamed/green-bay.webp",
         "Milwaukee": "assets/logos/streamed/milwaukee.webp",
         "Seattle U": "assets/logos/streamed/seattle-u.webp",
-        "San Diego": "assets/logos/streamed/san-diego.webp"
+        "San Diego": "assets/logos/streamed/san-diego.webp",
+        "GKS Tychy": "assets/logos/upstreams/gks-tychy.webp",
+        "KH Sanok": "assets/logos/upstreams/kh-sanok.webp",
+        "Chloe Hoang": "assets/logos/upstreams/chloe-hoang.webp",
+        "Laura Floej Thomsen": "assets/logos/upstreams/laura-floej-thomsen.webp",
+        "Sophia Noble": "assets/logos/upstreams/sophia-noble.webp",
+        "Heli Neiman": "assets/logos/upstreams/heli-neiman.webp",
+        "Julie Franconville": "assets/logos/upstreams/julie-franconville.webp",
+        "Cristina Teruel": "assets/logos/upstreams/cristina-teruel.webp",
+        "Irina AMalie Andersen": "assets/logos/upstreams/irina-amalie-andersen.webp",
+        "Ella Lin": "assets/logos/upstreams/ella-lin.webp",
+        "Kauffmann Victor Oerding": "assets/logos/upstreams/kauffmann-victor-oerding.webp",
+        "Mark Shelley Alcala": "assets/logos/upstreams/mark-shelley-alcala.webp",
+        "Ethan Rose": "assets/logos/upstreams/ethan-rose.webp",
+        "Jeppe Bruun": "assets/logos/upstreams/jeppe-bruun.webp",
+        "Enogat Roy": "assets/logos/upstreams/enogat-roy.webp",
+        "Karan Rajan Rajarajan": "assets/logos/upstreams/karan-rajan-rajarajan.webp",
+        "Dominik Kwinta": "assets/logos/upstreams/dominik-kwinta.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3447,6 +3464,7 @@
         "Italy Serie A": "assets/logos/leagues/italy-serie-a.webp",
         "Adelaide, Australia": "assets/logos/leagues/adelaide-australia.webp",
         "Nonthaburi 2, Thailand": "assets/logos/leagues/nonthaburi-2-thailand.webp",
-        "USA - NHL": "assets/logos/leagues/usa-nhl.webp"
+        "USA - NHL": "assets/logos/leagues/usa-nhl.webp",
+        "Ekstraliga": "assets/logos/leagues/ekstraliga.webp"
     }
 }
