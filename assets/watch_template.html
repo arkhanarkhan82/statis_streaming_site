@@ -191,6 +191,7 @@
             max-width: 1600px !important; 
             width: 98%; 
             display: grid; 
+            /* Define Areas for Left Sidebar, Main Content, Right Sidebar, and Article (under Main) */
             grid-template-areas: 
                 "sidebar-left main sidebar-right"
                 "sidebar-left article sidebar-right";
@@ -217,6 +218,7 @@
             grid-template-areas: 
                 "sidebar-right main sidebar-left"
                 "sidebar-right article sidebar-left";
+            /* Right is usually Chat (Wider), Left is Ad (Narrower). Swap widths. */
             grid-template-columns: 340px 1fr 300px; 
         }
 
@@ -635,7 +637,12 @@
                 }
 
                 startDummyChat(); 
-                updateSocialLinks(null);
+                
+                // --- FIX: CHECK FUNCTION EXISTENCE BEFORE CALLING ---
+                if (typeof updateSocialLinks === "function") {
+                    updateSocialLinks(null);
+                }
+                
                 applyWatchConfig(); 
 
                 if(currentUser && document.getElementById('usernameInput')) document.getElementById('usernameInput').value = currentUser;
@@ -644,10 +651,8 @@
                 let isStreamMode = !!streamParamVal;
 
                 // --- DATA LOOKUP (No Fetch) ---
-                // --- DATA LOOKUP (No Fetch) ---
-// --- DATA LOOKUP (No Fetch) ---
                 currentHash = extractHash(activeId);
-                // Allow activeId lookup even if hash extraction looks weird
+                // Allow lookup even if hash extraction is tricky
                 if (!activeId && !currentHash) { showError("Invalid Match ID."); return; }
 
                 const allMatches = window.MATCH_DATA || [];
@@ -655,17 +660,18 @@
                 // FIX: Check for exact ID match (activeId) OR if the ID ends with the hash
                 const normData = allMatches.find(m => m.id === activeId || (currentHash && m.id.endsWith(currentHash)));
 
-if (!normData) { showError("Match not found or ended."); return; }
+                if (!normData) { showError("Match not found or ended."); return; }
 
-// --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
-normData.startTimeUnix = normData.timestamp;       // <<< FIX HERE: Map timestamp
-normData.isSingleEvent = normData.is_single;       // <<< FIX HERE: Map single event logic
-normData.stream_channels = normData.streams || []; // <<< FIX HERE: Map stream list
-// -------------------------------------------------------------
+                // --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
+                // The Master Engine sends 'timestamp', 'is_single', 'streams'.
+                // This template expects 'startTimeUnix', 'isSingleEvent', 'stream_channels'.
+                normData.startTimeUnix = normData.timestamp;       
+                normData.isSingleEvent = normData.is_single;       
+                normData.stream_channels = normData.streams || []; 
+                // -------------------------------------------------------------
 
-// Determine Date Strings for UI
-// Now normData.startTimeUnix exists because we mapped it above
-const d = new Date(normData.startTimeUnix);
+                // Determine Date Strings for UI
+                const d = new Date(normData.startTimeUnix);
                 const isUK = TARGET_COUNTRY === 'UK';
                 const timeZone = isUK ? 'Europe/London' : 'America/New_York';
                 const timeStr = new Intl.DateTimeFormat('en-US', {hour:'numeric',minute:'2-digit',hour12:true,timeZone}).format(d) + (isUK?' GMT':' ET');
@@ -678,7 +684,10 @@ const d = new Date(normData.startTimeUnix);
                 if (isStreamMode) renderStreamMode(normData, activeId);
                 else renderInfoMode(normData);
 
-                updateSocialLinks(activeId);
+                // Safe to call here too
+                if (typeof updateSocialLinks === "function") {
+                    updateSocialLinks(activeId);
+                }
 
             } catch (e) {
                 console.error("Init Error:", e);
@@ -930,6 +939,30 @@ const d = new Date(normData.startTimeUnix);
         }
         document.getElementById('chatInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
+        function updateSocialLinks(idParam) {
+            const sidebar = document.getElementById('socialSidebar');
+            const mobileFooter = document.getElementById('mobileFooter');
+            let shareUrl = `https://${DOMAIN}/watch/`;
+            if (idParam) shareUrl += `?${PARAM_INFO}=${idParam}`;
+            const u = encodeURIComponent(shareUrl);
+            const makeUrl = (p) => {
+                if(p==='telegram') return `https://t.me/share/url?url=${u}`;
+                if(p==='whatsapp') return `https://api.whatsapp.com/send?text=${u}`;
+                if(p==='reddit') return `https://www.reddit.com/submit?url=${u}`;
+                if(p==='twitter') return `https://twitter.com/intent/tweet?url=${u}`;
+                return null;
+            };
+            const icons = { telegram: '<svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.47-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.28L19.84 4c.75-.28 1.4.52 1.16 1.76l-2.8 13.2c-.2.9-1.09.9-1.8.6l-5.45-4.06-2.6 2.5c-.3.3-.55.55-1.1.55l.45-3.6z"/></svg>', whatsapp: '<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.51 2 12.04 2zm4.43-6.03c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3C4.33 8.6 3.5 9.2 3.5 10.38c0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.1.15 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>', reddit: '<svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.22 14.11c-.13.26-.35.45-.6.54-.25.09-.52.1-.78.01-.8-.28-1.76-.43-2.77-.43s-1.97.15-2.77.43c-.26.09-.53.08-.78-.01-.25-.09-.47-.28-.6-.54-.15-.3-.19-.64-.11-.96.08-.32.28-.59.56-.75.9-.53 2.05-.83 3.28-.88l.66-3.11 2.16.46c.04-.2.15-.38.31-.51s.36-.2.55-.17c.2.03.38.15.51.31.13.16.2.36.17.55l-2.16-.46-.66 3.11c1.23.05 2.38.35 3.28.88.28.16.48.43.56.75.08.32.04.66-.11.96zM12 11.25c-.97 0-1.75.78-1.75 1.75s.78 1.75 1.75 1.75 1.75-.78 1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75-.78-1.75-1.75-1.75zm-3.25-2.5c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25 1.25-1.25-.56-1.25-1.25 1.25-1.25-.56-1.25-1.25zm6.5 0c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25z"/></svg>', twitter: '<svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>', copy: '<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>' };
+            let html = '';
+            ['telegram', 'whatsapp', 'reddit', 'twitter', 'copy'].forEach(p => {
+                const count = SHARE_CONFIG.counts[p] ? ((n)=>(n>=1000?(n/1000).toFixed(1)+'k':n))(SHARE_CONFIG.counts[p]) : '';
+                const onclick = p === 'copy' ? `copyText('${shareUrl}')` : `window.open('${makeUrl(p)}', '_blank')`;
+                const iconSvg = icons[p] || ''; 
+                html += `<div class="social-btn ${p}" onclick="${onclick}">${iconSvg}<span class="s-count">${count}</span></div>`;
+            });
+            if(sidebar) sidebar.innerHTML = html;
+            if(mobileFooter) mobileFooter.innerHTML = html;
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
 </body>
