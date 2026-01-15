@@ -3150,7 +3150,10 @@
         "Ryotaro Matsumura": "assets/logos/upstreams/ryotaro-matsumura.webp",
         "Janae Preston": "assets/logos/upstreams/janae-preston.webp",
         "Sophie La Cour": "assets/logos/upstreams/sophie-la-cour.webp",
-        "Oleksii Titov": "assets/logos/upstreams/oleksii-titov.webp"
+        "Oleksii Titov": "assets/logos/upstreams/oleksii-titov.webp",
+        "Stephen Bunting": "assets/logos/upstreams/stephen-bunting.webp",
+        "Ryusei Azemoto": "assets/logos/upstreams/ryusei-azemoto.webp",
+        "Christopher Vittoriani": "assets/logos/upstreams/christopher-vittoriani.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3438,6 +3441,7 @@
         "Bahrain Darts Masters 2026": "assets/logos/leagues/bahrain-darts-masters-2026.webp",
         "Italy Serie A": "assets/logos/leagues/italy-serie-a.webp",
         "Adelaide, Australia": "assets/logos/leagues/adelaide-australia.webp",
-        "Nonthaburi 2, Thailand": "assets/logos/leagues/nonthaburi-2-thailand.webp"
+        "Nonthaburi 2, Thailand": "assets/logos/leagues/nonthaburi-2-thailand.webp",
+        "USA - NHL": "assets/logos/leagues/usa-nhl.webp"
     }
 }
