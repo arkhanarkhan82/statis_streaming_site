@@ -732,7 +732,7 @@
     "sys_status_bg_color": "#000000",
     "sys_status_border_color": "#000000",
     "sys_status_border_width": "",
-    "sys_status_radius": "",
+    "sys_status_radius": "20",
     "sys_status_dot_color": "#000000",
     "sys_status_dot_size": "10",
     "footer_columns": "2",
