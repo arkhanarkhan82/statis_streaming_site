@@ -2971,7 +2971,12 @@
         "Al Duhail": "assets/logos/upstreams/al-duhail.webp",
         "Mumbai Indians W": "assets/logos/upstreams/mumbai-indians-w.webp",
         "Orlando Solar Bears": "assets/logos/upstreams/orlando-solar-bears.webp",
-        "Idaho Steelheads": "assets/logos/upstreams/idaho-steelheads.webp"
+        "Idaho Steelheads": "assets/logos/upstreams/idaho-steelheads.webp",
+        "Al-Arabi SC": "assets/logos/upstreams/al-arabi-sc.webp",
+        "Al-Gharafa": "assets/logos/upstreams/al-gharafa.webp",
+        "Gerwyn Price": "assets/logos/upstreams/gerwyn-price.webp",
+        "Motomu Sakai": "assets/logos/upstreams/motomu-sakai.webp",
+        "Jacob Thyge": "assets/logos/upstreams/jacob-thyge.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3253,6 +3258,7 @@
         "ICC U19 World Cup": "assets/logos/leagues/icc-u19-world-cup.webp",
         "Stars League": "assets/logos/leagues/stars-league.webp",
         "Portugal - League 3 - Gr.B": "assets/logos/leagues/portugal-league-3-grb.webp",
-        "Portugal - League 3 - Gr.A": "assets/logos/leagues/portugal-league-3-gra.webp"
+        "Portugal - League 3 - Gr.A": "assets/logos/leagues/portugal-league-3-gra.webp",
+        "Bahrain Darts Masters": "assets/logos/leagues/bahrain-darts-masters.webp"
     }
 }
