@@ -340,13 +340,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Upcoming MLS Matches nnn
@@ -354,7 +354,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
@@ -443,6 +443,17 @@ We aim for 1080p and 720p definition. <strong>Soccer</strong> requires high fram
         function copyText(text) { navigator.clipboard.writeText(text); const t = document.createElement('div'); t.className = 'copy-toast'; t.innerText = 'Link copied ✓'; document.body.appendChild(t); setTimeout(() => t.remove(), 1600); }
         function highlightActiveMenu() { const path = window.location.pathname; document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { if(link.getAttribute('href') === path) link.classList.add('active'); }); }
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
+        // --- ADD THIS FUNCTION HERE ---
+        function toggleHidden(divId, btn) {
+            const div = document.getElementById(divId);
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                btn.innerText = 'Show Less ▲';
+            } else {
+                div.style.display = 'none';
+                btn.innerText = 'Show More ▼';
+            }
+        }
 
         function renderSocials() {
             const makeUrl = (p) => {
