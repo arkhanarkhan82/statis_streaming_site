@@ -246,15 +246,24 @@ def fetch_and_process():
                     stream_detail_jobs[future] = (m, s_source)
             valid_streamed.append(m)
         
+        # Get current time once before the loop
+        current_time_now = time.time()
+
         for future in as_completed(stream_detail_jobs):
             match_obj, src_name = stream_detail_jobs[future]
             try:
                 details = future.result()
                 if details:
                     match_obj['_streamEmbeds'][src_name] = details
-                    current_v = match_obj.get('_totalViewers', 0)
-                    for d in details: current_v += d.get('viewers', 0)
-                    match_obj['_totalViewers'] = current_v
+                    
+                    # --- MODIFICATION START: Only count viewers if match has started ---
+                    match_start = match_obj.get('date', 0)
+                    if match_start <= current_time_now:
+                        current_v = match_obj.get('_totalViewers', 0)
+                        for d in details: current_v += d.get('viewers', 0)
+                        match_obj['_totalViewers'] = current_v
+                    # --- MODIFICATION END ---
+                    
             except: pass
 
     merged_raw = merge_matches(valid_streamed, res_b)
