@@ -139,6 +139,10 @@
         /* Paste the exact same CSS content as master_template.html here */
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; padding-bottom: 80px; line-height: 1.5; }
+        /* SCROLLBAR */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: var(--bg-body); }
+        body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 4px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
         button { cursor: pointer; border: none; font-family: inherit; }
         
