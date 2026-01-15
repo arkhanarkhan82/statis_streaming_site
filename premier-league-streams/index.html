@@ -96,12 +96,23 @@
             --footer-link-hover-color: #f1f5f9;
             
             /* SOCIALS */
-            --social-sidebar-bg: rgba(15, 23, 42, 0.8);
-            --social-sidebar-border: #334155;
-            --social-btn-bg: rgba(30, 41, 59, 0.8);
-            --social-btn-color: #94a3b8;
-            --mobile-footer-bg: #000000;
-            --mobile-footer-border-top: 1px solid #334155;
+            --soc-sidebar-bg: rgba(15, 23, 42, 0.8);
+            --soc-sidebar-border: #334155;
+            --soc-sidebar-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            --soc-btn-bg: rgba(30, 41, 59, 0.8);
+            --soc-btn-border: #334155;
+            --soc-btn-color: #94a3b8;
+            --soc-btn-hover-bg: #1e293b;
+            --soc-btn-hover-border: #D00000;
+            --soc-btn-hover-transform: translateX(5px);
+            --soc-btn-shadow: rgba(0,0,0,0.3);
+            --soc-count: #64748b;
+            
+            --mob-foot-bg: #000000;
+            --mob-foot-border: 1px solid #334155;
+            --mob-foot-shadow: 0 -4px 10px rgba(0,0,0,0.5);
+            --mob-foot-height: 60px;
+            --mob-foot-active: rgba(255,255,255,0.1);
             
             /* ARTICLE */
             --article-bg: #0a0606;
@@ -122,7 +133,7 @@
             --league-card-hover-text: #0b0404;
 
             /* UTILS */
-            --scrollbar-thumb-color: #333333;
+            --scrollbar-thumb-color: #07dad6;
             --back-to-top-bg: #d00000;
             --back-to-top-icon-color: #ffffff;
             --sys-status-bg: rgba(0, 0, 0, 0.1);
@@ -139,6 +150,10 @@
         /* Paste the exact same CSS content as master_template.html here */
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: var(--base-font-size); overflow-x: hidden; padding-bottom: 80px; line-height: 1.5; }
+        /* SCROLLBAR */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: var(--bg-body); }
+        body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 4px; }
         a { text-decoration: none; color: inherit; transition: 0.2s; }
         button { cursor: pointer; border: none; font-family: inherit; }
         
@@ -224,21 +239,69 @@
         .back-to-top.show { opacity: 1; }
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
-        .social-sidebar { position: fixed; left: 0; top: var(--social-desktop-top); transform: translateY(-50%) scale(var(--social-desktop-scale)); z-index: 90; display: flex; flex-direction: column; gap: 8px; background: var(--social-sidebar-bg); border: 1px solid var(--social-sidebar-border); border-left: none; padding: 12px 8px; border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; box-shadow: var(--social-sidebar-shadow); backdrop-filter: blur(5px); }
-        .social-btn { width: 44px; padding: 6px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--social-btn-color); background: var(--social-btn-bg); border: 1px solid var(--social-btn-border); border-radius: var(--border-radius-base); cursor: pointer; transition:0.2s; }
-        .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
-        .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
-        .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
-        .social-btn.telegram { color: #ce0909; } .social-btn.whatsapp { color: #bd1414; } .social-btn.reddit { color: #cc1e1e; } .social-btn.twitter { color: #297b19; }
+         /* SOCIALS */
+        .social-sidebar { 
+            position: fixed; 
+            left: 0; /* Use dynamic left */
+            top: 50%;   /* Changed DESKTOP to DESK */
+            transform: translateY(-50%) scale(1.0); /* Changed DESKTOP to DESK */
+            z-index: 90; 
+            display: flex; flex-direction: column; gap: 8px; 
+            background: var(--soc-sidebar-bg); 
+            border: 1px solid var(--soc-sidebar-border); 
+            border-left: none; padding: 12px 8px; 
+            border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; 
+            box-shadow: var(--soc-sidebar-shadow); 
+            backdrop-filter: blur(5px); 
+        }
+        .social-btn { 
+            width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
+            align-items: center; justify-content: center; gap: 3px; 
+            color: var(--soc-btn-color); background: var(--soc-btn-bg); 
+            border: 1px solid var(--soc-btn-border); border-radius: var(--border-radius-base); 
+            will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
+            cursor: pointer; 
+        }
+        .social-btn svg { width: 20px; height: 20px; fill: currentColor; display: block; }
+        .social-btn.telegram { color: #ce0909; } 
+        .social-btn.whatsapp { color: #bd1414; }
+        .social-btn.reddit { color: #cc1e1e; } 
+        .social-btn.twitter { color: #297b19; } 
+        .social-btn.copy { color: var(--soc-btn-color); }
+        
+        .social-btn:hover { 
+            background: var(--soc-btn-hover-bg); 
+            border-color: var(--soc-btn-hover-border); 
+            transform: var(--soc-btn-hover-transform); 
+            box-shadow: 0 4px 10px var(--soc-btn-shadow); 
+        }
+        .s-count { font-size: 0.65rem; font-weight: 700; color: var(--soc-count); letter-spacing: 0.3px; }
         @media (max-width: 1024px) { .social-sidebar { display: none; } }
         
-        .mobile-sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--mobile-footer-bg); backdrop-filter: blur(10px); border-top: var(--mobile-footer-border-top); padding: 0 5px; display: none; justify-content: space-between; align-items: center; z-index: 900; height: var(--mobile-footer-height); box-shadow: var(--mobile-footer-shadow); }
-        .mobile-sticky-footer .social-btn { border: none; flex: 1; height: 100%; padding: 0; border-radius: 0; background: transparent; transform: none !important; }
+        /* MOBILE FOOTER */
+        .mobile-sticky-footer { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: var(--mob-foot-bg); backdrop-filter: blur(10px); 
+            border-top: var(--mob-foot-border); padding: 0 5px; 
+            display: none; justify-content: space-between; align-items: center; 
+            z-index: 900; height: var(--mob-foot-height); 
+            box-shadow: var(--mob-foot-shadow); 
+        }
+        .mobile-sticky-footer .social-btn { border: none; flex: 1; height: 100%; padding: 0; border-radius: 0; transform: none !important; background: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2px; }
+        .mobile-sticky-footer .social-btn:active { background: var(--mob-foot-active); }
+        .mobile-sticky-footer .s-count { display: block !important; font-size: 0.65rem; color: var(--soc-count); margin: 0; line-height: 1; }
+        .mobile-sticky-footer svg { width: 20px; height: 20px; }
         @media (max-width: 1024px) { .mobile-sticky-footer { display: flex; } }
-        
-        .copy-toast { position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); background: var(--copy-toast-bg); border: 1px solid var(--copy-toast-border); color: var(--copy-toast-text); padding: 8px 14px; font-size: 0.75rem; border-radius: var(--border-radius-base); z-index: 9999; opacity: 0; animation: fadeToast 1.6s ease forwards; }
+
+        .copy-toast { 
+            position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); 
+            background: var(--toast-bg); border: 1px solid var(--toast-border); 
+            color: var(--toast-text); padding: 8px 14px; font-size: 0.75rem; 
+            border-radius: var(--border-radius-base); z-index: 9999; opacity: 0; 
+            animation: fadeToast 1.6s ease forwards; 
+        }
         @keyframes fadeToast { 0% { opacity: 0; transform: translate(-50%, 10px); } 20% { opacity: 1; transform: translate(-50%, 0); } 80% { opacity: 1; } 100% { opacity: 0; } }
-        @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
+        @media (max-width: 768px) { .copy-toast { bottom: 85px; } }
         
         .seo-article { background: var(--article-bg); color: var(--article-text); line-height: var(--article-line-height); padding: 20px; border-radius: var(--border-radius-base); margin-top: 40px; }
         .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
@@ -277,21 +340,21 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list">
-            <!-- L_LIVE_START --><div class="section-box"><div class="sec-head" style="border-bottom: 3px solid #e70856;"><h2 class="sec-title"><span style="font-size:1.2rem; margin-right:8px;">🔴</span> Live Premier League</h2></div><div class="match-list"><div class="match-row live"><div class="col-time"><span class="live-txt">3h 20'</span><span class="time-sub">CRICKET</span></div><div class="teams-wrapper"><div class="league-tag">BANGLADESH PREMIER LEAGUE</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/chattogram-royals.webp" class="t-img" loading="lazy"></div> Chattogram Royals</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/noakhali-express.webp" class="t-img" loading="lazy"></div> Noakhali Express</div></div><div class="col-meta"><div class="meta-top">👀 4</div></div><div class="col-action"><a href="https://totalsportek.top/watch/?livestream=chattogram-royals-vs-noakhali-express-8cfd56f1" class="btn-watch">Streams <span class="hd-badge">SD</span></a><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=chattogram-royals-vs-noakhali-express-8cfd56f1')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div></div></div><!-- L_LIVE_END -->
+        <div id="live-list" style="display:none;">
+            <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 4px solid #dfe30d;">
+            <div class="sec-head">
                 <h2 class="sec-title">
-                    <img src="/assets/logos/leagues/premier-league.webp" alt="Premier League" style="width:28px; height:28px; object-fit:contain; margin-right:8px;"> 
+                    <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Upcoming Premier League Matches nnn
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row"><div class="col-time"><span class="time-main">07:00 AM ET</span><span class="time-sub">Jan 15</span></div><div class="teams-wrapper"><div class="league-tag">CRICKET</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#00897b">D</span></div> Durbar Rajshahi</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#5e35b1">S</span></div> Sylhet Sixers</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">1h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=durbar-rajshahi-vs-sylhet-sixers-c9707f25')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">11:00 AM ET</span><span class="time-sub">Jan 15</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/al-ahli.webp" class="t-img" loading="lazy"></div> Al Ahli</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/muharraq.webp" class="t-img" loading="lazy"></div> Muharraq</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">5h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=al-ahli-vs-muharraq-7e49564d')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">11:00 AM ET</span><span class="time-sub">Jan 15</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/bahrain-sc.webp" class="t-img" loading="lazy"></div> Bahrain SC</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/sitra-club.webp" class="t-img" loading="lazy"></div> Sitra Club</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">5h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=bahrain-sc-vs-sitra-club-cbb8be8f')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">06:30 AM ET</span><span class="time-sub">Jan 16</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/tampines-rovers.webp" class="t-img" loading="lazy"></div> Tampines Rovers</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/young-lions.webp" class="t-img" loading="lazy"></div> Young Lions</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">1d 1h 9m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=tampines-rovers-vs-young-lions-7b2f9b53')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">07:30 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/manchester-united.webp" class="t-img" loading="lazy"></div> Manchester United</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/manchester-city.webp" class="t-img" loading="lazy"></div> Manchester City</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 2h 9m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=manchester-united-vs-manchester-city-2926abce')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">09:50 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/tottenham.webp" class="t-img" loading="lazy"></div> Tottenham</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/west-ham-united.webp" class="t-img" loading="lazy"></div> West Ham United</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 29m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=tottenham-vs-west-ham-united-3a5a17e8')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">10:00 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/chelsea.webp" class="t-img" loading="lazy"></div> Chelsea</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/brentford.webp" class="t-img" loading="lazy"></div> Brentford</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=chelsea-vs-brentford-5de8ac86')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">10:00 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/sunderland.webp" class="t-img" loading="lazy"></div> Sunderland</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/crystal-palace.webp" class="t-img" loading="lazy"></div> Crystal Palace</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=sunderland-vs-crystal-palace-e2e9c03a')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">10:00 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/tottenham-hotspur.webp" class="t-img" loading="lazy"></div> Tottenham Hotspur</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/west-ham-united.webp" class="t-img" loading="lazy"></div> West Ham United</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=tottenham-hotspur-vs-west-ham-united-b01bc143')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">10:00 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/liverpool.webp" class="t-img" loading="lazy"></div> Liverpool</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/burnley.webp" class="t-img" loading="lazy"></div> Burnley</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=liverpool-vs-burnley-9f382d18')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">10:00 AM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/leeds-united.webp" class="t-img" loading="lazy"></div> Leeds United</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/fulham.webp" class="t-img" loading="lazy"></div> Fulham</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 4h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=leeds-united-vs-fulham-1c93764a')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">12:30 PM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#1e88e5">N</span></div> Nottingham Forest</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/arsenal.webp" class="t-img" loading="lazy"></div> Arsenal</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 7h 9m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=nottingham-forest-vs-arsenal-0296f6bf')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">12:30 PM ET</span><span class="time-sub">Jan 17</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/nottingham.webp" class="t-img" loading="lazy"></div> Nottingham</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/arsenal.webp" class="t-img" loading="lazy"></div> Arsenal</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">2d 7h 9m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=nottingham-vs-arsenal-8d073d49')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">09:00 AM ET</span><span class="time-sub">Jan 18</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#5e35b1">W</span></div> Wolverhampton Wanderers</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/streamed/newcastle-united.webp" class="t-img" loading="lazy"></div> Newcastle United</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">3d 3h 39m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=wolverhampton-wanderers-vs-newcastle-united-7bcb6cc5')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><div class="match-row"><div class="col-time"><span class="time-main">11:30 AM ET</span><span class="time-sub">Jan 18</span></div><div class="teams-wrapper"><div class="league-tag">FOOTBALL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/aston-villa.webp" class="t-img" loading="lazy"></div> Aston Villa</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#fdd835">E</span></div> Everton</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">3d 6h 9m</span></div></div><div class="col-action"><button class="btn-notify">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=aston-villa-vs-everton-32979d00')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
