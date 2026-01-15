@@ -2969,7 +2969,9 @@
         "Peli-Karhut II (W)": "assets/logos/upstreams/peli-karhut-ii-w.webp",
         "Al-Wakrah": "assets/logos/upstreams/al-wakrah.webp",
         "Al Duhail": "assets/logos/upstreams/al-duhail.webp",
-        "Mumbai Indians W": "assets/logos/upstreams/mumbai-indians-w.webp"
+        "Mumbai Indians W": "assets/logos/upstreams/mumbai-indians-w.webp",
+        "Orlando Solar Bears": "assets/logos/upstreams/orlando-solar-bears.webp",
+        "Idaho Steelheads": "assets/logos/upstreams/idaho-steelheads.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3249,6 +3251,8 @@
         "Liga Portugal Betclic": "assets/logos/leagues/liga-portugal-betclic.webp",
         "Finland - Division 1A": "assets/logos/leagues/finland-division-1a.webp",
         "ICC U19 World Cup": "assets/logos/leagues/icc-u19-world-cup.webp",
-        "Stars League": "assets/logos/leagues/stars-league.webp"
+        "Stars League": "assets/logos/leagues/stars-league.webp",
+        "Portugal - League 3 - Gr.B": "assets/logos/leagues/portugal-league-3-grb.webp",
+        "Portugal - League 3 - Gr.A": "assets/logos/leagues/portugal-league-3-gra.webp"
     }
 }
