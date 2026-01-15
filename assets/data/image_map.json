@@ -2950,7 +2950,11 @@
         "Jessica Orzechowicz": "assets/logos/upstreams/jessica-orzechowicz.webp",
         "Kajsa van Dalm": "assets/logos/upstreams/kajsa-van-dalm.webp",
         "Thi Anh Thu Vu": "assets/logos/upstreams/thi-anh-thu-vu.webp",
-        "Selma Arvidsson": "assets/logos/upstreams/selma-arvidsson.webp"
+        "Selma Arvidsson": "assets/logos/upstreams/selma-arvidsson.webp",
+        "Terese Gammelgaard": "assets/logos/upstreams/terese-gammelgaard.webp",
+        "Aleksandra Kurkiewicz": "assets/logos/upstreams/aleksandra-kurkiewicz.webp",
+        "Joanna Podedworny": "assets/logos/upstreams/joanna-podedworny.webp",
+        "Diede Odijk": "assets/logos/upstreams/diede-odijk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3228,6 +3232,7 @@
         "Auckland, New Zealand": "assets/logos/leagues/auckland-new-zealand.webp",
         "USA - NBA": "assets/logos/leagues/usa-nba.webp",
         "Liga Portugal Betclic": "assets/logos/leagues/liga-portugal-betclic.webp",
-        "Finland - Division 1A": "assets/logos/leagues/finland-division-1a.webp"
+        "Finland - Division 1A": "assets/logos/leagues/finland-division-1a.webp",
+        "ICC U19 World Cup": "assets/logos/leagues/icc-u19-world-cup.webp"
     }
 }
