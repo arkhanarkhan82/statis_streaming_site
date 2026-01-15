@@ -719,7 +719,18 @@ def inject_watch_page(matches):
     with open(target_file, 'r', encoding='utf-8') as f:
         html = f.read()
 
-    data_string = f"window.MATCH_DATA = {json.dumps(matches)};"
+    # --- MODIFICATION: Create a clean copy without _img_meta ---
+    clean_matches = []
+    for m in matches:
+        # Shallow copy the match so we don't affect the original list used by image downloader
+        temp_m = m.copy()
+        # Remove the raw image metadata from this copy
+        temp_m.pop('_img_meta', None)
+        clean_matches.append(temp_m)
+
+    data_string = f"window.MATCH_DATA = {json.dumps(clean_matches)};"
+    # -----------------------------------------------------------
+
     pattern = r'(//\s*\{\{INJECTED_MATCH_DATA\}\}|window\.MATCH_DATA\s*=\s*\[.*?\];)'
     
     if re.search(pattern, html, flags=re.DOTALL):
