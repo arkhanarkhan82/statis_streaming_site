@@ -2932,7 +2932,25 @@
         "HC Innsbruck": "assets/logos/upstreams/hc-innsbruck.webp",
         "EC VSV": "assets/logos/upstreams/ec-vsv.webp",
         "Acad\u00e9mico Viseu FC": "assets/logos/upstreams/acad\u00e9mico-viseu-fc.webp",
-        "Uni\u00e3o de Leiria": "assets/logos/upstreams/uni\u00e3o-de-leiria.webp"
+        "Uni\u00e3o de Leiria": "assets/logos/upstreams/uni\u00e3o-de-leiria.webp",
+        "Junior FC": "assets/logos/streamed/junior-fc.webp",
+        "Racing Club de Avellaneda": "assets/logos/upstreams/racing-club-de-avellaneda.webp",
+        "Aguada": "assets/logos/upstreams/aguada.webp",
+        "Kouvottaret (W)": "assets/logos/upstreams/kouvottaret-w.webp",
+        "Bc Nokia (W)": "assets/logos/upstreams/bc-nokia-w.webp",
+        "Achilleas Kaimakliou": "assets/logos/upstreams/achilleas-kaimakliou.webp",
+        "Anorthosis Famagusta": "assets/logos/upstreams/anorthosis-famagusta.webp",
+        "Raiders": "assets/logos/upstreams/raiders.webp",
+        "Kandava/Anzage": "assets/logos/upstreams/kandavaanzage.webp",
+        "Saldus": "assets/logos/upstreams/saldus.webp",
+        "BK Livani": "assets/logos/upstreams/bk-livani.webp",
+        "Bertanu Valmieras": "assets/logos/upstreams/bertanu-valmieras.webp",
+        "BK Talsi": "assets/logos/upstreams/bk-talsi.webp",
+        "Juventude RS U20": "assets/logos/upstreams/juventude-rs-u20.webp",
+        "Jessica Orzechowicz": "assets/logos/upstreams/jessica-orzechowicz.webp",
+        "Kajsa van Dalm": "assets/logos/upstreams/kajsa-van-dalm.webp",
+        "Thi Anh Thu Vu": "assets/logos/upstreams/thi-anh-thu-vu.webp",
+        "Selma Arvidsson": "assets/logos/upstreams/selma-arvidsson.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3209,6 +3227,7 @@
         "Hobart, Australia": "assets/logos/leagues/hobart-australia.webp",
         "Auckland, New Zealand": "assets/logos/leagues/auckland-new-zealand.webp",
         "USA - NBA": "assets/logos/leagues/usa-nba.webp",
-        "Liga Portugal Betclic": "assets/logos/leagues/liga-portugal-betclic.webp"
+        "Liga Portugal Betclic": "assets/logos/leagues/liga-portugal-betclic.webp",
+        "Finland - Division 1A": "assets/logos/leagues/finland-division-1a.webp"
     }
 }
