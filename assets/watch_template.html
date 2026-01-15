@@ -713,10 +713,12 @@
                 if (!rawMatch) { showError("Match not found or ended."); return; }
 
                 // --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
+                // --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
                 const normData = { 
                     originalId: rawMatch.id, 
                     
                     // Teams & League
+                    title: rawMatch.title, // <--- ADD THIS LINE
                     home: rawMatch.home, 
                     away: rawMatch.away, 
                     league: rawMatch.league, 
@@ -817,12 +819,15 @@
             if (m.isSingleEvent) {
                 mhContainer.classList.add('single-mode');
                 hCol.innerHTML = ''; aCol.innerHTML = '';
-                centerH1.innerText = m.home; centerH1.style.fontSize = "1.5rem"; 
+                centerH1.innerText = m.title || m.home; centerH1.style.fontSize = "1.5rem"; 
                 if (hLogo) { singleLogoCont.style.display = 'block'; singleLogoCont.innerHTML = `<div class="single-logo-wrapper"><img src="${getImgUrl(hLogo)}" class="single-logo-img" alt="${m.home}"></div>`; }
                 document.getElementById('tr-home').style.display = 'none'; document.getElementById('tr-away').style.display = 'none';
                 const sRow = document.getElementById('tr-single');
-                if(sRow) { sRow.style.display = 'table-row'; document.getElementById('tbl-event').innerText = m.home; }
-            } else {
+                if(sRow) { 
+                    sRow.style.display = 'table-row'; 
+                    // Use Title if available, otherwise fallback to Home
+                    document.getElementById('tbl-event').innerText = m.title || m.home; 
+                } else {
                 mhContainer.classList.remove('single-mode'); singleLogoCont.style.display = 'none';
                 
                 if(hLogo) hCol.innerHTML = `<div class="mh-team-name-sm">${m.home}</div><div class="logo-wrapper"><img src="${getImgUrl(hLogo)}" class="mh-team-logo" alt="${m.home}" width="28" height="28" loading="eager" onload="this.classList.add('loaded')"></div>`;
