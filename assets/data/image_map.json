@@ -2906,7 +2906,9 @@
         "Zimbabwe": "assets/logos/streamed/zimbabwe.webp",
         "FC Midtjylland": "assets/logos/upstreams/fc-midtjylland.webp",
         "Ferencv\u00e1ros TC": "assets/logos/upstreams/ferencv\u00e1ros-tc.webp",
-        "Young Boys": "assets/logos/upstreams/young-boys.webp"
+        "Young Boys": "assets/logos/upstreams/young-boys.webp",
+        "Tampines Rovers": "assets/logos/upstreams/tampines-rovers.webp",
+        "Young Lions": "assets/logos/upstreams/young-lions.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3178,6 +3180,7 @@
         "Buenos Aires, Argentina": "assets/logos/leagues/buenos-aires-argentina.webp",
         "Glasgow, Great Britain": "assets/logos/leagues/glasgow-great-britain.webp",
         "Cricket ICC U19 World Cup": "assets/logos/leagues/cricket-icc-u19-world-cup.webp",
-        "Asian Cup U23": "assets/logos/leagues/asian-cup-u23.webp"
+        "Asian Cup U23": "assets/logos/leagues/asian-cup-u23.webp",
+        "Cricket Big Bash League": "assets/logos/leagues/cricket-big-bash-league.webp"
     }
 }
