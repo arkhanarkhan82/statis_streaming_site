@@ -102,7 +102,9 @@ def extract_teams(match):
         match['_leagueSource'] = "title"
         title = parts[-1]
     match['title_clean'] = title
-    teams = match.get('teams', {})
+    teams = match.get('teams') or {}  # Fix: Handle explicit null
+    match['teams'] = teams # Ensure match object has safe dict
+    
     home_name = teams.get('home', {}).get('name')
     away_name = teams.get('away', {}).get('name')
     if home_name or away_name: return
