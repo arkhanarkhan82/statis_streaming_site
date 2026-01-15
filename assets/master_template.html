@@ -440,7 +440,11 @@
 
         /* SOCIALS */
         .social-sidebar { 
-            position: fixed; left: 0; top: var(--social-desktop-top); transform: translateY(-50%) scale(var(--social-desktop-scale)); z-index: 90; 
+            position: fixed; 
+            left: {{THEME_SOCIAL_DESK_LEFT}}; /* Use dynamic left */
+            top: {{THEME_SOCIAL_DESK_TOP}};   /* Changed DESKTOP to DESK */
+            transform: translateY(-50%) scale({{THEME_SOCIAL_DESK_SCALE}}); /* Changed DESKTOP to DESK */
+            z-index: 90; 
             display: flex; flex-direction: column; gap: 8px; 
             background: var(--soc-sidebar-bg); 
             border: 1px solid var(--soc-sidebar-border); 
