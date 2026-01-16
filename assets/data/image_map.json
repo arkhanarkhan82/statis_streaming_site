@@ -3743,7 +3743,9 @@
         "Rimini": "assets/logos/upstreams/rimini.webp",
         "JuVi Cremona": "assets/logos/upstreams/juvi-cremona.webp",
         "Scafati": "assets/logos/upstreams/scafati.webp",
-        "Talos Ruvo di Puglia": "assets/logos/upstreams/talos-ruvo-di-puglia.webp"
+        "Talos Ruvo di Puglia": "assets/logos/upstreams/talos-ruvo-di-puglia.webp",
+        "Zulte Waregem": "assets/logos/streamed/zulte-waregem.webp",
+        "Genk": "assets/logos/streamed/genk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
