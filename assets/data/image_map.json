@@ -3439,7 +3439,28 @@
         "Glasgow Clan": "assets/logos/upstreams/glasgow-clan.webp",
         "Carlos Alcaraz Garfia": "assets/logos/upstreams/carlos-alcaraz-garfia.webp",
         "ETV Hamburg": "assets/logos/upstreams/etv-hamburg.webp",
-        "Schweriner SC": "assets/logos/upstreams/schweriner-sc.webp"
+        "Schweriner SC": "assets/logos/upstreams/schweriner-sc.webp",
+        "Andreeva v Shnaider": "assets/logos/upstreams/andreeva-v-shnaider.webp",
+        "Women's Singles Semi Final Adelaide International 2026": "assets/logos/upstreams/womens-singles-semi-final-adelaide-international-2026.webp",
+        "Preston v Jovic": "assets/logos/upstreams/preston-v-jovic.webp",
+        "Women's Singles Semi Final Hobart International 2026": "assets/logos/upstreams/womens-singles-semi-final-hobart-international-2026.webp",
+        "Tortona": "assets/logos/upstreams/tortona.webp",
+        "Sloboda": "assets/logos/upstreams/sloboda.webp",
+        "Vojvodina": "assets/logos/upstreams/vojvodina.webp",
+        "Columbia": "assets/logos/upstreams/columbia.webp",
+        "Brown": "assets/logos/upstreams/brown.webp",
+        "Calcio Campionato Italiano Serie C": "assets/logos/upstreams/calcio-campionato-italiano-serie-c.webp",
+        "Stag. Calcio Serie C 2025/2026 Girone B - Calcio Serie C 22ga Girone B Juventus Next Gen/ Ascoli 17/01/2026 | 205 min": "assets/logos/upstreams/stag-calcio-serie-c-20252026-girone-b-calcio-serie-c-22ga-girone-b-juventus-next-gen-ascoli-17012026-205-min.webp",
+        "Stag. Calcio Serie C 2025/2026 Girone B - Calcio Serie C 22ga Girone B Guidonia Montecelio/ Livorno 17/01/2026 | 155 min": "assets/logos/upstreams/stag-calcio-serie-c-20252026-girone-b-calcio-serie-c-22ga-girone-b-guidonia-montecelio-livorno-17012026-155-min.webp",
+        "Calcio: Super League 2025/2026": "assets/logos/upstreams/calcio-super-league-20252026.webp",
+        "Young Boys - Losanna": "assets/logos/upstreams/young-boys-losanna.webp",
+        "N.E.C.": "assets/logos/upstreams/nec.webp",
+        "Karsiyaka": "assets/logos/upstreams/karsiyaka.webp",
+        "U.A.N.L.- Tigres": "assets/logos/upstreams/uanl-tigres.webp",
+        "Schweinfurt": "assets/logos/upstreams/schweinfurt.webp",
+        "Viktoria Koln": "assets/logos/upstreams/viktoria-koln.webp",
+        "Virtus Verona | 180 min": "assets/logos/upstreams/virtus-verona-180-min.webp",
+        "Mersin": "assets/logos/upstreams/mersin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3765,6 +3786,10 @@
         "DEL": "assets/logos/leagues/del.webp",
         "HockeyEttan Sodra": "assets/logos/leagues/hockeyettan-sodra.webp",
         "Elite League": "assets/logos/leagues/elite-league.webp",
-        "1. Bundesliga, Women": "assets/logos/leagues/1-bundesliga-women.webp"
+        "1. Bundesliga, Women": "assets/logos/leagues/1-bundesliga-women.webp",
+        "Serbia - KLS - Prima League": "assets/logos/leagues/serbia-kls-prima-league.webp",
+        "Basketball": "assets/logos/leagues/basketball.webp",
+        "Football": "assets/logos/leagues/football.webp",
+        "Basket League": "assets/logos/leagues/basket-league.webp"
     }
 }
