@@ -3559,7 +3559,10 @@
         "Minoru Koga": "assets/logos/upstreams/minoru-koga.webp",
         "Jia Jie Tan": "assets/logos/upstreams/jia-jie-tan.webp",
         "Yize W.": "assets/logos/upstreams/yize-w.webp",
-        "Guodong X.": "assets/logos/upstreams/guodong-x.webp"
+        "Guodong X.": "assets/logos/upstreams/guodong-x.webp",
+        "CD Castell\u00f3n": "assets/logos/upstreams/cd-castell\u00f3n.webp",
+        "Legan\u00e9s": "assets/logos/upstreams/legan\u00e9s.webp",
+        "Jasmijn Gimbr\u00e8re": "assets/logos/upstreams/jasmijn-gimbr\u00e8re.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3908,6 +3911,7 @@
         "Division 1 Womenw Zeren Spor W": "assets/logos/leagues/division-1-womenw-zeren-spor-w.webp",
         "Vtb United Leaguepermmoscow": "assets/logos/leagues/vtb-united-leaguepermmoscow.webp",
         "Super Ligi Esenler Tur Anadoluefes": "assets/logos/leagues/super-ligi-esenler-tur-anadoluefes.webp",
-        "European Championship Ukraine France": "assets/logos/leagues/european-championship-ukraine-france.webp"
+        "European Championship Ukraine France": "assets/logos/leagues/european-championship-ukraine-france.webp",
+        "Australia A-League": "assets/logos/leagues/australia-a-league.webp"
     }
 }
