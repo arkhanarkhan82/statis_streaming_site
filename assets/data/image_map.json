@@ -3745,7 +3745,8 @@
         "Scafati": "assets/logos/upstreams/scafati.webp",
         "Talos Ruvo di Puglia": "assets/logos/upstreams/talos-ruvo-di-puglia.webp",
         "Zulte Waregem": "assets/logos/streamed/zulte-waregem.webp",
-        "Genk": "assets/logos/streamed/genk.webp"
+        "Genk": "assets/logos/streamed/genk.webp",
+        "Washington Wizards  --- HD": "assets/logos/upstreams/washington-wizards-hd.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4100,6 +4101,7 @@
         "1. Lig": "assets/logos/leagues/1-lig.webp",
         "Swiss - SB League (W)": "assets/logos/leagues/swiss-sb-league-w.webp",
         "France Rugby Pro D2": "assets/logos/leagues/france-rugby-pro-d2.webp",
-        "English FA Cup": "assets/logos/leagues/english-fa-cup.webp"
+        "English FA Cup": "assets/logos/leagues/english-fa-cup.webp",
+        "Tennis WTA": "assets/logos/leagues/tennis-wta.webp"
     }
 }
