@@ -3505,7 +3505,10 @@
         "Wake Forest": "assets/logos/upstreams/wake-forest.webp",
         "Davos": "assets/logos/upstreams/davos.webp",
         "AIK Stockholm": "assets/logos/upstreams/aik-stockholm.webp",
-        "Juventus Next Gen U23": "assets/logos/upstreams/juventus-next-gen-u23.webp"
+        "Juventus Next Gen U23": "assets/logos/upstreams/juventus-next-gen-u23.webp",
+        "Academico de Viseu FC": "assets/logos/upstreams/academico-de-viseu-fc.webp",
+        "UD Leiria": "assets/logos/upstreams/ud-leiria.webp",
+        "Malmo FF": "assets/logos/upstreams/malmo-ff.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
