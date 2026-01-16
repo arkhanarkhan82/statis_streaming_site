@@ -3496,7 +3496,14 @@
         "Minnesota Frost": "assets/logos/upstreams/minnesota-frost.webp",
         "Illinois State": "assets/logos/upstreams/illinois-state.webp",
         "Maroussi": "assets/logos/upstreams/maroussi.webp",
-        "Lamin Lourenzo Da Silva": "assets/logos/upstreams/lamin-lourenzo-da-silva.webp"
+        "Lamin Lourenzo Da Silva": "assets/logos/upstreams/lamin-lourenzo-da-silva.webp",
+        "Pakistan": "assets/logos/streamed/pakistan.webp",
+        "Scotland": "assets/logos/streamed/scotland.webp",
+        "Grobina": "assets/logos/upstreams/grobina.webp",
+        "BS Tukums/TSS": "assets/logos/upstreams/bs-tukumstss.webp",
+        "UCF Knights": "assets/logos/upstreams/ucf-knights.webp",
+        "Wake Forest": "assets/logos/upstreams/wake-forest.webp",
+        "Davos": "assets/logos/upstreams/davos.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
