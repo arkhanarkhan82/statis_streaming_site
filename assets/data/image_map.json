@@ -3689,7 +3689,19 @@
         "William Boegebjerg": "assets/logos/upstreams/william-boegebjerg.webp",
         "USON Nevers": "assets/logos/upstreams/uson-nevers.webp",
         "Provence Rugby": "assets/logos/upstreams/provence-rugby.webp",
-        "Ann-Sofie Husher Ruus": "assets/logos/upstreams/ann-sofie-husher-ruus.webp"
+        "Ann-Sofie Husher Ruus": "assets/logos/upstreams/ann-sofie-husher-ruus.webp",
+        "Monthey": "assets/logos/upstreams/monthey.webp",
+        "Biarritz Olympique": "assets/logos/upstreams/biarritz-olympique.webp",
+        "SA XV Charente": "assets/logos/upstreams/sa-xv-charente.webp",
+        "Colomiers Rugby": "assets/logos/upstreams/colomiers-rugby.webp",
+        "US Oyonnax": "assets/logos/upstreams/us-oyonnax.webp",
+        "Stade Montois": "assets/logos/upstreams/stade-montois.webp",
+        "Valence Romans Dr\u00f4me": "assets/logos/upstreams/valence-romans-dr\u00f4me.webp",
+        "US Carcassonnaise XV": "assets/logos/upstreams/us-carcassonnaise-xv.webp",
+        "US Dax": "assets/logos/upstreams/us-dax.webp",
+        "Passa-Orn Phannachet": "assets/logos/upstreams/passa-orn-phannachet.webp",
+        "Rujula Ramu": "assets/logos/upstreams/rujula-ramu.webp",
+        "Jakob Houe": "assets/logos/upstreams/jakob-houe.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4042,6 +4054,7 @@
         "Australia A-League": "assets/logos/leagues/australia-a-league.webp",
         "Philippines Football League": "assets/logos/leagues/philippines-football-league.webp",
         "1. Lig": "assets/logos/leagues/1-lig.webp",
-        "Swiss - SB League (W)": "assets/logos/leagues/swiss-sb-league-w.webp"
+        "Swiss - SB League (W)": "assets/logos/leagues/swiss-sb-league-w.webp",
+        "France Rugby Pro D2": "assets/logos/leagues/france-rugby-pro-d2.webp"
     }
 }
