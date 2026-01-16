@@ -3437,7 +3437,9 @@
         "Sheffield Steelers": "assets/logos/upstreams/sheffield-steelers.webp",
         "Manchester Storm": "assets/logos/upstreams/manchester-storm.webp",
         "Glasgow Clan": "assets/logos/upstreams/glasgow-clan.webp",
-        "Carlos Alcaraz Garfia": "assets/logos/upstreams/carlos-alcaraz-garfia.webp"
+        "Carlos Alcaraz Garfia": "assets/logos/upstreams/carlos-alcaraz-garfia.webp",
+        "ETV Hamburg": "assets/logos/upstreams/etv-hamburg.webp",
+        "Schweriner SC": "assets/logos/upstreams/schweriner-sc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3762,6 +3764,7 @@
         "Tipsport Liga": "assets/logos/leagues/tipsport-liga.webp",
         "DEL": "assets/logos/leagues/del.webp",
         "HockeyEttan Sodra": "assets/logos/leagues/hockeyettan-sodra.webp",
-        "Elite League": "assets/logos/leagues/elite-league.webp"
+        "Elite League": "assets/logos/leagues/elite-league.webp",
+        "1. Bundesliga, Women": "assets/logos/leagues/1-bundesliga-women.webp"
     }
 }
