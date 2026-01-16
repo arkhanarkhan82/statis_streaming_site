@@ -3503,7 +3503,9 @@
         "BS Tukums/TSS": "assets/logos/upstreams/bs-tukumstss.webp",
         "UCF Knights": "assets/logos/upstreams/ucf-knights.webp",
         "Wake Forest": "assets/logos/upstreams/wake-forest.webp",
-        "Davos": "assets/logos/upstreams/davos.webp"
+        "Davos": "assets/logos/upstreams/davos.webp",
+        "AIK Stockholm": "assets/logos/upstreams/aik-stockholm.webp",
+        "Juventus Next Gen U23": "assets/logos/upstreams/juventus-next-gen-u23.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3835,6 +3837,7 @@
         "Football": "assets/logos/leagues/football.webp",
         "Basket League": "assets/logos/leagues/basket-league.webp",
         "KLS": "assets/logos/leagues/kls.webp",
-        "Serie C - Group B": "assets/logos/leagues/serie-c-group-b.webp"
+        "Serie C - Group B": "assets/logos/leagues/serie-c-group-b.webp",
+        "World Cup 2026 U19 - Gr.D": "assets/logos/leagues/world-cup-2026-u19-grd.webp"
     }
 }
