@@ -3460,7 +3460,37 @@
         "Schweinfurt": "assets/logos/upstreams/schweinfurt.webp",
         "Viktoria Koln": "assets/logos/upstreams/viktoria-koln.webp",
         "Virtus Verona | 180 min": "assets/logos/upstreams/virtus-verona-180-min.webp",
-        "Mersin": "assets/logos/upstreams/mersin.webp"
+        "Mersin": "assets/logos/upstreams/mersin.webp",
+        "Rapid Bucuresti": "assets/logos/upstreams/rapid-bucuresti.webp",
+        "CSU Sibiu": "assets/logos/upstreams/csu-sibiu.webp",
+        "America SE U20": "assets/logos/upstreams/america-se-u20.webp",
+        "Juventus U23": "assets/logos/upstreams/juventus-u23.webp",
+        "Ascoli": "assets/logos/upstreams/ascoli.webp",
+        "Guidonia": "assets/logos/upstreams/guidonia.webp",
+        "Livorno": "assets/logos/upstreams/livorno.webp",
+        "Guadalajara Chivas": "assets/logos/upstreams/guadalajara-chivas.webp",
+        "Minnesota Golden Gophers W": "assets/logos/upstreams/minnesota-golden-gophers-w.webp",
+        "Sebasti\u00e1n B\u00e1ez": "assets/logos/upstreams/sebasti\u00e1n-b\u00e1ez.webp",
+        "Baia Mare W": "assets/logos/upstreams/baia-mare-w.webp",
+        "Mosonmagyarovar W": "assets/logos/upstreams/mosonmagyarovar-w.webp",
+        "Lok. Zagreb W": "assets/logos/upstreams/lok-zagreb-w.webp",
+        "Rapid Bucuresti W": "assets/logos/upstreams/rapid-bucuresti-w.webp",
+        "Pinar Karsiyaka": "assets/logos/upstreams/pinar-karsiyaka.webp",
+        "South Florida": "assets/logos/upstreams/south-florida.webp",
+        "North Texas": "assets/logos/upstreams/north-texas.webp",
+        "Tulane": "assets/logos/upstreams/tulane.webp",
+        "Memphis": "assets/logos/upstreams/memphis.webp",
+        "UTSA Roadrunners": "assets/logos/upstreams/utsa-roadrunners.webp",
+        "ArzignanoChiampo": "assets/logos/upstreams/arzignanochiampo.webp",
+        "Vicenza": "assets/logos/upstreams/vicenza.webp",
+        "Frances Tiafoe": "assets/logos/upstreams/frances-tiafoe.webp",
+        "Alexander Bublik": "assets/logos/upstreams/alexander-bublik.webp",
+        "Mersin BSB": "assets/logos/upstreams/mersin-bsb.webp",
+        "Petra Maixnerova": "assets/logos/upstreams/petra-maixnerova.webp",
+        "Pablo Abian": "assets/logos/upstreams/pablo-abian.webp",
+        "David Kim Kristensen": "assets/logos/upstreams/david-kim-kristensen.webp",
+        "Sacha Leveque": "assets/logos/upstreams/sacha-leveque.webp",
+        "Mads Emil Christophersen": "assets/logos/upstreams/mads-emil-christophersen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3790,6 +3820,8 @@
         "Serbia - KLS - Prima League": "assets/logos/leagues/serbia-kls-prima-league.webp",
         "Basketball": "assets/logos/leagues/basketball.webp",
         "Football": "assets/logos/leagues/football.webp",
-        "Basket League": "assets/logos/leagues/basket-league.webp"
+        "Basket League": "assets/logos/leagues/basket-league.webp",
+        "KLS": "assets/logos/leagues/kls.webp",
+        "Serie C - Group B": "assets/logos/leagues/serie-c-group-b.webp"
     }
 }
