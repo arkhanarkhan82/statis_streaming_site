@@ -3508,7 +3508,12 @@
         "Juventus Next Gen U23": "assets/logos/upstreams/juventus-next-gen-u23.webp",
         "Academico de Viseu FC": "assets/logos/upstreams/academico-de-viseu-fc.webp",
         "UD Leiria": "assets/logos/upstreams/ud-leiria.webp",
-        "Malmo FF": "assets/logos/upstreams/malmo-ff.webp"
+        "Malmo FF": "assets/logos/upstreams/malmo-ff.webp",
+        "Fotbal Club FCSB": "assets/logos/upstreams/fotbal-club-fcsb.webp",
+        "CD Mafra": "assets/logos/upstreams/cd-mafra.webp",
+        "UD Santar\u00e9m": "assets/logos/upstreams/ud-santar\u00e9m.webp",
+        "Zhi Wei Loh": "assets/logos/upstreams/zhi-wei-loh.webp",
+        "Petra Saarnivaara": "assets/logos/upstreams/petra-saarnivaara.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3841,6 +3846,7 @@
         "Basket League": "assets/logos/leagues/basket-league.webp",
         "KLS": "assets/logos/leagues/kls.webp",
         "Serie C - Group B": "assets/logos/leagues/serie-c-group-b.webp",
-        "World Cup 2026 U19 - Gr.D": "assets/logos/leagues/world-cup-2026-u19-grd.webp"
+        "World Cup 2026 U19 - Gr.D": "assets/logos/leagues/world-cup-2026-u19-grd.webp",
+        "Liga I": "assets/logos/leagues/liga-i.webp"
     }
 }
