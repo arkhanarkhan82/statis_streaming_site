@@ -3727,7 +3727,10 @@
         "Elgin City": "assets/logos/streamed/elgin-city.webp",
         "Edinburgh City": "assets/logos/streamed/edinburgh-city.webp",
         "Aberdeen": "assets/logos/streamed/aberdeen.webp",
-        "Raith Rovers": "assets/logos/streamed/raith-rovers.webp"
+        "Raith Rovers": "assets/logos/streamed/raith-rovers.webp",
+        "Newcastle United W": "assets/logos/upstreams/newcastle-united-w.webp",
+        "Vendee Challans": "assets/logos/upstreams/vendee-challans.webp",
+        "Josh Nguyen": "assets/logos/upstreams/josh-nguyen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4081,6 +4084,7 @@
         "Philippines Football League": "assets/logos/leagues/philippines-football-league.webp",
         "1. Lig": "assets/logos/leagues/1-lig.webp",
         "Swiss - SB League (W)": "assets/logos/leagues/swiss-sb-league-w.webp",
-        "France Rugby Pro D2": "assets/logos/leagues/france-rugby-pro-d2.webp"
+        "France Rugby Pro D2": "assets/logos/leagues/france-rugby-pro-d2.webp",
+        "English FA Cup": "assets/logos/leagues/english-fa-cup.webp"
     }
 }
