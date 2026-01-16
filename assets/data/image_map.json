@@ -3566,7 +3566,12 @@
         "South Africa": "assets/logos/streamed/south-africa.webp",
         "Tanzania": "assets/logos/streamed/tanzania.webp",
         "Ireland": "assets/logos/streamed/ireland.webp",
-        "Royal Challengers Bengaluru": "assets/logos/upstreams/royal-challengers-bengaluru.webp"
+        "Royal Challengers Bengaluru": "assets/logos/upstreams/royal-challengers-bengaluru.webp",
+        "Manila Digger FC": "assets/logos/upstreams/manila-digger-fc.webp",
+        "Valenzuela PB-Mendiola FC": "assets/logos/upstreams/valenzuela-pb-mendiola-fc.webp",
+        "Tuloy FC": "assets/logos/upstreams/tuloy-fc.webp",
+        "Maharlika Manila FC": "assets/logos/upstreams/maharlika-manila-fc.webp",
+        "Kaya-Iloilo": "assets/logos/upstreams/kaya-iloilo.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3916,6 +3921,7 @@
         "Vtb United Leaguepermmoscow": "assets/logos/leagues/vtb-united-leaguepermmoscow.webp",
         "Super Ligi Esenler Tur Anadoluefes": "assets/logos/leagues/super-ligi-esenler-tur-anadoluefes.webp",
         "European Championship Ukraine France": "assets/logos/leagues/european-championship-ukraine-france.webp",
-        "Australia A-League": "assets/logos/leagues/australia-a-league.webp"
+        "Australia A-League": "assets/logos/leagues/australia-a-league.webp",
+        "Philippines Football League": "assets/logos/leagues/philippines-football-league.webp"
     }
 }
