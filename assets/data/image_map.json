@@ -3414,7 +3414,29 @@
         "Perth W": "assets/logos/upstreams/perth-w.webp",
         "Australia U19": "assets/logos/upstreams/australia-u19.webp",
         "Ireland U19": "assets/logos/upstreams/ireland-u19.webp",
-        "Auger-Aliassime": "assets/logos/upstreams/auger-aliassime.webp"
+        "Auger-Aliassime": "assets/logos/upstreams/auger-aliassime.webp",
+        "HPK H\u00e4meenlinna": "assets/logos/upstreams/hpk-h\u00e4meenlinna.webp",
+        "JYP Jyv\u00e4skyl\u00e4": "assets/logos/upstreams/jyp-jyv\u00e4skyl\u00e4.webp",
+        "Mikkelin Jukurit": "assets/logos/upstreams/mikkelin-jukurit.webp",
+        "Tappara Tampere": "assets/logos/upstreams/tappara-tampere.webp",
+        "BK Mlad\u00e1 Boleslav": "assets/logos/upstreams/bk-mlad\u00e1-boleslav.webp",
+        "Dynamo Pardubice": "assets/logos/upstreams/dynamo-pardubice.webp",
+        "HK Skalica": "assets/logos/upstreams/hk-skalica.webp",
+        "HC Slovan Bratislava": "assets/logos/upstreams/hc-slovan-bratislava.webp",
+        "Vlci \u017dilina": "assets/logos/upstreams/vlci-\u017eilina.webp",
+        "HC 19 Humenne": "assets/logos/upstreams/hc-19-humenne.webp",
+        "Pinguins Bremerhaven": "assets/logos/upstreams/pinguins-bremerhaven.webp",
+        "K\u00f6lner Haie": "assets/logos/upstreams/k\u00f6lner-haie.webp",
+        "Grastorps IK": "assets/logos/upstreams/grastorps-ik.webp",
+        "HC Vita H\u00e4sten": "assets/logos/upstreams/hc-vita-h\u00e4sten.webp",
+        "EHC Winterthur": "assets/logos/upstreams/ehc-winterthur.webp",
+        "HC Thurgau": "assets/logos/upstreams/hc-thurgau.webp",
+        "EHC Olten": "assets/logos/upstreams/ehc-olten.webp",
+        "EHC Chur": "assets/logos/upstreams/ehc-chur.webp",
+        "Belfast Giants": "assets/logos/upstreams/belfast-giants.webp",
+        "Sheffield Steelers": "assets/logos/upstreams/sheffield-steelers.webp",
+        "Manchester Storm": "assets/logos/upstreams/manchester-storm.webp",
+        "Glasgow Clan": "assets/logos/upstreams/glasgow-clan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -3735,6 +3757,10 @@
         "Serie A Woman": "assets/logos/leagues/serie-a-woman.webp",
         "Ninja A-League": "assets/logos/leagues/ninja-a-league.webp",
         "A-league": "assets/logos/leagues/a-league.webp",
-        "Tennis Australian Open": "assets/logos/leagues/tennis-australian-open.webp"
+        "Tennis Australian Open": "assets/logos/leagues/tennis-australian-open.webp",
+        "Tipsport Liga": "assets/logos/leagues/tipsport-liga.webp",
+        "DEL": "assets/logos/leagues/del.webp",
+        "HockeyEttan Sodra": "assets/logos/leagues/hockeyettan-sodra.webp",
+        "Elite League": "assets/logos/leagues/elite-league.webp"
     }
 }
