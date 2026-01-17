@@ -388,6 +388,8 @@ def render_page(template, config, page_data, theme_override=None):
     # Calculate values first to ensure fallbacks
     h1_text = page_data.get('h1_title') or page_data.get('title') or ""
     hero_txt = page_data.get('hero_text') or page_data.get('meta_desc') or ""
+    # --- ADD THIS LINE TO DEFINE SITE NAME ---
+    full_site_name = f"{s.get('title_part_1', 'Stream')} {s.get('title_part_2', 'East')}".strip()
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
@@ -397,6 +399,8 @@ def render_page(template, config, page_data, theme_override=None):
         'H1_TITLE': h1_text, # Updated
         'H1_ALIGN': page_data.get('h1_align', theme.get('static_h1_align', 'left')),
         'HERO_TEXT': hero_txt, # Updated
+        # --- ADD THIS LINE HERE ---
+        'SITE_NAME': full_site_name,
         'FOOTER_COPYRIGHT': s.get('footer_copyright', ''),
         'THEME_TEXT_SYS_STATUS': theme.get('text_sys_status', 'System Status: Online'),
         'LOGO_PRELOAD': f'<link rel="preload" as="image" href="{s.get("logo_url")}" fetchpriority="high">' if s.get('logo_url') else '',
