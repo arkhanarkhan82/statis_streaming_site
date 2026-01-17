@@ -429,13 +429,32 @@ def render_page(template, config, page_data, theme_override=None):
     html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_2}}', w_conf.get('ad_sidebar_2', ''))
-    html = html.replace('{{WATCH_ARTICLE}}', w_conf.get('article', ''))
-    html = html.replace('{{SUPABASE_URL}}', w_conf.get('supabase_url', ''))
-    html = html.replace('{{SUPABASE_KEY}}', w_conf.get('supabase_key', ''))
+    
+    # --- UPDATED: Dual Article & Meta System ---
+    
+    # 1. Meta Templates (Versus & Single)
     html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
     html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
     
-    # --- ARTICLE CONTENT LOGIC ---
+    html = html.replace('{{JS_WATCH_TITLE_SINGLE_TPL}}', w_conf.get('meta_title_single', 'Watch {{VS}}'))
+    html = html.replace('{{JS_WATCH_DESC_SINGLE_TPL}}', w_conf.get('meta_desc_single', ''))
+
+    # 2. Article Templates (Inject both into hidden containers)
+    # The frontend JS will grab the correct content from these IDs
+    article_vs = w_conf.get('article', '')
+    article_single = w_conf.get('article_single', '')
+
+    combined_articles = f"""
+    <div id="article-content-vs" style="display:none;">{article_vs}</div>
+    <div id="article-content-single" style="display:none;">{article_single}</div>
+    """
+    html = html.replace('{{WATCH_ARTICLE}}', combined_articles)
+
+    # 3. Supabase Config
+    html = html.replace('{{SUPABASE_URL}}', w_conf.get('supabase_url', ''))
+    html = html.replace('{{SUPABASE_KEY}}', w_conf.get('supabase_key', ''))
+
+    # --- ARTICLE CONTENT LOGIC (Existing Page/League Logic) ---
     raw_content = page_data.get('content') or page_data.get('article') or ''
     
     if not raw_content or raw_content.strip() == "":
