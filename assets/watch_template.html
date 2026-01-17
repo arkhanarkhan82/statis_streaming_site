@@ -806,23 +806,27 @@ function applyShortcodes(template, m) {
     if (!template) return "";
     let finalStr = template;
     
-    // Define the Main Title (Event Name or "Home vs Away")
+    // 1. Determine Main Title
+    // Use m.title from JSON if it exists (e.g. "Pyry vs Imatran Kettera")
+    // Fallback to constructed string if missing
     let mainTitle = m.title; 
-    if (!mainTitle) mainTitle = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+    if (!mainTitle || mainTitle === "") {
+        mainTitle = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+    }
 
     if (m.isSingleEvent) {
-        // Clean up specific VS tokens if present in generic template
         finalStr = finalStr.replace(/\s*vs\s*{{AWAY}}/gi, '');
         finalStr = finalStr.replace(/{{AWAY}}/g, '');
-        // For Single events, {{VS}} and {{TITLE}} usually mean the same (The Event Name)
+        // For Single Events, {{VS}} is the Event Name (Title)
         finalStr = finalStr.replace(/{{VS}}/g, mainTitle);
     } else {
         finalStr = finalStr.replace(/{{AWAY}}/g, m.away);
+        // For VS Events, {{VS}} is explicitly "Home vs Away" or the Title
         finalStr = finalStr.replace(/{{VS}}/g, mainTitle);
     }
     
-    // Global Replacements
-    finalStr = finalStr.replace(/{{TITLE}}/g, mainTitle) // <--- NEW SHORTCODE
+    // 2. Global Replacements including {{TITLE}}
+    finalStr = finalStr.replace(/{{TITLE}}/g, mainTitle) // <--- Fixed: Uses API Title
                        .replace(/{{HOME}}/g, m.home)
                        .replace(/{{LEAGUE}}/g, m.league)
                        .replace(/{{SPORT}}/g, m.sport)
