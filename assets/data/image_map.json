@@ -4331,7 +4331,11 @@
         "Ibar Rozaje": "assets/logos/upstreams/ibar-rozaje.webp",
         "Arthur Weber": "assets/logos/upstreams/arthur-weber.webp",
         "Florida International": "assets/logos/streamed/florida-international.webp",
-        "Sam Houston State": "assets/logos/streamed/sam-houston-state.webp"
+        "Sam Houston State": "assets/logos/streamed/sam-houston-state.webp",
+        "Juventus --- CH 2 HD": "assets/logos/upstreams/juventus-ch-2-hd.webp",
+        "RC Toulonnais": "assets/logos/upstreams/rc-toulonnais.webp",
+        "RC Vannes": "assets/logos/upstreams/rc-vannes.webp",
+        "CA Brive": "assets/logos/upstreams/ca-brive.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4754,6 +4758,7 @@
         "Spanish Segunda Liga": "assets/logos/leagues/spanish-segunda-liga.webp",
         "Greece Basketball": "assets/logos/leagues/greece-basketball.webp",
         "MMA Fight": "assets/logos/leagues/mma-fight.webp",
-        "MMA Fighting": "assets/logos/leagues/mma-fighting.webp"
+        "MMA Fighting": "assets/logos/leagues/mma-fighting.webp",
+        "Ligue 1 France": "assets/logos/leagues/ligue-1-france.webp"
     }
 }
