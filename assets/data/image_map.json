@@ -4244,7 +4244,27 @@
         "Solbat Golfo Piombino": "assets/logos/upstreams/solbat-golfo-piombino.webp",
         "PSA Casoria": "assets/logos/upstreams/psa-casoria.webp",
         "Ravenna": "assets/logos/upstreams/ravenna.webp",
-        "Rekico Faenza": "assets/logos/upstreams/rekico-faenza.webp"
+        "Rekico Faenza": "assets/logos/upstreams/rekico-faenza.webp",
+        "Degerfors": "assets/logos/upstreams/degerfors.webp",
+        "Swindon": "assets/logos/upstreams/swindon.webp",
+        "Salford": "assets/logos/upstreams/salford.webp",
+        "Dundee FC": "assets/logos/upstreams/dundee-fc.webp",
+        "Dundee Utd": "assets/logos/upstreams/dundee-utd.webp",
+        "Ayr": "assets/logos/upstreams/ayr.webp",
+        "Mansfield": "assets/logos/upstreams/mansfield.webp",
+        "Exeter": "assets/logos/upstreams/exeter.webp",
+        "Burton": "assets/logos/upstreams/burton.webp",
+        "Harrogate": "assets/logos/upstreams/harrogate.webp",
+        "Newport": "assets/logos/upstreams/newport.webp",
+        "Fleetwood": "assets/logos/upstreams/fleetwood.webp",
+        "Cambridge Utd": "assets/logos/upstreams/cambridge-utd.webp",
+        "Crawley": "assets/logos/upstreams/crawley.webp",
+        "Accrington": "assets/logos/upstreams/accrington.webp",
+        "MK Dons": "assets/logos/upstreams/mk-dons.webp",
+        "Chloraka": "assets/logos/upstreams/chloraka.webp",
+        "Excelsior Rotterdam": "assets/logos/upstreams/excelsior-rotterdam.webp",
+        "VEF Riga": "assets/logos/upstreams/vef-riga.webp",
+        "Valmiera Glass Via": "assets/logos/upstreams/valmiera-glass-via.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4659,6 +4679,9 @@
         "World Cup 2026 U19 - Gr.A": "assets/logos/leagues/world-cup-2026-u19-gra.webp",
         "Saudi Premier League": "assets/logos/leagues/saudi-premier-league.webp",
         "Liga F Moeve": "assets/logos/leagues/liga-f-moeve.webp",
-        "Stoiximan Super League": "assets/logos/leagues/stoiximan-super-league.webp"
+        "Stoiximan Super League": "assets/logos/leagues/stoiximan-super-league.webp",
+        "Italy Serie B": "assets/logos/leagues/italy-serie-b.webp",
+        "Belgium Pro League": "assets/logos/leagues/belgium-pro-league.webp",
+        "Scottish Cup": "assets/logos/leagues/scottish-cup.webp"
     }
 }
