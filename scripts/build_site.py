@@ -389,7 +389,7 @@ def render_page(template, config, page_data, theme_override=None):
     h1_text = page_data.get('h1_title') or page_data.get('title') or ""
     hero_txt = page_data.get('hero_text') or page_data.get('meta_desc') or ""
     # --- ADD THIS LINE TO DEFINE SITE NAME ---
-    full_site_name = f"{s.get('title_part_1', 'Stream')} {s.get('title_part_2', 'East')}".strip()
+    full_site_name = f"{s.get('title_part_1', 'Stream')}{s.get('title_part_2', 'East')}".strip()
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
