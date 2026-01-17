@@ -110,7 +110,7 @@ def build_menu_html(menu_items, section):
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
 
-def build_footer_grid(config, theme):
+def build_footer_grid(config):
     t = config.get('theme', {})
     s = config.get('site_settings', {})
     m = config.get('menus', {})
@@ -496,7 +496,7 @@ def render_page(template, config, page_data, theme_override=None):
     # --- STRUCTURAL INJECTIONS ---
     html = html.replace('{{HEADER_MENU}}', build_menu_html(m.get('header', []), 'header'))
     html = html.replace('{{HERO_PILLS}}', build_menu_html(m.get('hero', []), 'hero'))
-    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config, theme))
+    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config))
     
     country = s.get('target_country', 'US')
     prio = config.get('sport_priorities', {}).get(country, {})
