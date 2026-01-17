@@ -670,8 +670,45 @@
         let chatClient = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
         const DUMMY_NAMES = ["Alex", "John", "Sarah", "Mike", "Fan123", "GoalHunter", "SoccerMom", "Dave", "Chris", "Ultra", "Sporty", "Winner", "Speedy", "Legend", "Ghost"];
         const DUMMY_MSGS = ["Let's go!", "What a play!", "Score?", "Lagging?", "Nice pass", "Who winning?", "Ref blind", "Goooal!", "Finally", "Lol", "Wow", "Defense weak", "Stream good", "Love this team", "Come on!", "Can't believe"];
+        // --- SEO & METADATA MANAGER ---
+        function updatePageSEO(mode, matchId) {
+            // 1. Get or Create Robots Tag
+            let robots = document.querySelector('meta[name="robots"]');
+            if (!robots) { 
+                robots = document.createElement('meta'); 
+                robots.name = "robots"; 
+                document.head.appendChild(robots); 
+            }
+            
+            // 2. Get or Create Canonical Link
+            let canonical = document.querySelector('link[rel="canonical"]');
+            if (!canonical) { 
+                canonical = document.createElement('link'); 
+                canonical.rel = "canonical"; 
+                document.head.appendChild(canonical); 
+            }
+
+            // 3. Construct the Authority URL (Info Version)
+            // Removes trailing slash from domain to prevent double slashes
+            const cleanDomain = DOMAIN.replace(/\/$/, ""); 
+            const infoUrl = `https://${cleanDomain}/watch/?${PARAM_INFO}=${matchId}`;
+
+            // 4. Apply Logic
+            if (mode === 'stream') {
+                // LIVE MODE: Hide from Google, Point Canonical to Info Page
+                robots.content = "noindex, nofollow";
+                canonical.href = infoUrl;
+                console.log("SEO: Stream Mode (NoIndex -> Canonical Info)");
+            } else {
+                // INFO MODE: Index this page, Canonical points to itself
+                robots.content = "index, follow";
+                canonical.href = infoUrl;
+                console.log("SEO: Info Mode (Index -> Self Canonical)");
+            }
+        }
 
         window.addEventListener('DOMContentLoaded', init);
+        
 
         async function init() {
             try {
@@ -742,8 +779,13 @@
                 };
                 // -------------------------------------------------------------
 
-                if (isStreamMode) renderStreamMode(normData, activeId);
-                else renderInfoMode(normData);
+                if (isStreamMode) {
+                    renderStreamMode(normData, activeId);
+                    updatePageSEO('stream', rawMatch.id); // <--- ADD THIS LINE
+                } else {
+                    renderInfoMode(normData);
+                    updatePageSEO('info', rawMatch.id);   // <--- ADD THIS LINE
+                }
 
                 // Safe to call here too
                 if (typeof updateSocialLinks === "function") {
