@@ -49,10 +49,10 @@
             --font-family-headings: 'Courier New', monospace;
             --base-font-size: 14px;
             --base-line-height: 1.5;
-            --container-max-width: 950px;
+            --container-max-width: 1100px;
             --header-max-width: 1000px;
-            --border-radius-base: 0px;
-            --button-border-radius: 21px;
+            --border-radius-base: 8px;
+            --button-border-radius: 10px;
             --hero-pill-radius: 8px;
             --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
             
@@ -293,13 +293,13 @@
 
         /* HERO REFACTORED */
         .hero-section {
-            background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px;  border-bottom: 5px solid #4416e9;
+            background: transparent; padding: 40px 15px;  border-bottom: 5px solid #4416e9;
             display: block;
         }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
 
         .hero-inner {
-            max-width: 950px; margin: 0 auto;
+            background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); max-width: 1100px; margin: 0 auto; padding: 30px; border-radius: 8px; border-left: 4px solid #acf410; border-right: 4px solid #acf410;  
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -314,7 +314,7 @@
             margin-bottom: 20px;
         }
         
-        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status { display: inline-flex; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
         .sys-status .dot, .sys-status .live-dot { width: 8px; height: 8px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         
