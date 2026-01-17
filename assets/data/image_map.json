@@ -4552,7 +4552,13 @@
         "Yale": "assets/logos/streamed/yale.webp",
         "Cornell": "assets/logos/streamed/cornell.webp",
         "Dali Blanch": "assets/logos/upstreams/dali-blanch.webp",
-        "Athletico Paranaense": "assets/logos/streamed/athletico-paranaense.webp"
+        "Athletico Paranaense": "assets/logos/streamed/athletico-paranaense.webp",
+        "Ambri-Piotta": "assets/logos/streamed/ambri-piotta.webp",
+        "EHC Kloten": "assets/logos/streamed/ehc-kloten.webp",
+        "Ergi Kirkin": "assets/logos/upstreams/ergi-kirkin.webp",
+        "Gianmarco Ferrari": "assets/logos/upstreams/gianmarco-ferrari.webp",
+        "Vadym Ursu": "assets/logos/upstreams/vadym-ursu.webp",
+        "Zura Tkemaladze": "assets/logos/upstreams/zura-tkemaladze.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4977,6 +4983,7 @@
         "MMA Fight": "assets/logos/leagues/mma-fight.webp",
         "MMA Fighting": "assets/logos/leagues/mma-fighting.webp",
         "Ligue 1 France": "assets/logos/leagues/ligue-1-france.webp",
-        "Saint Kitts & Nevis - Premier League": "assets/logos/leagues/saint-kitts-nevis-premier-league.webp"
+        "Saint Kitts & Nevis - Premier League": "assets/logos/leagues/saint-kitts-nevis-premier-league.webp",
+        "Australia Women A-League": "assets/logos/leagues/australia-women-a-league.webp"
     }
 }
