@@ -944,8 +944,10 @@
                 </div>
             </section>
             <!-- WATCH PAGE SETTINGS -->
+<!-- WATCH PAGE SETTINGS -->
 <section id="tab-watch-settings" class="tab-content">
     <div class="header-box"><h1>Watch Page Configuration</h1></div>
+    
     <div class="grid-2">
         <div class="card">
             <h3>Supabase Configuration</h3>
@@ -955,31 +957,53 @@
             <label>Public API Key (Anon)</label>
             <input type="password" id="supaKey" placeholder="eyJh...">
         </div>
+        
         <div class="card">
-            <h3>Watch Page SEO</h3>
-            <label>Page Title (Info Mode)</label>
-            <input type="text" id="watchPageTitle" placeholder="Watch Live Sports">
-            <label>Meta Description</label>
-            <textarea id="watchPageDesc" rows="3" placeholder="Watch live streams in HD..."></textarea>
+            <h3>📢 Watch Page Ads (HTML/JS)</h3>
+            <p class="desc" style="margin-bottom:10px;">Paste your full ad code. Leave empty to hide.</p>
+            <label>Mobile Top Ad</label>
+            <textarea id="watchAdMobile" rows="2" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            <label style="margin-top:10px;">Sidebar Ad 1 (Top)</label>
+            <textarea id="watchAdSidebar1" rows="2" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            <label style="margin-top:10px;">Sidebar Ad 2 (Bottom)</label>
+            <textarea id="watchAdSidebar2" rows="2" class="team-list-editor" placeholder="<script>...</script>"></textarea>
         </div>
     </div>
-    <div class="card">
-            <h3>📢 Watch Page Ads (HTML/JS)</h3>
-            <p class="desc" style="margin-bottom:10px;">Paste your full ad code (Script, Iframe, etc). Leave empty to hide.</p>
+
+    <!-- SEO & CONTENT SPLIT -->
+    <div class="grid-2" style="margin-top:20px;">
+        
+        <!-- COLUMN 1: VERSUS MATCHES -->
+        <div class="card" style="border-top: 3px solid #3b82f6;">
+            <h3 style="color:#60a5fa;">⚔️ Versus Matches (Team A vs Team B)</h3>
+            <p class="desc">Content for standard matches.</p>
             
-            <label>Mobile Top Ad (Under Menu)</label>
-            <textarea id="watchAdMobile" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            <label>Page Title (Info Mode)</label>
+            <input type="text" id="watchPageTitle" placeholder="Watch {{HOME}} vs {{AWAY}} Live">
             
-            <label style="margin-top:15px;">Sidebar Ad 1 (Top Left)</label>
-            <textarea id="watchAdSidebar1" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            <label>Meta Description</label>
+            <textarea id="watchPageDesc" rows="3" placeholder="Stream {{HOME}} vs {{AWAY}} live..."></textarea>
             
-            <label style="margin-top:15px;">Sidebar Ad 2 (Bottom Left)</label>
-            <textarea id="watchAdSidebar2" rows="4" class="team-list-editor" placeholder="<script>...</script>"></textarea>
+            <label>SEO Article</label>
+            <textarea id="watchPageArticle" rows="12" class="team-list-editor" placeholder="<h2>{{HOME}} vs {{AWAY}} Live Stream</h2>..."></textarea>
+            <small style="color:#666;">Vars: {{HOME}}, {{AWAY}}, {{LEAGUE}}, {{DATE}}, {{TIME}}</small>
         </div>
-    <div class="card">
-        <h3>Watch Page Article</h3>
-        <p class="desc">SEO content displayed below the player/info table.</p>
-        <textarea id="watchPageArticle" rows="10" class="team-list-editor" placeholder="<h2>Live Streaming Guide</h2>..."></textarea>
+
+        <!-- COLUMN 2: SINGLE MATCHES -->
+        <div class="card" style="border-top: 3px solid #facc15;">
+            <h3 style="color:#facc15;">🏎️ Single/Event Matches</h3>
+            <p class="desc">Content for F1, UFC, Boxing, etc.</p>
+            
+            <label>Page Title (Info Mode)</label>
+            <input type="text" id="watchPageTitleSingle" placeholder="Watch {{VS}} Live">
+            
+            <label>Meta Description</label>
+            <textarea id="watchPageDescSingle" rows="3" placeholder="Watch {{VS}} live stream online..."></textarea>
+            
+            <label>SEO Article</label>
+            <textarea id="watchPageArticleSingle" rows="12" class="team-list-editor" placeholder="<h2>{{VS}} Live Stream</h2>..."></textarea>
+            <small style="color:#666;">Vars: {{VS}} (The Event Title), {{LEAGUE}}, {{DATE}}, {{TIME}}</small>
+        </div>
     </div>
 </section>
 
