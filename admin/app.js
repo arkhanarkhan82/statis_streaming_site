@@ -600,6 +600,8 @@ function renderThemeSettings() {
     if(document.getElementById('themeHeroBorderBottomBox')) document.getElementById('themeHeroBorderBottomBox').checked = t.hero_border_bottom_box === true; // NEW
     if(document.getElementById('themeHeroBorderLeft')) document.getElementById('themeHeroBorderLeft').checked = t.hero_border_left === true;
     if(document.getElementById('themeHeroBorderRight')) document.getElementById('themeHeroBorderRight').checked = t.hero_border_right === true;
+    // FIX: Manually handle Disclaimer Checkbox
+    if(document.getElementById('themeFooterShowDisclaimer')) document.getElementById('themeFooterShowDisclaimer').checked = t.footer_show_disclaimer === true;
     if(document.getElementById('val_btnRadius')) document.getElementById('val_btnRadius').innerText = (t.button_border_radius || '4') + 'px';
     if(document.getElementById('val_pillRadius')) document.getElementById('val_pillRadius').innerText = (t.hero_pill_radius || '50') + 'px';
     if(document.getElementById('val_headerWidth')) document.getElementById('val_headerWidth').innerText = (t.header_max_width || '1100') + 'px';
