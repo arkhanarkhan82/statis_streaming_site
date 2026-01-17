@@ -4506,7 +4506,9 @@
         "Utah Grizzlies": "assets/logos/streamed/utah-grizzlies.webp",
         "Kansas City Mavericks": "assets/logos/streamed/kansas-city-mavericks.webp",
         "Alaska": "assets/logos/streamed/alaska.webp",
-        "Alaska Anchorage": "assets/logos/streamed/alaska-anchorage.webp"
+        "Alaska Anchorage": "assets/logos/streamed/alaska-anchorage.webp",
+        "St. Peters FC": "assets/logos/upstreams/st-peters-fc.webp",
+        "Newtown United": "assets/logos/upstreams/newtown-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4930,6 +4932,7 @@
         "Greece Basketball": "assets/logos/leagues/greece-basketball.webp",
         "MMA Fight": "assets/logos/leagues/mma-fight.webp",
         "MMA Fighting": "assets/logos/leagues/mma-fighting.webp",
-        "Ligue 1 France": "assets/logos/leagues/ligue-1-france.webp"
+        "Ligue 1 France": "assets/logos/leagues/ligue-1-france.webp",
+        "Saint Kitts & Nevis - Premier League": "assets/logos/leagues/saint-kitts-nevis-premier-league.webp"
     }
 }
