@@ -1249,6 +1249,45 @@
             });
             document.head.appendChild(el);
         }
+        // 1. Missing Copy Function & Toast Notification
+        function copyText(text) {
+            if (!navigator.clipboard) {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try { document.execCommand('copy'); showToast("Link Copied!"); } 
+                catch (err) { console.error('Copy failed', err); }
+                document.body.removeChild(textArea);
+                return;
+            }
+            navigator.clipboard.writeText(text).then(() => showToast("Link Copied!"));
+        }
+
+        function showToast(msg) {
+            // Remove existing toast if any
+            const existing = document.querySelector('.copy-toast');
+            if(existing) existing.remove();
+
+            let toast = document.createElement('div');
+            toast.className = 'copy-toast';
+            toast.innerText = msg;
+            document.body.appendChild(toast);
+            // Matches CSS animation duration
+            setTimeout(() => { toast.remove(); }, 1600);
+        }
+
+        // 2. Missing Back-to-Top Scroll Listener
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if(btn) {
+                if (window.scrollY > 300) btn.classList.add('show');
+                else btn.classList.remove('show');
+            }
+        });
+
+        // 3. START THE SCRIPT (Crucial: The page won't load without this)
+        document.addEventListener('DOMContentLoaded', init);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
 </body>
