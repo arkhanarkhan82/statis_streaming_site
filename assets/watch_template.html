@@ -670,7 +670,7 @@
         let chatClient = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
         const DUMMY_NAMES = ["Alex", "John", "Sarah", "Mike", "Fan123", "GoalHunter", "SoccerMom", "Dave", "Chris", "Ultra", "Sporty", "Winner", "Speedy", "Legend", "Ghost"];
         const DUMMY_MSGS = ["Let's go!", "What a play!", "Score?", "Lagging?", "Nice pass", "Who winning?", "Ref blind", "Goooal!", "Finally", "Lol", "Wow", "Defense weak", "Stream good", "Love this team", "Come on!", "Can't believe"];
-        // --- SEO & METADATA MANAGER ---
+        // --- SEO MANAGER (STRICT MODE) ---
         function updatePageSEO(mode, matchId) {
             // 1. Get or Create Robots Tag
             let robots = document.querySelector('meta[name="robots"]');
@@ -688,27 +688,21 @@
                 document.head.appendChild(canonical); 
             }
 
-            // 3. Construct the Authority URL (Info Version)
-            // Removes trailing slash from domain to prevent double slashes
+            // 3. Force Authority URL (Always Info Version)
             const cleanDomain = DOMAIN.replace(/\/$/, ""); 
             const infoUrl = `https://${cleanDomain}/watch/?${PARAM_INFO}=${matchId}`;
 
-            // 4. Apply Logic
+            // 4. Apply Strict Logic
             if (mode === 'stream') {
-                // LIVE MODE: Hide from Google, Point Canonical to Info Page
-                robots.content = "noindex, nofollow";
-                canonical.href = infoUrl;
-                console.log("SEO: Stream Mode (NoIndex -> Canonical Info)");
+                // LIVE VERSION: DESTROY SEO (NoIndex) -> Point to Info
+                robots.setAttribute('content', 'noindex, nofollow');
+                canonical.setAttribute('href', infoUrl);
             } else {
-                // INFO MODE: Index this page, Canonical points to itself
-                robots.content = "index, follow";
-                canonical.href = infoUrl;
-                console.log("SEO: Info Mode (Index -> Self Canonical)");
+                // INFO VERSION: RANK THIS (Index) -> Point to Self
+                robots.setAttribute('content', 'index, follow');
+                canonical.setAttribute('href', infoUrl);
             }
         }
-
-        window.addEventListener('DOMContentLoaded', init);
-        
 
         async function init() {
             try {
@@ -724,12 +718,7 @@
                 }
 
                 startDummyChat(); 
-                
-                // Safe check for updateSocialLinks
-                if (typeof updateSocialLinks === "function") {
-                    updateSocialLinks(null);
-                }
-                
+                if (typeof updateSocialLinks === "function") updateSocialLinks(null);
                 applyWatchConfig(); 
 
                 if(currentUser && document.getElementById('usernameInput')) document.getElementById('usernameInput').value = currentUser;
@@ -737,60 +726,43 @@
                 let activeId = streamParamVal || infoParamVal;
                 let isStreamMode = !!streamParamVal;
 
-                // --- DATA LOOKUP (No Fetch) ---
                 currentHash = extractHash(activeId);
                 // Allow activeId lookup even if hash extraction looks weird
                 if (!activeId && !currentHash) { showError("Invalid Match ID."); return; }
 
                 const allMatches = window.MATCH_DATA || [];
-                
-                // FIX: Check for exact ID match (activeId) OR if the ID ends with the hash
                 const rawMatch = allMatches.find(m => m.id === activeId || (currentHash && m.id.endsWith(currentHash)));
 
                 if (!rawMatch) { showError("Match not found or ended."); return; }
 
-                // --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
-                // --- DATA MAPPING: Convert New Engine Keys to Template Keys ---
+                // DATA MAPPING
                 const normData = { 
                     originalId: rawMatch.id, 
-                    
-                    // Teams & League
-                    title: rawMatch.title, // <--- ADD THIS LINE
+                    title: rawMatch.title, 
                     home: rawMatch.home, 
                     away: rawMatch.away, 
                     league: rawMatch.league, 
                     sport: rawMatch.sport, 
-                    
-                    // Timing
                     startTimeUnix: rawMatch.timestamp,
                     timestamp: rawMatch.timestamp,
                     dateOnly: getDisplayDate(rawMatch.timestamp), 
                     timeOnly: getDisplayTime(rawMatch.timestamp),
-                    
-                    // Status
                     isLive: rawMatch.is_live, 
                     statusText: rawMatch.status_text,
-                    
-                    // Logic
                     isSingleEvent: rawMatch.is_single,
-                    
-                    // Streams (Map 'streams' from python to 'channels' for JS)
                     channels: rawMatch.streams || [] 
                 };
-                // -------------------------------------------------------------
 
+                // --- APPLY VIEW & SEO ---
                 if (isStreamMode) {
                     renderStreamMode(normData, activeId);
-                    updatePageSEO('stream', rawMatch.id); // <--- ADD THIS LINE
+                    updatePageSEO('stream', rawMatch.id); 
                 } else {
                     renderInfoMode(normData);
-                    updatePageSEO('info', rawMatch.id);   // <--- ADD THIS LINE
+                    updatePageSEO('info', rawMatch.id);
                 }
-
-                // Safe to call here too
-                if (typeof updateSocialLinks === "function") {
-                    updateSocialLinks(activeId);
-                }
+                
+                if (typeof updateSocialLinks === "function") updateSocialLinks(activeId);
 
             } catch (e) {
                 console.error("Init Error:", e);
@@ -973,7 +945,11 @@
             if(serverBox) serverBox.innerHTML = '';
 
             if (m.channels && m.channels.length > 0 && player) {
-                player.src = m.channels[0].url;
+                // FIX: Decode the first URL immediately so Iframe loads correctly
+                let firstUrl = m.channels[0].url;
+                try { firstUrl = atob(firstUrl); } catch(e) { console.log("Url not encoded"); }
+                player.src = firstUrl;
+
                 const MAX_VISIBLE = 3;
                 const total = m.channels.length;
                 m.channels.forEach((ch, idx) => {
@@ -993,6 +969,7 @@
                     if(idx >= MAX_VISIBLE) { btn.style.display = 'none'; btn.classList.add('hidden-srv'); }
                     serverBox.appendChild(btn);
                 });
+                // ... (Show More logic remains the same) ...
                 if(total > MAX_VISIBLE) {
                     const toggle = document.getElementById('showMoreServers');
                     toggle.style.display = 'block';
