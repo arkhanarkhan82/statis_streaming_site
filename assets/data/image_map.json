@@ -4508,7 +4508,9 @@
         "Alaska": "assets/logos/streamed/alaska.webp",
         "Alaska Anchorage": "assets/logos/streamed/alaska-anchorage.webp",
         "St. Peters FC": "assets/logos/upstreams/st-peters-fc.webp",
-        "Newtown United": "assets/logos/upstreams/newtown-united.webp"
+        "Newtown United": "assets/logos/upstreams/newtown-united.webp",
+        "St Francis-Pennsylvania": "assets/logos/streamed/st-francis-pennsylvania.webp",
+        "HC Ajoie": "assets/logos/streamed/hc-ajoie.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
