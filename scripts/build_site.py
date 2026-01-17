@@ -115,22 +115,21 @@ def build_footer_grid(config, active_theme):
     s = config.get('site_settings', {})
     m = config.get('menus', {})
     
-    cols = str(t.get('footer_columns', '2'))
-    show_disclaimer = t.get('footer_show_disclaimer', True)
-    align = t.get('footer_text_align_desktop', 'left') # Get Admin Setting
+    # FIX: Force string conversion to ensure '3' == '3' works
+    cols = str(t.get('footer_columns', '2')).strip()
     
-    # 1. Generate Footer-Specific Logo (Respects Footer Brand Color)
-    # The Header logo might be dark, but Footer usually needs light text.
+    show_disclaimer = t.get('footer_show_disclaimer', True)
+    align = t.get('footer_text_align_desktop', 'left')
+    
+    # 1. Generate Logo
     f_brand_color = t.get('footer_brand_color', '#ffffff')
     p1 = s.get('title_part_1', 'Stream')
     p2 = s.get('title_part_2', 'East')
-    p2_color = t.get('logo_p2_color', '#D00000') # Accent usually stays same
+    p2_color = t.get('logo_p2_color', '#D00000')
     
     logo_html = f'<div class="logo-text" style="color:{f_brand_color};">{p1}<span style="color:{p2_color};">{p2}</span></div>'
-    
     if s.get('logo_url'): 
         logo_size = ensure_unit(t.get('logo_image_size', '40px'))
-        # Added shadow variable specifically for footer image if needed
         logo_html = f'<img src="{s.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px;"> {logo_html}'
     
     # 2. Content Blocks
@@ -147,14 +146,17 @@ def build_footer_grid(config, active_theme):
         if k == 'disclaimer': return disc_html
         if k == 'brand_disclaimer': return brand_disc_html
         if k == 'menu': return links_html
-        return '<div></div>'
+        return '<div></div>' # Return empty div to maintain grid structure
 
-    # 4. Construct Grid with Alignment Override
-    # We inject 'style="text-align: {align}"' to force the Admin preference
+    # 4. Construct Grid
     html = f'<div class="footer-grid cols-{cols}" style="text-align:{align};">'
     html += get_content(slots[0])
     html += get_content(slots[1])
-    if cols == '3': html += get_content(slots[2])
+    
+    # FIX: Logic to strictly check for '3'
+    if cols == '3': 
+        html += get_content(slots[2])
+        
     html += '</div>'
     
     return html
@@ -559,6 +561,8 @@ def render_page(template, config, page_data, theme_override=None):
     # --- JSON INJECTIONS ---
     html = html.replace('{{JS_THEME_CONFIG}}', json.dumps(theme))
     html = html.replace('{{JS_PRIORITIES}}', json.dumps(prio))
+    # --- ADD THIS LINE ---
+    html = html.replace('{{JS_SHARE_COUNTS}}', json.dumps(config.get('social_sharing', {})))
     
     l_map = load_json('assets/data/league_map.json')
     reverse_map = {}
