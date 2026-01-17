@@ -118,7 +118,7 @@ body {
 }
 .league-card-header h3 { margin: 0; border: none; padding: 0; }
 
-.team-list-editor {
+.team-list-editor, .generic-editor {
     width: 100%;
     background: #0f172a;
     border: 1px solid #334155;
@@ -130,7 +130,7 @@ body {
     resize: vertical;
     line-height: 1.5;
 }
-.team-list-editor:focus { border-color: var(--accent); outline: none; }
+.team-list-editor:focus, .generic-editor:focus { border-color: var(--accent); outline: none; }
 
 label { display: block; margin: 15px 0 5px 0; color: var(--text-muted); font-size: 0.85rem; font-weight: 600; }
 
