@@ -110,7 +110,7 @@ def build_menu_html(menu_items, section):
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
 
-def build_footer_grid(config):
+def build_footer_grid(config, logo_html):
     t = config.get('theme', {})
     s = config.get('site_settings', {})
     m = config.get('menus', {})
@@ -119,10 +119,10 @@ def build_footer_grid(config):
     show_disclaimer = t.get('footer_show_disclaimer', True)
     
     # 1. Define Content Blocks
-    # Block: Brand
+    # Block: Brand (Uses the passed logo_html directly)
     brand_html = f"""
     <div class="f-brand">
-        {config.get('_generated_logo_html', '')} 
+        {logo_html} 
     </div>
     """
     
@@ -133,7 +133,7 @@ def build_footer_grid(config):
     # Block: Brand + Disclaimer (Combined)
     brand_disc_html = f"""
     <div class="f-brand">
-        {config.get('_generated_logo_html', '')}
+        {logo_html}
         {disc_html}
     </div>
     """
@@ -496,7 +496,7 @@ def render_page(template, config, page_data, theme_override=None):
     # --- STRUCTURAL INJECTIONS ---
     html = html.replace('{{HEADER_MENU}}', build_menu_html(m.get('header', []), 'header'))
     html = html.replace('{{HERO_PILLS}}', build_menu_html(m.get('hero', []), 'hero'))
-    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config))
+    html = html.replace('{{FOOTER_GRID_CONTENT}}', build_footer_grid(config, logo_html))
     
     country = s.get('target_country', 'US')
     prio = config.get('sport_priorities', {}).get(country, {})
