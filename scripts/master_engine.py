@@ -519,7 +519,7 @@ def render_match_row(m, section_title=""):
     if is_live or diff <= 30:
         btn = f'<a href="{info_url}" class="btn-watch">{watch_text} <span class="hd-badge">{hd_text}</span></a>'
     else:
-        btn = '<button class="btn-notify">🔔 Notify</button>'
+        btn = '<button class="btn-notify" onclick="handleNotify(this)">🔔 Notify</button>'
 
     tag = m['league'].upper()
     if section_title and section_title.lower() in m['league'].lower():
