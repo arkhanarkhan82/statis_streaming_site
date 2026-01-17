@@ -1026,26 +1026,36 @@ function applyShortcodes(template, m) {
         
         // REPLACE your existing generateArticle function with this:
 
+// Global cache to prevent losing templates after first render
+let cachedVsTemplate = null;
+let cachedSingleTemplate = null;
+
 function generateArticle(m) {
     const container = document.getElementById('seo-article-container');
     if (!container) return;
-    
-    // 1. Determine which source content to use
-    const sourceId = m.isSingleEvent ? 'article-content-single' : 'article-content-vs';
-    const sourceEl = document.getElementById(sourceId);
-    
-    if (!sourceEl) return;
 
-    // 2. Get the raw template HTML from the hidden div
-    let rawHTML = sourceEl.innerHTML;
-    
-    // 3. Apply Shortcodes
-    let processedHTML = applyShortcodes(rawHTML, m);
-    
-    // 4. Inject into the main visible container
-    // We overwrite the container's HTML with the processed content
-    container.innerHTML = processedHTML;
-    container.style.display = 'block';
+    // 1. Capture Source Templates (Only once)
+    // We look for the hidden divs injected by build_site.py
+    if (!cachedVsTemplate) {
+        const vsEl = document.getElementById('article-content-vs');
+        if (vsEl) cachedVsTemplate = vsEl.innerHTML;
+    }
+    if (!cachedSingleTemplate) {
+        const singleEl = document.getElementById('article-content-single');
+        if (singleEl) cachedSingleTemplate = singleEl.innerHTML;
+    }
+
+    // 2. Select the correct template string
+    let rawHTML = m.isSingleEvent ? cachedSingleTemplate : cachedVsTemplate;
+
+    // 3. Inject and Show
+    if (rawHTML && rawHTML.trim() !== "") {
+        // We overwrite the container with the RAW text (removing the hidden div wrappers)
+        container.innerHTML = applyShortcodes(rawHTML, m);
+        container.style.display = 'block'; 
+    } else {
+        container.style.display = 'none';
+    }
 }
 
         // --- FIX: ADDED REVEALCONTENT FUNCTION ---
