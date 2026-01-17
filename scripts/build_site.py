@@ -115,10 +115,12 @@ def build_footer_grid(config, active_theme):
     s = config.get('site_settings', {})
     m = config.get('menus', {})
     
-    # FIX: Force string conversion to ensure '3' == '3' works
-    cols = str(t.get('footer_columns', '2')).strip()
+    # FIX: Use Global Theme config for Footer Columns to prevent page-specific overrides
+    global_theme = config.get('theme', {})
+    cols = str(global_theme.get('footer_columns', '2')).strip()
     
     show_disclaimer = t.get('footer_show_disclaimer', True)
+    # ... rest of function ...
     align = t.get('footer_text_align_desktop', 'left')
     
     # 1. Generate Logo
