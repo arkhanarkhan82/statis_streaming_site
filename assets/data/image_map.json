@@ -4162,7 +4162,21 @@
         "Hougang United": "assets/logos/upstreams/hougang-united.webp",
         "Geylang": "assets/logos/upstreams/geylang.webp",
         "Lion City Sailors": "assets/logos/upstreams/lion-city-sailors.webp",
-        "Durban Super Giants": "assets/logos/upstreams/durban-super-giants.webp"
+        "Durban Super Giants": "assets/logos/upstreams/durban-super-giants.webp",
+        "Lafayette": "assets/logos/streamed/lafayette.webp",
+        "Holy Cross": "assets/logos/streamed/holy-cross.webp",
+        "Harvard": "assets/logos/streamed/harvard.webp",
+        "Princeton": "assets/logos/streamed/princeton.webp",
+        "Lehigh": "assets/logos/streamed/lehigh.webp",
+        "St Bonaventure": "assets/logos/streamed/st-bonaventure.webp",
+        "Saint Louis": "assets/logos/streamed/saint-louis.webp",
+        "Texas A and M": "assets/logos/streamed/texas-a-and-m.webp",
+        "BW Linz": "assets/logos/upstreams/bw-linz.webp",
+        "Rayon Sports": "assets/logos/upstreams/rayon-sports.webp",
+        "Balestier Khalsa": "assets/logos/upstreams/balestier-khalsa.webp",
+        "Sintek Jonava": "assets/logos/upstreams/sintek-jonava.webp",
+        "Obras Sanitarias": "assets/logos/upstreams/obras-sanitarias.webp",
+        "Stade Francais Paris": "assets/logos/upstreams/stade-francais-paris.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4570,6 +4584,8 @@
         "English Championship": "assets/logos/leagues/english-championship.webp",
         "English League Two": "assets/logos/leagues/english-league-two.webp",
         "English League One": "assets/logos/leagues/english-league-one.webp",
-        "AFC Asian Cup, Knockout stage": "assets/logos/leagues/afc-asian-cup-knockout-stage.webp"
+        "AFC Asian Cup, Knockout stage": "assets/logos/leagues/afc-asian-cup-knockout-stage.webp",
+        "Champions League America - Gr.B": "assets/logos/leagues/champions-league-america-grb.webp",
+        "Rugby Challenge Cup": "assets/logos/leagues/rugby-challenge-cup.webp"
     }
 }
