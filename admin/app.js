@@ -442,6 +442,10 @@ function populateUI() {
     setVal('watchPageTitle', w.meta_title);
     setVal('watchPageDesc', w.meta_desc);
     setVal('watchPageArticle', w.article);
+    // Single (Event) - NEW
+    setVal('watchPageTitleSingle', w.meta_title_single);
+    setVal('watchPageDescSingle', w.meta_desc_single);
+    setVal('watchPageArticleSingle', w.article_single);
     setVal('watchAdMobile', w.ad_mobile);
     setVal('watchAdSidebar1', w.ad_sidebar_1);
     setVal('watchAdSidebar2', w.ad_sidebar_2);
@@ -1118,6 +1122,10 @@ captureThemeState(currentThemeContext);
         meta_title: getVal('watchPageTitle'),
         meta_desc: getVal('watchPageDesc'),
         article: getVal('watchPageArticle'),
+        // Single - NEW
+        meta_title_single: getVal('watchPageTitleSingle'),
+        meta_desc_single: getVal('watchPageDescSingle'),
+        article_single: getVal('watchPageArticleSingle'),
         ad_mobile: getVal('watchAdMobile'),
         ad_sidebar_1: getVal('watchAdSidebar1'),
         ad_sidebar_2: getVal('watchAdSidebar2')
