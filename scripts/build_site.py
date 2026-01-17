@@ -110,55 +110,61 @@ def build_menu_html(menu_items, section):
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
 
-def build_footer_grid(config, active_theme):
-    t = active_theme
+def build_footer_grid(config):
+    t = config.get('theme', {})
     s = config.get('site_settings', {})
     m = config.get('menus', {})
     
-    # FIX: Use Global Theme config for Footer Columns to prevent page-specific overrides
-    global_theme = config.get('theme', {})
-    cols = str(global_theme.get('footer_columns', '2')).strip()
-    
+    cols = str(t.get('footer_columns', '2'))
     show_disclaimer = t.get('footer_show_disclaimer', True)
-    # ... rest of function ...
-    align = t.get('footer_text_align_desktop', 'left')
     
-    # 1. Generate Logo
-    f_brand_color = t.get('footer_brand_color', '#ffffff')
-    p1 = s.get('title_part_1', 'Stream')
-    p2 = s.get('title_part_2', 'East')
-    p2_color = t.get('logo_p2_color', '#D00000')
+    # 1. Define Content Blocks
+    # Block: Brand
+    brand_html = f"""
+    <div class="f-brand">
+        {config.get('_generated_logo_html', '')} 
+    </div>
+    """
     
-    logo_html = f'<div class="logo-text" style="color:{f_brand_color};">{p1}<span style="color:{p2_color};">{p2}</span></div>'
-    if s.get('logo_url'): 
-        logo_size = ensure_unit(t.get('logo_image_size', '40px'))
-        logo_html = f'<img src="{s.get("logo_url")}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px;"> {logo_html}'
+    # Block: Disclaimer
+    disc_text = s.get('footer_disclaimer', '')
+    disc_html = f'<div class="f-desc">{disc_text}</div>' if show_disclaimer else ''
     
-    # 2. Content Blocks
-    brand_html = f'<div class="f-brand">{logo_html}</div>'
-    disc_html = f'<div class="f-desc">{s.get("footer_disclaimer", "")}</div>' if show_disclaimer else ''
-    brand_disc_html = f'<div class="f-brand">{logo_html}{disc_html}</div>'
-    links_html = f'<div><div class="f-head">Quick Links</div><div class="f-links">{build_menu_html(m.get("footer_static", []), "footer_static")}</div></div>'
+    # Block: Brand + Disclaimer (Combined)
+    brand_disc_html = f"""
+    <div class="f-brand">
+        {config.get('_generated_logo_html', '')}
+        {disc_html}
+    </div>
+    """
     
-    # 3. Slot Logic
-    slots = [t.get('footer_slot_1', 'brand_disclaimer'), t.get('footer_slot_2', 'menu'), t.get('footer_slot_3', 'empty')]
+    # Block: Menu
+    links_html = f"""
+    <div>
+        <div class="f-head">Quick Links</div>
+        <div class="f-links">{build_menu_html(m.get('footer_static', []), 'footer_static')}</div>
+    </div>
+    """
     
-    def get_content(k):
-        if k == 'brand': return brand_html
-        if k == 'disclaimer': return disc_html
-        if k == 'brand_disclaimer': return brand_disc_html
-        if k == 'menu': return links_html
-        return '<div></div>' # Return empty div to maintain grid structure
+    # 2. Get Slot Selections
+    slot1_type = t.get('footer_slot_1', 'brand_disclaimer')
+    slot2_type = t.get('footer_slot_2', 'menu')
+    slot3_type = t.get('footer_slot_3', 'empty')
+    
+    # 3. Helper to pick content
+    def get_content(type_key):
+        if type_key == 'brand': return brand_html
+        if type_key == 'disclaimer': return disc_html
+        if type_key == 'brand_disclaimer': return brand_disc_html
+        if type_key == 'menu': return links_html
+        return '<div></div>'
 
-    # 4. Construct Grid
-    html = f'<div class="footer-grid cols-{cols}" style="text-align:{align};">'
-    html += get_content(slots[0])
-    html += get_content(slots[1])
-    
-    # FIX: Logic to strictly check for '3'
-    if cols == '3': 
-        html += get_content(slots[2])
-        
+    # 4. Construct Grid HTML
+    html = f'<div class="footer-grid cols-{cols}">'
+    html += get_content(slot1_type)
+    html += get_content(slot2_type)
+    if cols == '3':
+        html += get_content(slot3_type)
     html += '</div>'
     
     return html
