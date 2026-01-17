@@ -4151,7 +4151,18 @@
         "Santa Clara Azores": "assets/logos/upstreams/santa-clara-azores.webp",
         "Shao Jiang": "assets/logos/upstreams/shao-jiang.webp",
         "Kastrioti Kruje": "assets/logos/upstreams/kastrioti-kruje.webp",
-        "SC S\u00e3o Jo\u00e3o Ver": "assets/logos/upstreams/sc-s\u00e3o-jo\u00e3o-ver.webp"
+        "SC S\u00e3o Jo\u00e3o Ver": "assets/logos/upstreams/sc-s\u00e3o-jo\u00e3o-ver.webp",
+        "Elon": "assets/logos/streamed/elon.webp",
+        "Canisius": "assets/logos/streamed/canisius.webp",
+        "Mount St Marys": "assets/logos/streamed/mount-st-marys.webp",
+        "Slovacko B": "assets/logos/upstreams/slovacko-b.webp",
+        "1. FC Saarbrucken": "assets/logos/upstreams/1-fc-saarbrucken.webp",
+        "Republic of Korea": "assets/logos/upstreams/republic-of-korea.webp",
+        "BalEastier Khalsa": "assets/logos/upstreams/baleastier-khalsa.webp",
+        "Hougang United": "assets/logos/upstreams/hougang-united.webp",
+        "Geylang": "assets/logos/upstreams/geylang.webp",
+        "Lion City Sailors": "assets/logos/upstreams/lion-city-sailors.webp",
+        "Durban Super Giants": "assets/logos/upstreams/durban-super-giants.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4556,6 +4567,9 @@
         "Alps Hockey League": "assets/logos/leagues/alps-hockey-league.webp",
         "League Two": "assets/logos/leagues/league-two.webp",
         "League One": "assets/logos/leagues/league-one.webp",
-        "English Championship": "assets/logos/leagues/english-championship.webp"
+        "English Championship": "assets/logos/leagues/english-championship.webp",
+        "English League Two": "assets/logos/leagues/english-league-two.webp",
+        "English League One": "assets/logos/leagues/english-league-one.webp",
+        "AFC Asian Cup, Knockout stage": "assets/logos/leagues/afc-asian-cup-knockout-stage.webp"
     }
 }
