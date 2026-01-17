@@ -605,7 +605,15 @@ function renderThemeSettings() {
     if(document.getElementById('val_headerWidth')) document.getElementById('val_headerWidth').innerText = (t.header_max_width || '1100') + 'px';
     
     for (const [jsonKey, htmlId] of Object.entries(THEME_FIELDS)) {
-        if(t[jsonKey]) setVal(htmlId, t[jsonKey]);
+        const el = document.getElementById(htmlId);
+        if (el) {
+            const val = t[jsonKey];
+            if (el.type === 'checkbox') {
+                el.checked = (val === true);
+            } else {
+                el.value = (val !== undefined && val !== null) ? val : "";
+            }
+        }
     }
 
     if(document.getElementById('val_borderRadius')) document.getElementById('val_borderRadius').innerText = (t.border_radius_base || '6') + 'px';
