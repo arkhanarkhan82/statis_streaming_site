@@ -293,13 +293,13 @@
 
         /* HERO REFACTORED */
         .hero-section {
-            background: transparent; padding: 40px 15px;  border-bottom: 5px solid #4416e9;
+            background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); padding: 40px 15px;  border-bottom: 5px solid #4416e9;
             display: block;
         }
         @media (min-width: 900px) { .hero-section { padding-top: 80px; } }
 
         .hero-inner {
-            background: radial-gradient(circle at top, #2a0505 0%, #000000 100%); max-width: 1100px; margin: 0 auto; padding: 30px; border-radius: 8px; border-left: 4px solid #acf410; border-right: 4px solid #acf410;  
+            max-width: 1100px; margin: 0 auto;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -314,7 +314,7 @@
             margin-bottom: 20px;
         }
         
-        .sys-status { display: none; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status { display: inline-flex; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
         .sys-status .dot, .sys-status .live-dot { width: 8px; height: 8px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         
@@ -583,7 +583,7 @@
     </style>
 </head>
 <body>
-    <header class="h-layout-standard">
+    <header class="h-layout-inverted">
         <div class="header-container">
             <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px rgba(208, 0, 0, 0.3);"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
