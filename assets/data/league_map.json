@@ -431,7 +431,5 @@
     "udinese",
     "venezia"
   ],
-  "null": [
-    "<h2>watch-{{title}}-live-stream</h2>-<p>get-ready-for-high-speed-action!-you-are-watching-the-official-live-stream-of-<strong>{{title}}</strong>.-this-event-is-part-of-the-{{league}}-season.</p>-<h3>event-details</h3>-<ul>-<li><strong>event:</strong>-{{vs}}</li>-<li><strong>date:</strong>-{{date}}</li>-<li><strong>time:</strong>-{{time}}</li>-<li><strong>sport:</strong>-{{sport}}</li>-</ul>-<p>don't-miss-a-moment-of-the-action-on-{{site_name}}.-we-provide-the-most-stable-hd-streams-for-{{league}}-events.</p>-<p><em>note:-this-stream-for-{{title}}-is-free-to-watch.-ensure-you-have-a-stable-internet-connection.</em></p>"
-  ]
+  "null": []
 }
