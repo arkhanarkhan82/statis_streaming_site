@@ -666,7 +666,7 @@
             text_info_btn: "{{THEME_WATCH_INFO_BTN_LABEL}}"
         };
         
-        const W_SEO = { title_tpl: "{{JS_WATCH_TITLE_TPL}}", desc_tpl: "{{JS_WATCH_DESC_TPL}}" };
+        const W_SEO = { title_tpl: "{{JS_WATCH_TITLE_TPL}}", desc_tpl: "{{JS_WATCH_DESC_TPL}}", title_single: "{{JS_WATCH_TITLE_SINGLE_TPL}}", desc_single: "{{JS_WATCH_DESC_SINGLE_TPL}}" };
         let chatClient = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
         const DUMMY_NAMES = ["Alex", "John", "Sarah", "Mike", "Fan123", "GoalHunter", "SoccerMom", "Dave", "Chris", "Ultra", "Sporty", "Winner", "Speedy", "Legend", "Ghost"];
         const DUMMY_MSGS = ["Let's go!", "What a play!", "Score?", "Lagging?", "Nice pass", "Who winning?", "Ref blind", "Goooal!", "Finally", "Lol", "Wow", "Defense weak", "Stream good", "Love this team", "Come on!", "Can't believe"];
@@ -801,18 +801,36 @@
             if(infoBtn && W_CONFIG.text_info_btn) infoBtn.innerHTML = `ℹ ${W_CONFIG.text_info_btn}`;
         }
 
-        function applyShortcodes(template, m) {
-            if (!template) return "";
-            let finalStr = template;
-            if (m.isSingleEvent) {
-                finalStr = finalStr.replace(/\s*vs\s*{{AWAY}}/gi, '');
-                finalStr = finalStr.replace(/{{AWAY}}/g, ''); 
-            } else {
-                finalStr = finalStr.replace(/{{AWAY}}/g, m.away);
-            }
-            finalStr = finalStr.replace(/{{HOME}}/g, m.home).replace(/{{LEAGUE}}/g, m.league).replace(/{{SPORT}}/g, m.sport).replace(/{{TIME}}/g, m.timeOnly).replace(/{{DATE}}/g, m.dateOnly).replace(/{{SITE_NAME}}/g, SITE_NAME).replace(/{{VS}}/g, m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`);
-            return finalStr;
-        }
+        // Your existing applyShortcodes seems fine, but ensure it looks like this:
+function applyShortcodes(template, m) {
+    if (!template) return "";
+    let finalStr = template;
+    
+    // Define the Main Title (Event Name or "Home vs Away")
+    let mainTitle = m.title; 
+    if (!mainTitle) mainTitle = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+
+    if (m.isSingleEvent) {
+        // Clean up specific VS tokens if present in generic template
+        finalStr = finalStr.replace(/\s*vs\s*{{AWAY}}/gi, '');
+        finalStr = finalStr.replace(/{{AWAY}}/g, '');
+        // For Single events, {{VS}} and {{TITLE}} usually mean the same (The Event Name)
+        finalStr = finalStr.replace(/{{VS}}/g, mainTitle);
+    } else {
+        finalStr = finalStr.replace(/{{AWAY}}/g, m.away);
+        finalStr = finalStr.replace(/{{VS}}/g, mainTitle);
+    }
+    
+    // Global Replacements
+    finalStr = finalStr.replace(/{{TITLE}}/g, mainTitle) // <--- NEW SHORTCODE
+                       .replace(/{{HOME}}/g, m.home)
+                       .replace(/{{LEAGUE}}/g, m.league)
+                       .replace(/{{SPORT}}/g, m.sport)
+                       .replace(/{{TIME}}/g, m.timeOnly)
+                       .replace(/{{DATE}}/g, m.dateOnly)
+                       .replace(/{{SITE_NAME}}/g, SITE_NAME);
+    return finalStr;
+}
 
         function renderInfoMode(m) {
             showView('info');
@@ -916,7 +934,17 @@
                 btn.onclick = null;
             }
 
-            document.title = applyShortcodes(W_SEO.title_tpl, m);
+            const titleTpl = m.isSingleEvent ? W_SEO.title_single : W_SEO.title_tpl;
+    const descTpl = m.isSingleEvent ? W_SEO.desc_single : W_SEO.desc_tpl; // Select correct desc template
+
+            // 1. Update Browser Tab Title
+            document.title = applyShortcodes(titleTpl, m);
+
+            // 2. Update Meta Description Tag
+            const metaDescTag = document.querySelector('meta[name="description"]');
+            if (metaDescTag) {
+                metaDescTag.setAttribute('content', applyShortcodes(descTpl, m));
+            }
             generateArticle(m);
             generateSchema(m);
             revealContent(); 
@@ -992,15 +1020,29 @@
         function setText(id, txt) { const el = document.getElementById(id); if(el) el.innerText = txt || '--'; }
         function getSportIcon(n) { n=(n||"").toLowerCase(); if(n.includes('soccer')||n.includes('premier')) return '⚽'; if(n.includes('basket')) return '🏀'; if(n.includes('football')) return '🏈'; if(n.includes('baseball')) return '⚾'; if(n.includes('fight')||n.includes('ufc')||n.includes('box')) return '🥊'; if(n.includes('motor')||n.includes('f1')) return '🏎️'; return '🏆'; }
         
-        function generateArticle(m) { 
-            const c = document.getElementById('seo-article-container'); 
-            if(c) {
-                c.style.display = 'block';
-                let rawHTML = c.innerHTML;
-                let processedHTML = applyShortcodes(rawHTML, m);
-                c.innerHTML = processedHTML; 
-            }
-        }
+        // REPLACE your existing generateArticle function with this:
+
+function generateArticle(m) {
+    const container = document.getElementById('seo-article-container');
+    if (!container) return;
+    
+    // 1. Determine which source content to use
+    const sourceId = m.isSingleEvent ? 'article-content-single' : 'article-content-vs';
+    const sourceEl = document.getElementById(sourceId);
+    
+    if (!sourceEl) return;
+
+    // 2. Get the raw template HTML from the hidden div
+    let rawHTML = sourceEl.innerHTML;
+    
+    // 3. Apply Shortcodes
+    let processedHTML = applyShortcodes(rawHTML, m);
+    
+    // 4. Inject into the main visible container
+    // We overwrite the container's HTML with the processed content
+    container.innerHTML = processedHTML;
+    container.style.display = 'block';
+}
 
         // --- FIX: ADDED REVEALCONTENT FUNCTION ---
         function revealContent() {
