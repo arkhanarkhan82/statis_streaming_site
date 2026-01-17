@@ -110,7 +110,7 @@ def build_menu_html(menu_items, section):
              html += f'<a href="{url}" class="f-link">{title}</a>'
     return html
 
-def build_footer_grid(config):
+def build_footer_grid(config, theme):
     t = config.get('theme', {})
     s = config.get('site_settings', {})
     m = config.get('menus', {})
