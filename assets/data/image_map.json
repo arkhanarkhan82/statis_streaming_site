@@ -4116,7 +4116,28 @@
         "Montreal Toundra": "assets/logos/upstreams/montreal-toundra.webp",
         "KW Titans": "assets/logos/upstreams/kw-titans.webp",
         "Japan U19": "assets/logos/upstreams/japan-u19.webp",
-        "Imigresen": "assets/logos/upstreams/imigresen.webp"
+        "Imigresen": "assets/logos/upstreams/imigresen.webp",
+        "Huddinge IK": "assets/logos/upstreams/huddinge-ik.webp",
+        "Halmstad Hammers HC": "assets/logos/upstreams/halmstad-hammers-hc.webp",
+        "TUTO Hockey": "assets/logos/upstreams/tuto-hockey.webp",
+        "Falu IF": "assets/logos/upstreams/falu-if.webp",
+        "Kiruna IF": "assets/logos/upstreams/kiruna-if.webp",
+        "Lindl\u00f6vens IF": "assets/logos/upstreams/lindl\u00f6vens-if.webp",
+        "Feh\u00e9rv\u00e1r AV19": "assets/logos/upstreams/feh\u00e9rv\u00e1r-av19.webp",
+        "Hockey Unterland Cavaliers": "assets/logos/upstreams/hockey-unterland-cavaliers.webp",
+        "Wipptal Broncos": "assets/logos/upstreams/wipptal-broncos.webp",
+        "Guildford Flames": "assets/logos/upstreams/guildford-flames.webp",
+        "Fife Flyers": "assets/logos/upstreams/fife-flyers.webp",
+        "HC Banik Sokolov": "assets/logos/upstreams/hc-banik-sokolov.webp",
+        "Pir\u00e1ti Chomutov": "assets/logos/upstreams/pir\u00e1ti-chomutov.webp",
+        "LHK Jest\u0159\u00e1bi Prost\u011bjov": "assets/logos/upstreams/lhk-jest\u0159\u00e1bi-prost\u011bjov.webp",
+        "VSK Technika Brno": "assets/logos/upstreams/vsk-technika-brno.webp",
+        "V\u00e4xj\u00f6 Lakers HC": "assets/logos/upstreams/v\u00e4xj\u00f6-lakers-hc.webp",
+        "Mjolby HC": "assets/logos/upstreams/mjolby-hc.webp",
+        "Tyringe Sos": "assets/logos/upstreams/tyringe-sos.webp",
+        "Cardiff Devils": "assets/logos/upstreams/cardiff-devils.webp",
+        "Dundee Stars": "assets/logos/upstreams/dundee-stars.webp",
+        "Coventry Blaze": "assets/logos/upstreams/coventry-blaze.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4517,6 +4538,7 @@
         "A-League": "assets/logos/leagues/a-league.webp",
         "2nd Bundesliga": "assets/logos/leagues/2nd-bundesliga.webp",
         "Australia - A-League": "assets/logos/leagues/australia-a-league.webp",
-        "Malaysia Super League": "assets/logos/leagues/malaysia-super-league.webp"
+        "Malaysia Super League": "assets/logos/leagues/malaysia-super-league.webp",
+        "Alps Hockey League": "assets/logos/leagues/alps-hockey-league.webp"
     }
 }
