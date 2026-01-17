@@ -4321,7 +4321,10 @@
         "Jake Delaney": "assets/logos/upstreams/jake-delaney.webp",
         "Lorenzo Carboni": "assets/logos/upstreams/lorenzo-carboni.webp",
         "Hapoel Tel Aviv Basketball": "assets/logos/streamed/hapoel-tel-aviv-basketball.webp",
-        "Olympiacos Piraeus Basketball": "assets/logos/streamed/olympiacos-piraeus-basketball.webp"
+        "Olympiacos Piraeus Basketball": "assets/logos/streamed/olympiacos-piraeus-basketball.webp",
+        "FC Como": "assets/logos/upstreams/fc-como.webp",
+        "SMU": "assets/logos/upstreams/smu.webp",
+        "Held": "assets/logos/upstreams/held.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -4742,6 +4745,8 @@
         "Scottish Cup": "assets/logos/leagues/scottish-cup.webp",
         "Qatar QSL League": "assets/logos/leagues/qatar-qsl-league.webp",
         "Spanish Segunda Liga": "assets/logos/leagues/spanish-segunda-liga.webp",
-        "Greece Basketball": "assets/logos/leagues/greece-basketball.webp"
+        "Greece Basketball": "assets/logos/leagues/greece-basketball.webp",
+        "MMA Fight": "assets/logos/leagues/mma-fight.webp",
+        "MMA Fighting": "assets/logos/leagues/mma-fighting.webp"
     }
 }
