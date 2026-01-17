@@ -401,6 +401,8 @@ def render_page(template, config, page_data, theme_override=None):
         'HERO_TEXT': hero_txt, # Updated
         # --- ADD THIS LINE HERE ---
         'SITE_NAME': full_site_name,
+        'FAVICON': s.get('favicon_url', '/favicon.ico'),
+        'CANONICAL_URL': page_data.get('canonical_url', ''), # This cleans the raw shortcode
         'FOOTER_COPYRIGHT': s.get('footer_copyright', ''),
         'THEME_TEXT_SYS_STATUS': theme.get('text_sys_status', 'System Status: Online'),
         'LOGO_PRELOAD': f'<link rel="preload" as="image" href="{s.get("logo_url")}" fetchpriority="high">' if s.get('logo_url') else '',
