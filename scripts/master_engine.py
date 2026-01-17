@@ -561,6 +561,13 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
             img_html = f'<img src="{icon}" class="sec-logo"> '
         else:
             img_html = f'<span style="font-size:1.2rem; margin-right:8px;">{icon}</span> '
+            # --- LOGIC RESTORED HERE ---
+    right_content = ""
+    if is_live_section:
+        # Calculate count and style it using the Theme's Live Text Color
+        count = len(matches)
+        right_content = f'<span style="font-size:0.8rem; font-weight:700; color:var(--match-row-live-text-color); display:flex; align-items:center; gap:6px;">● {count} Live Events</span>'
+    elif link:
     
     link_text = THEME.get("text_section_link", "View All")
     link_html = f'<a href="{link}" class="sec-right-link">{link_text} ></a>' if link else ''
