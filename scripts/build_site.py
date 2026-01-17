@@ -425,6 +425,28 @@ def render_page(template, config, page_data, theme_override=None):
         # However, for League/Sport pages, we still need the "Upcoming" title as that header is outside the injection zone.
         'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches')
     }
+    w_conf = config.get('watch_settings', {})
+    html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
+    html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
+    html = html.replace('{{WATCH_AD_SIDEBAR_2}}', w_conf.get('ad_sidebar_2', ''))
+    html = html.replace('{{WATCH_ARTICLE}}', w_conf.get('article', ''))
+    html = html.replace('{{SUPABASE_URL}}', w_conf.get('supabase_url', ''))
+    html = html.replace('{{SUPABASE_KEY}}', w_conf.get('supabase_key', ''))
+    html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
+    html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
+    
+    # --- ARTICLE CONTENT LOGIC ---
+    raw_content = page_data.get('content') or page_data.get('article') or ''
+    
+    if not raw_content or raw_content.strip() == "":
+        # If content is empty, try to remove the container to avoid empty spacing
+        html = html.replace('<div class="seo-article">{{ARTICLE_CONTENT}}</div>', '')
+        html = html.replace('<article class="seo-article">\n            {{LEAGUE_ARTICLE}}\n        </article>', '')
+        # Fallback cleanup
+        html = html.replace('{{ARTICLE_CONTENT}}', '') 
+        html = html.replace('{{LEAGUE_ARTICLE}}', '')
+    else:
+        html = html.replace('{{ARTICLE_CONTENT}}', raw_content)
 
     # Inject Theme Variables
     # Inject Theme Variables (With JS Boolean Safety)
@@ -526,29 +548,6 @@ def render_page(template, config, page_data, theme_override=None):
             for t in teams: reverse_map[t] = l_name
     html = html.replace('{{JS_LEAGUE_MAP}}', json.dumps(reverse_map))
     html = html.replace('{{JS_IMAGE_MAP}}', json.dumps(load_json('assets/data/image_map.json')))
-
-    w_conf = config.get('watch_settings', {})
-    html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
-    html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
-    html = html.replace('{{WATCH_AD_SIDEBAR_2}}', w_conf.get('ad_sidebar_2', ''))
-    html = html.replace('{{WATCH_ARTICLE}}', w_conf.get('article', ''))
-    html = html.replace('{{SUPABASE_URL}}', w_conf.get('supabase_url', ''))
-    html = html.replace('{{SUPABASE_KEY}}', w_conf.get('supabase_key', ''))
-    html = html.replace('{{JS_WATCH_TITLE_TPL}}', w_conf.get('meta_title', 'Watch {{HOME}} vs {{AWAY}}'))
-    html = html.replace('{{JS_WATCH_DESC_TPL}}', w_conf.get('meta_desc', ''))
-    
-    # --- ARTICLE CONTENT LOGIC ---
-    raw_content = page_data.get('content') or page_data.get('article') or ''
-    
-    if not raw_content or raw_content.strip() == "":
-        # If content is empty, try to remove the container to avoid empty spacing
-        html = html.replace('<div class="seo-article">{{ARTICLE_CONTENT}}</div>', '')
-        html = html.replace('<article class="seo-article">\n            {{LEAGUE_ARTICLE}}\n        </article>', '')
-        # Fallback cleanup
-        html = html.replace('{{ARTICLE_CONTENT}}', '') 
-        html = html.replace('{{LEAGUE_ARTICLE}}', '')
-    else:
-        html = html.replace('{{ARTICLE_CONTENT}}', raw_content)
 
     html = html.replace('{{SCHEMA_BLOCK}}', '')
 
