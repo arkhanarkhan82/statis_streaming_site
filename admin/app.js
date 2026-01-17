@@ -1085,7 +1085,15 @@ window.saveNewLeague = () => {
     if(n) { if(!leagueMapData) leagueMapData={}; leagueMapData[n] = ["new"]; renderLeagues(); document.getElementById('leagueModal').style.display='none'; } 
 };
 function rebuildLeagueMapFromUI() {
-    const map = {}; document.querySelectorAll('.team-list-editor').forEach(t => { map[t.getAttribute('data-league')] = t.value.split(',').map(x=>x.trim().toLowerCase().replace(/\s+/g,'-')).filter(x=>x.length>0); });
+    const map = {}; 
+    document.querySelectorAll('.team-list-editor').forEach(t => { 
+        // FIX: Only process elements that actually have a data-league attribute
+        // This ignores the Watch Article textareas
+        const leagueName = t.getAttribute('data-league');
+        if (leagueName && leagueName.trim() !== "") {
+            map[leagueName] = t.value.split(',').map(x=>x.trim().toLowerCase().replace(/\s+/g,'-')).filter(x=>x.length>0); 
+        }
+    });
     return map;
 }
 
@@ -1116,16 +1124,22 @@ document.getElementById('saveBtn').onclick = async () => {
 // 1. Capture whatever is currently on screen to the active context variable
 captureThemeState(currentThemeContext);
     // Save Watch Settings
+    // Save Watch Settings
     configData.watch_settings = {
         supabase_url: getVal('supaUrl'),
         supabase_key: getVal('supaKey'),
+        
+        // Versus Match Settings
         meta_title: getVal('watchPageTitle'),
         meta_desc: getVal('watchPageDesc'),
         article: getVal('watchPageArticle'),
-        // Single - NEW
+        
+        // Single Match Settings (NEW)
         meta_title_single: getVal('watchPageTitleSingle'),
         meta_desc_single: getVal('watchPageDescSingle'),
         article_single: getVal('watchPageArticleSingle'),
+        
+        // Ads
         ad_mobile: getVal('watchAdMobile'),
         ad_sidebar_1: getVal('watchAdSidebar1'),
         ad_sidebar_2: getVal('watchAdSidebar2')
