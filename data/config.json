@@ -159,7 +159,7 @@
     "sys_status_dot_size": "8",
     "static_h1_align": "left",
     "footer_columns": "3",
-    "footer_show_disclaimer": false,
+    "footer_show_disclaimer": true,
     "footer_slot_1": "brand",
     "footer_slot_2": "disclaimer",
     "footer_slot_3": "menu",
