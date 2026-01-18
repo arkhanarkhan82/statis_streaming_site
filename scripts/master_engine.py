@@ -698,19 +698,74 @@ def build_homepage(matches):
     html = re.sub(r'<div id="live-skeleton".*?</div>', '', html, flags=re.DOTALL)
     html = re.sub(r'<div id="upcoming-skeleton".*?</div>', '', html, flags=re.DOTALL)
 
-    schema_data = {
-        "@context": "https://schema.org", "@type": "ItemList",
-        "itemListElement": [{
-            "@type": "SportsEvent", 
-            "name": f"{m['home']} vs {m['away']}" if not m['is_single'] else m['home'],
-            "startDate": datetime.fromtimestamp(m['timestamp']/1000).isoformat(),
-            "url": f"https://{DOMAIN}/watch/?{PARAM_INFO}={m['id']}"
-        } for m in (live_matches + upcoming_full)[:20]]
+    # --- DYNAMIC SCHEMA GENERATION (Top 5 Live + Top 15 Upcoming) ---
+    schema_matches = live_matches[:5] + upcoming_full[:15]
+    list_items = []
+    
+    site_url = f"https://{DOMAIN}/"
+    org_id = f"{site_url}#organization"
+
+    for idx, m in enumerate(schema_matches):
+        match_url = f"{site_url}watch/?{PARAM_INFO}={m['id']}"
+        event_name = m['title'] if m['is_single'] and m['title'] else f"{m['home']} vs {m['away']}"
+        
+        # Base Event Object
+        event = {
+            "@type": "SportsEvent",
+            "name": event_name,
+            "description": f"Watch {event_name} live stream. {m['league']}.",
+            "startDate": datetime.fromtimestamp(m['timestamp']/1000, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z'),
+            "eventStatus": "https://schema.org/EventLive" if m['is_live'] else "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "url": match_url,
+            "image": [f"{site_url.rstrip('/')}{config['site_settings'].get('logo_url')}"],
+            "organizer": { "@id": org_id },
+            "sport": m['sport'],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": match_url
+            }
+        }
+
+        # Handle Teams vs Single Event Logic
+        if not m['is_single']:
+            # Home Team
+            home_logo = image_map['teams'].get(m['home'])
+            home_data = { "@type": "SportsTeam", "name": m['home'] }
+            if home_logo: home_data["image"] = f"{site_url.rstrip('/')}/{home_logo}"
+            event["homeTeam"] = home_data
+
+            # Away Team
+            away_logo = image_map['teams'].get(m['away'])
+            away_data = { "@type": "SportsTeam", "name": m['away'] }
+            if away_logo: away_data["image"] = f"{site_url.rstrip('/')}/{away_logo}"
+            event["awayTeam"] = away_data
+        
+        # Add to List Item
+        list_items.append({
+            "@type": "ListItem",
+            "position": idx + 1,
+            "item": event
+        })
+
+    # Construct the Final Dynamic JSON
+    dynamic_schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": f"{site_url}#matchlist",
+        "itemListElement": list_items
     }
-    # Unicode Safe Injection
+
+    # TARGETED INJECTION: Replace the placeholder script content
+    # We look for the script with id="dynamic-schema-placeholder"
+    pattern = r'(<script id="dynamic-schema-placeholder" type="application/ld\+json">).*?(</script>)'
+    
     html = re.sub(
-        r'(<script type="application/ld\+json">).*?(</script>)', 
-        lambda m: f"{m.group(1)}{json.dumps(schema_data)}{m.group(2)}", 
+        pattern, 
+        lambda match: f"{match.group(1)}{json.dumps(dynamic_schema)}{match.group(2)}", 
         html, 
         flags=re.DOTALL
     )
