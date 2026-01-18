@@ -775,17 +775,13 @@ def build_homepage(matches):
             "startDate": datetime.fromtimestamp(m['timestamp']/1000, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z'),
             "eventStatus": "https://schema.org/EventLive" if m['is_live'] else "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "isAccessibleForFree": True,  # <--- Added
             "url": match_url,
             "image": [f"{site_url.rstrip('/')}{config['site_settings'].get('logo_url')}"],
             "organizer": { "@id": org_id },
-            "sport": m['sport'],
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": match_url
-            }
+            "sport": m['sport']
+            # Removed "offers" block
+        }
         }
 
         # Handle Competitors (Team vs Team OR Person vs Person)
@@ -937,11 +933,12 @@ def inject_leagues(matches):
                 "startDate": datetime.fromtimestamp(m['timestamp']/1000, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z'),
                 "eventStatus": "https://schema.org/EventLive" if m['is_live'] else "https://schema.org/EventScheduled",
                 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                "isAccessibleForFree": True,  # <--- Added
                 "url": match_url,
                 "image": [f"{site_url.rstrip('/')}{config['site_settings'].get('logo_url')}"],
                 "organizer": { "@id": org_id },
-                "sport": m['sport'],
-                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": match_url }
+                "sport": m['sport']
+                # Removed "offers" block
             }
 
             if not m['is_single']:
