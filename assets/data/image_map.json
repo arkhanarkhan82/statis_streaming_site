@@ -4879,7 +4879,18 @@
         "Jir\u00ed Lehecka": "assets/logos/upstreams/jir\u00ed-lehecka.webp",
         "Pedro Martinez": "assets/logos/upstreams/pedro-martinez.webp",
         "Novak Djokovic": "assets/logos/upstreams/novak-djokovic.webp",
-        "Mattia Bellucci": "assets/logos/upstreams/mattia-bellucci.webp"
+        "Mattia Bellucci": "assets/logos/upstreams/mattia-bellucci.webp",
+        "East Carolina": "assets/logos/streamed/east-carolina.webp",
+        "Charlotte": "assets/logos/streamed/charlotte.webp",
+        "UAB": "assets/logos/streamed/uab.webp",
+        "Tulsa": "assets/logos/streamed/tulsa.webp",
+        "Kristina Dmitruk": "assets/logos/upstreams/kristina-dmitruk.webp",
+        "Mccartney Kessler": "assets/logos/upstreams/mccartney-kessler.webp",
+        "Juan Manuel Cerundolo": "assets/logos/upstreams/juan-manuel-cerundolo.webp",
+        "Linda Noskova": "assets/logos/upstreams/linda-noskova.webp",
+        "Thiago Augustin Tirante": "assets/logos/upstreams/thiago-augustin-tirante.webp",
+        "Alexei Popyrin": "assets/logos/upstreams/alexei-popyrin.webp",
+        "Jiri Lehecka": "assets/logos/upstreams/jiri-lehecka.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5319,6 +5330,7 @@
         "EHF - European League (W) - Gr.D": "assets/logos/leagues/ehf-european-league-w-grd.webp",
         "Copa Argentina": "assets/logos/leagues/copa-argentina.webp",
         "Int. Friendly Games": "assets/logos/leagues/int-friendly-games.webp",
-        "Segunda Divisi\u00f3n": "assets/logos/leagues/segunda-divisi\u00f3n.webp"
+        "Segunda Divisi\u00f3n": "assets/logos/leagues/segunda-divisi\u00f3n.webp",
+        "WTA Australian Open": "assets/logos/leagues/wta-australian-open.webp"
     }
 }
