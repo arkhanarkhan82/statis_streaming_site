@@ -584,7 +584,66 @@ def render_page(template, config, page_data, theme_override=None):
     html = html.replace('{{JS_LEAGUE_MAP}}', json.dumps(reverse_map))
     html = html.replace('{{JS_IMAGE_MAP}}', json.dumps(load_json('assets/data/image_map.json')))
 
-    html = html.replace('{{SCHEMA_BLOCK}}', '')
+    # --- NEW: HOMEPAGE SCHEMA GENERATION (Static + Dynamic Placeholder) ---
+    if page_data.get('slug') == 'home':
+        site_url = f"https://{s.get('domain')}/"
+        
+        # 1. Static Graph (Organization, WebSite, CollectionPage)
+        static_schema = {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "@id": f"{site_url}#organization",
+                    "name": full_site_name,
+                    "url": site_url,
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": f"{site_url.rstrip('/')}{s.get('logo_url')}",
+                        "width": 512, 
+                        "height": 512
+                    }
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "WebSite",
+                    "@id": f"{site_url}#website",
+                    "url": site_url,
+                    "name": full_site_name,
+                    "publisher": {"@id": f"{site_url}#organization"}
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "@id": f"{site_url}#webpage",
+                    "url": site_url,
+                    "name": page_data.get('meta_title', full_site_name),
+                    "description": page_data.get('meta_desc', ''),
+                    "isPartOf": {"@id": f"{site_url}#website"},
+                    "about": {"@id": f"{site_url}#organization"},
+                    "mainEntity": {"@id": f"{site_url}#matchlist"}
+                }
+            ]
+        }
+        
+        # 2. Dynamic Placeholder (Empty ItemList to be filled by Master Engine)
+        # We give it a specific ID so Master Engine can find it easily
+        dynamic_placeholder = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "@id": f"{site_url}#matchlist",
+            "itemListElement": []
+        }
+
+        # Inject both scripts
+        schema_html = f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
+        schema_html += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>'
+        
+        html = html.replace('{{SCHEMA_BLOCK}}', schema_html)
+    else:
+        # Clear schema block for non-home pages (or handle differently)
+        html = html.replace('{{SCHEMA_BLOCK}}', '')
 
     return html
 
