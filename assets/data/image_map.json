@@ -5063,7 +5063,14 @@
         "Magdalena Smekalova": "assets/logos/upstreams/magdalena-smekalova.webp",
         "Ali Collins": "assets/logos/upstreams/ali-collins.webp",
         "Eva Busaad": "assets/logos/upstreams/eva-busaad.webp",
-        "Polina Starkova": "assets/logos/upstreams/polina-starkova.webp"
+        "Polina Starkova": "assets/logos/upstreams/polina-starkova.webp",
+        "Virtus Lumezzane": "assets/logos/upstreams/virtus-lumezzane.webp",
+        "Jack Pinnington Jones": "assets/logos/upstreams/jack-pinnington-jones.webp",
+        "Fares Zakaria": "assets/logos/upstreams/fares-zakaria.webp",
+        "Patrick Zahraj": "assets/logos/upstreams/patrick-zahraj.webp",
+        "Benoit Paire": "assets/logos/upstreams/benoit-paire.webp",
+        "Borna Gojo": "assets/logos/upstreams/borna-gojo.webp",
+        "Jay Clarke": "assets/logos/upstreams/jay-clarke.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5509,6 +5516,7 @@
         "Eredivisie, Women": "assets/logos/leagues/eredivisie-women.webp",
         "The Masters 2026 - Afternoon Session": "assets/logos/leagues/the-masters-2026-afternoon-session.webp",
         "Cricket": "assets/logos/leagues/cricket.webp",
-        "The Masters 2026 -Evening Session": "assets/logos/leagues/the-masters-2026-evening-session.webp"
+        "The Masters 2026 -Evening Session": "assets/logos/leagues/the-masters-2026-evening-session.webp",
+        "Jupiler Pro League": "assets/logos/leagues/jupiler-pro-league.webp"
     }
 }
