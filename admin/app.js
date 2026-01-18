@@ -1084,7 +1084,20 @@ function getGroupedLeagues() { return leagueMapData || {}; }
 function renderLeagues() {
     const c = document.getElementById('leaguesContainer'); if(!c) return;
     const g = getGroupedLeagues();
-    c.innerHTML = Object.keys(g).sort().map(l => `<div class="card"><div class="league-card-header"><h3>${l}</h3><span>${g[l].length} Teams</span></div><label>Teams</label><textarea class="team-list-editor" rows="6" data-league="${l}">${g[l].join(', ')}</textarea></div>`).join('');
+    // REPLACE THIS BLOCK INSIDE renderLeagues()
+    c.innerHTML = Object.keys(g).sort().map(l => `
+        <div class="card">
+            <div class="league-card-header">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <h3 style="margin:0;">${l}</h3>
+                    <button class="btn-icon" onclick="openLeagueMetaModal('${l}')" title="Edit Entity Links" style="font-size:1rem; padding:4px;">🔗</button>
+                </div>
+                <span>${g[l].length} Teams</span>
+            </div>
+            <label>Teams</label>
+            <textarea class="team-list-editor" rows="6" data-league="${l}">${g[l].join(', ')}</textarea>
+        </div>
+    `).join('');
 }
 window.copyAllLeaguesData = () => {
     let o = ""; for(const [l,t] of Object.entries(getGroupedLeagues())) o+=`LEAGUE: ${l}\nTEAMS: ${t.join(', ')}\n---\n`;
@@ -1323,3 +1336,47 @@ function applyThemeState(data) {
          if(el && display) display.innerText = el.value + 'px';
     });
 }
+// ==========================================
+// NEW: LEAGUE METADATA LOGIC
+// ==========================================
+let currentMetaLeague = null;
+
+window.openLeagueMetaModal = (leagueName) => {
+    currentMetaLeague = leagueName;
+    document.getElementById('metaModalLeagueName').innerText = leagueName;
+    
+    // Ensure config container exists
+    if(!configData.league_metadata) configData.league_metadata = {};
+    
+    // Get existing links array and join with comma+newline for easy editing
+    const links = configData.league_metadata[leagueName] || [];
+    document.getElementById('metaLinksInput').value = links.join(',\n');
+    
+    document.getElementById('leagueMetaModal').style.display = 'flex';
+};
+
+window.saveLeagueMeta = () => {
+    if(!currentMetaLeague) return;
+    
+    const rawText = document.getElementById('metaLinksInput').value;
+    
+    // Split by comma or newline, trim whitespace, and remove empty strings
+    const linkArray = rawText.split(/[\n,]+/).map(s => s.trim()).filter(s => s.length > 0);
+    
+    if(!configData.league_metadata) configData.league_metadata = {};
+    
+    if(linkArray.length > 0) {
+        configData.league_metadata[currentMetaLeague] = linkArray;
+    } else {
+        delete configData.league_metadata[currentMetaLeague];
+    }
+    
+    document.getElementById('leagueMetaModal').style.display = 'none';
+    
+    // Visual Feedback
+    const btn = document.querySelector(`button[onclick="openLeagueMetaModal('${currentMetaLeague}')"]`);
+    if(btn) {
+        btn.style.color = "#22c55e"; // Turn green to show data exists
+        setTimeout(() => btn.style.color = "", 2000);
+    }
+};
