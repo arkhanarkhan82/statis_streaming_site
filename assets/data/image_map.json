@@ -5005,7 +5005,14 @@
         "Ying Zhang": "assets/logos/upstreams/ying-zhang.webp",
         "Alyssa Reguer": "assets/logos/upstreams/alyssa-reguer.webp",
         "Loes Ebeling Koning": "assets/logos/upstreams/loes-ebeling-koning.webp",
-        "Reina Goto": "assets/logos/upstreams/reina-goto.webp"
+        "Reina Goto": "assets/logos/upstreams/reina-goto.webp",
+        "Estrela Amadora": "assets/logos/streamed/estrela-amadora.webp",
+        "Raith": "assets/logos/upstreams/raith.webp",
+        "Robin Bertrand": "assets/logos/upstreams/robin-bertrand.webp",
+        "Matej Dodig": "assets/logos/upstreams/matej-dodig.webp",
+        "Nikolai Barsukov": "assets/logos/upstreams/nikolai-barsukov.webp",
+        "Luka Mikrut": "assets/logos/upstreams/luka-mikrut.webp",
+        "Lilian Marmousez": "assets/logos/upstreams/lilian-marmousez.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5449,6 +5456,7 @@
         "WTA Australian Open": "assets/logos/leagues/wta-australian-open.webp",
         "Taca de Portugal": "assets/logos/leagues/taca-de-portugal.webp",
         "Eredivisie, Women": "assets/logos/leagues/eredivisie-women.webp",
-        "The Masters 2026 - Afternoon Session": "assets/logos/leagues/the-masters-2026-afternoon-session.webp"
+        "The Masters 2026 - Afternoon Session": "assets/logos/leagues/the-masters-2026-afternoon-session.webp",
+        "Cricket": "assets/logos/leagues/cricket.webp"
     }
 }
