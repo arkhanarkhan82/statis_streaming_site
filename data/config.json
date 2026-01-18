@@ -420,9 +420,18 @@
         "org": true,
         "live": true,
         "schedule": true,
-        "faq_list": [],
+        "faq_list": [
+          {
+            "q": "Hello",
+            "a": "Hi"
+          },
+          {
+            "q": "Testing",
+            "a": "One two three"
+          }
+        ],
         "website": true,
-        "faq": false,
+        "faq": true,
         "about": false
       },
       "title": "No. #1 Streaming Website",
