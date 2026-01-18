@@ -704,11 +704,19 @@ def build_homepage(matches):
     
     site_url = f"https://{DOMAIN}/"
     org_id = f"{site_url}#organization"
+    
+    # Sports that are Person vs Person
+    INDIVIDUAL_SPORTS = ['tennis', 'boxing', 'mma', 'ufc', 'golf', 'darts', 'snooker', 'wrestling', 'table tennis', 'badminton']
 
     for idx, m in enumerate(schema_matches):
         match_url = f"{site_url}watch/?{PARAM_INFO}={m['id']}"
         event_name = m['title'] if m['is_single'] and m['title'] else f"{m['home']} vs {m['away']}"
         
+        # Determine Entity Type based on Sport
+        raw_sport = (m['sport'] or "").lower()
+        is_individual = any(s in raw_sport for s in INDIVIDUAL_SPORTS)
+        entity_type = "Person" if is_individual else "SportsTeam"
+
         # Base Event Object
         event = {
             "@type": "SportsEvent",
@@ -730,19 +738,25 @@ def build_homepage(matches):
             }
         }
 
-        # Handle Teams vs Single Event Logic
+        # Handle Competitors (Team vs Team OR Person vs Person)
         if not m['is_single']:
-            # Home Team
+            # Home
             home_logo = image_map['teams'].get(m['home'])
-            home_data = { "@type": "SportsTeam", "name": m['home'] }
+            home_data = { "@type": entity_type, "name": m['home'] }
             if home_logo: home_data["image"] = f"{site_url.rstrip('/')}/{home_logo}"
-            event["homeTeam"] = home_data
 
-            # Away Team
+            # Away
             away_logo = image_map['teams'].get(m['away'])
-            away_data = { "@type": "SportsTeam", "name": m['away'] }
+            away_data = { "@type": entity_type, "name": m['away'] }
             if away_logo: away_data["image"] = f"{site_url.rstrip('/')}/{away_logo}"
-            event["awayTeam"] = away_data
+
+            if is_individual:
+                # Individual sports use 'competitor' array
+                event["competitor"] = [home_data, away_data]
+            else:
+                # Team sports use 'homeTeam' and 'awayTeam'
+                event["homeTeam"] = home_data
+                event["awayTeam"] = away_data
         
         # Add to List Item
         list_items.append({
@@ -759,8 +773,7 @@ def build_homepage(matches):
         "itemListElement": list_items
     }
 
-    # TARGETED INJECTION: Replace the placeholder script content
-    # We look for the script with id="dynamic-schema-placeholder"
+    # TARGETED INJECTION
     pattern = r'(<script id="dynamic-schema-placeholder" type="application/ld\+json">).*?(</script>)'
     
     html = re.sub(
