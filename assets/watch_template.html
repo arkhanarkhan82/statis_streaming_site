@@ -1340,7 +1340,11 @@ function generateArticle(m) {
                 }
             ];
 
-            const eventName = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+            // FIX: Use Title for Event Name (e.g. UFC 300), fallback to Home/Away logic
+            let eventName = m.title;
+            if (!eventName) {
+                eventName = m.isSingleEvent ? m.home : `${m.home} vs ${m.away}`;
+            }
             
             const eventSchema = {
                 "@type": "SportsEvent",
