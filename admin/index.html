@@ -824,7 +824,17 @@
                             <label>Canonical URL</label><input type="text" id="pageCanonical">
                             
                             <div class="checkbox-group" style="margin-top:15px; display:flex; flex-direction:column; gap:8px;">
-                                <!-- Dynamic Content: Org, Website, FAQ Editor -->
+                                <label style="color:#facc15; font-weight:700;">Rich Snippets</label>
+                                <label><input type="checkbox" id="schemaOrg"> Organization (Entity)</label>
+                                <label><input type="checkbox" id="schemaWebsite"> WebSite (Sitelinks)</label>
+                                <!-- RESTORED: About Page Schema Checkbox -->
+                                <label><input type="checkbox" id="schemaAbout"> About Page (for DMCA/Contact)</label>
+                                
+                                <label><input type="checkbox" id="schemaFaq" onchange="toggleFaqEditor(this.checked)"> FAQ Schema</label>
+                                <div id="faqEditorContainer" style="display:none; margin-top:10px;">
+                                    <div style="display:flex;justify-content:space-between;"><h4 style="margin:0">FAQ Items</h4><button class="btn-primary" onclick="addFaqItem()">+ Add</button></div>
+                                    <div id="faqList" style="display:flex;flex-direction:column;gap:10px;margin-top:10px;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
