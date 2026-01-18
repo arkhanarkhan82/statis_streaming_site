@@ -1148,5 +1148,11 @@
     "ad_mobile": "<script>\n  atOptions = {\n    'key' : '7d6dda6ba79d895750952d3835e19093',\n    'format' : 'iframe',\n    'height' : 90,\n    'width' : 728,\n    'params' : {}\n  };\n</script>\n<script src=\"https://www.highperformanceformat.com/7d6dda6ba79d895750952d3835e19093/invoke.js\"></script>\n",
     "ad_sidebar_1": "",
     "ad_sidebar_2": "<script>\n  atOptions = {\n    'key' : 'f1a48532f479213bd792812a297ae53d',\n    'format' : 'iframe',\n    'height' : 250,\n    'width' : 300,\n    'params' : {}\n  };\n</script>\n<script src=\"https://www.highperformanceformat.com/f1a48532f479213bd792812a297ae53d/invoke.js\"></script>"
+  },
+  "league_metadata": {
+    "NFL": [
+      "https://en.wikipedia.org/wiki/National_Football_League",
+      "https://www.wikidata.org/wiki/Q1215884"
+    ]
   }
 }
