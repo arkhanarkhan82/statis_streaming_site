@@ -588,62 +588,108 @@ def render_page(template, config, page_data, theme_override=None):
     if page_data.get('slug') == 'home':
         site_url = f"https://{s.get('domain')}/"
         
-        # 1. Static Graph (Organization, WebSite, CollectionPage)
-        static_schema = {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "@id": f"{site_url}#organization",
-                    "name": full_site_name,
-                    "url": site_url,
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": f"{site_url.rstrip('/')}{s.get('logo_url')}",
-                        "width": 512, 
-                        "height": 512
-                    }
-                },
-                {
-                    "@context": "https://schema.org",
-                    "@type": "WebSite",
-                    "@id": f"{site_url}#website",
-                    "url": site_url,
-                    "name": full_site_name,
-                    "publisher": {"@id": f"{site_url}#organization"}
-                },
-                {
-                    "@context": "https://schema.org",
-                    "@type": "CollectionPage",
-                    "@id": f"{site_url}#webpage",
-                    "url": site_url,
-                    "name": page_data.get('meta_title', full_site_name),
-                    "description": page_data.get('meta_desc', ''),
-                    "isPartOf": {"@id": f"{site_url}#website"},
-                    "about": {"@id": f"{site_url}#organization"},
-                    "mainEntity": {"@id": f"{site_url}#matchlist"}
+        # --- SCHEMA GENERATION (CONDITIONAL) ---
+    schema_output = ""
+    site_url = f"https://{s.get('domain')}/"
+    logo_url = f"{site_url.rstrip('/')}{s.get('logo_url')}"
+    
+    # Get Schema Flags from Page Data (Admin Checkboxes)
+    schemas = page_data.get('schemas', {})
+
+    # 1. HOMEPAGE GRAPH (Static + Dynamic)
+    if page_data.get('slug') == 'home':
+        graph_nodes = []
+
+        # A. Organization Node (Conditional)
+        if schemas.get('org'):
+            graph_nodes.append({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": f"{site_url}#organization",
+                "name": full_site_name,
+                "url": site_url,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": logo_url,
+                    "width": 512, 
+                    "height": 512
                 }
-            ]
+            })
+
+        # B. WebSite Node (Conditional)
+        if schemas.get('website'):
+            website_node = {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": f"{site_url}#website",
+                "url": site_url,
+                "name": full_site_name
+            }
+            # Link to Org if Org exists
+            if schemas.get('org'):
+                website_node["publisher"] = { "@id": f"{site_url}#organization" }
+            
+            graph_nodes.append(website_node)
+
+        # C. CollectionPage Node (Always added for Home to hold the dynamic list)
+        collection_node = {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": f"{site_url}#webpage",
+            "url": site_url,
+            "name": page_data.get('meta_title', full_site_name),
+            "description": page_data.get('meta_desc', ''),
+            "mainEntity": { "@id": f"{site_url}#matchlist" }
         }
         
-        # 2. Dynamic Placeholder (Empty ItemList to be filled by Master Engine)
-        # We give it a specific ID so Master Engine can find it easily
+        # Conditionally link to other nodes if they exist
+        if schemas.get('website'):
+            collection_node["isPartOf"] = { "@id": f"{site_url}#website" }
+        if schemas.get('org'):
+            collection_node["about"] = { "@id": f"{site_url}#organization" }
+            
+        graph_nodes.append(collection_node)
+
+        # Output the Graph
+        if graph_nodes:
+            static_schema = { "@context": "https://schema.org", "@graph": graph_nodes }
+            schema_output += f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
+        
+        # Dynamic Placeholder (For Master Engine)
         dynamic_placeholder = {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "@id": f"{site_url}#matchlist",
             "itemListElement": []
         }
+        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
 
-        # Inject both scripts
-        schema_html = f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
-        schema_html += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>'
+    # 2. FAQ Schema (Conditional - Works on ANY page)
+    if schemas.get('faq') and schemas.get('faq_list'):
+        faq_objects = []
+        for item in schemas['faq_list']:
+            q = item.get('q', '').strip()
+            a = item.get('a', '').strip()
+            if q and a:
+                faq_objects.append({
+                    "@type": "Question",
+                    "name": q,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": a
+                    }
+                })
         
-        html = html.replace('{{SCHEMA_BLOCK}}', schema_html)
-    else:
-        # Clear schema block for non-home pages (or handle differently)
-        html = html.replace('{{SCHEMA_BLOCK}}', '')
+        if faq_objects:
+            faq_schema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faq_objects
+            }
+            schema_output += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>\n'
+
+    # Final Injection
+    html = html.replace('{{SCHEMA_BLOCK}}', schema_output)
 
     return html
 
