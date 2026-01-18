@@ -1362,10 +1362,14 @@ function generateArticle(m) {
             };
 
             if (m.isSingleEvent) {
-                const performer = { "@type": "Organization", "name": m.home };
-                if(hLogo) performer.logo = hLogo;
-                eventSchema.performer = [ performer ];
-            } 
+                // FIX: Only add performer if the name is valid (Not "TBA")
+                // This removes the field for Golf/F1 events where API returns TBA
+                if (m.home && m.home !== "TBA") {
+                    const performer = { "@type": "Organization", "name": m.home };
+                    if(hLogo) performer.logo = hLogo;
+                    eventSchema.performer = [ performer ];
+                }
+            }
             else if (isPersonSport) {
                 const p1 = { "@type": "Person", "name": m.home };
                 if(hLogo) p1.image = hLogo;
