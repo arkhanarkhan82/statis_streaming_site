@@ -36,6 +36,53 @@ SPORT_DURATIONS = {
     'soccer': 125, 'rugby': 125, 'fight': 180, 'boxing': 180, 'mma': 180,
     'default': 130
 }
+# ==============================================================================
+# SPORT NAME NORMALIZATION
+# ==============================================================================
+SPORT_DICTIONARY = {
+    "football": "Soccer",
+    "soccer": "Soccer",
+    "american-football": "American Football",
+    "american football": "American Football",
+    "am. football": "American Football",
+    "basketball": "Basketball",
+    "nba": "Basketball",
+    "baseball": "Baseball",
+    "mlb": "Baseball",
+    "ice-hockey": "Ice Hockey",
+    "ice hockey": "Ice Hockey",
+    "nhl": "Ice Hockey",
+    "hockey": "Ice Hockey",
+    "tennis": "Tennis",
+    "cricket": "Cricket",
+    "rugby": "Rugby",
+    "rugby-union": "Rugby Union",
+    "rugby-league": "Rugby League",
+    "formula-1": "Formula 1",
+    "f1": "Formula 1",
+    "motorsport": "Motorsport",
+    "boxing": "Boxing",
+    "mma": "MMA",
+    "ufc": "MMA",
+    "fighting": "Fighting",
+    "golf": "Golf",
+    "volleyball": "Volleyball",
+    "handball": "Handball",
+    "darts": "Darts",
+    "snooker": "Snooker",
+    "table-tennis": "Table Tennis",
+    "badminton": "Badminton",
+    "afl": "Aussie Rules"
+}
+
+def normalize_sport(raw_name):
+    if not raw_name: return "General"
+    key = str(raw_name).lower().strip()
+    # 1. Check Dictionary
+    if key in SPORT_DICTIONARY:
+        return SPORT_DICTIONARY[key]
+    # 2. Fallback: Replace hyphens and Title Case (e.g. "table-tennis" -> "Table Tennis")
+    return key.replace('-', ' ').title()
 
 # ==============================================================================
 # 2. UTILITIES & LOADERS
@@ -288,9 +335,12 @@ def fetch_and_process():
         sm_l = sm.get('league') if sm else ""
         am_l = am.get('league') if am else ""
         league = am_l if (sm_l and am_l and normalize(sm_l) == normalize(am_l)) else (sm_l or am_l)
-        if not league: league = sm.get('category') if sm else (am.get('sport') if am else "")
-                
-        sport = sm.get('category') if sm else (am.get('sport') if am else "General")
+        
+        raw_sport = sm.get('category') if sm else (am.get('sport') if am else "General")
+        if not league: league = raw_sport
+        
+        # FIX: Normalize Sport Name using Dictionary
+        sport = normalize_sport(raw_sport)
         
         ts = 0
         if sm and sm.get('date'): ts = sm['date']
