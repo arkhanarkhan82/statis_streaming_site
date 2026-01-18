@@ -667,7 +667,7 @@
         };
         
         const W_SEO = { title_tpl: "{{JS_WATCH_TITLE_TPL}}", desc_tpl: "{{JS_WATCH_DESC_TPL}}", title_single: "{{JS_WATCH_TITLE_SINGLE_TPL}}", desc_single: "{{JS_WATCH_DESC_SINGLE_TPL}}" };
-        let chatClient = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
+        let chatClient = null, roomChannel = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
         const DUMMY_NAMES = ["Alex", "John", "Sarah", "Mike", "Fan123", "GoalHunter", "SoccerMom", "Dave", "Chris", "Ultra", "Sporty", "Winner", "Speedy", "Legend", "Ghost"];
         const DUMMY_MSGS = ["Let's go!", "What a play!", "Score?", "Lagging?", "Nice pass", "Who winning?", "Ref blind", "Goooal!", "Finally", "Lol", "Wow", "Defense weak", "Stream good", "Love this team", "Come on!", "Can't believe"];
         // --- SEO MANAGER (STRICT MODE) ---
@@ -1129,13 +1129,46 @@ function generateArticle(m) {
         }
         function setupRealtimeListener() {
             const liveCountEl = document.getElementById('liveCount');
-            chatClient.channel(`room:${currentHash}`, { config: { presence: { key: currentUser } } })
+            const joinBtn = document.getElementById('joinChatBtn');
+            const MAX_USERS = 450;
+
+            // FIX: Assign channel to global variable to maintain state reference
+            roomChannel = chatClient.channel(`room:${currentHash}`, { config: { presence: { key: currentUser } } });
+
+            roomChannel
                 .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages', filter: `match_id=eq.${currentHash}` }, (payload) => appendMessage(payload.new.username, payload.new.content))
                 .on('presence', { event: 'sync' }, () => {
-                    const count = Object.keys(chatClient.channel(`room:${currentHash}`).presenceState()).length;
+                    // FIX: Use the global roomChannel to get accurate state
+                    const state = roomChannel.presenceState();
+                    const count = Object.keys(state).length;
+                    
+                    // Update Header Count
                     liveCountEl.innerHTML = `<span style="display:block; width:6px; height:6px; background:var(--brand-primary); border-radius:50%; box-shadow:0 0 5px var(--brand-primary);"></span> ${count} Users`;
+
+                    // FIX: 450 User Limit Logic
+                    if (count >= MAX_USERS) {
+                        if(joinBtn) {
+                            joinBtn.disabled = true;
+                            joinBtn.innerText = "Room Full (Max 450)";
+                            joinBtn.classList.remove('active');
+                            joinBtn.style.background = "#334155";
+                            joinBtn.style.cursor = "not-allowed";
+                        }
+                        
+                        // Optional: If user hasn't fully joined yet (is in overlay), prevent entry
+                        const overlay = document.getElementById('chatOverlay');
+                        if (overlay && overlay.style.display !== 'none') {
+                             document.getElementById('chatError').innerText = "Room is currently full.";
+                             document.getElementById('chatError').style.display = 'block';
+                        }
+                    }
                 })
-                .subscribe();
+                .subscribe(async (status) => {
+                    if (status === 'SUBSCRIBED') {
+                        // Explicitly track presence to ensure count updates immediately
+                        await roomChannel.track({ online_at: new Date().toISOString(), user: currentUser });
+                    }
+                });
         }
         async function sendMessage() {
             const input = document.getElementById('chatInput'); const text = input.value.trim();
