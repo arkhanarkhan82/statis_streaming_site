@@ -782,7 +782,6 @@ def build_homepage(matches):
             "sport": m['sport']
             # Removed "offers" block
         }
-        }
 
         # Handle Competitors (Team vs Team OR Person vs Person)
         if not m['is_single']:
