@@ -7,7 +7,7 @@
     <title>Watch MLB Live Streams and Schedules</title>
     <meta name="description" content="The Best Free MLB Live stream free online">
     <meta name="keywords" content="MLB stream, watch MLB free, MLB live">
-    <meta name="theme-color" content="{{THEME_META_COLOR}}">
+    <meta name="theme-color" content="#d00000">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
@@ -15,8 +15,8 @@
     <meta property="og:site_name" content="StreamEast">
     <meta property="og:title" content="Watch MLB Live Streams and Schedules">
     <meta property="og:description" content="The Best Free MLB Live stream free online">
-    <meta property="og:image" content="{{OG_IMAGE}}">
-    <meta property="og:image:type" content="{{OG_MIME}}">
+    <meta property="og:image" content="/assets/test-logo.webp">
+    <meta property="og:image:type" content="image/png">
     
     <meta name="robots" content="index, follow">
     <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
@@ -227,9 +227,18 @@
         .btn-watch { background: var(--match-row-btn-watch-bg); color: var(--match-row-btn-watch-text); font-size: 0.65rem; font-weight: 800; padding: 6px 10px; border-radius: var(--button-border-radius); width: 100%; text-transform: uppercase; display:flex; align-items:center; justify-content:center; gap:5px; height: 26px; }
         .hd-badge { background: var(--match-row-hd-badge-bg); padding: 1px 4px; border-radius: 3px; font-size: 0.55rem; color: var(--match-row-hd-badge-text); }
         .btn-notify { background: var(--match-row-btn-notify-bg); border: 1px solid var(--match-row-btn-notify-border); color: var(--match-row-btn-notify-text); padding: 0 10px; width: 100%; height: 26px; border-radius: var(--button-border-radius); font-size: 0.65rem; font-weight: 700; display:flex; align-items:center; justify-content:center; }
+        .btn-notify.active { border-color: var(--btn-notify-active-border); color: var(--btn-notify-active-text); background: var(--btn-notify-active-bg); cursor: default; }
         
         .btn-copy-link { background: none; border: none; color: #64748b; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; cursor: pointer; display: flex; align-items: center; gap: 4px; margin-top: 5px; width:100%; justify-content:center; }
         .btn-copy-link:hover { color: var(--brand-primary); }
+        .show-more-btn { 
+            display: block; width: 100%; max-width: 300px; margin: 20px auto; 
+            background: var(--show-more-bg); border: 1px solid var(--show-more-border); 
+            color: var(--show-more-text); padding: 12px; 
+            border-radius: var(--show-more-radius); font-weight: 600; font-size: 0.85rem; 
+            transition:0.2s; cursor: pointer; 
+        }
+        .show-more-btn:hover { border-color: var(--show-more-hover-border); color: var(--show-more-hover-text); background: var(--show-more-hover-bg); }
 
         /* FOOTER */
         footer { 
@@ -373,13 +382,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;" style="border-bottom: 4px solid #dfe30d;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Upcoming MLB Matches nnn
@@ -387,7 +396,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
