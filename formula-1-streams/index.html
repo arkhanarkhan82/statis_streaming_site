@@ -24,7 +24,8 @@
     <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
     
     <!-- SCHEMA -->
-    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://totalsportek.top/#organization", "name": "StreamEast", "url": "https://totalsportek.top/", "logo": {"@type": "ImageObject", "url": "https://totalsportek.top/assets/test-logo.webp", "width": 512, "height": 512}}, {"@type": "WebSite", "@id": "https://totalsportek.top/#website", "url": "https://totalsportek.top/", "name": "StreamEast", "publisher": {"@id": "https://totalsportek.top/#organization"}}]}</script>
+    <script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://totalsportek.top/formula-1-streams/#matchlist", "itemListElement": []}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://totalsportek.top/#organization", "name": "StreamEast", "url": "https://totalsportek.top/", "logo": {"@type": "ImageObject", "url": "https://totalsportek.top/assets/test-logo.webp", "width": 512, "height": 512}}, {"@type": "WebSite", "@id": "https://totalsportek.top/#website", "url": "https://totalsportek.top/", "name": "StreamEast", "publisher": {"@id": "https://totalsportek.top/#organization"}}, {"@type": "CollectionPage", "@id": "https://totalsportek.top/formula-1-streams/#webpage", "url": "https://totalsportek.top/formula-1-streams/", "name": "Watch Formula 1 Live Streams and Schedules", "description": "The Best Free Formula 1 Live stream free online", "mainEntity": {"@id": "https://totalsportek.top/formula-1-streams/#matchlist"}, "isPartOf": {"@id": "https://totalsportek.top/#website"}, "about": {"@id": "https://totalsportek.top/#organization"}}]}</script>
 
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -383,13 +384,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 4px solid #dfe30d;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Upcoming Formula 1 Matches nnn
@@ -397,7 +398,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
