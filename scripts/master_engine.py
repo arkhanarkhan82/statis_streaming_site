@@ -40,7 +40,7 @@ SPORT_DURATIONS = {
 # SPORT NAME NORMALIZATION
 # ==============================================================================
 SPORT_DICTIONARY = {
-    "football": "Soccer",
+    "football": "Football",
     "soccer": "Soccer",
     "american-football": "American Football",
     "american football": "American Football",
