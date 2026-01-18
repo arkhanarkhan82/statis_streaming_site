@@ -588,12 +588,14 @@ def render_page(template, config, page_data, theme_override=None):
     if page_data.get('slug') == 'home':
         site_url = f"https://{s.get('domain')}/"
         
-       # --- SCHEMA GENERATION (GRAPH BASED) ---
+       # --- SCHEMA GENERATION (STRICT ORDER: Static -> Dynamic -> FAQ) ---
     schema_output = ""
+    dynamic_placeholder_script = "" # Temp storage to ensure correct order
+    
     site_url = f"https://{s.get('domain')}/"
     logo_url = f"{site_url.rstrip('/')}{s.get('logo_url')}"
     
-    # Page URL logic
+    # Define Current Page URL
     if page_data.get('slug') == 'home':
         current_page_url = site_url
     else:
@@ -629,9 +631,9 @@ def render_page(template, config, page_data, theme_override=None):
             ws_node["publisher"] = { "@id": f"{site_url}#organization" }
         graph_nodes.append(ws_node)
 
-    # 3. Page Specific Nodes
-    # --- HOMEPAGE: CollectionPage (#homepage) ---
+    # 3. Page Specific Nodes & Placeholder Creation
     if page_data.get('slug') == 'home':
+        # --- HOMEPAGE: CollectionPage ---
         coll_node = {
             "@type": "CollectionPage",
             "@id": f"{site_url}#homepage",
@@ -644,17 +646,17 @@ def render_page(template, config, page_data, theme_override=None):
         if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
         graph_nodes.append(coll_node)
 
-        # Placeholder for Master Engine
-        dynamic_placeholder = {
+        # Create Placeholder (Stored, not output yet)
+        dynamic_obj = {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "@id": f"{site_url}#matchlist",
             "itemListElement": []
         }
-        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
+        dynamic_placeholder_script = f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_obj)}</script>\n'
 
-    # --- LEAGUE PAGES: CollectionPage (#webpage) ---
     elif page_data.get('layout') == 'league':
+        # --- LEAGUE PAGE: CollectionPage ---
         coll_node = {
             "@type": "CollectionPage",
             "@id": f"{current_page_url}#webpage",
@@ -667,17 +669,17 @@ def render_page(template, config, page_data, theme_override=None):
         if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
         graph_nodes.append(coll_node)
 
-        # Placeholder for Master Engine (League Specific)
-        dynamic_placeholder = {
+        # Create Placeholder (Stored, not output yet)
+        dynamic_obj = {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "@id": f"{current_page_url}#matchlist",
             "itemListElement": []
         }
-        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
+        dynamic_placeholder_script = f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_obj)}</script>\n'
 
-    # --- ABOUT PAGES: AboutPage (#webpage) ---
     elif schemas.get('about'):
+        # --- ABOUT PAGE: AboutPage ---
         about_node = {
             "@type": "AboutPage",
             "@id": f"{current_page_url}#webpage",
@@ -696,12 +698,18 @@ def render_page(template, config, page_data, theme_override=None):
             
         graph_nodes.append(about_node)
 
-    # 4. Output Static Graph
+    # 4. FINAL OUTPUT GENERATION (Enforcing Order)
+
+    # A. Static Schema (First)
     if graph_nodes:
         static_schema = { "@context": "https://schema.org", "@graph": graph_nodes }
         schema_output += f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
 
-    # 5. FAQ Schema (Always available if data exists)
+    # B. Dynamic Schema Placeholder (Second - Below Static)
+    if dynamic_placeholder_script:
+        schema_output += dynamic_placeholder_script
+
+    # C. FAQ Schema (Third)
     if schemas.get('faq') and schemas.get('faq_list'):
         faq_objects = []
         for item in schemas['faq_list']:
@@ -714,7 +722,7 @@ def render_page(template, config, page_data, theme_override=None):
             faq_schema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq_objects }
             schema_output += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>\n'
 
-    # Final Injection
+    # Inject into Template
     html = html.replace('{{SCHEMA_BLOCK}}', schema_output)
 
     return html
