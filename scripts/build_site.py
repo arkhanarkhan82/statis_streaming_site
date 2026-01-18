@@ -634,7 +634,7 @@ def render_page(template, config, page_data, theme_override=None):
         # --- HOMEPAGE: CollectionPage ---
         coll_node = {
             "@type": "CollectionPage",
-            "@id": f"{site_url}#webpage",
+            "@id": f"{site_url}#homepage",
             "url": site_url,
             "name": page_data.get('meta_title', full_site_name),
             "description": page_data.get('meta_desc', ''),
