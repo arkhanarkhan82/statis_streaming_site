@@ -4938,7 +4938,18 @@
         "Amelia Paszun": "assets/logos/upstreams/amelia-paszun.webp",
         "Jana Otzipka": "assets/logos/upstreams/jana-otzipka.webp",
         "Radka Zelnickova": "assets/logos/upstreams/radka-zelnickova.webp",
-        "Miami (FL)": "assets/logos/streamed/miami-fl.webp"
+        "Miami (FL)": "assets/logos/streamed/miami-fl.webp",
+        "Maritimo Madeira": "assets/logos/upstreams/maritimo-madeira.webp",
+        "Servette Geneva": "assets/logos/upstreams/servette-geneva.webp",
+        "SC Braga": "assets/logos/upstreams/sc-braga.webp",
+        "SCU Torreense": "assets/logos/upstreams/scu-torreense.webp",
+        "CD Tondela": "assets/logos/upstreams/cd-tondela.webp",
+        "Cordoba CF": "assets/logos/upstreams/cordoba-cf.webp",
+        "Malaga CF": "assets/logos/upstreams/malaga-cf.webp",
+        "Besiktas Istanbul": "assets/logos/upstreams/besiktas-istanbul.webp",
+        "Ekaterina Yashina": "assets/logos/upstreams/ekaterina-yashina.webp",
+        "Mia Horvit": "assets/logos/upstreams/mia-horvit.webp",
+        "Kaue Noatto": "assets/logos/upstreams/kaue-noatto.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5379,6 +5390,8 @@
         "Copa Argentina": "assets/logos/leagues/copa-argentina.webp",
         "Int. Friendly Games": "assets/logos/leagues/int-friendly-games.webp",
         "Segunda Divisi\u00f3n": "assets/logos/leagues/segunda-divisi\u00f3n.webp",
-        "WTA Australian Open": "assets/logos/leagues/wta-australian-open.webp"
+        "WTA Australian Open": "assets/logos/leagues/wta-australian-open.webp",
+        "Taca de Portugal": "assets/logos/leagues/taca-de-portugal.webp",
+        "Eredivisie, Women": "assets/logos/leagues/eredivisie-women.webp"
     }
 }
