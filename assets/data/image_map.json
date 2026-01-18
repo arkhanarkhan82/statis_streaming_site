@@ -5025,7 +5025,17 @@
         "GFS Panetolikos": "assets/logos/upstreams/gfs-panetolikos.webp",
         "NPS Volos": "assets/logos/upstreams/nps-volos.webp",
         "APS Atromitos Athinon": "assets/logos/upstreams/aps-atromitos-athinon.webp",
-        "Hayato Matsuoka": "assets/logos/upstreams/hayato-matsuoka.webp"
+        "Hayato Matsuoka": "assets/logos/upstreams/hayato-matsuoka.webp",
+        "Inter Milan U23": "assets/logos/streamed/inter-milan-u23.webp",
+        "Picerno": "assets/logos/streamed/picerno.webp",
+        "GTK Gliwice": "assets/logos/streamed/gtk-gliwice.webp",
+        "Stal Ostr\u00f3w Wielkopolski": "assets/logos/streamed/stal-ostr\u00f3w-wielkopolski.webp",
+        "Polonia Bytom": "assets/logos/streamed/polonia-bytom.webp",
+        "EC Red Bull Salzburg": "assets/logos/streamed/ec-red-bull-salzburg.webp",
+        "Plzen": "assets/logos/streamed/plzen.webp",
+        "Mountfield HK": "assets/logos/streamed/mountfield-hk.webp",
+        "Juan Carlos Prado Angelo": "assets/logos/upstreams/juan-carlos-prado-angelo.webp",
+        "Mats Rosenkranz": "assets/logos/upstreams/mats-rosenkranz.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
