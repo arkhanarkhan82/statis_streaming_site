@@ -4809,7 +4809,13 @@
         "Charleroi": "assets/logos/streamed/charleroi.webp",
         "Standard Liege": "assets/logos/streamed/standard-liege.webp",
         "Rilski Sportist": "assets/logos/upstreams/rilski-sportist.webp",
-        "Beroe": "assets/logos/upstreams/beroe.webp"
+        "Beroe": "assets/logos/upstreams/beroe.webp",
+        "St. Truiden": "assets/logos/streamed/st-truiden.webp",
+        "OH Leuven": "assets/logos/streamed/oh-leuven.webp",
+        "Royal Vision 2026": "assets/logos/upstreams/royal-vision-2026.webp",
+        "Ngozi City": "assets/logos/upstreams/ngozi-city.webp",
+        "Brinje Grosuplje": "assets/logos/upstreams/brinje-grosuplje.webp",
+        "Budafoki MTE": "assets/logos/upstreams/budafoki-mte.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
