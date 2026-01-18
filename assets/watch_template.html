@@ -1019,7 +1019,10 @@ setText('tbl-date', m.dateOnly); setText('tbl-time', m.timeOnly);
                 // FIXED: Use m.title if available for single events (e.g. UFC events)
                 if(m.isSingleEvent) h1.innerHTML = `<span style="color:var(--brand-primary)">${getSportIcon(m.sport)}</span> ${m.title || m.home}`;
                 else h1.innerHTML = `<span style="color:var(--brand-primary)">${getSportIcon(m.sport)}</span> ${m.home} <span style="font-size:0.8rem; color:var(--text-muted)">vs</span> ${m.away}`;
-                document.title = "Live: " + applyShortcodes(W_SEO.title_tpl, m);
+                
+                // FIX: Select correct title template (Single vs Versus) for the Browser Tab
+                const tpl = m.isSingleEvent ? W_SEO.title_single : W_SEO.title_tpl;
+                document.title = "Live: " + applyShortcodes(tpl, m);
             }
             
             const player = document.getElementById('mainPlayer');
