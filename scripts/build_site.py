@@ -421,6 +421,10 @@ def render_page(template, config, page_data, theme_override=None):
         'PARAM_LIVE': s.get('param_live', 'stream'),
         'PARAM_INFO': s.get('param_info', 'info'),
         'DOMAIN': s.get('domain', ''),
+        # --- ADD THESE LINES TO FIX THE ISSUE ---
+        'THEME_META_COLOR': theme.get('brand_primary', '#D00000'),
+        'OG_IMAGE': s.get('logo_url', ''),
+        'OG_MIME': 'image/png', # Default fallback for Open Graph
         
         'TEXT_SHOW_MORE': theme.get('text_show_more', 'Show More'),
         'TEXT_WATCH_BTN': theme.get('text_watch_btn', 'WATCH'),
