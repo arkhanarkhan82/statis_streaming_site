@@ -668,6 +668,49 @@
         };
         
         const W_SEO = { title_tpl: "{{JS_WATCH_TITLE_TPL}}", desc_tpl: "{{JS_WATCH_DESC_TPL}}", title_single: "{{JS_WATCH_TITLE_SINGLE_TPL}}", desc_single: "{{JS_WATCH_DESC_SINGLE_TPL}}" };
+        // --- FIX 1: SPORT NAME DICTIONARY ---
+        const SPORT_DICTIONARY = {
+            "football": "Soccer",
+            "soccer": "Soccer",
+            "american-football": "American Football",
+            "american football": "American Football",
+            "am. football": "American Football",
+            "basketball": "Basketball",
+            "nba": "Basketball",
+            "baseball": "Baseball",
+            "mlb": "Baseball",
+            "ice-hockey": "Ice Hockey",
+            "ice hockey": "Ice Hockey",
+            "nhl": "Ice Hockey",
+            "tennis": "Tennis",
+            "cricket": "Cricket",
+            "rugby": "Rugby",
+            "rugby-union": "Rugby Union",
+            "rugby-league": "Rugby League",
+            "formula-1": "Formula 1",
+            "f1": "Formula 1",
+            "motorsport": "Motorsport",
+            "boxing": "Boxing",
+            "mma": "MMA",
+            "ufc": "MMA",
+            "fighting": "Fighting",
+            "golf": "Golf",
+            "volleyball": "Volleyball",
+            "handball": "Handball",
+            "darts": "Darts",
+            "snooker": "Snooker",
+            "table-tennis": "Table Tennis"
+        };
+
+        function getSportName(raw) {
+            if (!raw) return "General";
+            const key = raw.toLowerCase().trim();
+            // 1. Check Dictionary
+            if (SPORT_DICTIONARY[key]) return SPORT_DICTIONARY[key];
+            // 2. Fallback: Capitalize words (e.g. "table tennis" -> "Table Tennis")
+            return raw.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+        // ------------------------------------
         let chatClient = null, roomChannel = null, currentHash = null, currentUser = localStorage.getItem('chat_username') || "", dummyInterval = null;
         const DUMMY_NAMES = ["Alex", "John", "Sarah", "Mike", "Fan123", "GoalHunter", "SoccerMom", "Dave", "Chris", "Ultra", "Sporty", "Winner", "Speedy", "Legend", "Ghost"];
         const DUMMY_MSGS = ["Let's go!", "What a play!", "Score?", "Lagging?", "Nice pass", "Who winning?", "Ref blind", "Goooal!", "Finally", "Lol", "Wow", "Defense weak", "Stream good", "Love this team", "Come on!", "Can't believe"];
@@ -895,7 +938,10 @@ function applyShortcodes(template, m) {
             }
             // -----------------------------
 
-            setText('mhLeague', m.league); setText('tbl-league', m.league); setText('tbl-sport', m.sport); setText('tbl-date', m.dateOnly); setText('tbl-time', m.timeOnly);
+            setText('mhLeague', m.league); setText('tbl-league', m.league); 
+// FIX: Use Normalized Sport Name
+setText('tbl-sport', getSportName(m.sport)); 
+setText('tbl-date', m.dateOnly); setText('tbl-time', m.timeOnly);
 
             const timerEl = document.getElementById('mhTimer');
             const countdownEl = document.getElementById('tbl-countdown');
@@ -1299,7 +1345,7 @@ function generateArticle(m) {
                 "endDate": expectedEndTime,
                 "eventStatus": eventStatus,
                 "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-                "sport": m.sport,
+                "sport": getSportName(m.sport),
                 "competition": { "@type": "SportsOrganization", "name": m.league },
                 "url": pageUrl,
                 "image": [siteLogo], 
@@ -1381,11 +1427,23 @@ function generateArticle(m) {
         }
 
         // 2. Missing Back-to-Top Scroll Listener
+        // 2. FIXED: Back-to-Top with 2.5s Auto-Hide
+        let scrollTimeout;
         window.addEventListener('scroll', () => {
             const btn = document.getElementById('backToTop');
-            if(btn) {
-                if (window.scrollY > 300) btn.classList.add('show');
-                else btn.classList.remove('show');
+            if(!btn) return;
+
+            // Clear timer so it stays visible while scrolling
+            clearTimeout(scrollTimeout);
+
+            if (window.scrollY > 300) {
+                btn.classList.add('show');
+                // Hide after 2.5 seconds of inactivity
+                scrollTimeout = setTimeout(() => {
+                    btn.classList.remove('show');
+                }, 2500);
+            } else {
+                btn.classList.remove('show');
             }
         });
 
