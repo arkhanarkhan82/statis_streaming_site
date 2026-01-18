@@ -1130,42 +1130,53 @@ function generateArticle(m) {
         function setupRealtimeListener() {
             const liveCountEl = document.getElementById('liveCount');
             const joinBtn = document.getElementById('joinChatBtn');
-            const MAX_USERS = 450;
+            const MAX_USERS = 450; // Supabase Free Tier Cap (Safe limit)
 
-            // FIX: Assign channel to global variable to maintain state reference
-            roomChannel = chatClient.channel(`room:${currentHash}`, { config: { presence: { key: currentUser } } });
+            // --- CHANGE 1: Use a GLOBAL channel name, NOT a specific hash ---
+            // This ensures all users on the site join the same "Presence" room
+            // so we can count the TOTAL active connections across the website.
+            roomChannel = chatClient.channel('room:global_main', { config: { presence: { key: currentUser } } });
 
             roomChannel
-                .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages', filter: `match_id=eq.${currentHash}` }, (payload) => appendMessage(payload.new.username, payload.new.content))
+                // --- CHANGE 2: Keep the Filter Dynamic ---
+                // Even though we are in a global room, we ONLY listen for messages
+                // where match_id EQUALS the current page's hash.
+                .on('postgres_changes', { 
+                    event: 'INSERT', 
+                    schema: 'public', 
+                    table: 'messages', 
+                    filter: `match_id=eq.${currentHash}` 
+                }, (payload) => appendMessage(payload.new.username, payload.new.content))
+                
                 .on('presence', { event: 'sync' }, () => {
-                    // FIX: Use the global roomChannel to get accurate state
                     const state = roomChannel.presenceState();
+                    // This now counts users across the ENTIRE site (Global Count)
                     const count = Object.keys(state).length;
                     
                     // Update Header Count
-                    liveCountEl.innerHTML = `<span style="display:block; width:6px; height:6px; background:var(--brand-primary); border-radius:50%; box-shadow:0 0 5px var(--brand-primary);"></span> ${count} Users`;
+                    liveCountEl.innerHTML = `<span style="display:block; width:6px; height:6px; background:var(--brand-primary); border-radius:50%; box-shadow:0 0 5px var(--brand-primary);"></span> ${count} Online`;
 
-                    // FIX: 450 User Limit Logic
+                    // Enforce Global Limit
                     if (count >= MAX_USERS) {
                         if(joinBtn) {
                             joinBtn.disabled = true;
-                            joinBtn.innerText = "Room Full (Max 450)";
+                            joinBtn.innerText = "System Full (Max 450)";
                             joinBtn.classList.remove('active');
                             joinBtn.style.background = "#334155";
                             joinBtn.style.cursor = "not-allowed";
                         }
                         
-                        // Optional: If user hasn't fully joined yet (is in overlay), prevent entry
+                        // If user is trying to join now
                         const overlay = document.getElementById('chatOverlay');
                         if (overlay && overlay.style.display !== 'none') {
-                             document.getElementById('chatError').innerText = "Room is currently full.";
+                             document.getElementById('chatError').innerText = "Chat Room Full.";
                              document.getElementById('chatError').style.display = 'block';
                         }
                     }
                 })
                 .subscribe(async (status) => {
                     if (status === 'SUBSCRIBED') {
-                        // Explicitly track presence to ensure count updates immediately
+                        // Track user presence in the global pool
                         await roomChannel.track({ online_at: new Date().toISOString(), user: currentUser });
                     }
                 });
