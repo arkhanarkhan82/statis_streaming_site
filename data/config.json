@@ -1089,7 +1089,7 @@
     "back_to_top_radius": "",
     "back_to_top_size": "",
     "display_hero": "block",
-    "watch_sidebar_swap": false,
+    "watch_sidebar_swap": true,
     "watch_show_ad1": false,
     "watch_show_discord": true,
     "watch_show_ad2": true,
