@@ -4802,7 +4802,10 @@
         "Radu Albot": "assets/logos/upstreams/radu-albot.webp",
         "Dominik Kellovsky": "assets/logos/upstreams/dominik-kellovsky.webp",
         "Tsz Fu Wong": "assets/logos/upstreams/tsz-fu-wong.webp",
-        "Carlos Eduardo Lino": "assets/logos/upstreams/carlos-eduardo-lino.webp"
+        "Carlos Eduardo Lino": "assets/logos/upstreams/carlos-eduardo-lino.webp",
+        "Bangladesh": "assets/logos/streamed/bangladesh.webp",
+        "Sebastian Korda": "assets/logos/upstreams/sebastian-korda.webp",
+        "Boris Arias": "assets/logos/upstreams/boris-arias.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5240,6 +5243,7 @@
         "International Friendly": "assets/logos/leagues/international-friendly.webp",
         "EHF European League, Women, Group B": "assets/logos/leagues/ehf-european-league-women-group-b.webp",
         "EHF - European League (W) - Gr.D": "assets/logos/leagues/ehf-european-league-w-grd.webp",
-        "Copa Argentina": "assets/logos/leagues/copa-argentina.webp"
+        "Copa Argentina": "assets/logos/leagues/copa-argentina.webp",
+        "Int. Friendly Games": "assets/logos/leagues/int-friendly-games.webp"
     }
 }
