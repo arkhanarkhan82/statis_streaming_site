@@ -588,52 +588,51 @@ def render_page(template, config, page_data, theme_override=None):
     if page_data.get('slug') == 'home':
         site_url = f"https://{s.get('domain')}/"
         
-        # --- SCHEMA GENERATION (CONDITIONAL) ---
+        # --- SCHEMA GENERATION (GRAPH BASED) ---
     schema_output = ""
     site_url = f"https://{s.get('domain')}/"
     logo_url = f"{site_url.rstrip('/')}{s.get('logo_url')}"
     
-    # Get Schema Flags from Page Data (Admin Checkboxes)
-    schemas = page_data.get('schemas', {})
-
-    # 1. HOMEPAGE GRAPH (Static + Dynamic)
+    # Page URL (Handle Home vs Inner)
     if page_data.get('slug') == 'home':
-        graph_nodes = []
+        current_page_url = site_url
+    else:
+        current_page_url = f"{site_url.rstrip('/')}/{page_data.get('slug')}/"
 
-        # A. Organization Node (Conditional)
-        if schemas.get('org'):
-            graph_nodes.append({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "@id": f"{site_url}#organization",
-                "name": full_site_name,
-                "url": site_url,
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": logo_url,
-                    "width": 512, 
-                    "height": 512
-                }
-            })
+    schemas = page_data.get('schemas', {})
+    graph_nodes = []
 
-        # B. WebSite Node (Conditional)
-        if schemas.get('website'):
-            website_node = {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                "@id": f"{site_url}#website",
-                "url": site_url,
-                "name": full_site_name
+    # 1. Organization Node (Conditional)
+    if schemas.get('org'):
+        graph_nodes.append({
+            "@type": "Organization",
+            "@id": f"{site_url}#organization",
+            "name": full_site_name,
+            "url": site_url,
+            "logo": {
+                "@type": "ImageObject",
+                "url": logo_url,
+                "width": 512, 
+                "height": 512
             }
-            # Link to Org if Org exists
-            if schemas.get('org'):
-                website_node["publisher"] = { "@id": f"{site_url}#organization" }
-            
-            graph_nodes.append(website_node)
+        })
 
-        # C. CollectionPage Node (Always added for Home to hold the dynamic list)
-        collection_node = {
-            "@context": "https://schema.org",
+    # 2. WebSite Node (Conditional)
+    if schemas.get('website'):
+        ws_node = {
+            "@type": "WebSite",
+            "@id": f"{site_url}#website",
+            "url": site_url,
+            "name": full_site_name
+        }
+        if schemas.get('org'):
+            ws_node["publisher"] = { "@id": f"{site_url}#organization" }
+        graph_nodes.append(ws_node)
+
+    # 3. Page Specific Node (Home OR About)
+    if page_data.get('slug') == 'home':
+        # --- HOMEPAGE: CollectionPage + Dynamic List ---
+        coll_node = {
             "@type": "CollectionPage",
             "@id": f"{site_url}#webpage",
             "url": site_url,
@@ -641,21 +640,11 @@ def render_page(template, config, page_data, theme_override=None):
             "description": page_data.get('meta_desc', ''),
             "mainEntity": { "@id": f"{site_url}#matchlist" }
         }
-        
-        # Conditionally link to other nodes if they exist
-        if schemas.get('website'):
-            collection_node["isPartOf"] = { "@id": f"{site_url}#website" }
-        if schemas.get('org'):
-            collection_node["about"] = { "@id": f"{site_url}#organization" }
-            
-        graph_nodes.append(collection_node)
+        if schemas.get('website'): coll_node["isPartOf"] = { "@id": f"{site_url}#website" }
+        if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
+        graph_nodes.append(coll_node)
 
-        # Output the Graph
-        if graph_nodes:
-            static_schema = { "@context": "https://schema.org", "@graph": graph_nodes }
-            schema_output += f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
-        
-        # Dynamic Placeholder (For Master Engine)
+        # Placeholder for Master Engine
         dynamic_placeholder = {
             "@context": "https://schema.org",
             "@type": "ItemList",
@@ -664,28 +653,42 @@ def render_page(template, config, page_data, theme_override=None):
         }
         schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
 
-    # 2. FAQ Schema (Conditional - Works on ANY page)
+    elif schemas.get('about'):
+        # --- INNER PAGE: AboutPage Schema ---
+        about_node = {
+            "@type": "AboutPage",
+            "@id": f"{current_page_url}#webpage",
+            "url": current_page_url,
+            "name": page_data.get('title'),
+            "description": page_data.get('meta_desc', ''),
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": logo_url
+            }
+        }
+        if schemas.get('website'): about_node["isPartOf"] = { "@id": f"{site_url}#website" }
+        if schemas.get('org'): 
+            about_node["about"] = { "@id": f"{site_url}#organization" }
+            about_node["mainEntity"] = { "@id": f"{site_url}#organization" }
+            
+        graph_nodes.append(about_node)
+
+    # Output Main Graph if nodes exist
+    if graph_nodes:
+        final_graph = { "@context": "https://schema.org", "@graph": graph_nodes }
+        schema_output += f'<script type="application/ld+json">{json.dumps(final_graph)}</script>\n'
+
+    # 4. FAQ Schema (Always available if data exists)
     if schemas.get('faq') and schemas.get('faq_list'):
         faq_objects = []
         for item in schemas['faq_list']:
             q = item.get('q', '').strip()
             a = item.get('a', '').strip()
             if q and a:
-                faq_objects.append({
-                    "@type": "Question",
-                    "name": q,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": a
-                    }
-                })
+                faq_objects.append({ "@type": "Question", "name": q, "acceptedAnswer": { "@type": "Answer", "text": a } })
         
         if faq_objects:
-            faq_schema = {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": faq_objects
-            }
+            faq_schema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq_objects }
             schema_output += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>\n'
 
     # Final Injection
