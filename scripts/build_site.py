@@ -629,9 +629,9 @@ def render_page(template, config, page_data, theme_override=None):
             ws_node["publisher"] = { "@id": f"{site_url}#organization" }
         graph_nodes.append(ws_node)
 
-    # 3. Page Specific Node
+    # 3. Page Specific Nodes
+    # --- HOMEPAGE: CollectionPage (#homepage) ---
     if page_data.get('slug') == 'home':
-        # --- HOMEPAGE: CollectionPage ---
         coll_node = {
             "@type": "CollectionPage",
             "@id": f"{site_url}#homepage",
@@ -644,8 +644,40 @@ def render_page(template, config, page_data, theme_override=None):
         if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
         graph_nodes.append(coll_node)
 
+        # Placeholder for Master Engine
+        dynamic_placeholder = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "@id": f"{site_url}#matchlist",
+            "itemListElement": []
+        }
+        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
+
+    # --- LEAGUE PAGES: CollectionPage (#webpage) ---
+    elif page_data.get('layout') == 'league':
+        coll_node = {
+            "@type": "CollectionPage",
+            "@id": f"{current_page_url}#webpage",
+            "url": current_page_url,
+            "name": page_data.get('title'),
+            "description": page_data.get('meta_desc', ''),
+            "mainEntity": { "@id": f"{current_page_url}#matchlist" }
+        }
+        if schemas.get('website'): coll_node["isPartOf"] = { "@id": f"{site_url}#website" }
+        if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
+        graph_nodes.append(coll_node)
+
+        # Placeholder for Master Engine (League Specific)
+        dynamic_placeholder = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "@id": f"{current_page_url}#matchlist",
+            "itemListElement": []
+        }
+        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
+
+    # --- ABOUT PAGES: AboutPage (#webpage) ---
     elif schemas.get('about'):
-        # --- INNER PAGE: AboutPage (Exact Structure Requested) ---
         about_node = {
             "@type": "AboutPage",
             "@id": f"{current_page_url}#webpage",
@@ -660,27 +692,16 @@ def render_page(template, config, page_data, theme_override=None):
         if schemas.get('website'): about_node["isPartOf"] = { "@id": f"{site_url}#website" }
         if schemas.get('org'): 
             about_node["about"] = { "@id": f"{site_url}#organization" }
-            # Explicitly requested mainEntity pointing to Org
             about_node["mainEntity"] = { "@id": f"{site_url}#organization" }
             
         graph_nodes.append(about_node)
 
-    # 4. Output Static Graph FIRST
+    # 4. Output Static Graph
     if graph_nodes:
         static_schema = { "@context": "https://schema.org", "@graph": graph_nodes }
         schema_output += f'<script type="application/ld+json">{json.dumps(static_schema)}</script>\n'
 
-    # 5. Output Dynamic Placeholder SECOND (Only on Home)
-    if page_data.get('slug') == 'home':
-        dynamic_placeholder = {
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "@id": f"{site_url}#matchlist",
-            "itemListElement": []
-        }
-        schema_output += f'<script id="dynamic-schema-placeholder" type="application/ld+json">{json.dumps(dynamic_placeholder)}</script>\n'
-
-    # 6. FAQ Schema (Always available if data exists)
+    # 5. FAQ Schema (Always available if data exists)
     if schemas.get('faq') and schemas.get('faq_list'):
         faq_objects = []
         for item in schemas['faq_list']:
