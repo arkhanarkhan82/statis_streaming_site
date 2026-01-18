@@ -967,7 +967,8 @@ function applyShortcodes(template, m) {
             
             const h1 = document.getElementById('stream-h1');
             if (h1) {
-                if(m.isSingleEvent) h1.innerHTML = `<span style="color:var(--brand-primary)">${getSportIcon(m.sport)}</span> ${m.home}`;
+                // FIXED: Use m.title if available for single events (e.g. UFC events)
+                if(m.isSingleEvent) h1.innerHTML = `<span style="color:var(--brand-primary)">${getSportIcon(m.sport)}</span> ${m.title || m.home}`;
                 else h1.innerHTML = `<span style="color:var(--brand-primary)">${getSportIcon(m.sport)}</span> ${m.home} <span style="font-size:0.8rem; color:var(--text-muted)">vs</span> ${m.away}`;
                 document.title = "Live: " + applyShortcodes(W_SEO.title_tpl, m);
             }
