@@ -659,17 +659,35 @@ def render_page(template, config, page_data, theme_override=None):
         # --- LEAGUE PAGE: CollectionPage ---
         coll_node = {
             "@type": "CollectionPage",
-            "@id": f"{current_page_url}#webpage",
+            "@id": f"{current_page_url}#leaguepage",
             "url": current_page_url,
             "name": page_data.get('title'),
             "description": page_data.get('meta_desc', ''),
             "mainEntity": { "@id": f"{current_page_url}#matchlist" }
         }
         if schemas.get('website'): coll_node["isPartOf"] = { "@id": f"{site_url}#website" }
-        if schemas.get('org'): coll_node["about"] = { "@id": f"{site_url}#organization" }
+        
+        # --- NEW: Inject "about" Schema from Admin Panel Links ---
+        # 1. Get the League Name (e.g. "NFL")
+        league_name = page_data.get('page_filter') 
+        
+        # 2. Get links from config (Saved via Admin Modal)
+        league_links = config.get('league_metadata', {}).get(league_name, [])
+        
+        if league_links and isinstance(league_links, list) and len(league_links) > 0:
+            # OPTION A: SportsOrganization with sameAs (Your preferred choice)
+            coll_node["about"] = {
+                "@type": "SportsOrganization",
+                "name": league_name,
+                "sameAs": league_links
+            }
+        elif schemas.get('org'): 
+            # Fallback to Site Organization if no specific league links exist
+            coll_node["about"] = { "@id": f"{site_url}#organization" }
+
         graph_nodes.append(coll_node)
 
-        # Create Placeholder (Stored, not output yet)
+        # Placeholder for Master Engine (League Specific)
         dynamic_obj = {
             "@context": "https://schema.org",
             "@type": "ItemList",
