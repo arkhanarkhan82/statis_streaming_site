@@ -837,28 +837,20 @@ def inject_leagues(matches):
 
         with open(target_file, 'r', encoding='utf-8') as f:
             html = f.read()
-            # A. Inject League Logo (Replace Calendar Icon)
+
+        # A. Inject League Logo
         logo_url = get_logo(key, 'leagues')
-        # Only replace if we have a real image, otherwise keep the 📅 fallback
         if logo_url and "fallback" not in logo_url:
             img_tag = f'<img src="{logo_url}" alt="{key}" style="width:28px; height:28px; object-fit:contain; margin-right:8px;">'
-            # Regex to find the specific logo container span and replace it
             html = re.sub(r'<span id="upcoming-logo-container".*?>.*?</span>', img_tag, html, flags=re.DOTALL)
 
-        # B. Inject Section Border (Dynamic Editing Feature)
-        # Get specific border settings for "League Page Upcoming"
+        # B. Inject Section Border
         w = ensure_unit(THEME.get('sec_border_league_upcoming_width', '1'))
         c = THEME.get('sec_border_league_upcoming_color', '#334155')
         border_style = f'style="border-bottom: {w} solid {c};"'
-        
-        # Regex to find the .sec-head inside #upcoming-container and inject the inline style
-        # This overrides any default CSS with the specific Admin setting
-        html = re.sub(
-            r'(<div id="upcoming-container">\s*<div class="sec-head")', 
-            f'\\1 {border_style}', 
-            html
-        )
+        html = re.sub(r'(<div id="upcoming-container">\s*<div class="sec-head")', f'\\1 {border_style}', html)
 
+        # C. Inject Match Lists (HTML)
         if l_live:
             live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
             html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', f'<!-- L_LIVE_START -->{live_content}<!-- L_LIVE_END -->', html, flags=re.DOTALL)
@@ -868,8 +860,67 @@ def inject_leagues(matches):
             html = html.replace('id="live-list"', 'id="live-list" style="display:none;"')
 
         rows_html = "".join([render_match_row(m, key) for m in l_upc]) if l_upc else '<div class="match-row" style="justify-content:center;">No upcoming matches found.</div>'
-        
         html = re.sub(r'<!-- L_SCHED_START -->.*?<!-- L_SCHED_END -->', f'<!-- L_SCHED_START -->{rows_html}<!-- L_SCHED_END -->', html, flags=re.DOTALL)
+
+        # D. INJECT DYNAMIC SCHEMA (NEW)
+        # Limit: 5 Live + 15 Upcoming (Sorted by time)
+        schema_matches = l_live[:5] + l_upc[:15]
+        list_items = []
+        
+        site_url = f"https://{DOMAIN}/"
+        page_url = f"{site_url}{slug}/"
+        org_id = f"{site_url}#organization"
+        INDIVIDUAL_SPORTS = ['tennis', 'boxing', 'mma', 'ufc', 'golf', 'darts', 'snooker', 'wrestling', 'table tennis', 'badminton']
+
+        for idx, m in enumerate(schema_matches):
+            match_url = f"{site_url}watch/?{PARAM_INFO}={m['id']}"
+            event_name = m['title'] if m['is_single'] and m['title'] else f"{m['home']} vs {m['away']}"
+            
+            raw_sport = (m['sport'] or "").lower()
+            is_individual = any(s in raw_sport for s in INDIVIDUAL_SPORTS)
+            entity_type = "Person" if is_individual else "SportsTeam"
+
+            event = {
+                "@type": "SportsEvent",
+                "name": event_name,
+                "description": f"Watch {event_name} live stream. {m['league']}.",
+                "startDate": datetime.fromtimestamp(m['timestamp']/1000, timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z'),
+                "eventStatus": "https://schema.org/EventLive" if m['is_live'] else "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                "url": match_url,
+                "image": [f"{site_url.rstrip('/')}{config['site_settings'].get('logo_url')}"],
+                "organizer": { "@id": org_id },
+                "sport": m['sport'],
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": match_url }
+            }
+
+            if not m['is_single']:
+                home_logo = image_map['teams'].get(m['home'])
+                home_data = { "@type": entity_type, "name": m['home'] }
+                if home_logo: home_data["image"] = f"{site_url.rstrip('/')}/{home_logo}"
+
+                away_logo = image_map['teams'].get(m['away'])
+                away_data = { "@type": entity_type, "name": m['away'] }
+                if away_logo: away_data["image"] = f"{site_url.rstrip('/')}/{away_logo}"
+
+                if is_individual:
+                    event["competitor"] = [home_data, away_data]
+                else:
+                    event["homeTeam"] = home_data
+                    event["awayTeam"] = away_data
+            
+            list_items.append({ "@type": "ListItem", "position": idx + 1, "item": event })
+
+        dynamic_schema = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "@id": f"{page_url}#matchlist",
+            "itemListElement": list_items
+        }
+
+        # Inject into placeholder
+        pattern = r'(<script id="dynamic-schema-placeholder" type="application/ld\+json">).*?(</script>)'
+        html = re.sub(pattern, lambda match: f"{match.group(1)}{json.dumps(dynamic_schema)}{match.group(2)}", html, flags=re.DOTALL)
 
         with open(target_file, 'w', encoding='utf-8') as f: f.write(html)
         print(f"   - Updated {slug}")
