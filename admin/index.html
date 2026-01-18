@@ -1047,6 +1047,27 @@
             </div>
         </div>
     </div>
+    <!-- EXISTING LEAGUE MODAL (Do not change this, just find it) -->
+    <div id="leagueModal" class="modal" style="display:none;">
+        <!-- ... existing content ... -->
+    </div>
+
+    <!-- *** ADD THIS NEW CODE HERE *** -->
+    <div id="leagueMetaModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h3>Edit League Links (Schema)</h3>
+            <p id="metaModalLeagueName" style="color:var(--brand-primary); font-weight:700; margin-bottom:15px; border-bottom:1px solid #333; padding-bottom:10px;">LEAGUE_NAME</p>
+            
+            <label>Entity URLs (Wikipedia, Wikidata, Official Site)</label>
+            <p class="desc" style="font-size:0.75rem; margin-top:0;">Separate multiple links with commas.</p>
+            <textarea id="metaLinksInput" rows="5" placeholder="https://en.wikipedia.org/wiki/NFL, https://www.wikidata.org/wiki/Q1215884"></textarea>
+            
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="document.getElementById('leagueMetaModal').style.display='none'">Cancel</button>
+                <button class="btn-primary" onclick="saveLeagueMeta()">Save Links</button>
+            </div>
+        </div>
+    </div>
     
     <script src="app.js"></script>
 </body>
