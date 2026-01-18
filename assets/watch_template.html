@@ -245,7 +245,8 @@
         .layout-sidebar.active { display: flex; }
         
         .sidebar-left { width: 100%; } /* Width controlled by Grid */
-        .sidebar-right { width: 100%; background: var(--bg-panel); border: 1px solid var(--border); border-radius: var(--border-radius-base); overflow: hidden; height: 600px; min-height: 0; }
+        /* FIXED: Dynamic height to fit viewport (100vh - Header/Margins) */
+.sidebar-right { width: 100%; background: var(--bg-panel); border: 1px solid var(--border); border-radius: var(--border-radius-base); overflow: hidden; height: calc(100vh - 120px); min-height: 400px; }
 
         /* ELEMENTS */
         .mobile-top-ad { width: 100%; height: 90px; background: #000; margin-bottom: 20px; display: none; align-items: center; justify-content: center; color: #444; border: 1px solid var(--border); border-radius: var(--border-radius-base); }
