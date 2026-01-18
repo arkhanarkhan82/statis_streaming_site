@@ -1000,11 +1000,12 @@ window.editPage = (id) => {
     if(!p.schemas.faq_list) p.schemas.faq_list = [];
     
     document.querySelector('#pageEditorView .checkbox-group').innerHTML = `
-        <label style="color:#facc15; font-weight:700;">Static Schemas (SEO)</label>
-        <label><input type="checkbox" id="schemaOrg" ${p.schemas.org ? 'checked' : ''}> Organization (The Entity)</label>
-        <label><input type="checkbox" id="schemaWebsite" ${p.schemas.website ? 'checked' : ''}> WebSite</label>
-        <label><input type="checkbox" id="schemaAbout" ${p.schemas.about ? 'checked' : ''}> About Page (Links to Org)</label> <!-- NEW -->
-        <label><input type="checkbox" id="schemaFaq" ${p.schemas.faq ? 'checked' : ''} onchange="toggleFaqEditor(this.checked)"> FAQ</label>
+        <label style="color:#facc15; font-weight:700;">Rich Snippets</label>
+        <label><input type="checkbox" id="schemaOrg" ${p.schemas.org ? 'checked' : ''}> Organization (Entity)</label>
+        <label><input type="checkbox" id="schemaWebsite" ${p.schemas.website ? 'checked' : ''}> WebSite (Sitelinks)</label>
+        <label><input type="checkbox" id="schemaAbout" ${p.schemas.about ? 'checked' : ''}> About Page (for DMCA/Contact)</label>
+        
+        <label><input type="checkbox" id="schemaFaq" ${p.schemas.faq ? 'checked' : ''} onchange="toggleFaqEditor(this.checked)"> FAQ Schema</label>
         <div id="faqEditorContainer" style="display:${p.schemas.faq?'block':'none'}; margin-top:10px;">
             <div style="display:flex;justify-content:space-between;"><h4 style="margin:0">FAQ Items</h4><button class="btn-primary" onclick="addFaqItem()">+ Add</button></div>
             <div id="faqList" style="display:flex;flex-direction:column;gap:10px;margin-top:10px;"></div>
@@ -1045,7 +1046,7 @@ window.saveEditorContentToMemory = () => {
     if(!p.schemas) p.schemas = {};
     p.schemas.org = document.getElementById('schemaOrg').checked;
     p.schemas.website = document.getElementById('schemaWebsite').checked;
-    p.schemas.about = document.getElementById('schemaAbout').checked;
+    p.schemas.about = document.getElementById('schemaAbout').checked; // Saved
     p.schemas.faq = document.getElementById('schemaFaq').checked;
 };
 window.closePageEditor = () => { saveEditorContentToMemory(); document.getElementById('pageEditorView').style.display = 'none'; document.getElementById('pageListView').style.display = 'block'; renderPageList(); };
