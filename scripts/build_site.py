@@ -462,6 +462,7 @@ def render_page(template, config, page_data, theme_override=None):
         # Insert everything before the closing </head> tag
         html = html.replace('</head>', f'{head_injection_content}\n</head>')
 
+    w_conf = config.get('watch_settings', {})
     # --- TEXT REPLACEMENTS ---
     replacements = {
         'DISCORD_SERVER_ID': w_conf.get('discord_server_id', ''),
@@ -502,7 +503,6 @@ def render_page(template, config, page_data, theme_override=None):
         # However, for League/Sport pages, we still need the "Upcoming" title as that header is outside the injection zone.
         'TEXT_UPCOMING_TITLE': page_data.get('upcoming_title', 'Upcoming Matches')
     }
-    w_conf = config.get('watch_settings', {})
     html = html.replace('{{WATCH_AD_MOBILE}}', w_conf.get('ad_mobile', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_1}}', w_conf.get('ad_sidebar_1', ''))
     html = html.replace('{{WATCH_AD_SIDEBAR_2}}', w_conf.get('ad_sidebar_2', ''))
