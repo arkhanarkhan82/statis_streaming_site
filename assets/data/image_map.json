@@ -5370,7 +5370,10 @@
         "Aleksandr Kalinin": "assets/logos/upstreams/aleksandr-kalinin.webp",
         "Andre Alcantara": "assets/logos/upstreams/andre-alcantara.webp",
         "Amy Lee": "assets/logos/upstreams/amy-lee.webp",
-        "Midori Castillo Meza": "assets/logos/upstreams/midori-castillo-meza.webp"
+        "Midori Castillo Meza": "assets/logos/upstreams/midori-castillo-meza.webp",
+        "Valmiera Glass VIA": "assets/logos/upstreams/valmiera-glass-via.webp",
+        "TalTech Basketball": "assets/logos/upstreams/taltech-basketball.webp",
+        "Patricio Alvarado": "assets/logos/upstreams/patricio-alvarado.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5831,6 +5834,7 @@
         "Champions League, Pool E": "assets/logos/leagues/champions-league-pool-e.webp",
         "Bulgaria NBL": "assets/logos/leagues/bulgaria-nbl.webp",
         "WASL Gulf League, Group A": "assets/logos/leagues/wasl-gulf-league-group-a.webp",
-        "Orlen Liga Women": "assets/logos/leagues/orlen-liga-women.webp"
+        "Orlen Liga Women": "assets/logos/leagues/orlen-liga-women.webp",
+        "Estonian-Latvian Basketball League": "assets/logos/leagues/estonian-latvian-basketball-league.webp"
     }
 }
