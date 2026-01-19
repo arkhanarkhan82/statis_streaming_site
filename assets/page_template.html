@@ -281,16 +281,8 @@
         .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
         .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
 
-        .back-to-top { 
-            position: fixed; bottom: 80px; right: 20px; 
-            background: var(--back-to-top-bg); width: var(--back-to-top-size); height: var(--back-to-top-size); 
-            border-radius: var(--back-to-top-radius); display: flex; align-items: center; justify-content: center; 
-            color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; visibility: hidden; 
-            transition: 0.3s; z-index: 90; 
-            box-shadow: var(--back-to-top-shadow); 
-        }
-        .back-to-top.show { opacity: 1; visibility: visible; }
-        .back-to-top svg { width: 24px; height: 24px; fill: var(--back-to-top-icon-color); }
+        .back-to-top { position: fixed; bottom: 80px; right: 20px; background: var(--back-to-top-bg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; transition: 0.3s; z-index: 90; }
+        .back-to-top.show { opacity: 1; }
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
         @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
