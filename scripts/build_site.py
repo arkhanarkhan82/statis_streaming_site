@@ -894,10 +894,22 @@ def main():
             p_h1 = replace_vars(articles.get('league_h1', 'Watch {{NAME}} Live'), vars_map)
             p_intro = replace_vars(articles.get('league_intro', ''), vars_map)
             
-            # NOTE: Section titles for Leagues are still relevant as Master Engine uses regex to replace list items,
-            # BUT in league_template.html, the header is part of the static HTML block ABOVE the regex target.
-            # So we MUST provide this title here.
-            sec_upc = replace_vars(articles.get('league_upcoming_title', 'Upcoming {{NAME}}'), vars_map)
+            # --- START UPDATE: UPCOMING TITLE WITH PREFIX/SUFFIX ---
+            upc_prefix = articles.get('league_upcoming_prefix', '').strip()
+            upc_suffix = articles.get('league_upcoming_suffix', '').strip()
+            
+            # Construct: "Prefix Name Suffix"
+            upc_parts = []
+            if upc_prefix: upc_parts.append(upc_prefix)
+            upc_parts.append(name) # The League Name (e.g. NFL)
+            if upc_suffix: upc_parts.append(upc_suffix)
+            
+            # Default fallback if empty
+            if not upc_parts: sec_upc = f"Upcoming {name}"
+            else: sec_upc = " ".join(upc_parts)
+            
+            sec_upc = replace_vars(sec_upc, vars_map) 
+            # --- END UPDATE ---
             
             raw_art = articles.get('league', '') if is_league else articles.get('sport', '')
             final_art = replace_vars(raw_art, vars_map)
