@@ -137,6 +137,7 @@ const THEME_FIELDS = {
     'header_max_width': 'themeHeaderWidth',
     'logo_p1_color': 'themeLogoP1',
     'logo_p2_color': 'themeLogoP2',
+    'logo_image_shadow_color': 'themeLogoShadow',
     'header_border_bottom': 'themeHeaderBorderBottom',
     'header_layout': 'themeHeaderLayout',       // NEW
     'header_icon_pos': 'themeHeaderIconPos',    // NEW
@@ -717,6 +718,7 @@ const THEME_PRESETS = {
         header_max_width: "1200",
         logo_p1_color: "#E50914",
         logo_p2_color: "#FFFFFF",
+        logo_image_shadow_color: "#E50914",
         header_border_bottom: "1px solid #333333",
         // ... previous config ...
         // --- 12. SOCIAL & FLOATING ---
@@ -885,6 +887,7 @@ const THEME_PRESETS = {
         header_max_width: "1400",
         logo_p1_color: "#F8FAFC",
         logo_p2_color: "#007AFF",
+        logo_image_shadow_color: "#007AFF",
         header_border_bottom: "1px solid rgba(51, 65, 85, 0.5)",
         // ... previous config ...
         // --- 12. SOCIAL & FLOATING ---
@@ -1042,6 +1045,7 @@ const THEME_PRESETS = {
         header_max_width: "1600",
         logo_p1_color: "#FFFFFF",
         logo_p2_color: "#00E676",
+        logo_image_shadow_color: "#00E676",
         header_border_bottom: "2px solid #00E676", // Techy bottom line
         // ... previous config ...
         // --- 12. SOCIAL & FLOATING ---
