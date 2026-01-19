@@ -602,14 +602,25 @@
 
                         <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Text Labels & Titles</h4>
                         <div class="grid-2" style="gap:10px;">
-                            <div style="grid-column: span 2;">
-                                <label>Wildcard Title</label>
-                                <input type="text" id="themeTextWildcardTitle" placeholder="e.g. Featured Events">
-                            </div>
-                            <div style="grid-column: span 2;">
-                                <label>Top 5 Title</label>
-                                <input type="text" id="themeTextTopUpcoming" placeholder="e.g. Top Matches">
-                            </div>
+                            <!-- Wildcard Settings -->
+<div>
+    <label>Wildcard Title</label>
+    <input type="text" id="themeTextWildcardTitle" placeholder="e.g. Featured Events">
+</div>
+<div>
+    <label>Wildcard ID (for links)</label>
+    <input type="text" id="themeIdWildcard" placeholder="e.g. featured">
+</div>
+
+<!-- Top 5 Settings -->
+<div>
+    <label>Top 5 Title</label>
+    <input type="text" id="themeTextTopUpcoming" placeholder="e.g. Top Matches">
+</div>
+<div>
+    <label>Top 5 ID (for links)</label>
+    <input type="text" id="themeIdTopUpcoming" placeholder="e.g. top-upcoming">
+</div>
                             <div><label>Status Text</label><input type="text" id="themeTextSysStatus" placeholder="System Status: Online"></div>
                             <div class="checkbox-group" style="margin: 10px 0;">
     <label><input type="checkbox" id="themeSysStatusVisible"> Show System Status Pill</label>
