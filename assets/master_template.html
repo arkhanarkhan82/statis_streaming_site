@@ -87,6 +87,7 @@
             --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
             --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
             --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
+        --live-dot-color: {{THEME_LIVE_DOT_COLOR}};
             --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
             --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
             --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
@@ -257,6 +258,21 @@
         }
         .h-layout-center.h-icon-left .hamburger { left: 15px; }
         .h-layout-center.h-icon-right .hamburger { right: 15px; }
+        /* Pulsing Dot Animation */
+        .live-dot-pulse {
+            width: 10px; height: 10px;
+            background-color: var(--live-dot-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 0 0 0 0 var(--live-dot-color);
+            animation: livePulse 1.5s infinite;
+        }
+        @keyframes livePulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 var(--live-dot-color); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px transparent; }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 transparent; }
+        }
 
         /* ELEMENTS */
         .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
