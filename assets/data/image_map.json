@@ -5497,7 +5497,16 @@
         "Kaoru Sugiyama": "assets/logos/upstreams/kaoru-sugiyama.webp",
         "AMalie Schulz": "assets/logos/upstreams/amalie-schulz.webp",
         "Tasnim Mir": "assets/logos/upstreams/tasnim-mir.webp",
-        "BSC Young Boys": "assets/logos/streamed/bsc-young-boys.webp"
+        "BSC Young Boys": "assets/logos/streamed/bsc-young-boys.webp",
+        "Nymburk": "assets/logos/upstreams/nymburk.webp",
+        "Korona Kielce": "assets/logos/upstreams/korona-kielce.webp",
+        "Dynamo Kiev": "assets/logos/upstreams/dynamo-kiev.webp",
+        "Cailungo": "assets/logos/upstreams/cailungo.webp",
+        "Gr\u00eamio Novorizontino": "assets/logos/upstreams/gr\u00eamio-novorizontino.webp",
+        "Andrej Martin": "assets/logos/upstreams/andrej-martin.webp",
+        "Victoria Borodulina": "assets/logos/upstreams/victoria-borodulina.webp",
+        "Gergely Madarasz": "assets/logos/upstreams/gergely-madarasz.webp",
+        "Huachipato": "assets/logos/upstreams/huachipato.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5966,6 +5975,7 @@
         "World Cup 2026 U19 - Gr.B": "assets/logos/leagues/world-cup-2026-u19-grb.webp",
         "Afghanistan and West Indies in UAE, 3 T20I Series": "assets/logos/leagues/afghanistan-and-west-indies-in-uae-3-t20i-series.webp",
         "NCAA Division I, FBS, Playoffs": "assets/logos/leagues/ncaa-division-i-fbs-playoffs.webp",
-        "Portugal Primeira Liga": "assets/logos/leagues/portugal-primeira-liga.webp"
+        "Portugal Primeira Liga": "assets/logos/leagues/portugal-primeira-liga.webp",
+        "Champions League - Gr.L": "assets/logos/leagues/champions-league-grl.webp"
     }
 }
