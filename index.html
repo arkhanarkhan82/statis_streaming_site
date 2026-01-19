@@ -185,9 +185,10 @@
             
             --btt-bg: #d00000;
             --btt-icon: #ffffff;
-            --btt-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
             --btt-radius: 4px;
             --btt-size: 40px;
+        --btt-border: 0px solid transparent;
+        --btt-shadow: 0 4px 10px rgba(0,0,0,0.3);
             
             --sys-status-bg: rgba(0, 122, 255, 0.1);
             --sys-status-border: 1px solid #007aff;
@@ -591,15 +592,26 @@
         .l-icon { font-size: 1.1rem; }
 
         .back-to-top { 
-            position: fixed; bottom: 80px; right: 20px; 
-            background: var(--btt-bg); width: var(--btt-size); height: var(--btt-size); 
-            border-radius: var(--btt-radius); display: flex; align-items: center; justify-content: center; 
-            color: var(--btt-icon); cursor: pointer; opacity: 0; visibility: hidden; 
+            position: fixed; 
+            /* DYNAMIC MOBILE POSITION: Footer Height + 20px gap */
+            bottom: calc(var(--mob-foot-height) + 20px); 
+            right: 20px; 
+            background: var(--btt-bg); 
+            width: var(--btt-size); 
+            height: var(--btt-size); 
+            border-radius: var(--btt-radius); 
+            display: flex; align-items: center; justify-content: center; 
+            color: var(--btt-icon); 
+            cursor: pointer; 
+            opacity: 0; visibility: hidden; 
             transition: 0.3s; z-index: 90; 
+            /* NEW: Border & Shadow */
+            border: var(--btt-border);
             box-shadow: var(--btt-shadow); 
         }
         .back-to-top.show { opacity: 1; visibility: visible; }
-        .back-to-top svg { width: 24px; height: 24px; fill: var(--btt-icon); }
+        
+        /* DESKTOP POSITION (Overrides mobile calc) */
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
     </style>
 <meta name="google-site-verification" content="12345" />
