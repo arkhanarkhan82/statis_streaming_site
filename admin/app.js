@@ -276,6 +276,14 @@ const THEME_FIELDS = {
     'social_reddit_color': 'themeSocialReddit',
     'social_twitter_color': 'themeSocialTwitter',
     'mobile_footer_bg': 'themeMobFootBg',
+    // ADD THESE NEW LINES:
+    'social_sidebar_bg': 'themeSocialSidebarBg',
+    'social_sidebar_border': 'themeSocialSidebarBorder',
+    'social_btn_bg': 'themeSocialBtnBg',
+    'social_btn_border': 'themeSocialBtnBorder',
+    'social_btn_hover_bg': 'themeSocialBtnHoverBg',
+    'social_btn_hover_border': 'themeSocialBtnHoverBorder',
+    'social_count_color': 'themeSocialCountColor',
 
     // Back to Top
     'back_to_top_bg': 'themeBttBg',
@@ -709,6 +717,24 @@ const THEME_PRESETS = {
         logo_p1_color: "#E50914",
         logo_p2_color: "#FFFFFF",
         header_border_bottom: "1px solid #333333",
+        // ... previous config ...
+        // --- 12. SOCIAL & FLOATING ---
+        social_desktop_top: "50%",
+        social_desktop_left: "0",
+        social_desktop_scale: "1.0",
+        social_sidebar_bg: "#141414",       // Dark Panel
+        social_sidebar_border: "#333333",
+        social_btn_bg: "#222222",
+        social_btn_border: "#333333",
+        social_btn_hover_bg: "#E50914",     // Brand Red
+        social_btn_hover_border: "#E50914",
+        social_count_color: "#808080",
+        social_telegram_color: "#0088cc",
+        social_whatsapp_color: "#25D366",
+        social_reddit_color: "#FF4500",
+        social_twitter_color: "#1DA1F2",
+        mobile_footer_bg: "#141414",
+        // ...
 
         // --- 4. HERO SECTION (Boxed "Featured" Look) ---
         display_hero: "block",
@@ -858,6 +884,24 @@ const THEME_PRESETS = {
         logo_p1_color: "#F8FAFC",
         logo_p2_color: "#007AFF",
         header_border_bottom: "1px solid rgba(51, 65, 85, 0.5)",
+        // ... previous config ...
+        // --- 12. SOCIAL & FLOATING ---
+        social_desktop_top: "50%",
+        social_desktop_left: "0",
+        social_desktop_scale: "1.0",
+        social_sidebar_bg: "rgba(15, 23, 42, 0.9)", // Glassy Blue
+        social_sidebar_border: "#334155",
+        social_btn_bg: "#1E293B",
+        social_btn_border: "#334155",
+        social_btn_hover_bg: "#007AFF",     // Brand Blue
+        social_btn_hover_border: "#007AFF",
+        social_count_color: "#94A3B8",
+        social_telegram_color: "#38bdf8",
+        social_whatsapp_color: "#4ade80",
+        social_reddit_color: "#fb7185",
+        social_twitter_color: "#38bdf8",
+        mobile_footer_bg: "#0F172A",
+        // ...
 
         // --- 4. HERO SECTION (Full Width Modern) ---
         display_hero: "block",
@@ -996,6 +1040,24 @@ const THEME_PRESETS = {
         logo_p1_color: "#FFFFFF",
         logo_p2_color: "#00E676",
         header_border_bottom: "2px solid #00E676", // Techy bottom line
+        // ... previous config ...
+        // --- 12. SOCIAL & FLOATING ---
+        social_desktop_top: "50%",
+        social_desktop_left: "0",
+        social_desktop_scale: "1.0",
+        social_sidebar_bg: "rgba(5, 20, 5, 0.95)", // Deep Green
+        social_sidebar_border: "#14532D",
+        social_btn_bg: "#1A1A1A",
+        social_btn_border: "#14532D",
+        social_btn_hover_bg: "#00E676",     // Neon Green
+        social_btn_hover_border: "#00E676",
+        social_count_color: "#4ade80",
+        social_telegram_color: "#00E676",
+        social_whatsapp_color: "#00E676",
+        social_reddit_color: "#00E676",     // Mono-green look
+        social_twitter_color: "#00E676",
+        mobile_footer_bg: "#051105",
+        // ...
 
         // --- 4. HERO SECTION (Compact) ---
         display_hero: "block",
