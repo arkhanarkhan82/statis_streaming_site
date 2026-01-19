@@ -5394,7 +5394,12 @@
         "Joao Vitor Goncalves Ceolin": "assets/logos/upstreams/joao-vitor-goncalves-ceolin.webp",
         "Samuel Nicholson": "assets/logos/upstreams/samuel-nicholson.webp",
         "Kalman Boyd": "assets/logos/upstreams/kalman-boyd.webp",
-        "Ashton McLeod": "assets/logos/upstreams/ashton-mcleod.webp"
+        "Ashton McLeod": "assets/logos/upstreams/ashton-mcleod.webp",
+        "Rider": "assets/logos/streamed/rider.webp",
+        "Texas A and M-Corpus Christi": "assets/logos/streamed/texas-a-and-m-corpus-christi.webp",
+        "Loyola-Maryland": "assets/logos/streamed/loyola-maryland.webp",
+        "Kelantan The Real Warriors": "assets/logos/upstreams/kelantan-the-real-warriors.webp",
+        "Damansara": "assets/logos/upstreams/damansara.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5858,6 +5863,7 @@
         "Orlen Liga Women": "assets/logos/leagues/orlen-liga-women.webp",
         "Estonian-Latvian Basketball League": "assets/logos/leagues/estonian-latvian-basketball-league.webp",
         "Afghanistan and West Indies tour of UAE": "assets/logos/leagues/afghanistan-and-west-indies-tour-of-uae.webp",
-        "Turkey -  Super Lig": "assets/logos/leagues/turkey-super-lig.webp"
+        "Turkey -  Super Lig": "assets/logos/leagues/turkey-super-lig.webp",
+        "Championship League Invitational 2026": "assets/logos/leagues/championship-league-invitational-2026.webp"
     }
 }
