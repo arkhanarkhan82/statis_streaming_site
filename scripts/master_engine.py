@@ -577,7 +577,7 @@ def render_match_row(m, section_title=""):
 
     return f'<div class="{row_class}"><div class="col-time">{time_html}</div><div class="teams-wrapper"><div class="league-tag">{tag}</div>{teams_html}</div><div class="col-meta">{meta_html}</div><div class="col-action">{btn}{copy_btn}</div></div>'
 
-def render_container(matches, title, icon=None, link=None, is_live_section=False):
+def render_container(matches, title, icon=None, link=None, is_live_section=False, section_id=None):
     if not matches: return ""
     
     # --- DYNAMIC BORDER LOGIC ---
@@ -624,7 +624,8 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
         right_content = f'<a href="{link}" class="sec-right-link">{link_text} ></a>'
     
     # Apply border_style inline AND use right_content
-    header = f'<div class="sec-head" style="{border_style}"><h2 class="sec-title">{img_html}{title}</h2>{right_content}</div>'
+    id_attr = f' id="{section_id}"' if section_id else ""
+    header = f'<div class="sec-head" style="{border_style}"><h2 class="sec-title"{id_attr}>{img_html}{title}</h2>{right_content}</div>'
 
     rows_html = ""
     hidden_html = ""
@@ -685,7 +686,8 @@ def build_homepage(matches):
         wc_m = [m for m in upcoming_full if wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()]
         for m in wc_m: used_ids.add(m['id'])
         wc_title = THEME.get('text_wildcard_title', 'Featured')
-        wc_html = render_container(wc_m, wc_title, '🔥', None)
+        wc_id = THEME.get('id_wildcard', '') # Get ID from config
+        wc_html = render_container(wc_m, wc_title, '🔥', None, False, wc_id) # Pass ID
     else:
         top5 = []
         used_leagues = set()
@@ -699,7 +701,8 @@ def build_homepage(matches):
             used_leagues.add(l_key)
         
         top5_title = THEME.get('text_top_upcoming_title', 'Top Upcoming')
-        top5_html = render_container(top5, top5_title, '📅', None)
+        top5_id = THEME.get('id_top_upcoming', '') # Get ID from config
+        top5_html = render_container(top5, top5_title, '📅', None, False, top5_id) # Pass ID
 
     # Grouped Section
     grouped_html = ""
