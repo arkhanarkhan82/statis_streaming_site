@@ -145,8 +145,14 @@
 
             /* UTILS */
             --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
-            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
-            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --btt-bg: {{THEME_BACK_TO_TOP_BG}};
+            --btt-icon: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --btt-radius: {{THEME_BACK_TO_TOP_RADIUS}};
+            --btt-size: {{THEME_BACK_TO_TOP_SIZE}};
+            
+            /* ADD/UPDATE THESE: */
+            --btt-border: {{THEME_BACK_TO_TOP_BORDER_WIDTH}}px solid {{THEME_BACK_TO_TOP_BORDER_COLOR}};
+            --btt-shadow: 0 4px 10px {{THEME_BACK_TO_TOP_SHADOW_COLOR}};
             --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
             --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
             --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
@@ -307,8 +313,27 @@
         .f-head { color: var(--footer-heading); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
 
         
-        .back-to-top { position: fixed; bottom: 80px; right: 20px; background: var(--back-to-top-bg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; transition: 0.3s; z-index: 90; }
-        .back-to-top.show { opacity: 1; }
+        .back-to-top { 
+            position: fixed; 
+            /* DYNAMIC MOBILE POSITION: Footer Height + 20px gap */
+            bottom: calc(var(--mob-foot-height) + 20px); 
+            right: 20px; 
+            background: var(--btt-bg); 
+            width: var(--btt-size); 
+            height: var(--btt-size); 
+            border-radius: var(--btt-radius); 
+            display: flex; align-items: center; justify-content: center; 
+            color: var(--btt-icon); 
+            cursor: pointer; 
+            opacity: 0; visibility: hidden; 
+            transition: 0.3s; z-index: 90; 
+            /* NEW: Border & Shadow */
+            border: var(--btt-border);
+            box-shadow: var(--btt-shadow); 
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        
+        /* DESKTOP POSITION (Overrides mobile calc) */
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
          /* SOCIALS */
