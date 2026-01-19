@@ -5449,7 +5449,10 @@
         "Spain U17": "assets/logos/streamed/spain-u17.webp",
         "Italy U17": "assets/logos/streamed/italy-u17.webp",
         "Aris Bsa": "assets/logos/streamed/aris-bsa.webp",
-        "ASVEL Villeurbanne": "assets/logos/streamed/asvel-villeurbanne.webp"
+        "ASVEL Villeurbanne": "assets/logos/streamed/asvel-villeurbanne.webp",
+        "Napoli W": "assets/logos/streamed/napoli-w.webp",
+        "Sporting CP B U21": "assets/logos/upstreams/sporting-cp-b-u21.webp",
+        "Lachlan Gaskell": "assets/logos/upstreams/lachlan-gaskell.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
