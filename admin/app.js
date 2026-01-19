@@ -258,6 +258,13 @@ const THEME_FIELDS = {
     'text_watch_btn': 'themeTextWatch',
     'text_hd_badge': 'themeTextHd',
     'text_section_prefix': 'themeTextSectionPrefix',
+    'text_section_suffix': 'themeTextSectionSuffix', // <--- ADD THIS
+
+    // LEAGUE FIELDS (Mapped here for Presets/UI access)
+    'league_live_title': 'tplLeagueLiveTitle',           // <--- ADD THIS
+    'league_upcoming_prefix': 'tplLeagueUpcomingPrefix', // <--- ADD THIS
+    'league_upcoming_suffix': 'tplLeagueUpcomingSuffix', // <--- ADD THIS
+    // ...
 
     // Hover & Styles
     'match_row_hover_bg': 'themeMatchRowHoverBg',
@@ -484,7 +491,8 @@ function populateUI() {
     setVal('tplLeagueH1', configData.articles?.league_h1 || "");
     setVal('tplLeagueIntro', configData.articles?.league_intro || "");
     setVal('tplLeagueLiveTitle', configData.articles?.league_live_title || "");
-    setVal('tplLeagueUpcomingTitle', configData.articles?.league_upcoming_title || "");
+    setVal('tplLeagueUpcomingPrefix', configData.articles?.league_upcoming_prefix || "");
+    setVal('tplLeagueUpcomingSuffix', configData.articles?.league_upcoming_suffix || "");
 }
 
 // ==========================================
@@ -1556,7 +1564,8 @@ configData.articles = {
     league_h1: getVal('tplLeagueH1'),
     league_intro: getVal('tplLeagueIntro'),
     league_live_title: getVal('tplLeagueLiveTitle'),
-    league_upcoming_title: getVal('tplLeagueUpcomingTitle')
+    league_upcoming_prefix: getVal('tplLeagueUpcomingPrefix'),
+    league_upcoming_suffix: getVal('tplLeagueUpcomingSuffix')
 };
 // === NEW SAVE LOGIC END ===
 
