@@ -404,6 +404,34 @@ def render_page(template, config, page_data, theme_override=None):
     # --- NEW: DETERMINE HTML LANG ---
     target_c = s.get('target_country', 'US')
     html_lang_code = "en-GB" if target_c == "UK" else "en-US"
+    # --- PERFORMANCE ANALYTICS INJECTION ---
+    ga_id = s.get('ga4_id', '').strip()
+    analytics_script = ""
+    
+    if ga_id:
+        # This script handles the "Interaction OR 4s Timeout" logic
+        analytics_script = f"""
+        <script>
+        (function(w,d,id){{
+            var l='dataLayer',i='ga-init';
+            if(w[i]) return; w[i]=true;
+            w[l]=w[l]||[];
+            function gtag(){{w[l].push(arguments);}}
+            function loadGA(){{
+                if(w['ga-loaded']) return; w['ga-loaded']=true;
+                var s=d.createElement('script');
+                s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
+                var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', id);
+            }}
+            var t=setTimeout(loadGA, 4000); 
+            ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){{
+                w.addEventListener(e, function(){{ clearTimeout(t); loadGA(); }}, {{once:true, passive:true}});
+            }});
+        }})(window,document,'{ga_id}');
+        </script>
+        """
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
@@ -747,6 +775,11 @@ def render_page(template, config, page_data, theme_override=None):
 
     # Inject into Template
     html = html.replace('{{SCHEMA_BLOCK}}', schema_output)
+    
+    # --- SAFE INJECTION: Google Analytics ---
+    # Inject optimized script just before </head>
+    if analytics_script:
+        html = html.replace('</head>', f'{analytics_script}\n</head>')
 
     return html
 
