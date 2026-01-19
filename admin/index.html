@@ -481,18 +481,18 @@
                             <div><label>Time Color</label><input type="color" id="themeMatchTimeColor"></div>
                         </div>
                         <h4 style="margin:10px 0 5px 0; font-size:0.8rem; color:#aaa;">Live Matches</h4>
-                        <div class="color-grid">
-                            <div><label>Live BG Start</label><input type="color" id="themeMatchLiveBgStart"></div>
-                            <div><label>Live BG End</label><input type="color" id="themeMatchLiveBgEnd"></div>
-                            <div><label>Live Text</label><input type="color" id="themeMatchLiveText"></div>
-                            <!-- NEW CODE START -->
+<div class="color-grid">
+    <div><label>Live BG Start</label><input type="color" id="themeMatchLiveBgStart"></div>
+    <div><label>Live BG End</label><input type="color" id="themeMatchLiveBgEnd"></div>
+    <div><label>Live Text</label><input type="color" id="themeMatchLiveText"></div>
+    <!-- ADDED: Dot Color -->
+    <div><label>Live Dot (Icon)</label><input type="color" id="themeLiveDotColor"></div>
+    
     <div style="grid-column: span 2;">
         <label>Live Border Left</label>
-        <!-- We use text input so we can use "3px solid var(--brand-primary)" -->
         <input type="text" id="themeMatchLiveBorder" placeholder="3px solid var(--brand-primary)">
     </div>
-    <!-- NEW CODE END -->
-                        </div>
+</div>
                         <label>Row Height</label>
                         <select id="themeRowHeight">
                             <option value="compact">Compact (Data Dense)</option>
