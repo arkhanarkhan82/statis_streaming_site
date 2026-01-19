@@ -1003,76 +1003,81 @@ def generate_sitemap(matches):
     domain = s_sett.get('domain', 'example.com')
     base_url = f"https://{domain}"
     
-    # 1. Collect Unique Match IDs (Homepage + Leagues)
+    # --- STRATEGY: DATES ---
+    # 1. Manual Admin Date (Hubs)
+    manual_date = s_sett.get('sitemap_lastmod_manual', '')
+    if not manual_date: 
+        # Fallback to today if admin never set it
+        manual_date = datetime.now().strftime('%Y-%m-%d')
+    
+    # 2. Current Date (Matches) - Server Local Time
+    today_date = datetime.now().strftime('%Y-%m-%d')
+
+    # --- STRATEGY: COLLECTION ---
     visible_ids = set()
     now_ms = time.time() * 1000
     one_day = 24 * 60 * 60 * 1000
     
-    # Homepage Logic (24h or Wildcard)
+    # 1. Homepage Matches
     wc_cat = THEME.get('wildcard_category', '').lower()
     for m in matches:
-        # Wildcard Logic
         if len(wc_cat) > 2 and (wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()):
             visible_ids.add(m['id'])
-        # 24 Hour Logic
         elif (m['timestamp'] - now_ms) < one_day:
             visible_ids.add(m['id'])
 
-    # League Pages Logic
+    # 2. League Page Matches
     if s_sett.get('sitemap_include_leagues', False):
         for key, settings in PRIORITY_SETTINGS.items():
             if key.startswith('_') or not settings.get('hasLink'): continue
-            # Add ALL matches for this league (Full Schedule)
             for m in matches:
                 if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower():
                     visible_ids.add(m['id'])
 
-    # 2. Build XML Content
+    # --- STRATEGY: XML BUILDING ---
     urls = []
-    lastmod = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S+00:00')
 
-    def add_url(path, prio, freq):
+    def add_url(path, prio, freq, date_val):
         clean_path = path.strip('/')
         loc = f"{base_url}/{clean_path}/" if clean_path else f"{base_url}/"
         urls.append(f"""    <url>
         <loc>{loc}</loc>
-        <lastmod>{lastmod}</lastmod>
+        <lastmod>{date_val}</lastmod>
         <changefreq>{freq}</changefreq>
         <priority>{prio}</priority>
     </url>""")
 
-    # A. Homepage
-    add_url("", "1.0", "always")
+    # A. Homepage (Manual Date)
+    add_url("", "1.0", "always", manual_date)
 
-    # B. League Pages
+    # B. League Pages (Manual Date)
     if s_sett.get('sitemap_include_leagues', False):
         for key, settings in PRIORITY_SETTINGS.items():
             if key.startswith('_') or not settings.get('hasLink'): continue
             slug = slugify(key) + "-streams"
-            add_url(slug, "0.9", "always") # Same freq as home
+            add_url(slug, "0.9", "always", manual_date)
 
-    # C. Static Pages
+    # C. Static Pages (Manual Date)
     static_raw = s_sett.get('sitemap_static_pages', "")
     if static_raw:
         for p in static_raw.split(','):
-            if p.strip(): add_url(p.strip(), "0.8", "daily")
+            if p.strip(): add_url(p.strip(), "0.8", "weekly", manual_date)
 
-    # D. Watch Root
-    add_url("watch", "0.7", "always")
+    # D. Watch Root (Manual Date)
+    add_url("watch", "0.7", "always", manual_date)
 
-    # E. Match Info Pages (Unique IDs only)
+    # E. Match Info Pages (Today's Date)
     param_info = s_sett.get('param_info', 'info')
     for mid in visible_ids:
-        # Construct Query Parameter URL
         full_url = f"{base_url}/watch/?{param_info}={mid}"
         urls.append(f"""    <url>
         <loc>{full_url}</loc>
-        <lastmod>{lastmod}</lastmod>
+        <lastmod>{today_date}</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>""")
 
-    # 3. Write File
+    # Write File
     xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {chr(10).join(urls)}
@@ -1080,7 +1085,7 @@ def generate_sitemap(matches):
     
     with open('sitemap.xml', 'w', encoding='utf-8') as f:
         f.write(xml_content)
-    print(f"   - Generated sitemap.xml with {len(urls)} URLs")
+    print(f"   - Generated sitemap.xml ({len(urls)} URLs)")
 # ==============================================================================
 # 8. MAIN EXECUTION
 # ==============================================================================
