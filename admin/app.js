@@ -480,6 +480,7 @@ function populateUI() {
     const w = configData.watch_settings || {};
     setVal('supaUrl', w.supabase_url);
     setVal('supaKey', w.supabase_key);
+    setVal('discordServerId', w.discord_server_id);
     setVal('watchPageTitle', w.meta_title);
     setVal('watchPageDesc', w.meta_desc);
     setVal('watchPageArticle', w.article);
@@ -1612,6 +1613,7 @@ captureThemeState(currentThemeContext);
     configData.watch_settings = {
         supabase_url: getVal('supaUrl'),
         supabase_key: getVal('supaKey'),
+        discord_server_id: getVal('discordServerId'),
         
         // Versus Match Settings
         meta_title: getVal('watchPageTitle'),
