@@ -89,6 +89,25 @@
     <input type="text" id="ga4Id" placeholder="G-ABC1234567">
     <p class="desc">Code is injected with a <strong>smart delay</strong> (User Interaction or 4s Timeout) to ensure 100/100 PageSpeed scores.</p>
 </div>
+                    <!-- CUSTOM INTEGRATIONS CARD -->
+<div class="card" style="border-top: 3px solid #8b5cf6;">
+    <h3 style="color:#8b5cf6;">🔌 Custom Integrations</h3>
+    
+    <!-- 1. Meta Tags -->
+    <div style="margin-bottom: 20px; border-bottom: 1px dashed #333; padding-bottom: 15px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <label style="margin:0;">Custom Meta Tags (Verification)</label>
+            <button class="btn-primary" style="padding:4px 10px; font-size:0.8rem;" onclick="addMetaTagInput()">+ Add Meta</button>
+        </div>
+        <p class="desc" style="margin-bottom:10px;">e.g. &lt;meta name="google-site-verification" content="..." /&gt;</p>
+        <div id="metaTagsContainer" style="display:flex; flex-direction:column; gap:10px;"></div>
+    </div>
+
+    <!-- 2. Custom JS -->
+    <label>Custom Header JavaScript (AdSense, Popups, etc)</label>
+    <p class="desc" style="margin-bottom:5px;">Paste multiple script codes here. They will be injected into the &lt;head&gt;.</p>
+    <textarea id="customJsCode" rows="6" placeholder="<script src='...'></script>&#10;<script>...</script>" style="font-family:monospace; color:#cbd5e1;"></textarea>
+</div>
                     <div class="card">
                         <h3>Assets & Logos</h3>
                         <label>Logo URL</label><input type="text" id="logoUrl" placeholder="/images/logo.png">
