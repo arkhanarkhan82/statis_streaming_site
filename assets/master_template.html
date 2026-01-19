@@ -80,6 +80,7 @@
             /* MATCH ROWS */
             --match-row-bg: {{THEME_MATCH_ROW_BG}};
             --match-row-border: {{THEME_MATCH_ROW_BORDER}};
+        --match-row-radius: {{THEME_MATCH_ROW_RADIUS}};
             --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}};
             --match-row-hover-border: {{THEME_MATCH_ROW_HOVER_BORDER}};
             --match-row-hover-transform: {{THEME_MATCH_ROW_HOVER_TRANSFORM}};
@@ -160,6 +161,7 @@
             --soc-btn-bg: {{THEME_SOCIAL_BTN_BG}};
             --soc-btn-border: {{THEME_SOCIAL_BTN_BORDER}};
             --soc-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+        --soc-btn-radius: {{THEME_SOCIAL_BTN_RADIUS}};
             --soc-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}};
             --soc-btn-hover-border: {{THEME_SOCIAL_BTN_HOVER_BORDER}};
             --soc-btn-hover-transform: {{THEME_SOCIAL_BTN_HOVER_TRANSFORM}};
@@ -377,7 +379,7 @@
         .match-row { 
             display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; 
             background: var(--match-row-bg); border: 1px solid var(--match-row-border); 
-            border-radius: var(--border-radius-base); padding: 10px 8px 5px 8px; margin-bottom: 8px; 
+            border-radius: var(--match-row-radius); padding: 10px 8px 5px 8px; margin-bottom: 8px; 
             position: relative; transition: 0.2s; height: var(--row-h-mob); overflow: hidden;
         }
         .match-row:hover { border-color: var(--match-row-hover-border); background: var(--match-row-hover-bg); transform: var(--match-row-hover-transform); }
@@ -458,7 +460,7 @@
             width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
             align-items: center; justify-content: center; gap: 3px; 
             color: var(--soc-btn-color); background: var(--soc-btn-bg); 
-            border: 1px solid var(--soc-btn-border); border-radius: var(--border-radius-base); 
+            border: 1px solid var(--soc-btn-border); border-radius: var(--soc-btn-radius); 
             will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
             cursor: pointer; 
         }
