@@ -1,106 +1,105 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{HTML_LANG}}">
 <head>
     <!-- SEO & METADATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMCA Policy</title>
-    <meta name="description" content="sdssdfs">
-    
-    <meta name="theme-color" content="#d00000">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://totalsportek.top/dmca/">
-    <meta property="og:site_name" content="StreamEast">
-    <meta property="og:title" content="DMCA Policy">
-    <meta property="og:description" content="sdssdfs">
-    <meta property="og:image" content="/assets/test-logo.webp">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{META_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
     
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
-    <link rel="canonical" href="https://totalsportek.top/dmca/">
-    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    {{LOGO_PRELOAD}}
     
     <!-- SCHEMA -->
-    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AboutPage", "@id": "https://totalsportek.top/dmca/#webpage", "url": "https://totalsportek.top/dmca/", "name": "DMCA Policy", "description": "sdssdfs", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://totalsportek.top/assets/test-logo.webp"}}]}</script>
-
+    {{SCHEMA_BLOCK}}
     
     <style>html { scroll-behavior: smooth; }</style>
 
     <style>
         :root {
             /* --- DYNAMIC THEME VARIABLES --- */
-            --brand-primary: #d00000;
-            --bg-body: #2d0101;
-            --bg-panel: #0c0f3b;
-            --text-main: #ffffff;
-            --text-muted: #888888;
-            --border: #222222;
+            --brand-primary: {{THEME_BRAND_PRIMARY}};
+            --bg-body: {{THEME_BG_BODY}};
+            --bg-panel: {{THEME_BG_PANEL}};
+            --text-main: {{THEME_TEXT_MAIN}};
+            --text-muted: {{THEME_TEXT_MUTED}};
+            --border: {{THEME_BORDER_COLOR}};
             
-            --font-family-base: system-ui, -apple-system, sans-serif;
-            --font-family-headings: 'Courier New', monospace;
-            --base-font-size: 14px; 
-            --container-max-width: 950px; 
-            --border-radius-base: 0px; 
+            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
+            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
+            --base-font-size: {{THEME_BASE_FONT_SIZE}}; 
+            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}}; 
+            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}}; 
 
             /* HEADER */
-            --header-bg: #050505;
-            --header-text-color: #aaaaaa;
-            --header-link-active-color: #ffffff;
-            --header-link-hover-color: #3e0a0a;
-            --header-highlight-color: #02ed12;
-            --header-highlight-hover: #bf1d1d;
-            --header-border-bottom: 1px solid var(--border);
-            --logo-text-p1-color: #ffffff;
-            --logo-text-p2-color: #d00000;
-            --logo-image-size: 40px;
-        --sec-border-leagues: 6px solid #aae114;
+            --header-bg: {{THEME_HEADER_BG}};
+            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
+            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
+            --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
+            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
+            --logo-text-p1-color: {{THEME_LOGO_P1_COLOR}};
+            --logo-text-p2-color: {{THEME_LOGO_P2_COLOR}};
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+        --sec-border-leagues: {{THEME_SEC_BORDER_LEAGUES}};
 
             /* STATIC PAGE SPECIFIC */
-            --static-h1-color: #fc1d1d;
+            --static-h1-color: {{THEME_STATIC_H1_COLOR}};
 
             /* ARTICLE STYLING */
-            --article-bg: #0a0a0a;
-            --article-text: #e5e0e0;
-            --article-line-height: 1.6;
-            --article-bullet: #e907a1;
-            --article-link: #df0c0c;
-            --article-h2-color: #0400f0;
-            --article-h2-border: 3px solid #05c0e6;
-            --article-h3-color: #4ff906;
-            --article-h3-border: 0px solid None;
-            --article-h4-color: #df2707;
-            --article-h4-border: 0px solid None;
+            --article-bg: {{THEME_ARTICLE_BG}};
+            --article-text: {{THEME_ARTICLE_TEXT}};
+            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
+            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
+            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
+            --article-h2-color: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-h3-color: {{THEME_ARTICLE_H3_COLOR}};
+            --article-h3-border: {{THEME_ARTICLE_H3_BORDER}};
+            --article-h4-color: {{THEME_ARTICLE_H4_COLOR}};
+            --article-h4-border: {{THEME_ARTICLE_H4_BORDER}};
 
             /* FOOTER */
-         --footer-text-align: right;
-            --footer-bg-start: #0e0e0e;
-            --footer-bg-end: #050505;
-            --footer-border-top: 1px solid #334155;
-            --footer-heading-color: #94a3b8;
-            --footer-link-color: #94a3b8;
-            --footer-link-hover-color: #f1f5f9;
-            --footer-copyright-color: #475569;
-            --footer-desc-color: #64748b;
-        --static-h1-border: 3px solid #0d34f8;
+         --footer-text-align: {{THEME_FOOTER_TEXT_ALIGN_DESKTOP}};
+            --footer-bg-start: {{THEME_FOOTER_BG_START}};
+            --footer-bg-end: {{THEME_FOOTER_BG_END}};
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-heading-color: {{THEME_FOOTER_HEADING_COLOR}};
+            --footer-link-color: {{THEME_FOOTER_LINK_COLOR}};
+            --footer-link-hover-color: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-copyright-color: {{THEME_FOOTER_COPYRIGHT_COLOR}};
+            --footer-desc-color: {{THEME_FOOTER_DESC_COLOR}};
+        --static-h1-border: {{THEME_STATIC_H1_BORDER}};
             
             /* FOOTER LEAGUE CARDS */
-            --league-card-bg: #bb1b1b;
-            --league-card-text: #e1dbdb;
-            --league-card-border: 3px solid #11494a;
-            --league-card-radius: 18px;
-            --league-card-hover-bg: #347ba8;
-            --league-card-hover-text: #222020;
-            --league-card-hover-border: 3px solid #ad0b0b;
+            --league-card-bg: {{THEME_LEAGUE_CARD_BG}};
+            --league-card-text: {{THEME_LEAGUE_CARD_TEXT}};
+            --league-card-border: {{THEME_LEAGUE_CARD_BORDER}};
+            --league-card-radius: {{THEME_LEAGUE_CARD_RADIUS}};
+            --league-card-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
+            --league-card-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --league-card-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
 
             /* UTILITY */
-            --scrollbar-thumb-color: #333333;
-            --back-to-top-bg: #0b3bf9;
-            --back-to-top-icon-color: #ffffff;
-            --back-to-top-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            --back-to-top-radius: 50%;
-            --back-to-top-size: 40px;
+            --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
+            --back-to-top-bg: {{THEME_BACK_TO_TOP_BG}};
+            --back-to-top-icon-color: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
+            --back-to-top-radius: {{THEME_BACK_TO_TOP_RADIUS}};
+            --back-to-top-size: {{THEME_BACK_TO_TOP_SIZE}};
         }
 
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -122,7 +121,7 @@
         @media (min-width: 900px) { header { position: fixed; top: 0; } body { padding-top: 60px; } }
 
         .header-container { 
-            max-width: 1000px;
+            max-width: {{THEME_HEADER_MAX_WIDTH}};
             margin: 0 auto; height: 100%; padding: 0 15px; 
             display: flex; align-items: center; position: relative;
         }
@@ -185,7 +184,7 @@
     font-size: 2.2rem;
     margin-bottom: 30px;
     border-bottom: var(--static-h1-border); /* <--- Fixed to use dynamic variable */
-    text-align: left;               /* <--- Pre-adding for Feature #5 */
+    text-align: {{H1_ALIGN}};               /* <--- Pre-adding for Feature #5 */
     padding-bottom: 20px;
         }
 
@@ -270,7 +269,7 @@
             .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
         }
 
-        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: #ffffff; letter-spacing: -1px; }
+        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
         .f-desc { color: var(--footer-desc-color); 
     font-size: 0.85rem; 
     line-height: 1.6; 
@@ -298,76 +297,57 @@
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
     </style>
 
-        <script>
-        (function(w,d,id){
-            var l='dataLayer',i='ga-init';
-            if(w[i]) return; w[i]=true;
-            w[l]=w[l]||[];
-            function gtag(){w[l].push(arguments);}
-            function loadGA(){
-                if(w['ga-loaded']) return; w['ga-loaded']=true;
-                var s=d.createElement('script');
-                s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
-                var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
-                gtag('js', new Date());
-                gtag('config', id);
-            }
-            var t=setTimeout(loadGA, 4000); 
-            ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){
-                w.addEventListener(e, function(){ clearTimeout(t); loadGA(); }, {once:true, passive:true});
-            });
-        })(window,document,'G-VK24F3EX1K');
-        </script>
-        
+
+    <script>
+    (function(w,d,id){
+        var l='dataLayer',i='ga-init';
+        if(w[i]) return; w[i]=true;
+        w[l]=w[l]||[];
+        function gtag(){w[l].push(arguments);}
+        function loadGA(){
+            if(w['ga-loaded']) return; w['ga-loaded']=true;
+            var s=d.createElement('script');
+            s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
+            var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
+            gtag('js', new Date());
+            gtag('config', id);
+        }
+        var t=setTimeout(loadGA, 4000); 
+        ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){
+            w.addEventListener(e, function(){ clearTimeout(t); loadGA(); }, {once:true, passive:true});
+        });
+    })(window,document,'G-VK24F3EX1K');
+    </script>
 </head>
 <body>
-    <header class="h-layout-standard">
+    <header class="{{HEADER_CLASSES}}">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #007aff;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div></a>
-            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
+            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
+            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
     </header>
-    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
+    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
 
     <main class="container">
         <!-- DYNAMIC H1 for Static Page -->
-        <h1 class="static-h1">DMCA Policy</h1>
+        <h1 class="static-h1">{{H1_TITLE}}</h1>
 
         <!-- Content -->
-        <div class="seo-article"><p>Welcome to&nbsp;<strong>Sportsurge</strong>, your go-to destination for live sports schedules and streaming links! We are dedicated to providing sports enthusiasts with the latest match schedules and access to freely available streaming links for major sporting events, including&nbsp;<strong><a href="https://sportsurge.shop/NCAA/">NCAA</a>, NBA, Soccer, WWE, Boxing,&nbsp;<a href="https://sportsurge.shop/UFC/">MMA</a>, F1, and more</strong>.</p>
-<h3><strong>Our Mission</strong></h3>
-<p>At&nbsp;<strong>Sportsurge</strong>, our goal is to help sports fans find the best free streaming options available on the internet. We understand the excitement of watching live games, and we strive to make it easier for users to access their favorite sports matches without hassle.</p>
-<h3><strong>How We Work</strong></h3>
-<p>We do&nbsp;<strong>not</strong>&nbsp;host or store any video content or streaming media on our website. Instead, we gather publicly available streaming links from third-party websites and embed them to share with our audience. Our platform functions as an aggregator, ensuring that sports lovers can conveniently find streams that are already freely accessible on the internet.</p>
-<h3><strong>Copyright &amp;&nbsp;<a href="https://sportsurge.shop/disclaimer/">Disclaimer</a></strong></h3>
-<p>We&nbsp;<strong>strictly</strong>&nbsp;advise our users to watch matches through legal streaming platforms and avoid any copyrighted content. While we do not host any videos or streams ourselves, the links provided on our platform lead to third-party sources that may host the streams. If you have concerns regarding copyright materials, we recommend checking the&nbsp;<strong>embed link</strong>&nbsp;from the page's source code and reaching out to the original video hosting website for resolution.</p>
-<p>Additionally, any advertisements displayed inside the media player&nbsp;<strong>do not belong to us</strong>. The ad revenue generated within the video player is solely managed by the site that originally hosted the video.</p>
-<h3><strong>Your Responsibility</strong></h3>
-<p>By using&nbsp;<strong>Sportsurge</strong>, you acknowledge that we are not responsible for any copyright issues related to the embedded streams. We encourage all users to support official broadcasting platforms and watch their favorite sports through legitimate services whenever possible.</p>
-<p>For any inquiries, feel free to contact us. Enjoy the game, and stay updated with&nbsp;<strong><a href="https://sportsurge.shop/">Sportsurge</a></strong>!&nbsp;</p></div>
+        <div class="seo-article">{{ARTICLE_CONTENT}}</div>
 
         <!-- Footer Leagues -->
         <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
             <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
-            <div class="leagues-grid"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏈</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏀</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">⚾</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏒</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🥊</span><span>UFC</span></a><a href="/premier-league-streams/" class="league-card"><span class="l-icon">⚽</span><span>Premier League</span></a><a href="/champions-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula-1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africa-cup-of-nations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/la-liga-streams/" class="league-card"><span class="l-icon">⚽</span><span>La Liga</span></a><a href="/football-streams/" class="league-card"><span class="l-icon">🏈</span><span>Football</span></a><a href="/soccer-streams/" class="league-card"><span class="l-icon">⚽</span><span>Soccer</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🎾</span><span>Tennis</span></a></div>
+            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
         </div>
     </main>
 
-    <footer class="">
+    <footer class="{{FOOTER_CLASSES}}">
         <!-- Dynamic Grid injected by Python based on Admin slots -->
-        <div class="footer-grid cols-3">
-    <div>
-        <div class="f-head">Quick Links</div>
-        <div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div>
-    </div>
-    <div class="f-desc">Hello world</div>
-    <div class="f-brand">
-        <img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #007aff;"> <div class="logo-text" style="color:#ffffff;">Stream<span style="color:#d00000;">East</span></div> 
-    </div>
-    </div>
+        {{FOOTER_GRID_CONTENT}}
         
-        <div class="copyright">Copyright</div>
+        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
     </footer>
 
     <button id="backToTop" class="back-to-top" onclick="window.scrollTo(0,0)">

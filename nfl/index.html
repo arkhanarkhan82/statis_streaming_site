@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{HTML_LANG}}">
 <head>
     <!-- SEO & METADATA -->
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFL Bite</title>
-    <meta name="description" content="tfdhgdfgd">
-    
-    <meta name="theme-color" content="#007aff">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESC}}">
+    {{META_KEYWORDS}}
+    <meta name="theme-color" content="{{THEME_META_COLOR}}">
 
     <!-- OPEN GRAPH & SOCIAL -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://totalsportek.top/nfl/">
-    <meta property="og:site_name" content="StreamEast">
-    <meta property="og:title" content="NFL Bite">
-    <meta property="og:description" content="tfdhgdfgd">
-    <meta property="og:image" content="/assets/test-logo.webp">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{META_TITLE}}">
+    <meta property="og:description" content="{{META_DESC}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
     
     <!-- ROBOTS -->
     <meta name="robots" content="index, follow, max-image-preview:large">
     
-    <link rel="icon" href="/assets/Untitled%20design%20(46)-min.png">
-    <link rel="canonical" href="https://totalsportek.top/nfl/">
-    <link rel="preload" as="image" href="/assets/test-logo.webp" fetchpriority="high">
+    <link rel="icon" href="{{FAVICON}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    {{LOGO_PRELOAD}}
     
     <!-- SCHEMA -->
-    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "@id": "https://totalsportek.top/nfl/#leaguepage", "url": "https://totalsportek.top/nfl/", "name": "No. #1 NFL Streaming", "description": "tfdhgdfgd", "mainEntity": {"@id": "https://totalsportek.top/nfl/#matchlist"}}]}</script>
-<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://totalsportek.top/nfl/#matchlist", "itemListElement": []}</script>
-
+    {{SCHEMA_BLOCK}}
     
     <style>html { scroll-behavior: smooth; }</style>
 
@@ -35,170 +33,170 @@
         /* CSS VARIABLES INJECTED BY BUILD_SITE.PY */
         :root {
             /* COLORS */
-            --brand-primary: #007aff;
-            --brand-dark: #0051a8;
-            --accent-gold: #00c7ff;
-            --status-green: #34c759;
-            --bg-body: #0f172a;
-            --bg-panel: #1e293b;
-            --bg-glass: rgba(30, 41, 59, 0.7);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: #334155;
+            --brand-primary: {{THEME_BRAND_PRIMARY}};
+            --brand-dark: {{THEME_BRAND_DARK}};
+            --accent-gold: {{THEME_ACCENT_GOLD}};
+            --status-green: {{THEME_STATUS_GREEN}};
+            --bg-body: {{THEME_BG_BODY}};
+            --bg-panel: {{THEME_BG_PANEL}};
+            --bg-glass: {{THEME_BG_GLASS}};
+            --text-main: {{THEME_TEXT_MAIN}};
+            --text-muted: {{THEME_TEXT_MUTED}};
+            --border: {{THEME_BORDER_COLOR}};
             
             /* TYPOGRAPHY & LAYOUT */
-            --font-family-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            --font-family-headings: inherit;
-            --base-font-size: 14px;
-            --base-line-height: 1.5;
-            --container-max-width: 1150px;
-            --header-max-width: 1150px;
-            --border-radius-base: 15px;
-            --button-border-radius: 10px;
-            --hero-pill-radius: 50px;
-            --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --font-family-base: {{THEME_FONT_FAMILY_BASE}};
+            --font-family-headings: {{THEME_FONT_FAMILY_HEADINGS}};
+            --base-font-size: {{THEME_BASE_FONT_SIZE}};
+            --base-line-height: {{THEME_BASE_LINE_HEIGHT}};
+            --container-max-width: {{THEME_CONTAINER_MAX_WIDTH}};
+            --header-max-width: {{THEME_HEADER_MAX_WIDTH}};
+            --border-radius-base: {{THEME_BORDER_RADIUS_BASE}};
+            --button-border-radius: {{THEME_BUTTON_BORDER_RADIUS}};
+            --hero-pill-radius: {{THEME_HERO_PILL_RADIUS}};
+            --card-shadow: {{THEME_CARD_SHADOW}};
             
             /* HEADER */
-            --header-bg: #000000;
-            --header-text-color: #94a3b8;
-            --header-link-active-color: #007aff;
-            --header-link-hover-color: #ffffff;
-            --header-highlight-color: #ffffff;
-            --header-highlight-hover: #00c7ff;
-            --header-border-bottom: 1px solid #334155;
-            --logo-image-size: 40px;
-            --logo-image-shadow: #007aff;
+            --header-bg: {{THEME_HEADER_BG}};
+            --header-text-color: {{THEME_HEADER_TEXT_COLOR}};
+            --header-link-active-color: {{THEME_HEADER_LINK_ACTIVE_COLOR}};
+            --header-link-hover-color: {{THEME_HEADER_LINK_HOVER_COLOR}};
+            --header-highlight-color: {{THEME_HEADER_HIGHLIGHT_COLOR}};
+            --header-highlight-hover: {{THEME_HEADER_HIGHLIGHT_HOVER}};
+            --header-border-bottom: {{THEME_HEADER_BORDER_BOTTOM}};
+            --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+            --logo-image-shadow: {{THEME_LOGO_IMAGE_SHADOW_COLOR}};
 
             /* HERO */
-            --hero-h1-color: #ffffff;
-            --hero-intro-color: #94a3b8;
-            --hero-pill-bg: #1e293b;
-            --hero-pill-text: #cbd5e1;
-            --hero-pill-border: rgba(255,255,255,0.1);
-            --hero-pill-hover-bg: #007aff;
-            --hero-pill-hover-text: #ffffff;
-            --hero-pill-hover-border: #D00000;
+            --hero-h1-color: {{THEME_HERO_H1_COLOR}};
+            --hero-intro-color: {{THEME_HERO_INTRO_COLOR}};
+            --hero-pill-bg: {{THEME_HERO_PILL_BG}};
+            --hero-pill-text: {{THEME_HERO_PILL_TEXT}};
+            --hero-pill-border: {{THEME_HERO_PILL_BORDER}};
+            --hero-pill-hover-bg: {{THEME_HERO_PILL_HOVER_BG}};
+            --hero-pill-hover-text: {{THEME_HERO_PILL_HOVER_TEXT}};
+            --hero-pill-hover-border: {{THEME_HERO_PILL_HOVER_BORDER}};
 
             /* MATCH ROWS */
-            --match-row-bg: #1e293b;
-            --match-row-border: #334155;
-            --match-row-hover-bg: #334155;
-            --match-row-hover-border: #007aff;
-            --match-row-hover-transform: translateY(-2px);
-            --match-row-live-border-left: 4px solid #007AFF;
-            --match-row-live-bg-start: #000000;
-            --match-row-live-bg-end: #000000;
-            --match-row-live-text-color: #60a5fa;
-        --live-dot-color: #007aff;
-            --match-row-team-name-color: #f8fafc;
-            --match-row-time-main-color: #94a3b8;
-            --match-row-time-sub-color: #94a3b8;
-            --match-row-league-tag-color: #94a3b8;
+            --match-row-bg: {{THEME_MATCH_ROW_BG}};
+            --match-row-border: {{THEME_MATCH_ROW_BORDER}};
+            --match-row-hover-bg: {{THEME_MATCH_ROW_HOVER_BG}};
+            --match-row-hover-border: {{THEME_MATCH_ROW_HOVER_BORDER}};
+            --match-row-hover-transform: {{THEME_MATCH_ROW_HOVER_TRANSFORM}};
+            --match-row-live-border-left: {{THEME_MATCH_ROW_LIVE_BORDER_LEFT}};
+            --match-row-live-bg-start: {{THEME_MATCH_ROW_LIVE_BG_START}};
+            --match-row-live-bg-end: {{THEME_MATCH_ROW_LIVE_BG_END}};
+            --match-row-live-text-color: {{THEME_MATCH_ROW_LIVE_TEXT_COLOR}};
+        --live-dot-color: {{THEME_LIVE_DOT_COLOR}};
+            --match-row-team-name-color: {{THEME_MATCH_ROW_TEAM_NAME_COLOR}};
+            --match-row-time-main-color: {{THEME_MATCH_ROW_TIME_MAIN_COLOR}};
+            --match-row-time-sub-color: {{THEME_MATCH_ROW_TIME_SUB_COLOR}};
+            --match-row-league-tag-color: {{THEME_MATCH_ROW_LEAGUE_TAG_COLOR}};
             
             /* BUTTONS */
-            --btn-watch-bg: #007aff;
-            --btn-watch-text: #ffffff;
-            --btn-watch-hover-bg: #b91c1c;
-            --btn-watch-hover-transform: scale(1.05);
+            --btn-watch-bg: {{THEME_MATCH_ROW_BTN_WATCH_BG}};
+            --btn-watch-text: {{THEME_MATCH_ROW_BTN_WATCH_TEXT}};
+            --btn-watch-hover-bg: {{THEME_MATCH_ROW_BTN_WATCH_HOVER_BG}};
+            --btn-watch-hover-transform: {{THEME_MATCH_ROW_BTN_WATCH_HOVER_TRANSFORM}};
             
-            --hd-badge-bg: rgba(0,0,0,0.3);
-            --hd-badge-border: rgba(255,255,255,0.2);
-            --hd-badge-text: #facc15;
+            --hd-badge-bg: {{THEME_MATCH_ROW_HD_BADGE_BG}};
+            --hd-badge-border: {{THEME_MATCH_ROW_HD_BADGE_BORDER}};
+            --hd-badge-text: {{THEME_MATCH_ROW_HD_BADGE_TEXT}};
             
-            --btn-notify-bg: transparent;
-            --btn-notify-border: #334155;
-            --btn-notify-text: #94a3b8;
-            --btn-notify-active-bg: #22c55e;
-            --btn-notify-active-border: #22c55e;
-            --btn-notify-active-text: #ffffff;
+            --btn-notify-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_BG}};
+            --btn-notify-border: {{THEME_MATCH_ROW_BTN_NOTIFY_BORDER}};
+            --btn-notify-text: {{THEME_MATCH_ROW_BTN_NOTIFY_TEXT}};
+            --btn-notify-active-bg: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_BG}};
+            --btn-notify-active-border: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_BORDER}};
+            --btn-notify-active-text: {{THEME_MATCH_ROW_BTN_NOTIFY_ACTIVE_TEXT}};
             
-            --btn-copy-color: #64748b;
-            --btn-copy-hover-color: #D00000;
+            --btn-copy-color: {{THEME_MATCH_ROW_BTN_COPY_LINK_COLOR}};
+            --btn-copy-hover-color: {{THEME_MATCH_ROW_BTN_COPY_LINK_HOVER_COLOR}};
 
-            --show-more-bg: #1e293b;
-            --show-more-border: #000000;
-            --show-more-text: #cbd5e1;
-            --show-more-radius: 30px;
-            --show-more-hover-bg: #007aff;
-            --show-more-hover-border: #D00000;
-            --show-more-hover-text: #ffffff;
+            --show-more-bg: {{THEME_SHOW_MORE_BTN_BG}};
+            --show-more-border: {{THEME_SHOW_MORE_BTN_BORDER}};
+            --show-more-text: {{THEME_SHOW_MORE_BTN_TEXT}};
+            --show-more-radius: {{THEME_SHOW_MORE_BTN_RADIUS}};
+            --show-more-hover-bg: {{THEME_SHOW_MORE_BTN_HOVER_BG}};
+            --show-more-hover-border: {{THEME_SHOW_MORE_BTN_HOVER_BORDER}};
+            --show-more-hover-text: {{THEME_SHOW_MORE_BTN_HOVER_TEXT}};
 
             /* FOOTER */
-            --footer-bg-start: #1e293b;
-            --footer-bg-end: #0f172a;
-            --footer-border-top: 1px solid #334155;
-            --footer-text: #94a3b8;
-            --footer-heading: #94a3b8;
-            --footer-link: #64748b;
-            --footer-link-hover: #f1f5f9;
-            --footer-link-transform: translateX(5px);
-            --footer-copyright: #475569;
-            --footer-align: center;
+            --footer-bg-start: {{THEME_FOOTER_BG_START}};
+            --footer-bg-end: {{THEME_FOOTER_BG_END}};
+            --footer-border-top: {{THEME_FOOTER_BORDER_TOP}};
+            --footer-text: {{THEME_FOOTER_DESC_COLOR}};
+            --footer-heading: {{THEME_FOOTER_HEADING_COLOR}};
+            --footer-link: {{THEME_FOOTER_LINK_COLOR}};
+            --footer-link-hover: {{THEME_FOOTER_LINK_HOVER_COLOR}};
+            --footer-link-transform: {{THEME_FOOTER_LINK_HOVER_TRANSFORM}};
+            --footer-copyright: {{THEME_FOOTER_COPYRIGHT_COLOR}};
+            --footer-align: {{THEME_FOOTER_TEXT_ALIGN_DESKTOP}};
             
             /* ARTICLE */
-            --article-bg: #000000;
-            --article-text: #94a3b8;
-            --article-line-height: 1.7;
-            --article-link: #00c7ff;
-            --article-bullet: #007aff;
-            --article-h2: #f8fafc;
-            --article-h2-border: 0px solid #000000;
-            --article-h3: #e2e8f0;
-            --article-h4: #cbd5e1;
+            --article-bg: {{THEME_ARTICLE_BG}};
+            --article-text: {{THEME_ARTICLE_TEXT}};
+            --article-line-height: {{THEME_ARTICLE_LINE_HEIGHT}};
+            --article-link: {{THEME_ARTICLE_LINK_COLOR}};
+            --article-bullet: {{THEME_ARTICLE_BULLET_COLOR}};
+            --article-h2: {{THEME_ARTICLE_H2_COLOR}};
+            --article-h2-border: {{THEME_ARTICLE_H2_BORDER}};
+            --article-h3: {{THEME_ARTICLE_H3_COLOR}};
+            --article-h4: {{THEME_ARTICLE_H4_COLOR}};
             
             /* LEAGUE CARDS (Footer) */
-            --lc-bg: #334155;
-            --lc-text: #f8fafc;
-            --lc-border: 1px solid #000000;
-            --lc-radius: 8px;
-            --lc-hover-bg: #007aff;
-            --lc-hover-text: #ffffff;
-            --lc-hover-border: 1px solid #00e676;
+            --lc-bg: {{THEME_LEAGUE_CARD_BG}};
+            --lc-text: {{THEME_LEAGUE_CARD_TEXT}};
+            --lc-border: {{THEME_LEAGUE_CARD_BORDER}};
+            --lc-radius: {{THEME_LEAGUE_CARD_RADIUS}};
+            --lc-hover-bg: {{THEME_LEAGUE_CARD_HOVER_BG}};
+            --lc-hover-text: {{THEME_LEAGUE_CARD_HOVER_TEXT}};
+            --lc-hover-border: {{THEME_LEAGUE_CARD_HOVER_BORDER}};
 
             /* SOCIALS */
-            --soc-sidebar-bg: #000000;
-            --soc-sidebar-border: #334155;
-            --soc-sidebar-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            --soc-btn-bg: #1e293b;
-            --soc-btn-border: #334155;
-            --soc-btn-color: #94a3b8;
-            --soc-btn-hover-bg: #007aff;
-            --soc-btn-hover-border: #007aff;
-            --soc-btn-hover-transform: translateX(5px);
-            --soc-btn-shadow: rgba(0,0,0,0.3);
-            --soc-count: #94a3b8;
+            --soc-sidebar-bg: {{THEME_SOCIAL_SIDEBAR_BG}};
+            --soc-sidebar-border: {{THEME_SOCIAL_SIDEBAR_BORDER}};
+            --soc-sidebar-shadow: {{THEME_SOCIAL_SIDEBAR_SHADOW}};
+            --soc-btn-bg: {{THEME_SOCIAL_BTN_BG}};
+            --soc-btn-border: {{THEME_SOCIAL_BTN_BORDER}};
+            --soc-btn-color: {{THEME_SOCIAL_BTN_COLOR}};
+            --soc-btn-hover-bg: {{THEME_SOCIAL_BTN_HOVER_BG}};
+            --soc-btn-hover-border: {{THEME_SOCIAL_BTN_HOVER_BORDER}};
+            --soc-btn-hover-transform: {{THEME_SOCIAL_BTN_HOVER_TRANSFORM}};
+            --soc-btn-shadow: {{THEME_SOCIAL_BTN_HOVER_SHADOW_COLOR}};
+            --soc-count: {{THEME_SOCIAL_COUNT_COLOR}};
             
-            --mob-foot-bg: #0f172a;
-            --mob-foot-border: 1px solid #334155;
-            --mob-foot-shadow: 0 -4px 10px rgba(0,0,0,0.5);
-            --mob-foot-height: 60px;
-            --mob-foot-active: rgba(255,255,255,0.1);
+            --mob-foot-bg: {{THEME_MOBILE_FOOTER_BG}};
+            --mob-foot-border: {{THEME_MOBILE_FOOTER_BORDER_TOP}};
+            --mob-foot-shadow: {{THEME_MOBILE_FOOTER_SHADOW}};
+            --mob-foot-height: {{THEME_MOBILE_FOOTER_HEIGHT}};
+            --mob-foot-active: {{THEME_MOBILE_FOOTER_BTN_ACTIVE_BG}};
             
             /* UTILS */
-            --toast-bg: #22c55e;
-            --toast-text: #ffffff;
-            --toast-border: #16a34a;
-        --scrollbar-thumb-color: #007aff;
+            --toast-bg: {{THEME_COPY_TOAST_BG}};
+            --toast-text: {{THEME_COPY_TOAST_TEXT}};
+            --toast-border: {{THEME_COPY_TOAST_BORDER}};
+        --scrollbar-thumb-color: {{THEME_SCROLLBAR_THUMB_COLOR}};
             
-            --btt-bg: #d00000;
-            --btt-icon: #ffffff;
-            --btt-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            --btt-radius: 4px;
-            --btt-size: 40px;
+            --btt-bg: {{THEME_BACK_TO_TOP_BG}};
+            --btt-icon: {{THEME_BACK_TO_TOP_ICON_COLOR}};
+            --btt-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
+            --btt-radius: {{THEME_BACK_TO_TOP_RADIUS}};
+            --btt-size: {{THEME_BACK_TO_TOP_SIZE}};
             
-            --sys-status-bg: rgba(0, 122, 255, 0.1);
-            --sys-status-border: 1px solid #007aff;
-            --sys-status-text: #60a5fa;
-            --sys-status-dot-color: #60a5fa;
-            --sys-status-radius: 20px;
+            --sys-status-bg: {{THEME_SYS_STATUS_BG_COLOR}};
+            --sys-status-border: {{THEME_SYS_STATUS_BORDER}};
+            --sys-status-text: {{THEME_SYS_STATUS_TEXT_COLOR}};
+            --sys-status-dot-color: {{THEME_SYS_STATUS_DOT_COLOR}};
+            --sys-status-radius: {{THEME_SYS_STATUS_RADIUS}};
             
-            --section-logo: 28px;
-            --button-shadow: rgba(0,0,0,0.2);
+            --section-logo: {{THEME_SECTION_LOGO_SIZE}};
+            --button-shadow: {{THEME_BUTTON_SHADOW_COLOR}};
             
-            --sk-start: #1e293b;
-            --sk-mid: #334155;
-            --sk-end: #1e293b;
-            --sk-border: #334155;
+            --sk-start: {{THEME_SKELETON_GRADIENT_START}};
+            --sk-mid: {{THEME_SKELETON_GRADIENT_MID}};
+            --sk-end: {{THEME_SKELETON_GRADIENT_END}};
+            --sk-border: {{THEME_SKELETON_BORDER_COLOR}};
 
             /* CLS FIXED HEIGHTS */
             --row-h-mob: 76px;
@@ -311,38 +309,38 @@
 
         /* HERO REFACTORED */
         .hero-section {
-            background: radial-gradient(circle at top, #0f172a 0%, #020617 100%); padding: 40px 15px;  border-bottom: 1px solid #334155;
-            display: block;
+            {{HERO_OUTER_STYLE}}
+            display: {{DISPLAY_HERO}};
         }
         
 
         .hero-inner {
-            max-width: 1150px; margin: 0 auto;
+            {{HERO_INNER_STYLE}}
             display: flex;
             flex-direction: column;
-            text-align: center;
-            align-items: center;
+            text-align: {{THEME_HERO_TEXT_ALIGN}};
+            align-items: {{THEME_HERO_ALIGN_ITEMS}};
         }
         .entity-intro { 
             color: var(--hero-intro-color); 
             font-size: 0.9rem; 
             line-height: 1.5; 
             max-width: 800px; 
-            margin: 0 auto; 
+            margin: {{THEME_HERO_INTRO_MARGIN}}; 
             margin-bottom: 20px;
         }
         
-        .sys-status { display: inline-flex; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
-        .sys-status .dot, .sys-status .live-dot { width: 8px; height: 8px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        .sys-status { display: {{THEME_SYS_STATUS_DISPLAY}}; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
+        .sys-status .dot, .sys-status .live-dot { width: {{THEME_SYS_STATUS_DOT_SIZE}}; height: {{THEME_SYS_STATUS_DOT_SIZE}}; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
 
         .cat-scroll { 
-            display: flex; 
+            display: {{HERO_MENU_DISPLAY}}; 
             gap: 10px; overflow-x: auto; padding: 10px 5px; 
             width: 100%; scrollbar-width: none; 
-            justify-content: center; 
+            justify-content: {{THEME_HERO_MENU_JUSTIFY}}; 
         }
         .cat-scroll::-webkit-scrollbar { display: none; }
 
@@ -361,11 +359,11 @@
         .container { max-width: var(--container-max-width); margin: 0 auto; padding: 20px 15px; min-height: 60vh; }
         
         .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin: 40px 0 12px 0; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-        #live-section .sec-head, #live-content-wrapper .sec-head { border-bottom: 1px solid #007aff; }
-        #wildcard-container .sec-head { border-bottom: 1px solid #00c7ff; }
-        #top-upcoming-container .sec-head { border-bottom: 1px solid #334155; }
-        #grouped-container .sec-head { border-bottom: 1px solid #334155; }
-        #footer-leagues-section .sec-head { border-bottom: 1px solid #334155; }
+        #live-section .sec-head, #live-content-wrapper .sec-head { border-bottom: {{THEME_SEC_BORDER_LIVE}}; }
+        #wildcard-container .sec-head { border-bottom: {{THEME_SEC_BORDER_WILDCARD}}; }
+        #top-upcoming-container .sec-head { border-bottom: {{THEME_SEC_BORDER_UPCOMING}}; }
+        #grouped-container .sec-head { border-bottom: {{THEME_SEC_BORDER_GROUPED}}; }
+        #footer-leagues-section .sec-head { border-bottom: {{THEME_SEC_BORDER_LEAGUES}}; }
         
         /* MAGIC FIX FOR MOBILE SCROLL JUMP */
         #grouped-container { content-visibility: auto; contain-intrinsic-size: 1000px; }
@@ -444,9 +442,9 @@
         /* SOCIALS */
         .social-sidebar { 
             position: fixed; 
-            left: 0; /* Use dynamic left */
-            top: 50%;   /* Changed DESKTOP to DESK */
-            transform: translateY(-50%) scale(1.0); /* Changed DESKTOP to DESK */
+            left: {{THEME_SOCIAL_DESK_LEFT}}; /* Use dynamic left */
+            top: {{THEME_SOCIAL_DESK_TOP}};   /* Changed DESKTOP to DESK */
+            transform: translateY(-50%) scale({{THEME_SOCIAL_DESK_SCALE}}); /* Changed DESKTOP to DESK */
             z-index: 90; 
             display: flex; flex-direction: column; gap: 8px; 
             background: var(--soc-sidebar-bg); 
@@ -465,10 +463,10 @@
             cursor: pointer; 
         }
         .social-btn svg { width: 20px; height: 20px; fill: currentColor; display: block; }
-        .social-btn.telegram { color: #38bdf8; } 
-        .social-btn.whatsapp { color: #4ade80; }
-        .social-btn.reddit { color: #fb7185; } 
-        .social-btn.twitter { color: #38bdf8; } 
+        .social-btn.telegram { color: {{THEME_SOCIAL_TELEGRAM_COLOR}}; } 
+        .social-btn.whatsapp { color: {{THEME_SOCIAL_WHATSAPP_COLOR}}; }
+        .social-btn.reddit { color: {{THEME_SOCIAL_REDDIT_COLOR}}; } 
+        .social-btn.twitter { color: {{THEME_SOCIAL_TWITTER_COLOR}}; } 
         .social-btn.copy { color: var(--soc-btn-color); }
         
         .social-btn:hover { 
@@ -531,7 +529,7 @@
             .footer-grid.cols-3 > div:nth-child(3) { text-align: right; }
         }
         
-        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: #ffffff; letter-spacing: -1px; }
+        .f-brand h2 { margin: 0 0 15px 0; font-style: italic; text-transform: uppercase; color: {{THEME_FOOTER_BRAND_COLOR}}; letter-spacing: -1px; }
         .f-desc { color: var(--footer-text); font-size: 0.85rem; line-height: 1.6; max-width: 400px; margin: 0 auto; }
         @media(min-width: 768px) { .f-desc { margin: 0; } }
         
@@ -551,13 +549,13 @@
             margin-top: 40px; 
         }
         .static-h1 {
-            color: #f8fafc;
-            border-bottom: 0px solid #000000;
+            color: {{THEME_STATIC_H1_COLOR}};
+            border-bottom: {{THEME_STATIC_H1_BORDER}};
             font-family: var(--font-family-headings);
             font-size: 2.2rem;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            text-align: None;
+            text-align: {{H1_ALIGN}};
         }
         .seo-article h2 { color: var(--article-h2); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
         .seo-article h3 { color: var(--article-h3); font-size: 1.25rem; margin-top: 25px; }
@@ -600,44 +598,44 @@
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
     </style>
 
-        <script>
-        (function(w,d,id){
-            var l='dataLayer',i='ga-init';
-            if(w[i]) return; w[i]=true;
-            w[l]=w[l]||[];
-            function gtag(){w[l].push(arguments);}
-            function loadGA(){
-                if(w['ga-loaded']) return; w['ga-loaded']=true;
-                var s=d.createElement('script');
-                s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
-                var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
-                gtag('js', new Date());
-                gtag('config', id);
-            }
-            var t=setTimeout(loadGA, 4000); 
-            ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){
-                w.addEventListener(e, function(){ clearTimeout(t); loadGA(); }, {once:true, passive:true});
-            });
-        })(window,document,'G-VK24F3EX1K');
-        </script>
-        
+
+    <script>
+    (function(w,d,id){
+        var l='dataLayer',i='ga-init';
+        if(w[i]) return; w[i]=true;
+        w[l]=w[l]||[];
+        function gtag(){w[l].push(arguments);}
+        function loadGA(){
+            if(w['ga-loaded']) return; w['ga-loaded']=true;
+            var s=d.createElement('script');
+            s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
+            var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
+            gtag('js', new Date());
+            gtag('config', id);
+        }
+        var t=setTimeout(loadGA, 4000); 
+        ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){
+            w.addEventListener(e, function(){ clearTimeout(t); loadGA(); }, {once:true, passive:true});
+        });
+    })(window,document,'G-VK24F3EX1K');
+    </script>
 </head>
 <body>
-    <header class="h-layout-standard">
+    <header class="{{HEADER_CLASSES}}">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #007aff;"> <div class="logo-text" style="color:#f8fafc;">Stream<span style="color:#007aff;">East</span></div></a>
-            <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
+            <a href="/" class="logo-link">{{LOGO_HTML}}</a>
+            <nav class="nav-links" id="desktopNav">{{HEADER_MENU}}</nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
     </header>
-    <div class="mobile-menu" id="mobileMenu"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></div>
+    <div class="mobile-menu" id="mobileMenu">{{HEADER_MENU}}</div>
 
     <div class="hero-section">
         <div class="hero-inner">
-            <div class="sys-status"><div class="dot"></div> System Status: Online</div>
-            <h1>No. #1 NFL Streaming</h1>
-            <p class="entity-intro">tfdhgdfgd</p>
-            <div class="cat-scroll"><a href="#" class="cat-pill">⚾ MLB</a><a href="/nba" class="cat-pill">🏀 NBA</a><a href="/#ufc" class="cat-pill">🥊 UFC</a></div>
+            <div class="sys-status"><div class="dot"></div> {{THEME_TEXT_SYS_STATUS}}</div>
+            <h1>{{H1_TITLE}}</h1>
+            <p class="entity-intro">{{HERO_TEXT}}</p>
+            <div class="cat-scroll">{{HERO_PILLS}}</div>
         </div>
     </div>
 
@@ -665,29 +663,20 @@
         </div>
 
         <!-- 5. ARTICLE -->
-        <div class="seo-article"><p>dgdgdgdd</p></div>
+        <div class="seo-article">{{ARTICLE_CONTENT}}</div>
 
         <!-- 6. FOOTER LEAGUES -->
         <!-- 6. FOOTER LEAGUES -->
         <div id="footer-leagues-section" class="section-box" style="margin-top:50px;">
             <div class="sec-head"><h2 class="sec-title">🏆 Popular Leagues</h2></div>
-            <div class="leagues-grid"><a href="/nfl-streams/" class="league-card"><span class="l-icon">🏈</span><span>NFL</span></a><a href="/nba-streams/" class="league-card"><span class="l-icon">🏀</span><span>NBA</span></a><a href="/ncaa-streams/" class="league-card"><span class="l-icon">🏆</span><span>NCAA</span></a><a href="/mlb-streams/" class="league-card"><span class="l-icon">⚾</span><span>MLB</span></a><a href="/nhl-streams/" class="league-card"><span class="l-icon">🏒</span><span>NHL</span></a><a href="/ufc-streams/" class="league-card"><span class="l-icon">🥊</span><span>UFC</span></a><a href="/premier-league-streams/" class="league-card"><span class="l-icon">⚽</span><span>Premier League</span></a><a href="/champions-league-streams/" class="league-card"><span class="l-icon">🏆</span><span>Champions League</span></a><a href="/formula-1-streams/" class="league-card"><span class="l-icon">🏆</span><span>Formula 1</span></a><a href="/mls-streams/" class="league-card"><span class="l-icon">🏆</span><span>MLS</span></a><a href="/africa-cup-of-nations-streams/" class="league-card"><span class="l-icon">🏆</span><span>Africa Cup of Nations</span></a><a href="/la-liga-streams/" class="league-card"><span class="l-icon">⚽</span><span>La Liga</span></a><a href="/football-streams/" class="league-card"><span class="l-icon">🏈</span><span>Football</span></a><a href="/soccer-streams/" class="league-card"><span class="l-icon">⚽</span><span>Soccer</span></a><a href="/tennis-streams/" class="league-card"><span class="l-icon">🎾</span><span>Tennis</span></a></div>
+            <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
         </div>
     </main>
     <div id="socialSidebar" class="social-sidebar"></div>
 
     <footer>
-        <div class="footer-grid cols-3">
-    <div>
-        <div class="f-head">Quick Links</div>
-        <div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div>
-    </div>
-    <div class="f-desc">Hello world</div>
-    <div class="f-brand">
-        <img src="/assets/test-logo.webp" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #007aff;"> <div class="logo-text" style="color:#f8fafc;">Stream<span style="color:#007aff;">East</span></div> 
-    </div>
-    </div>
-        <div class="copyright">Copyright</div>
+        {{FOOTER_GRID_CONTENT}}
+        <div class="copyright">{{FOOTER_COPYRIGHT}}</div>
     </footer>
     <div id="mobileFooter" class="mobile-sticky-footer"></div>
 
@@ -697,8 +686,8 @@
     </button>
 
     <script>
-        const SITE_DOMAIN = "https://totalsportek.top";
-        const SHARE_CONFIG = {"counts": {"telegram": 56000, "whatsapp": 76400, "reddit": 880077, "twitter": 98844}, "excluded_pages": "dmca,contact,about,privacy"};
+        const SITE_DOMAIN = "https://{{DOMAIN}}";
+        const SHARE_CONFIG = {{JS_SHARE_COUNTS}};
         
         window.addEventListener('DOMContentLoaded', () => {
             highlightActiveMenu();
