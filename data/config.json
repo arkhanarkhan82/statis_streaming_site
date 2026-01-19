@@ -104,7 +104,7 @@
     "text_section_link": "More",
     "text_watch_btn": "Streams",
     "text_hd_badge": "HD",
-    "text_section_prefix": "Upcoming",
+    "text_section_prefix": "pprefff",
     "match_row_hover_bg": "#334155",
     "match_row_hover_border": "#007aff",
     "section_logo_size": "28",
@@ -215,7 +215,7 @@
     "logo_image_shadow_color": "#007aff",
     "show_more_btn_hover_bg": "#007aff",
     "show_more_btn_hover_text": "#ffffff",
-    "text_section_suffix": "",
+    "text_section_suffix": "sufffff",
     "league_live_title": "Trending League Live Matches ",
     "league_upcoming_prefix": "New Upcoming",
     "league_upcoming_suffix": "Match List"
@@ -305,7 +305,7 @@
       "Football": {
         "score": 79,
         "isLeague": false,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Basketball": {
@@ -329,7 +329,7 @@
       "Soccer": {
         "score": 60,
         "isLeague": false,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Tennis": {
