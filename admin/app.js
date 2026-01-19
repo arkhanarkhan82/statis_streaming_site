@@ -462,6 +462,9 @@ function populateUI() {
     setVal('sitemapStaticPages', s.sitemap_static_pages);
     setVal('sitemapLastMod', s.sitemap_lastmod_manual);
     setVal('ga4Id', s.ga4_id);
+    // CUSTOM INTEGRATIONS
+    renderMetaTagsList(s.custom_meta_tags || []);
+    setVal('customJsCode', s.custom_js || "");
     
     // Auto-generate Sitemap URL for display
     const domain = s.domain || "yoursite.com";
@@ -624,6 +627,30 @@ function injectMissingThemeUI() {
     `;
     themeTab.appendChild(newSection);
 }
+// --- CUSTOM META TAGS HELPER ---
+function renderMetaTagsList(tags) {
+    const container = document.getElementById('metaTagsContainer');
+    if(!container) return;
+    container.innerHTML = '';
+    
+    (tags || []).forEach(tag => {
+        addMetaTagInput(tag);
+    });
+}
+
+window.addMetaTagInput = (value = "") => {
+    const container = document.getElementById('metaTagsContainer');
+    if(!container) return;
+
+    const div = document.createElement('div');
+    div.className = 'input-group';
+    div.style.marginBottom = '0';
+    div.innerHTML = `
+        <input type="text" class="meta-tag-input" value="${value.replace(/"/g, '&quot;')}" placeholder='<meta name="..." content="..." />'>
+        <button class="btn-danger" onclick="this.parentElement.remove()">×</button>
+    `;
+    container.appendChild(div);
+};
 
 function renderThemeSettings() {
     const t = configData.theme || {};
@@ -1530,7 +1557,8 @@ document.getElementById('saveBtn').onclick = async () => {
     configData.site_settings = {
         sitemap_enabled: document.getElementById('sitemapEnable').checked,
         sitemap_include_leagues: document.getElementById('sitemapIncludeLeagues').checked,
-        sitemap_static_pages: getVal('sitemapStaticPages'), sitemap_lastmod_manual: getVal('sitemapLastMod'), ga4_id: getVal('ga4Id'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'),
+        sitemap_static_pages: getVal('sitemapStaticPages'), sitemap_lastmod_manual: getVal('sitemapLastMod'), ga4_id: getVal('ga4Id'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'), custom_js: getVal('customJsCode'),
+        custom_meta_tags: Array.from(document.querySelectorAll('.meta-tag-input')).map(el => el.value.trim()).filter(v => v !== ""),
         domain: getVal('siteDomain'), logo_url: getVal('logoUrl'), favicon_url: getVal('faviconUrl'),
         footer_copyright: getVal('footerCopyright'), footer_disclaimer: getVal('footerDisclaimer'),
         target_country: c,
