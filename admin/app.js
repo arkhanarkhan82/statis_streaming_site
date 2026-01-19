@@ -674,340 +674,433 @@ window.toggleFooterSlots = () => {
     if(slot3) slot3.style.display = (cols === '3') ? 'block' : 'none';
 };
 // ==========================================
-// 1. EXPANDED THEME PRESETS (FULL SITE STYLE)
+// 1. PROFESSIONAL THEME PRESETS (FULL SUITE)
 // ==========================================
 const THEME_PRESETS = {
     red: {
-        // --- 1. TYPOGRAPHY & BASE ---
+        // --- 1. SITE IDENTITY & LAYOUT ---
         font_family_base: "system-ui, -apple-system, sans-serif",
-        font_family_headings: "'Arial Black', 'Helvetica', sans-serif",
+        font_family_headings: "'Inter', system-ui, sans-serif",
         border_radius_base: "4",
         container_max_width: "1200",
         section_logo_size: "24",
-        static_h1_color: "#ffffff",
-        static_h1_align: "left",
-        static_h1_border_width: "2",
-        static_h1_border_color: "#D00000",
+        
+        // --- 2. GLOBAL PALETTE (High Contrast / Netflix Style) ---
+        brand_primary: "#E50914",      // Iconic Broadcast Red
+        brand_dark: "#B81D24",         // Deeper Red for hover
+        accent_gold: "#FFD700",        // Gold for timers/status
+        status_green: "#46d369",       // Success green
+        bg_body: "#000000",            // Pure Black (OLED friendly)
+        bg_panel: "#141414",           // Dark Gray Panels
+        text_main: "#FFFFFF",          // White text
+        text_muted: "#B3B3B3",         // Netflix-style muted text
+        border_color: "#333333",       // Subtle borders
+        scrollbar_thumb_color: "#E50914",
 
-        // --- 2. PALETTE ---
-        brand_primary: "#D00000",
-        brand_dark: "#8a0000",
-        accent_gold: "#FFD700",
-        status_green: "#00e676",
-        bg_body: "#050505",
-        bg_panel: "#0f0f0f",
-        text_main: "#ffffff",
-        text_muted: "#888888",
-        border_color: "#222222",
-        scrollbar_thumb_color: "#D00000",
-
-        // --- 3. HEADER ---
+        // --- 3. HEADER (Standard Professional) ---
         header_layout: "standard",
-        header_bg: "#080808",
-        header_text_color: "#cccccc",
-        header_link_active_color: "#D00000",
-        header_link_hover_color: "#ffffff",
-        header_highlight_color: "#ffffff",
-        header_highlight_hover: "#FFD700",
+        header_bg: "#000000",
+        header_text_color: "#e5e5e5",
+        header_link_active_color: "#E50914",
+        header_link_hover_color: "#FFFFFF",
+        header_highlight_color: "#FFFFFF",
+        header_highlight_hover: "#E50914",
         header_max_width: "1200",
-        logo_p1_color: "#ffffff",
-        logo_p2_color: "#D00000",
-        header_border_bottom: "1px solid var(--brand-primary)",
+        logo_p1_color: "#E50914",
+        logo_p2_color: "#FFFFFF",
+        header_border_bottom: "1px solid #333333",
 
-        // --- 4. HERO SECTION ---
+        // --- 4. HERO SECTION (Boxed "Featured" Look) ---
         display_hero: "block",
         hero_layout_mode: "box",
         hero_content_align: "left",
         hero_menu_visible: "flex",
-        hero_bg_style: "gradient",
-        hero_gradient_start: "#2a0505",
+        hero_bg_style: "image", // Uses image or fallback to solid
+        hero_bg_solid: "#000000",
+        hero_gradient_start: "#000000", 
         hero_gradient_end: "#000000",
-        hero_h1_color: "#ffffff",
-        hero_intro_color: "#aaaaaa",
-        hero_box_width: "1100px",
+        hero_bg_image_overlay_opacity: "0.4",
+        hero_h1_color: "#FFFFFF",
+        hero_intro_color: "#CCCCCC",
+        hero_box_width: "1200px",
         hero_box_border_width: "1",
         hero_box_border_color: "#333333",
         hero_border_bottom_box: true,
         hero_main_border_pos: "none",
-        hero_pill_bg: "#111111",
-        hero_pill_text: "#cccccc",
-        hero_pill_hover_bg: "#D00000",
-        hero_pill_hover_text: "#ffffff",
+        hero_pill_bg: "rgba(255,255,255,0.1)",
+        hero_pill_text: "#e5e5e5",
+        hero_pill_hover_bg: "#E50914",
+        hero_pill_hover_text: "#FFFFFF",
         hero_pill_radius: "4",
 
-        // --- 5. MATCH ROWS ---
-        match_row_bg: "#121212",
-        match_row_border: "#222222",
-        match_row_hover_bg: "#1a1a1a",
-        match_row_hover_border: "#D00000",
-        match_row_team_name_color: "#ffffff",
-        match_row_time_main_color: "#aaaaaa",
-        match_row_live_bg_start: "#2a0505",
-        match_row_live_bg_end: "#121212",
-        match_row_live_text_color: "#D00000",
-        match_row_live_border_left: "3px solid var(--brand-primary)",
-        row_height_mode: "standard",
-        match_row_btn_watch_bg: "#D00000",
-        match_row_btn_watch_text: "#ffffff",
+        // --- 5. SECTION HEADERS & BORDERS (Visual Hierarchy) ---
+        // Live gets a thick red border to pop
+        sec_border_live_width: "2",
+        sec_border_live_color: "#E50914",
+        // Upcoming gets a subtle border
+        sec_border_upcoming_width: "1",
+        sec_border_upcoming_color: "#333333",
+        // Wildcard/Featured gets a brand color accent
+        sec_border_wildcard_width: "1",
+        sec_border_wildcard_color: "#E50914",
+        sec_border_leagues_width: "1",
+        sec_border_leagues_color: "#333333",
+        sec_border_grouped_width: "1",
+        sec_border_grouped_color: "#333333",
+        sec_border_league_upcoming_width: "1",
+        sec_border_league_upcoming_color: "#333333",
 
-        // --- 6. FOOTER & LEAGUES ---
+        // --- 6. MATCH ROWS (Clean & Readable) ---
+        match_row_bg: "#181818",
+        match_row_border: "#333333",
+        match_row_hover_bg: "#222222",
+        match_row_hover_border: "#E50914",
+        match_row_team_name_color: "#FFFFFF",
+        match_row_time_main_color: "#B3B3B3",
+        match_row_live_bg_start: "rgba(229, 9, 20, 0.15)", // Red tint
+        match_row_live_bg_end: "transparent",
+        match_row_live_text_color: "#E50914",
+        match_row_live_border_left: "4px solid #E50914",
+        row_height_mode: "standard",
+        match_row_btn_watch_bg: "#E50914",
+        match_row_btn_watch_text: "#FFFFFF",
+
+        // --- 7. FOOTER ---
         footer_columns: "3",
-        footer_bg_start: "#0e0e0e",
+        footer_bg_start: "#141414",
         footer_bg_end: "#000000",
-        footer_desc_color: "#666666",
-        footer_link_color: "#999999",
+        footer_desc_color: "#808080",
+        footer_link_color: "#B3B3B3",
         footer_text_align_desktop: "left",
         footer_show_disclaimer: true,
-        league_card_bg: "#151515",
-        league_card_text: "#cccccc",
+        league_card_bg: "#222222",
+        league_card_text: "#FFFFFF",
+        league_card_border_width: "1",
         league_card_border_color: "#333333",
-        league_card_hover_bg: "#D00000",
-        league_card_hover_text: "#ffffff",
+        league_card_hover_bg: "#E50914",
+        league_card_hover_text: "#FFFFFF",
+        league_card_hover_border_color: "#E50914",
         league_card_radius: "4",
 
-        // --- 7. ELEMENTS & EXTRAS ---
-        show_more_btn_bg: "#151515",
-        show_more_btn_text: "#cccccc",
-        show_more_btn_radius: "4px",
-        back_to_top_bg: "#D00000",
-        back_to_top_icon_color: "#ffffff",
-        back_to_top_radius: "4px",
-        sys_status_visible: true,
-        sys_status_bg_color: "#D00000",
-        sys_status_bg_opacity: "0.1",
-        sys_status_text_color: "#D00000",
-        sys_status_dot_color: "#D00000",
+        // --- 8. SEO ARTICLE STYLING (Subtle & Clean) ---
+        article_bg: "#111111",
+        article_text: "#B3B3B3",
+        article_line_height: "1.6",
+        article_bullet_color: "#E50914",
+        article_link_color: "#E50914",
+        article_h2_color: "#FFFFFF",
+        article_h2_border_width: "1",
+        article_h2_border_color: "#333333",
+        article_h3_color: "#E5E5E5",
+        article_h4_color: "#CCCCCC",
 
-        // --- 8. WATCH PAGE ---
+        // --- 9. STATIC PAGES ---
+        static_h1_color: "#FFFFFF",
+        static_h1_align: "left",
+        static_h1_border_width: "2",
+        static_h1_border_color: "#E50914",
+
+        // --- 10. SYSTEM STATUS ---
+        sys_status_visible: true,
+        sys_status_text_color: "#E50914",
+        sys_status_bg_color: "#E50914",
+        sys_status_bg_opacity: "0.1",
+        sys_status_border_color: "#E50914",
+        sys_status_border_width: "1",
+        sys_status_radius: "4",
+        sys_status_dot_color: "#E50914",
+
+        // --- 11. WATCH PAGE ---
         watch_sidebar_swap: false,
-        chat_header_bg: "#1a0505",
-        chat_header_text: "#D00000",
-        watch_btn_bg: "#D00000",
-        watch_btn_text: "#ffffff",
-        watch_table_head_bg: "#1a1a1a",
-        watch_table_body_bg: "#121212",
-        watch_team_color: "#ffffff",
-        watch_vs_color: "#D00000"
+        watch_show_ad1: true,
+        watch_show_discord: true,
+        watch_show_ad2: true,
+        chat_header_bg: "#141414",
+        chat_header_text: "#E50914",
+        watch_table_head_bg: "#181818",
+        watch_table_body_bg: "#111111",
+        watch_table_border: "#333333",
+        watch_team_color: "#FFFFFF",
+        watch_vs_color: "#E50914",
+        watch_btn_bg: "#E50914",
+        watch_btn_text: "#FFFFFF"
     },
 
     blue: {
-        // --- 1. TYPOGRAPHY & BASE ---
+        // --- 1. SITE IDENTITY & LAYOUT ---
         font_family_base: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
         font_family_headings: "inherit",
         border_radius_base: "8",
         container_max_width: "1400",
         section_logo_size: "28",
-        static_h1_color: "#f8fafc",
+
+        // --- 2. GLOBAL PALETTE (Modern Tech / Sky Style) ---
+        brand_primary: "#007AFF",      // Vivid Tech Blue
+        brand_dark: "#0051A8",         // Deep Blue
+        accent_gold: "#00C7FF",        // Cyan accent for timers
+        status_green: "#34C759",       // Apple style green
+        bg_body: "#0F172A",            // Slate 900
+        bg_panel: "#1E293B",           // Slate 800
+        text_main: "#F8FAFC",          // Slate 50
+        text_muted: "#94A3B8",         // Slate 400
+        border_color: "#334155",       // Slate 700
+        scrollbar_thumb_color: "#007AFF",
+
+        // --- 3. HEADER (Glassy & Wide) ---
+        header_layout: "standard",
+        header_bg: "rgba(15, 23, 42, 0.8)", // Glass effect
+        header_text_color: "#94A3B8",
+        header_link_active_color: "#007AFF",
+        header_link_hover_color: "#FFFFFF",
+        header_highlight_color: "#FFFFFF",
+        header_highlight_hover: "#00C7FF",
+        header_max_width: "1400",
+        logo_p1_color: "#F8FAFC",
+        logo_p2_color: "#007AFF",
+        header_border_bottom: "1px solid rgba(51, 65, 85, 0.5)",
+
+        // --- 4. HERO SECTION (Full Width Modern) ---
+        display_hero: "block",
+        hero_layout_mode: "full",
+        hero_content_align: "center",
+        hero_menu_visible: "flex",
+        hero_bg_style: "gradient",
+        hero_gradient_start: "#0F172A",
+        hero_gradient_end: "#020617",
+        hero_h1_color: "#FFFFFF",
+        hero_intro_color: "#94A3B8",
+        hero_pill_bg: "#1E293B",
+        hero_pill_text: "#CBD5E1",
+        hero_pill_hover_bg: "#007AFF",
+        hero_pill_hover_text: "#FFFFFF",
+        hero_pill_radius: "50",
+        hero_main_border_pos: "full",
+        hero_main_border_width: "1",
+        hero_main_border_color: "#334155",
+
+        // --- 5. SECTION HEADERS ---
+        sec_border_live_width: "1",
+        sec_border_live_color: "#007AFF", // Blue for live here
+        sec_border_upcoming_width: "1",
+        sec_border_upcoming_color: "#334155",
+        sec_border_wildcard_width: "1",
+        sec_border_wildcard_color: "#00C7FF",
+        sec_border_leagues_width: "1",
+        sec_border_leagues_color: "#334155",
+        sec_border_grouped_width: "1",
+        sec_border_grouped_color: "#334155",
+        sec_border_league_upcoming_width: "1",
+        sec_border_league_upcoming_color: "#334155",
+
+        // --- 6. MATCH ROWS (Spacious) ---
+        match_row_bg: "#1E293B",
+        match_row_border: "#334155",
+        match_row_hover_bg: "#334155",
+        match_row_hover_border: "#007AFF",
+        match_row_team_name_color: "#F8FAFC",
+        match_row_time_main_color: "#94A3B8",
+        match_row_live_bg_start: "rgba(0, 122, 255, 0.15)",
+        match_row_live_bg_end: "transparent",
+        match_row_live_text_color: "#60A5FA",
+        match_row_live_border_left: "4px solid #007AFF",
+        row_height_mode: "spacious", // Airy feel
+        match_row_btn_watch_bg: "#007AFF",
+        match_row_btn_watch_text: "#FFFFFF",
+
+        // --- 7. FOOTER ---
+        footer_columns: "2",
+        footer_bg_start: "#1E293B",
+        footer_bg_end: "#0F172A",
+        footer_desc_color: "#94A3B8",
+        footer_link_color: "#64748B",
+        footer_text_align_desktop: "center",
+        footer_show_disclaimer: false,
+        league_card_bg: "#334155",
+        league_card_text: "#F8FAFC",
+        league_card_border_width: "0",
+        league_card_border_color: "transparent",
+        league_card_hover_bg: "#007AFF",
+        league_card_hover_text: "#FFFFFF",
+        league_card_radius: "8",
+
+        // --- 8. SEO ARTICLE ---
+        article_bg: "transparent",
+        article_text: "#94A3B8",
+        article_line_height: "1.7",
+        article_bullet_color: "#007AFF",
+        article_link_color: "#00C7FF",
+        article_h2_color: "#F8FAFC",
+        article_h2_border_width: "0",
+        article_h2_border_color: "transparent",
+        article_h3_color: "#E2E8F0",
+        article_h4_color: "#CBD5E1",
+
+        // --- 9. STATIC PAGES ---
+        static_h1_color: "#F8FAFC",
         static_h1_align: "center",
         static_h1_border_width: "0",
         static_h1_border_color: "transparent",
 
-        // --- 2. PALETTE ---
-        brand_primary: "#3b82f6",
-        brand_dark: "#1e3a8a",
-        accent_gold: "#38bdf8",
-        status_green: "#00e676",
-        bg_body: "#020617",
-        bg_panel: "#0f172a",
-        text_main: "#f8fafc",
-        text_muted: "#94a3b8",
-        border_color: "#1e293b",
-        scrollbar_thumb_color: "#334155",
-
-        // --- 3. HEADER ---
-        header_layout: "standard",
-        header_bg: "rgba(15, 23, 42, 0.8)",
-        header_text_color: "#94a3b8",
-        header_link_active_color: "#3b82f6",
-        header_link_hover_color: "#ffffff",
-        header_highlight_color: "#ffffff",
-        header_highlight_hover: "#38bdf8",
-        header_max_width: "1400",
-        logo_p1_color: "#f8fafc",
-        logo_p2_color: "#3b82f6",
-        header_border_bottom: "1px solid rgba(255,255,255,0.05)",
-
-        // --- 4. HERO SECTION ---
-        display_hero: "block",
-        hero_layout_mode: "full",
-        hero_content_align: "center",
-        hero_menu_visible: "flex",
-        hero_bg_style: "gradient",
-        hero_gradient_start: "#0f172a",
-        hero_gradient_end: "#020617",
-        hero_h1_color: "#ffffff",
-        hero_intro_color: "#cbd5e1",
-        hero_pill_bg: "#1e293b",
-        hero_pill_text: "#cbd5e1",
-        hero_pill_hover_bg: "#3b82f6",
-        hero_pill_hover_text: "#ffffff",
-        hero_pill_radius: "50",
-        hero_main_border_pos: "full",
-        hero_main_border_width: "1",
-        hero_main_border_color: "#1e293b",
-
-        // --- 5. MATCH ROWS ---
-        match_row_bg: "#0f172a",
-        match_row_border: "#1e293b",
-        match_row_hover_bg: "#172554",
-        match_row_hover_border: "#3b82f6",
-        match_row_team_name_color: "#f1f5f9",
-        match_row_time_main_color: "#94a3b8",
-        match_row_live_bg_start: "#172554",
-        match_row_live_bg_end: "#0f172a",
-        match_row_live_text_color: "#60a5fa",
-        match_row_live_border_left: "4px solid var(--brand-primary)",
-        row_height_mode: "spacious",
-        match_row_btn_watch_bg: "#3b82f6",
-        match_row_btn_watch_text: "#ffffff",
-
-        // --- 6. FOOTER & LEAGUES ---
-        footer_columns: "2",
-        footer_bg_start: "#0f172a",
-        footer_bg_end: "#020617",
-        footer_desc_color: "#64748b",
-        footer_link_color: "#94a3b8",
-        footer_text_align_desktop: "center",
-        footer_show_disclaimer: false,
-        league_card_bg: "#1e293b",
-        league_card_text: "#f1f5f9",
-        league_card_border_color: "#334155",
-        league_card_hover_bg: "#3b82f6",
-        league_card_hover_text: "#ffffff",
-        league_card_radius: "8",
-
-        // --- 7. ELEMENTS & EXTRAS ---
-        show_more_btn_bg: "#1e293b",
-        show_more_btn_text: "#cbd5e1",
-        show_more_btn_radius: "30px",
-        back_to_top_bg: "#3b82f6",
-        back_to_top_icon_color: "#ffffff",
-        back_to_top_radius: "50%",
+        // --- 10. SYSTEM STATUS ---
         sys_status_visible: true,
-        sys_status_bg_color: "#3b82f6",
-        sys_status_bg_opacity: "0.1",
-        sys_status_text_color: "#60a5fa",
-        sys_status_dot_color: "#60a5fa",
+        sys_status_text_color: "#60A5FA",
+        sys_status_bg_color: "#007AFF",
+        sys_status_bg_opacity: "0.15",
+        sys_status_border_color: "#007AFF",
+        sys_status_border_width: "1",
+        sys_status_radius: "20",
+        sys_status_dot_color: "#60A5FA",
 
-        // --- 8. WATCH PAGE ---
-        watch_sidebar_swap: true,
-        chat_header_bg: "#1e293b",
-        chat_header_text: "#f8fafc",
-        watch_btn_bg: "#3b82f6",
-        watch_btn_text: "#ffffff",
-        watch_table_head_bg: "#1e293b",
-        watch_table_body_bg: "#0f172a",
-        watch_team_color: "#f8fafc",
-        watch_vs_color: "#3b82f6"
+        // --- 11. WATCH PAGE ---
+        watch_sidebar_swap: true, // Chat on Left for desktop apps feel
+        chat_header_bg: "#1E293B",
+        chat_header_text: "#F8FAFC",
+        watch_table_head_bg: "#334155",
+        watch_table_body_bg: "#1E293B",
+        watch_table_border: "#475569",
+        watch_team_color: "#F8FAFC",
+        watch_vs_color: "#007AFF",
+        watch_btn_bg: "#007AFF",
+        watch_btn_text: "#FFFFFF"
     },
 
     green: {
-        // --- 1. TYPOGRAPHY & BASE ---
-        font_family_base: "'Trebuchet MS', 'Lucida Sans', sans-serif",
-        font_family_headings: "'Impact', 'Arial Black', sans-serif",
-        border_radius_base: "0",
+        // --- 1. SITE IDENTITY & LAYOUT ---
+        font_family_base: "'Roboto Condensed', 'Segoe UI', sans-serif", // Data-dense font
+        font_family_headings: "'Impact', 'Arial Black', sans-serif", // Sporty headlines
+        border_radius_base: "0", // Square / Sharp edges
         container_max_width: "1600",
-        section_logo_size: "30",
-        static_h1_color: "#ffffff",
-        static_h1_align: "center",
-        static_h1_border_width: "1",
-        static_h1_border_color: "#16a34a",
+        section_logo_size: "22",
 
-        // --- 2. PALETTE ---
-        brand_primary: "#16a34a",
-        brand_dark: "#14532d",
-        accent_gold: "#facc15",
-        status_green: "#22c55e",
-        bg_body: "#020402",
-        bg_panel: "#051105",
-        text_main: "#e2e8f0",
-        text_muted: "#86efac",
-        border_color: "#14532d",
-        scrollbar_thumb_color: "#16a34a",
+        // --- 2. GLOBAL PALETTE (Betting/Stats/Pitch Style) ---
+        brand_primary: "#00E676",      // Neon Green
+        brand_dark: "#00A854",         // Darker Green
+        accent_gold: "#FFEB3B",        // Bright Yellow
+        status_green: "#00E676",
+        bg_body: "#050505",            // Pitch Black
+        bg_panel: "#121212",           // Dark Gray
+        text_main: "#EEEEEE",          // Off-white
+        text_muted: "#AAAAAA",         // Silver
+        border_color: "#2A2A2A",       // Dark borders
+        scrollbar_thumb_color: "#00E676",
 
-        // --- 3. HEADER ---
-        header_layout: "center",
-        header_bg: "#051105",
-        header_text_color: "#86efac",
-        header_link_active_color: "#ffffff",
-        header_link_hover_color: "#16a34a",
+        // --- 3. HEADER (App Style) ---
+        header_layout: "center",       // Mobile-first style
+        header_bg: "#080808",
+        header_text_color: "#AAAAAA",
+        header_link_active_color: "#FFFFFF",
+        header_link_hover_color: "#00E676",
+        header_highlight_color: "#00E676",
+        header_highlight_hover: "#FFFFFF",
         header_max_width: "1600",
-        logo_p1_color: "#ffffff",
-        logo_p2_color: "#16a34a",
-        header_border_bottom: "2px solid #16a34a",
+        logo_p1_color: "#FFFFFF",
+        logo_p2_color: "#00E676",
+        header_border_bottom: "2px solid #00E676", // Techy bottom line
 
-        // --- 4. HERO SECTION ---
+        // --- 4. HERO SECTION (Compact) ---
         display_hero: "block",
         hero_layout_mode: "full",
         hero_content_align: "center",
         hero_menu_visible: "flex",
         hero_bg_style: "gradient",
-        hero_gradient_start: "#052e16",
-        hero_gradient_end: "#020402",
-        hero_h1_color: "#ffffff",
-        hero_intro_color: "#86efac",
-        hero_pill_bg: "#051105",
-        hero_pill_text: "#86efac",
-        hero_pill_hover_bg: "#16a34a",
-        hero_pill_hover_text: "#000000",
+        hero_gradient_start: "#0A2912", // Dark Forest Green
+        hero_gradient_end: "#050505",
+        hero_h1_color: "#FFFFFF",
+        hero_intro_color: "#AAAAAA",
+        hero_pill_bg: "#1A1A1A",
+        hero_pill_text: "#CCCCCC",
+        hero_pill_hover_bg: "#00E676",
+        hero_pill_hover_text: "#000000", // Black text on green pill
         hero_pill_radius: "0",
         hero_main_border_pos: "full",
-        hero_main_border_width: "2",
-        hero_main_border_color: "#16a34a",
+        hero_main_border_width: "1",
+        hero_main_border_color: "#00E676",
 
-        // --- 5. MATCH ROWS ---
-        match_row_bg: "#051105",
-        match_row_border: "#14532d",
-        match_row_hover_bg: "#052e16",
-        match_row_hover_border: "#22c55e",
-        match_row_team_name_color: "#ffffff",
-        match_row_time_main_color: "#86efac",
-        match_row_live_bg_start: "#052e16",
-        match_row_live_bg_end: "#051105",
-        match_row_live_text_color: "#22c55e",
-        match_row_live_border_left: "5px solid #16a34a",
-        row_height_mode: "compact",
-        match_row_btn_watch_bg: "#16a34a",
+        // --- 5. SECTION HEADERS ---
+        sec_border_live_width: "1",
+        sec_border_live_color: "#00E676",
+        sec_border_upcoming_width: "1",
+        sec_border_upcoming_color: "#2A2A2A",
+        sec_border_wildcard_width: "1",
+        sec_border_wildcard_color: "#FFEB3B",
+        sec_border_leagues_width: "1",
+        sec_border_leagues_color: "#2A2A2A",
+        sec_border_grouped_width: "1",
+        sec_border_grouped_color: "#2A2A2A",
+        sec_border_league_upcoming_width: "1",
+        sec_border_league_upcoming_color: "#2A2A2A",
+
+        // --- 6. MATCH ROWS (Compact Data) ---
+        match_row_bg: "#121212",
+        match_row_border: "#2A2A2A",
+        match_row_hover_bg: "#1A1A1A",
+        match_row_hover_border: "#00E676",
+        match_row_team_name_color: "#FFFFFF",
+        match_row_time_main_color: "#AAAAAA",
+        match_row_live_bg_start: "#0A2912",
+        match_row_live_bg_end: "#121212",
+        match_row_live_text_color: "#00E676",
+        match_row_live_border_left: "3px solid #00E676",
+        row_height_mode: "compact", // High density
+        match_row_btn_watch_bg: "#00E676",
         match_row_btn_watch_text: "#000000",
 
-        // --- 6. FOOTER & LEAGUES ---
+        // --- 7. FOOTER ---
         footer_columns: "3",
-        footer_bg_start: "#051105",
+        footer_bg_start: "#0A0A0A",
         footer_bg_end: "#000000",
-        footer_desc_color: "#86efac",
-        footer_link_color: "#16a34a",
+        footer_desc_color: "#888888",
+        footer_link_color: "#00E676",
         footer_text_align_desktop: "left",
         footer_show_disclaimer: true,
-        league_card_bg: "#052e16",
-        league_card_text: "#ffffff",
-        league_card_border_color: "#16a34a",
-        league_card_hover_bg: "#22c55e",
+        league_card_bg: "#1A1A1A",
+        league_card_text: "#FFFFFF",
+        league_card_border_width: "1",
+        league_card_border_color: "#333333",
+        league_card_hover_bg: "#00E676",
         league_card_hover_text: "#000000",
+        league_card_hover_border_color: "#00E676",
         league_card_radius: "0",
 
-        // --- 7. ELEMENTS & EXTRAS ---
-        show_more_btn_bg: "#052e16",
-        show_more_btn_text: "#86efac",
-        show_more_btn_radius: "0px",
-        back_to_top_bg: "#16a34a",
-        back_to_top_icon_color: "#000000",
-        back_to_top_radius: "0%",
-        sys_status_visible: true,
-        sys_status_bg_color: "#16a34a",
-        sys_status_bg_opacity: "0.2",
-        sys_status_text_color: "#4ade80",
-        sys_status_dot_color: "#4ade80",
+        // --- 8. SEO ARTICLE ---
+        article_bg: "#0F0F0F",
+        article_text: "#AAAAAA",
+        article_line_height: "1.5",
+        article_bullet_color: "#00E676",
+        article_link_color: "#00E676",
+        article_h2_color: "#FFFFFF",
+        article_h2_border_width: "1",
+        article_h2_border_color: "#00E676",
+        article_h3_color: "#DDDDDD",
+        article_h4_color: "#CCCCCC",
 
-        // --- 8. WATCH PAGE ---
+        // --- 9. STATIC PAGES ---
+        static_h1_color: "#FFFFFF",
+        static_h1_align: "left",
+        static_h1_border_width: "2",
+        static_h1_border_color: "#00E676",
+
+        // --- 10. SYSTEM STATUS ---
+        sys_status_visible: true,
+        sys_status_text_color: "#00E676",
+        sys_status_bg_color: "#00E676",
+        sys_status_bg_opacity: "0.1",
+        sys_status_border_color: "#00E676",
+        sys_status_border_width: "1",
+        sys_status_radius: "0",
+        sys_status_dot_color: "#00E676",
+
+        // --- 11. WATCH PAGE ---
         watch_sidebar_swap: false,
-        chat_header_bg: "#052e16",
-        chat_header_text: "#ffffff",
-        watch_btn_bg: "#16a34a",
-        watch_btn_text: "#000000",
-        watch_table_head_bg: "#052e16",
-        watch_table_body_bg: "#051105",
-        watch_team_color: "#ffffff",
-        watch_vs_color: "#22c55e"
+        chat_header_bg: "#0A2912",
+        chat_header_text: "#00E676",
+        watch_table_head_bg: "#1A1A1A",
+        watch_table_body_bg: "#121212",
+        watch_table_border: "#333333",
+        watch_team_color: "#FFFFFF",
+        watch_vs_color: "#00E676",
+        watch_btn_bg: "#00E676",
+        watch_btn_text: "#000000"
     }
 };
 // ==========================================
