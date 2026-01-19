@@ -17,9 +17,9 @@
     "font_family_headings": "'Courier New', monospace",
     "border_radius_base": "8",
     "container_max_width": "1100",
-    "brand_primary": "#d00000",
-    "brand_dark": "#8a0000",
-    "accent_gold": "#ffd700",
+    "brand_primary": "#f5f5f5",
+    "brand_dark": "#100f0f",
+    "accent_gold": "#11100e",
     "status_green": "#00e676",
     "bg_body": "#050505",
     "bg_panel": "#0f0f0f",
@@ -138,7 +138,7 @@
     "article_h2_border_color": "#05c0e6",
     "article_h3_color": "#4ff906",
     "article_h4_color": "#df2707",
-    "league_card_bg": "#bb1b1b",
+    "league_card_bg": "#090606",
     "league_card_text": "#e1dbdb",
     "league_card_border_color": "#11494a",
     "league_card_border_width": "3",
@@ -201,7 +201,9 @@
     "watch_info_btn_text": "#000000",
     "watch_info_btn_label": "",
     "watch_server_active_bg": "#000000",
-    "watch_server_text": "#000000"
+    "watch_server_text": "#000000",
+    "id_wildcard": "",
+    "id_top_upcoming": ""
   },
   "sport_priorities": {
     "US": {
@@ -606,7 +608,7 @@
     "font_family_headings": "'Courier New', monospace",
     "border_radius_base": "5",
     "container_max_width": "950",
-    "brand_primary": "#d00000",
+    "brand_primary": "#0c0303",
     "brand_dark": "#8a0000",
     "accent_gold": "#ffd700",
     "status_green": "#00e676",
@@ -787,7 +789,9 @@
     "watch_info_btn_text": "#000000",
     "watch_info_btn_label": "",
     "watch_server_active_bg": "#000000",
-    "watch_server_text": "#000000"
+    "watch_server_text": "#000000",
+    "id_wildcard": "",
+    "id_top_upcoming": ""
   },
   "articles": {
     "league": "\n<p>Experience the thrill of <strong>{{NAME}}</strong>, the premier competition in <strong>{{SPORT}}</strong>. Whether you are a die-hard fan following the standings or a casual viewer catching a big game, <strong>{{DOMAIN}}</strong> offers comprehensive access to every match of the {{YEAR}} season. We are dedicated to providing high-definition <strong>{{SPORT}} streams</strong> that connect you directly to the stadium atmosphere.</p>\n\n<h2>Why {{NAME}} is the Pinnacle of {{SPORT}}</h2>\n<p>The <strong>{{NAME}}</strong> represents the highest level of athletic performance in the world of {{SPORT}}. With historic rivalries and world-class talent, every game carries significant weight. Our platform stacks the most important entities—from the star players to the iconic venues—ensuring you get the full context of the match.</p>\n<ul>\n    <li><strong>Complete {{SPORT}} Schedule:</strong> Don't miss a single round. We track every {{NAME}} fixture in real-time.</li>\n    <li><strong>Adaptive HD Streaming:</strong> Our player optimizes {{SPORT}} action for fast-paced movement, ensuring you see every play clearly.</li>\n    <li><strong>Cross-Device Compatibility:</strong> Watch {{NAME}} on your phone, tablet, or desktop without installing any apps.</li>\n</ul>\n\n<h2>How to Stream {{NAME}} Games on {{DOMAIN}}</h2>\n<p>We make it easy to follow your favorite <strong>{{SPORT}} teams</strong>. Simply locate your match in the schedule above. The list is sorted chronologically, prioritizing live {{NAME}} events so you can jump straight into the action. Our links are vetted for stability, ensuring a seamless viewing experience even during high-traffic <strong>{{NAME}} playoffs</strong> or finals.</p>\n\n<h3>{{NAME}} Streaming FAQ</h3>\n<p><strong>Is this service free?</strong><br>\nYes. We believe that <strong>{{SPORT}}</strong> fans shouldn't be locked behind paywalls. {{DOMAIN}} provides open access to {{NAME}} streams.</p>\n\n<p><strong>What is the video quality?</strong><br>\nWe aim for 1080p and 720p definition. <strong>{{SPORT}}</strong> requires high frame rates to track the fast movement, and our streams are selected to handle this demand.</p>",
