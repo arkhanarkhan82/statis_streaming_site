@@ -401,6 +401,9 @@ def render_page(template, config, page_data, theme_override=None):
     hero_txt = page_data.get('hero_text') or page_data.get('meta_desc') or ""
     # --- ADD THIS LINE TO DEFINE SITE NAME ---
     full_site_name = f"{s.get('title_part_1', 'Stream')}{s.get('title_part_2', 'East')}".strip()
+    # --- NEW: DETERMINE HTML LANG ---
+    target_c = s.get('target_country', 'US')
+    html_lang_code = "en-GB" if target_c == "UK" else "en-US"
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
