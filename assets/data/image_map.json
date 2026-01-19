@@ -5463,7 +5463,11 @@
         "Gauthier Onclin": "assets/logos/upstreams/gauthier-onclin.webp",
         "Zsombor Piros": "assets/logos/upstreams/zsombor-piros.webp",
         "FK Crvena Zvezda": "assets/logos/streamed/fk-crvena-zvezda.webp",
-        "Brighton": "assets/logos/upstreams/brighton.webp"
+        "Brighton": "assets/logos/upstreams/brighton.webp",
+        "Valencia Basketball": "assets/logos/streamed/valencia-basketball.webp",
+        "Estrela": "assets/logos/upstreams/estrela.webp",
+        "Sandugash Kenzhibayeva": "assets/logos/upstreams/sandugash-kenzhibayeva.webp",
+        "Petr Brunclik": "assets/logos/upstreams/petr-brunclik.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5931,6 +5935,7 @@
         "Championship League Invitational 2026": "assets/logos/leagues/championship-league-invitational-2026.webp",
         "World Cup 2026 U19 - Gr.B": "assets/logos/leagues/world-cup-2026-u19-grb.webp",
         "Afghanistan and West Indies in UAE, 3 T20I Series": "assets/logos/leagues/afghanistan-and-west-indies-in-uae-3-t20i-series.webp",
-        "NCAA Division I, FBS, Playoffs": "assets/logos/leagues/ncaa-division-i-fbs-playoffs.webp"
+        "NCAA Division I, FBS, Playoffs": "assets/logos/leagues/ncaa-division-i-fbs-playoffs.webp",
+        "Portugal Primeira Liga": "assets/logos/leagues/portugal-primeira-liga.webp"
     }
 }
