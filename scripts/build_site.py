@@ -221,6 +221,7 @@ def render_page(template, config, page_data, theme_override=None):
         'hero_border_top': False, 'hero_border_left': False, 'hero_border_right': False, 'hero_border_bottom_box': False,
         'hero_main_border_pos': 'full', 'hero_main_border_width': '1', 'hero_main_border_color': '#334155',
         'display_hero': 'block',
+        'live_dot_color': '#ef4444',
         
         # 5. Footer
         'footer_columns': '2', 'footer_bg_start': '#0f172a', 'footer_bg_end': '#020617', 
