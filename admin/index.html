@@ -108,6 +108,16 @@
     <p class="desc" style="margin-bottom:5px;">Paste multiple script codes here. They will be injected into the &lt;head&gt;.</p>
     <textarea id="customJsCode" rows="6" placeholder="<script src='...'></script>&#10;<script>...</script>" style="font-family:monospace; color:#cbd5e1;"></textarea>
 </div>
+                    <!-- ROBOTS.TXT CONFIGURATION -->
+<div class="card" style="border-top: 3px solid #64748b;">
+    <h3 style="color:#64748b;">🤖 Robots.txt Editor</h3>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <label style="margin:0;">File Content</label>
+        <button class="btn-secondary" onclick="setDefaultRobots()" style="font-size:0.75rem;">↺ Load Default SEO Rules</button>
+    </div>
+    <textarea id="robotsContent" rows="8" placeholder="User-agent: *&#10;Allow: /" style="font-family:monospace; color:#cbd5e1; white-space:pre;"></textarea>
+    <p class="desc">Defines crawling rules for search engines. Ensure you don't block your main content.</p>
+</div>
                     <div class="card">
                         <h3>Assets & Logos</h3>
                         <label>Logo URL</label><input type="text" id="logoUrl" placeholder="/images/logo.png">
@@ -543,6 +553,10 @@
         <input type="text" id="themeMatchLiveBorder" placeholder="3px solid var(--brand-primary)">
     </div>
 </div>
+                        <div class="range-wrapper">
+    <label>Row Radius</label>
+    <input type="number" id="themeMatchRowRadius" placeholder="6 (px)">
+</div>
                         <label>Row Height</label>
                         <select id="themeRowHeight">
                             <option value="compact">Compact (Data Dense)</option>
@@ -811,6 +825,7 @@
     <div><label>Btn Hover Border</label><input type="color" id="themeSocialBtnHoverBorder"></div>
     <div><label>Count Text</label><input type="color" id="themeSocialCountColor"></div>
 </div>
+                        <div><label>Btn Radius</label><input type="text" id="themeSocialBtnRadius" placeholder="6px or 50%"></div>
 
 <h4 style="margin:15px 0 5px 0; font-size:0.8rem; color:#aaa;">Icon Brand Colors</h4>
 <div class="color-grid">
