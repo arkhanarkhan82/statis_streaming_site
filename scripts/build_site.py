@@ -455,8 +455,6 @@ def render_page(template, config, page_data, theme_override=None):
         # Insert everything before the closing </head> tag
         html = html.replace('</head>', f'{head_injection_content}\n</head>')
 
-    return html
-
     # --- TEXT REPLACEMENTS ---
     replacements = {
         'HTML_LANG': html_lang_code,
