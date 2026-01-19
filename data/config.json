@@ -226,11 +226,14 @@
     "show_more_btn_hover_bg": "#007aff",
     "show_more_btn_hover_text": "#ffffff",
     "text_section_suffix": "sufffff",
-    "league_live_title": "TTTFfcvsdss",
-    "league_upcoming_prefix": "hhrreeeee",
-    "league_upcoming_suffix": "hhsssds",
+    "league_live_title": "",
+    "league_upcoming_prefix": "",
+    "league_upcoming_suffix": "",
     "match_row_radius": "10",
-    "social_btn_radius": "15%"
+    "social_btn_radius": "15%",
+    "back_to_top_border_color": "#000000",
+    "back_to_top_border_width": "",
+    "back_to_top_shadow_color": "#000000"
   },
   "sport_priorities": {
     "US": {
@@ -984,10 +987,10 @@
     "social_reddit_color": "#9bd719",
     "social_twitter_color": "#8ed50b",
     "mobile_footer_bg": "#000000",
-    "back_to_top_bg": "#04050b",
-    "back_to_top_icon_color": "#ff0f0f",
-    "back_to_top_radius": "",
-    "back_to_top_size": "",
+    "back_to_top_bg": "#112597",
+    "back_to_top_icon_color": "#baa6a6",
+    "back_to_top_radius": "20",
+    "back_to_top_size": "100",
     "display_hero": "block",
     "static_h1_align": "right",
     "footer_columns": "3",
@@ -1052,7 +1055,10 @@
     "watch_info_btn_text": "#000000",
     "watch_info_btn_label": "",
     "watch_server_active_bg": "#000000",
-    "watch_server_text": "#000000"
+    "watch_server_text": "#000000",
+    "back_to_top_border_color": "#a50303",
+    "back_to_top_border_width": "4",
+    "back_to_top_shadow_color": "#1a0505"
   },
   "theme_watch": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
