@@ -325,9 +325,25 @@
     </button>
 
     <script>
+        let scrollTimeout;
         window.addEventListener('scroll', () => {
             const btn = document.getElementById('backToTop');
-            if(window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
+            
+            // 1. Clear existing timer so it stays visible while scrolling
+            clearTimeout(scrollTimeout);
+            
+            if(window.scrollY > 300) {
+                // 2. Show button
+                btn.classList.add('show');
+                
+                // 3. Hide after 2.5 seconds of inactivity
+                scrollTimeout = setTimeout(() => {
+                    btn.classList.remove('show');
+                }, 2500);
+            } else {
+                // 4. Hide immediately if near top
+                btn.classList.remove('show');
+            }
         });
         const path = window.location.pathname; 
         document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => { 
