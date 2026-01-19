@@ -45,6 +45,7 @@
             --logo-text-p1-color: {{THEME_LOGO_P1_COLOR}};
             --logo-text-p2-color: {{THEME_LOGO_P2_COLOR}};
             --logo-image-size: {{THEME_LOGO_IMAGE_SIZE}};
+        --soc-btn-radius: {{THEME_SOCIAL_BTN_RADIUS}};
 
             --footer-bg-start: {{THEME_FOOTER_BG_START}};
             --footer-bg-end: {{THEME_FOOTER_BG_END}};
@@ -409,7 +410,7 @@
         .l-icon { font-size: 1.1rem; }
         
         .social-sidebar { position: fixed; left: 0; top: var(--social-desktop-top); transform: translateY(-50%) scale(var(--social-desktop-scale)); z-index: 90; display: flex; flex-direction: column; gap: 8px; background: var(--social-sidebar-bg); border: 1px solid var(--social-sidebar-border); border-left: none; padding: 12px 8px; border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0; box-shadow: var(--social-sidebar-shadow); backdrop-filter: blur(5px); }
-        .social-btn { width: 44px; padding: 6px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--social-btn-color); background: var(--social-btn-bg); border: 1px solid var(--social-btn-border); border-radius: var(--border-radius-base); transition: 0.2s; cursor: pointer; }
+        .social-btn { width: 44px; padding: 6px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--social-btn-color); background: var(--social-btn-bg); border: 1px solid var(--social-btn-border); border-radius: var(--soc-btn-radius); transition: 0.2s; cursor: pointer; }
         .social-btn:hover { background: var(--social-btn-hover-bg); border-color: var(--social-btn-hover-border); transform: var(--social-btn-hover-transform); }
         .s-count { font-size: 0.65rem; font-weight: 700; color: var(--social-count-color); }
         .social-btn svg { width: 20px; height: 20px; fill: currentColor; }
