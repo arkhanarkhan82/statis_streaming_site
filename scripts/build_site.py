@@ -421,6 +421,10 @@ def render_page(template, config, page_data, theme_override=None):
     # 3. Google Analytics (High Performance)
     ga_id = s.get('ga4_id', '').strip()
     if ga_id:
+        # Speed Optimization: Preconnect to Google servers
+        ga_preconnects = """<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>"""
+
         analytics_script = f"""
     <script>
     (function(w,d,id){{
@@ -442,7 +446,9 @@ def render_page(template, config, page_data, theme_override=None):
         }});
     }})(window,document,'{ga_id}');
     </script>"""
-        head_injection_content += f"\n{analytics_script}"
+        
+        # Add Preconnects + Script to the master injection block
+        head_injection_content += f"\n{ga_preconnects}\n{analytics_script}"
 
     # 4. Perform Single Injection
     if head_injection_content.strip():
