@@ -25,7 +25,7 @@
     
     <!-- SCHEMA -->
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://totalsportek.top/#organization", "name": "StreamEast", "url": "https://totalsportek.top/", "logo": {"@type": "ImageObject", "url": "https://totalsportek.top/assets/test-logo.webp", "width": 512, "height": 512}}, {"@type": "WebSite", "@id": "https://totalsportek.top/#website", "url": "https://totalsportek.top/", "name": "StreamEast", "publisher": {"@id": "https://totalsportek.top/#organization"}}, {"@type": "CollectionPage", "@id": "https://totalsportek.top/nfl-streams/#leaguepage", "url": "https://totalsportek.top/nfl-streams/", "name": "Watch NFL Live Streams and Schedules", "description": "The Best Free NFL Live stream free online", "mainEntity": {"@id": "https://totalsportek.top/nfl-streams/#matchlist"}, "isPartOf": {"@id": "https://totalsportek.top/#website"}, "about": {"@type": "SportsOrganization", "name": "NFL", "sameAs": ["https://en.wikipedia.org/wiki/National_Football_League", "https://www.wikidata.org/wiki/Q1215884"]}}]}</script>
-<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://totalsportek.top/nfl-streams/#matchlist", "itemListElement": []}</script>
+<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://totalsportek.top/nfl-streams/#matchlist", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SportsEvent", "name": "Los Angeles Rams vs Chicago Bears", "description": "Watch Los Angeles Rams vs Chicago Bears live stream. NFL.", "startDate": "2026-01-18T23:30:00.000Z", "eventStatus": "https://schema.org/EventLive", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "isAccessibleForFree": true, "url": "https://totalsportek.top/watch/?livestream=los-angeles-rams-vs-chicago-bears-efb8ab5b", "image": ["https://totalsportek.top/assets/test-logo.webp"], "organizer": {"@id": "https://totalsportek.top/#organization"}, "sport": "American Football", "homeTeam": {"@type": "SportsTeam", "name": "Los Angeles Rams", "image": "https://totalsportek.top/assets/logos/upstreams/los-angeles-rams.webp"}, "awayTeam": {"@type": "SportsTeam", "name": "Chicago Bears", "image": "https://totalsportek.top/assets/logos/upstreams/chicago-bears.webp"}}}]}</script>
 
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -384,21 +384,21 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;">
-            <!-- L_LIVE_START --><!-- L_LIVE_END -->
+        <div id="live-list">
+            <!-- L_LIVE_START --><div class="section-box"><div class="sec-head" style="border-bottom: 2px solid #e50914;"><h2 class="sec-title"><span style="font-size:1.2rem; margin-right:8px;">🔴</span> Live NFL</h2><span style="font-size:0.8rem; font-weight:700; color:var(--match-row-live-text-color); display:flex; align-items:center; gap:6px;">● 1 Live Events</span></div><div class="match-list"><div class="match-row live"><div class="col-time"><span class="live-txt">8h 52'</span><span class="time-sub">AMERICAN FOOTBALL</span></div><div class="teams-wrapper"><div class="league-tag">NFL</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/los-angeles-rams.webp" class="t-img" loading="lazy"></div> Los Angeles Rams</div><div class="team-name"><div class="logo-box"><img src="/assets/logos/upstreams/chicago-bears.webp" class="t-img" loading="lazy"></div> Chicago Bears</div></div><div class="col-meta"><div class="meta-top">👀 203</div></div><div class="col-action"><a href="https://totalsportek.top/watch/?livestream=los-angeles-rams-vs-chicago-bears-efb8ab5b" class="btn-watch">Streams <span class="hd-badge">HD</span></a><button class="btn-copy-link" onclick="copyText('https://totalsportek.top/watch/?livestream=los-angeles-rams-vs-chicago-bears-efb8ab5b')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div></div></div><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head">
+            <div class="sec-head" style="border-bottom: 1px solid #333333;">
                 <h2 class="sec-title">
-                    <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
+                    <img src="/assets/logos/leagues/nfl.webp" alt="NFL" style="width:28px; height:28px; object-fit:contain; margin-right:8px;"> 
                     Upcoming NFL Matches nnn
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
             </div>
         </div>
 
