@@ -725,8 +725,19 @@ def build_homepage(matches):
             icon = logo if not logo.startswith('fallback') else '🏆'
             link = f"/{slugify(key)}-streams/" if settings.get('hasLink') else None
             
-            # 2. Apply Prefix to Title (e.g. "Upcoming" + " " + "NFL")
-            display_title = f"{prefix} {key}" if prefix else key
+            # --- START UPDATE: PREFIX & SUFFIX ---
+            # 1. Get Prefix/Suffix from Theme
+            prefix = THEME.get('text_section_prefix', '').strip()
+            suffix = THEME.get('text_section_suffix', '').strip()
+
+            # 2. Construct Title: "Prefix Key Suffix"
+            parts = []
+            if prefix: parts.append(prefix)
+            parts.append(key)
+            if suffix: parts.append(suffix)
+            
+            display_title = " ".join(parts)
+            # --- END UPDATE ---
             
             grouped_html += render_container(grp, display_title, icon, link)
             # RESTORED: Upcoming Other Section
@@ -903,10 +914,16 @@ def inject_leagues(matches):
 
         # C. Inject Match Lists (HTML)
         if l_live:
-            live_content = render_container(l_live, f"Live {key}", '<div class="live-dot-pulse"></div>', None, True)
+            # --- START UPDATE: DYNAMIC LIVE TITLE ---
+            live_tpl = config.get('articles', {}).get('league_live_title', 'Live {{NAME}}')
+            live_title = live_tpl.replace('{{NAME}}', key)
+            # --- END UPDATE ---
+
+            live_content = render_container(l_live, live_title, '<div class="live-dot-pulse"></div>', None, True)
             html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', f'<!-- L_LIVE_START -->{live_content}<!-- L_LIVE_END -->', html, flags=re.DOTALL)
             html = html.replace('id="live-list" style="display:none;"', 'id="live-list"')
         else:
+            # ... (keep the else block exactly as is)
             html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', '<!-- L_LIVE_START --><!-- L_LIVE_END -->', html, flags=re.DOTALL)
             html = html.replace('id="live-list"', 'id="live-list" style="display:none;"')
 
