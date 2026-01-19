@@ -988,9 +988,9 @@
     "social_twitter_color": "#8ed50b",
     "mobile_footer_bg": "#000000",
     "back_to_top_bg": "#112597",
-    "back_to_top_icon_color": "#baa6a6",
-    "back_to_top_radius": "20",
-    "back_to_top_size": "100",
+    "back_to_top_icon_color": "#fbf9f9",
+    "back_to_top_radius": "50%",
+    "back_to_top_size": "40px",
     "display_hero": "block",
     "static_h1_align": "right",
     "footer_columns": "3",
@@ -1057,7 +1057,7 @@
     "watch_server_active_bg": "#000000",
     "watch_server_text": "#000000",
     "back_to_top_border_color": "#a50303",
-    "back_to_top_border_width": "4",
+    "back_to_top_border_width": "1",
     "back_to_top_shadow_color": "#1a0505"
   },
   "theme_watch": {
