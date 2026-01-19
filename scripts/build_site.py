@@ -464,6 +464,7 @@ def render_page(template, config, page_data, theme_override=None):
 
     # --- TEXT REPLACEMENTS ---
     replacements = {
+        'DISCORD_SERVER_ID': w_conf.get('discord_server_id', ''),
         'HTML_LANG': html_lang_code,
         'META_TITLE': page_data.get('meta_title', ''),
         'META_DESC': page_data.get('meta_desc', ''),
