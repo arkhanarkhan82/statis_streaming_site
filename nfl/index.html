@@ -599,6 +599,28 @@
         .back-to-top svg { width: 24px; height: 24px; fill: var(--btt-icon); }
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
     </style>
+
+        <script>
+        (function(w,d,id){
+            var l='dataLayer',i='ga-init';
+            if(w[i]) return; w[i]=true;
+            w[l]=w[l]||[];
+            function gtag(){w[l].push(arguments);}
+            function loadGA(){
+                if(w['ga-loaded']) return; w['ga-loaded']=true;
+                var s=d.createElement('script');
+                s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+id;
+                var h=d.getElementsByTagName('head')[0]; h.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', id);
+            }
+            var t=setTimeout(loadGA, 4000); 
+            ['mousemove','touchstart','scroll','keydown','click'].forEach(function(e){
+                w.addEventListener(e, function(){ clearTimeout(t); loadGA(); }, {once:true, passive:true});
+            });
+        })(window,document,'G-VK24F3EX1K');
+        </script>
+        
 </head>
 <body>
     <header class="h-layout-standard">
