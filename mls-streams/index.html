@@ -74,6 +74,7 @@
             --match-row-live-border-left: 3px solid var(--brand-primary);
             --match-row-live-bg-start: #1a0505;
             --match-row-live-bg-end: #141414;
+        --live-dot-color: #00e676;
             --match-row-hover-bg: #1a1a1a;
             --match-row-hover-border: #444444;
             --match-row-time-main-color: #888888;
@@ -98,17 +99,17 @@
             --footer-link-hover-color: #f1f5f9;
             
             /* SOCIALS */
-            --soc-sidebar-bg: #141414;
-            --soc-sidebar-border: #333333;
+            --soc-sidebar-bg: #000000;
+            --soc-sidebar-border: #14532d;
             --soc-sidebar-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            --soc-btn-bg: #222222;
-            --soc-btn-border: #333333;
+            --soc-btn-bg: #1a1a1a;
+            --soc-btn-border: #14532d;
             --soc-btn-color: #94a3b8;
-            --soc-btn-hover-bg: #e50914;
-            --soc-btn-hover-border: #e50914;
+            --soc-btn-hover-bg: #00e676;
+            --soc-btn-hover-border: #00e676;
             --soc-btn-hover-transform: translateX(5px);
             --soc-btn-shadow: rgba(0,0,0,0.3);
-            --soc-count: #808080;
+            --soc-count: #4ade80;
             
             --mob-foot-bg: #000000;
             --mob-foot-border: 1px solid #334155;
@@ -185,6 +186,21 @@
         .mobile-menu.active { display: flex; }
         .mobile-menu a { padding: 15px 20px; border-bottom: 1px solid var(--border); font-weight: 600; color: var(--text-muted); }
 
+        /* Pulsing Dot Animation */
+        .live-dot-pulse {
+            width: 10px; height: 10px;
+            background-color: var(--live-dot-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 0 0 0 0 var(--live-dot-color);
+            animation: livePulse 1.5s infinite;
+        }
+        @keyframes livePulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 var(--live-dot-color); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px transparent; }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 transparent; }
+        }
         /* HERO */
         .hero-section { background: radial-gradient(circle at top, #1c0202 0%, #000000 100%); padding: 40px 15px;  border-bottom: 5px solid #4416e9; display: block; }
        
