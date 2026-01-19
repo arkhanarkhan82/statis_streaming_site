@@ -631,7 +631,8 @@
                             <div><label>Watch Btn</label><input type="text" id="themeTextWatch" placeholder="WATCH"></div>
                             <div><label>HD Badge</label><input type="text" id="themeTextHd" placeholder="HD"></div>
                             <div><label>Link Text</label><input type="text" id="themeTextSectionLink" placeholder="View All"></div>
-                            <div><label>Prefix</label><input type="text" id="themeTextSectionPrefix" placeholder="Upcoming"></div>
+                            <div><label>Home Section Prefix</label><input type="text" id="themeTextSectionPrefix" placeholder="Upcoming"></div>
+<div><label>Home Section Suffix</label><input type="text" id="themeTextSectionSuffix" placeholder="Matches"></div>
                         </div>
                     </div>
 
@@ -873,22 +874,31 @@
     <div class="grid-2">
         <div style="grid-column: span 2; border-bottom:1px solid #333; padding-bottom:15px; margin-bottom:15px;">
             <h4 style="color:#fff; margin-bottom:10px;">🏷️ League Page Headers</h4>
-            <div class="grid-2">
-                <div>
-                    <label>H1 Title Template</label>
-                    <input type="text" id="tplLeagueH1" placeholder="Watch {{NAME}} Live Streams">
-                </div>
-                <div>
-                    <label>Intro Text / Meta Description</label>
-                    <input type="text" id="tplLeagueIntro" placeholder="The best free {{NAME}} streams online...">
-                </div>
-                
-                <div>
-                    <label>Upcoming Section Title</label>
-                    <input type="text" id="tplLeagueUpcomingTitle" placeholder="Upcoming {{NAME}} Schedule">
-                </div>
-            </div>
-        </div>
+<div class="grid-2">
+    <div>
+        <label>H1 Title Template</label>
+        <input type="text" id="tplLeagueH1" placeholder="Watch {{NAME}} Live Streams">
+    </div>
+    <div>
+        <label>Intro Text / Meta Description</label>
+        <input type="text" id="tplLeagueIntro" placeholder="The best free {{NAME}} streams online...">
+    </div>
+    
+    <!-- NEW FIELDS -->
+    <div style="grid-column: span 2; border-top: 1px dashed #333; margin-top: 10px; padding-top: 10px;">
+        <label style="color:#facc15;">🔴 Live Section Title Template</label>
+        <input type="text" id="tplLeagueLiveTitle" placeholder="Live {{NAME}} Streams">
+    </div>
+
+    <div>
+        <label>Upcoming Prefix</label>
+        <input type="text" id="tplLeagueUpcomingPrefix" placeholder="Upcoming">
+    </div>
+    <div>
+        <label>Upcoming Suffix</label>
+        <input type="text" id="tplLeagueUpcomingSuffix" placeholder="Schedule">
+    </div>
+</div>
 
         <div>
             <label style="color:#fff;">🏆 Bottom Article (League)</label>
