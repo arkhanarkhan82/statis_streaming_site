@@ -5355,7 +5355,22 @@
         "Arka Gdynia": "assets/logos/upstreams/arka-gdynia.webp",
         "Radnicki Nis": "assets/logos/upstreams/radnicki-nis.webp",
         "Thy W": "assets/logos/upstreams/thy-w.webp",
-        "Aras Kargo W": "assets/logos/upstreams/aras-kargo-w.webp"
+        "Aras Kargo W": "assets/logos/upstreams/aras-kargo-w.webp",
+        "Goztepe": "assets/logos/upstreams/goztepe.webp",
+        "BC Levski Lukoil": "assets/logos/upstreams/bc-levski-lukoil.webp",
+        "AL Ittihad": "assets/logos/upstreams/al-ittihad.webp",
+        "Fairleigh Dickinson Knights": "assets/logos/upstreams/fairleigh-dickinson-knights.webp",
+        "Wagner Seahawks": "assets/logos/upstreams/wagner-seahawks.webp",
+        "Antonia Schmidt": "assets/logos/upstreams/antonia-schmidt.webp",
+        "Varvara Panshina": "assets/logos/upstreams/varvara-panshina.webp",
+        "Radom W": "assets/logos/upstreams/radom-w.webp",
+        "LKS Lodz W": "assets/logos/upstreams/lks-lodz-w.webp",
+        "Iowa State Cyclones": "assets/logos/upstreams/iowa-state-cyclones.webp",
+        "Central Florida Knights": "assets/logos/upstreams/central-florida-knights.webp",
+        "Aleksandr Kalinin": "assets/logos/upstreams/aleksandr-kalinin.webp",
+        "Andre Alcantara": "assets/logos/upstreams/andre-alcantara.webp",
+        "Amy Lee": "assets/logos/upstreams/amy-lee.webp",
+        "Midori Castillo Meza": "assets/logos/upstreams/midori-castillo-meza.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5813,6 +5828,9 @@
         "Champions League, Group I": "assets/logos/leagues/champions-league-group-i.webp",
         "Eurocup, Group B": "assets/logos/leagues/eurocup-group-b.webp",
         "Korisliiga": "assets/logos/leagues/korisliiga.webp",
-        "Champions League, Pool E": "assets/logos/leagues/champions-league-pool-e.webp"
+        "Champions League, Pool E": "assets/logos/leagues/champions-league-pool-e.webp",
+        "Bulgaria NBL": "assets/logos/leagues/bulgaria-nbl.webp",
+        "WASL Gulf League, Group A": "assets/logos/leagues/wasl-gulf-league-group-a.webp",
+        "Orlen Liga Women": "assets/logos/leagues/orlen-liga-women.webp"
     }
 }
