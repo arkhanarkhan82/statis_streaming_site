@@ -147,8 +147,14 @@
 
             /* UTILS */
             --scrollbar-thumb-color: #007aff;
-            --back-to-top-bg: #0007d1;
-            --back-to-top-icon-color: #392d2d;
+            --btt-bg: #0007d1;
+            --btt-icon: #392d2d;
+            --btt-radius: 50%;
+            --btt-size: 40px;
+            
+            /* ADD/UPDATE THESE: */
+            --btt-border: 0px solid #000000;
+            --btt-shadow: 0 4px 10px #000000;
             --sys-status-bg: rgba(0, 122, 255, 0.1);
             --sys-status-border: 1px solid #007aff;
             --sys-status-text: #60a5fa;
@@ -309,8 +315,27 @@
         .f-head { color: var(--footer-heading); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
 
         
-        .back-to-top { position: fixed; bottom: 80px; right: 20px; background: var(--back-to-top-bg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; transition: 0.3s; z-index: 90; }
-        .back-to-top.show { opacity: 1; }
+        .back-to-top { 
+            position: fixed; 
+            /* DYNAMIC MOBILE POSITION: Footer Height + 20px gap */
+            bottom: calc(var(--mob-foot-height) + 20px); 
+            right: 20px; 
+            background: var(--btt-bg); 
+            width: var(--btt-size); 
+            height: var(--btt-size); 
+            border-radius: var(--btt-radius); 
+            display: flex; align-items: center; justify-content: center; 
+            color: var(--btt-icon); 
+            cursor: pointer; 
+            opacity: 0; visibility: hidden; 
+            transition: 0.3s; z-index: 90; 
+            /* NEW: Border & Shadow */
+            border: var(--btt-border);
+            box-shadow: var(--btt-shadow); 
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        
+        /* DESKTOP POSITION (Overrides mobile calc) */
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
          /* SOCIALS */
@@ -448,13 +473,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 1px solid #334155;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     MLB
@@ -462,7 +487,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 

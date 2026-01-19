@@ -96,11 +96,15 @@
 
             /* UTILITY */
             --scrollbar-thumb-color: #333333;
-            --back-to-top-bg: #04050b;
-            --back-to-top-icon-color: #ff0f0f;
-            --back-to-top-shadow: {{THEME_BACK_TO_TOP_SHADOW}};
-            --back-to-top-radius: 50%;
-            --back-to-top-size: 40px;
+            /* ... inside UTILS section ... */
+            --btt-bg: #112597;
+            --btt-icon: #baa6a6;
+            --btt-radius: 20;
+            --btt-size: 100px;
+            
+            /* ADD/UPDATE THESE: */
+            --btt-border: 4px solid #a50303;
+            --btt-shadow: 0 4px 10px #1a0505;
         }
 
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -282,8 +286,27 @@
         .copyright { margin-top: 50px; border-top: 1px solid var(--border); padding-top: 25px; text-align: center; font-size: 0.75rem; color: var(--footer-copyright-color); }
         .f-head { color: var(--footer-heading-color); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; font-weight: 700; }
 
-        .back-to-top { position: fixed; bottom: 80px; right: 20px; background: var(--back-to-top-bg); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--back-to-top-icon-color); cursor: pointer; opacity: 0; transition: 0.3s; z-index: 90; }
-        .back-to-top.show { opacity: 1; }
+        .back-to-top { 
+            position: fixed; 
+            /* DYNAMIC MOBILE POSITION: Footer Height + 20px gap */
+            bottom: calc(var(--mob-foot-height) + 20px); 
+            right: 20px; 
+            background: var(--btt-bg); 
+            width: var(--btt-size); 
+            height: var(--btt-size); 
+            border-radius: var(--btt-radius); 
+            display: flex; align-items: center; justify-content: center; 
+            color: var(--btt-icon); 
+            cursor: pointer; 
+            opacity: 0; visibility: hidden; 
+            transition: 0.3s; z-index: 90; 
+            /* NEW: Border & Shadow */
+            border: var(--btt-border);
+            box-shadow: var(--btt-shadow); 
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        
+        /* DESKTOP POSITION (Overrides mobile calc) */
         @media (min-width: 768px) { .back-to-top { bottom: 30px; } }
 
         @keyframes blink { 0%, 100% {opacity:1;} 50% {opacity:0.4;} }
