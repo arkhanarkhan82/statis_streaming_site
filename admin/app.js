@@ -223,6 +223,7 @@ const THEME_FIELDS = {
     'match_row_live_bg_start': 'themeMatchLiveBgStart',
     'match_row_live_bg_end': 'themeMatchLiveBgEnd',
     'match_row_live_text_color': 'themeMatchLiveText',
+    'live_dot_color': 'themeLiveDotColor',
     'row_height_mode': 'themeRowHeight',
     'match_row_btn_watch_bg': 'themeBtnWatchBg',
     'match_row_btn_watch_text': 'themeBtnWatchText',
@@ -763,6 +764,7 @@ const THEME_PRESETS = {
         // Live gets a thick red border to pop
         sec_border_live_width: "2",
         sec_border_live_color: "#E50914",
+        live_dot_color: "#E50914",
         // Upcoming gets a subtle border
         sec_border_upcoming_width: "1",
         sec_border_upcoming_color: "#333333",
@@ -947,6 +949,7 @@ const THEME_PRESETS = {
         match_row_live_bg_end: "transparent",
         match_row_live_text_color: "#60A5FA",
         match_row_live_border_left: "4px solid #007AFF",
+        live_dot_color: "#007AFF",
         row_height_mode: "spacious", // Airy feel
         match_row_btn_watch_bg: "#007AFF",
         match_row_btn_watch_text: "#FFFFFF",
@@ -1102,6 +1105,7 @@ const THEME_PRESETS = {
         match_row_live_bg_start: "#0A2912",
         match_row_live_bg_end: "#121212",
         match_row_live_text_color: "#00E676",
+        live_dot_color: "#00E676",
         match_row_live_border_left: "3px solid #00E676",
         row_height_mode: "compact", // High density
         match_row_btn_watch_bg: "#00E676",
