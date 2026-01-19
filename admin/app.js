@@ -304,6 +304,10 @@ const THEME_FIELDS = {
     'back_to_top_icon_color': 'themeBttIcon',
     'back_to_top_radius': 'themeBttRadius',
     'back_to_top_size': 'themeBttSize',
+     // ADD THESE LINES:
+    'back_to_top_border_color': 'themeBttBorderColor',
+    'back_to_top_border_width': 'themeBttBorderWidth',
+    'back_to_top_shadow_color': 'themeBttShadowColor',
     
     // Logic Toggles
     'display_hero': 'themeDisplayHero',
@@ -746,6 +750,13 @@ const THEME_PRESETS = {
         section_logo_size: "24",
         match_row_radius: "4",
         social_btn_radius: "4px",
+        back_to_top_bg: "#D00000",
+        back_to_top_icon_color: "#ffffff",
+        back_to_top_radius: "4px",
+        // NEW
+        back_to_top_border_width: "0",
+        back_to_top_border_color: "transparent",
+        back_to_top_shadow_color: "rgba(208, 0, 0, 0.4)", // Red Glow
         
         // --- 2. GLOBAL PALETTE (High Contrast / Netflix Style) ---
         brand_primary: "#E50914",      // Iconic Broadcast Red
@@ -922,6 +933,13 @@ const THEME_PRESETS = {
         section_logo_size: "28",
         match_row_radius: "8",
         social_btn_radius: "50%",
+        back_to_top_bg: "#3b82f6",
+        back_to_top_icon_color: "#ffffff",
+        back_to_top_radius: "50%",
+        // NEW
+        back_to_top_border_width: "0",
+        back_to_top_border_color: "transparent",
+        back_to_top_shadow_color: "rgba(59, 130, 246, 0.4)", // Blue Glow
         // ...
         show_more_btn_bg: "#1e293b",
         show_more_btn_text: "#cbd5e1",
@@ -1089,6 +1107,13 @@ const THEME_PRESETS = {
         section_logo_size: "22",
         match_row_radius: "0",
         social_btn_radius: "0px",
+        back_to_top_bg: "#16a34a",
+        back_to_top_icon_color: "#000000",
+        back_to_top_radius: "0%",
+        // NEW
+        back_to_top_border_width: "2",
+        back_to_top_border_color: "#22c55e",
+        back_to_top_shadow_color: "rgba(22, 163, 74, 0.4)", // Green Glow
         // ...
         show_more_btn_bg: "#052e16",
         show_more_btn_text: "#86efac",
