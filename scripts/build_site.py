@@ -800,16 +800,21 @@ def render_page(template, config, page_data, theme_override=None):
 
     return html
 
-def generate_robots():
+def generate_robots(config):
     print(" > Generating robots.txt...")
+
     s_sett = config.get('site_settings', {})
     content = s_sett.get('robots_txt', '')
-    
+
     # Fallback if empty but sitemap enabled
     if not content and s_sett.get('sitemap_enabled'):
         domain = s_sett.get('domain', 'example.com')
-        content = f"User-agent: *\nAllow: /\nSitemap: https://{domain}/sitemap.xml"
-    
+        content = (
+            "User-agent: *\n"
+            "Allow: /\n"
+            f"Sitemap: https://{domain}/sitemap.xml"
+        )
+
     if content:
         with open('robots.txt', 'w', encoding='utf-8') as f:
             f.write(content)
@@ -1015,7 +1020,7 @@ def main():
                 f.write(html)
             
             print(f"   -> Built: {slug} (Filter: {name})")
-            generate_robots()
+            generate_robots(config)
 
     print("✅ Build Complete.")
 
