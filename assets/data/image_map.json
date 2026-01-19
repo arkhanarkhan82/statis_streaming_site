@@ -5516,7 +5516,11 @@
         "New South Wales Breakers": "assets/logos/upstreams/new-south-wales-breakers.webp",
         "Lokomotiva Zagreb": "assets/logos/upstreams/lokomotiva-zagreb.webp",
         "Vukovar": "assets/logos/upstreams/vukovar.webp",
-        "Slaven Belupo": "assets/logos/upstreams/slaven-belupo.webp"
+        "Slaven Belupo": "assets/logos/upstreams/slaven-belupo.webp",
+        "New Haven": "assets/logos/streamed/new-haven.webp",
+        "Mississippi Valley State": "assets/logos/streamed/mississippi-valley-state.webp",
+        "Florida A&M": "assets/logos/streamed/florida-am.webp",
+        "Houston Christian": "assets/logos/streamed/houston-christian.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
