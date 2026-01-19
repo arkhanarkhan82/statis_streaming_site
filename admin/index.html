@@ -65,6 +65,13 @@
             <label><input type="checkbox" id="sitemapEnable"> Enable Sitemap Generation</label>
             <label><input type="checkbox" id="sitemapIncludeLeagues"> Include League Pages</label>
         </div>
+            <!-- MANUAL DATE PICKER -->
+    <label>Global Last Modified Date</label>
+    <div class="input-group">
+        <input type="date" id="sitemapLastMod">
+        <button class="btn-secondary" onclick="document.getElementById('sitemapLastMod').value = new Date().toISOString().split('T')[0]" title="Set to Today">📅 Set Today</button>
+    </div>
+    <p class="desc" style="margin-top:5px;">Used for Home, League, and Static pages. Update this weekly/monthly.</p>            
 
         <label>Static Pages (Comma separated slugs)</label>
         <textarea id="sitemapStaticPages" rows="2" placeholder="about, contact, dmca, privacy"></textarea>
