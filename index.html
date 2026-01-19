@@ -83,6 +83,7 @@
             /* MATCH ROWS */
             --match-row-bg: #1e293b;
             --match-row-border: #334155;
+        --match-row-radius: 6px;
             --match-row-hover-bg: #334155;
             --match-row-hover-border: #007aff;
             --match-row-hover-transform: translateY(-2px);
@@ -163,6 +164,7 @@
             --soc-btn-bg: #1e293b;
             --soc-btn-border: #334155;
             --soc-btn-color: #94a3b8;
+        --soc-btn-radius: 6px;
             --soc-btn-hover-bg: #007aff;
             --soc-btn-hover-border: #007aff;
             --soc-btn-hover-transform: translateX(5px);
@@ -380,7 +382,7 @@
         .match-row { 
             display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; 
             background: var(--match-row-bg); border: 1px solid var(--match-row-border); 
-            border-radius: var(--border-radius-base); padding: 10px 8px 5px 8px; margin-bottom: 8px; 
+            border-radius: var(--match-row-radius); padding: 10px 8px 5px 8px; margin-bottom: 8px; 
             position: relative; transition: 0.2s; height: var(--row-h-mob); overflow: hidden;
         }
         .match-row:hover { border-color: var(--match-row-hover-border); background: var(--match-row-hover-bg); transform: var(--match-row-hover-transform); }
@@ -461,7 +463,7 @@
             width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
             align-items: center; justify-content: center; gap: 3px; 
             color: var(--soc-btn-color); background: var(--soc-btn-bg); 
-            border: 1px solid var(--soc-btn-border); border-radius: var(--border-radius-base); 
+            border: 1px solid var(--soc-btn-border); border-radius: var(--soc-btn-radius); 
             will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
             cursor: pointer; 
         }
