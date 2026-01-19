@@ -5311,7 +5311,34 @@
         "Tomasso Compagnucci": "assets/logos/upstreams/tomasso-compagnucci.webp",
         "William Freshwater": "assets/logos/upstreams/william-freshwater.webp",
         "Al Ittihad": "assets/logos/upstreams/al-ittihad.webp",
-        "Al Muharraq": "assets/logos/upstreams/al-muharraq.webp"
+        "Al Muharraq": "assets/logos/upstreams/al-muharraq.webp",
+        "Slavia Praha": "assets/logos/streamed/slavia-praha.webp",
+        "Union St. Gilloise": "assets/logos/streamed/union-st-gilloise.webp",
+        "Hammarby IF": "assets/logos/upstreams/hammarby-if.webp",
+        "Cristian Gar\u00edn": "assets/logos/upstreams/cristian-gar\u00edn.webp",
+        "S\u00e1ra Bejlek": "assets/logos/upstreams/s\u00e1ra-bejlek.webp",
+        "Katerina Siniakov\u00e1": "assets/logos/upstreams/katerina-siniakov\u00e1.webp",
+        "Tereza Valentov\u00e1": "assets/logos/upstreams/tereza-valentov\u00e1.webp",
+        "Zhang Shuai": "assets/logos/upstreams/zhang-shuai.webp",
+        "Jo\u00e3o Fonseca": "assets/logos/upstreams/jo\u00e3o-fonseca.webp",
+        "Jakub Men\u0161\u00edk": "assets/logos/upstreams/jakub-men\u0161\u00edk.webp",
+        "Pablo Carre\u00f1o Busta": "assets/logos/upstreams/pablo-carre\u00f1o-busta.webp",
+        "Karol\u00edna Pl\u00ed\u0161kov\u00e1": "assets/logos/upstreams/karol\u00edna-pl\u00ed\u0161kov\u00e1.webp",
+        "Linda Fruhvirtov\u00e1": "assets/logos/upstreams/linda-fruhvirtov\u00e1.webp",
+        "Wang Xinyu": "assets/logos/upstreams/wang-xinyu.webp",
+        "Rebecca \u0160ramkov\u00e1": "assets/logos/upstreams/rebecca-\u0161ramkov\u00e1.webp",
+        "Dino Pri\u017emic": "assets/logos/upstreams/dino-pri\u017emic.webp",
+        "Rafael J\u00f3dar": "assets/logos/upstreams/rafael-j\u00f3dar.webp",
+        "Ga\u00ebl Monfils": "assets/logos/upstreams/ga\u00ebl-monfils.webp",
+        "Sorana Cirstea": "assets/logos/upstreams/sorana-cirstea.webp",
+        "Tom\u00e1\u0161 Mach\u00e1\u010d": "assets/logos/upstreams/tom\u00e1\u0161-mach\u00e1\u010d.webp",
+        "V\u00edt Kopriva": "assets/logos/upstreams/v\u00edt-kopriva.webp",
+        "Nikola Bartunkov\u00e1": "assets/logos/upstreams/nikola-bartunkov\u00e1.webp",
+        "Taylor Fritz": "assets/logos/upstreams/taylor-fritz.webp",
+        "Antonia Ru\u017eic": "assets/logos/upstreams/antonia-ru\u017eic.webp",
+        "VC Haasrode Leuven": "assets/logos/upstreams/vc-haasrode-leuven.webp",
+        "Botev Plovdiv": "assets/logos/upstreams/botev-plovdiv.webp",
+        "Latvia": "assets/logos/upstreams/latvia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5768,6 +5795,7 @@
         "Meridianbet KLS": "assets/logos/leagues/meridianbet-kls.webp",
         "Champions League, Group I": "assets/logos/leagues/champions-league-group-i.webp",
         "Eurocup, Group B": "assets/logos/leagues/eurocup-group-b.webp",
-        "Korisliiga": "assets/logos/leagues/korisliiga.webp"
+        "Korisliiga": "assets/logos/leagues/korisliiga.webp",
+        "Champions League, Pool E": "assets/logos/leagues/champions-league-pool-e.webp"
     }
 }
