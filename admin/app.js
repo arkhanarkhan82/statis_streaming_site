@@ -228,6 +228,8 @@ const THEME_FIELDS = {
     'row_height_mode': 'themeRowHeight',
     'match_row_btn_watch_bg': 'themeBtnWatchBg',
     'match_row_btn_watch_text': 'themeBtnWatchText',
+    'match_row_radius': 'themeMatchRowRadius',
+    'social_btn_radius': 'themeSocialBtnRadius',
 
     // 6. Footer
     'footer_bg_start': 'themeFooterBgStart',
@@ -465,6 +467,7 @@ function populateUI() {
     // CUSTOM INTEGRATIONS
     renderMetaTagsList(s.custom_meta_tags || []);
     setVal('customJsCode', s.custom_js || "");
+    setVal('robotsContent', s.robots_txt || "");
     
     // Auto-generate Sitemap URL for display
     const domain = s.domain || "yoursite.com";
@@ -741,6 +744,8 @@ const THEME_PRESETS = {
         border_radius_base: "4",
         container_max_width: "1200",
         section_logo_size: "24",
+        match_row_radius: "4",
+        social_btn_radius: "4px",
         
         // --- 2. GLOBAL PALETTE (High Contrast / Netflix Style) ---
         brand_primary: "#E50914",      // Iconic Broadcast Red
@@ -915,6 +920,8 @@ const THEME_PRESETS = {
         border_radius_base: "8",
         container_max_width: "1400",
         section_logo_size: "28",
+        match_row_radius: "8",
+        social_btn_radius: "50%",
         // ...
         show_more_btn_bg: "#1e293b",
         show_more_btn_text: "#cbd5e1",
@@ -1080,6 +1087,8 @@ const THEME_PRESETS = {
         border_radius_base: "0", // Square / Sharp edges
         container_max_width: "1600",
         section_logo_size: "22",
+        match_row_radius: "0",
+        social_btn_radius: "0px",
         // ...
         show_more_btn_bg: "#052e16",
         show_more_btn_text: "#86efac",
@@ -1558,7 +1567,7 @@ document.getElementById('saveBtn').onclick = async () => {
         sitemap_enabled: document.getElementById('sitemapEnable').checked,
         sitemap_include_leagues: document.getElementById('sitemapIncludeLeagues').checked,
         sitemap_static_pages: getVal('sitemapStaticPages'), sitemap_lastmod_manual: getVal('sitemapLastMod'), ga4_id: getVal('ga4Id'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'), custom_js: getVal('customJsCode'),
-        custom_meta_tags: Array.from(document.querySelectorAll('.meta-tag-input')).map(el => el.value.trim()).filter(v => v !== ""),
+        custom_meta_tags: Array.from(document.querySelectorAll('.meta-tag-input')).map(el => el.value.trim()).filter(v => v !== ""), robots_txt: getVal('robotsContent'),
         domain: getVal('siteDomain'), logo_url: getVal('logoUrl'), favicon_url: getVal('faviconUrl'),
         footer_copyright: getVal('footerCopyright'), footer_disclaimer: getVal('footerDisclaimer'),
         target_country: c,
@@ -1763,6 +1772,21 @@ function applyThemeState(data) {
          if(el && display) display.innerText = el.value + 'px';
     });
 }
+window.setDefaultRobots = () => {
+    const domain = document.getElementById('siteDomain').value || "yoursite.com";
+    const txt = `User-agent: *
+Allow: /
+
+# Disallow Admin & System Files
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /data/
+Disallow: /scripts/
+
+# Sitemap
+Sitemap: https://${domain}/sitemap.xml`;
+    document.getElementById('robotsContent').value = txt;
+};
 // ==========================================
 // NEW: LEAGUE METADATA LOGIC
 // ==========================================
