@@ -994,6 +994,93 @@ def inject_leagues(matches):
         with open(target_file, 'w', encoding='utf-8') as f: f.write(html)
         print(f"   - Updated {slug}")
 
+def generate_sitemap(matches):
+    s_sett = config.get('site_settings', {})
+    if not s_sett.get('sitemap_enabled', False):
+        return
+
+    print(" > Generating Sitemap...")
+    domain = s_sett.get('domain', 'example.com')
+    base_url = f"https://{domain}"
+    
+    # 1. Collect Unique Match IDs (Homepage + Leagues)
+    visible_ids = set()
+    now_ms = time.time() * 1000
+    one_day = 24 * 60 * 60 * 1000
+    
+    # Homepage Logic (24h or Wildcard)
+    wc_cat = THEME.get('wildcard_category', '').lower()
+    for m in matches:
+        # Wildcard Logic
+        if len(wc_cat) > 2 and (wc_cat in m['league'].lower() or wc_cat in m['sport'].lower()):
+            visible_ids.add(m['id'])
+        # 24 Hour Logic
+        elif (m['timestamp'] - now_ms) < one_day:
+            visible_ids.add(m['id'])
+
+    # League Pages Logic
+    if s_sett.get('sitemap_include_leagues', False):
+        for key, settings in PRIORITY_SETTINGS.items():
+            if key.startswith('_') or not settings.get('hasLink'): continue
+            # Add ALL matches for this league (Full Schedule)
+            for m in matches:
+                if key.lower() in m['league'].lower() or key.lower() in m['sport'].lower():
+                    visible_ids.add(m['id'])
+
+    # 2. Build XML Content
+    urls = []
+    lastmod = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S+00:00')
+
+    def add_url(path, prio, freq):
+        clean_path = path.strip('/')
+        loc = f"{base_url}/{clean_path}/" if clean_path else f"{base_url}/"
+        urls.append(f"""    <url>
+        <loc>{loc}</loc>
+        <lastmod>{lastmod}</lastmod>
+        <changefreq>{freq}</changefreq>
+        <priority>{prio}</priority>
+    </url>""")
+
+    # A. Homepage
+    add_url("", "1.0", "always")
+
+    # B. League Pages
+    if s_sett.get('sitemap_include_leagues', False):
+        for key, settings in PRIORITY_SETTINGS.items():
+            if key.startswith('_') or not settings.get('hasLink'): continue
+            slug = slugify(key) + "-streams"
+            add_url(slug, "0.9", "always") # Same freq as home
+
+    # C. Static Pages
+    static_raw = s_sett.get('sitemap_static_pages', "")
+    if static_raw:
+        for p in static_raw.split(','):
+            if p.strip(): add_url(p.strip(), "0.8", "daily")
+
+    # D. Watch Root
+    add_url("watch", "0.7", "always")
+
+    # E. Match Info Pages (Unique IDs only)
+    param_info = s_sett.get('param_info', 'info')
+    for mid in visible_ids:
+        # Construct Query Parameter URL
+        full_url = f"{base_url}/watch/?{param_info}={mid}"
+        urls.append(f"""    <url>
+        <loc>{full_url}</loc>
+        <lastmod>{lastmod}</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>""")
+
+    # 3. Write File
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>"""
+    
+    with open('sitemap.xml', 'w', encoding='utf-8') as f:
+        f.write(xml_content)
+    print(f"   - Generated sitemap.xml with {len(urls)} URLs")
 # ==============================================================================
 # 8. MAIN EXECUTION
 # ==============================================================================
@@ -1012,6 +1099,7 @@ def main():
     print(" > League Pages Updated.")
     
     run_image_downloader(matches)
+    generate_sitemap(matches)
 
 if __name__ == "__main__":
     main()
