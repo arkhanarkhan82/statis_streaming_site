@@ -279,8 +279,15 @@ def render_page(template, config, page_data, theme_override=None):
         'mobile_footer_btn_active_bg': 'rgba(255,255,255,0.1)', # RESTORED
         
         'copy_toast_bg': '#22c55e', 'copy_toast_text': '#ffffff', 'copy_toast_border': '#16a34a',
-        'back_to_top_bg': '#D00000', 'back_to_top_icon_color': '#ffffff', 'back_to_top_shadow': '0 4px 10px rgba(0,0,0,0.3)',
-        'back_to_top_radius': '50%', 'back_to_top_size': '40px',
+        'back_to_top_bg': '#D00000', 
+        'back_to_top_icon_color': '#ffffff', 
+        'back_to_top_radius': '50%', 
+        'back_to_top_size': '40px',
+        
+        # NEW DEFAULTS
+        'back_to_top_border_width': '0',
+        'back_to_top_border_color': 'transparent',
+        'back_to_top_shadow_color': 'rgba(0,0,0,0.3)',
 
         # 11. Borders & Skeletons
         'sec_border_live_width': '1', 'sec_border_live_color': '#334155',
