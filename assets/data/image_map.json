@@ -5511,7 +5511,12 @@
         "Gonzalo Bueno": "assets/logos/upstreams/gonzalo-bueno.webp",
         "Jerome Kym": "assets/logos/upstreams/jerome-kym.webp",
         "Eduardo Ribeiro": "assets/logos/upstreams/eduardo-ribeiro.webp",
-        "Joao Lucas Reis Silva": "assets/logos/upstreams/joao-lucas-reis-silva.webp"
+        "Joao Lucas Reis Silva": "assets/logos/upstreams/joao-lucas-reis-silva.webp",
+        "ACT Meteors": "assets/logos/upstreams/act-meteors.webp",
+        "New South Wales Breakers": "assets/logos/upstreams/new-south-wales-breakers.webp",
+        "Lokomotiva Zagreb": "assets/logos/upstreams/lokomotiva-zagreb.webp",
+        "Vukovar": "assets/logos/upstreams/vukovar.webp",
+        "Slaven Belupo": "assets/logos/upstreams/slaven-belupo.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -5981,6 +5986,7 @@
         "Afghanistan and West Indies in UAE, 3 T20I Series": "assets/logos/leagues/afghanistan-and-west-indies-in-uae-3-t20i-series.webp",
         "NCAA Division I, FBS, Playoffs": "assets/logos/leagues/ncaa-division-i-fbs-playoffs.webp",
         "Portugal Primeira Liga": "assets/logos/leagues/portugal-primeira-liga.webp",
-        "Champions League - Gr.L": "assets/logos/leagues/champions-league-grl.webp"
+        "Champions League - Gr.L": "assets/logos/leagues/champions-league-grl.webp",
+        "Women's National Cricket League": "assets/logos/leagues/womens-national-cricket-league.webp"
     }
 }
