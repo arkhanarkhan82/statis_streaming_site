@@ -796,12 +796,7 @@ def render_page(template, config, page_data, theme_override=None):
             schema_output += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>\n'
 
     # Inject into Template
-    html = html.replace('{{SCHEMA_BLOCK}}', schema_output)
-    
-    # --- SAFE INJECTION: Google Analytics ---
-    # Inject optimized script just before </head>
-    if analytics_script:
-        html = html.replace('</head>', f'{analytics_script}\n</head>')
+    html = html.replace('{{SCHEMA_BLOCK}}', schema_output) 
 
     return html
 
