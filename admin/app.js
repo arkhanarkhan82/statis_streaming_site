@@ -1,8 +1,8 @@
 // ==========================================
 // 1. CONFIGURATION
 // ==========================================
-const REPO_OWNER = 'arkhanarkhan82'; 
-const REPO_NAME = 'statis_streaming_site';     
+let REPO_OWNER = localStorage.getItem('gh_owner') || '';
+let REPO_NAME = localStorage.getItem('gh_repo') || '';   
 const FILE_PATH = 'data/config.json';
 const LEAGUE_FILE_PATH = 'assets/data/league_map.json'; 
 const BRANCH = 'main';
@@ -387,18 +387,40 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     // 3. Auth Check
+    // 3. Auth Check
     const token = localStorage.getItem('gh_token');
-    if (!token) document.getElementById('authModal').style.display = 'flex';
-    else verifyAndLoad(token);
+    
+    // Check if we have ALL credentials
+    if (!token || !REPO_OWNER || !REPO_NAME) {
+        // Pre-fill inputs if partial data exists
+        if(REPO_OWNER) document.getElementById('ghOwner').value = REPO_OWNER;
+        if(REPO_NAME) document.getElementById('ghRepo').value = REPO_NAME;
+        document.getElementById('authModal').style.display = 'flex';
+    } else {
+        verifyAndLoad(token);
+    }
 });
 
 // --- AUTH ---
 window.saveToken = async () => {
+    const owner = document.getElementById('ghOwner').value.trim();
+    const repo = document.getElementById('ghRepo').value.trim();
     const token = document.getElementById('ghToken').value.trim();
-    if(token) {
+
+    if(owner && repo && token) {
+        // Save to LocalStorage
+        localStorage.setItem('gh_owner', owner);
+        localStorage.setItem('gh_repo', repo);
         localStorage.setItem('gh_token', token);
+        
+        // Update Memory Variables
+        REPO_OWNER = owner;
+        REPO_NAME = repo;
+
         document.getElementById('authModal').style.display = 'none';
         verifyAndLoad(token);
+    } else {
+        alert("Please fill in all fields (Owner, Repo, and Token)");
     }
 };
 
