@@ -1010,29 +1010,69 @@ const THEME_PRESETS = {
         watch_vs_color: "#22c55e"
     }
 };
-// 2. THE APPLY LOGIC
+// ==========================================
+// 2. THE APPLY LOGIC (UPDATED FOR FULL PRESETS)
+// ==========================================
 window.applyPreset = (presetName) => {
     if(!THEME_PRESETS[presetName]) return;
     const p = THEME_PRESETS[presetName];
 
-    if(!confirm(`Apply ${presetName.toUpperCase()} preset? This will overwrite current color settings.`)) return;
+    if(!confirm(`Apply ${presetName.toUpperCase()} preset? This will overwrite your current settings.`)) return;
 
-    // 1. First, loop through all keys
-    Object.keys(p).forEach(id => {
-        setVal(id, p[id]);
+    // Iterate through the JSON keys in the preset
+    Object.keys(p).forEach(jsonKey => {
+        // Translate JSON key to HTML ID using the mapping
+        const htmlId = THEME_FIELDS[jsonKey];
+        if (!htmlId) return;
+
+        const el = document.getElementById(htmlId);
+        if (el) {
+            const val = p[jsonKey];
+            
+            // Handle Checkboxes (Boolean values)
+            if (el.type === 'checkbox') {
+                el.checked = (val === true || val === "true");
+            } 
+            // Handle Standard Inputs
+            else {
+                el.value = (val !== undefined && val !== null) ? val : "";
+            }
+        }
     });
 
-    // 2. FORCE UPDATE specific gradient fields to be safe
-    if(p.themeHeroGradStart) setVal('themeHeroGradStart', p.themeHeroGradStart);
-    if(p.themeHeroGradEnd) setVal('themeHeroGradEnd', p.themeHeroGradEnd);
+    // 2. Refresh Visual Toggles (Layouts, Gradients, etc.)
+    if(typeof toggleHeroInputs === 'function') toggleHeroInputs();
+    if(typeof toggleHeaderInputs === 'function') toggleHeaderInputs();
+    if(typeof toggleHeroBoxSettings === 'function') toggleHeroBoxSettings();
+    if(typeof toggleFooterSlots === 'function') toggleFooterSlots();
 
-    // 3. Update Visuals
-    toggleHeroInputs();
-    
-    // 4. Update Range Sliders Text (Optional visual polish)
-    if(document.getElementById('val_borderRadius')) document.getElementById('val_borderRadius').innerText = getVal('themeBorderRadius') + 'px';
+    // 3. Update Range Sliders Text Displays
+    ['themeBorderRadius', 'themeMaxWidth', 'themeSectionLogoSize', 'themeBtnRadius', 
+     'themeHeroPillRadius', 'themeLeagueCardBorderWidth', 'themeLeagueCardRadius', 
+     'themeSysStatusDotSize', 'themeHeaderWidth'].forEach(id => {
+         const el = document.getElementById(id);
+         if(!el) return;
+         
+         // Helper to find the span ID based on your naming convention
+         let displayId = "";
+         if(id === 'themeLeagueCardBorderWidth') displayId = 'val_lcBorderW';
+         else if(id === 'themeLeagueCardRadius') displayId = 'val_lcRadius';
+         else if(id === 'themeSysStatusDotSize') displayId = 'val_sysDot';
+         else if(id === 'themeHeaderWidth') displayId = 'val_headerWidth';
+         else {
+             displayId = id.replace('theme','val_')
+                           .replace('BorderRadius','borderRadius')
+                           .replace('MaxWidth','maxWidth')
+                           .replace('SectionLogoSize','secLogo')
+                           .replace('BtnRadius','btnRadius')
+                           .replace('HeroPillRadius','pillRadius');
+         }
 
-    alert(`${presetName.toUpperCase()} preset loaded! click 'Save' to build.`);
+         const display = document.getElementById(displayId);
+         if(display) display.innerText = el.value + 'px';
+    });
+
+    alert(`${presetName.toUpperCase()} preset loaded! Click 'Save' to build.`);
 };
 
 // ==========================================
