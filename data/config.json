@@ -1,6 +1,8 @@
 {
   "site_settings": {
-    "api_url": "https://vercelapi-olive.vercel.app/api/sync-nodes",
+    "sitemap_enabled": true,
+    "sitemap_include_leagues": true,
+    "sitemap_static_pages": "about, contact, dmca, privacy-policy",
     "title_part_1": "Stream",
     "title_part_2": "East",
     "domain": "totalsportek.top",
@@ -216,9 +218,9 @@
     "show_more_btn_hover_bg": "#007aff",
     "show_more_btn_hover_text": "#ffffff",
     "text_section_suffix": "sufffff",
-    "league_live_title": "Trending League Live Matches ",
-    "league_upcoming_prefix": "New Upcoming",
-    "league_upcoming_suffix": "Match List"
+    "league_live_title": "TTTFfcvsdss",
+    "league_upcoming_prefix": "hhrreeeee",
+    "league_upcoming_suffix": "hhsssds"
   },
   "sport_priorities": {
     "US": {
