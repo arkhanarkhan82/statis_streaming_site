@@ -843,9 +843,9 @@
     "excluded": "home, about, contact",
     "league_h1": "Watch {{NAME}} Live Streams and Schedules",
     "league_intro": "The Best Free {{NAME}} Live stream free online",
-    "league_live_title": "TTTFfcvsdss",
-    "league_upcoming_prefix": "hhrreeeee",
-    "league_upcoming_suffix": "hhsssds"
+    "league_live_title": "",
+    "league_upcoming_prefix": "",
+    "league_upcoming_suffix": ""
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
@@ -984,8 +984,8 @@
     "social_reddit_color": "#9bd719",
     "social_twitter_color": "#8ed50b",
     "mobile_footer_bg": "#000000",
-    "back_to_top_bg": "#0b3bf9",
-    "back_to_top_icon_color": "#ffffff",
+    "back_to_top_bg": "#04050b",
+    "back_to_top_icon_color": "#ff0f0f",
     "back_to_top_radius": "",
     "back_to_top_size": "",
     "display_hero": "block",
