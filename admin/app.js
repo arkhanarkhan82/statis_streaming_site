@@ -461,6 +461,7 @@ function populateUI() {
     if(document.getElementById('sitemapIncludeLeagues')) document.getElementById('sitemapIncludeLeagues').checked = s.sitemap_include_leagues === true;
     setVal('sitemapStaticPages', s.sitemap_static_pages);
     setVal('sitemapLastMod', s.sitemap_lastmod_manual);
+    setVal('ga4Id', s.ga4_id);
     
     // Auto-generate Sitemap URL for display
     const domain = s.domain || "yoursite.com";
@@ -1529,7 +1530,7 @@ document.getElementById('saveBtn').onclick = async () => {
     configData.site_settings = {
         sitemap_enabled: document.getElementById('sitemapEnable').checked,
         sitemap_include_leagues: document.getElementById('sitemapIncludeLeagues').checked,
-        sitemap_static_pages: getVal('sitemapStaticPages'), sitemap_lastmod_manual: getVal('sitemapLastMod'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'),
+        sitemap_static_pages: getVal('sitemapStaticPages'), sitemap_lastmod_manual: getVal('sitemapLastMod'), ga4_id: getVal('ga4Id'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'),
         domain: getVal('siteDomain'), logo_url: getVal('logoUrl'), favicon_url: getVal('faviconUrl'),
         footer_copyright: getVal('footerCopyright'), footer_disclaimer: getVal('footerDisclaimer'),
         target_country: c,
