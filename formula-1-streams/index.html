@@ -71,6 +71,7 @@
             /* MATCH ROWS */
             --match-row-bg: #1e293b;
             --match-row-border: #334155;
+        --match-row-radius: 10;
             --match-row-live-border-left: 4px solid #007AFF;
             --match-row-live-bg-start: #000000;
             --match-row-live-bg-end: #000000;
@@ -104,6 +105,7 @@
             --soc-sidebar-shadow: 0 4px 10px rgba(0,0,0,0.3);
             --soc-btn-bg: #1e293b;
             --soc-btn-border: #334155;
+        --soc-btn-radius: 15%;
             --soc-btn-color: #94a3b8;
             --soc-btn-hover-bg: #007aff;
             --soc-btn-hover-border: #007aff;
@@ -229,7 +231,7 @@
         .sec-title { font-size: 1.2rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 10px; text-transform: uppercase; margin: 0; font-family: var(--font-family-headings); }
         .sec-logo { width: var(--section-logo-size); height: var(--section-logo-size); object-fit: contain; }
         
-        .match-row { display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; background: var(--match-row-bg); border: 1px solid var(--match-row-border); border-radius: var(--border-radius-base); padding: 10px 8px 5px 8px; margin-bottom: 8px; height: var(--row-h-mob); transition:0.2s; }
+        .match-row { display: grid; grid-template-columns: 45px 1fr 50px 75px; align-items: center; gap: 8px; background: var(--match-row-bg); border: 1px solid var(--match-row-border); border-radius: var(--match-row-radius); padding: 10px 8px 5px 8px; margin-bottom: 8px; height: var(--row-h-mob); transition:0.2s; }
         .match-row:hover { border-color: var(--match-row-hover-border); background: var(--match-row-hover-bg); transform: translateY(-2px); }
         .match-row.live { border-left: var(--match-row-live-border-left); background: linear-gradient(90deg, var(--match-row-live-bg-start) 0%, var(--match-row-live-bg-end) 100%); }
         @media (min-width: 768px) { .match-row { grid-template-columns: 80px 1fr 100px 110px; padding: 15px 20px 10px 20px; gap: 20px; height: var(--row-h-desk); } }
@@ -330,7 +332,7 @@
             width: 44px; padding: 6px 0; display: flex; flex-direction: column; 
             align-items: center; justify-content: center; gap: 3px; 
             color: var(--soc-btn-color); background: var(--soc-btn-bg); 
-            border: 1px solid var(--soc-btn-border); border-radius: var(--border-radius-base); 
+            border: 1px solid var(--soc-btn-border); border-radius: var(--soc-btn-radius); 
             will-change: transform; transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease; 
             cursor: pointer; 
         }
@@ -446,13 +448,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 1px solid #334155;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     hhrreeeee Formula 1 hhsssds
@@ -460,7 +462,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
