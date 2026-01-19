@@ -5520,7 +5520,9 @@
         "New Haven": "assets/logos/streamed/new-haven.webp",
         "Mississippi Valley State": "assets/logos/streamed/mississippi-valley-state.webp",
         "Florida A&M": "assets/logos/streamed/florida-am.webp",
-        "Houston Christian": "assets/logos/streamed/houston-christian.webp"
+        "Houston Christian": "assets/logos/streamed/houston-christian.webp",
+        "Queensland Fire": "assets/logos/upstreams/queensland-fire.webp",
+        "South Australian Scorpions": "assets/logos/upstreams/south-australian-scorpions.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
