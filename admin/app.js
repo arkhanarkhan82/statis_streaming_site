@@ -267,6 +267,9 @@ const THEME_FIELDS = {
     'show_more_btn_border': 'themeShowMoreBorder',
     'show_more_btn_text': 'themeShowMoreText',
     'show_more_btn_radius': 'themeShowMoreRadius',
+    // ADD THESE LINES:
+    'show_more_btn_hover_bg': 'themeShowMoreHoverBg',
+    'show_more_btn_hover_text': 'themeShowMoreHoverText',
 
     // Sticky Share
     'social_desktop_top': 'themeSocialDeskTop',
@@ -721,6 +724,11 @@ const THEME_PRESETS = {
         logo_image_shadow_color: "#E50914",
         header_border_bottom: "1px solid #333333",
         // ... previous config ...
+        show_more_btn_bg: "#151515",
+        show_more_btn_text: "#cccccc",
+        show_more_btn_radius: "4px",
+        show_more_btn_hover_bg: "#E50914", // <--- ADD THIS (Red Hover)
+        show_more_btn_hover_text: "#FFFFFF", // <--- ADD THIS
         // --- 12. SOCIAL & FLOATING ---
         social_desktop_top: "50%",
         social_desktop_left: "0",
@@ -863,6 +871,13 @@ const THEME_PRESETS = {
         border_radius_base: "8",
         container_max_width: "1400",
         section_logo_size: "28",
+        // ...
+        show_more_btn_bg: "#1e293b",
+        show_more_btn_text: "#cbd5e1",
+        show_more_btn_radius: "30px",
+        show_more_btn_hover_bg: "#007AFF", // <--- ADD THIS (Blue Hover)
+        show_more_btn_hover_text: "#FFFFFF", // <--- ADD THIS
+        // ...
 
         // --- 2. GLOBAL PALETTE (Modern Tech / Sky Style) ---
         brand_primary: "#007AFF",      // Vivid Tech Blue
@@ -1021,6 +1036,13 @@ const THEME_PRESETS = {
         border_radius_base: "0", // Square / Sharp edges
         container_max_width: "1600",
         section_logo_size: "22",
+        // ...
+        show_more_btn_bg: "#052e16",
+        show_more_btn_text: "#86efac",
+        show_more_btn_radius: "0px",
+        show_more_btn_hover_bg: "#00E676", // <--- ADD THIS (Green Hover)
+        show_more_btn_hover_text: "#000000", // <--- ADD THIS
+        // ...
 
         // --- 2. GLOBAL PALETTE (Betting/Stats/Pitch Style) ---
         brand_primary: "#00E676",      // Neon Green
