@@ -446,7 +446,6 @@ async function verifyAndLoad(token) {
 // ==========================================
 function populateUI() {
     const s = configData.site_settings || {};
-    setVal('apiUrl', s.api_url);
     setVal('titleP1', s.title_part_1);
     setVal('titleP2', s.title_part_2);
     setVal('siteDomain', s.domain);
@@ -457,6 +456,14 @@ function populateUI() {
     setVal('footerCopyright', s.footer_copyright);
     setVal('footerDisclaimer', s.footer_disclaimer);
     setVal('targetCountry', s.target_country || 'US');
+    // Sitemap Settings
+    if(document.getElementById('sitemapEnable')) document.getElementById('sitemapEnable').checked = s.sitemap_enabled === true;
+    if(document.getElementById('sitemapIncludeLeagues')) document.getElementById('sitemapIncludeLeagues').checked = s.sitemap_include_leagues === true;
+    setVal('sitemapStaticPages', s.sitemap_static_pages);
+    
+    // Auto-generate Sitemap URL for display
+    const domain = s.domain || "yoursite.com";
+    setVal('sitemapUrlDisplay', `https://${domain}/sitemap.xml`);
     // Populate Watch Settings
     const w = configData.watch_settings || {};
     setVal('supaUrl', w.supabase_url);
@@ -1519,7 +1526,9 @@ document.getElementById('saveBtn').onclick = async () => {
     if(configData.sport_priorities[c]) configData.sport_priorities[c]._BOOST = getVal('prioBoost');
 
     configData.site_settings = {
-        api_url: getVal('apiUrl'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'),
+        sitemap_enabled: document.getElementById('sitemapEnable').checked,
+        sitemap_include_leagues: document.getElementById('sitemapIncludeLeagues').checked,
+        sitemap_static_pages: getVal('sitemapStaticPages'), title_part_1: getVal('titleP1'), title_part_2: getVal('titleP2'),
         domain: getVal('siteDomain'), logo_url: getVal('logoUrl'), favicon_url: getVal('faviconUrl'),
         footer_copyright: getVal('footerCopyright'), footer_disclaimer: getVal('footerDisclaimer'),
         target_country: c,
