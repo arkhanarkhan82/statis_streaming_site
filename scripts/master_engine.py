@@ -609,6 +609,9 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
     if icon:
         if icon.startswith('http') or icon.startswith('/'):
             img_html = f'<img src="{icon}" class="sec-logo"> '
+        # Check if it is HTML (like our div)
+        elif icon.startswith('<'):
+            img_html = f'{icon} '
         else:
             img_html = f'<span style="font-size:1.2rem; margin-right:8px;">{icon}</span> '
             
@@ -675,7 +678,7 @@ def build_homepage(matches):
 
     # Use Theme Titles
     live_title = THEME.get('text_live_section_title', 'Trending Live')
-    live_html = render_container(live_matches, live_title, '🔴', None, True)
+    live_html = render_container(live_matches, live_title, '<div class="live-dot-pulse"></div>', None, True)
 
     wc_cat = THEME.get('wildcard_category', '').lower()
     wc_active = len(wc_cat) > 2
@@ -900,7 +903,7 @@ def inject_leagues(matches):
 
         # C. Inject Match Lists (HTML)
         if l_live:
-            live_content = render_container(l_live, f"Live {key}", "🔴", None, True)
+            live_content = render_container(l_live, f"Live {key}", '<div class="live-dot-pulse"></div>', None, True)
             html = re.sub(r'<!-- L_LIVE_START -->.*?<!-- L_LIVE_END -->', f'<!-- L_LIVE_START -->{live_content}<!-- L_LIVE_END -->', html, flags=re.DOTALL)
             html = html.replace('id="live-list" style="display:none;"', 'id="live-list"')
         else:
