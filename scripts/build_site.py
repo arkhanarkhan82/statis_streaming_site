@@ -197,7 +197,7 @@ def render_page(template, config, page_data, theme_override=None):
         
         # 2. Typography & Layout
         'font_family_base': 'system-ui, -apple-system, sans-serif', 'font_family_headings': 'inherit',
-        'base_font_size': '14px', 'base_line_height': '1.5',
+        'base_font_size': '14px', 'base_line_height': '1.5', 'social_btn_radius': '6px', 'match_row_radius': '6px',
         'container_max_width': '1100px', 'header_max_width': '1100px',
         'border_radius_base': '6px', 'button_border_radius': '4px', 'hero_pill_radius': '50px',
         
@@ -796,10 +796,23 @@ def render_page(template, config, page_data, theme_override=None):
             schema_output += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>\n'
 
     # Inject into Template
-    html = html.replace('{{SCHEMA_BLOCK}}', schema_output) 
+    html = html.replace('{{SCHEMA_BLOCK}}', schema_output)
 
     return html
 
+def generate_robots():
+    print(" > Generating robots.txt...")
+    s_sett = config.get('site_settings', {})
+    content = s_sett.get('robots_txt', '')
+    
+    # Fallback if empty but sitemap enabled
+    if not content and s_sett.get('sitemap_enabled'):
+        domain = s_sett.get('domain', 'example.com')
+        content = f"User-agent: *\nAllow: /\nSitemap: https://{domain}/sitemap.xml"
+    
+    if content:
+        with open('robots.txt', 'w', encoding='utf-8') as f:
+            f.write(content)
 # ==========================================
 # 4. MAIN BUILD PROCESS
 # ==========================================
@@ -1002,6 +1015,7 @@ def main():
                 f.write(html)
             
             print(f"   -> Built: {slug} (Filter: {name})")
+            generate_robots()
 
     print("✅ Build Complete.")
 
