@@ -248,7 +248,9 @@ const THEME_FIELDS = {
     // Labels & Text
     'text_live_section_title': 'themeTextLiveTitle',
     'text_wildcard_title': 'themeTextWildcardTitle',       // <--- NEW
+    'id_wildcard': 'themeIdWildcard',
     'text_top_upcoming_title': 'themeTextTopUpcoming',
+    'id_top_upcoming': 'themeIdTopUpcoming',
     'text_show_more': 'themeTextShowMore',
     'text_section_link': 'themeTextSectionLink',
     'text_watch_btn': 'themeTextWatch',
