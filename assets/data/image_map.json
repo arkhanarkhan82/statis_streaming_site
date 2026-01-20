@@ -5555,7 +5555,35 @@
         "Aldosivi": "assets/logos/upstreams/aldosivi.webp",
         "Defensa y Justicia": "assets/logos/upstreams/defensa-y-justicia.webp",
         "Colomiers": "assets/logos/upstreams/colomiers.webp",
-        "Everton Women": "assets/logos/upstreams/everton-women.webp"
+        "Everton Women": "assets/logos/upstreams/everton-women.webp",
+        "Jokerit Helsinki": "assets/logos/upstreams/jokerit-helsinki.webp",
+        "Miami RedHawks": "assets/logos/upstreams/miami-redhawks.webp",
+        "Ignacio Parisca": "assets/logos/upstreams/ignacio-parisca.webp",
+        "Alessandro Spadola": "assets/logos/upstreams/alessandro-spadola.webp",
+        "Timo Rosenkranz Koenig": "assets/logos/upstreams/timo-rosenkranz-koenig.webp",
+        "John Sperle": "assets/logos/upstreams/john-sperle.webp",
+        "Karim Bennani": "assets/logos/upstreams/karim-bennani.webp",
+        "Maria Ustic": "assets/logos/upstreams/maria-ustic.webp",
+        "Erika Andreeva": "assets/logos/upstreams/erika-andreeva.webp",
+        "Gabriel Ghetu": "assets/logos/upstreams/gabriel-ghetu.webp",
+        "Sergio Planella Hernandez": "assets/logos/upstreams/sergio-planella-hernandez.webp",
+        "Niccolo Catini": "assets/logos/upstreams/niccolo-catini.webp",
+        "Arantxa Rus": "assets/logos/upstreams/arantxa-rus.webp",
+        "Sergi Perez Contri": "assets/logos/upstreams/sergi-perez-contri.webp",
+        "Nicolas Jadoun": "assets/logos/upstreams/nicolas-jadoun.webp",
+        "Jessika Ponchet": "assets/logos/upstreams/jessika-ponchet.webp",
+        "Briana Szabo": "assets/logos/upstreams/briana-szabo.webp",
+        "Vittoria Paganetti": "assets/logos/upstreams/vittoria-paganetti.webp",
+        "Nellie Taraba Wallberg": "assets/logos/upstreams/nellie-taraba-wallberg.webp",
+        "Nuria Brancaccio": "assets/logos/upstreams/nuria-brancaccio.webp",
+        "Manchester City W": "assets/logos/upstreams/manchester-city-w.webp",
+        "Chelsea W": "assets/logos/upstreams/chelsea-w.webp",
+        "VC Wiesbaden": "assets/logos/upstreams/vc-wiesbaden.webp",
+        "Dresdner SC": "assets/logos/upstreams/dresdner-sc.webp",
+        "Voleibol: Galatasaray x Bogdanka": "assets/logos/upstreams/voleibol-galatasaray-x-bogdanka.webp",
+        "Champions League": "assets/logos/upstreams/champions-league.webp",
+        "Havah Kaur Kaler": "assets/logos/upstreams/havah-kaur-kaler.webp",
+        "Camilla Rosatello": "assets/logos/upstreams/camilla-rosatello.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6031,6 +6059,8 @@
         "Europa League": "assets/logos/leagues/europa-league.webp",
         "Champions League, Pool B": "assets/logos/leagues/champions-league-pool-b.webp",
         "Euroleague Women": "assets/logos/leagues/euroleague-women.webp",
-        "Liga Profesional": "assets/logos/leagues/liga-profesional.webp"
+        "Liga Profesional": "assets/logos/leagues/liga-profesional.webp",
+        "NCAA FBS": "assets/logos/leagues/ncaa-fbs.webp",
+        "Women's League Cup": "assets/logos/leagues/womens-league-cup.webp"
     }
 }
