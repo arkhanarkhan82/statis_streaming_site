@@ -5628,7 +5628,13 @@
         "Weronika Ewald": "assets/logos/upstreams/weronika-ewald.webp",
         "Valentina Ryser": "assets/logos/upstreams/valentina-ryser.webp",
         "Anastasiya Kuparev": "assets/logos/upstreams/anastasiya-kuparev.webp",
-        "Viktoria Varga": "assets/logos/upstreams/viktoria-varga.webp"
+        "Viktoria Varga": "assets/logos/upstreams/viktoria-varga.webp",
+        "Vitalii Hnidets": "assets/logos/upstreams/vitalii-hnidets.webp",
+        "Koper W": "assets/logos/upstreams/koper-w.webp",
+        "Pablo Paternostro": "assets/logos/upstreams/pablo-paternostro.webp",
+        "Jonathan Baron": "assets/logos/upstreams/jonathan-baron.webp",
+        "Avner Wong": "assets/logos/upstreams/avner-wong.webp",
+        "George Hakopian": "assets/logos/upstreams/george-hakopian.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6112,6 +6118,7 @@
         "Europe Cup, Group K": "assets/logos/leagues/europe-cup-group-k.webp",
         "Bangladesh Premier League, Playoffs": "assets/logos/leagues/bangladesh-premier-league-playoffs.webp",
         "NCAA American Football": "assets/logos/leagues/ncaa-american-football.webp",
-        "Big Bash League, Playoffs": "assets/logos/leagues/big-bash-league-playoffs.webp"
+        "Big Bash League, Playoffs": "assets/logos/leagues/big-bash-league-playoffs.webp",
+        "1.A DRL Women": "assets/logos/leagues/1a-drl-women.webp"
     }
 }
