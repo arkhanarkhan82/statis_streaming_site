@@ -5657,7 +5657,10 @@
         "Spartak Moscow": "assets/logos/streamed/spartak-moscow.webp",
         "Kettera": "assets/logos/streamed/kettera.webp",
         "K-Vantaa": "assets/logos/streamed/k-vantaa.webp",
-        "Giovanni Rezk": "assets/logos/upstreams/giovanni-rezk.webp"
+        "Giovanni Rezk": "assets/logos/upstreams/giovanni-rezk.webp",
+        "Night": "assets/logos/upstreams/night.webp",
+        "Day 4": "assets/logos/upstreams/day-4.webp",
+        "Daniel Kandi": "assets/logos/upstreams/daniel-kandi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6142,6 +6145,7 @@
         "Bangladesh Premier League, Playoffs": "assets/logos/leagues/bangladesh-premier-league-playoffs.webp",
         "NCAA American Football": "assets/logos/leagues/ncaa-american-football.webp",
         "Big Bash League, Playoffs": "assets/logos/leagues/big-bash-league-playoffs.webp",
-        "1.A DRL Women": "assets/logos/leagues/1a-drl-women.webp"
+        "1.A DRL Women": "assets/logos/leagues/1a-drl-women.webp",
+        "Atp Australian Open": "assets/logos/leagues/atp-australian-open.webp"
     }
 }
