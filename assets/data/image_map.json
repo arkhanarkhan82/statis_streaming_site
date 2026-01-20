@@ -5692,7 +5692,13 @@
         "Argentinos JRS": "assets/logos/streamed/argentinos-jrs.webp",
         "Midland": "assets/logos/streamed/midland.webp",
         "Del Fes Avellino": "assets/logos/upstreams/del-fes-avellino.webp",
-        "Polina Skopintseva": "assets/logos/upstreams/polina-skopintseva.webp"
+        "Polina Skopintseva": "assets/logos/upstreams/polina-skopintseva.webp",
+        "ST Mirren": "assets/logos/streamed/st-mirren.webp",
+        "Birmingham": "assets/logos/streamed/birmingham.webp",
+        "Swansea": "assets/logos/streamed/swansea.webp",
+        "NEOM": "assets/logos/streamed/neom.webp",
+        "Bayern M\u00fcnchen": "assets/logos/streamed/bayern-m\u00fcnchen.webp",
+        "RB Bragantino": "assets/logos/streamed/rb-bragantino.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
