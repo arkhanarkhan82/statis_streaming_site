@@ -5583,7 +5583,11 @@
         "Voleibol: Galatasaray x Bogdanka": "assets/logos/upstreams/voleibol-galatasaray-x-bogdanka.webp",
         "Champions League": "assets/logos/upstreams/champions-league.webp",
         "Havah Kaur Kaler": "assets/logos/upstreams/havah-kaur-kaler.webp",
-        "Camilla Rosatello": "assets/logos/upstreams/camilla-rosatello.webp"
+        "Camilla Rosatello": "assets/logos/upstreams/camilla-rosatello.webp",
+        "Chalkmpank": "assets/logos/upstreams/chalkmpank.webp",
+        "Rozelare": "assets/logos/upstreams/rozelare.webp",
+        "Yohanes Saut Marcellyno": "assets/logos/upstreams/yohanes-saut-marcellyno.webp",
+        "Muhamad Yusuf": "assets/logos/upstreams/muhamad-yusuf.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6061,6 +6065,7 @@
         "Euroleague Women": "assets/logos/leagues/euroleague-women.webp",
         "Liga Profesional": "assets/logos/leagues/liga-profesional.webp",
         "NCAA FBS": "assets/logos/leagues/ncaa-fbs.webp",
-        "Women's League Cup": "assets/logos/leagues/womens-league-cup.webp"
+        "Women's League Cup": "assets/logos/leagues/womens-league-cup.webp",
+        "Volleyball": "assets/logos/leagues/volleyball.webp"
     }
 }
