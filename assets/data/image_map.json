@@ -5698,7 +5698,15 @@
         "Swansea": "assets/logos/streamed/swansea.webp",
         "NEOM": "assets/logos/streamed/neom.webp",
         "Bayern M\u00fcnchen": "assets/logos/streamed/bayern-m\u00fcnchen.webp",
-        "RB Bragantino": "assets/logos/streamed/rb-bragantino.webp"
+        "RB Bragantino": "assets/logos/streamed/rb-bragantino.webp",
+        "Yiming Dang": "assets/logos/upstreams/yiming-dang.webp",
+        "Salma Djoubri": "assets/logos/upstreams/salma-djoubri.webp",
+        "Khrystyna Vozniak": "assets/logos/upstreams/khrystyna-vozniak.webp",
+        "Kolie Allen": "assets/logos/upstreams/kolie-allen.webp",
+        "Kailey Evans": "assets/logos/upstreams/kailey-evans.webp",
+        "Allura Zamarripa": "assets/logos/upstreams/allura-zamarripa.webp",
+        "Akasha Urhobo": "assets/logos/upstreams/akasha-urhobo.webp",
+        "Magnus Johannesen": "assets/logos/upstreams/magnus-johannesen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6185,6 +6193,8 @@
         "Big Bash League, Playoffs": "assets/logos/leagues/big-bash-league-playoffs.webp",
         "1.A DRL Women": "assets/logos/leagues/1a-drl-women.webp",
         "Atp Australian Open": "assets/logos/leagues/atp-australian-open.webp",
-        "WPL": "assets/logos/leagues/wpl.webp"
+        "WPL": "assets/logos/leagues/wpl.webp",
+        "Champions League - Gr.J": "assets/logos/leagues/champions-league-grj.webp",
+        "Champions League - Gr.I": "assets/logos/leagues/champions-league-gri.webp"
     }
 }
