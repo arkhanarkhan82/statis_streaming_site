@@ -5721,7 +5721,12 @@
         "UMass": "assets/logos/streamed/umass.webp",
         "Aurora FC": "assets/logos/streamed/aurora-fc.webp",
         "Hartlepool United": "assets/logos/upstreams/hartlepool-united.webp",
-        "Gateshead": "assets/logos/upstreams/gateshead.webp"
+        "Gateshead": "assets/logos/upstreams/gateshead.webp",
+        "Eastleigh": "assets/logos/upstreams/eastleigh.webp",
+        "Truro City": "assets/logos/upstreams/truro-city.webp",
+        "Brackley Town": "assets/logos/upstreams/brackley-town.webp",
+        "Boreham Wood": "assets/logos/upstreams/boreham-wood.webp",
+        "Scunthorpe United": "assets/logos/upstreams/scunthorpe-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
