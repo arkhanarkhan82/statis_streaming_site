@@ -5732,7 +5732,31 @@
         "Union de Mar Del Plata": "assets/logos/upstreams/union-de-mar-del-plata.webp",
         "Uniao Corinthians": "assets/logos/upstreams/uniao-corinthians.webp",
         "Hajduk Split": "assets/logos/upstreams/hajduk-split.webp",
-        "Osijek": "assets/logos/upstreams/osijek.webp"
+        "Osijek": "assets/logos/upstreams/osijek.webp",
+        "Folgore Falciano": "assets/logos/upstreams/folgore-falciano.webp",
+        "NC State": "assets/logos/upstreams/nc-state.webp",
+        "Uberl\u00e2ndia EC": "assets/logos/upstreams/uberl\u00e2ndia-ec.webp",
+        "Internacional": "assets/logos/upstreams/internacional.webp",
+        "North Esporte Clube": "assets/logos/upstreams/north-esporte-clube.webp",
+        "Coquimbo Unido": "assets/logos/upstreams/coquimbo-unido.webp",
+        "Deportes Limache": "assets/logos/upstreams/deportes-limache.webp",
+        "Moh. Zaki Ubaidillah": "assets/logos/upstreams/moh-zaki-ubaidillah.webp",
+        "KIran George": "assets/logos/upstreams/kiran-george.webp",
+        "Julie Dawall Jakobsen": "assets/logos/upstreams/julie-dawall-jakobsen.webp",
+        "Aakarshi Kashyap": "assets/logos/upstreams/aakarshi-kashyap.webp",
+        "Polina Buhrova": "assets/logos/upstreams/polina-buhrova.webp",
+        "Qian Xi Han": "assets/logos/upstreams/qian-xi-han.webp",
+        "Panitchaphon Teeraratsakul": "assets/logos/upstreams/panitchaphon-teeraratsakul.webp",
+        "Li Yang Su": "assets/logos/upstreams/li-yang-su.webp",
+        "Jason Gunawan": "assets/logos/upstreams/jason-gunawan.webp",
+        "Arnaud Merkle": "assets/logos/upstreams/arnaud-merkle.webp",
+        "Anders Antonsen": "assets/logos/upstreams/anders-antonsen.webp",
+        "Jak Jones": "assets/logos/upstreams/jak-jones.webp",
+        "Ciou-Tong Tung": "assets/logos/upstreams/ciou-tong-tung.webp",
+        "Jack Lisowski": "assets/logos/upstreams/jack-lisowski.webp",
+        "Ka Long Angus Ng": "assets/logos/upstreams/ka-long-angus-ng.webp",
+        "Pitchamon Opatniput": "assets/logos/upstreams/pitchamon-opatniput.webp",
+        "Zhang Anda": "assets/logos/upstreams/zhang-anda.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6222,6 +6246,7 @@
         "WPL": "assets/logos/leagues/wpl.webp",
         "Champions League - Gr.J": "assets/logos/leagues/champions-league-grj.webp",
         "Champions League - Gr.I": "assets/logos/leagues/champions-league-gri.webp",
-        "SA20 League, Playoffs": "assets/logos/leagues/sa20-league-playoffs.webp"
+        "SA20 League, Playoffs": "assets/logos/leagues/sa20-league-playoffs.webp",
+        "Champions League - Gr.K": "assets/logos/leagues/champions-league-grk.webp"
     }
 }
