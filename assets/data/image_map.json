@@ -5667,7 +5667,9 @@
         "Modern Sport": "assets/logos/upstreams/modern-sport.webp",
         "Morgan D.": "assets/logos/upstreams/morgan-d.webp",
         "Kandi D.": "assets/logos/upstreams/kandi-d.webp",
-        "Arthi Muniyan": "assets/logos/upstreams/arthi-muniyan.webp"
+        "Arthi Muniyan": "assets/logos/upstreams/arthi-muniyan.webp",
+        "Ferencvarosi TC": "assets/logos/streamed/ferencvarosi-tc.webp",
+        "Alvaro Gaspar Martaux": "assets/logos/upstreams/alvaro-gaspar-martaux.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6153,6 +6155,7 @@
         "NCAA American Football": "assets/logos/leagues/ncaa-american-football.webp",
         "Big Bash League, Playoffs": "assets/logos/leagues/big-bash-league-playoffs.webp",
         "1.A DRL Women": "assets/logos/leagues/1a-drl-women.webp",
-        "Atp Australian Open": "assets/logos/leagues/atp-australian-open.webp"
+        "Atp Australian Open": "assets/logos/leagues/atp-australian-open.webp",
+        "WPL": "assets/logos/leagues/wpl.webp"
     }
 }
