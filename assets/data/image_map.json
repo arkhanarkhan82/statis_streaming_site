@@ -5727,7 +5727,12 @@
         "Brackley Town": "assets/logos/upstreams/brackley-town.webp",
         "Boreham Wood": "assets/logos/upstreams/boreham-wood.webp",
         "Scunthorpe United": "assets/logos/upstreams/scunthorpe-united.webp",
-        "Andrea Obradovic": "assets/logos/upstreams/andrea-obradovic.webp"
+        "Andrea Obradovic": "assets/logos/upstreams/andrea-obradovic.webp",
+        "Pinheiros": "assets/logos/upstreams/pinheiros.webp",
+        "Union de Mar Del Plata": "assets/logos/upstreams/union-de-mar-del-plata.webp",
+        "Uniao Corinthians": "assets/logos/upstreams/uniao-corinthians.webp",
+        "Hajduk Split": "assets/logos/upstreams/hajduk-split.webp",
+        "Osijek": "assets/logos/upstreams/osijek.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6216,6 +6221,7 @@
         "Atp Australian Open": "assets/logos/leagues/atp-australian-open.webp",
         "WPL": "assets/logos/leagues/wpl.webp",
         "Champions League - Gr.J": "assets/logos/leagues/champions-league-grj.webp",
-        "Champions League - Gr.I": "assets/logos/leagues/champions-league-gri.webp"
+        "Champions League - Gr.I": "assets/logos/leagues/champions-league-gri.webp",
+        "SA20 League, Playoffs": "assets/logos/leagues/sa20-league-playoffs.webp"
     }
 }
