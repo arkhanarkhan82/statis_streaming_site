@@ -5717,7 +5717,11 @@
         "Xelaj\u00fa": "assets/logos/streamed/xelaj\u00fa.webp",
         "Gloucester Rugby": "assets/logos/streamed/gloucester-rugby.webp",
         "Bath Rugby": "assets/logos/streamed/bath-rugby.webp",
-        "PSG": "assets/logos/upstreams/psg.webp"
+        "PSG": "assets/logos/upstreams/psg.webp",
+        "UMass": "assets/logos/streamed/umass.webp",
+        "Aurora FC": "assets/logos/streamed/aurora-fc.webp",
+        "Hartlepool United": "assets/logos/upstreams/hartlepool-united.webp",
+        "Gateshead": "assets/logos/upstreams/gateshead.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
