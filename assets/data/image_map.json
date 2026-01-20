@@ -5596,7 +5596,30 @@
         "Luciana Blatter": "assets/logos/upstreams/luciana-blatter.webp",
         "Florencia Belen Moron": "assets/logos/upstreams/florencia-belen-moron.webp",
         "Al Kuwait": "assets/logos/upstreams/al-kuwait.webp",
-        "Sofia Meabe": "assets/logos/upstreams/sofia-meabe.webp"
+        "Sofia Meabe": "assets/logos/upstreams/sofia-meabe.webp",
+        "Al-Ula": "assets/logos/upstreams/al-ula.webp",
+        "Al Arabi Doha": "assets/logos/upstreams/al-arabi-doha.webp",
+        "Dreamland Gran Canaria": "assets/logos/upstreams/dreamland-gran-canaria.webp",
+        "Pallacanestro Trieste": "assets/logos/upstreams/pallacanestro-trieste.webp",
+        "R10 Score Vasco da Gama": "assets/logos/upstreams/r10-score-vasco-da-gama.webp",
+        "Stjarnan FC": "assets/logos/upstreams/stjarnan-fc.webp",
+        "Hamar Thor": "assets/logos/upstreams/hamar-thor.webp",
+        "Energa Trefl Sopot": "assets/logos/upstreams/energa-trefl-sopot.webp",
+        "Col\u00f3n de Santa Fe": "assets/logos/upstreams/col\u00f3n-de-santa-fe.webp",
+        "Santa Paula de G\u00e1lvez": "assets/logos/upstreams/santa-paula-de-g\u00e1lvez.webp",
+        "Tom\u00e1s de Rocamora": "assets/logos/upstreams/tom\u00e1s-de-rocamora.webp",
+        "La Uni\u00f3n Col\u00f3n Entre R\u00edos": "assets/logos/upstreams/la-uni\u00f3n-col\u00f3n-entre-r\u00edos.webp",
+        "Salta Basket": "assets/logos/upstreams/salta-basket.webp",
+        "Club Atl\u00e9tico San Isidro": "assets/logos/upstreams/club-atl\u00e9tico-san-isidro.webp",
+        "Fortaleza Basquete Cearense": "assets/logos/upstreams/fortaleza-basquete-cearense.webp",
+        "Nanjing Monkey Kings": "assets/logos/upstreams/nanjing-monkey-kings.webp",
+        "Xinjiang Flying Tigers": "assets/logos/upstreams/xinjiang-flying-tigers.webp",
+        "Al Sharjah": "assets/logos/upstreams/al-sharjah.webp",
+        "Al-Kuwait": "assets/logos/upstreams/al-kuwait.webp",
+        "Wangcharoen Kantaphon": "assets/logos/upstreams/wangcharoen-kantaphon.webp",
+        "Anthony Sinisuka Ginting": "assets/logos/upstreams/anthony-sinisuka-ginting.webp",
+        "Zhe An Hu": "assets/logos/upstreams/zhe-an-hu.webp",
+        "Julien Carraggi": "assets/logos/upstreams/julien-carraggi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6075,6 +6098,9 @@
         "Liga Profesional": "assets/logos/leagues/liga-profesional.webp",
         "NCAA FBS": "assets/logos/leagues/ncaa-fbs.webp",
         "Women's League Cup": "assets/logos/leagues/womens-league-cup.webp",
-        "Volleyball": "assets/logos/leagues/volleyball.webp"
+        "Volleyball": "assets/logos/leagues/volleyball.webp",
+        "Champions League, Group L": "assets/logos/leagues/champions-league-group-l.webp",
+        "Europe Cup, Group K": "assets/logos/leagues/europe-cup-group-k.webp",
+        "Bangladesh Premier League, Playoffs": "assets/logos/leagues/bangladesh-premier-league-playoffs.webp"
     }
 }
