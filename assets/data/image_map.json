@@ -5619,7 +5619,15 @@
         "Wangcharoen Kantaphon": "assets/logos/upstreams/wangcharoen-kantaphon.webp",
         "Anthony Sinisuka Ginting": "assets/logos/upstreams/anthony-sinisuka-ginting.webp",
         "Zhe An Hu": "assets/logos/upstreams/zhe-an-hu.webp",
-        "Julien Carraggi": "assets/logos/upstreams/julien-carraggi.webp"
+        "Julien Carraggi": "assets/logos/upstreams/julien-carraggi.webp",
+        "Mia Pohankova": "assets/logos/upstreams/mia-pohankova.webp",
+        "Julia Avdeeva": "assets/logos/upstreams/julia-avdeeva.webp",
+        "Laura Hietaranta": "assets/logos/upstreams/laura-hietaranta.webp",
+        "Selena Janicijevic": "assets/logos/upstreams/selena-janicijevic.webp",
+        "Charlotte Pikkaart": "assets/logos/upstreams/charlotte-pikkaart.webp",
+        "Weronika Ewald": "assets/logos/upstreams/weronika-ewald.webp",
+        "Valentina Ryser": "assets/logos/upstreams/valentina-ryser.webp",
+        "Anastasiya Kuparev": "assets/logos/upstreams/anastasiya-kuparev.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6101,6 +6109,7 @@
         "Volleyball": "assets/logos/leagues/volleyball.webp",
         "Champions League, Group L": "assets/logos/leagues/champions-league-group-l.webp",
         "Europe Cup, Group K": "assets/logos/leagues/europe-cup-group-k.webp",
-        "Bangladesh Premier League, Playoffs": "assets/logos/leagues/bangladesh-premier-league-playoffs.webp"
+        "Bangladesh Premier League, Playoffs": "assets/logos/leagues/bangladesh-premier-league-playoffs.webp",
+        "NCAA American Football": "assets/logos/leagues/ncaa-american-football.webp"
     }
 }
