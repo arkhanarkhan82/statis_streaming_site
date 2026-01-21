@@ -5880,7 +5880,8 @@
         "Severstal Cherepovets": "assets/logos/streamed/severstal-cherepovets.webp",
         "Mlad\u00e1 Boleslav": "assets/logos/upstreams/mlad\u00e1-boleslav.webp",
         "Aarhus Fremad": "assets/logos/upstreams/aarhus-fremad.webp",
-        "Astana": "assets/logos/upstreams/astana.webp"
+        "Astana": "assets/logos/upstreams/astana.webp",
+        "Royal Challengers Bangalore": "assets/logos/streamed/royal-challengers-bangalore.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6385,6 +6386,24 @@
         "Bundesliga Women": "assets/logos/leagues/bundesliga-women.webp",
         "Frauen Bundesliga": "assets/logos/leagues/frauen-bundesliga.webp",
         "New Zealand in India, 5 T20I Series": "assets/logos/leagues/new-zealand-in-india-5-t20i-series.webp",
-        "SA20": "assets/logos/leagues/sa20.webp"
+        "SA20": "assets/logos/leagues/sa20.webp",
+        "Wta Australian Open Stearns P Marcinko P": "assets/logos/leagues/wta-australian-open-stearns-p-marcinko-p.webp",
+        "Wta Australian Open Tjen J Pliskova Karolina": "assets/logos/leagues/wta-australian-open-tjen-j-pliskova-karolina.webp",
+        "Atp Australian Open Hurkacz Hubert Quinn E": "assets/logos/leagues/atp-australian-open-hurkacz-hubert-quinn-e.webp",
+        "Atp Australian Open Shelton B Sweeny D": "assets/logos/leagues/atp-australian-open-shelton-b-sweeny-d.webp",
+        "Wta Australian Open Kalinskaya Anna Grabher Julia": "assets/logos/leagues/wta-australian-open-kalinskaya-anna-grabher-julia.webp",
+        "Wta Australian Open Noskova L Preston T": "assets/logos/leagues/wta-australian-open-noskova-l-preston-t.webp",
+        "Wta Australian Open Ostapenko Jelena": "assets/logos/leagues/wta-australian-open-ostapenko-jelena.webp",
+        "Wta Australian Open Inglis Maddison Siegemund Laura": "assets/logos/leagues/wta-australian-open-inglis-maddison-siegemund-laura.webp",
+        "Atp Australian Open Maestrelli F Djokovic Novak": "assets/logos/leagues/atp-australian-open-maestrelli-f-djokovic-novak.webp",
+        "Wta Australian Open Siniakova Katerina Anisimova Amanda": "assets/logos/leagues/wta-australian-open-siniakova-katerina-anisimova-amanda.webp",
+        "Atp Australian Open Vandezandschulpb Shang J": "assets/logos/leagues/atp-australian-open-vandezandschulpb-shang-j.webp",
+        "Atp Australian Open Gea A Wawrinka Stan": "assets/logos/leagues/atp-australian-open-gea-a-wawrinka-stan.webp",
+        "Wta Australian Open Mertens Elise Uchijimam": "assets/logos/leagues/wta-australian-open-mertens-elise-uchijimam.webp",
+        "Atp Australian Open Spizzirri E Wu Yibing": "assets/logos/leagues/atp-australian-open-spizzirri-e-wu-yibing.webp",
+        "Wta Australian Open Fruhvirtoval Valentova T": "assets/logos/leagues/wta-australian-open-fruhvirtoval-valentova-t.webp",
+        "Wta Australian Open Bartunkova N Bencic Belinda": "assets/logos/leagues/wta-australian-open-bartunkova-n-bencic-belinda.webp",
+        "Wta Australian Open Bouzkova Marie Swiatek Iga": "assets/logos/leagues/wta-australian-open-bouzkova-marie-swiatek-iga.webp",
+        "Wta Australian Open Osaka Naomi Cirstea Sorana Mihaela": "assets/logos/leagues/wta-australian-open-osaka-naomi-cirstea-sorana-mihaela.webp"
     }
 }
