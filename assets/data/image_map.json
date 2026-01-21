@@ -5977,7 +5977,9 @@
         "Marquense": "assets/logos/streamed/marquense.webp",
         "Firpo": "assets/logos/streamed/firpo.webp",
         "Rice": "assets/logos/streamed/rice.webp",
-        "Pepperdine": "assets/logos/streamed/pepperdine.webp"
+        "Pepperdine": "assets/logos/streamed/pepperdine.webp",
+        "ZED": "assets/logos/upstreams/zed.webp",
+        "Ireland (W)": "assets/logos/upstreams/ireland-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
