@@ -5839,7 +5839,9 @@
         "Ayana Akli": "assets/logos/upstreams/ayana-akli.webp",
         "Madison Brengle": "assets/logos/upstreams/madison-brengle.webp",
         "Alexis Nguyen": "assets/logos/upstreams/alexis-nguyen.webp",
-        "Alicia Herrero Linana": "assets/logos/upstreams/alicia-herrero-linana.webp"
+        "Alicia Herrero Linana": "assets/logos/upstreams/alicia-herrero-linana.webp",
+        "Union Berlin W": "assets/logos/upstreams/union-berlin-w.webp",
+        "Bayer Leverkusen W": "assets/logos/upstreams/bayer-leverkusen-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6339,6 +6341,8 @@
         "Aviva Premiership Rugby": "assets/logos/leagues/aviva-premiership-rugby.webp",
         "Hexagone MMA": "assets/logos/leagues/hexagone-mma.webp",
         "Thailand - League Cup": "assets/logos/leagues/thailand-league-cup.webp",
-        "Caribbean Premier League (W)": "assets/logos/leagues/caribbean-premier-league-w.webp"
+        "Caribbean Premier League (W)": "assets/logos/leagues/caribbean-premier-league-w.webp",
+        "WNBL Basketball": "assets/logos/leagues/wnbl-basketball.webp",
+        "Bundesliga Women": "assets/logos/leagues/bundesliga-women.webp"
     }
 }
