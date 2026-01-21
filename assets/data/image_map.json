@@ -5982,7 +5982,18 @@
         "Ireland (W)": "assets/logos/upstreams/ireland-w.webp",
         "Argentinos Juniors": "assets/logos/streamed/argentinos-juniors.webp",
         "Ferrocarril Midland": "assets/logos/streamed/ferrocarril-midland.webp",
-        "Sioux Falls Skyforce": "assets/logos/streamed/sioux-falls-skyforce.webp"
+        "Sioux Falls Skyforce": "assets/logos/streamed/sioux-falls-skyforce.webp",
+        "Baltimore Orioles": "assets/logos/streamed/baltimore-orioles.webp",
+        "New York Yankees": "assets/logos/streamed/new-york-yankees.webp",
+        "Texas Rangers": "assets/logos/streamed/texas-rangers.webp",
+        "Kansas City Royals": "assets/logos/streamed/kansas-city-royals.webp",
+        "Chicago Cubs": "assets/logos/streamed/chicago-cubs.webp",
+        "Chicago White Sox": "assets/logos/streamed/chicago-white-sox.webp",
+        "Seattle Mariners": "assets/logos/streamed/seattle-mariners.webp",
+        "San Diego Padres": "assets/logos/streamed/san-diego-padres.webp",
+        "Colorado Rockies": "assets/logos/streamed/colorado-rockies.webp",
+        "Arizona Diamondbacks": "assets/logos/streamed/arizona-diamondbacks.webp",
+        "UBSC Graz": "assets/logos/upstreams/ubsc-graz.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
