@@ -5870,7 +5870,16 @@
         "Al Rayyan": "assets/logos/upstreams/al-rayyan.webp",
         "Nishesh basavareddy": "assets/logos/upstreams/nishesh-basavareddy.webp",
         "ZED FC": "assets/logos/upstreams/zed-fc.webp",
-        "Al-Masry": "assets/logos/upstreams/al-masry.webp"
+        "Al-Masry": "assets/logos/upstreams/al-masry.webp",
+        "Dinamo Basket Sassari": "assets/logos/streamed/dinamo-basket-sassari.webp",
+        "Lokomotiv Yaroslavl": "assets/logos/streamed/lokomotiv-yaroslavl.webp",
+        "Dinamo Minsk": "assets/logos/streamed/dinamo-minsk.webp",
+        "SaiPa": "assets/logos/streamed/saipa.webp",
+        "JYP": "assets/logos/streamed/jyp.webp",
+        "HPK": "assets/logos/streamed/hpk.webp",
+        "Severstal Cherepovets": "assets/logos/streamed/severstal-cherepovets.webp",
+        "Mlad\u00e1 Boleslav": "assets/logos/upstreams/mlad\u00e1-boleslav.webp",
+        "Aarhus Fremad": "assets/logos/upstreams/aarhus-fremad.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6373,6 +6382,7 @@
         "Caribbean Premier League (W)": "assets/logos/leagues/caribbean-premier-league-w.webp",
         "WNBL Basketball": "assets/logos/leagues/wnbl-basketball.webp",
         "Bundesliga Women": "assets/logos/leagues/bundesliga-women.webp",
-        "Frauen Bundesliga": "assets/logos/leagues/frauen-bundesliga.webp"
+        "Frauen Bundesliga": "assets/logos/leagues/frauen-bundesliga.webp",
+        "New Zealand in India, 5 T20I Series": "assets/logos/leagues/new-zealand-in-india-5-t20i-series.webp"
     }
 }
