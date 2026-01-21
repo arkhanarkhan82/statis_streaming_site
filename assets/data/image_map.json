@@ -5828,7 +5828,10 @@
         "Academy Plzen": "assets/logos/upstreams/academy-plzen.webp",
         "HC North Wings": "assets/logos/upstreams/hc-north-wings.webp",
         "Camila Markus": "assets/logos/upstreams/camila-markus.webp",
-        "Ana Maria Rincon": "assets/logos/upstreams/ana-maria-rincon.webp"
+        "Ana Maria Rincon": "assets/logos/upstreams/ana-maria-rincon.webp",
+        "Grazer AK": "assets/logos/upstreams/grazer-ak.webp",
+        "Rudar Prijedor": "assets/logos/upstreams/rudar-prijedor.webp",
+        "Jadran Dekani": "assets/logos/upstreams/jadran-dekani.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6326,6 +6329,8 @@
         "Motsepe Foundation Championship": "assets/logos/leagues/motsepe-foundation-championship.webp",
         "United Rugby Championship": "assets/logos/leagues/united-rugby-championship.webp",
         "Aviva Premiership Rugby": "assets/logos/leagues/aviva-premiership-rugby.webp",
-        "Hexagone MMA": "assets/logos/leagues/hexagone-mma.webp"
+        "Hexagone MMA": "assets/logos/leagues/hexagone-mma.webp",
+        "Thailand - League Cup": "assets/logos/leagues/thailand-league-cup.webp",
+        "Caribbean Premier League (W)": "assets/logos/leagues/caribbean-premier-league-w.webp"
     }
 }
