@@ -5979,7 +5979,10 @@
         "Rice": "assets/logos/streamed/rice.webp",
         "Pepperdine": "assets/logos/streamed/pepperdine.webp",
         "ZED": "assets/logos/upstreams/zed.webp",
-        "Ireland (W)": "assets/logos/upstreams/ireland-w.webp"
+        "Ireland (W)": "assets/logos/upstreams/ireland-w.webp",
+        "Argentinos Juniors": "assets/logos/streamed/argentinos-juniors.webp",
+        "Ferrocarril Midland": "assets/logos/streamed/ferrocarril-midland.webp",
+        "Sioux Falls Skyforce": "assets/logos/streamed/sioux-falls-skyforce.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
