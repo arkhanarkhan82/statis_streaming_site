@@ -5841,7 +5841,24 @@
         "Alexis Nguyen": "assets/logos/upstreams/alexis-nguyen.webp",
         "Alicia Herrero Linana": "assets/logos/upstreams/alicia-herrero-linana.webp",
         "Union Berlin W": "assets/logos/upstreams/union-berlin-w.webp",
-        "Bayer Leverkusen W": "assets/logos/upstreams/bayer-leverkusen-w.webp"
+        "Bayer Leverkusen W": "assets/logos/upstreams/bayer-leverkusen-w.webp",
+        "FC Viktoria Koln": "assets/logos/streamed/fc-viktoria-koln.webp",
+        "FC Saarbrucken": "assets/logos/streamed/fc-saarbrucken.webp",
+        "Middlesbrough FC": "assets/logos/upstreams/middlesbrough-fc.webp",
+        "Panathinaikos Athens": "assets/logos/upstreams/panathinaikos-athens.webp",
+        "FC Salzburg": "assets/logos/upstreams/fc-salzburg.webp",
+        "Grazer AK 1902": "assets/logos/upstreams/grazer-ak-1902.webp",
+        "HK Kromeriz": "assets/logos/upstreams/hk-kromeriz.webp",
+        "Slezan Opava U21": "assets/logos/upstreams/slezan-opava-u21.webp",
+        "Draci Pars \u0160umperk": "assets/logos/upstreams/draci-pars-\u0161umperk.webp",
+        "IHC Pisek": "assets/logos/upstreams/ihc-pisek.webp",
+        "HC Wikov Hronov": "assets/logos/upstreams/hc-wikov-hronov.webp",
+        "HC Kralupy": "assets/logos/upstreams/hc-kralupy.webp",
+        "BK Havlickuv Brod U21": "assets/logos/upstreams/bk-havlickuv-brod-u21.webp",
+        "Rakow": "assets/logos/upstreams/rakow.webp",
+        "Backa Topola": "assets/logos/upstreams/backa-topola.webp",
+        "Spartak Subotica": "assets/logos/upstreams/spartak-subotica.webp",
+        "Sogdiana": "assets/logos/upstreams/sogdiana.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6343,6 +6360,7 @@
         "Thailand - League Cup": "assets/logos/leagues/thailand-league-cup.webp",
         "Caribbean Premier League (W)": "assets/logos/leagues/caribbean-premier-league-w.webp",
         "WNBL Basketball": "assets/logos/leagues/wnbl-basketball.webp",
-        "Bundesliga Women": "assets/logos/leagues/bundesliga-women.webp"
+        "Bundesliga Women": "assets/logos/leagues/bundesliga-women.webp",
+        "Frauen Bundesliga": "assets/logos/leagues/frauen-bundesliga.webp"
     }
 }
