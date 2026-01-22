@@ -6051,7 +6051,11 @@
         "Link\u00f6ping HC": "assets/logos/upstreams/link\u00f6ping-hc.webp",
         "Central C\u00f3rdoba": "assets/logos/upstreams/central-c\u00f3rdoba.webp",
         "Gimnasia y Esgrima Mendoza": "assets/logos/upstreams/gimnasia-y-esgrima-mendoza.webp",
-        "Viborg FF": "assets/logos/upstreams/viborg-ff.webp"
+        "Viborg FF": "assets/logos/upstreams/viborg-ff.webp",
+        "Sydney Kings": "assets/logos/streamed/sydney-kings.webp",
+        "Legia Warsaw": "assets/logos/streamed/legia-warsaw.webp",
+        "Perth Wildcats": "assets/logos/streamed/perth-wildcats.webp",
+        "Odense BK": "assets/logos/streamed/odense-bk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6587,6 +6591,8 @@
         "UFC": "assets/logos/leagues/ufc.webp",
         "Show Court Arena": "assets/logos/leagues/show-court-arena.webp",
         "Margaret Court Arena": "assets/logos/leagues/margaret-court-arena.webp",
-        "Argentina - Primera Division - Apertura": "assets/logos/leagues/argentina-primera-division-apertura.webp"
+        "Argentina - Primera Division - Apertura": "assets/logos/leagues/argentina-primera-division-apertura.webp",
+        "1573 Arena": "assets/logos/leagues/1573-arena.webp",
+        "Stadium Australia": "assets/logos/leagues/stadium-australia.webp"
     }
 }
