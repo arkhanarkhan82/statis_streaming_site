@@ -6075,7 +6075,8 @@
         "Jukurit": "assets/logos/streamed/jukurit.webp",
         "Primorje": "assets/logos/upstreams/primorje.webp",
         "Galatasaray Volleyball": "assets/logos/streamed/galatasaray-volleyball.webp",
-        "EK Zell am See": "assets/logos/upstreams/ek-zell-am-see.webp"
+        "EK Zell am See": "assets/logos/upstreams/ek-zell-am-see.webp",
+        "Oliver Pivnik": "assets/logos/upstreams/oliver-pivnik.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6615,6 +6616,7 @@
         "1573 Arena": "assets/logos/leagues/1573-arena.webp",
         "Stadium Australia": "assets/logos/leagues/stadium-australia.webp",
         "Court 7": "assets/logos/leagues/court-7.webp",
-        "European Championship, Main Round Group II": "assets/logos/leagues/european-championship-main-round-group-ii.webp"
+        "European Championship, Main Round Group II": "assets/logos/leagues/european-championship-main-round-group-ii.webp",
+        "England in Sri Lanka, 3 ODI Series": "assets/logos/leagues/england-in-sri-lanka-3-odi-series.webp"
     }
 }
