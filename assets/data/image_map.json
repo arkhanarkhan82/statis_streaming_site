@@ -6038,7 +6038,20 @@
         "Ricky Turcios": "assets/logos/upstreams/ricky-turcios.webp",
         "Cameron Smotherman": "assets/logos/upstreams/cameron-smotherman.webp",
         "Josh Hokit": "assets/logos/upstreams/josh-hokit.webp",
-        "Denzel Freeman": "assets/logos/upstreams/denzel-freeman.webp"
+        "Denzel Freeman": "assets/logos/upstreams/denzel-freeman.webp",
+        "Al-Hilal Omdurman": "assets/logos/streamed/al-hilal-omdurman.webp",
+        "Caxias": "assets/logos/upstreams/caxias.webp",
+        "CA Platense": "assets/logos/upstreams/ca-platense.webp",
+        "CA Banfield": "assets/logos/upstreams/ca-banfield.webp",
+        "CA Huracan": "assets/logos/upstreams/ca-huracan.webp",
+        "Lorenskog": "assets/logos/upstreams/lorenskog.webp",
+        "HK Liepaja": "assets/logos/upstreams/hk-liepaja.webp",
+        "KHL Sisak": "assets/logos/upstreams/khl-sisak.webp",
+        "SG Cortina": "assets/logos/upstreams/sg-cortina.webp",
+        "Link\u00f6ping HC": "assets/logos/upstreams/link\u00f6ping-hc.webp",
+        "Central C\u00f3rdoba": "assets/logos/upstreams/central-c\u00f3rdoba.webp",
+        "Gimnasia y Esgrima Mendoza": "assets/logos/upstreams/gimnasia-y-esgrima-mendoza.webp",
+        "Viborg FF": "assets/logos/upstreams/viborg-ff.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6571,6 +6584,9 @@
         "ONE Championship": "assets/logos/leagues/one-championship.webp",
         "Serie A Elite": "assets/logos/leagues/serie-a-elite.webp",
         "Top 14": "assets/logos/leagues/top-14.webp",
-        "UFC": "assets/logos/leagues/ufc.webp"
+        "UFC": "assets/logos/leagues/ufc.webp",
+        "Show Court Arena": "assets/logos/leagues/show-court-arena.webp",
+        "Margaret Court Arena": "assets/logos/leagues/margaret-court-arena.webp",
+        "Argentina - Primera Division - Apertura": "assets/logos/leagues/argentina-primera-division-apertura.webp"
     }
 }
