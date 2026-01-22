@@ -6055,7 +6055,17 @@
         "Sydney Kings": "assets/logos/streamed/sydney-kings.webp",
         "Legia Warsaw": "assets/logos/streamed/legia-warsaw.webp",
         "Perth Wildcats": "assets/logos/streamed/perth-wildcats.webp",
-        "Odense BK": "assets/logos/streamed/odense-bk.webp"
+        "Odense BK": "assets/logos/streamed/odense-bk.webp",
+        "Veres Rivne": "assets/logos/streamed/veres-rivne.webp",
+        "Bohemians 1905": "assets/logos/streamed/bohemians-1905.webp",
+        "Celje": "assets/logos/streamed/celje.webp",
+        "Metallurg Magnitogorsk": "assets/logos/streamed/metallurg-magnitogorsk.webp",
+        "Barys Nur-Sultan": "assets/logos/streamed/barys-nur-sultan.webp",
+        "Instituto AC Cordoba": "assets/logos/streamed/instituto-ac-cordoba.webp",
+        "Penn": "assets/logos/upstreams/penn.webp",
+        "Merrimack Warriors": "assets/logos/upstreams/merrimack-warriors.webp",
+        "St. Peters": "assets/logos/upstreams/st-peters.webp",
+        "Bethune Cookman": "assets/logos/upstreams/bethune-cookman.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
