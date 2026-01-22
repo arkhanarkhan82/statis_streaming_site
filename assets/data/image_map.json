@@ -6094,7 +6094,9 @@
         "Vendsyssel": "assets/logos/streamed/vendsyssel.webp",
         "Stetson": "assets/logos/streamed/stetson.webp",
         "Lille OSC": "assets/logos/upstreams/lille-osc.webp",
-        "SU Agen Lot-et-Garonne": "assets/logos/streamed/su-agen-lot-et-garonne.webp"
+        "SU Agen Lot-et-Garonne": "assets/logos/streamed/su-agen-lot-et-garonne.webp",
+        "Bazar Brothers FC": "assets/logos/upstreams/bazar-brothers-fc.webp",
+        "APOEL Nicosia": "assets/logos/upstreams/apoel-nicosia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6635,6 +6637,7 @@
         "Stadium Australia": "assets/logos/leagues/stadium-australia.webp",
         "Court 7": "assets/logos/leagues/court-7.webp",
         "European Championship, Main Round Group II": "assets/logos/leagues/european-championship-main-round-group-ii.webp",
-        "England in Sri Lanka, 3 ODI Series": "assets/logos/leagues/england-in-sri-lanka-3-odi-series.webp"
+        "England in Sri Lanka, 3 ODI Series": "assets/logos/leagues/england-in-sri-lanka-3-odi-series.webp",
+        "Seychelles - Premier League": "assets/logos/leagues/seychelles-premier-league.webp"
     }
 }
