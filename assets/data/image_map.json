@@ -6385,7 +6385,9 @@
         "Toshiba Brave Lupus Tokyo": "assets/logos/streamed/toshiba-brave-lupus-tokyo.webp",
         "Kubota Spears Funabashi Tokyo Bay": "assets/logos/streamed/kubota-spears-funabashi-tokyo-bay.webp",
         "Mie Honda Heat": "assets/logos/streamed/mie-honda-heat.webp",
-        "Urayasu D-Rocks": "assets/logos/streamed/urayasu-d-rocks.webp"
+        "Urayasu D-Rocks": "assets/logos/streamed/urayasu-d-rocks.webp",
+        "Internacional de Bogota": "assets/logos/streamed/internacional-de-bogota.webp",
+        "Ind Rivadavia": "assets/logos/upstreams/ind-rivadavia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6942,6 +6944,7 @@
         "Indonesia Super League": "assets/logos/leagues/indonesia-super-league.webp",
         "CAF Champions League, Group A": "assets/logos/leagues/caf-champions-league-group-a.webp",
         "CAF Champions League, Group D": "assets/logos/leagues/caf-champions-league-group-d.webp",
-        "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp"
+        "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp",
+        "Argentina Liga Profesional": "assets/logos/leagues/argentina-liga-profesional.webp"
     }
 }
