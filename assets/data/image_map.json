@@ -6293,7 +6293,9 @@
         "BK Vejen": "assets/logos/streamed/bk-vejen.webp",
         "EBS Holbaek-Stenhus": "assets/logos/streamed/ebs-holbaek-stenhus.webp",
         "HC Fribourg-Gott\u00e9ron": "assets/logos/streamed/hc-fribourg-gott\u00e9ron.webp",
-        "SCL Tigers": "assets/logos/streamed/scl-tigers.webp"
+        "SCL Tigers": "assets/logos/streamed/scl-tigers.webp",
+        "Bern": "assets/logos/streamed/bern.webp",
+        "Roda JC": "assets/logos/streamed/roda-jc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
