@@ -6207,7 +6207,11 @@
         "B.93": "assets/logos/streamed/b93.webp",
         "Austria Vienna": "assets/logos/streamed/austria-vienna.webp",
         "Esbjerg": "assets/logos/streamed/esbjerg.webp",
-        "Sonderjyske Ishockey": "assets/logos/streamed/sonderjyske-ishockey.webp"
+        "Sonderjyske Ishockey": "assets/logos/streamed/sonderjyske-ishockey.webp",
+        "G\u00f3rnik Zabrze": "assets/logos/streamed/g\u00f3rnik-zabrze.webp",
+        "CSKA Sofia": "assets/logos/streamed/cska-sofia.webp",
+        "Lusitania De Lourosa FC": "assets/logos/streamed/lusitania-de-lourosa-fc.webp",
+        "FC Erzgebirge Aue": "assets/logos/streamed/fc-erzgebirge-aue.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
