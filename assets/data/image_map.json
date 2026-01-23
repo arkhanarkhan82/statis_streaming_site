@@ -6364,7 +6364,10 @@
         "Celtic B": "assets/logos/streamed/celtic-b.webp",
         "Berwick Rangers": "assets/logos/streamed/berwick-rangers.webp",
         "Edinburgh Rugby": "assets/logos/upstreams/edinburgh-rugby.webp",
-        "FC Grenoble": "assets/logos/streamed/fc-grenoble.webp"
+        "FC Grenoble": "assets/logos/streamed/fc-grenoble.webp",
+        "Stoke City U21": "assets/logos/upstreams/stoke-city-u21.webp",
+        "Tottenham U21": "assets/logos/upstreams/tottenham-u21.webp",
+        "Boston River": "assets/logos/streamed/boston-river.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
