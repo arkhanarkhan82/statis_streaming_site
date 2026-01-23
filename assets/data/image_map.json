@@ -6285,7 +6285,13 @@
         "New England Revolution": "assets/logos/streamed/new-england-revolution.webp",
         "FC Cincinnati": "assets/logos/streamed/fc-cincinnati.webp",
         "Geylang International": "assets/logos/upstreams/geylang-international.webp",
-        "MoraBanc Andorra": "assets/logos/upstreams/morabanc-andorra.webp"
+        "MoraBanc Andorra": "assets/logos/upstreams/morabanc-andorra.webp",
+        "\u00d6stersund": "assets/logos/streamed/\u00f6stersund.webp",
+        "IFK \u00d6stersund": "assets/logos/streamed/ifk-\u00f6stersund.webp",
+        "Pelicans": "assets/logos/streamed/pelicans.webp",
+        "Provence": "assets/logos/streamed/provence.webp",
+        "BK Vejen": "assets/logos/streamed/bk-vejen.webp",
+        "EBS Holbaek-Stenhus": "assets/logos/streamed/ebs-holbaek-stenhus.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
