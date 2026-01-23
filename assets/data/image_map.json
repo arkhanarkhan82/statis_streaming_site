@@ -6295,7 +6295,17 @@
         "HC Fribourg-Gott\u00e9ron": "assets/logos/streamed/hc-fribourg-gott\u00e9ron.webp",
         "SCL Tigers": "assets/logos/streamed/scl-tigers.webp",
         "Bern": "assets/logos/streamed/bern.webp",
-        "Roda JC": "assets/logos/streamed/roda-jc.webp"
+        "Roda JC": "assets/logos/streamed/roda-jc.webp",
+        "Rivers United": "assets/logos/upstreams/rivers-united.webp",
+        "NK Lokomotiva Zagreb": "assets/logos/upstreams/nk-lokomotiva-zagreb.webp",
+        "HNK Vukovar 1991": "assets/logos/upstreams/hnk-vukovar-1991.webp",
+        "SL Benfica B U21": "assets/logos/upstreams/sl-benfica-b-u21.webp",
+        "Esp\u00e9rance Tunis": "assets/logos/upstreams/esp\u00e9rance-tunis.webp",
+        "Guidonia Montecelio 1937": "assets/logos/upstreams/guidonia-montecelio-1937.webp",
+        "Asteras Aktor": "assets/logos/upstreams/asteras-aktor.webp",
+        "MGS Panserraikos": "assets/logos/upstreams/mgs-panserraikos.webp",
+        "Paraguay": "assets/logos/upstreams/paraguay.webp",
+        "Gimnasia y Esgrima": "assets/logos/upstreams/gimnasia-y-esgrima.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6849,6 +6859,9 @@
         "The FA Women's Super League": "assets/logos/leagues/the-fa-womens-super-league.webp",
         "Primera LPF, Apertura": "assets/logos/leagues/primera-lpf-apertura.webp",
         "CAF Champions League, Group B": "assets/logos/leagues/caf-champions-league-group-b.webp",
-        "Indonesia Super League": "assets/logos/leagues/indonesia-super-league.webp"
+        "Indonesia Super League": "assets/logos/leagues/indonesia-super-league.webp",
+        "CAF Champions League, Group A": "assets/logos/leagues/caf-champions-league-group-a.webp",
+        "CAF Champions League, Group D": "assets/logos/leagues/caf-champions-league-group-d.webp",
+        "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp"
     }
 }
