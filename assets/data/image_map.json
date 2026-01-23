@@ -6202,7 +6202,12 @@
         "Australia Handball": "assets/logos/streamed/australia-handball.webp",
         "Iran Handball": "assets/logos/streamed/iran-handball.webp",
         "Nikita Krylov": "assets/logos/upstreams/nikita-krylov.webp",
-        "Modestas Bukauskas": "assets/logos/upstreams/modestas-bukauskas.webp"
+        "Modestas Bukauskas": "assets/logos/upstreams/modestas-bukauskas.webp",
+        "LASK": "assets/logos/streamed/lask.webp",
+        "B.93": "assets/logos/streamed/b93.webp",
+        "Austria Vienna": "assets/logos/streamed/austria-vienna.webp",
+        "Esbjerg": "assets/logos/streamed/esbjerg.webp",
+        "Sonderjyske Ishockey": "assets/logos/streamed/sonderjyske-ishockey.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
