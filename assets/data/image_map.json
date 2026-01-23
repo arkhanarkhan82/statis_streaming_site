@@ -6196,7 +6196,13 @@
         "South Korea Handball": "assets/logos/streamed/south-korea-handball.webp",
         "Iraq Handball": "assets/logos/streamed/iraq-handball.webp",
         "Tyrone GAA Football": "assets/logos/streamed/tyrone-gaa-football.webp",
-        "Kildare GAA Football": "assets/logos/streamed/kildare-gaa-football.webp"
+        "Kildare GAA Football": "assets/logos/streamed/kildare-gaa-football.webp",
+        "Qatar Handball": "assets/logos/streamed/qatar-handball.webp",
+        "Bahrain Handball": "assets/logos/streamed/bahrain-handball.webp",
+        "Australia Handball": "assets/logos/streamed/australia-handball.webp",
+        "Iran Handball": "assets/logos/streamed/iran-handball.webp",
+        "Nikita Krylov": "assets/logos/upstreams/nikita-krylov.webp",
+        "Modestas Bukauskas": "assets/logos/upstreams/modestas-bukauskas.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
