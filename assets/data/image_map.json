@@ -6339,7 +6339,10 @@
         "Portland Timbers": "assets/logos/streamed/portland-timbers.webp",
         "LA Galaxy": "assets/logos/streamed/la-galaxy.webp",
         "Rotterdam City Basketball": "assets/logos/streamed/rotterdam-city-basketball.webp",
-        "ZZ Leiden": "assets/logos/streamed/zz-leiden.webp"
+        "ZZ Leiden": "assets/logos/streamed/zz-leiden.webp",
+        "Graz99ers": "assets/logos/streamed/graz99ers.webp",
+        "Almtuna": "assets/logos/upstreams/almtuna.webp",
+        "Stade Aurillacois": "assets/logos/upstreams/stade-aurillacois.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
