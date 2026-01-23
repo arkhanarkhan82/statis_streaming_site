@@ -6283,7 +6283,9 @@
         "RoKi": "assets/logos/streamed/roki.webp",
         "IPK": "assets/logos/streamed/ipk.webp",
         "New England Revolution": "assets/logos/streamed/new-england-revolution.webp",
-        "FC Cincinnati": "assets/logos/streamed/fc-cincinnati.webp"
+        "FC Cincinnati": "assets/logos/streamed/fc-cincinnati.webp",
+        "Geylang International": "assets/logos/upstreams/geylang-international.webp",
+        "MoraBanc Andorra": "assets/logos/upstreams/morabanc-andorra.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
