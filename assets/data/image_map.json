@@ -6224,7 +6224,11 @@
         "KK Zadar": "assets/logos/streamed/kk-zadar.webp",
         "Vitkovice": "assets/logos/streamed/vitkovice.webp",
         "Assat": "assets/logos/streamed/assat.webp",
-        "Lukko": "assets/logos/streamed/lukko.webp"
+        "Lukko": "assets/logos/streamed/lukko.webp",
+        "Ilves": "assets/logos/streamed/ilves.webp",
+        "Tappara": "assets/logos/streamed/tappara.webp",
+        "K\u00e4rp\u00e4t": "assets/logos/streamed/k\u00e4rp\u00e4t.webp",
+        "B\u00edl\u00ed Tyg\u0159i Liberec": "assets/logos/streamed/b\u00edl\u00ed-tyg\u0159i-liberec.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
