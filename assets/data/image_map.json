@@ -6264,7 +6264,16 @@
         "SC Langnau Tigers": "assets/logos/upstreams/sc-langnau-tigers.webp",
         "Ironi Ramat-Gan": "assets/logos/upstreams/ironi-ramat-gan.webp",
         "VfL Osnabruck": "assets/logos/upstreams/vfl-osnabruck.webp",
-        "Munich 1860": "assets/logos/upstreams/munich-1860.webp"
+        "Munich 1860": "assets/logos/upstreams/munich-1860.webp",
+        "Olomouc": "assets/logos/streamed/olomouc.webp",
+        "FC Pacos Ferreira": "assets/logos/upstreams/fc-pacos-ferreira.webp",
+        "GD Chaves": "assets/logos/upstreams/gd-chaves.webp",
+        "Lusitania FC Lourosa": "assets/logos/upstreams/lusitania-fc-lourosa.webp",
+        "AL Suqoor": "assets/logos/upstreams/al-suqoor.webp",
+        "AL Ahli Saudi": "assets/logos/upstreams/al-ahli-saudi.webp",
+        "Persija Jakarta": "assets/logos/upstreams/persija-jakarta.webp",
+        "Madura United FC": "assets/logos/upstreams/madura-united-fc.webp",
+        "Carlos Ocampo ManriquezSuper lightweightMeta Apex | Las Vegas, NV": "assets/logos/upstreams/carlos-ocampo-manriquezsuper-lightweightmeta-apex-las-vegas-nv.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6817,6 +6826,7 @@
         "CAF Champions League, Group C": "assets/logos/leagues/caf-champions-league-group-c.webp",
         "The FA Women's Super League": "assets/logos/leagues/the-fa-womens-super-league.webp",
         "Primera LPF, Apertura": "assets/logos/leagues/primera-lpf-apertura.webp",
-        "CAF Champions League, Group B": "assets/logos/leagues/caf-champions-league-group-b.webp"
+        "CAF Champions League, Group B": "assets/logos/leagues/caf-champions-league-group-b.webp",
+        "Indonesia Super League": "assets/logos/leagues/indonesia-super-league.webp"
     }
 }
