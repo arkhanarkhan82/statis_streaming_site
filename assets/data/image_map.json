@@ -6190,7 +6190,13 @@
         "Sean O'Malley": "assets/logos/upstreams/sean-omalley.webp",
         "Yadong Song": "assets/logos/upstreams/yadong-song.webp",
         "Bursa": "assets/logos/upstreams/bursa.webp",
-        "Cuneo Volley": "assets/logos/upstreams/cuneo-volley.webp"
+        "Cuneo Volley": "assets/logos/upstreams/cuneo-volley.webp",
+        "Hong Kong Handball": "assets/logos/streamed/hong-kong-handball.webp",
+        "Jordan Handball": "assets/logos/streamed/jordan-handball.webp",
+        "South Korea Handball": "assets/logos/streamed/south-korea-handball.webp",
+        "Iraq Handball": "assets/logos/streamed/iraq-handball.webp",
+        "Tyrone GAA Football": "assets/logos/streamed/tyrone-gaa-football.webp",
+        "Kildare GAA Football": "assets/logos/streamed/kildare-gaa-football.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6737,6 +6743,7 @@
         "CAF Champions League": "assets/logos/leagues/caf-champions-league.webp",
         "Friendly International": "assets/logos/leagues/friendly-international.webp",
         "Liga Nacional": "assets/logos/leagues/liga-nacional.webp",
-        "Oeiras, Portugal": "assets/logos/leagues/oeiras-portugal.webp"
+        "Oeiras, Portugal": "assets/logos/leagues/oeiras-portugal.webp",
+        "John Cain Arena": "assets/logos/leagues/john-cain-arena.webp"
     }
 }
