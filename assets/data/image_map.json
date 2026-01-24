@@ -6453,7 +6453,11 @@
         "Petro Luanda": "assets/logos/streamed/petro-luanda.webp",
         "ES Tunis": "assets/logos/streamed/es-tunis.webp",
         "Fatih Karagumruk": "assets/logos/streamed/fatih-karagumruk.webp",
-        "Team Esbjerg": "assets/logos/upstreams/team-esbjerg.webp"
+        "Team Esbjerg": "assets/logos/upstreams/team-esbjerg.webp",
+        "Bali United": "assets/logos/upstreams/bali-united.webp",
+        "Semen Padang": "assets/logos/upstreams/semen-padang.webp",
+        "Persita": "assets/logos/upstreams/persita.webp",
+        "FC Bhayangkara": "assets/logos/upstreams/fc-bhayangkara.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7012,6 +7016,7 @@
         "CAF Champions League, Group D": "assets/logos/leagues/caf-champions-league-group-d.webp",
         "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp",
         "Argentina Liga Profesional": "assets/logos/leagues/argentina-liga-profesional.webp",
-        "Bundesliga, Women": "assets/logos/leagues/bundesliga-women.webp"
+        "Bundesliga, Women": "assets/logos/leagues/bundesliga-women.webp",
+        "Indonesia Liga 1": "assets/logos/leagues/indonesia-liga-1.webp"
     }
 }
