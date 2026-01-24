@@ -6534,7 +6534,12 @@
         "PAOK BC": "assets/logos/streamed/paok-bc.webp",
         "Mersin MSK": "assets/logos/streamed/mersin-msk.webp",
         "Maccabi Bnei Raina": "assets/logos/streamed/maccabi-bnei-raina.webp",
-        "Potenza": "assets/logos/streamed/potenza.webp"
+        "Potenza": "assets/logos/streamed/potenza.webp",
+        "BC UNICS": "assets/logos/streamed/bc-unics.webp",
+        "BC Nizhny Novgorod": "assets/logos/streamed/bc-nizhny-novgorod.webp",
+        "Kabylie": "assets/logos/upstreams/kabylie.webp",
+        "FAR Rabat --- CH 1": "assets/logos/upstreams/far-rabat-ch-1.webp",
+        "Simba --- CH 2 HD": "assets/logos/upstreams/simba-ch-2-hd.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7111,6 +7116,7 @@
         "NB I": "assets/logos/leagues/nb-i.webp",
         "Italy Women Serie A": "assets/logos/leagues/italy-women-serie-a.webp",
         "Handball EHF Euro": "assets/logos/leagues/handball-ehf-euro.webp",
-        "German 3 liga": "assets/logos/leagues/german-3-liga.webp"
+        "German 3 liga": "assets/logos/leagues/german-3-liga.webp",
+        "Rugby Top 14": "assets/logos/leagues/rugby-top-14.webp"
     }
 }
