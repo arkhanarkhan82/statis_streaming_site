@@ -6490,7 +6490,12 @@
         "Fermanagh GAA Football": "assets/logos/streamed/fermanagh-gaa-football.webp",
         "Wexford GAA Football": "assets/logos/streamed/wexford-gaa-football.webp",
         "Helsingborg": "assets/logos/upstreams/helsingborg.webp",
-        "Eskilsminne": "assets/logos/upstreams/eskilsminne.webp"
+        "Eskilsminne": "assets/logos/upstreams/eskilsminne.webp",
+        "Ak Bars Kazan": "assets/logos/streamed/ak-bars-kazan.webp",
+        "Iraklis BC": "assets/logos/streamed/iraklis-bc.webp",
+        "Promitheas Patras BC": "assets/logos/streamed/promitheas-patras-bc.webp",
+        "Nyiregyhaza": "assets/logos/upstreams/nyiregyhaza.webp",
+        "Ujpest": "assets/logos/upstreams/ujpest.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
