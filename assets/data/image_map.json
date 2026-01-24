@@ -6446,7 +6446,11 @@
         "Seoul Knights": "assets/logos/upstreams/seoul-knights.webp",
         "KoGas": "assets/logos/upstreams/kogas.webp",
         "Mobis Phoebus": "assets/logos/upstreams/mobis-phoebus.webp",
-        "Wonju DB": "assets/logos/upstreams/wonju-db.webp"
+        "Wonju DB": "assets/logos/upstreams/wonju-db.webp",
+        "RSV Eintracht": "assets/logos/streamed/rsv-eintracht.webp",
+        "Eilenburg": "assets/logos/streamed/eilenburg.webp",
+        "Boyaca Chico": "assets/logos/streamed/boyaca-chico.webp",
+        "Petro Luanda": "assets/logos/streamed/petro-luanda.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
