@@ -6421,7 +6421,32 @@
         "Eintracht Trier": "assets/logos/streamed/eintracht-trier.webp",
         "Jeunesse Esch": "assets/logos/streamed/jeunesse-esch.webp",
         "FSV Frankfurt": "assets/logos/streamed/fsv-frankfurt.webp",
-        "Eintracht Frankfurt II": "assets/logos/streamed/eintracht-frankfurt-ii.webp"
+        "Eintracht Frankfurt II": "assets/logos/streamed/eintracht-frankfurt-ii.webp",
+        "Landskrona": "assets/logos/streamed/landskrona.webp",
+        "Trelleborg": "assets/logos/streamed/trelleborg.webp",
+        "Halmstad": "assets/logos/streamed/halmstad.webp",
+        "\u00c4ngelholm": "assets/logos/streamed/\u00e4ngelholm.webp",
+        "Wicklow GAA Football": "assets/logos/streamed/wicklow-gaa-football.webp",
+        "Leitrim GAA Football": "assets/logos/streamed/leitrim-gaa-football.webp",
+        "Melbourne City FC": "assets/logos/upstreams/melbourne-city-fc.webp",
+        "US Cremonese": "assets/logos/upstreams/us-cremonese.webp",
+        "Manchester City WFC": "assets/logos/upstreams/manchester-city-wfc.webp",
+        "1. FC Nuremberg": "assets/logos/upstreams/1-fc-nuremberg.webp",
+        "VfL 1899 Osnabruck": "assets/logos/upstreams/vfl-1899-osnabruck.webp",
+        "TSV 1860 Munich": "assets/logos/upstreams/tsv-1860-munich.webp",
+        "AL Riyadh": "assets/logos/upstreams/al-riyadh.webp",
+        "Al Hilal Rijad": "assets/logos/upstreams/al-hilal-rijad.webp",
+        "Studentski Centar": "assets/logos/upstreams/studentski-centar.webp",
+        "Vienna Basket": "assets/logos/upstreams/vienna-basket.webp",
+        "Tigre": "assets/logos/upstreams/tigre.webp",
+        "Estudiantes Rio Cuarto": "assets/logos/upstreams/estudiantes-rio-cuarto.webp",
+        "Leiria": "assets/logos/upstreams/leiria.webp",
+        "Den Haag": "assets/logos/upstreams/den-haag.webp",
+        "Leonesa": "assets/logos/upstreams/leonesa.webp",
+        "Seoul Knights": "assets/logos/upstreams/seoul-knights.webp",
+        "KoGas": "assets/logos/upstreams/kogas.webp",
+        "Mobis Phoebus": "assets/logos/upstreams/mobis-phoebus.webp",
+        "Wonju DB": "assets/logos/upstreams/wonju-db.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -6979,6 +7004,7 @@
         "CAF Champions League, Group A": "assets/logos/leagues/caf-champions-league-group-a.webp",
         "CAF Champions League, Group D": "assets/logos/leagues/caf-champions-league-group-d.webp",
         "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp",
-        "Argentina Liga Profesional": "assets/logos/leagues/argentina-liga-profesional.webp"
+        "Argentina Liga Profesional": "assets/logos/leagues/argentina-liga-profesional.webp",
+        "Bundesliga, Women": "assets/logos/leagues/bundesliga-women.webp"
     }
 }
