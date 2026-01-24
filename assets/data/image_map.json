@@ -6482,7 +6482,15 @@
         "Chiangrai Utd": "assets/logos/upstreams/chiangrai-utd.webp",
         "Ayutthaya Utd": "assets/logos/upstreams/ayutthaya-utd.webp",
         "Persijap Jepara": "assets/logos/upstreams/persijap-jepara.webp",
-        "PSM Makassar": "assets/logos/upstreams/psm-makassar.webp"
+        "PSM Makassar": "assets/logos/upstreams/psm-makassar.webp",
+        "Lokomotiv Moscow": "assets/logos/streamed/lokomotiv-moscow.webp",
+        "Rostov": "assets/logos/streamed/rostov.webp",
+        "Sekhukhune United": "assets/logos/streamed/sekhukhune-united.webp",
+        "Orlando Pirates": "assets/logos/streamed/orlando-pirates.webp",
+        "Fermanagh GAA Football": "assets/logos/streamed/fermanagh-gaa-football.webp",
+        "Wexford GAA Football": "assets/logos/streamed/wexford-gaa-football.webp",
+        "Helsingborg": "assets/logos/upstreams/helsingborg.webp",
+        "Eskilsminne": "assets/logos/upstreams/eskilsminne.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
