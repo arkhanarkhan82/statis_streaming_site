@@ -6568,7 +6568,10 @@
         "Bryant": "assets/logos/streamed/bryant.webp",
         "Vasco da Gama-AC": "assets/logos/streamed/vasco-da-gama-ac.webp",
         "ADESG": "assets/logos/streamed/adesg.webp",
-        "Maine": "assets/logos/streamed/maine.webp"
+        "Maine": "assets/logos/streamed/maine.webp",
+        "Cagliari --- CH 1": "assets/logos/upstreams/cagliari-ch-1.webp",
+        "Zulte Waregem --- CH 1": "assets/logos/upstreams/zulte-waregem-ch-1.webp",
+        "Panserraikos --- CH 1": "assets/logos/upstreams/panserraikos-ch-1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7148,6 +7151,7 @@
         "German 3 liga": "assets/logos/leagues/german-3-liga.webp",
         "Rugby Top 14": "assets/logos/leagues/rugby-top-14.webp",
         "Switzerland Challenge League": "assets/logos/leagues/switzerland-challenge-league.webp",
-        "Switzerland Super League": "assets/logos/leagues/switzerland-super-league.webp"
+        "Switzerland Super League": "assets/logos/leagues/switzerland-super-league.webp",
+        "Brazil Paulista": "assets/logos/leagues/brazil-paulista.webp"
     }
 }
