@@ -6470,7 +6470,10 @@
         "Basaksehir": "assets/logos/upstreams/basaksehir.webp",
         "Bangkok Utd": "assets/logos/upstreams/bangkok-utd.webp",
         "Chonburi": "assets/logos/upstreams/chonburi.webp",
-        "Marin \u010cili\u0107": "assets/logos/upstreams/marin-\u010dili\u0107.webp"
+        "Marin \u010cili\u0107": "assets/logos/upstreams/marin-\u010dili\u0107.webp",
+        "Benin Handball": "assets/logos/streamed/benin-handball.webp",
+        "Cape Verde Handball": "assets/logos/streamed/cape-verde-handball.webp",
+        "NK Slaven Belupo": "assets/logos/upstreams/nk-slaven-belupo.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7035,6 +7038,7 @@
         "German Women Bundesliga": "assets/logos/leagues/german-women-bundesliga.webp",
         "Singapore Premier League": "assets/logos/leagues/singapore-premier-league.webp",
         "Turkey Super Lig": "assets/logos/leagues/turkey-super-lig.webp",
-        "Thailand Thai league 1": "assets/logos/leagues/thailand-thai-league-1.webp"
+        "Thailand Thai league 1": "assets/logos/leagues/thailand-thai-league-1.webp",
+        "1. HNL": "assets/logos/leagues/1-hnl.webp"
     }
 }
