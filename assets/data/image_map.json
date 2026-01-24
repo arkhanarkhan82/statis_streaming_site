@@ -6625,7 +6625,15 @@
         "UIC": "assets/logos/streamed/uic.webp",
         "New York Knicks --- CH 1": "assets/logos/upstreams/new-york-knicks-ch-1.webp",
         "Zebre Rugby": "assets/logos/upstreams/zebre-rugby.webp",
-        "Glasgow Warriors": "assets/logos/upstreams/glasgow-warriors.webp"
+        "Glasgow Warriors": "assets/logos/upstreams/glasgow-warriors.webp",
+        "Lazio --- CH 1": "assets/logos/upstreams/lazio-ch-1.webp",
+        "Royale Union SG --- CH 1": "assets/logos/upstreams/royale-union-sg-ch-1.webp",
+        "Lens --- CH 1": "assets/logos/upstreams/lens-ch-1.webp",
+        "Vitoria Guimaraes --- CH 1": "assets/logos/upstreams/vitoria-guimaraes-ch-1.webp",
+        "Golden State Warriors --- CH 1": "assets/logos/upstreams/golden-state-warriors-ch-1.webp",
+        "Nacional Asuncion": "assets/logos/upstreams/nacional-asuncion.webp",
+        "Atl San Luis W": "assets/logos/upstreams/atl-san-luis-w.webp",
+        "Gimnasia LP": "assets/logos/upstreams/gimnasia-lp.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7209,6 +7217,7 @@
         "Brazil Paulista": "assets/logos/leagues/brazil-paulista.webp",
         "Brazil Paranaense": "assets/logos/leagues/brazil-paranaense.webp",
         "Dutch Eredivisie": "assets/logos/leagues/dutch-eredivisie.webp",
-        "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp"
+        "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp",
+        "Mexico Women Liga MX": "assets/logos/leagues/mexico-women-liga-mx.webp"
     }
 }
