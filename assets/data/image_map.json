@@ -6498,7 +6498,26 @@
         "Ujpest": "assets/logos/upstreams/ujpest.webp",
         "Anwil": "assets/logos/streamed/anwil.webp",
         "Aldershot Town": "assets/logos/streamed/aldershot-town.webp",
-        "Boston United": "assets/logos/streamed/boston-united.webp"
+        "Boston United": "assets/logos/streamed/boston-united.webp",
+        "NK Lokomotiva": "assets/logos/streamed/nk-lokomotiva.webp",
+        "Sutton United": "assets/logos/streamed/sutton-united.webp",
+        "Woking": "assets/logos/streamed/woking.webp",
+        "Yeovil Town": "assets/logos/streamed/yeovil-town.webp",
+        "Braintree Town": "assets/logos/streamed/braintree-town.webp",
+        "Lokeren-Temse": "assets/logos/streamed/lokeren-temse.webp",
+        "Beerschot": "assets/logos/streamed/beerschot.webp",
+        "ZESCO United": "assets/logos/upstreams/zesco-united.webp",
+        "AmaZulu FC": "assets/logos/upstreams/amazulu-fc.webp",
+        "HNK Hajduk Split": "assets/logos/upstreams/hnk-hajduk-split.webp",
+        "Singida Black Stars SC": "assets/logos/upstreams/singida-black-stars-sc.webp",
+        "AS Otoh\u00f4": "assets/logos/upstreams/as-otoh\u00f4.webp",
+        "Atl\u00e9tico Petr\u00f3leos de Luanda": "assets/logos/upstreams/atl\u00e9tico-petr\u00f3leos-de-luanda.webp",
+        "Amarante FC": "assets/logos/upstreams/amarante-fc.webp",
+        "NK Osijek": "assets/logos/upstreams/nk-osijek.webp",
+        "Panathinaikos FC": "assets/logos/upstreams/panathinaikos-fc.webp",
+        "Estudiantes de R\u00edo Cuarto": "assets/logos/upstreams/estudiantes-de-r\u00edo-cuarto.webp",
+        "Union Bordeaux B\u00e8gles": "assets/logos/upstreams/union-bordeaux-b\u00e8gles.webp",
+        "Stade Fran\u00e7ais Paris": "assets/logos/upstreams/stade-fran\u00e7ais-paris.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7066,6 +7085,9 @@
         "Thailand Thai league 1": "assets/logos/leagues/thailand-thai-league-1.webp",
         "1. HNL": "assets/logos/leagues/1-hnl.webp",
         "German 2 Bundesliga": "assets/logos/leagues/german-2-bundesliga.webp",
-        "Hungary NB 1 Liga": "assets/logos/leagues/hungary-nb-1-liga.webp"
+        "Hungary NB 1 Liga": "assets/logos/leagues/hungary-nb-1-liga.webp",
+        "CAF Confederations Cup, Group D": "assets/logos/leagues/caf-confederations-cup-group-d.webp",
+        "CAF Confederations Cup, Group C": "assets/logos/leagues/caf-confederations-cup-group-c.webp",
+        "France - Top 14": "assets/logos/leagues/france-top-14.webp"
     }
 }
