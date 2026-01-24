@@ -6544,7 +6544,25 @@
         "Bellinzona": "assets/logos/streamed/bellinzona.webp",
         "Rapperswil-Jona": "assets/logos/streamed/rapperswil-jona.webp",
         "Stade Lausanne Ouchy": "assets/logos/streamed/stade-lausanne-ouchy.webp",
-        "The Sharks": "assets/logos/streamed/the-sharks.webp"
+        "The Sharks": "assets/logos/streamed/the-sharks.webp",
+        "Napoli Basket": "assets/logos/streamed/napoli-basket.webp",
+        "Derthona Basket": "assets/logos/streamed/derthona-basket.webp",
+        "Gravelines-Dunkerque": "assets/logos/streamed/gravelines-dunkerque.webp",
+        "Hapoel Galil Elyon": "assets/logos/streamed/hapoel-galil-elyon.webp",
+        "BC Juventus": "assets/logos/streamed/bc-juventus.webp",
+        "William and  Mary": "assets/logos/streamed/william-and-mary.webp",
+        "Boulazac Basket Dordogne": "assets/logos/streamed/boulazac-basket-dordogne.webp",
+        "Bayern Munich W": "assets/logos/streamed/bayern-munich-w.webp",
+        "RB Leipzig W": "assets/logos/streamed/rb-leipzig-w.webp",
+        "Real Zaragoza": "assets/logos/streamed/real-zaragoza.webp",
+        "Rionegro \u00c1guilas": "assets/logos/streamed/rionegro-\u00e1guilas.webp",
+        "Sarmiento Junin": "assets/logos/streamed/sarmiento-junin.webp",
+        "Estudiantes de Rio Cuarto": "assets/logos/streamed/estudiantes-de-rio-cuarto.webp",
+        "7Bet-Lietkabelis Panevezys": "assets/logos/streamed/7bet-lietkabelis-panevezys.webp",
+        "Simba --- CH 1": "assets/logos/upstreams/simba-ch-1.webp",
+        "Lausanne Ouchy": "assets/logos/upstreams/lausanne-ouchy.webp",
+        "Viking": "assets/logos/upstreams/viking.webp",
+        "Djurgarden IF": "assets/logos/upstreams/djurgarden-if.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7122,6 +7140,8 @@
         "Italy Women Serie A": "assets/logos/leagues/italy-women-serie-a.webp",
         "Handball EHF Euro": "assets/logos/leagues/handball-ehf-euro.webp",
         "German 3 liga": "assets/logos/leagues/german-3-liga.webp",
-        "Rugby Top 14": "assets/logos/leagues/rugby-top-14.webp"
+        "Rugby Top 14": "assets/logos/leagues/rugby-top-14.webp",
+        "Switzerland Challenge League": "assets/logos/leagues/switzerland-challenge-league.webp",
+        "Switzerland Super League": "assets/logos/leagues/switzerland-super-league.webp"
     }
 }
