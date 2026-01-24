@@ -6539,7 +6539,12 @@
         "BC Nizhny Novgorod": "assets/logos/streamed/bc-nizhny-novgorod.webp",
         "Kabylie": "assets/logos/upstreams/kabylie.webp",
         "FAR Rabat --- CH 1": "assets/logos/upstreams/far-rabat-ch-1.webp",
-        "Simba --- CH 2 HD": "assets/logos/upstreams/simba-ch-2-hd.webp"
+        "Simba --- CH 2 HD": "assets/logos/upstreams/simba-ch-2-hd.webp",
+        "Aarau": "assets/logos/streamed/aarau.webp",
+        "Bellinzona": "assets/logos/streamed/bellinzona.webp",
+        "Rapperswil-Jona": "assets/logos/streamed/rapperswil-jona.webp",
+        "Stade Lausanne Ouchy": "assets/logos/streamed/stade-lausanne-ouchy.webp",
+        "The Sharks": "assets/logos/streamed/the-sharks.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
