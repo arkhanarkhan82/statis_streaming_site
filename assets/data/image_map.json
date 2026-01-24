@@ -6417,7 +6417,11 @@
         "Roskilde": "assets/logos/streamed/roskilde.webp",
         "Werder Bremen II": "assets/logos/streamed/werder-bremen-ii.webp",
         "Hemelingen": "assets/logos/streamed/hemelingen.webp",
-        "Rapid Vienna": "assets/logos/streamed/rapid-vienna.webp"
+        "Rapid Vienna": "assets/logos/streamed/rapid-vienna.webp",
+        "Eintracht Trier": "assets/logos/streamed/eintracht-trier.webp",
+        "Jeunesse Esch": "assets/logos/streamed/jeunesse-esch.webp",
+        "FSV Frankfurt": "assets/logos/streamed/fsv-frankfurt.webp",
+        "Eintracht Frankfurt II": "assets/logos/streamed/eintracht-frankfurt-ii.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
