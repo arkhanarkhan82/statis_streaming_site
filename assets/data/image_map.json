@@ -6529,7 +6529,12 @@
         "Wolfsburg --- CH 1": "assets/logos/upstreams/wolfsburg-ch-1.webp",
         "Queens Park": "assets/logos/upstreams/queens-park.webp",
         "Promitheas": "assets/logos/upstreams/promitheas.webp",
-        "Ulster Rugby": "assets/logos/upstreams/ulster-rugby.webp"
+        "Ulster Rugby": "assets/logos/upstreams/ulster-rugby.webp",
+        "Slaven Belupo Koprivnica": "assets/logos/streamed/slaven-belupo-koprivnica.webp",
+        "PAOK BC": "assets/logos/streamed/paok-bc.webp",
+        "Mersin MSK": "assets/logos/streamed/mersin-msk.webp",
+        "Maccabi Bnei Raina": "assets/logos/streamed/maccabi-bnei-raina.webp",
+        "Potenza": "assets/logos/streamed/potenza.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
