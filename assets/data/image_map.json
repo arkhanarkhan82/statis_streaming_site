@@ -6460,7 +6460,17 @@
         "FC Bhayangkara": "assets/logos/upstreams/fc-bhayangkara.webp",
         "Mukura Victory Sports": "assets/logos/streamed/mukura-victory-sports.webp",
         "Cork GAA Football": "assets/logos/streamed/cork-gaa-football.webp",
-        "Cavan GAA Football": "assets/logos/streamed/cavan-gaa-football.webp"
+        "Cavan GAA Football": "assets/logos/streamed/cavan-gaa-football.webp",
+        "Admiral Vladivostok": "assets/logos/streamed/admiral-vladivostok.webp",
+        "USC Heidelberg": "assets/logos/streamed/usc-heidelberg.webp",
+        "Shamakhi": "assets/logos/upstreams/shamakhi.webp",
+        "Gabala": "assets/logos/upstreams/gabala.webp",
+        "Hougang": "assets/logos/upstreams/hougang.webp",
+        "Lion City": "assets/logos/upstreams/lion-city.webp",
+        "Basaksehir": "assets/logos/upstreams/basaksehir.webp",
+        "Bangkok Utd": "assets/logos/upstreams/bangkok-utd.webp",
+        "Chonburi": "assets/logos/upstreams/chonburi.webp",
+        "Marin \u010cili\u0107": "assets/logos/upstreams/marin-\u010dili\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7020,6 +7030,11 @@
         "International Friendly Games, Women": "assets/logos/leagues/international-friendly-games-women.webp",
         "Argentina Liga Profesional": "assets/logos/leagues/argentina-liga-profesional.webp",
         "Bundesliga, Women": "assets/logos/leagues/bundesliga-women.webp",
-        "Indonesia Liga 1": "assets/logos/leagues/indonesia-liga-1.webp"
+        "Indonesia Liga 1": "assets/logos/leagues/indonesia-liga-1.webp",
+        "Azerbaijan Premier League": "assets/logos/leagues/azerbaijan-premier-league.webp",
+        "German Women Bundesliga": "assets/logos/leagues/german-women-bundesliga.webp",
+        "Singapore Premier League": "assets/logos/leagues/singapore-premier-league.webp",
+        "Turkey Super Lig": "assets/logos/leagues/turkey-super-lig.webp",
+        "Thailand Thai league 1": "assets/logos/leagues/thailand-thai-league-1.webp"
     }
 }
