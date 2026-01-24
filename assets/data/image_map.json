@@ -6605,7 +6605,14 @@
         "Real Espa\u00f1a": "assets/logos/streamed/real-espa\u00f1a.webp",
         "Olancho": "assets/logos/streamed/olancho.webp",
         "Long Island": "assets/logos/streamed/long-island.webp",
-        "Busan KCC Egis": "assets/logos/streamed/busan-kcc-egis.webp"
+        "Busan KCC Egis": "assets/logos/streamed/busan-kcc-egis.webp",
+        "Athletico-PR": "assets/logos/upstreams/athletico-pr.webp",
+        "Puskas Academy": "assets/logos/upstreams/puskas-academy.webp",
+        "Paks": "assets/logos/upstreams/paks.webp",
+        "Berkane": "assets/logos/upstreams/berkane.webp",
+        "Pereira": "assets/logos/upstreams/pereira.webp",
+        "Fortaleza": "assets/logos/upstreams/fortaleza.webp",
+        "Cascavel": "assets/logos/upstreams/cascavel.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7186,6 +7193,9 @@
         "Rugby Top 14": "assets/logos/leagues/rugby-top-14.webp",
         "Switzerland Challenge League": "assets/logos/leagues/switzerland-challenge-league.webp",
         "Switzerland Super League": "assets/logos/leagues/switzerland-super-league.webp",
-        "Brazil Paulista": "assets/logos/leagues/brazil-paulista.webp"
+        "Brazil Paulista": "assets/logos/leagues/brazil-paulista.webp",
+        "Brazil Paranaense": "assets/logos/leagues/brazil-paranaense.webp",
+        "Dutch Eredivisie": "assets/logos/leagues/dutch-eredivisie.webp",
+        "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp"
     }
 }
