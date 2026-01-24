@@ -6518,7 +6518,18 @@
         "Estudiantes de R\u00edo Cuarto": "assets/logos/upstreams/estudiantes-de-r\u00edo-cuarto.webp",
         "Union Bordeaux B\u00e8gles": "assets/logos/upstreams/union-bordeaux-b\u00e8gles.webp",
         "Stade Fran\u00e7ais Paris": "assets/logos/upstreams/stade-fran\u00e7ais-paris.webp",
-        "Chattanooga": "assets/logos/streamed/chattanooga.webp"
+        "Chattanooga": "assets/logos/streamed/chattanooga.webp",
+        "Airdrieonians": "assets/logos/streamed/airdrieonians.webp",
+        "St Johnstone": "assets/logos/streamed/st-johnstone.webp",
+        "Hermes": "assets/logos/streamed/hermes.webp",
+        "KooKoo": "assets/logos/streamed/kookoo.webp",
+        "KalPa": "assets/logos/streamed/kalpa.webp",
+        "Kisvarda FC": "assets/logos/upstreams/kisvarda-fc.webp",
+        "MTK Budapest": "assets/logos/upstreams/mtk-budapest.webp",
+        "Wolfsburg --- CH 1": "assets/logos/upstreams/wolfsburg-ch-1.webp",
+        "Queens Park": "assets/logos/upstreams/queens-park.webp",
+        "Promitheas": "assets/logos/upstreams/promitheas.webp",
+        "Ulster Rugby": "assets/logos/upstreams/ulster-rugby.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7089,6 +7100,11 @@
         "Hungary NB 1 Liga": "assets/logos/leagues/hungary-nb-1-liga.webp",
         "CAF Confederations Cup, Group D": "assets/logos/leagues/caf-confederations-cup-group-d.webp",
         "CAF Confederations Cup, Group C": "assets/logos/leagues/caf-confederations-cup-group-c.webp",
-        "France - Top 14": "assets/logos/leagues/france-top-14.webp"
+        "France - Top 14": "assets/logos/leagues/france-top-14.webp",
+        "Scottish Championship": "assets/logos/leagues/scottish-championship.webp",
+        "Greece Super League": "assets/logos/leagues/greece-super-league.webp",
+        "NB I": "assets/logos/leagues/nb-i.webp",
+        "Italy Women Serie A": "assets/logos/leagues/italy-women-serie-a.webp",
+        "Handball EHF Euro": "assets/logos/leagues/handball-ehf-euro.webp"
     }
 }
