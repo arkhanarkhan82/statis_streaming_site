@@ -6475,7 +6475,14 @@
         "Cape Verde Handball": "assets/logos/streamed/cape-verde-handball.webp",
         "NK Slaven Belupo": "assets/logos/upstreams/nk-slaven-belupo.webp",
         "Aalen": "assets/logos/streamed/aalen.webp",
-        "SGV Freiberg": "assets/logos/streamed/sgv-freiberg.webp"
+        "SGV Freiberg": "assets/logos/streamed/sgv-freiberg.webp",
+        "Kapaz": "assets/logos/upstreams/kapaz.webp",
+        "GAIS": "assets/logos/upstreams/gais.webp",
+        "Sarpsborg 08": "assets/logos/upstreams/sarpsborg-08.webp",
+        "Chiangrai Utd": "assets/logos/upstreams/chiangrai-utd.webp",
+        "Ayutthaya Utd": "assets/logos/upstreams/ayutthaya-utd.webp",
+        "Persijap Jepara": "assets/logos/upstreams/persijap-jepara.webp",
+        "PSM Makassar": "assets/logos/upstreams/psm-makassar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7041,6 +7048,8 @@
         "Singapore Premier League": "assets/logos/leagues/singapore-premier-league.webp",
         "Turkey Super Lig": "assets/logos/leagues/turkey-super-lig.webp",
         "Thailand Thai league 1": "assets/logos/leagues/thailand-thai-league-1.webp",
-        "1. HNL": "assets/logos/leagues/1-hnl.webp"
+        "1. HNL": "assets/logos/leagues/1-hnl.webp",
+        "German 2 Bundesliga": "assets/logos/leagues/german-2-bundesliga.webp",
+        "Hungary NB 1 Liga": "assets/logos/leagues/hungary-nb-1-liga.webp"
     }
 }
