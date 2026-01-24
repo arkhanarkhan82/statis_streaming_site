@@ -6633,7 +6633,8 @@
         "Golden State Warriors --- CH 1": "assets/logos/upstreams/golden-state-warriors-ch-1.webp",
         "Nacional Asuncion": "assets/logos/upstreams/nacional-asuncion.webp",
         "Atl San Luis W": "assets/logos/upstreams/atl-san-luis-w.webp",
-        "Gimnasia LP": "assets/logos/upstreams/gimnasia-lp.webp"
+        "Gimnasia LP": "assets/logos/upstreams/gimnasia-lp.webp",
+        "Inter Miami CF": "assets/logos/upstreams/inter-miami-cf.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7218,6 +7219,7 @@
         "Brazil Paranaense": "assets/logos/leagues/brazil-paranaense.webp",
         "Dutch Eredivisie": "assets/logos/leagues/dutch-eredivisie.webp",
         "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp",
-        "Mexico Women Liga MX": "assets/logos/leagues/mexico-women-liga-mx.webp"
+        "Mexico Women Liga MX": "assets/logos/leagues/mexico-women-liga-mx.webp",
+        "MLS Pre Season": "assets/logos/leagues/mls-pre-season.webp"
     }
 }
