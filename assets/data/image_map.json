@@ -6752,7 +6752,9 @@
         "Castellon --- CH 1": "assets/logos/upstreams/castellon-ch-1.webp",
         "SV Wehen Wiesbaden": "assets/logos/upstreams/sv-wehen-wiesbaden.webp",
         "Wydad AC": "assets/logos/streamed/wydad-ac.webp",
-        "Sacramento Kings --- CH 1": "assets/logos/upstreams/sacramento-kings-ch-1.webp"
+        "Sacramento Kings --- CH 1": "assets/logos/upstreams/sacramento-kings-ch-1.webp",
+        "Auckland Hearts W": "assets/logos/upstreams/auckland-hearts-w.webp",
+        "Central Hinds W": "assets/logos/upstreams/central-hinds-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7351,6 +7353,8 @@
         "SA20 League, Final": "assets/logos/leagues/sa20-league-final.webp",
         "Belgium Challenger Pro League": "assets/logos/leagues/belgium-challenger-pro-league.webp",
         "Challenger Pro League": "assets/logos/leagues/challenger-pro-league.webp",
-        "Basketball Champions League": "assets/logos/leagues/basketball-champions-league.webp"
+        "Basketball Champions League": "assets/logos/leagues/basketball-champions-league.webp",
+        "Twenty20 International": "assets/logos/leagues/twenty20-international.webp",
+        "Super Smash Women": "assets/logos/leagues/super-smash-women.webp"
     }
 }
