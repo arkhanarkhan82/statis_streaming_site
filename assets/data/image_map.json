@@ -6757,7 +6757,12 @@
         "Central Hinds W": "assets/logos/upstreams/central-hinds-w.webp",
         "Olimpia Asuncion": "assets/logos/upstreams/olimpia-asuncion.webp",
         "Aguilas": "assets/logos/upstreams/aguilas.webp",
-        "Dep Pasto": "assets/logos/upstreams/dep-pasto.webp"
+        "Dep Pasto": "assets/logos/upstreams/dep-pasto.webp",
+        "Deportivo Junior": "assets/logos/upstreams/deportivo-junior.webp",
+        "Mazatlan FC W": "assets/logos/upstreams/mazatlan-fc-w.webp",
+        "Ameliano": "assets/logos/upstreams/ameliano.webp",
+        "Rubio Nu": "assets/logos/upstreams/rubio-nu.webp",
+        "Betim Futebol": "assets/logos/upstreams/betim-futebol.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7361,6 +7366,7 @@
         "Super Smash Women": "assets/logos/leagues/super-smash-women.webp",
         "Paraguay Primera Division": "assets/logos/leagues/paraguay-primera-division.webp",
         "Brazil Mineiro": "assets/logos/leagues/brazil-mineiro.webp",
-        "Carioca S\u00e9rie A \u2013 Ta\u00e7a Guanabara": "assets/logos/leagues/carioca-s\u00e9rie-a-ta\u00e7a-guanabara.webp"
+        "Carioca S\u00e9rie A \u2013 Ta\u00e7a Guanabara": "assets/logos/leagues/carioca-s\u00e9rie-a-ta\u00e7a-guanabara.webp",
+        "Mexico Liga MX": "assets/logos/leagues/mexico-liga-mx.webp"
     }
 }
