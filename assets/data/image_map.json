@@ -6700,7 +6700,10 @@
         "Leeds U21": "assets/logos/upstreams/leeds-u21.webp",
         "Levadiakos --- CH 1": "assets/logos/upstreams/levadiakos-ch-1.webp",
         "\u00c7aykur Rizespor": "assets/logos/upstreams/\u00e7aykur-rizespor.webp",
-        "Kazincbarcika": "assets/logos/upstreams/kazincbarcika.webp"
+        "Kazincbarcika": "assets/logos/upstreams/kazincbarcika.webp",
+        "Lierse": "assets/logos/streamed/lierse.webp",
+        "Modo Hockey": "assets/logos/streamed/modo-hockey.webp",
+        "Bamberg Baskets": "assets/logos/streamed/bamberg-baskets.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
