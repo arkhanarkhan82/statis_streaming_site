@@ -6660,7 +6660,16 @@
         "Washington Capitals --- CH 1": "assets/logos/upstreams/washington-capitals-ch-1.webp",
         "Sydney FC W": "assets/logos/streamed/sydney-fc-w.webp",
         "San-Pedro": "assets/logos/streamed/san-pedro.webp",
-        "Olympique Safi": "assets/logos/streamed/olympique-safi.webp"
+        "Olympique Safi": "assets/logos/streamed/olympique-safi.webp",
+        "Gilboa Galil": "assets/logos/upstreams/gilboa-galil.webp",
+        "Bnei Herzliya": "assets/logos/upstreams/bnei-herzliya.webp",
+        "Thailand": "assets/logos/upstreams/thailand.webp",
+        "Lebanon": "assets/logos/upstreams/lebanon.webp",
+        "Iraq": "assets/logos/upstreams/iraq.webp",
+        "Vietnam": "assets/logos/upstreams/vietnam.webp",
+        "Kuwait": "assets/logos/upstreams/kuwait.webp",
+        "Indonesia": "assets/logos/upstreams/indonesia.webp",
+        "South Korea": "assets/logos/upstreams/south-korea.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7249,6 +7258,7 @@
         "MLS Pre Season": "assets/logos/leagues/mls-pre-season.webp",
         "Premier League U18": "assets/logos/leagues/premier-league-u18.webp",
         "Argentina Torneo Betano": "assets/logos/leagues/argentina-torneo-betano.webp",
-        "UFC 324: Gaethje vs. Pimblett": "assets/logos/leagues/ufc-324-gaethje-vs-pimblett.webp"
+        "UFC 324: Gaethje vs. Pimblett": "assets/logos/leagues/ufc-324-gaethje-vs-pimblett.webp",
+        "AFC Championship": "assets/logos/leagues/afc-championship.webp"
     }
 }
