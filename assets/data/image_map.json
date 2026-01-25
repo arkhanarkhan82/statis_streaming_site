@@ -6703,7 +6703,15 @@
         "Kazincbarcika": "assets/logos/upstreams/kazincbarcika.webp",
         "Lierse": "assets/logos/streamed/lierse.webp",
         "Modo Hockey": "assets/logos/streamed/modo-hockey.webp",
-        "Bamberg Baskets": "assets/logos/streamed/bamberg-baskets.webp"
+        "Bamberg Baskets": "assets/logos/streamed/bamberg-baskets.webp",
+        "Badalona W": "assets/logos/upstreams/badalona-w.webp",
+        "DUX Logrono W": "assets/logos/upstreams/dux-logrono-w.webp",
+        "Dep. La Coruna W": "assets/logos/upstreams/dep-la-coruna-w.webp",
+        "SGS Essen": "assets/logos/upstreams/sgs-essen.webp",
+        "Celtic --- CH 1": "assets/logos/upstreams/celtic-ch-1.webp",
+        "KAA Gent Reserve U23": "assets/logos/upstreams/kaa-gent-reserve-u23.webp",
+        "Royal Francs Borains": "assets/logos/upstreams/royal-francs-borains.webp",
+        "Cercle Brugge KSV --- CH 1": "assets/logos/upstreams/cercle-brugge-ksv-ch-1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7299,6 +7307,8 @@
         "Malaysia Cup": "assets/logos/leagues/malaysia-cup.webp",
         "S\u00fcper Lig": "assets/logos/leagues/s\u00fcper-lig.webp",
         "English Women Super League": "assets/logos/leagues/english-women-super-league.webp",
-        "SA20 League, Final": "assets/logos/leagues/sa20-league-final.webp"
+        "SA20 League, Final": "assets/logos/leagues/sa20-league-final.webp",
+        "Belgium Challenger Pro League": "assets/logos/leagues/belgium-challenger-pro-league.webp",
+        "Challenger Pro League": "assets/logos/leagues/challenger-pro-league.webp"
     }
 }
