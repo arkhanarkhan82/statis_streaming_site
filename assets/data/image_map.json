@@ -6669,7 +6669,12 @@
         "Vietnam": "assets/logos/upstreams/vietnam.webp",
         "Kuwait": "assets/logos/upstreams/kuwait.webp",
         "Indonesia": "assets/logos/upstreams/indonesia.webp",
-        "South Korea": "assets/logos/upstreams/south-korea.webp"
+        "South Korea": "assets/logos/upstreams/south-korea.webp",
+        "Basquet Manresa": "assets/logos/streamed/basquet-manresa.webp",
+        "BC Andorra": "assets/logos/streamed/bc-andorra.webp",
+        "Neuch\u00e2tel Xamax": "assets/logos/streamed/neuch\u00e2tel-xamax.webp",
+        "Yverdon Sport": "assets/logos/streamed/yverdon-sport.webp",
+        "Maroussi B.C.": "assets/logos/streamed/maroussi-bc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
