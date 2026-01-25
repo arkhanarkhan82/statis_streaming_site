@@ -6674,7 +6674,9 @@
         "BC Andorra": "assets/logos/streamed/bc-andorra.webp",
         "Neuch\u00e2tel Xamax": "assets/logos/streamed/neuch\u00e2tel-xamax.webp",
         "Yverdon Sport": "assets/logos/streamed/yverdon-sport.webp",
-        "Maroussi B.C.": "assets/logos/streamed/maroussi-bc.webp"
+        "Maroussi B.C.": "assets/logos/streamed/maroussi-bc.webp",
+        "PSIM Yogyakarta": "assets/logos/upstreams/psim-yogyakarta.webp",
+        "Persebaya": "assets/logos/upstreams/persebaya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7264,6 +7266,7 @@
         "Premier League U18": "assets/logos/leagues/premier-league-u18.webp",
         "Argentina Torneo Betano": "assets/logos/leagues/argentina-torneo-betano.webp",
         "UFC 324: Gaethje vs. Pimblett": "assets/logos/leagues/ufc-324-gaethje-vs-pimblett.webp",
-        "AFC Championship": "assets/logos/leagues/afc-championship.webp"
+        "AFC Championship": "assets/logos/leagues/afc-championship.webp",
+        "Big Bash League, Final": "assets/logos/leagues/big-bash-league-final.webp"
     }
 }
