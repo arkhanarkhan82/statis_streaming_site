@@ -6653,7 +6653,10 @@
         "Manchester United U18": "assets/logos/upstreams/manchester-united-u18.webp",
         "Sekhukhune": "assets/logos/upstreams/sekhukhune.webp",
         "Conegliano W": "assets/logos/upstreams/conegliano-w.webp",
-        "Monza W": "assets/logos/upstreams/monza-w.webp"
+        "Monza W": "assets/logos/upstreams/monza-w.webp",
+        "Nairobi United": "assets/logos/streamed/nairobi-united.webp",
+        "Azam": "assets/logos/streamed/azam.webp",
+        "Al Hazm": "assets/logos/streamed/al-hazm.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7240,6 +7243,8 @@
         "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp",
         "Mexico Women Liga MX": "assets/logos/leagues/mexico-women-liga-mx.webp",
         "MLS Pre Season": "assets/logos/leagues/mls-pre-season.webp",
-        "Premier League U18": "assets/logos/leagues/premier-league-u18.webp"
+        "Premier League U18": "assets/logos/leagues/premier-league-u18.webp",
+        "Argentina Torneo Betano": "assets/logos/leagues/argentina-torneo-betano.webp",
+        "UFC 324: Gaethje vs. Pimblett": "assets/logos/leagues/ufc-324-gaethje-vs-pimblett.webp"
     }
 }
