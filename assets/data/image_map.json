@@ -6711,7 +6711,8 @@
         "Celtic --- CH 1": "assets/logos/upstreams/celtic-ch-1.webp",
         "KAA Gent Reserve U23": "assets/logos/upstreams/kaa-gent-reserve-u23.webp",
         "Royal Francs Borains": "assets/logos/upstreams/royal-francs-borains.webp",
-        "Cercle Brugge KSV --- CH 1": "assets/logos/upstreams/cercle-brugge-ksv-ch-1.webp"
+        "Cercle Brugge KSV --- CH 1": "assets/logos/upstreams/cercle-brugge-ksv-ch-1.webp",
+        "Ospitaletto": "assets/logos/streamed/ospitaletto.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7309,6 +7310,7 @@
         "English Women Super League": "assets/logos/leagues/english-women-super-league.webp",
         "SA20 League, Final": "assets/logos/leagues/sa20-league-final.webp",
         "Belgium Challenger Pro League": "assets/logos/leagues/belgium-challenger-pro-league.webp",
-        "Challenger Pro League": "assets/logos/leagues/challenger-pro-league.webp"
+        "Challenger Pro League": "assets/logos/leagues/challenger-pro-league.webp",
+        "Basketball Champions League": "assets/logos/leagues/basketball-champions-league.webp"
     }
 }
