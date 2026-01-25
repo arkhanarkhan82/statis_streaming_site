@@ -6676,7 +6676,12 @@
         "Yverdon Sport": "assets/logos/streamed/yverdon-sport.webp",
         "Maroussi B.C.": "assets/logos/streamed/maroussi-bc.webp",
         "PSIM Yogyakarta": "assets/logos/upstreams/psim-yogyakarta.webp",
-        "Persebaya": "assets/logos/upstreams/persebaya.webp"
+        "Persebaya": "assets/logos/upstreams/persebaya.webp",
+        "Costa Adeje Tenerife W": "assets/logos/upstreams/costa-adeje-tenerife-w.webp",
+        "\u00dcmraniyespor": "assets/logos/upstreams/\u00fcmraniyespor.webp",
+        "Sariyer": "assets/logos/upstreams/sariyer.webp",
+        "Corum": "assets/logos/upstreams/corum.webp",
+        "Kanchanaburi Power FC": "assets/logos/upstreams/kanchanaburi-power-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7267,6 +7272,8 @@
         "Argentina Torneo Betano": "assets/logos/leagues/argentina-torneo-betano.webp",
         "UFC 324: Gaethje vs. Pimblett": "assets/logos/leagues/ufc-324-gaethje-vs-pimblett.webp",
         "AFC Championship": "assets/logos/leagues/afc-championship.webp",
-        "Big Bash League, Final": "assets/logos/leagues/big-bash-league-final.webp"
+        "Big Bash League, Final": "assets/logos/leagues/big-bash-league-final.webp",
+        "Spanish Liga F Women": "assets/logos/leagues/spanish-liga-f-women.webp",
+        "Malaysia Cup": "assets/logos/leagues/malaysia-cup.webp"
     }
 }
