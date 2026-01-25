@@ -6681,7 +6681,13 @@
         "\u00dcmraniyespor": "assets/logos/upstreams/\u00fcmraniyespor.webp",
         "Sariyer": "assets/logos/upstreams/sariyer.webp",
         "Corum": "assets/logos/upstreams/corum.webp",
-        "Kanchanaburi Power FC": "assets/logos/upstreams/kanchanaburi-power-fc.webp"
+        "Kanchanaburi Power FC": "assets/logos/upstreams/kanchanaburi-power-fc.webp",
+        "Leicester W": "assets/logos/upstreams/leicester-w.webp",
+        "Debrecen": "assets/logos/upstreams/debrecen.webp",
+        "DVTK": "assets/logos/upstreams/dvtk.webp",
+        "Muang Thong United": "assets/logos/upstreams/muang-thong-united.webp",
+        "Persib Bandung": "assets/logos/upstreams/persib-bandung.webp",
+        "PSBS Biak": "assets/logos/upstreams/psbs-biak.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7275,6 +7281,7 @@
         "Big Bash League, Final": "assets/logos/leagues/big-bash-league-final.webp",
         "Spanish Liga F Women": "assets/logos/leagues/spanish-liga-f-women.webp",
         "Malaysia Cup": "assets/logos/leagues/malaysia-cup.webp",
-        "S\u00fcper Lig": "assets/logos/leagues/s\u00fcper-lig.webp"
+        "S\u00fcper Lig": "assets/logos/leagues/s\u00fcper-lig.webp",
+        "English Women Super League": "assets/logos/leagues/english-women-super-league.webp"
     }
 }
