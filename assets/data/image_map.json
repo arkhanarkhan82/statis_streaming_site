@@ -6691,7 +6691,16 @@
         "Xamax": "assets/logos/upstreams/xamax.webp",
         "Yverdon": "assets/logos/upstreams/yverdon.webp",
         "Tanzania Prisons": "assets/logos/upstreams/tanzania-prisons.webp",
-        "JKT Tanzania": "assets/logos/upstreams/jkt-tanzania.webp"
+        "JKT Tanzania": "assets/logos/upstreams/jkt-tanzania.webp",
+        "Celtic W": "assets/logos/upstreams/celtic-w.webp",
+        "Montrose W": "assets/logos/upstreams/montrose-w.webp",
+        "Al-Hilal Saudi FC": "assets/logos/streamed/al-hilal-saudi-fc.webp",
+        "FC Saint-\u00c9loi Lupopo": "assets/logos/upstreams/fc-saint-\u00e9loi-lupopo.webp",
+        "Liverpool U21": "assets/logos/upstreams/liverpool-u21.webp",
+        "Leeds U21": "assets/logos/upstreams/leeds-u21.webp",
+        "Levadiakos --- CH 1": "assets/logos/upstreams/levadiakos-ch-1.webp",
+        "\u00c7aykur Rizespor": "assets/logos/upstreams/\u00e7aykur-rizespor.webp",
+        "Kazincbarcika": "assets/logos/upstreams/kazincbarcika.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7286,6 +7295,7 @@
         "Spanish Liga F Women": "assets/logos/leagues/spanish-liga-f-women.webp",
         "Malaysia Cup": "assets/logos/leagues/malaysia-cup.webp",
         "S\u00fcper Lig": "assets/logos/leagues/s\u00fcper-lig.webp",
-        "English Women Super League": "assets/logos/leagues/english-women-super-league.webp"
+        "English Women Super League": "assets/logos/leagues/english-women-super-league.webp",
+        "SA20 League, Final": "assets/logos/leagues/sa20-league-final.webp"
     }
 }
