@@ -6747,7 +6747,10 @@
         "Goztepe --- CH 1": "assets/logos/upstreams/goztepe-ch-1.webp",
         "Gyor": "assets/logos/upstreams/gyor.webp",
         "Panathinaikos --- CH 2 HD": "assets/logos/upstreams/panathinaikos-ch-2-hd.webp",
-        "Castellon --- CH 2 HD": "assets/logos/upstreams/castellon-ch-2-hd.webp"
+        "Castellon --- CH 2 HD": "assets/logos/upstreams/castellon-ch-2-hd.webp",
+        "Panathinaikos --- CH 1": "assets/logos/upstreams/panathinaikos-ch-1.webp",
+        "Castellon --- CH 1": "assets/logos/upstreams/castellon-ch-1.webp",
+        "SV Wehen Wiesbaden": "assets/logos/upstreams/sv-wehen-wiesbaden.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
