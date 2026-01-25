@@ -6754,7 +6754,10 @@
         "Wydad AC": "assets/logos/streamed/wydad-ac.webp",
         "Sacramento Kings --- CH 1": "assets/logos/upstreams/sacramento-kings-ch-1.webp",
         "Auckland Hearts W": "assets/logos/upstreams/auckland-hearts-w.webp",
-        "Central Hinds W": "assets/logos/upstreams/central-hinds-w.webp"
+        "Central Hinds W": "assets/logos/upstreams/central-hinds-w.webp",
+        "Olimpia Asuncion": "assets/logos/upstreams/olimpia-asuncion.webp",
+        "Aguilas": "assets/logos/upstreams/aguilas.webp",
+        "Dep Pasto": "assets/logos/upstreams/dep-pasto.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7355,6 +7358,9 @@
         "Challenger Pro League": "assets/logos/leagues/challenger-pro-league.webp",
         "Basketball Champions League": "assets/logos/leagues/basketball-champions-league.webp",
         "Twenty20 International": "assets/logos/leagues/twenty20-international.webp",
-        "Super Smash Women": "assets/logos/leagues/super-smash-women.webp"
+        "Super Smash Women": "assets/logos/leagues/super-smash-women.webp",
+        "Paraguay Primera Division": "assets/logos/leagues/paraguay-primera-division.webp",
+        "Brazil Mineiro": "assets/logos/leagues/brazil-mineiro.webp",
+        "Carioca S\u00e9rie A \u2013 Ta\u00e7a Guanabara": "assets/logos/leagues/carioca-s\u00e9rie-a-ta\u00e7a-guanabara.webp"
     }
 }
