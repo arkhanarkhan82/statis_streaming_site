@@ -6634,7 +6634,26 @@
         "Nacional Asuncion": "assets/logos/upstreams/nacional-asuncion.webp",
         "Atl San Luis W": "assets/logos/upstreams/atl-san-luis-w.webp",
         "Gimnasia LP": "assets/logos/upstreams/gimnasia-lp.webp",
-        "Inter Miami CF": "assets/logos/upstreams/inter-miami-cf.webp"
+        "Inter Miami CF": "assets/logos/upstreams/inter-miami-cf.webp",
+        "Juarez W": "assets/logos/streamed/juarez-w.webp",
+        "Cruz Azul W": "assets/logos/streamed/cruz-azul-w.webp",
+        "Tigres UANL W": "assets/logos/streamed/tigres-uanl-w.webp",
+        "Atlas W": "assets/logos/streamed/atlas-w.webp",
+        "Otelul": "assets/logos/upstreams/otelul.webp",
+        "Miercurea Ciuc": "assets/logos/upstreams/miercurea-ciuc.webp",
+        "Sporting Lisbon B": "assets/logos/upstreams/sporting-lisbon-b.webp",
+        "Cleveland Cavaliers --- CH 1": "assets/logos/upstreams/cleveland-cavaliers-ch-1.webp",
+        "Boston Celtics --- CH 1": "assets/logos/upstreams/boston-celtics-ch-1.webp",
+        "Los Angeles Lakers --- CH 1": "assets/logos/upstreams/los-angeles-lakers-ch-1.webp",
+        "Botafogo RJ": "assets/logos/upstreams/botafogo-rj.webp",
+        "Club Atl\u00e9tico Belgrano": "assets/logos/upstreams/club-atl\u00e9tico-belgrano.webp",
+        "Miami Heat --- CH 1": "assets/logos/upstreams/miami-heat-ch-1.webp",
+        "Allianz Milano": "assets/logos/upstreams/allianz-milano.webp",
+        "Burnley U18": "assets/logos/upstreams/burnley-u18.webp",
+        "Manchester United U18": "assets/logos/upstreams/manchester-united-u18.webp",
+        "Sekhukhune": "assets/logos/upstreams/sekhukhune.webp",
+        "Conegliano W": "assets/logos/upstreams/conegliano-w.webp",
+        "Monza W": "assets/logos/upstreams/monza-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7220,6 +7239,7 @@
         "Dutch Eredivisie": "assets/logos/leagues/dutch-eredivisie.webp",
         "Colombia Primera A": "assets/logos/leagues/colombia-primera-a.webp",
         "Mexico Women Liga MX": "assets/logos/leagues/mexico-women-liga-mx.webp",
-        "MLS Pre Season": "assets/logos/leagues/mls-pre-season.webp"
+        "MLS Pre Season": "assets/logos/leagues/mls-pre-season.webp",
+        "Premier League U18": "assets/logos/leagues/premier-league-u18.webp"
     }
 }
