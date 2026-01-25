@@ -6712,7 +6712,12 @@
         "KAA Gent Reserve U23": "assets/logos/upstreams/kaa-gent-reserve-u23.webp",
         "Royal Francs Borains": "assets/logos/upstreams/royal-francs-borains.webp",
         "Cercle Brugge KSV --- CH 1": "assets/logos/upstreams/cercle-brugge-ksv-ch-1.webp",
-        "Ospitaletto": "assets/logos/streamed/ospitaletto.webp"
+        "Ospitaletto": "assets/logos/streamed/ospitaletto.webp",
+        "Universo Treviso Basket": "assets/logos/streamed/universo-treviso-basket.webp",
+        "Dziki Warszawa": "assets/logos/streamed/dziki-warszawa.webp",
+        "KKK MOSiR Krosno": "assets/logos/streamed/kkk-mosir-krosno.webp",
+        "Hapoel Be'er Sheva BC": "assets/logos/streamed/hapoel-beer-sheva-bc.webp",
+        "FC Basel": "assets/logos/upstreams/fc-basel.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
