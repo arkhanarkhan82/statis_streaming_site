@@ -6687,7 +6687,11 @@
         "DVTK": "assets/logos/upstreams/dvtk.webp",
         "Muang Thong United": "assets/logos/upstreams/muang-thong-united.webp",
         "Persib Bandung": "assets/logos/upstreams/persib-bandung.webp",
-        "PSBS Biak": "assets/logos/upstreams/psbs-biak.webp"
+        "PSBS Biak": "assets/logos/upstreams/psbs-biak.webp",
+        "Xamax": "assets/logos/upstreams/xamax.webp",
+        "Yverdon": "assets/logos/upstreams/yverdon.webp",
+        "Tanzania Prisons": "assets/logos/upstreams/tanzania-prisons.webp",
+        "JKT Tanzania": "assets/logos/upstreams/jkt-tanzania.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
