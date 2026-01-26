@@ -6847,7 +6847,11 @@
         "Aserri": "assets/logos/streamed/aserri.webp",
         "Consultants Moravia": "assets/logos/streamed/consultants-moravia.webp",
         "Dominica U17 (W)": "assets/logos/streamed/dominica-u17-w.webp",
-        "Maccabi Playtika Tel Aviv": "assets/logos/streamed/maccabi-playtika-tel-aviv.webp"
+        "Maccabi Playtika Tel Aviv": "assets/logos/streamed/maccabi-playtika-tel-aviv.webp",
+        "Cultural Leonesa --- CH 2 HD": "assets/logos/upstreams/cultural-leonesa-ch-2-hd.webp",
+        "Ishpreet Chadha": "assets/logos/upstreams/ishpreet-chadha.webp",
+        "Lines P.": "assets/logos/upstreams/lines-p.webp",
+        "Sanderson Lam": "assets/logos/upstreams/sanderson-lam.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7462,6 +7466,7 @@
         "Romania Superliga": "assets/logos/leagues/romania-superliga.webp",
         "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp",
         "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp",
-        "Portugal Liga 2": "assets/logos/leagues/portugal-liga-2.webp"
+        "Portugal Liga 2": "assets/logos/leagues/portugal-liga-2.webp",
+        "German Masters": "assets/logos/leagues/german-masters.webp"
     }
 }
