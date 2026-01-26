@@ -6762,7 +6762,21 @@
         "Mazatlan FC W": "assets/logos/upstreams/mazatlan-fc-w.webp",
         "Ameliano": "assets/logos/upstreams/ameliano.webp",
         "Rubio Nu": "assets/logos/upstreams/rubio-nu.webp",
-        "Betim Futebol": "assets/logos/upstreams/betim-futebol.webp"
+        "Betim Futebol": "assets/logos/upstreams/betim-futebol.webp",
+        "Sporting CP B": "assets/logos/streamed/sporting-cp-b.webp",
+        "Imoco Volley Conegliano": "assets/logos/upstreams/imoco-volley-conegliano.webp",
+        "Miami Ohio": "assets/logos/upstreams/miami-ohio.webp",
+        "Dinamo Bucharest": "assets/logos/upstreams/dinamo-bucharest.webp",
+        "Central Cordoba": "assets/logos/upstreams/central-cordoba.webp",
+        "Atletico-PR": "assets/logos/upstreams/atletico-pr.webp",
+        "LA Clippers": "assets/logos/upstreams/la-clippers.webp",
+        "Saudi Arabia": "assets/logos/upstreams/saudi-arabia.webp",
+        "Iran": "assets/logos/upstreams/iran.webp",
+        "Malaysia": "assets/logos/upstreams/malaysia.webp",
+        "Tajikistan": "assets/logos/upstreams/tajikistan.webp",
+        "Zeleznicar W": "assets/logos/upstreams/zeleznicar-w.webp",
+        "Paris W": "assets/logos/upstreams/paris-w.webp",
+        "Gotham FC": "assets/logos/upstreams/gotham-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7367,6 +7381,8 @@
         "Paraguay Primera Division": "assets/logos/leagues/paraguay-primera-division.webp",
         "Brazil Mineiro": "assets/logos/leagues/brazil-mineiro.webp",
         "Carioca S\u00e9rie A \u2013 Ta\u00e7a Guanabara": "assets/logos/leagues/carioca-s\u00e9rie-a-ta\u00e7a-guanabara.webp",
-        "Mexico Liga MX": "assets/logos/leagues/mexico-liga-mx.webp"
+        "Mexico Liga MX": "assets/logos/leagues/mexico-liga-mx.webp",
+        "Champions League Women, Pool D": "assets/logos/leagues/champions-league-women-pool-d.webp",
+        "S\u00e9rie A": "assets/logos/leagues/s\u00e9rie-a.webp"
     }
 }
