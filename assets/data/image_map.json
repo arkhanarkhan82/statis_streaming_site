@@ -6811,7 +6811,13 @@
         "St. Louis City": "assets/logos/upstreams/st-louis-city.webp",
         "Tampa Bay": "assets/logos/upstreams/tampa-bay.webp",
         "Dewa United FC": "assets/logos/upstreams/dewa-united-fc.webp",
-        "Arema FC": "assets/logos/upstreams/arema-fc.webp"
+        "Arema FC": "assets/logos/upstreams/arema-fc.webp",
+        "Elfsborg": "assets/logos/upstreams/elfsborg.webp",
+        "Aarhus": "assets/logos/upstreams/aarhus.webp",
+        "Al Gharraf": "assets/logos/upstreams/al-gharraf.webp",
+        "Baghdad": "assets/logos/upstreams/baghdad.webp",
+        "Perry J.": "assets/logos/upstreams/perry-j.webp",
+        "Ward D.": "assets/logos/upstreams/ward-d.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7422,6 +7428,8 @@
         "ABA Liga, Group A": "assets/logos/leagues/aba-liga-group-a.webp",
         "ABA Liga, Group B": "assets/logos/leagues/aba-liga-group-b.webp",
         "FA Trophy": "assets/logos/leagues/fa-trophy.webp",
-        "Liga Profesional Argentina": "assets/logos/leagues/liga-profesional-argentina.webp"
+        "Liga Profesional Argentina": "assets/logos/leagues/liga-profesional-argentina.webp",
+        "Romania Superliga": "assets/logos/leagues/romania-superliga.webp",
+        "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp"
     }
 }
