@@ -6790,7 +6790,18 @@
         "Saratov": "assets/logos/upstreams/saratov.webp",
         "CA Independiente": "assets/logos/upstreams/ca-independiente.webp",
         "Gzira United": "assets/logos/upstreams/gzira-united.webp",
-        "Hibernians": "assets/logos/upstreams/hibernians.webp"
+        "Hibernians": "assets/logos/upstreams/hibernians.webp",
+        "Rutgers Scarlet Knights": "assets/logos/upstreams/rutgers-scarlet-knights.webp",
+        "Zenit St. Petersburg": "assets/logos/upstreams/zenit-st-petersburg.webp",
+        "Avtodor Saratov": "assets/logos/upstreams/avtodor-saratov.webp",
+        "Syracuse Orange": "assets/logos/upstreams/syracuse-orange.webp",
+        "Virginia Tech Hokies": "assets/logos/upstreams/virginia-tech-hokies.webp",
+        "Georgia Tech Yellow Jackets": "assets/logos/upstreams/georgia-tech-yellow-jackets.webp",
+        "West Virginia Mountaineers": "assets/logos/upstreams/west-virginia-mountaineers.webp",
+        "Massachusetts Minutemen": "assets/logos/upstreams/massachusetts-minutemen.webp",
+        "Nevada Wolf Pack": "assets/logos/upstreams/nevada-wolf-pack.webp",
+        "Grand Canyon Antelopes": "assets/logos/upstreams/grand-canyon-antelopes.webp",
+        "New Mexico Lobos": "assets/logos/upstreams/new-mexico-lobos.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
