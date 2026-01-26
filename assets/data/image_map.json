@@ -6837,7 +6837,10 @@
         "Itag\u00fc\u00ed Leones": "assets/logos/streamed/itag\u00fc\u00ed-leones.webp",
         "Tigres FC": "assets/logos/streamed/tigres-fc.webp",
         "Real Cundinamarca": "assets/logos/streamed/real-cundinamarca.webp",
-        "Envigado": "assets/logos/streamed/envigado.webp"
+        "Envigado": "assets/logos/streamed/envigado.webp",
+        "FC Dallas": "assets/logos/upstreams/fc-dallas.webp",
+        "Burden A.": "assets/logos/upstreams/burden-a.webp",
+        "Williams P.": "assets/logos/upstreams/williams-p.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7451,6 +7454,7 @@
         "Liga Profesional Argentina": "assets/logos/leagues/liga-profesional-argentina.webp",
         "Romania Superliga": "assets/logos/leagues/romania-superliga.webp",
         "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp",
-        "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp"
+        "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp",
+        "Portugal Liga 2": "assets/logos/leagues/portugal-liga-2.webp"
     }
 }
