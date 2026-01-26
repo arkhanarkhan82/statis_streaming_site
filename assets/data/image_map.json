@@ -6779,7 +6779,18 @@
         "Gotham FC": "assets/logos/upstreams/gotham-fc.webp",
         "Chile W": "assets/logos/streamed/chile-w.webp",
         "NJ/NY Gotham FC W": "assets/logos/streamed/njny-gotham-fc-w.webp",
-        "Corinthians W": "assets/logos/streamed/corinthians-w.webp"
+        "Corinthians W": "assets/logos/streamed/corinthians-w.webp",
+        "BC Dubai": "assets/logos/upstreams/bc-dubai.webp",
+        "Galil Gilboa": "assets/logos/upstreams/galil-gilboa.webp",
+        "Penn St Nittany Lions": "assets/logos/upstreams/penn-st-nittany-lions.webp",
+        "Brigham Young Cougars": "assets/logos/upstreams/brigham-young-cougars.webp",
+        "Arizona Wildcats": "assets/logos/upstreams/arizona-wildcats.webp",
+        "Southside Flyers": "assets/logos/upstreams/southside-flyers.webp",
+        "Zenit Petersburg": "assets/logos/upstreams/zenit-petersburg.webp",
+        "Saratov": "assets/logos/upstreams/saratov.webp",
+        "CA Independiente": "assets/logos/upstreams/ca-independiente.webp",
+        "Gzira United": "assets/logos/upstreams/gzira-united.webp",
+        "Hibernians": "assets/logos/upstreams/hibernians.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7386,6 +7397,9 @@
         "Carioca S\u00e9rie A \u2013 Ta\u00e7a Guanabara": "assets/logos/leagues/carioca-s\u00e9rie-a-ta\u00e7a-guanabara.webp",
         "Mexico Liga MX": "assets/logos/leagues/mexico-liga-mx.webp",
         "Champions League Women, Pool D": "assets/logos/leagues/champions-league-women-pool-d.webp",
-        "S\u00e9rie A": "assets/logos/leagues/s\u00e9rie-a.webp"
+        "S\u00e9rie A": "assets/logos/leagues/s\u00e9rie-a.webp",
+        "ABA Liga, Group A": "assets/logos/leagues/aba-liga-group-a.webp",
+        "ABA Liga, Group B": "assets/logos/leagues/aba-liga-group-b.webp",
+        "FA Trophy": "assets/logos/leagues/fa-trophy.webp"
     }
 }
