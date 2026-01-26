@@ -6826,7 +6826,13 @@
         "KK Studentski centar": "assets/logos/streamed/kk-studentski-centar.webp",
         "Maccabi Ra'anana": "assets/logos/streamed/maccabi-raanana.webp",
         "Gimnasia y Esgrima de Mendoza": "assets/logos/streamed/gimnasia-y-esgrima-de-mendoza.webp",
-        "Independiente Medellin": "assets/logos/streamed/independiente-medellin.webp"
+        "Independiente Medellin": "assets/logos/streamed/independiente-medellin.webp",
+        "KK Student Igokea": "assets/logos/streamed/kk-student-igokea.webp",
+        "KK Sutjeska": "assets/logos/streamed/kk-sutjeska.webp",
+        "Pallacanestro Varese": "assets/logos/streamed/pallacanestro-varese.webp",
+        "Osceola Magic": "assets/logos/streamed/osceola-magic.webp",
+        "Texas A&M-Corpus Christi": "assets/logos/streamed/texas-am-corpus-christi.webp",
+        "Anorthosi": "assets/logos/upstreams/anorthosi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7439,6 +7445,7 @@
         "FA Trophy": "assets/logos/leagues/fa-trophy.webp",
         "Liga Profesional Argentina": "assets/logos/leagues/liga-profesional-argentina.webp",
         "Romania Superliga": "assets/logos/leagues/romania-superliga.webp",
-        "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp"
+        "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp",
+        "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp"
     }
 }
