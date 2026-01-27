@@ -6895,7 +6895,9 @@
         "Tulane Green Wave": "assets/logos/upstreams/tulane-green-wave.webp",
         "South Florida Bulls": "assets/logos/upstreams/south-florida-bulls.webp",
         "Futsal": "assets/logos/upstreams/futsal.webp",
-        "Kup Azije: South Korea - Iraq": "assets/logos/upstreams/kup-azije-south-korea-iraq.webp"
+        "Kup Azije: South Korea - Iraq": "assets/logos/upstreams/kup-azije-south-korea-iraq.webp",
+        "CA Talleres de Cordoba": "assets/logos/upstreams/ca-talleres-de-cordoba.webp",
+        "Bodoe/Glimt": "assets/logos/upstreams/bodoeglimt.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7516,6 +7518,7 @@
         "1. A SKL": "assets/logos/leagues/1-a-skl.webp",
         "Champions League, Group J": "assets/logos/leagues/champions-league-group-j.webp",
         "Champions League, Group K": "assets/logos/leagues/champions-league-group-k.webp",
-        "Atlantic 10 Conference Women": "assets/logos/leagues/atlantic-10-conference-women.webp"
+        "Atlantic 10 Conference Women": "assets/logos/leagues/atlantic-10-conference-women.webp",
+        "England tour of Sri Lanka": "assets/logos/leagues/england-tour-of-sri-lanka.webp"
     }
 }
