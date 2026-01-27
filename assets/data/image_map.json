@@ -6910,7 +6910,11 @@
         "Erbil": "assets/logos/upstreams/erbil.webp",
         "Cheung K.": "assets/logos/upstreams/cheung-k.webp",
         "Ittihad Kalba": "assets/logos/streamed/ittihad-kalba.webp",
-        "Al-Hidd": "assets/logos/streamed/al-hidd.webp"
+        "Al-Hidd": "assets/logos/streamed/al-hidd.webp",
+        "Newroz": "assets/logos/upstreams/newroz.webp",
+        "Al-Karma": "assets/logos/upstreams/al-karma.webp",
+        "Al Shorta": "assets/logos/upstreams/al-shorta.webp",
+        "Naft Missan": "assets/logos/upstreams/naft-missan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7534,6 +7538,8 @@
         "Atlantic 10 Conference Women": "assets/logos/leagues/atlantic-10-conference-women.webp",
         "England tour of Sri Lanka": "assets/logos/leagues/england-tour-of-sri-lanka.webp",
         "English Premier League U18": "assets/logos/leagues/english-premier-league-u18.webp",
-        "German Masters 2026": "assets/logos/leagues/german-masters-2026.webp"
+        "German Masters 2026": "assets/logos/leagues/german-masters-2026.webp",
+        "West Indies in South Africa, 3 T20I Series": "assets/logos/leagues/west-indies-in-south-africa-3-t20i-series.webp",
+        "Egyptian Premier League": "assets/logos/leagues/egyptian-premier-league.webp"
     }
 }
