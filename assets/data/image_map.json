@@ -6907,7 +6907,8 @@
         "Al Najaf": "assets/logos/upstreams/al-najaf.webp",
         "Zakho": "assets/logos/upstreams/zakho.webp",
         "Al Karkh": "assets/logos/upstreams/al-karkh.webp",
-        "Erbil": "assets/logos/upstreams/erbil.webp"
+        "Erbil": "assets/logos/upstreams/erbil.webp",
+        "Cheung K.": "assets/logos/upstreams/cheung-k.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7530,6 +7531,7 @@
         "Champions League, Group K": "assets/logos/leagues/champions-league-group-k.webp",
         "Atlantic 10 Conference Women": "assets/logos/leagues/atlantic-10-conference-women.webp",
         "England tour of Sri Lanka": "assets/logos/leagues/england-tour-of-sri-lanka.webp",
-        "English Premier League U18": "assets/logos/leagues/english-premier-league-u18.webp"
+        "English Premier League U18": "assets/logos/leagues/english-premier-league-u18.webp",
+        "German Masters 2026": "assets/logos/leagues/german-masters-2026.webp"
     }
 }
