@@ -6941,7 +6941,16 @@
         "OC Charleroi": "assets/logos/upstreams/oc-charleroi.webp",
         "Lommel SK": "assets/logos/upstreams/lommel-sk.webp",
         "Chalon Saone": "assets/logos/upstreams/chalon-saone.webp",
-        "St. Johnstone": "assets/logos/upstreams/st-johnstone.webp"
+        "St. Johnstone": "assets/logos/upstreams/st-johnstone.webp",
+        "Bedford Town": "assets/logos/streamed/bedford-town.webp",
+        "Kidderminster Harriers": "assets/logos/streamed/kidderminster-harriers.webp",
+        "South Shields": "assets/logos/streamed/south-shields.webp",
+        "AFC Fylde": "assets/logos/streamed/afc-fylde.webp",
+        "Maidstone United": "assets/logos/streamed/maidstone-united.webp",
+        "Ebbsfleet United": "assets/logos/streamed/ebbsfleet-united.webp",
+        "Dagenham and Redbridge": "assets/logos/streamed/dagenham-and-redbridge.webp",
+        "Eastbourne Borough": "assets/logos/streamed/eastbourne-borough.webp",
+        "Cerro Porte\u00f1o": "assets/logos/streamed/cerro-porte\u00f1o.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
