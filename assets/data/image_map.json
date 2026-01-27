@@ -6950,7 +6950,11 @@
         "Ebbsfleet United": "assets/logos/streamed/ebbsfleet-united.webp",
         "Dagenham and Redbridge": "assets/logos/streamed/dagenham-and-redbridge.webp",
         "Eastbourne Borough": "assets/logos/streamed/eastbourne-borough.webp",
-        "Cerro Porte\u00f1o": "assets/logos/streamed/cerro-porte\u00f1o.webp"
+        "Cerro Porte\u00f1o": "assets/logos/streamed/cerro-porte\u00f1o.webp",
+        "West Ham U21": "assets/logos/upstreams/west-ham-u21.webp",
+        "Truro": "assets/logos/upstreams/truro.webp",
+        "Braintree": "assets/logos/upstreams/braintree.webp",
+        "Prairie View": "assets/logos/upstreams/prairie-view.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
