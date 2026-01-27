@@ -6931,7 +6931,16 @@
         "remo": "assets/logos/streamed/remo.webp",
         "Gremio": "assets/logos/streamed/gremio.webp",
         "Chapecoense": "assets/logos/streamed/chapecoense.webp",
-        "Bahia": "assets/logos/streamed/bahia.webp"
+        "Bahia": "assets/logos/streamed/bahia.webp",
+        "Paisas Basketball": "assets/logos/streamed/paisas-basketball.webp",
+        "Caimanes del Llano": "assets/logos/streamed/caimanes-del-llano.webp",
+        "Club Brugge KV U23": "assets/logos/upstreams/club-brugge-kv-u23.webp",
+        "Sporting Lokeren": "assets/logos/upstreams/sporting-lokeren.webp",
+        "Jong KRC Genk U23": "assets/logos/upstreams/jong-krc-genk-u23.webp",
+        "Patro Eisden Maasmechelen": "assets/logos/upstreams/patro-eisden-maasmechelen.webp",
+        "OC Charleroi": "assets/logos/upstreams/oc-charleroi.webp",
+        "Lommel SK": "assets/logos/upstreams/lommel-sk.webp",
+        "Chalon Saone": "assets/logos/upstreams/chalon-saone.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
