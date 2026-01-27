@@ -6853,7 +6853,14 @@
         "Lines P.": "assets/logos/upstreams/lines-p.webp",
         "Sanderson Lam": "assets/logos/upstreams/sanderson-lam.webp",
         "Toluca W": "assets/logos/upstreams/toluca-w.webp",
-        "Nova Iguacu": "assets/logos/upstreams/nova-iguacu.webp"
+        "Nova Iguacu": "assets/logos/upstreams/nova-iguacu.webp",
+        "Flamengo RJ": "assets/logos/upstreams/flamengo-rj.webp",
+        "Crvena zvezda W": "assets/logos/upstreams/crvena-zvezda-w.webp",
+        "Novara W": "assets/logos/upstreams/novara-w.webp",
+        "Budowlani Lodz W": "assets/logos/upstreams/budowlani-lodz-w.webp",
+        "Farjestad BK": "assets/logos/upstreams/farjestad-bk.webp",
+        "Monteros": "assets/logos/upstreams/monteros.webp",
+        "Union Sportive Oyonnax": "assets/logos/upstreams/union-sportive-oyonnax.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7469,6 +7476,7 @@
         "Iraq Stars League": "assets/logos/leagues/iraq-stars-league.webp",
         "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp",
         "Portugal Liga 2": "assets/logos/leagues/portugal-liga-2.webp",
-        "German Masters": "assets/logos/leagues/german-masters.webp"
+        "German Masters": "assets/logos/leagues/german-masters.webp",
+        "Brasileir\u00e3o Betano": "assets/logos/leagues/brasileir\u00e3o-betano.webp"
     }
 }
