@@ -6960,7 +6960,10 @@
         "Tasmanian Roar W": "assets/logos/upstreams/tasmanian-roar-w.webp",
         "Western Fury W": "assets/logos/upstreams/western-fury-w.webp",
         "Al Dhafra": "assets/logos/streamed/al-dhafra.webp",
-        "Sharjah": "assets/logos/streamed/sharjah.webp"
+        "Sharjah": "assets/logos/streamed/sharjah.webp",
+        "Llaneros FC": "assets/logos/upstreams/llaneros-fc.webp",
+        "Atl Tucuman": "assets/logos/upstreams/atl-tucuman.webp",
+        "Ind Medellin": "assets/logos/upstreams/ind-medellin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
