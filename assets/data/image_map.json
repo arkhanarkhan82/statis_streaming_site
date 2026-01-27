@@ -6871,7 +6871,9 @@
         "Bodo Glimt": "assets/logos/streamed/bodo-glimt.webp",
         "Stephen F Austin Lumberjacks": "assets/logos/upstreams/stephen-f-austin-lumberjacks.webp",
         "Northwestern State Demons": "assets/logos/upstreams/northwestern-state-demons.webp",
-        "Saint Louis Billikens": "assets/logos/upstreams/saint-louis-billikens.webp"
+        "Saint Louis Billikens": "assets/logos/upstreams/saint-louis-billikens.webp",
+        "Stephen F. Austin": "assets/logos/upstreams/stephen-f-austin.webp",
+        "Northwestern St.": "assets/logos/upstreams/northwestern-st.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
