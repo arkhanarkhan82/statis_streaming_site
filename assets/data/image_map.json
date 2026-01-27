@@ -6873,7 +6873,29 @@
         "Northwestern State Demons": "assets/logos/upstreams/northwestern-state-demons.webp",
         "Saint Louis Billikens": "assets/logos/upstreams/saint-louis-billikens.webp",
         "Stephen F. Austin": "assets/logos/upstreams/stephen-f-austin.webp",
-        "Northwestern St.": "assets/logos/upstreams/northwestern-st.webp"
+        "Northwestern St.": "assets/logos/upstreams/northwestern-st.webp",
+        "Hopsi Polzela": "assets/logos/upstreams/hopsi-polzela.webp",
+        "Ratiopharm Ulm": "assets/logos/upstreams/ratiopharm-ulm.webp",
+        "Umana Reyer Venezia": "assets/logos/upstreams/umana-reyer-venezia.webp",
+        "Cincinnati Bearcats": "assets/logos/upstreams/cincinnati-bearcats.webp",
+        "Baylor Bears": "assets/logos/upstreams/baylor-bears.webp",
+        "La Salle Explorers": "assets/logos/upstreams/la-salle-explorers.webp",
+        "Saint Joseph's Hawks": "assets/logos/upstreams/saint-josephs-hawks.webp",
+        "Florida State Seminoles": "assets/logos/upstreams/florida-state-seminoles.webp",
+        "California Golden Bears": "assets/logos/upstreams/california-golden-bears.webp",
+        "Davidson Wildcats": "assets/logos/upstreams/davidson-wildcats.webp",
+        "East Carolina Pirates": "assets/logos/upstreams/east-carolina-pirates.webp",
+        "Rice Owls": "assets/logos/upstreams/rice-owls.webp",
+        "Georgetown Hoyas": "assets/logos/upstreams/georgetown-hoyas.webp",
+        "DePaul Blue Demons": "assets/logos/upstreams/depaul-blue-demons.webp",
+        "San Diego State Aztecs": "assets/logos/upstreams/san-diego-state-aztecs.webp",
+        "Colorado State Rams": "assets/logos/upstreams/colorado-state-rams.webp",
+        "Santa Clara Broncos": "assets/logos/upstreams/santa-clara-broncos.webp",
+        "San Francisco Dons": "assets/logos/upstreams/san-francisco-dons.webp",
+        "Tulane Green Wave": "assets/logos/upstreams/tulane-green-wave.webp",
+        "South Florida Bulls": "assets/logos/upstreams/south-florida-bulls.webp",
+        "Futsal": "assets/logos/upstreams/futsal.webp",
+        "Kup Azije: South Korea - Iraq": "assets/logos/upstreams/kup-azije-south-korea-iraq.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7490,6 +7512,10 @@
         "Cyprus Basketball": "assets/logos/leagues/cyprus-basketball.webp",
         "Portugal Liga 2": "assets/logos/leagues/portugal-liga-2.webp",
         "German Masters": "assets/logos/leagues/german-masters.webp",
-        "Brasileir\u00e3o Betano": "assets/logos/leagues/brasileir\u00e3o-betano.webp"
+        "Brasileir\u00e3o Betano": "assets/logos/leagues/brasileir\u00e3o-betano.webp",
+        "1. A SKL": "assets/logos/leagues/1-a-skl.webp",
+        "Champions League, Group J": "assets/logos/leagues/champions-league-group-j.webp",
+        "Champions League, Group K": "assets/logos/leagues/champions-league-group-k.webp",
+        "Atlantic 10 Conference Women": "assets/logos/leagues/atlantic-10-conference-women.webp"
     }
 }
