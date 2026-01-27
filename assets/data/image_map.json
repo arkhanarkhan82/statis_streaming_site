@@ -6925,7 +6925,13 @@
         "Basketball Nymburk": "assets/logos/streamed/basketball-nymburk.webp",
         "Ryt\u00ed\u0159i Kladno": "assets/logos/streamed/ryt\u00ed\u0159i-kladno.webp",
         "Al-Shamal": "assets/logos/streamed/al-shamal.webp",
-        "Coastal Union": "assets/logos/upstreams/coastal-union.webp"
+        "Coastal Union": "assets/logos/upstreams/coastal-union.webp",
+        "Atletico-MG": "assets/logos/streamed/atletico-mg.webp",
+        "Vitoria": "assets/logos/streamed/vitoria.webp",
+        "remo": "assets/logos/streamed/remo.webp",
+        "Gremio": "assets/logos/streamed/gremio.webp",
+        "Chapecoense": "assets/logos/streamed/chapecoense.webp",
+        "Bahia": "assets/logos/streamed/bahia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
