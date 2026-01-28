@@ -6963,7 +6963,21 @@
         "Sharjah": "assets/logos/streamed/sharjah.webp",
         "Llaneros FC": "assets/logos/upstreams/llaneros-fc.webp",
         "Atl Tucuman": "assets/logos/upstreams/atl-tucuman.webp",
-        "Ind Medellin": "assets/logos/upstreams/ind-medellin.webp"
+        "Ind Medellin": "assets/logos/upstreams/ind-medellin.webp",
+        "Cebu FC": "assets/logos/streamed/cebu-fc.webp",
+        "FC Viktoria Plzen": "assets/logos/upstreams/fc-viktoria-plzen.webp",
+        "PAOK Thessaloniki": "assets/logos/upstreams/paok-thessaloniki.webp",
+        "\u017dOK Crvena zvezda Beograd": "assets/logos/upstreams/\u017eok-crvena-zvezda-beograd.webp",
+        "Defensores de Banfield": "assets/logos/upstreams/defensores-de-banfield.webp",
+        "Middle Tennessee State": "assets/logos/upstreams/middle-tennessee-state.webp",
+        "Argentinos Jrs": "assets/logos/upstreams/argentinos-jrs.webp",
+        "Sarmiento": "assets/logos/upstreams/sarmiento.webp",
+        "R. Sociedad B": "assets/logos/upstreams/r-sociedad-b.webp",
+        "Zaglebie": "assets/logos/upstreams/zaglebie.webp",
+        "SKA St. Petersburg": "assets/logos/upstreams/ska-st-petersburg.webp",
+        "Valence Romans": "assets/logos/upstreams/valence-romans.webp",
+        "West": "assets/logos/upstreams/west.webp",
+        "East": "assets/logos/upstreams/east.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7590,6 +7604,9 @@
         "German Masters 2026": "assets/logos/leagues/german-masters-2026.webp",
         "West Indies in South Africa, 3 T20I Series": "assets/logos/leagues/west-indies-in-south-africa-3-t20i-series.webp",
         "Egyptian Premier League": "assets/logos/leagues/egyptian-premier-league.webp",
-        "Scottish Challenge Cup": "assets/logos/leagues/scottish-challenge-cup.webp"
+        "Scottish Challenge Cup": "assets/logos/leagues/scottish-challenge-cup.webp",
+        "Challenge Cup, Women": "assets/logos/leagues/challenge-cup-women.webp",
+        "Ekstraklasa": "assets/logos/leagues/ekstraklasa.webp",
+        "East-West Shrine Bowl": "assets/logos/leagues/east-west-shrine-bowl.webp"
     }
 }
