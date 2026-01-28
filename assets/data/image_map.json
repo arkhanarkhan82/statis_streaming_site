@@ -6977,7 +6977,18 @@
         "SKA St. Petersburg": "assets/logos/upstreams/ska-st-petersburg.webp",
         "Valence Romans": "assets/logos/upstreams/valence-romans.webp",
         "West": "assets/logos/upstreams/west.webp",
-        "East": "assets/logos/upstreams/east.webp"
+        "East": "assets/logos/upstreams/east.webp",
+        "Vejle": "assets/logos/streamed/vejle.webp",
+        "Ararat-Armenia": "assets/logos/streamed/ararat-armenia.webp",
+        "Polonia Warsaw": "assets/logos/streamed/polonia-warsaw.webp",
+        "Chelyabinsk": "assets/logos/streamed/chelyabinsk.webp",
+        "Je\u0144is": "assets/logos/streamed/je\u0144is.webp",
+        "Sportist Svoge": "assets/logos/streamed/sportist-svoge.webp",
+        "Marek Dupnitsa": "assets/logos/streamed/marek-dupnitsa.webp",
+        "Ural Yekaterinburg": "assets/logos/streamed/ural-yekaterinburg.webp",
+        "Chengdu Rongcheng": "assets/logos/streamed/chengdu-rongcheng.webp",
+        "Levski Sofia": "assets/logos/streamed/levski-sofia.webp",
+        "Vihren Sandanski": "assets/logos/streamed/vihren-sandanski.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7607,6 +7618,8 @@
         "Scottish Challenge Cup": "assets/logos/leagues/scottish-challenge-cup.webp",
         "Challenge Cup, Women": "assets/logos/leagues/challenge-cup-women.webp",
         "Ekstraklasa": "assets/logos/leagues/ekstraklasa.webp",
-        "East-West Shrine Bowl": "assets/logos/leagues/east-west-shrine-bowl.webp"
+        "East-West Shrine Bowl": "assets/logos/leagues/east-west-shrine-bowl.webp",
+        "Men's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/mens-singles-quarter-final-australian-open-2026.webp",
+        "Women's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/womens-singles-quarter-final-australian-open-2026.webp"
     }
 }
