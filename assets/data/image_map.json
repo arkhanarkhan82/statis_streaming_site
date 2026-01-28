@@ -7139,7 +7139,10 @@
         "Internacional de Bogot\u00e1": "assets/logos/streamed/internacional-de-bogot\u00e1.webp",
         "FC Urartu": "assets/logos/streamed/fc-urartu.webp",
         "Qatar U20": "assets/logos/streamed/qatar-u20.webp",
-        "Pakhtakor": "assets/logos/streamed/pakhtakor.webp"
+        "Pakhtakor": "assets/logos/streamed/pakhtakor.webp",
+        "FAR Rabat W": "assets/logos/streamed/far-rabat-w.webp",
+        "Al Shabab Riyadh": "assets/logos/streamed/al-shabab-riyadh.webp",
+        "Sarafina Olivia Hansen": "assets/logos/upstreams/sarafina-olivia-hansen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7783,6 +7786,8 @@
         "Divisi\u00f3n de Honor, Apertura": "assets/logos/leagues/divisi\u00f3n-de-honor-apertura.webp",
         "Poland - SuperLeague (W)": "assets/logos/leagues/poland-superleague-w.webp",
         "Champions League America - Gr.A": "assets/logos/leagues/champions-league-america-gra.webp",
-        "Austria - Cup": "assets/logos/leagues/austria-cup.webp"
+        "Austria - Cup": "assets/logos/leagues/austria-cup.webp",
+        "Finland - KorisLeague - The losers' tour": "assets/logos/leagues/finland-korisleague-the-losers-tour.webp",
+        "Finland - KorisLeague - Winners' Tour": "assets/logos/leagues/finland-korisleague-winners-tour.webp"
     }
 }
