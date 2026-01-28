@@ -7026,7 +7026,10 @@
         "Toronto FC": "assets/logos/streamed/toronto-fc.webp",
         "Incheon United": "assets/logos/streamed/incheon-united.webp",
         "Al Mosul": "assets/logos/upstreams/al-mosul.webp",
-        "Al Naft": "assets/logos/upstreams/al-naft.webp"
+        "Al Naft": "assets/logos/upstreams/al-naft.webp",
+        "FV Illertissen": "assets/logos/streamed/fv-illertissen.webp",
+        "\u00c1rmann": "assets/logos/streamed/\u00e1rmann.webp",
+        "\u00cdR": "assets/logos/streamed/\u00edr.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
