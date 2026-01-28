@@ -7014,7 +7014,9 @@
         "Azijski pokal: Tad\u017eikistan - Japonska": "assets/logos/upstreams/azijski-pokal-tad\u017eikistan-japonska.webp",
         "Onvo": "assets/logos/upstreams/onvo.webp",
         "Spartak": "assets/logos/upstreams/spartak.webp",
-        "SKA": "assets/logos/upstreams/ska.webp"
+        "SKA": "assets/logos/upstreams/ska.webp",
+        "Sao Paulo FC SP": "assets/logos/upstreams/sao-paulo-fc-sp.webp",
+        "CR Flamengo RJ": "assets/logos/upstreams/cr-flamengo-rj.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7651,6 +7653,7 @@
         "Prva Liga": "assets/logos/leagues/prva-liga.webp",
         "Primera Division Estudiantesriocuarto Argentinosjrs": "assets/logos/leagues/primera-division-estudiantesriocuarto-argentinosjrs.webp",
         "Super Ligi Buyukcekmece": "assets/logos/leagues/super-ligi-buyukcekmece.webp",
-        "Khl Moscowstpetersburg": "assets/logos/leagues/khl-moscowstpetersburg.webp"
+        "Khl Moscowstpetersburg": "assets/logos/leagues/khl-moscowstpetersburg.webp",
+        "Brasileiro Serie A": "assets/logos/leagues/brasileiro-serie-a.webp"
     }
 }
