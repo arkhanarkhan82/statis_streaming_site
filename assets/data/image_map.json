@@ -6997,7 +6997,12 @@
         "Sitra": "assets/logos/streamed/sitra.webp",
         "Al-Riffa": "assets/logos/streamed/al-riffa.webp",
         "Khorfakkan": "assets/logos/streamed/khorfakkan.webp",
-        "Pang Junxu": "assets/logos/upstreams/pang-junxu.webp"
+        "Pang Junxu": "assets/logos/upstreams/pang-junxu.webp",
+        "Croatia Handball": "assets/logos/streamed/croatia-handball.webp",
+        "Hungary Handball": "assets/logos/streamed/hungary-handball.webp",
+        "Germany Handball": "assets/logos/streamed/germany-handball.webp",
+        "France Handball": "assets/logos/streamed/france-handball.webp",
+        "Jimmy Robertson": "assets/logos/upstreams/jimmy-robertson.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
