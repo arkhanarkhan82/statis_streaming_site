@@ -7016,7 +7016,10 @@
         "Spartak": "assets/logos/upstreams/spartak.webp",
         "SKA": "assets/logos/upstreams/ska.webp",
         "Sao Paulo FC SP": "assets/logos/upstreams/sao-paulo-fc-sp.webp",
-        "CR Flamengo RJ": "assets/logos/upstreams/cr-flamengo-rj.webp"
+        "CR Flamengo RJ": "assets/logos/upstreams/cr-flamengo-rj.webp",
+        "Changwon LG Sakers": "assets/logos/streamed/changwon-lg-sakers.webp",
+        "Lokomotiv Gorna Oryahovitsa": "assets/logos/streamed/lokomotiv-gorna-oryahovitsa.webp",
+        "KK MZT Skopje": "assets/logos/streamed/kk-mzt-skopje.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
