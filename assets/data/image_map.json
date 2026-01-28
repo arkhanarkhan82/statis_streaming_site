@@ -7005,7 +7005,16 @@
         "Jimmy Robertson": "assets/logos/upstreams/jimmy-robertson.webp",
         "Gao Yang": "assets/logos/upstreams/gao-yang.webp",
         "Nogomet: Prva liga Telemach: Radomlje": "assets/logos/upstreams/nogomet-prva-liga-telemach-radomlje.webp",
-        "Aluminij": "assets/logos/upstreams/aluminij.webp"
+        "Aluminij": "assets/logos/upstreams/aluminij.webp",
+        "Estudiantes RC": "assets/logos/upstreams/estudiantes-rc.webp",
+        "Jogo a Definir": "assets/logos/upstreams/jogo-a-definir.webp",
+        "Segunda Liga": "assets/logos/upstreams/segunda-liga.webp",
+        "Azijski pokal: Savdska Arabija - Iran": "assets/logos/upstreams/azijski-pokal-savdska-arabija-iran.webp",
+        "Azijski pokal: Avstralija - Uzbekistan": "assets/logos/upstreams/azijski-pokal-avstralija-uzbekistan.webp",
+        "Azijski pokal: Tad\u017eikistan - Japonska": "assets/logos/upstreams/azijski-pokal-tad\u017eikistan-japonska.webp",
+        "Onvo": "assets/logos/upstreams/onvo.webp",
+        "Spartak": "assets/logos/upstreams/spartak.webp",
+        "SKA": "assets/logos/upstreams/ska.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7639,6 +7648,9 @@
         "Men's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/mens-singles-quarter-final-australian-open-2026.webp",
         "Women's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/womens-singles-quarter-final-australian-open-2026.webp",
         "Australian Open": "assets/logos/leagues/australian-open.webp",
-        "Prva Liga": "assets/logos/leagues/prva-liga.webp"
+        "Prva Liga": "assets/logos/leagues/prva-liga.webp",
+        "Primera Division Estudiantesriocuarto Argentinosjrs": "assets/logos/leagues/primera-division-estudiantesriocuarto-argentinosjrs.webp",
+        "Super Ligi Buyukcekmece": "assets/logos/leagues/super-ligi-buyukcekmece.webp",
+        "Khl Moscowstpetersburg": "assets/logos/leagues/khl-moscowstpetersburg.webp"
     }
 }
