@@ -7003,7 +7003,9 @@
         "Germany Handball": "assets/logos/streamed/germany-handball.webp",
         "France Handball": "assets/logos/streamed/france-handball.webp",
         "Jimmy Robertson": "assets/logos/upstreams/jimmy-robertson.webp",
-        "Gao Yang": "assets/logos/upstreams/gao-yang.webp"
+        "Gao Yang": "assets/logos/upstreams/gao-yang.webp",
+        "Nogomet: Prva liga Telemach: Radomlje": "assets/logos/upstreams/nogomet-prva-liga-telemach-radomlje.webp",
+        "Aluminij": "assets/logos/upstreams/aluminij.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7636,6 +7638,7 @@
         "East-West Shrine Bowl": "assets/logos/leagues/east-west-shrine-bowl.webp",
         "Men's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/mens-singles-quarter-final-australian-open-2026.webp",
         "Women's Singles Quarter Final Australian Open 2026": "assets/logos/leagues/womens-singles-quarter-final-australian-open-2026.webp",
-        "Australian Open": "assets/logos/leagues/australian-open.webp"
+        "Australian Open": "assets/logos/leagues/australian-open.webp",
+        "Prva Liga": "assets/logos/leagues/prva-liga.webp"
     }
 }
