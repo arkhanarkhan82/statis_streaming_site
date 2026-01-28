@@ -7024,7 +7024,9 @@
         "Rukh Lviv": "assets/logos/streamed/rukh-lviv.webp",
         "FSC Mariupol": "assets/logos/streamed/fsc-mariupol.webp",
         "Toronto FC": "assets/logos/streamed/toronto-fc.webp",
-        "Incheon United": "assets/logos/streamed/incheon-united.webp"
+        "Incheon United": "assets/logos/streamed/incheon-united.webp",
+        "Al Mosul": "assets/logos/upstreams/al-mosul.webp",
+        "Al Naft": "assets/logos/upstreams/al-naft.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7662,6 +7664,7 @@
         "Primera Division Estudiantesriocuarto Argentinosjrs": "assets/logos/leagues/primera-division-estudiantesriocuarto-argentinosjrs.webp",
         "Super Ligi Buyukcekmece": "assets/logos/leagues/super-ligi-buyukcekmece.webp",
         "Khl Moscowstpetersburg": "assets/logos/leagues/khl-moscowstpetersburg.webp",
-        "Brasileiro Serie A": "assets/logos/leagues/brasileiro-serie-a.webp"
+        "Brasileiro Serie A": "assets/logos/leagues/brasileiro-serie-a.webp",
+        "Darts": "assets/logos/leagues/darts.webp"
     }
 }
