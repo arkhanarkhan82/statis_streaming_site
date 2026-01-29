@@ -7318,7 +7318,19 @@
         "Maik Steiner": "assets/logos/upstreams/maik-steiner.webp",
         "Mithun Manjunath": "assets/logos/upstreams/mithun-manjunath.webp",
         "BC Almaty Legion": "assets/logos/upstreams/bc-almaty-legion.webp",
-        "Rafael KIS Balazs": "assets/logos/upstreams/rafael-kis-balazs.webp"
+        "Rafael KIS Balazs": "assets/logos/upstreams/rafael-kis-balazs.webp",
+        "Adela Polakovicova": "assets/logos/upstreams/adela-polakovicova.webp",
+        "Andriy Poritskyy": "assets/logos/upstreams/andriy-poritskyy.webp",
+        "NK Olimpija Ljubljana": "assets/logos/upstreams/nk-olimpija-ljubljana.webp",
+        "Academia Puerto Cabello": "assets/logos/upstreams/academia-puerto-cabello.webp",
+        "Metropolitanos": "assets/logos/upstreams/metropolitanos.webp",
+        "Shaun Murphy": "assets/logos/upstreams/shaun-murphy.webp",
+        "Jiahui S.": "assets/logos/upstreams/jiahui-s.webp",
+        "Anika Jaskova": "assets/logos/upstreams/anika-jaskova.webp",
+        "Nadezhda Shamenkova": "assets/logos/upstreams/nadezhda-shamenkova.webp",
+        "ROmane Longueville": "assets/logos/upstreams/romane-longueville.webp",
+        "Stella Kovacicova": "assets/logos/upstreams/stella-kovacicova.webp",
+        "Solal Pont": "assets/logos/upstreams/solal-pont.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7984,6 +7996,10 @@
         "World Cup U19 2026 - Gr.1": "assets/logos/leagues/world-cup-u19-2026-gr1.webp",
         "San Diego, USA": "assets/logos/leagues/san-diego-usa.webp",
         "AFC Cup Asiei - Gr.B": "assets/logos/leagues/afc-cup-asiei-grb.webp",
-        "AFC Cup Asiei - Gr.A": "assets/logos/leagues/afc-cup-asiei-gra.webp"
+        "AFC Cup Asiei - Gr.A": "assets/logos/leagues/afc-cup-asiei-gra.webp",
+        "USA - MLS - Preseason": "assets/logos/leagues/usa-mls-preseason.webp",
+        "EHF Euro, Placement Match": "assets/logos/leagues/ehf-euro-placement-match.webp",
+        "EHF Euro, Knockout stage": "assets/logos/leagues/ehf-euro-knockout-stage.webp",
+        "Primera Division, Apertura": "assets/logos/leagues/primera-division-apertura.webp"
     }
 }
