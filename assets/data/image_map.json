@@ -7395,7 +7395,10 @@
         "Paisas": "assets/logos/upstreams/paisas.webp",
         "Marianne Argyrokastriti": "assets/logos/upstreams/marianne-argyrokastriti.webp",
         "BK Ogre/BS Ogre": "assets/logos/upstreams/bk-ogrebs-ogre.webp",
-        "Ivan Gakhov": "assets/logos/upstreams/ivan-gakhov.webp"
+        "Ivan Gakhov": "assets/logos/upstreams/ivan-gakhov.webp",
+        "Oyonnax Rugby": "assets/logos/streamed/oyonnax-rugby.webp",
+        "Lobos UPNFM": "assets/logos/streamed/lobos-upnfm.webp",
+        "Motagua": "assets/logos/streamed/motagua.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
