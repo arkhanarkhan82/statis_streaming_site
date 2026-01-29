@@ -7302,7 +7302,13 @@
         "Shriyanshi Valishetty": "assets/logos/upstreams/shriyanshi-valishetty.webp",
         "Yu Wei Peng": "assets/logos/upstreams/yu-wei-peng.webp",
         "Devika Sihag": "assets/logos/upstreams/devika-sihag.webp",
-        "Shan United": "assets/logos/upstreams/shan-united.webp"
+        "Shan United": "assets/logos/upstreams/shan-united.webp",
+        "BK Amager": "assets/logos/streamed/bk-amager.webp",
+        "Bakken Bears": "assets/logos/streamed/bakken-bears.webp",
+        "Dominic Stricker": "assets/logos/upstreams/dominic-stricker.webp",
+        "Toby Samuel": "assets/logos/upstreams/toby-samuel.webp",
+        "Trevor Svajda": "assets/logos/upstreams/trevor-svajda.webp",
+        "Blaise Bicknell": "assets/logos/upstreams/blaise-bicknell.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7964,6 +7970,8 @@
         "Women's Super Smash, Playoffs": "assets/logos/leagues/womens-super-smash-playoffs.webp",
         "Thailand Masters": "assets/logos/leagues/thailand-masters.webp",
         "Thailand Masters - Double": "assets/logos/leagues/thailand-masters-double.webp",
-        "Thailand Masters (W)": "assets/logos/leagues/thailand-masters-w.webp"
+        "Thailand Masters (W)": "assets/logos/leagues/thailand-masters-w.webp",
+        "World Cup U19 2026 - Gr.1": "assets/logos/leagues/world-cup-u19-2026-gr1.webp",
+        "San Diego, USA": "assets/logos/leagues/san-diego-usa.webp"
     }
 }
