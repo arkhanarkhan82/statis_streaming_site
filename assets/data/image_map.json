@@ -7338,7 +7338,8 @@
         "Nam \u0110\u1ecbnh": "assets/logos/streamed/nam-\u0111\u1ecbnh.webp",
         "ENPPI": "assets/logos/streamed/enppi.webp",
         "Xander Zayas": "assets/logos/upstreams/xander-zayas.webp",
-        "Abass BaraouSuper welterweightColiseo Jose Miguel Agrelot | San Juan": "assets/logos/upstreams/abass-baraousuper-welterweightcoliseo-jose-miguel-agrelot-san-juan.webp"
+        "Abass BaraouSuper welterweightColiseo Jose Miguel Agrelot | San Juan": "assets/logos/upstreams/abass-baraousuper-welterweightcoliseo-jose-miguel-agrelot-san-juan.webp",
+        "Mashujaa": "assets/logos/upstreams/mashujaa.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8008,6 +8009,9 @@
         "USA - MLS - Preseason": "assets/logos/leagues/usa-mls-preseason.webp",
         "EHF Euro, Placement Match": "assets/logos/leagues/ehf-euro-placement-match.webp",
         "EHF Euro, Knockout stage": "assets/logos/leagues/ehf-euro-knockout-stage.webp",
-        "Primera Division, Apertura": "assets/logos/leagues/primera-division-apertura.webp"
+        "Primera Division, Apertura": "assets/logos/leagues/primera-division-apertura.webp",
+        "AFC Cup Asiei - Gr.D": "assets/logos/leagues/afc-cup-asiei-grd.webp",
+        "AFC Cup Asiei - Gr.C": "assets/logos/leagues/afc-cup-asiei-grc.webp",
+        "Australia in Pakistan, 3 T20I Series": "assets/logos/leagues/australia-in-pakistan-3-t20i-series.webp"
     }
 }
