@@ -7308,7 +7308,16 @@
         "Dominic Stricker": "assets/logos/upstreams/dominic-stricker.webp",
         "Toby Samuel": "assets/logos/upstreams/toby-samuel.webp",
         "Trevor Svajda": "assets/logos/upstreams/trevor-svajda.webp",
-        "Blaise Bicknell": "assets/logos/upstreams/blaise-bicknell.webp"
+        "Blaise Bicknell": "assets/logos/upstreams/blaise-bicknell.webp",
+        "United Hradec Kralove": "assets/logos/upstreams/united-hradec-kralove.webp",
+        "HC Muni": "assets/logos/upstreams/hc-muni.webp",
+        "James Story": "assets/logos/upstreams/james-story.webp",
+        "Kargazstan": "assets/logos/upstreams/kargazstan.webp",
+        "Pierluigi Basile": "assets/logos/upstreams/pierluigi-basile.webp",
+        "Joao Lucas Reis Da Silva": "assets/logos/upstreams/joao-lucas-reis-da-silva.webp",
+        "Maik Steiner": "assets/logos/upstreams/maik-steiner.webp",
+        "Mithun Manjunath": "assets/logos/upstreams/mithun-manjunath.webp",
+        "BC Almaty Legion": "assets/logos/upstreams/bc-almaty-legion.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -7972,6 +7981,8 @@
         "Thailand Masters - Double": "assets/logos/leagues/thailand-masters-double.webp",
         "Thailand Masters (W)": "assets/logos/leagues/thailand-masters-w.webp",
         "World Cup U19 2026 - Gr.1": "assets/logos/leagues/world-cup-u19-2026-gr1.webp",
-        "San Diego, USA": "assets/logos/leagues/san-diego-usa.webp"
+        "San Diego, USA": "assets/logos/leagues/san-diego-usa.webp",
+        "AFC Cup Asiei - Gr.B": "assets/logos/leagues/afc-cup-asiei-grb.webp",
+        "AFC Cup Asiei - Gr.A": "assets/logos/leagues/afc-cup-asiei-gra.webp"
     }
 }
