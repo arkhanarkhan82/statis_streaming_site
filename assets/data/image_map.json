@@ -7538,7 +7538,13 @@
         "CD Tapatio": "assets/logos/upstreams/cd-tapatio.webp",
         "Correcaminos": "assets/logos/upstreams/correcaminos.webp",
         "Tepatitlan de Morelos": "assets/logos/upstreams/tepatitlan-de-morelos.webp",
-        "CA La Paz": "assets/logos/upstreams/ca-la-paz.webp"
+        "CA La Paz": "assets/logos/upstreams/ca-la-paz.webp",
+        "Bogota": "assets/logos/upstreams/bogota.webp",
+        "Bremen": "assets/logos/upstreams/bremen.webp",
+        "Shamrock Rovers": "assets/logos/upstreams/shamrock-rovers.webp",
+        "Macau Chiba Fc": "assets/logos/upstreams/macau-chiba-fc.webp",
+        "Patriotas Boyaca": "assets/logos/upstreams/patriotas-boyaca.webp",
+        "Real Soacha Cundinamarca": "assets/logos/upstreams/real-soacha-cundinamarca.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8230,6 +8236,8 @@
         "Scottish - Championship": "assets/logos/leagues/scottish-championship.webp",
         "Peru - League 1 - Apertura": "assets/logos/leagues/peru-league-1-apertura.webp",
         "CE 2026 - Clasare": "assets/logos/leagues/ce-2026-clasare.webp",
-        "CE 2026 - Playoff": "assets/logos/leagues/ce-2026-playoff.webp"
+        "CE 2026 - Playoff": "assets/logos/leagues/ce-2026-playoff.webp",
+        "Colombia - Primera B - Apertura": "assets/logos/leagues/colombia-primera-b-apertura.webp",
+        "Chile - Primera Division": "assets/logos/leagues/chile-primera-division.webp"
     }
 }
