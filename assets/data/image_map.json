@@ -7461,7 +7461,31 @@
         "Bogot\u00e1 FC": "assets/logos/upstreams/bogot\u00e1-fc.webp",
         "Internacional de Palmira": "assets/logos/upstreams/internacional-de-palmira.webp",
         "Ceske Budejovice": "assets/logos/upstreams/ceske-budejovice.webp",
-        "Atlante FC": "assets/logos/upstreams/atlante-fc.webp"
+        "Atlante FC": "assets/logos/upstreams/atlante-fc.webp",
+        "Sport Huancayo": "assets/logos/upstreams/sport-huancayo.webp",
+        "Domzale": "assets/logos/upstreams/domzale.webp",
+        "TSV Havelse": "assets/logos/upstreams/tsv-havelse.webp",
+        "Tamis": "assets/logos/upstreams/tamis.webp",
+        "Gicumbi": "assets/logos/upstreams/gicumbi.webp",
+        "Musanze": "assets/logos/upstreams/musanze.webp",
+        "Marines Gisenyi": "assets/logos/upstreams/marines-gisenyi.webp",
+        "Kiyovu Sports": "assets/logos/upstreams/kiyovu-sports.webp",
+        "Gorilla FC": "assets/logos/upstreams/gorilla-fc.webp",
+        "Kayanza United": "assets/logos/upstreams/kayanza-united.webp",
+        "UTC de Cajamarca": "assets/logos/upstreams/utc-de-cajamarca.webp",
+        "Atletico Grau": "assets/logos/upstreams/atletico-grau.webp",
+        "Patriotas Boyac\u00e1": "assets/logos/upstreams/patriotas-boyac\u00e1.webp",
+        "Flambeau Du Centre": "assets/logos/upstreams/flambeau-du-centre.webp",
+        "Dallas": "assets/logos/upstreams/dallas.webp",
+        "Starling Castillo": "assets/logos/upstreams/starling-castillo.webp",
+        "Abass Baraou": "assets/logos/upstreams/abass-baraou.webp",
+        "Audax Italiano": "assets/logos/upstreams/audax-italiano.webp",
+        "Tomasz Berkieta": "assets/logos/upstreams/tomasz-berkieta.webp",
+        "Oleksandr Ovcharenko": "assets/logos/upstreams/oleksandr-ovcharenko.webp",
+        "Seydina Andre": "assets/logos/upstreams/seydina-andre.webp",
+        "Alaa Trifi": "assets/logos/upstreams/alaa-trifi.webp",
+        "Kahramanmaras Istiklal": "assets/logos/upstreams/kahramanmaras-istiklal.webp",
+        "Harem Spor": "assets/logos/upstreams/harem-spor.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8143,6 +8167,10 @@
         "PrvaLiga": "assets/logos/leagues/prvaliga.webp",
         "Mozzart Bet Superliga": "assets/logos/leagues/mozzart-bet-superliga.webp",
         "OFB Cup": "assets/logos/leagues/ofb-cup.webp",
-        "Primera B, Apertura": "assets/logos/leagues/primera-b-apertura.webp"
+        "Primera B, Apertura": "assets/logos/leagues/primera-b-apertura.webp",
+        "Liga 1, Apertura": "assets/logos/leagues/liga-1-apertura.webp",
+        "Slovenia - Prva League": "assets/logos/leagues/slovenia-prva-league.webp",
+        "Israel - League Leumit": "assets/logos/leagues/israel-league-leumit.webp",
+        "Liga de Primera": "assets/logos/leagues/liga-de-primera.webp"
     }
 }
