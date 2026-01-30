@@ -7624,7 +7624,12 @@
         "BS Tukums/Tss": "assets/logos/upstreams/bs-tukumstss.webp",
         "BK Liepaja/Lsss": "assets/logos/upstreams/bk-liepajalsss.webp",
         "TED Ankara Kolejliler": "assets/logos/upstreams/ted-ankara-kolejliler.webp",
-        "Sigortam.net Itu BB": "assets/logos/upstreams/sigortamnet-itu-bb.webp"
+        "Sigortam.net Itu BB": "assets/logos/upstreams/sigortamnet-itu-bb.webp",
+        "Lech Poznan": "assets/logos/streamed/lech-poznan.webp",
+        "Konya": "assets/logos/upstreams/konya.webp",
+        "Kaarinan Ura Basket": "assets/logos/upstreams/kaarinan-ura-basket.webp",
+        "Hien Pham": "assets/logos/upstreams/hien-pham.webp",
+        "Junri Namigata": "assets/logos/upstreams/junri-namigata.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
