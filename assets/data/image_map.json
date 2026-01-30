@@ -7514,7 +7514,31 @@
         "Karvan": "assets/logos/upstreams/karvan.webp",
         "Sumqayit": "assets/logos/upstreams/sumqayit.webp",
         "St. Thomas": "assets/logos/upstreams/st-thomas.webp",
-        "Emilse Lujan Ruiz": "assets/logos/upstreams/emilse-lujan-ruiz.webp"
+        "Emilse Lujan Ruiz": "assets/logos/upstreams/emilse-lujan-ruiz.webp",
+        "AL Khlood": "assets/logos/upstreams/al-khlood.webp",
+        "Huancayo": "assets/logos/upstreams/huancayo.webp",
+        "Kas\u0131mpasa": "assets/logos/upstreams/kas\u0131mpasa.webp",
+        "Jong Alkmaar": "assets/logos/upstreams/jong-alkmaar.webp",
+        "Maastricht": "assets/logos/upstreams/maastricht.webp",
+        "Rodez": "assets/logos/upstreams/rodez.webp",
+        "Radom": "assets/logos/upstreams/radom.webp",
+        "Dordrecht": "assets/logos/upstreams/dordrecht.webp",
+        "Pau": "assets/logos/upstreams/pau.webp",
+        "Guimarares": "assets/logos/upstreams/guimarares.webp",
+        "Perth Glory FC": "assets/logos/upstreams/perth-glory-fc.webp",
+        "Stoke": "assets/logos/upstreams/stoke.webp",
+        "FK Radnicki Nis": "assets/logos/upstreams/fk-radnicki-nis.webp",
+        "Leipzig": "assets/logos/upstreams/leipzig.webp",
+        "West Bromwich": "assets/logos/upstreams/west-bromwich.webp",
+        "AFC Uta Arad": "assets/logos/upstreams/afc-uta-arad.webp",
+        "Alkmaar": "assets/logos/upstreams/alkmaar.webp",
+        "Atl. Madrid": "assets/logos/upstreams/atl-madrid.webp",
+        "Univ. Cluj": "assets/logos/upstreams/univ-cluj.webp",
+        "St. Etienne": "assets/logos/upstreams/st-etienne.webp",
+        "CD Tapatio": "assets/logos/upstreams/cd-tapatio.webp",
+        "Correcaminos": "assets/logos/upstreams/correcaminos.webp",
+        "Tepatitlan de Morelos": "assets/logos/upstreams/tepatitlan-de-morelos.webp",
+        "CA La Paz": "assets/logos/upstreams/ca-la-paz.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8202,6 +8226,10 @@
         "Israel - League Leumit": "assets/logos/leagues/israel-league-leumit.webp",
         "Liga de Primera": "assets/logos/leagues/liga-de-primera.webp",
         "Super Smash, Playoffs": "assets/logos/leagues/super-smash-playoffs.webp",
-        "Campeonato Mineiro": "assets/logos/leagues/campeonato-mineiro.webp"
+        "Campeonato Mineiro": "assets/logos/leagues/campeonato-mineiro.webp",
+        "Scottish - Championship": "assets/logos/leagues/scottish-championship.webp",
+        "Peru - League 1 - Apertura": "assets/logos/leagues/peru-league-1-apertura.webp",
+        "CE 2026 - Clasare": "assets/logos/leagues/ce-2026-clasare.webp",
+        "CE 2026 - Playoff": "assets/logos/leagues/ce-2026-playoff.webp"
     }
 }
