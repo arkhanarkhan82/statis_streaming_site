@@ -7442,7 +7442,26 @@
         "Dan Hooker": "assets/logos/upstreams/dan-hooker.webp",
         "Benoit St. Denis": "assets/logos/upstreams/benoit-st-denis.webp",
         "Thiago Agustin Tirante": "assets/logos/upstreams/thiago-agustin-tirante.webp",
-        "Romane Longueville": "assets/logos/upstreams/romane-longueville.webp"
+        "Romane Longueville": "assets/logos/upstreams/romane-longueville.webp",
+        "AC Bellinzona": "assets/logos/upstreams/ac-bellinzona.webp",
+        "FC Stade-Lausanne-Ouchy": "assets/logos/upstreams/fc-stade-lausanne-ouchy.webp",
+        "FC Vaduz": "assets/logos/upstreams/fc-vaduz.webp",
+        "Club Brugge U23": "assets/logos/upstreams/club-brugge-u23.webp",
+        "Yverdon-Sport FC": "assets/logos/upstreams/yverdon-sport-fc.webp",
+        "FC Aarau": "assets/logos/upstreams/fc-aarau.webp",
+        "Etoile Carouge": "assets/logos/upstreams/etoile-carouge.webp",
+        "MZKS Arka Gdynia": "assets/logos/upstreams/mzks-arka-gdynia.webp",
+        "N\u0160 Mura": "assets/logos/upstreams/n\u0161-mura.webp",
+        "FK Partizan": "assets/logos/upstreams/fk-partizan.webp",
+        "FK Radni\u010dki Ni\u0161": "assets/logos/upstreams/fk-radni\u010dki-ni\u0161.webp",
+        "Magesi FC": "assets/logos/upstreams/magesi-fc.webp",
+        "SK Rapid Wien": "assets/logos/upstreams/sk-rapid-wien.webp",
+        "Atl\u00e9tico Cali": "assets/logos/upstreams/atl\u00e9tico-cali.webp",
+        "Barranquilla FC": "assets/logos/upstreams/barranquilla-fc.webp",
+        "Bogot\u00e1 FC": "assets/logos/upstreams/bogot\u00e1-fc.webp",
+        "Internacional de Palmira": "assets/logos/upstreams/internacional-de-palmira.webp",
+        "Ceske Budejovice": "assets/logos/upstreams/ceske-budejovice.webp",
+        "Atlante FC": "assets/logos/upstreams/atlante-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8118,6 +8137,12 @@
         "Australia in Pakistan, 3 T20I Series": "assets/logos/leagues/australia-in-pakistan-3-t20i-series.webp",
         "Super Liga Radnicki1923novibeograd": "assets/logos/leagues/super-liga-radnicki1923novibeograd.webp",
         "Super Liga Radnickinis": "assets/logos/leagues/super-liga-radnickinis.webp",
-        "Division 1 Womengenclikww": "assets/logos/leagues/division-1-womengenclikww.webp"
+        "Division 1 Womengenclikww": "assets/logos/leagues/division-1-womengenclikww.webp",
+        "Challenge League": "assets/logos/leagues/challenge-league.webp",
+        "Swiss - Challenge League": "assets/logos/leagues/swiss-challenge-league.webp",
+        "PrvaLiga": "assets/logos/leagues/prvaliga.webp",
+        "Mozzart Bet Superliga": "assets/logos/leagues/mozzart-bet-superliga.webp",
+        "OFB Cup": "assets/logos/leagues/ofb-cup.webp",
+        "Primera B, Apertura": "assets/logos/leagues/primera-b-apertura.webp"
     }
 }
