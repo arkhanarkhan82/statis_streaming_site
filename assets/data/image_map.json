@@ -7788,7 +7788,16 @@
         "Aliona Bolsova Zadoinov": "assets/logos/upstreams/aliona-bolsova-zadoinov.webp",
         "Anna Siskova": "assets/logos/upstreams/anna-siskova.webp",
         "Carter A.": "assets/logos/upstreams/carter-a.webp",
-        "Widzew \u0141odz": "assets/logos/streamed/widzew-\u0142odz.webp"
+        "Widzew \u0141odz": "assets/logos/streamed/widzew-\u0142odz.webp",
+        "V\u00e4ster\u00e5s SK": "assets/logos/upstreams/v\u00e4ster\u00e5s-sk.webp",
+        "Vancouver Whitecaps": "assets/logos/upstreams/vancouver-whitecaps.webp",
+        "FK Zalgiris": "assets/logos/upstreams/fk-zalgiris.webp",
+        "IBC": "assets/logos/upstreams/ibc.webp",
+        "KK Novi Pazar": "assets/logos/upstreams/kk-novi-pazar.webp",
+        "AEK Larnaca B.C.": "assets/logos/upstreams/aek-larnaca-bc.webp",
+        "Pallacanestro Aurora Desio": "assets/logos/upstreams/pallacanestro-aurora-desio.webp",
+        "Orlandina Basket": "assets/logos/upstreams/orlandina-basket.webp",
+        "Ellen Perez": "assets/logos/upstreams/ellen-perez.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8517,6 +8526,10 @@
         "Abu Dhabi, UAE, Qualifying": "assets/logos/leagues/abu-dhabi-uae-qualifying.webp",
         "Mumbai, India, Qualifying": "assets/logos/leagues/mumbai-india-qualifying.webp",
         "Ostrava, Czech Republic, Qualifying": "assets/logos/leagues/ostrava-czech-republic-qualifying.webp",
-        "Cluj Napoca, Romania, Qualifying": "assets/logos/leagues/cluj-napoca-romania-qualifying.webp"
+        "Cluj Napoca, Romania, Qualifying": "assets/logos/leagues/cluj-napoca-romania-qualifying.webp",
+        "Supercopa do Brasil": "assets/logos/leagues/supercopa-do-brasil.webp",
+        "Cyprus Basketball Division A": "assets/logos/leagues/cyprus-basketball-division-a.webp",
+        "Serie B, Group A": "assets/logos/leagues/serie-b-group-a.webp",
+        "Super Smash, Final": "assets/logos/leagues/super-smash-final.webp"
     }
 }
