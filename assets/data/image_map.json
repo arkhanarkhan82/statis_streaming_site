@@ -7683,7 +7683,35 @@
         "Sporting Jacksonville": "assets/logos/upstreams/sporting-jacksonville.webp",
         "Carolina Ascent": "assets/logos/upstreams/carolina-ascent.webp",
         "Twan Van Zijl": "assets/logos/upstreams/twan-van-zijl.webp",
-        "The StrongEast": "assets/logos/upstreams/the-strongeast.webp"
+        "The StrongEast": "assets/logos/upstreams/the-strongeast.webp",
+        "Tartu Tammeka": "assets/logos/upstreams/tartu-tammeka.webp",
+        "FK Mladost Lu\u010dani": "assets/logos/upstreams/fk-mladost-lu\u010dani.webp",
+        "OFK Beograd Mozzart": "assets/logos/upstreams/ofk-beograd-mozzart.webp",
+        "FK \u010cukari\u010dki": "assets/logos/upstreams/fk-\u010dukari\u010dki.webp",
+        "Azam FC": "assets/logos/upstreams/azam-fc.webp",
+        "Man City": "assets/logos/upstreams/man-city.webp",
+        "Nacional Madeira": "assets/logos/upstreams/nacional-madeira.webp",
+        "FC FCSB": "assets/logos/upstreams/fc-fcsb.webp",
+        "Csikszereda Miercurea": "assets/logos/upstreams/csikszereda-miercurea.webp",
+        "Galatasaray MCT Technic": "assets/logos/upstreams/galatasaray-mct-technic.webp",
+        "Tezenis Verona": "assets/logos/upstreams/tezenis-verona.webp",
+        "Duquesne Dukes": "assets/logos/upstreams/duquesne-dukes.webp",
+        "Rhode Island Rams": "assets/logos/upstreams/rhode-island-rams.webp",
+        "Tulsa Golden Hurricane": "assets/logos/upstreams/tulsa-golden-hurricane.webp",
+        "Wichita State Shockers": "assets/logos/upstreams/wichita-state-shockers.webp",
+        "Texas Tech Red Raiders": "assets/logos/upstreams/texas-tech-red-raiders.webp",
+        "TCU Horned Frogs": "assets/logos/upstreams/tcu-horned-frogs.webp",
+        "Nebraska Cornhuskers": "assets/logos/upstreams/nebraska-cornhuskers.webp",
+        "Illinois Fighting Illini": "assets/logos/upstreams/illinois-fighting-illini.webp",
+        "Fort Lauderdale United": "assets/logos/upstreams/fort-lauderdale-united.webp",
+        "Lexington SC": "assets/logos/upstreams/lexington-sc.webp",
+        "Tampa Bay Sun FC": "assets/logos/upstreams/tampa-bay-sun-fc.webp",
+        "Spokane Zephyr FC": "assets/logos/upstreams/spokane-zephyr-fc.webp",
+        "Universidad Central": "assets/logos/upstreams/universidad-central.webp",
+        "Rana Verona": "assets/logos/upstreams/rana-verona.webp",
+        "Iowa Hawkeyes": "assets/logos/upstreams/iowa-hawkeyes.webp",
+        "Daniel De Jonge": "assets/logos/upstreams/daniel-de-jonge.webp",
+        "Steffan van Weldam": "assets/logos/upstreams/steffan-van-weldam.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8396,6 +8424,10 @@
         "Czech - 1. League": "assets/logos/leagues/czech-1-league.webp",
         "Czech First League": "assets/logos/leagues/czech-first-league.webp",
         "Austrian Basketball Superliga": "assets/logos/leagues/austrian-basketball-superliga.webp",
-        "USL Super League": "assets/logos/leagues/usl-super-league.webp"
+        "USL Super League": "assets/logos/leagues/usl-super-league.webp",
+        "CAF Confederations Cup, Group B": "assets/logos/leagues/caf-confederations-cup-group-b.webp",
+        "Big Ten Conference Women": "assets/logos/leagues/big-ten-conference-women.webp",
+        "Lega A Basket": "assets/logos/leagues/lega-a-basket.webp",
+        "Big 12 Conference Women": "assets/logos/leagues/big-12-conference-women.webp"
     }
 }
