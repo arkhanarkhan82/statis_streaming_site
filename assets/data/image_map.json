@@ -8089,7 +8089,22 @@
         "Milana Ivantsiv": "assets/logos/upstreams/milana-ivantsiv.webp",
         "Estonia": "assets/logos/streamed/estonia.webp",
         "Great Britain": "assets/logos/streamed/great-britain.webp",
-        "RC Toulon": "assets/logos/upstreams/rc-toulon.webp"
+        "RC Toulon": "assets/logos/upstreams/rc-toulon.webp",
+        "IFK Goteborg": "assets/logos/upstreams/ifk-goteborg.webp",
+        "Giovani Samaha": "assets/logos/upstreams/giovani-samaha.webp",
+        "Dominik Recek": "assets/logos/upstreams/dominik-recek.webp",
+        "Stepan Baum": "assets/logos/upstreams/stepan-baum.webp",
+        "Patrik Homola": "assets/logos/upstreams/patrik-homola.webp",
+        "Vojtech Petr": "assets/logos/upstreams/vojtech-petr.webp",
+        "Catherine McNally": "assets/logos/upstreams/catherine-mcnally.webp",
+        "Benjamin Winter Lopez": "assets/logos/upstreams/benjamin-winter-lopez.webp",
+        "Izan Almazan Valiente": "assets/logos/upstreams/izan-almazan-valiente.webp",
+        "Alejo Sanchez Quilez": "assets/logos/upstreams/alejo-sanchez-quilez.webp",
+        "Michael Mmoh": "assets/logos/upstreams/michael-mmoh.webp",
+        "Alibek Kachmazov": "assets/logos/upstreams/alibek-kachmazov.webp",
+        "Benjamin Willwerth": "assets/logos/upstreams/benjamin-willwerth.webp",
+        "Jacopo Berrettini": "assets/logos/upstreams/jacopo-berrettini.webp",
+        "Abdullah Shelbayh": "assets/logos/upstreams/abdullah-shelbayh.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8846,6 +8861,7 @@
         "Brisbane, Australia, Qualifying": "assets/logos/leagues/brisbane-australia-qualifying.webp",
         "SLB Trophy, Knockout Stage": "assets/logos/leagues/slb-trophy-knockout-stage.webp",
         "World Masters 2026": "assets/logos/leagues/world-masters-2026.webp",
-        "Mumbai, India": "assets/logos/leagues/mumbai-india.webp"
+        "Mumbai, India": "assets/logos/leagues/mumbai-india.webp",
+        "Tenerife, Spain": "assets/logos/leagues/tenerife-spain.webp"
     }
 }
