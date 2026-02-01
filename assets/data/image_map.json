@@ -8008,7 +8008,10 @@
         "Kokoro Isomura": "assets/logos/upstreams/kokoro-isomura.webp",
         "Chase Ferguson": "assets/logos/upstreams/chase-ferguson.webp",
         "Yuki Mochizuki": "assets/logos/upstreams/yuki-mochizuki.webp",
-        "Shinji Hazawa": "assets/logos/upstreams/shinji-hazawa.webp"
+        "Shinji Hazawa": "assets/logos/upstreams/shinji-hazawa.webp",
+        "AS Otr": "assets/logos/upstreams/as-otr.webp",
+        "ASC Kara": "assets/logos/upstreams/asc-kara.webp",
+        "Chris Dobey": "assets/logos/upstreams/chris-dobey.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8762,6 +8765,8 @@
         "Montpellier, France, Qualifying": "assets/logos/leagues/montpellier-france-qualifying.webp",
         "Rosario, Argentina, Qualifying": "assets/logos/leagues/rosario-argentina-qualifying.webp",
         "Brisbane, Australia": "assets/logos/leagues/brisbane-australia.webp",
-        "Brisbane, Australia, Qualifying": "assets/logos/leagues/brisbane-australia-qualifying.webp"
+        "Brisbane, Australia, Qualifying": "assets/logos/leagues/brisbane-australia-qualifying.webp",
+        "SLB Trophy, Knockout Stage": "assets/logos/leagues/slb-trophy-knockout-stage.webp",
+        "World Masters 2026": "assets/logos/leagues/world-masters-2026.webp"
     }
 }
