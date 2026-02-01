@@ -8080,7 +8080,13 @@
         "Kufstein Towers": "assets/logos/upstreams/kufstein-towers.webp",
         "Nyiregyhaza Spartacus FC": "assets/logos/upstreams/nyiregyhaza-spartacus-fc.webp",
         "RW Essen": "assets/logos/upstreams/rw-essen.webp",
-        "Wehen": "assets/logos/upstreams/wehen.webp"
+        "Wehen": "assets/logos/upstreams/wehen.webp",
+        "Josh Manuel": "assets/logos/upstreams/josh-manuel.webp",
+        "Cezar Gabriel Papoe": "assets/logos/upstreams/cezar-gabriel-papoe.webp",
+        "Jonathan Mridha": "assets/logos/upstreams/jonathan-mridha.webp",
+        "Giammarco Gandolfi": "assets/logos/upstreams/giammarco-gandolfi.webp",
+        "Lidia Encheva": "assets/logos/upstreams/lidia-encheva.webp",
+        "Milana Ivantsiv": "assets/logos/upstreams/milana-ivantsiv.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8836,6 +8842,7 @@
         "Brisbane, Australia": "assets/logos/leagues/brisbane-australia.webp",
         "Brisbane, Australia, Qualifying": "assets/logos/leagues/brisbane-australia-qualifying.webp",
         "SLB Trophy, Knockout Stage": "assets/logos/leagues/slb-trophy-knockout-stage.webp",
-        "World Masters 2026": "assets/logos/leagues/world-masters-2026.webp"
+        "World Masters 2026": "assets/logos/leagues/world-masters-2026.webp",
+        "Mumbai, India": "assets/logos/leagues/mumbai-india.webp"
     }
 }
