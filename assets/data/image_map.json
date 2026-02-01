@@ -8106,7 +8106,12 @@
         "Jacopo Berrettini": "assets/logos/upstreams/jacopo-berrettini.webp",
         "Abdullah Shelbayh": "assets/logos/upstreams/abdullah-shelbayh.webp",
         "Natalija Senic": "assets/logos/upstreams/natalija-senic.webp",
-        "Karina Dunda": "assets/logos/upstreams/karina-dunda.webp"
+        "Karina Dunda": "assets/logos/upstreams/karina-dunda.webp",
+        "Valentin Vanta": "assets/logos/upstreams/valentin-vanta.webp",
+        "Yanais Laurent": "assets/logos/upstreams/yanais-laurent.webp",
+        "Laurent Lokoli": "assets/logos/upstreams/laurent-lokoli.webp",
+        "Carlo Alberto Caniato": "assets/logos/upstreams/carlo-alberto-caniato.webp",
+        "Francesco Forti": "assets/logos/upstreams/francesco-forti.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8864,6 +8869,7 @@
         "SLB Trophy, Knockout Stage": "assets/logos/leagues/slb-trophy-knockout-stage.webp",
         "World Masters 2026": "assets/logos/leagues/world-masters-2026.webp",
         "Mumbai, India": "assets/logos/leagues/mumbai-india.webp",
-        "Tenerife, Spain": "assets/logos/leagues/tenerife-spain.webp"
+        "Tenerife, Spain": "assets/logos/leagues/tenerife-spain.webp",
+        "Montpellier, France": "assets/logos/leagues/montpellier-france.webp"
     }
 }
