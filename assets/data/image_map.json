@@ -7998,7 +7998,17 @@
         "Dragos Nicolae Cazacu": "assets/logos/upstreams/dragos-nicolae-cazacu.webp",
         "Murphy S.": "assets/logos/upstreams/murphy-s.webp",
         "Feeniks Basket": "assets/logos/upstreams/feeniks-basket.webp",
-        "Team Lem Kem": "assets/logos/upstreams/team-lem-kem.webp"
+        "Team Lem Kem": "assets/logos/upstreams/team-lem-kem.webp",
+        "Philip Sekulic": "assets/logos/upstreams/philip-sekulic.webp",
+        "Taro Daniel": "assets/logos/upstreams/taro-daniel.webp",
+        "Nikita Bilozertsev": "assets/logos/upstreams/nikita-bilozertsev.webp",
+        "Scott Jones": "assets/logos/upstreams/scott-jones.webp",
+        "Matt Hulme": "assets/logos/upstreams/matt-hulme.webp",
+        "Colin Sinclair": "assets/logos/upstreams/colin-sinclair.webp",
+        "Kokoro Isomura": "assets/logos/upstreams/kokoro-isomura.webp",
+        "Chase Ferguson": "assets/logos/upstreams/chase-ferguson.webp",
+        "Yuki Mochizuki": "assets/logos/upstreams/yuki-mochizuki.webp",
+        "Shinji Hazawa": "assets/logos/upstreams/shinji-hazawa.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8750,6 +8760,8 @@
         "College": "assets/logos/leagues/college.webp",
         "Ostrava, Czech Republic": "assets/logos/leagues/ostrava-czech-republic.webp",
         "Montpellier, France, Qualifying": "assets/logos/leagues/montpellier-france-qualifying.webp",
-        "Rosario, Argentina, Qualifying": "assets/logos/leagues/rosario-argentina-qualifying.webp"
+        "Rosario, Argentina, Qualifying": "assets/logos/leagues/rosario-argentina-qualifying.webp",
+        "Brisbane, Australia": "assets/logos/leagues/brisbane-australia.webp",
+        "Brisbane, Australia, Qualifying": "assets/logos/leagues/brisbane-australia-qualifying.webp"
     }
 }
