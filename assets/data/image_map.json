@@ -8285,7 +8285,24 @@
         "India A": "assets/logos/upstreams/india-a.webp",
         "Tegan Bush": "assets/logos/upstreams/tegan-bush.webp",
         "Lily Hutchings": "assets/logos/upstreams/lily-hutchings.webp",
-        "Rebecca Munk Mortensen": "assets/logos/upstreams/rebecca-munk-mortensen.webp"
+        "Rebecca Munk Mortensen": "assets/logos/upstreams/rebecca-munk-mortensen.webp",
+        "Bojana Marinkovic": "assets/logos/upstreams/bojana-marinkovic.webp",
+        "Carmen Gallardo Guevara": "assets/logos/upstreams/carmen-gallardo-guevara.webp",
+        "Viktoria Veleva": "assets/logos/upstreams/viktoria-veleva.webp",
+        "Styliani Roussopoulou": "assets/logos/upstreams/styliani-roussopoulou.webp",
+        "Cedrik-Marcel Stebe": "assets/logos/upstreams/cedrik-marcel-stebe.webp",
+        "Semen Padang FC": "assets/logos/upstreams/semen-padang-fc.webp",
+        "Al Raed": "assets/logos/upstreams/al-raed.webp",
+        "Al Bukiryah": "assets/logos/upstreams/al-bukiryah.webp",
+        "Adam Novotny": "assets/logos/upstreams/adam-novotny.webp",
+        "Nemanja Malesevic": "assets/logos/upstreams/nemanja-malesevic.webp",
+        "Daniel Kliebhan": "assets/logos/upstreams/daniel-kliebhan.webp",
+        "Alex Rybakov": "assets/logos/upstreams/alex-rybakov.webp",
+        "Tai Leonard Sach": "assets/logos/upstreams/tai-leonard-sach.webp",
+        "James McCabe": "assets/logos/upstreams/james-mccabe.webp",
+        "Antoine Ghibaudo": "assets/logos/upstreams/antoine-ghibaudo.webp",
+        "Police FC": "assets/logos/upstreams/police-fc.webp",
+        "Bidco United": "assets/logos/upstreams/bidco-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9058,6 +9075,8 @@
         "Ostrava Open": "assets/logos/leagues/ostrava-open.webp",
         "WTA - Ostrava (CEH)": "assets/logos/leagues/wta-ostrava-ceh.webp",
         "Nedbank Cup": "assets/logos/leagues/nedbank-cup.webp",
-        "ICC Men's T20 World Cup Warm-up Matches": "assets/logos/leagues/icc-mens-t20-world-cup-warm-up-matches.webp"
+        "ICC Men's T20 World Cup Warm-up Matches": "assets/logos/leagues/icc-mens-t20-world-cup-warm-up-matches.webp",
+        "Cleveland, USA": "assets/logos/leagues/cleveland-usa.webp",
+        "Kenya Premier League": "assets/logos/leagues/kenya-premier-league.webp"
     }
 }
