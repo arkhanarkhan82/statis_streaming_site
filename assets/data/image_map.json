@@ -8250,7 +8250,10 @@
         "Alex Solonenko": "assets/logos/upstreams/alex-solonenko.webp",
         "Bekhan Atlangeriev": "assets/logos/upstreams/bekhan-atlangeriev.webp",
         "Ana Cristiana Mocanu": "assets/logos/upstreams/ana-cristiana-mocanu.webp",
-        "Lola Collin": "assets/logos/upstreams/lola-collin.webp"
+        "Lola Collin": "assets/logos/upstreams/lola-collin.webp",
+        "Stijn Pel": "assets/logos/upstreams/stijn-pel.webp",
+        "Pedro Munafo": "assets/logos/upstreams/pedro-munafo.webp",
+        "P\u00e4rnu Sadam": "assets/logos/upstreams/p\u00e4rnu-sadam.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9021,6 +9024,7 @@
         "WTA Abu Dhabi": "assets/logos/leagues/wta-abu-dhabi.webp",
         "Rosario, Argentina": "assets/logos/leagues/rosario-argentina.webp",
         "Ostrava Open": "assets/logos/leagues/ostrava-open.webp",
-        "WTA - Ostrava (CEH)": "assets/logos/leagues/wta-ostrava-ceh.webp"
+        "WTA - Ostrava (CEH)": "assets/logos/leagues/wta-ostrava-ceh.webp",
+        "Nedbank Cup": "assets/logos/leagues/nedbank-cup.webp"
     }
 }
