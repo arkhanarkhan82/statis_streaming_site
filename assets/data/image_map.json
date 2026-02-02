@@ -8209,7 +8209,14 @@
         "Nagi Hanatani": "assets/logos/upstreams/nagi-hanatani.webp",
         "Angela Cui": "assets/logos/upstreams/angela-cui.webp",
         "Chengyiyi Yuan": "assets/logos/upstreams/chengyiyi-yuan.webp",
-        "Tori Russell": "assets/logos/upstreams/tori-russell.webp"
+        "Tori Russell": "assets/logos/upstreams/tori-russell.webp",
+        "Deportivo Tachira FC": "assets/logos/streamed/deportivo-tachira-fc.webp",
+        "Legia Warszawa U19": "assets/logos/streamed/legia-warszawa-u19.webp",
+        "Koln U19": "assets/logos/streamed/koln-u19.webp",
+        "Internazionale U19": "assets/logos/streamed/internazionale-u19.webp",
+        "Emma Mazzoni": "assets/logos/upstreams/emma-mazzoni.webp",
+        "Dune Vaissaud": "assets/logos/upstreams/dune-vaissaud.webp",
+        "Thiago Monteiro": "assets/logos/upstreams/thiago-monteiro.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8977,6 +8984,7 @@
         "Swedish Basketball League": "assets/logos/leagues/swedish-basketball-league.webp",
         "Copa Libertadores": "assets/logos/leagues/copa-libertadores.webp",
         "CONCACAF Champions Cup": "assets/logos/leagues/concacaf-champions-cup.webp",
-        "WTA Abu Dhabi": "assets/logos/leagues/wta-abu-dhabi.webp"
+        "WTA Abu Dhabi": "assets/logos/leagues/wta-abu-dhabi.webp",
+        "Rosario, Argentina": "assets/logos/leagues/rosario-argentina.webp"
     }
 }
