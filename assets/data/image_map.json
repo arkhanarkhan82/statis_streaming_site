@@ -8353,7 +8353,11 @@
         "Bayer Leverkusen U19": "assets/logos/streamed/bayer-leverkusen-u19.webp",
         "Pusk\u00e1s Akad\u00e9mia U19": "assets/logos/streamed/pusk\u00e1s-akad\u00e9mia-u19.webp",
         "Sporting CP U19": "assets/logos/streamed/sporting-cp-u19.webp",
-        "Andrea M'Chich": "assets/logos/upstreams/andrea-mchich.webp"
+        "Andrea M'Chich": "assets/logos/upstreams/andrea-mchich.webp",
+        "Pyrinto Akatemia": "assets/logos/upstreams/pyrinto-akatemia.webp",
+        "KK Mornar Bar": "assets/logos/upstreams/kk-mornar-bar.webp",
+        "KK Teodo Tivat": "assets/logos/upstreams/kk-teodo-tivat.webp",
+        "Michael Judge": "assets/logos/upstreams/michael-judge.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9134,6 +9138,7 @@
         "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp",
         "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp",
         "T20 World Cup": "assets/logos/leagues/t20-world-cup.webp",
-        "ATP 250": "assets/logos/leagues/atp-250.webp"
+        "ATP 250": "assets/logos/leagues/atp-250.webp",
+        "I A MCKL": "assets/logos/leagues/i-a-mckl.webp"
     }
 }
