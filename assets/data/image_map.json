@@ -8337,7 +8337,23 @@
         "Nicholas Jovanovski": "assets/logos/upstreams/nicholas-jovanovski.webp",
         "Gaku Nayuki": "assets/logos/upstreams/gaku-nayuki.webp",
         "Brian Bozemoj": "assets/logos/upstreams/brian-bozemoj.webp",
-        "Sarah Maria Filipa Jukic": "assets/logos/upstreams/sarah-maria-filipa-jukic.webp"
+        "Sarah Maria Filipa Jukic": "assets/logos/upstreams/sarah-maria-filipa-jukic.webp",
+        "Athletic U19": "assets/logos/streamed/athletic-u19.webp",
+        "Eintracht Frankf U19": "assets/logos/streamed/eintracht-frankf-u19.webp",
+        "Forge": "assets/logos/streamed/forge.webp",
+        "Dynamo Kyiv U19": "assets/logos/streamed/dynamo-kyiv-u19.webp",
+        "Atl\u00e9tico Madrid U19": "assets/logos/streamed/atl\u00e9tico-madrid-u19.webp",
+        "PSG U19": "assets/logos/streamed/psg-u19.webp",
+        "Dinamo Minsk U19": "assets/logos/streamed/dinamo-minsk-u19.webp",
+        "Maccabi Haifa U19": "assets/logos/streamed/maccabi-haifa-u19.webp",
+        "Barcelona U19": "assets/logos/streamed/barcelona-u19.webp",
+        "Benfica U19": "assets/logos/streamed/benfica-u19.webp",
+        "Slavia Praha U19": "assets/logos/streamed/slavia-praha-u19.webp",
+        "Villarreal U19": "assets/logos/streamed/villarreal-u19.webp",
+        "Bayer Leverkusen U19": "assets/logos/streamed/bayer-leverkusen-u19.webp",
+        "Pusk\u00e1s Akad\u00e9mia U19": "assets/logos/streamed/pusk\u00e1s-akad\u00e9mia-u19.webp",
+        "Sporting CP U19": "assets/logos/streamed/sporting-cp-u19.webp",
+        "Andrea M'Chich": "assets/logos/upstreams/andrea-mchich.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9117,6 +9133,7 @@
         "WTA - Cluj-Napoca (ROM)": "assets/logos/leagues/wta-cluj-napoca-rom.webp",
         "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp",
         "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp",
-        "T20 World Cup": "assets/logos/leagues/t20-world-cup.webp"
+        "T20 World Cup": "assets/logos/leagues/t20-world-cup.webp",
+        "ATP 250": "assets/logos/leagues/atp-250.webp"
     }
 }
