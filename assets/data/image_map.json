@@ -8225,7 +8225,32 @@
         "Scandicci W": "assets/logos/upstreams/scandicci-w.webp",
         "AEL Limassol B.C.": "assets/logos/upstreams/ael-limassol-bc.webp",
         "Engineers Prague": "assets/logos/upstreams/engineers-prague.webp",
-        "Black Dogs Budweis": "assets/logos/upstreams/black-dogs-budweis.webp"
+        "Black Dogs Budweis": "assets/logos/upstreams/black-dogs-budweis.webp",
+        "Viktoria Morvayova": "assets/logos/upstreams/viktoria-morvayova.webp",
+        "James McGloughlin": "assets/logos/upstreams/james-mcgloughlin.webp",
+        "Petr Michnev": "assets/logos/upstreams/petr-michnev.webp",
+        "Tenis": "assets/logos/upstreams/tenis.webp",
+        "WTA 250 Cluj: Erjavec - Zidan\u0161ek": "assets/logos/upstreams/wta-250-cluj-erjavec-zidan\u0161ek.webp",
+        "WTA 250 Ostrava: Parks": "assets/logos/upstreams/wta-250-ostrava-parks.webp",
+        "Grabher": "assets/logos/upstreams/grabher.webp",
+        "WTA 250 Cluj: Chwalinska - Bogdan": "assets/logos/upstreams/wta-250-cluj-chwalinska-bogdan.webp",
+        "WTA 250 Ostrava: Korpatsch": "assets/logos/upstreams/wta-250-ostrava-korpatsch.webp",
+        "Siskova": "assets/logos/upstreams/siskova.webp",
+        "WTA 250 Ostrava: B. Fruhvirtova": "assets/logos/upstreams/wta-250-ostrava-b-fruhvirtova.webp",
+        "Ferro": "assets/logos/upstreams/ferro.webp",
+        "WTA 250 Cluj: Jakupovi\u0107/Radi\u0161i\u0107 - Kozyreva/Shymanovich": "assets/logos/upstreams/wta-250-cluj-jakupovi\u0107radi\u0161i\u0107-kozyrevashymanovich.webp",
+        "Maximilian Borisov": "assets/logos/upstreams/maximilian-borisov.webp",
+        "Nizhny Novgorod": "assets/logos/upstreams/nizhny-novgorod.webp",
+        "Lokomotiv Kuban": "assets/logos/upstreams/lokomotiv-kuban.webp",
+        "Valencia W": "assets/logos/upstreams/valencia-w.webp",
+        "Tractor Chelyabinsk": "assets/logos/upstreams/tractor-chelyabinsk.webp",
+        "Bars Kazan": "assets/logos/upstreams/bars-kazan.webp",
+        "Inter U19": "assets/logos/upstreams/inter-u19.webp",
+        "Thiago Agustin Pernas": "assets/logos/upstreams/thiago-agustin-pernas.webp",
+        "Alex Solonenko": "assets/logos/upstreams/alex-solonenko.webp",
+        "Bekhan Atlangeriev": "assets/logos/upstreams/bekhan-atlangeriev.webp",
+        "Ana Cristiana Mocanu": "assets/logos/upstreams/ana-cristiana-mocanu.webp",
+        "Lola Collin": "assets/logos/upstreams/lola-collin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -8994,6 +9019,8 @@
         "Copa Libertadores": "assets/logos/leagues/copa-libertadores.webp",
         "CONCACAF Champions Cup": "assets/logos/leagues/concacaf-champions-cup.webp",
         "WTA Abu Dhabi": "assets/logos/leagues/wta-abu-dhabi.webp",
-        "Rosario, Argentina": "assets/logos/leagues/rosario-argentina.webp"
+        "Rosario, Argentina": "assets/logos/leagues/rosario-argentina.webp",
+        "Ostrava Open": "assets/logos/leagues/ostrava-open.webp",
+        "WTA - Ostrava (CEH)": "assets/logos/leagues/wta-ostrava-ceh.webp"
     }
 }
