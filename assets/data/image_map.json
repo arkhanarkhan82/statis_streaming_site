@@ -8318,7 +8318,8 @@
         "Farense U23": "assets/logos/upstreams/farense-u23.webp",
         "Maritimo U23": "assets/logos/upstreams/maritimo-u23.webp",
         "Sam Ryan Ziegann": "assets/logos/upstreams/sam-ryan-ziegann.webp",
-        "George Pragnall": "assets/logos/upstreams/george-pragnall.webp"
+        "George Pragnall": "assets/logos/upstreams/george-pragnall.webp",
+        "Santiago De La Fuente": "assets/logos/upstreams/santiago-de-la-fuente.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9094,6 +9095,8 @@
         "ICC Men's T20 World Cup Warm-up Matches": "assets/logos/leagues/icc-mens-t20-world-cup-warm-up-matches.webp",
         "Cleveland, USA": "assets/logos/leagues/cleveland-usa.webp",
         "Kenya Premier League": "assets/logos/leagues/kenya-premier-league.webp",
-        "AFC Cup Asiei - Playoff": "assets/logos/leagues/afc-cup-asiei-playoff.webp"
+        "AFC Cup Asiei - Playoff": "assets/logos/leagues/afc-cup-asiei-playoff.webp",
+        "WTA - Cluj-Napoca (ROM)": "assets/logos/leagues/wta-cluj-napoca-rom.webp",
+        "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp"
     }
 }
