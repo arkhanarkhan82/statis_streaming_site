@@ -8359,7 +8359,33 @@
         "KK Teodo Tivat": "assets/logos/upstreams/kk-teodo-tivat.webp",
         "Michael Judge": "assets/logos/upstreams/michael-judge.webp",
         "Max Schoenhaus": "assets/logos/upstreams/max-schoenhaus.webp",
-        "Mohamed Nazim Makhlouf": "assets/logos/upstreams/mohamed-nazim-makhlouf.webp"
+        "Mohamed Nazim Makhlouf": "assets/logos/upstreams/mohamed-nazim-makhlouf.webp",
+        "Wales": "assets/logos/streamed/wales.webp",
+        "Finland": "assets/logos/streamed/finland.webp",
+        "Miomir Kecmanovic": "assets/logos/upstreams/miomir-kecmanovic.webp",
+        "Alex Martinez": "assets/logos/upstreams/alex-martinez.webp",
+        "Filippo Romano": "assets/logos/upstreams/filippo-romano.webp",
+        "Jacopo Vasam\u00ec": "assets/logos/upstreams/jacopo-vasam\u00ec.webp",
+        "Andrea Guerrieri": "assets/logos/upstreams/andrea-guerrieri.webp",
+        "Sergey Fomin": "assets/logos/upstreams/sergey-fomin.webp",
+        "Sergio Callejon Hernando": "assets/logos/upstreams/sergio-callejon-hernando.webp",
+        "Sara Mikaca": "assets/logos/upstreams/sara-mikaca.webp",
+        "Semen Pankin": "assets/logos/upstreams/semen-pankin.webp",
+        "Daniel Salazar Martinez": "assets/logos/upstreams/daniel-salazar-martinez.webp",
+        "Lance Amaury Lage Castelan": "assets/logos/upstreams/lance-amaury-lage-castelan.webp",
+        "Daniel Rincon": "assets/logos/upstreams/daniel-rincon.webp",
+        "Kilian Feldbausch": "assets/logos/upstreams/kilian-feldbausch.webp",
+        "Daniel Merida": "assets/logos/upstreams/daniel-merida.webp",
+        "Botic Van de Zandschulp": "assets/logos/upstreams/botic-van-de-zandschulp.webp",
+        "Arthur Fils": "assets/logos/upstreams/arthur-fils.webp",
+        "FC Kosice": "assets/logos/upstreams/fc-kosice.webp",
+        "Ruzomberok": "assets/logos/upstreams/ruzomberok.webp",
+        "WSG Tirol": "assets/logos/upstreams/wsg-tirol.webp",
+        "TSV Hartberg": "assets/logos/upstreams/tsv-hartberg.webp",
+        "Ademar Leon": "assets/logos/upstreams/ademar-leon.webp",
+        "Morrazo Cangas": "assets/logos/upstreams/morrazo-cangas.webp",
+        "Torrelavega": "assets/logos/upstreams/torrelavega.webp",
+        "Cuenca": "assets/logos/upstreams/cuenca.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9141,6 +9167,7 @@
         "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp",
         "T20 World Cup": "assets/logos/leagues/t20-world-cup.webp",
         "ATP 250": "assets/logos/leagues/atp-250.webp",
-        "I A MCKL": "assets/logos/leagues/i-a-mckl.webp"
+        "I A MCKL": "assets/logos/leagues/i-a-mckl.webp",
+        "Spain - ASOBAL": "assets/logos/leagues/spain-asobal.webp"
     }
 }
