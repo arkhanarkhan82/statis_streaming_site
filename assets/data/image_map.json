@@ -8331,7 +8331,11 @@
         "Patrick Wallace": "assets/logos/upstreams/patrick-wallace.webp",
         "Rory Mcleod": "assets/logos/upstreams/rory-mcleod.webp",
         "Aryan Karnani": "assets/logos/upstreams/aryan-karnani.webp",
-        "Natsuko Saegusa": "assets/logos/upstreams/natsuko-saegusa.webp"
+        "Natsuko Saegusa": "assets/logos/upstreams/natsuko-saegusa.webp",
+        "Bianca Compuesto": "assets/logos/upstreams/bianca-compuesto.webp",
+        "Faustine Liope": "assets/logos/upstreams/faustine-liope.webp",
+        "Nicholas Jovanovski": "assets/logos/upstreams/nicholas-jovanovski.webp",
+        "Gaku Nayuki": "assets/logos/upstreams/gaku-nayuki.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9110,6 +9114,7 @@
         "AFC Cup Asiei - Playoff": "assets/logos/leagues/afc-cup-asiei-playoff.webp",
         "WTA - Cluj-Napoca (ROM)": "assets/logos/leagues/wta-cluj-napoca-rom.webp",
         "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp",
-        "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp"
+        "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp",
+        "T20 World Cup": "assets/logos/leagues/t20-world-cup.webp"
     }
 }
