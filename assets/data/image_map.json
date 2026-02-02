@@ -8385,7 +8385,12 @@
         "Ademar Leon": "assets/logos/upstreams/ademar-leon.webp",
         "Morrazo Cangas": "assets/logos/upstreams/morrazo-cangas.webp",
         "Torrelavega": "assets/logos/upstreams/torrelavega.webp",
-        "Cuenca": "assets/logos/upstreams/cuenca.webp"
+        "Cuenca": "assets/logos/upstreams/cuenca.webp",
+        "Nicholls": "assets/logos/streamed/nicholls.webp",
+        "Athletic Club U19": "assets/logos/streamed/athletic-club-u19.webp",
+        "Eintracht Frankfurt U19": "assets/logos/streamed/eintracht-frankfurt-u19.webp",
+        "Inter Bogota": "assets/logos/upstreams/inter-bogota.webp",
+        "Victoria Women": "assets/logos/upstreams/victoria-women.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
