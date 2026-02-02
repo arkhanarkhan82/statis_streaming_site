@@ -8329,7 +8329,9 @@
         "Valeriya Strakhova": "assets/logos/upstreams/valeriya-strakhova.webp",
         "Brian Salmon": "assets/logos/upstreams/brian-salmon.webp",
         "Patrick Wallace": "assets/logos/upstreams/patrick-wallace.webp",
-        "Rory Mcleod": "assets/logos/upstreams/rory-mcleod.webp"
+        "Rory Mcleod": "assets/logos/upstreams/rory-mcleod.webp",
+        "Aryan Karnani": "assets/logos/upstreams/aryan-karnani.webp",
+        "Natsuko Saegusa": "assets/logos/upstreams/natsuko-saegusa.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9107,6 +9109,7 @@
         "Kenya Premier League": "assets/logos/leagues/kenya-premier-league.webp",
         "AFC Cup Asiei - Playoff": "assets/logos/leagues/afc-cup-asiei-playoff.webp",
         "WTA - Cluj-Napoca (ROM)": "assets/logos/leagues/wta-cluj-napoca-rom.webp",
-        "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp"
+        "ATP - Montpellier (FRA)": "assets/logos/leagues/atp-montpellier-fra.webp",
+        "WASL Gulf League, Playoffs": "assets/logos/leagues/wasl-gulf-league-playoffs.webp"
     }
 }
