@@ -8504,7 +8504,9 @@
         "Saint Martin U17": "assets/logos/upstreams/saint-martin-u17.webp",
         "Vse Falcons Prague": "assets/logos/upstreams/vse-falcons-prague.webp",
         "Atletico Madrid U19": "assets/logos/streamed/atletico-madrid-u19.webp",
-        "Barsy Atyrau": "assets/logos/upstreams/barsy-atyrau.webp"
+        "Barsy Atyrau": "assets/logos/upstreams/barsy-atyrau.webp",
+        "Barbados U17": "assets/logos/upstreams/barbados-u17.webp",
+        "David Redondo Pereira": "assets/logos/upstreams/david-redondo-pereira.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9300,6 +9302,7 @@
         "Six Nations U20": "assets/logos/leagues/six-nations-u20.webp",
         "ATP Montpellier": "assets/logos/leagues/atp-montpellier.webp",
         "NCAA Division III, City University of New York Athletic Conference": "assets/logos/leagues/ncaa-division-iii-city-university-of-new-york-athletic-conference.webp",
-        "Copa de la Reina": "assets/logos/leagues/copa-de-la-reina.webp"
+        "Copa de la Reina": "assets/logos/leagues/copa-de-la-reina.webp",
+        "Turkey Cup": "assets/logos/leagues/turkey-cup.webp"
     }
 }
