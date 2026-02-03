@@ -8558,7 +8558,10 @@
         "Benjamin Hannestad": "assets/logos/upstreams/benjamin-hannestad.webp",
         "Konoha Kawasaki": "assets/logos/upstreams/konoha-kawasaki.webp",
         "Kenta Nakamura": "assets/logos/upstreams/kenta-nakamura.webp",
-        "Suzuna Oigawa": "assets/logos/upstreams/suzuna-oigawa.webp"
+        "Suzuna Oigawa": "assets/logos/upstreams/suzuna-oigawa.webp",
+        "Ventspils Augstskola": "assets/logos/upstreams/ventspils-augstskola.webp",
+        "BK Jelgava": "assets/logos/upstreams/bk-jelgava.webp",
+        "FC Metalist 1925": "assets/logos/upstreams/fc-metalist-1925.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9356,6 +9359,7 @@
         "NCAA Division III, City University of New York Athletic Conference": "assets/logos/leagues/ncaa-division-iii-city-university-of-new-york-athletic-conference.webp",
         "Copa de la Reina": "assets/logos/leagues/copa-de-la-reina.webp",
         "Turkey Cup": "assets/logos/leagues/turkey-cup.webp",
-        "World Grand Prix 2026": "assets/logos/leagues/world-grand-prix-2026.webp"
+        "World Grand Prix 2026": "assets/logos/leagues/world-grand-prix-2026.webp",
+        "League 2": "assets/logos/leagues/league-2.webp"
     }
 }
