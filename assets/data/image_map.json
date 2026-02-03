@@ -8493,7 +8493,11 @@
         "Facundo Diaz Acosta": "assets/logos/upstreams/facundo-diaz-acosta.webp",
         "Francisco Comesa\u00f1a": "assets/logos/upstreams/francisco-comesa\u00f1a.webp",
         "Jay Dylan Hara Friend": "assets/logos/upstreams/jay-dylan-hara-friend.webp",
-        "Cannon Kingsley": "assets/logos/upstreams/cannon-kingsley.webp"
+        "Cannon Kingsley": "assets/logos/upstreams/cannon-kingsley.webp",
+        "Milla Sequeira": "assets/logos/upstreams/milla-sequeira.webp",
+        "Lehman Lightning": "assets/logos/upstreams/lehman-lightning.webp",
+        "New York Beavers": "assets/logos/upstreams/new-york-beavers.webp",
+        "Maine Black Bears": "assets/logos/upstreams/maine-black-bears.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9286,6 +9290,9 @@
         "Six Nations": "assets/logos/leagues/six-nations.webp",
         "The Ford Trophy": "assets/logos/leagues/the-ford-trophy.webp",
         "French - Coupe de France": "assets/logos/leagues/french-coupe-de-france.webp",
-        "Six Nations U20": "assets/logos/leagues/six-nations-u20.webp"
+        "Six Nations U20": "assets/logos/leagues/six-nations-u20.webp",
+        "ATP Montpellier": "assets/logos/leagues/atp-montpellier.webp",
+        "NCAA Division III, City University of New York Athletic Conference": "assets/logos/leagues/ncaa-division-iii-city-university-of-new-york-athletic-conference.webp",
+        "Copa de la Reina": "assets/logos/leagues/copa-de-la-reina.webp"
     }
 }
