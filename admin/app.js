@@ -369,11 +369,18 @@ let isBuilding = false;
 window.addEventListener("DOMContentLoaded", () => {
     // 1. Init Editor
     if(typeof tinymce !== 'undefined') {
-        tinymce.init({
-            selector: '#pageContentEditor', height: 400, skin: 'oxide-dark', content_css: 'dark',
-            setup: (ed) => { ed.on('change', saveEditorContentToMemory); }
-        });
-    }
+    tinymce.init({
+        selector: '#pageContentEditor', 
+        height: 400, 
+        skin: 'oxide-dark', 
+        content_css: 'dark',
+        // ADD THESE TWO LINES:
+        plugins: 'code link lists image table', 
+        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | bullist numlist | link table | code',
+        
+        setup: (ed) => { ed.on('change', saveEditorContentToMemory); }
+    });
+}
     
     // 2. Inject Reset Button for Priorities
     const prioHeader = document.querySelector('#tab-priorities .header-box');
