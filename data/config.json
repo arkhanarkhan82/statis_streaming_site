@@ -1265,6 +1265,69 @@
     "NFL": [
       "https://en.wikipedia.org/wiki/National_Football_League",
       "https://www.wikidata.org/wiki/Q1215884"
+    ],
+    "Bundesliga": [
+      "https://en.wikipedia.org/wiki/Bundesliga",
+      "https://www.wikidata.org/wiki/Q82595"
+    ],
+    "Championship": [
+      "https://en.wikipedia.org/wiki/Championship",
+      "https://www.wikidata.org/wiki/Q1079023"
+    ],
+    "EUROLEAGUE": [
+      "https://en.wikipedia.org/wiki/EuroLeague",
+      "https://www.wikidata.org/wiki/Q185982"
+    ],
+    "Eredivisie": [
+      "https://en.wikipedia.org/wiki/Eredivisie",
+      "https://www.wikidata.org/wiki/Q167541"
+    ],
+    "FORMULA 1": [
+      "https://en.wikipedia.org/wiki/Formula_One",
+      "https://www.wikidata.org/wiki/Q1968"
+    ],
+    "La Liga": [
+      "https://en.wikipedia.org/wiki/La_Liga",
+      "https://www.wikidata.org/wiki/Q324867"
+    ],
+    "Ligue 1": [
+      "https://en.wikipedia.org/wiki/Ligue_1",
+      "https://www.wikidata.org/wiki/Q13394"
+    ],
+    "MLB": [
+      "https://en.wikipedia.org/wiki/Major_League_Baseball",
+      "https://www.wikidata.org/wiki/Q1163715"
+    ],
+    "MLS": [
+      "https://en.wikipedia.org/wiki/Major_League_Soccer",
+      "https://www.wikidata.org/wiki/Q18543"
+    ],
+    "NBA": [
+      "https://en.wikipedia.org/wiki/National_Basketball_Association",
+      "https://www.wikidata.org/wiki/Q155223"
+    ],
+    "NHL": [
+      "https://en.wikipedia.org/wiki/National_Hockey_League",
+      "https://www.wikidata.org/wiki/Q1215892"
+    ],
+    "Premier League": [
+      "https://en.wikipedia.org/wiki/Premier_League",
+      "https://www.wikidata.org/wiki/Q9448"
+    ],
+    "Primeira Liga": [
+      "https://en.wikipedia.org/wiki/Primeira_Liga"
+    ],
+    "Saudi Pro League": [
+      "https://en.wikipedia.org/wiki/Saudi_Pro_League",
+      "https://www.wikidata.org/wiki/Q255633"
+    ],
+    "Scottish Premiership": [
+      "https://en.wikipedia.org/wiki/Scottish_Premiership",
+      "https://www.wikidata.org/wiki/Q14377162"
+    ],
+    "Serie A": [
+      "https://en.wikipedia.org/wiki/Serie_A",
+      "https://www.wikidata.org/wiki/Q15804"
     ]
   }
 }
