@@ -8703,7 +8703,10 @@
         "Matthias Kicklitz": "assets/logos/upstreams/matthias-kicklitz.webp",
         "Julien Scheiwiller": "assets/logos/upstreams/julien-scheiwiller.webp",
         "Dicky Dwi PangEastu": "assets/logos/upstreams/dicky-dwi-pangeastu.webp",
-        "June Wei Cheam": "assets/logos/upstreams/june-wei-cheam.webp"
+        "June Wei Cheam": "assets/logos/upstreams/june-wei-cheam.webp",
+        "Ismailia Electricity Club": "assets/logos/upstreams/ismailia-electricity-club.webp",
+        "Sofia Cabezas Dominguez": "assets/logos/upstreams/sofia-cabezas-dominguez.webp",
+        "Francesca Curmi": "assets/logos/upstreams/francesca-curmi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9519,6 +9522,7 @@
         "Portugal - Taca de Portugal": "assets/logos/leagues/portugal-taca-de-portugal.webp",
         "Champions League Americas, Group C": "assets/logos/leagues/champions-league-americas-group-c.webp",
         "EFL Cup": "assets/logos/leagues/efl-cup.webp",
-        "ICC U19 Cricket World Cup, Final": "assets/logos/leagues/icc-u19-cricket-world-cup-final.webp"
+        "ICC U19 Cricket World Cup, Final": "assets/logos/leagues/icc-u19-cricket-world-cup-final.webp",
+        "Schweizer Cup": "assets/logos/leagues/schweizer-cup.webp"
     }
 }
