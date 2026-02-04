@@ -580,7 +580,7 @@ def render_page(template, config, page_data, theme_override=None):
     logo_size = theme.get('logo_image_size', '40px')
     
     # 1. DEFINE THE VARIABLE HERE
-    site_title_alt = f"{p1} {p2}".strip()
+    site_title_alt = f"{p1}{p2}".strip()
     logo_html = f'<div class="logo-text" style="color:{theme.get("logo_p1_color")};">{p1}<span style="color:{theme.get("logo_p2_color")};">{p2}</span></div>'
     if s.get('logo_url'): 
         logo_html = f'<img src="{s.get("logo_url")}" alt="{site_title_alt}" class="logo-img" style="width:{logo_size}; height:{logo_size}; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px {theme.get("logo_image_shadow_color")};"> {logo_html}'
