@@ -8662,7 +8662,10 @@
         "Ania Setien": "assets/logos/upstreams/ania-setien.webp",
         "Prashansa Bonam": "assets/logos/upstreams/prashansa-bonam.webp",
         "Flora Wang": "assets/logos/upstreams/flora-wang.webp",
-        "Mikaela Joy de Guzman": "assets/logos/upstreams/mikaela-joy-de-guzman.webp"
+        "Mikaela Joy de Guzman": "assets/logos/upstreams/mikaela-joy-de-guzman.webp",
+        "Sakshi Kurbkhelgi": "assets/logos/upstreams/sakshi-kurbkhelgi.webp",
+        "Sreshta Reddy Kannareddy": "assets/logos/upstreams/sreshta-reddy-kannareddy.webp",
+        "Hristomira Popovska": "assets/logos/upstreams/hristomira-popovska.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9476,6 +9479,7 @@
         "Atp Montpellier": "assets/logos/leagues/atp-montpellier.webp",
         "ICC Men's U19 World Cup": "assets/logos/leagues/icc-mens-u19-world-cup.webp",
         "Portugal - Taca de Portugal": "assets/logos/leagues/portugal-taca-de-portugal.webp",
-        "Champions League Americas, Group C": "assets/logos/leagues/champions-league-americas-group-c.webp"
+        "Champions League Americas, Group C": "assets/logos/leagues/champions-league-americas-group-c.webp",
+        "EFL Cup": "assets/logos/leagues/efl-cup.webp"
     }
 }
