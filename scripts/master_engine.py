@@ -612,7 +612,7 @@ def render_container(matches, title, icon=None, link=None, is_live_section=False
     img_html = ""
     if icon:
         if icon.startswith('http') or icon.startswith('/'):
-            img_html = f'<img src="{icon}" class="sec-logo"> '
+            img_html = f'<img src="{icon}" alt="{title}" class="sec-logo"> '
         # Check if it is HTML (like our div)
         elif icon.startswith('<'):
             img_html = f'{icon} '
