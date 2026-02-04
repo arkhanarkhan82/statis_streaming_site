@@ -8714,7 +8714,8 @@
         "Leones del Escogido": "assets/logos/upstreams/leones-del-escogido.webp",
         "Federales de Chiriqui": "assets/logos/upstreams/federales-de-chiriqui.webp",
         "New South Wales": "assets/logos/upstreams/new-south-wales.webp",
-        "South Australia": "assets/logos/upstreams/south-australia.webp"
+        "South Australia": "assets/logos/upstreams/south-australia.webp",
+        "Atl Nacional": "assets/logos/upstreams/atl-nacional.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9534,6 +9535,7 @@
         "Schweizer Cup": "assets/logos/leagues/schweizer-cup.webp",
         "Belgium Cup": "assets/logos/leagues/belgium-cup.webp",
         "Caribbean Series": "assets/logos/leagues/caribbean-series.webp",
-        "Sheffield Shield": "assets/logos/leagues/sheffield-shield.webp"
+        "Sheffield Shield": "assets/logos/leagues/sheffield-shield.webp",
+        "Brazil Serie A": "assets/logos/leagues/brazil-serie-a.webp"
     }
 }
