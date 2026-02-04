@@ -533,8 +533,12 @@ def render_match_row(m, section_title=""):
     if is_live:
         time_html = f'<span class="live-txt">{m["status_text"]}</span><span class="time-sub">{m["sport"].upper()}</span>'
         v = m.get("viewers", 0)
-        v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
-        meta_html = f'<div class="meta-top">👀 {v_str}</div>'
+        # CHANGED: Only show the eye icon if viewers are greater than 0
+        if v > 0:
+            v_str = f"{v/1000:.1f}k" if v >= 1000 else str(v)
+            meta_html = f'<div class="meta-top">👀 {v_str}</div>'
+        else:
+            meta_html = '' # Show nothing if 0 viewers
     else:
         ft = get_display_time(m['timestamp'])
         time_html = f'<span class="time-main">{ft["time"]}</span><span class="time-sub">{ft["date"]}</span>'
