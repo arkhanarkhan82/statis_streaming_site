@@ -8712,7 +8712,9 @@
         "Fountain Gate": "assets/logos/upstreams/fountain-gate.webp",
         "Appalachian State": "assets/logos/streamed/appalachian-state.webp",
         "Leones del Escogido": "assets/logos/upstreams/leones-del-escogido.webp",
-        "Federales de Chiriqui": "assets/logos/upstreams/federales-de-chiriqui.webp"
+        "Federales de Chiriqui": "assets/logos/upstreams/federales-de-chiriqui.webp",
+        "New South Wales": "assets/logos/upstreams/new-south-wales.webp",
+        "South Australia": "assets/logos/upstreams/south-australia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9531,6 +9533,7 @@
         "ICC U19 Cricket World Cup, Final": "assets/logos/leagues/icc-u19-cricket-world-cup-final.webp",
         "Schweizer Cup": "assets/logos/leagues/schweizer-cup.webp",
         "Belgium Cup": "assets/logos/leagues/belgium-cup.webp",
-        "Caribbean Series": "assets/logos/leagues/caribbean-series.webp"
+        "Caribbean Series": "assets/logos/leagues/caribbean-series.webp",
+        "Sheffield Shield": "assets/logos/leagues/sheffield-shield.webp"
     }
 }
