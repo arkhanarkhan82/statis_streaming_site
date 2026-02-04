@@ -1,10 +1,14 @@
 name: Master Engine Cron
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  # 1. REMOVED the 'schedule' block so GitHub doesn't auto-run it.
+  #    Now ONLY cron-jobs.org controls the time.
+  
+  # 2. Keep this to listen for the external signal
   repository_dispatch:
     types: [trigger-cron]
+    
+  # 3. Keep this for manual button clicks
   workflow_dispatch:
 
 jobs:
@@ -35,19 +39,12 @@ jobs:
           git config --global user.name "CronBot"
           git config --global user.email "bot@noreply.github.com"
           
-          # 1. Add all files
           git add .
           
-          # 2. Check if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            # 3. Commit locally
             git commit -m "Auto-Update: Match Data [Skip CI]"
-            
-            # 4. FIX: Rebase (Pull latest changes) before pushing
             git pull --rebase
-            
-            # 5. Push
             git push
           fi
