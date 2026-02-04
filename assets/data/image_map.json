@@ -8681,7 +8681,9 @@
         "Ekaterina Kazionova": "assets/logos/upstreams/ekaterina-kazionova.webp",
         "Lucie Amiguet": "assets/logos/upstreams/lucie-amiguet.webp",
         "Ilishaa Pal": "assets/logos/upstreams/ilishaa-pal.webp",
-        "Prakriti Bharath": "assets/logos/upstreams/prakriti-bharath.webp"
+        "Prakriti Bharath": "assets/logos/upstreams/prakriti-bharath.webp",
+        "Matilde Novais": "assets/logos/upstreams/matilde-novais.webp",
+        "England Under-19": "assets/logos/upstreams/england-under-19.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9496,6 +9498,7 @@
         "ICC Men's U19 World Cup": "assets/logos/leagues/icc-mens-u19-world-cup.webp",
         "Portugal - Taca de Portugal": "assets/logos/leagues/portugal-taca-de-portugal.webp",
         "Champions League Americas, Group C": "assets/logos/leagues/champions-league-americas-group-c.webp",
-        "EFL Cup": "assets/logos/leagues/efl-cup.webp"
+        "EFL Cup": "assets/logos/leagues/efl-cup.webp",
+        "ICC U19 Cricket World Cup, Final": "assets/logos/leagues/icc-u19-cricket-world-cup-final.webp"
     }
 }
