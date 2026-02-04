@@ -550,7 +550,7 @@ def render_match_row(m, section_title=""):
             _, c, l = res.split(':')
             img_html = f'<div class="logo-box"><span class="t-logo" style="background:{c}">{l}</span></div>'
         else:
-            img_html = f'<div class="logo-box"><img src="{res}" class="t-img" loading="lazy"></div>'
+            img_html = f'<div class="logo-box"><img src="{res}" alt="{name}" class="t-img" loading="lazy"></div>'
         return f'<div class="team-name">{img_html} {name}</div>'
 
     teams_html = render_team(m["home"])
