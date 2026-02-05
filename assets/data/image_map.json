@@ -8830,7 +8830,10 @@
         "Al Shamal SC": "assets/logos/upstreams/al-shamal-sc.webp",
         "Hammarby": "assets/logos/upstreams/hammarby.webp",
         "Metalist": "assets/logos/upstreams/metalist.webp",
-        "Partick": "assets/logos/streamed/partick.webp"
+        "Partick": "assets/logos/streamed/partick.webp",
+        "Arab Contractors FC": "assets/logos/upstreams/arab-contractors-fc.webp",
+        "BK Salaspils": "assets/logos/upstreams/bk-salaspils.webp",
+        "BK Ogre/Bs Ogre": "assets/logos/upstreams/bk-ogrebs-ogre.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
