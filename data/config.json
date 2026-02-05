@@ -678,7 +678,7 @@
     "header_highlight_hover": "#e50914",
     "hero_bg_style": "gradient",
     "hero_bg_solid": "#000000",
-    "hero_gradient_start": "#1e0606",
+    "hero_gradient_start": "#230505",
     "hero_gradient_end": "#000000",
     "hero_bg_image_url": "",
     "hero_bg_image_overlay_opacity": "0.4",
@@ -719,8 +719,8 @@
     "match_row_team_name_color": "#ffffff",
     "match_row_time_main_color": "#b3b3b3",
     "match_row_live_border_left": "4px solid #E50914",
-    "match_row_live_bg_start": "#330000",
-    "match_row_live_bg_end": "#212121",
+    "match_row_live_bg_start": "#290505",
+    "match_row_live_bg_end": "#171616",
     "match_row_live_text_color": "#8f8f8f",
     "row_height_mode": "standard",
     "match_row_btn_watch_bg": "#e50914",
@@ -865,9 +865,9 @@
     "excluded": "home, about, contact",
     "league_h1": "Watch {{NAME}} Live Streams and Schedules",
     "league_intro": "The Best Free {{NAME}} Live stream free online",
-    "league_live_title": "",
-    "league_upcoming_prefix": "",
-    "league_upcoming_suffix": ""
+    "league_live_title": "TTTFfcvsdss",
+    "league_upcoming_prefix": "hhrreeeee",
+    "league_upcoming_suffix": "hhsssds"
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
