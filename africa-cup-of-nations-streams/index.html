@@ -73,8 +73,8 @@
             --match-row-border: #333333;
         --match-row-radius: 8px;
             --match-row-live-border-left: 4px solid #E50914;
-            --match-row-live-bg-start: #290505;
-            --match-row-live-bg-end: #171616;
+            --match-row-live-bg-start: #200404;
+            --match-row-live-bg-end: #141414;
         --live-dot-color: #e50914;
             --match-row-hover-bg: #222222;
             --match-row-hover-border: #e50914;
@@ -136,14 +136,14 @@
             --article-h2-color: #ffffff;
             --article-h2-border: 1px solid #333333;
             
-            /* LEAGUE CARDS */
-            --league-card-bg: #222222;
-            --league-card-border: 1px solid #333333;
-            --league-card-text: #ffffff;
-            --league-card-radius: 4px;
-            --league-card-hover-bg: #e50914;
-            --league-card-hover-border: 1px solid #e50914;
-            --league-card-hover-text: #ffffff;
+            /* LEAGUE CARDS (Footer) */
+            --lc-bg: #222222;
+            --lc-text: #ffffff;
+            --lc-border: 1px solid #333333;
+            --lc-radius: 4px;
+            --lc-hover-bg: #e50914;
+            --lc-hover-text: #ffffff;
+            --lc-hover-border: 1px solid #e50914;
 
             /* UTILS */
             --scrollbar-thumb-color: #e50914;
@@ -497,21 +497,21 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 1px solid #333333;">
+            <div class="sec-head">
                 <h2 class="sec-title">
-                    <img src="/assets/logos/leagues/africa-cup-of-nations.webp" alt="Africa Cup of Nations" style="width:28px; height:28px; object-fit:contain; margin-right:8px;"> 
+                    <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Upcoming Africa Cup of Nations Matches
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
