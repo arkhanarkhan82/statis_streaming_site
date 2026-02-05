@@ -8833,7 +8833,9 @@
         "Partick": "assets/logos/streamed/partick.webp",
         "Arab Contractors FC": "assets/logos/upstreams/arab-contractors-fc.webp",
         "BK Salaspils": "assets/logos/upstreams/bk-salaspils.webp",
-        "BK Ogre/Bs Ogre": "assets/logos/upstreams/bk-ogrebs-ogre.webp"
+        "BK Ogre/Bs Ogre": "assets/logos/upstreams/bk-ogrebs-ogre.webp",
+        "Omonoia": "assets/logos/upstreams/omonoia.webp",
+        "AFS": "assets/logos/upstreams/afs.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9678,6 +9680,7 @@
         "Alps Hockey League, Championship Round": "assets/logos/leagues/alps-hockey-league-championship-round.webp",
         "Alps Hockey League, Qualification Round, Group A": "assets/logos/leagues/alps-hockey-league-qualification-round-group-a.webp",
         "Davis Cup Single Matches": "assets/logos/leagues/davis-cup-single-matches.webp",
-        "AFC Cup Asia - Playoff": "assets/logos/leagues/afc-cup-asia-playoff.webp"
+        "AFC Cup Asia - Playoff": "assets/logos/leagues/afc-cup-asia-playoff.webp",
+        "Portugal Cup": "assets/logos/leagues/portugal-cup.webp"
     }
 }
