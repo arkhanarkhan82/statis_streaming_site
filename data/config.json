@@ -1281,9 +1281,9 @@
     "social_sidebar_border": "#333333",
     "social_btn_bg": "#222222",
     "social_btn_border": "#333333",
-    "social_btn_hover_bg": "#242424",
+    "social_btn_hover_bg": "#262626",
     "social_btn_hover_border": "#e50914",
-    "social_count_color": "#bababa",
+    "social_count_color": "#e6e6e6",
     "back_to_top_border_color": "#000000",
     "back_to_top_border_width": "0",
     "back_to_top_shadow_color": "#000000"
