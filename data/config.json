@@ -163,7 +163,7 @@
     "sys_status_text_color": "#00a30b",
     "sys_status_bg_color": "#e50914",
     "sys_status_border_color": "#00ad0c",
-    "sys_status_border_width": "0.5",
+    "sys_status_border_width": "1",
     "sys_status_radius": "20",
     "sys_status_dot_color": "#0cb800",
     "sys_status_dot_size": "8",
