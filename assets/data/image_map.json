@@ -8771,7 +8771,12 @@
         "Slovan": "assets/logos/upstreams/slovan.webp",
         "Su Jeong Jang": "assets/logos/upstreams/su-jeong-jang.webp",
         "Slovakia": "assets/logos/upstreams/slovakia.webp",
-        "Ecuador": "assets/logos/upstreams/ecuador.webp"
+        "Ecuador": "assets/logos/upstreams/ecuador.webp",
+        "Baden Basket 54": "assets/logos/upstreams/baden-basket-54.webp",
+        "BC Alte Kanti Aarau": "assets/logos/upstreams/bc-alte-kanti-aarau.webp",
+        "Shahrdari Gorgan": "assets/logos/upstreams/shahrdari-gorgan.webp",
+        "CO Basketbol": "assets/logos/upstreams/co-basketbol.webp",
+        "HC Stadion Litom\u011b\u0159ice": "assets/logos/upstreams/hc-stadion-litom\u011b\u0159ice.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9611,6 +9616,9 @@
         "Gaucho, Serie A1, Relegation Round": "assets/logos/leagues/gaucho-serie-a1-relegation-round.webp",
         "1. NLB Liga": "assets/logos/leagues/1-nlb-liga.webp",
         "Qualifiers": "assets/logos/leagues/qualifiers.webp",
-        "Davis Cup World Group Teams": "assets/logos/leagues/davis-cup-world-group-teams.webp"
+        "Davis Cup World Group Teams": "assets/logos/leagues/davis-cup-world-group-teams.webp",
+        "Swiss Basketball League Women": "assets/logos/leagues/swiss-basketball-league-women.webp",
+        "Alps Hockey League, Championship Round": "assets/logos/leagues/alps-hockey-league-championship-round.webp",
+        "Alps Hockey League, Qualification Round, Group A": "assets/logos/leagues/alps-hockey-league-qualification-round-group-a.webp"
     }
 }
