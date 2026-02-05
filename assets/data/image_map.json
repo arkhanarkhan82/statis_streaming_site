@@ -8792,7 +8792,18 @@
         "Essen": "assets/logos/upstreams/essen.webp",
         "Ludwigshafen-Friesenheim": "assets/logos/upstreams/ludwigshafen-friesenheim.webp",
         "VfL Eintracht Hagen": "assets/logos/upstreams/vfl-eintracht-hagen.webp",
-        "HSC 2000 Coburg": "assets/logos/upstreams/hsc-2000-coburg.webp"
+        "HSC 2000 Coburg": "assets/logos/upstreams/hsc-2000-coburg.webp",
+        "Jack Draper": "assets/logos/upstreams/jack-draper.webp",
+        "Krefeld": "assets/logos/upstreams/krefeld.webp",
+        "Ferndorf": "assets/logos/upstreams/ferndorf.webp",
+        "Oppenweiler/Backnang": "assets/logos/upstreams/oppenweilerbacknang.webp",
+        "Huttenberg": "assets/logos/upstreams/huttenberg.webp",
+        "Balingen": "assets/logos/upstreams/balingen.webp",
+        "Potsdam": "assets/logos/upstreams/potsdam.webp",
+        "Dessau-Rosslauer": "assets/logos/upstreams/dessau-rosslauer.webp",
+        "Bietigheim": "assets/logos/upstreams/bietigheim.webp",
+        "Elbflorenz Dresden": "assets/logos/upstreams/elbflorenz-dresden.webp",
+        "Grosswallstadt": "assets/logos/upstreams/grosswallstadt.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9635,6 +9646,7 @@
         "Davis Cup World Group Teams": "assets/logos/leagues/davis-cup-world-group-teams.webp",
         "Swiss Basketball League Women": "assets/logos/leagues/swiss-basketball-league-women.webp",
         "Alps Hockey League, Championship Round": "assets/logos/leagues/alps-hockey-league-championship-round.webp",
-        "Alps Hockey League, Qualification Round, Group A": "assets/logos/leagues/alps-hockey-league-qualification-round-group-a.webp"
+        "Alps Hockey League, Qualification Round, Group A": "assets/logos/leagues/alps-hockey-league-qualification-round-group-a.webp",
+        "Davis Cup Single Matches": "assets/logos/leagues/davis-cup-single-matches.webp"
     }
 }
