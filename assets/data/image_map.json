@@ -8755,7 +8755,11 @@
         "Jakub Wik\u0142acz": "assets/logos/upstreams/jakub-wik\u0142acz.webp",
         "Canterbury Bulldogs": "assets/logos/upstreams/canterbury-bulldogs.webp",
         "St. George Illawarra Dragons": "assets/logos/upstreams/st-george-illawarra-dragons.webp",
-        "Newcastle Knights": "assets/logos/upstreams/newcastle-knights.webp"
+        "Newcastle Knights": "assets/logos/upstreams/newcastle-knights.webp",
+        "Al Budaiya": "assets/logos/upstreams/al-budaiya.webp",
+        "Al Ahli Manama": "assets/logos/upstreams/al-ahli-manama.webp",
+        "Deportivo RiEastra": "assets/logos/upstreams/deportivo-rieastra.webp",
+        "AS Kigali": "assets/logos/upstreams/as-kigali.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9590,6 +9594,8 @@
         "NRL, Preseason": "assets/logos/leagues/nrl-preseason.webp",
         "Women's Premier League, Final": "assets/logos/leagues/womens-premier-league-final.webp",
         "ICC Men's T20 World Cup, Group A": "assets/logos/leagues/icc-mens-t20-world-cup-group-a.webp",
-        "ICC Men's T20 World Cup, Group C": "assets/logos/leagues/icc-mens-t20-world-cup-group-c.webp"
+        "ICC Men's T20 World Cup, Group C": "assets/logos/leagues/icc-mens-t20-world-cup-group-c.webp",
+        "Europe Cup, Group N": "assets/logos/leagues/europe-cup-group-n.webp",
+        "Gaucho, Serie A1, Relegation Round": "assets/logos/leagues/gaucho-serie-a1-relegation-round.webp"
     }
 }
