@@ -8838,7 +8838,11 @@
         "AFS": "assets/logos/upstreams/afs.webp",
         "Joakim Oldorff": "assets/logos/upstreams/joakim-oldorff.webp",
         "Manraj Singh": "assets/logos/upstreams/manraj-singh.webp",
-        "Priyanshu Rajawat": "assets/logos/upstreams/priyanshu-rajawat.webp"
+        "Priyanshu Rajawat": "assets/logos/upstreams/priyanshu-rajawat.webp",
+        "Josh Rock": "assets/logos/upstreams/josh-rock.webp",
+        "Jonny Clayton": "assets/logos/upstreams/jonny-clayton.webp",
+        "Copa Davis Chile": "assets/logos/upstreams/copa-davis-chile.webp",
+        "Serbia Evento 1 (T2026)": "assets/logos/upstreams/serbia-evento-1-t2026.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9684,6 +9688,8 @@
         "Alps Hockey League, Qualification Round, Group A": "assets/logos/leagues/alps-hockey-league-qualification-round-group-a.webp",
         "Davis Cup Single Matches": "assets/logos/leagues/davis-cup-single-matches.webp",
         "AFC Cup Asia - Playoff": "assets/logos/leagues/afc-cup-asia-playoff.webp",
-        "Portugal Cup": "assets/logos/leagues/portugal-cup.webp"
+        "Portugal Cup": "assets/logos/leagues/portugal-cup.webp",
+        "Premier League, Night 1": "assets/logos/leagues/premier-league-night-1.webp",
+        "Premier League 2026, Night 1": "assets/logos/leagues/premier-league-2026-night-1.webp"
     }
 }
