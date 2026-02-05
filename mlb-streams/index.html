@@ -417,8 +417,22 @@
         .seo-article li::marker { color: var(--article-bullet); }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: #222222; border: 1px solid #333333; color: #ffffff; border-radius: 4px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
-        .league-card:hover { border: 1px solid #e50914; background: #e50914; color: #ffffff; transform: translateY(-2px); }
+        .league-card { 
+            background: var(--lc-bg); 
+            border: var(--lc-border); 
+            color: var(--lc-text); 
+            border-radius: var(--lc-radius); 
+            padding: 10px 15px; 
+            display: flex; align-items: center; gap: 10px; 
+            transition: 0.2s; white-space: nowrap; overflow: hidden; 
+        }
+        .league-card:hover { 
+            border: var(--lc-hover-border); 
+            background: var(--lc-hover-bg); 
+            color: var(--lc-hover-text); 
+            transform: translateY(-2px); 
+        }
+        .league-card span { font-size: 0.8rem; font-weight: 700; color: inherit; overflow: hidden; text-overflow: ellipsis; }
         .l-icon { font-size: 1.1rem; }
         #footer-leagues-section .sec-head { border-bottom: 1px solid #333333; }
     </style>
@@ -483,21 +497,21 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;" style="border-bottom: 1px solid #333333;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
-                    hhrreeeee MLB hhsssds
+                    MLB
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
