@@ -8842,7 +8842,20 @@
         "Josh Rock": "assets/logos/upstreams/josh-rock.webp",
         "Jonny Clayton": "assets/logos/upstreams/jonny-clayton.webp",
         "Copa Davis Chile": "assets/logos/upstreams/copa-davis-chile.webp",
-        "Serbia Evento 1 (T2026)": "assets/logos/upstreams/serbia-evento-1-t2026.webp"
+        "Serbia Evento 1 (T2026)": "assets/logos/upstreams/serbia-evento-1-t2026.webp",
+        "Rutsiro": "assets/logos/upstreams/rutsiro.webp",
+        "Recoleta FC": "assets/logos/upstreams/recoleta-fc.webp",
+        "WA Tlemcen": "assets/logos/upstreams/wa-tlemcen.webp",
+        "Yokohama F. Marinos": "assets/logos/upstreams/yokohama-f-marinos.webp",
+        "Machida Zelvia": "assets/logos/upstreams/machida-zelvia.webp",
+        "Kyoto Sanga FC": "assets/logos/upstreams/kyoto-sanga-fc.webp",
+        "Vissel Kobe": "assets/logos/upstreams/vissel-kobe.webp",
+        "V-Varen Nagasaki": "assets/logos/upstreams/v-varen-nagasaki.webp",
+        "Sanfrecce Hiroshima": "assets/logos/upstreams/sanfrecce-hiroshima.webp",
+        "Mubaraka Al-Naimi": "assets/logos/upstreams/mubaraka-al-naimi.webp",
+        "Berfu Cengiz": "assets/logos/upstreams/berfu-cengiz.webp",
+        "Hind Al-Mudahka": "assets/logos/upstreams/hind-al-mudahka.webp",
+        "Canterbury Magicians (W)": "assets/logos/upstreams/canterbury-magicians-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9690,6 +9703,9 @@
         "AFC Cup Asia - Playoff": "assets/logos/leagues/afc-cup-asia-playoff.webp",
         "Portugal Cup": "assets/logos/leagues/portugal-cup.webp",
         "Premier League, Night 1": "assets/logos/leagues/premier-league-night-1.webp",
-        "Premier League 2026, Night 1": "assets/logos/leagues/premier-league-2026-night-1.webp"
+        "Premier League 2026, Night 1": "assets/logos/leagues/premier-league-2026-night-1.webp",
+        "Doha, Qatar, Qualifying": "assets/logos/leagues/doha-qatar-qualifying.webp",
+        "J1 League, East": "assets/logos/leagues/j1-league-east.webp",
+        "J1 League, West": "assets/logos/leagues/j1-league-west.webp"
     }
 }
