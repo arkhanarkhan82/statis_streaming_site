@@ -51,8 +51,8 @@
             --font-family-headings: inherit;
             --base-font-size: 14px;
             --base-line-height: 1.5;
-            --container-max-width: 1200px;
-            --header-max-width: 1200px;
+            --container-max-width: 1100px;
+            --header-max-width: 1100px;
             --border-radius-base: 4px;
             --button-border-radius: 10px;
             --hero-pill-radius: 4px;
@@ -67,7 +67,7 @@
             --header-highlight-hover: #e50914;
             --header-border-bottom: 1px solid #334155;
             --logo-image-size: 40px;
-            --logo-image-shadow: #e50914;
+            --logo-image-shadow: #290000;
 
             /* HERO */
             --hero-h1-color: #ffffff;
@@ -190,9 +190,9 @@
         --btt-shadow: 0 4px 10px #000000;
             
             --sys-status-bg: rgba(229, 9, 20, 0.1);
-            --sys-status-border: 1px solid #e50914;
-            --sys-status-text: #e50914;
-            --sys-status-dot-color: #e50914;
+            --sys-status-border: 1px solid #00ad0c;
+            --sys-status-text: #00a30b;
+            --sys-status-dot-color: #0cb800;
             --sys-status-radius: 4px;
             
             --section-logo: 24px;
@@ -314,13 +314,13 @@
 
         /* HERO REFACTORED */
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(''); background-size: cover; padding: 40px 15px; 
+            background: radial-gradient(circle at top, #260303 0%, #000000 100%); padding: 40px 15px; 
             display: block;
         }
         
 
         .hero-inner {
-            max-width: 1200px; margin: 0 auto;
+            max-width: 1100px; margin: 0 auto;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -336,7 +336,7 @@
         }
         
         .sys-status { display: inline-flex; align-items: center; gap: 8px; background: var(--sys-status-bg); border: var(--sys-status-border); color: var(--sys-status-text); border-radius: var(--sys-status-radius); padding: 5px 14px; margin-bottom: 15px; font-size: 0.75rem; font-weight: 700; }
-        .sys-status .dot, .sys-status .live-dot { width: 8px; height: 8px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
+        .sys-status .dot, .sys-status .live-dot { width: 7px; height: 7px; background: var(--sys-status-dot-color); border-radius: 50%; box-shadow: 0 0 10px var(--sys-status-dot-color); }
 
         
         h1 { margin: 0 0 20px 0; font-size: 1.8rem; line-height: 1.2; color: var(--hero-h1-color); font-weight: 800; font-family: var(--font-family-headings); }
@@ -656,7 +656,7 @@
 <body>
     <header class="h-layout-standard">
         <div class="header-container">
-            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" alt="StreamEast" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #e50914;"> <div class="logo-text" style="color:#e50914;">Stream<span style="color:#ffffff;">East</span></div></a>
+            <a href="/" class="logo-link"><img src="/assets/test-logo.webp" alt="StreamEast" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #290000;"> <div class="logo-text" style="color:#e50914;">Stream<span style="color:#ffffff;">East</span></div></a>
             <nav class="nav-links" id="desktopNav"><a href="#">Schedule</a><a href="/#faqs">FAQs</a><a href="/#comeback" class="highlighted">How we comeback</a></nav>
             <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰</button>
         </div>
@@ -710,14 +710,14 @@
     <footer>
         <div class="footer-grid cols-3">
     <div class="f-brand">
-        <img src="/assets/test-logo.webp" alt="StreamEast" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #e50914;"> <div class="logo-text" style="color:#e50914;">Stream<span style="color:#ffffff;">East</span></div> 
+        <img src="/assets/test-logo.webp" alt="StreamEast" class="logo-img" style="width:40px; height:40px; object-fit:cover; border-radius:6px; box-shadow: 0 0 10px #290000;"> <div class="logo-text" style="color:#e50914;">Stream<span style="color:#ffffff;">East</span></div> 
     </div>
-    
+    <div class="f-desc">Hello world</div>
     <div>
         <div class="f-head">Quick Links</div>
         <div class="f-links"><a href="/dmca" class="f-link">DMCA</a><a href="/contact" class="f-link">Contact</a><a href="/terms" class="f-link">Terms & Conditions</a></div>
     </div>
-    <div class="f-desc">Hello world</div></div>
+    </div>
         <div class="copyright">Copyright</div>
     </footer>
     <div id="mobileFooter" class="mobile-sticky-footer"></div>
