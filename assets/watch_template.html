@@ -409,8 +409,22 @@
         .seo-article p { margin-bottom: 15px; }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
-        .league-card { background: {{THEME_LEAGUE_CARD_BG}}; border: {{THEME_LEAGUE_CARD_BORDER}}; color: {{THEME_LEAGUE_CARD_TEXT}}; border-radius: {{THEME_LEAGUE_CARD_RADIUS}}; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; }
-        .league-card:hover { border: {{THEME_LEAGUE_CARD_HOVER_BORDER}}; background: {{THEME_LEAGUE_CARD_HOVER_BG}}; color: {{THEME_LEAGUE_CARD_HOVER_TEXT}}; transform: translateY(-2px); }
+        .league-card { 
+            background: var(--lc-bg); 
+            border: var(--lc-border); 
+            color: var(--lc-text); 
+            border-radius: var(--lc-radius); 
+            padding: 10px 15px; 
+            display: flex; align-items: center; gap: 10px; 
+            transition: 0.2s; white-space: nowrap; overflow: hidden; 
+        }
+        .league-card:hover { 
+            border: var(--lc-hover-border); 
+            background: var(--lc-hover-bg); 
+            color: var(--lc-hover-text); 
+            transform: translateY(-2px); 
+        }
+        .league-card span { font-size: 0.8rem; font-weight: 700; color: inherit; overflow: hidden; text-overflow: ellipsis; }
         .l-icon { font-size: 1.1rem; }
         
         /* SOCIALS */
