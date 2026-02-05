@@ -8766,7 +8766,10 @@
         "Jalisco": "assets/logos/upstreams/jalisco.webp",
         "Tomateros": "assets/logos/upstreams/tomateros.webp",
         "Albert Ramirez": "assets/logos/upstreams/albert-ramirez.webp",
-        "Lerrone RichardsLight heavyweightMontreal Casino | Montreal": "assets/logos/upstreams/lerrone-richardslight-heavyweightmontreal-casino-montreal.webp"
+        "Lerrone RichardsLight heavyweightMontreal Casino | Montreal": "assets/logos/upstreams/lerrone-richardslight-heavyweightmontreal-casino-montreal.webp",
+        "1. SRL (m): Krka": "assets/logos/upstreams/1-srl-m-krka.webp",
+        "Slovan": "assets/logos/upstreams/slovan.webp",
+        "Su Jeong Jang": "assets/logos/upstreams/su-jeong-jang.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9603,6 +9606,7 @@
         "ICC Men's T20 World Cup, Group A": "assets/logos/leagues/icc-mens-t20-world-cup-group-a.webp",
         "ICC Men's T20 World Cup, Group C": "assets/logos/leagues/icc-mens-t20-world-cup-group-c.webp",
         "Europe Cup, Group N": "assets/logos/leagues/europe-cup-group-n.webp",
-        "Gaucho, Serie A1, Relegation Round": "assets/logos/leagues/gaucho-serie-a1-relegation-round.webp"
+        "Gaucho, Serie A1, Relegation Round": "assets/logos/leagues/gaucho-serie-a1-relegation-round.webp",
+        "1. NLB Liga": "assets/logos/leagues/1-nlb-liga.webp"
     }
 }
