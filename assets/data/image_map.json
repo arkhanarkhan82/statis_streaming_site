@@ -8855,7 +8855,14 @@
         "Mubaraka Al-Naimi": "assets/logos/upstreams/mubaraka-al-naimi.webp",
         "Berfu Cengiz": "assets/logos/upstreams/berfu-cengiz.webp",
         "Hind Al-Mudahka": "assets/logos/upstreams/hind-al-mudahka.webp",
-        "Canterbury Magicians (W)": "assets/logos/upstreams/canterbury-magicians-w.webp"
+        "Canterbury Magicians (W)": "assets/logos/upstreams/canterbury-magicians-w.webp",
+        "\u00c9toile Carouge FC": "assets/logos/upstreams/\u00e9toile-carouge-fc.webp",
+        "Wis\u0142a Krak\u00f3w": "assets/logos/upstreams/wis\u0142a-krak\u00f3w.webp",
+        "S\u00e3o Jos\u00e9 dos Campos": "assets/logos/upstreams/s\u00e3o-jos\u00e9-dos-campos.webp",
+        "Manly United": "assets/logos/upstreams/manly-united.webp",
+        "St George City": "assets/logos/upstreams/st-george-city.webp",
+        "OKS Odra Opole": "assets/logos/upstreams/oks-odra-opole.webp",
+        "Pogo\u0144 Siedlce": "assets/logos/upstreams/pogo\u0144-siedlce.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9706,6 +9713,7 @@
         "Premier League 2026, Night 1": "assets/logos/leagues/premier-league-2026-night-1.webp",
         "Doha, Qatar, Qualifying": "assets/logos/leagues/doha-qatar-qualifying.webp",
         "J1 League, East": "assets/logos/leagues/j1-league-east.webp",
-        "J1 League, West": "assets/logos/leagues/j1-league-west.webp"
+        "J1 League, West": "assets/logos/leagues/j1-league-west.webp",
+        "I liga": "assets/logos/leagues/i-liga.webp"
     }
 }
