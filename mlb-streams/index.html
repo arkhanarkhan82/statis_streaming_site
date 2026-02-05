@@ -408,8 +408,11 @@
         @media (max-width: 768px) { .copy-toast { bottom: 85px; } }
         
         .seo-article { background: var(--article-bg); color: var(--article-text); line-height: var(--article-line-height); padding: 20px; border-radius: var(--border-radius-base); margin-top: 40px; }
-        .seo-article h2 { color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
+        .seo-article h2 { font-family: var(--font-family-headings); color: var(--article-h2-color); border-bottom: var(--article-h2-border); padding-bottom: 10px; margin-top: 30px; font-size: 1.5rem; }
+        .seo-article h3 { font-family: var(--font-family-headings); }
+        .seo-article h4 { font-family: var(--font-family-headings); }
         .seo-article a { color: var(--article-link); text-decoration: underline; }
+        .seo-article li::marker { color: var(--article-bullet); }
         
         .leagues-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 15px; }
         .league-card { background: #334155; border: 0px solid #000000; color: #f8fafc; border-radius: 8px; padding: 10px 15px; display: flex; align-items: center; gap: 10px; transition: 0.2s; white-space: nowrap; overflow: hidden; }
@@ -478,13 +481,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;" style="display:none;" style="display:none;" style="display:none;">
+        <div id="live-list" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head" style="border-bottom: 3px solid #cd610a;" style="border-bottom: 3px solid #cd610a;" style="border-bottom: 3px solid #cd610a;">
+            <div class="sec-head">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     hhrreeeee MLB hhsssds
@@ -492,7 +495,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><div class="match-row" style="justify-content:center;">No upcoming matches found.</div><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><!-- L_SCHED_END -->
             </div>
         </div>
 
