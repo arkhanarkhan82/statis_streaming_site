@@ -8974,7 +8974,22 @@
         "UC Santa Barbara Gauchos": "assets/logos/upstreams/uc-santa-barbara-gauchos.webp",
         "UC Irvine Anteaters": "assets/logos/upstreams/uc-irvine-anteaters.webp",
         "Nick Ball": "assets/logos/upstreams/nick-ball.webp",
-        "Brandon FigueroaFeatherweightEcho Arena | Liverpool": "assets/logos/upstreams/brandon-figueroafeatherweightecho-arena-liverpool.webp"
+        "Brandon FigueroaFeatherweightEcho Arena | Liverpool": "assets/logos/upstreams/brandon-figueroafeatherweightecho-arena-liverpool.webp",
+        "Persis Solo": "assets/logos/upstreams/persis-solo.webp",
+        "Alex Santino Nunez Vera": "assets/logos/upstreams/alex-santino-nunez-vera.webp",
+        "Ognjen Milic": "assets/logos/upstreams/ognjen-milic.webp",
+        "Moez Echargui": "assets/logos/upstreams/moez-echargui.webp",
+        "Cournon d'Auvergne": "assets/logos/upstreams/cournon-dauvergne.webp",
+        "Massy Essonne Handball": "assets/logos/upstreams/massy-essonne-handball.webp",
+        "Besancon": "assets/logos/upstreams/besancon.webp",
+        "Cherbourg": "assets/logos/upstreams/cherbourg.webp",
+        "Caen": "assets/logos/upstreams/caen.webp",
+        "Saran": "assets/logos/upstreams/saran.webp",
+        "Pontault": "assets/logos/upstreams/pontault.webp",
+        "Ivry": "assets/logos/upstreams/ivry.webp",
+        "Valence": "assets/logos/upstreams/valence.webp",
+        "Sarrebourg": "assets/logos/upstreams/sarrebourg.webp",
+        "Kaloyana Nalbantova": "assets/logos/upstreams/kaloyana-nalbantova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9838,6 +9853,7 @@
         "Switzerland LNA": "assets/logos/leagues/switzerland-lna.webp",
         "Xi'an Grand Prix": "assets/logos/leagues/xian-grand-prix.webp",
         "World Group I Playoffs": "assets/logos/leagues/world-group-i-playoffs.webp",
-        "Handball": "assets/logos/leagues/handball.webp"
+        "Handball": "assets/logos/leagues/handball.webp",
+        "LNH Proligue": "assets/logos/leagues/lnh-proligue.webp"
     }
 }
