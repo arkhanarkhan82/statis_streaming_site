@@ -9108,7 +9108,16 @@
         "Montevideo Wanderers": "assets/logos/streamed/montevideo-wanderers.webp",
         "Defensor Sporting": "assets/logos/streamed/defensor-sporting.webp",
         "Shizuoka Blue Revs": "assets/logos/streamed/shizuoka-blue-revs.webp",
-        "Atl\u00e9tico Morelia": "assets/logos/streamed/atl\u00e9tico-morelia.webp"
+        "Atl\u00e9tico Morelia": "assets/logos/streamed/atl\u00e9tico-morelia.webp",
+        "DC Power FC": "assets/logos/upstreams/dc-power-fc.webp",
+        "Wetzlar": "assets/logos/upstreams/wetzlar.webp",
+        "Fuchse Berlin": "assets/logos/upstreams/fuchse-berlin.webp",
+        "Rhein Neckar Lowen": "assets/logos/upstreams/rhein-neckar-lowen.webp",
+        "Atletico Valladolid": "assets/logos/upstreams/atletico-valladolid.webp",
+        "Lemgo": "assets/logos/upstreams/lemgo.webp",
+        "Bergischer": "assets/logos/upstreams/bergischer.webp",
+        "Melsungen": "assets/logos/upstreams/melsungen.webp",
+        "La Rioja": "assets/logos/upstreams/la-rioja.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
