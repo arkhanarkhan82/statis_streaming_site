@@ -8998,7 +8998,9 @@
         "SD Raiders FC": "assets/logos/upstreams/sd-raiders-fc.webp",
         "St Mary's Gaels": "assets/logos/upstreams/st-marys-gaels.webp",
         "Daria Yesypchuk": "assets/logos/upstreams/daria-yesypchuk.webp",
-        "Dunja Mari\u0107": "assets/logos/upstreams/dunja-mari\u0107.webp"
+        "Dunja Mari\u0107": "assets/logos/upstreams/dunja-mari\u0107.webp",
+        "Artem Dmytrenko": "assets/logos/upstreams/artem-dmytrenko.webp",
+        "Achyuth Binu": "assets/logos/upstreams/achyuth-binu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9864,6 +9866,7 @@
         "World Group I Playoffs": "assets/logos/leagues/world-group-i-playoffs.webp",
         "Handball": "assets/logos/leagues/handball.webp",
         "LNH Proligue": "assets/logos/leagues/lnh-proligue.webp",
-        "Seven's World Series - Australia": "assets/logos/leagues/sevens-world-series-australia.webp"
+        "Seven's World Series - Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
+        "Australia - NPL (W) - Queensland": "assets/logos/leagues/australia-npl-w-queensland.webp"
     }
 }
