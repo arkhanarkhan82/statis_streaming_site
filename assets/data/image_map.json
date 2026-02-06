@@ -8943,7 +8943,11 @@
         "Ofek Shimanov": "assets/logos/upstreams/ofek-shimanov.webp",
         "Zachary Cohen": "assets/logos/upstreams/zachary-cohen.webp",
         "Bruna Brasil": "assets/logos/upstreams/bruna-brasil.webp",
-        "Ketlen Souza": "assets/logos/upstreams/ketlen-souza.webp"
+        "Ketlen Souza": "assets/logos/upstreams/ketlen-souza.webp",
+        "Christian Medina Jimenez": "assets/logos/upstreams/christian-medina-jimenez.webp",
+        "Adrian Curiel DominguezBantamweightGuadalajara": "assets/logos/upstreams/adrian-curiel-dominguezbantamweightguadalajara.webp",
+        "NQ Cowboys": "assets/logos/upstreams/nq-cowboys.webp",
+        "St.George Illawarra": "assets/logos/upstreams/stgeorge-illawarra.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9802,6 +9806,7 @@
         "Premier League, Closing Round": "assets/logos/leagues/premier-league-closing-round.webp",
         "UFC Fight Night": "assets/logos/leagues/ufc-fight-night.webp",
         "ICC Men's T20 World Cup, Group D": "assets/logos/leagues/icc-mens-t20-world-cup-group-d.webp",
-        "Davis Cup Single Matches, Group I-V": "assets/logos/leagues/davis-cup-single-matches-group-i-v.webp"
+        "Davis Cup Single Matches, Group I-V": "assets/logos/leagues/davis-cup-single-matches-group-i-v.webp",
+        "National Rugby League": "assets/logos/leagues/national-rugby-league.webp"
     }
 }
