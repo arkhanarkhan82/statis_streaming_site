@@ -9092,7 +9092,9 @@
         "Phoenix Hagen": "assets/logos/streamed/phoenix-hagen.webp",
         "Al Ittihad Alexandria": "assets/logos/streamed/al-ittihad-alexandria.webp",
         "Fukushima United": "assets/logos/streamed/fukushima-united.webp",
-        "Montedio Yamagata": "assets/logos/streamed/montedio-yamagata.webp"
+        "Montedio Yamagata": "assets/logos/streamed/montedio-yamagata.webp",
+        "Ireland XV": "assets/logos/upstreams/ireland-xv.webp",
+        "England A": "assets/logos/upstreams/england-a.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9969,6 +9971,7 @@
         "Sevens World Series Women Great Britain 7s W": "assets/logos/leagues/sevens-world-series-women-great-britain-7s-w.webp",
         "Sevens World Series Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
         "Sevens World Series Australia Great Britain 7s": "assets/logos/leagues/sevens-world-series-australia-great-britain-7s.webp",
-        "Belgium Challenge Pro League": "assets/logos/leagues/belgium-challenge-pro-league.webp"
+        "Belgium Challenge Pro League": "assets/logos/leagues/belgium-challenge-pro-league.webp",
+        "International Friendlies": "assets/logos/leagues/international-friendlies.webp"
     }
 }
