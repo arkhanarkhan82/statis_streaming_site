@@ -9009,7 +9009,14 @@
         "Anguilla U17": "assets/logos/upstreams/anguilla-u17.webp",
         "Grenada U17": "assets/logos/upstreams/grenada-u17.webp",
         "Guatemala U17": "assets/logos/upstreams/guatemala-u17.webp",
-        "Jamaica U17": "assets/logos/upstreams/jamaica-u17.webp"
+        "Jamaica U17": "assets/logos/upstreams/jamaica-u17.webp",
+        "PFC Montana": "assets/logos/upstreams/pfc-montana.webp",
+        "CSKA 1948": "assets/logos/upstreams/cska-1948.webp",
+        "Wisla Krakow": "assets/logos/upstreams/wisla-krakow.webp",
+        "Tychy": "assets/logos/upstreams/tychy.webp",
+        "Cote d'Or FC": "assets/logos/upstreams/cote-dor-fc.webp",
+        "Arianna Zucchini": "assets/logos/upstreams/arianna-zucchini.webp",
+        "Aran Teixido Garcia": "assets/logos/upstreams/aran-teixido-garcia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9877,6 +9884,7 @@
         "LNH Proligue": "assets/logos/leagues/lnh-proligue.webp",
         "Seven's World Series - Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
         "Australia - NPL (W) - Queensland": "assets/logos/leagues/australia-npl-w-queensland.webp",
-        "Professional Fighters League": "assets/logos/leagues/professional-fighters-league.webp"
+        "Professional Fighters League": "assets/logos/leagues/professional-fighters-league.webp",
+        "First Professional League": "assets/logos/leagues/first-professional-league.webp"
     }
 }
