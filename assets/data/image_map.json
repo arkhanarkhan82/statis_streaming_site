@@ -8989,7 +8989,11 @@
         "Ivry": "assets/logos/upstreams/ivry.webp",
         "Valence": "assets/logos/upstreams/valence.webp",
         "Sarrebourg": "assets/logos/upstreams/sarrebourg.webp",
-        "Kaloyana Nalbantova": "assets/logos/upstreams/kaloyana-nalbantova.webp"
+        "Kaloyana Nalbantova": "assets/logos/upstreams/kaloyana-nalbantova.webp",
+        "UT Martin": "assets/logos/upstreams/ut-martin.webp",
+        "Colorado Christian Cougars": "assets/logos/upstreams/colorado-christian-cougars.webp",
+        "South Dakota Hardrockers": "assets/logos/upstreams/south-dakota-hardrockers.webp",
+        "Fedor Sosedkin": "assets/logos/upstreams/fedor-sosedkin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9854,6 +9858,7 @@
         "Xi'an Grand Prix": "assets/logos/leagues/xian-grand-prix.webp",
         "World Group I Playoffs": "assets/logos/leagues/world-group-i-playoffs.webp",
         "Handball": "assets/logos/leagues/handball.webp",
-        "LNH Proligue": "assets/logos/leagues/lnh-proligue.webp"
+        "LNH Proligue": "assets/logos/leagues/lnh-proligue.webp",
+        "Seven's World Series - Australia": "assets/logos/leagues/sevens-world-series-australia.webp"
     }
 }
