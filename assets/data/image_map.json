@@ -9053,7 +9053,12 @@
         "Netherlands Cricket": "assets/logos/streamed/netherlands-cricket.webp",
         "Pakistan Cricket": "assets/logos/streamed/pakistan-cricket.webp",
         "Cerezo Osaka": "assets/logos/streamed/cerezo-osaka.webp",
-        "Gamba Osaka": "assets/logos/streamed/gamba-osaka.webp"
+        "Gamba Osaka": "assets/logos/streamed/gamba-osaka.webp",
+        "Asfa Yennega": "assets/logos/upstreams/asfa-yennega.webp",
+        "Rahimo FC": "assets/logos/upstreams/rahimo-fc.webp",
+        "ASF Bobo Dioulasso": "assets/logos/upstreams/asf-bobo-dioulasso.webp",
+        "UEB Cividale": "assets/logos/upstreams/ueb-cividale.webp",
+        "Paffoni Fulgor Omegna": "assets/logos/upstreams/paffoni-fulgor-omegna.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
