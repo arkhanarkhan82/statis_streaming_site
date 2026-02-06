@@ -9058,7 +9058,14 @@
         "Rahimo FC": "assets/logos/upstreams/rahimo-fc.webp",
         "ASF Bobo Dioulasso": "assets/logos/upstreams/asf-bobo-dioulasso.webp",
         "UEB Cividale": "assets/logos/upstreams/ueb-cividale.webp",
-        "Paffoni Fulgor Omegna": "assets/logos/upstreams/paffoni-fulgor-omegna.webp"
+        "Paffoni Fulgor Omegna": "assets/logos/upstreams/paffoni-fulgor-omegna.webp",
+        "Bayern Munchen W": "assets/logos/upstreams/bayern-munchen-w.webp",
+        "Durban City": "assets/logos/upstreams/durban-city.webp",
+        "Chippa Utd": "assets/logos/upstreams/chippa-utd.webp",
+        "Taguig FC": "assets/logos/upstreams/taguig-fc.webp",
+        "Wayne Montgomery": "assets/logos/upstreams/wayne-montgomery.webp",
+        "Philippine Army": "assets/logos/upstreams/philippine-army.webp",
+        "Anupama Upadhyaya": "assets/logos/upstreams/anupama-upadhyaya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9928,6 +9935,7 @@
         "Australia - NPL (W) - Queensland": "assets/logos/leagues/australia-npl-w-queensland.webp",
         "Professional Fighters League": "assets/logos/leagues/professional-fighters-league.webp",
         "First Professional League": "assets/logos/leagues/first-professional-league.webp",
-        "WWIN Liga BiH": "assets/logos/leagues/wwin-liga-bih.webp"
+        "WWIN Liga BiH": "assets/logos/leagues/wwin-liga-bih.webp",
+        "South Africa Nedbank Cup": "assets/logos/leagues/south-africa-nedbank-cup.webp"
     }
 }
