@@ -9079,7 +9079,9 @@
         "FK Sloga Doboj": "assets/logos/upstreams/fk-sloga-doboj.webp",
         "FK Sarajevo": "assets/logos/upstreams/fk-sarajevo.webp",
         "FK Radnik Bijeljina": "assets/logos/upstreams/fk-radnik-bijeljina.webp",
-        "Perth Day 1": "assets/logos/upstreams/perth-day-1.webp"
+        "Perth Day 1": "assets/logos/upstreams/perth-day-1.webp",
+        "Derby U21": "assets/logos/upstreams/derby-u21.webp",
+        "RFC Liege": "assets/logos/upstreams/rfc-liege.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9955,6 +9957,7 @@
         "Sevens World Series Women": "assets/logos/leagues/sevens-world-series-women.webp",
         "Sevens World Series Women Great Britain 7s W": "assets/logos/leagues/sevens-world-series-women-great-britain-7s-w.webp",
         "Sevens World Series Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
-        "Sevens World Series Australia Great Britain 7s": "assets/logos/leagues/sevens-world-series-australia-great-britain-7s.webp"
+        "Sevens World Series Australia Great Britain 7s": "assets/logos/leagues/sevens-world-series-australia-great-britain-7s.webp",
+        "Belgium Challenge Pro League": "assets/logos/leagues/belgium-challenge-pro-league.webp"
     }
 }
