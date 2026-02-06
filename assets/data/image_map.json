@@ -9096,7 +9096,10 @@
         "Ireland XV": "assets/logos/upstreams/ireland-xv.webp",
         "England A": "assets/logos/upstreams/england-a.webp",
         "Lechia Gda\u0144sk": "assets/logos/streamed/lechia-gda\u0144sk.webp",
-        "Fortitudo Pallacanestro Bologna": "assets/logos/streamed/fortitudo-pallacanestro-bologna.webp"
+        "Fortitudo Pallacanestro Bologna": "assets/logos/streamed/fortitudo-pallacanestro-bologna.webp",
+        "Moquegua": "assets/logos/upstreams/moquegua.webp",
+        "Cajamarca": "assets/logos/upstreams/cajamarca.webp",
+        "Hesam Esmail Yazdi": "assets/logos/upstreams/hesam-esmail-yazdi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9974,6 +9977,7 @@
         "Sevens World Series Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
         "Sevens World Series Australia Great Britain 7s": "assets/logos/leagues/sevens-world-series-australia-great-britain-7s.webp",
         "Belgium Challenge Pro League": "assets/logos/leagues/belgium-challenge-pro-league.webp",
-        "International Friendlies": "assets/logos/leagues/international-friendlies.webp"
+        "International Friendlies": "assets/logos/leagues/international-friendlies.webp",
+        "Peru Liga 1 Apertura": "assets/logos/leagues/peru-liga-1-apertura.webp"
     }
 }
