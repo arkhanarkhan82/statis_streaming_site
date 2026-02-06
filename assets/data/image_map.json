@@ -9074,7 +9074,12 @@
         "Viborg": "assets/logos/streamed/viborg.webp",
         "Bohemians": "assets/logos/streamed/bohemians.webp",
         "St Patrick's Athl.": "assets/logos/streamed/st-patricks-athl.webp",
-        "Mannheim": "assets/logos/upstreams/mannheim.webp"
+        "Mannheim": "assets/logos/upstreams/mannheim.webp",
+        "H\u0160K Zrinjski Mostar": "assets/logos/upstreams/h\u0161k-zrinjski-mostar.webp",
+        "FK Sloga Doboj": "assets/logos/upstreams/fk-sloga-doboj.webp",
+        "FK Sarajevo": "assets/logos/upstreams/fk-sarajevo.webp",
+        "FK Radnik Bijeljina": "assets/logos/upstreams/fk-radnik-bijeljina.webp",
+        "Perth Day 1": "assets/logos/upstreams/perth-day-1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9945,6 +9950,11 @@
         "Professional Fighters League": "assets/logos/leagues/professional-fighters-league.webp",
         "First Professional League": "assets/logos/leagues/first-professional-league.webp",
         "WWIN Liga BiH": "assets/logos/leagues/wwin-liga-bih.webp",
-        "South Africa Nedbank Cup": "assets/logos/leagues/south-africa-nedbank-cup.webp"
+        "South Africa Nedbank Cup": "assets/logos/leagues/south-africa-nedbank-cup.webp",
+        "Liga 1 Baliunited Persebaya": "assets/logos/leagues/liga-1-baliunited-persebaya.webp",
+        "Sevens World Series Women": "assets/logos/leagues/sevens-world-series-women.webp",
+        "Sevens World Series Women Great Britain 7s W": "assets/logos/leagues/sevens-world-series-women-great-britain-7s-w.webp",
+        "Sevens World Series Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
+        "Sevens World Series Australia Great Britain 7s": "assets/logos/leagues/sevens-world-series-australia-great-britain-7s.webp"
     }
 }
