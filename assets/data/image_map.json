@@ -8878,7 +8878,12 @@
         "Vasco": "assets/logos/upstreams/vasco.webp",
         "Chapecoense-SC": "assets/logos/upstreams/chapecoense-sc.webp",
         "Maria Carle": "assets/logos/upstreams/maria-carle.webp",
-        "U Catolica": "assets/logos/upstreams/u-catolica.webp"
+        "U Catolica": "assets/logos/upstreams/u-catolica.webp",
+        "Vasco DA Gama": "assets/logos/streamed/vasco-da-gama.webp",
+        "Italy Rugby": "assets/logos/streamed/italy-rugby.webp",
+        "Scotland Rugby": "assets/logos/streamed/scotland-rugby.webp",
+        "England Rugby": "assets/logos/streamed/england-rugby.webp",
+        "Wales Rugby": "assets/logos/streamed/wales-rugby.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
