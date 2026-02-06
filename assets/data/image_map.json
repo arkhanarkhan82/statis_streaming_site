@@ -9020,7 +9020,9 @@
         "Daniel Phillips": "assets/logos/upstreams/daniel-phillips.webp",
         "Germany W": "assets/logos/streamed/germany-w.webp",
         "Japan W": "assets/logos/streamed/japan-w.webp",
-        "Raiffeisen Flyers Wels": "assets/logos/upstreams/raiffeisen-flyers-wels.webp"
+        "Raiffeisen Flyers Wels": "assets/logos/upstreams/raiffeisen-flyers-wels.webp",
+        "FK Rudar Prijedor": "assets/logos/upstreams/fk-rudar-prijedor.webp",
+        "NK \u0160iroki Brijeg": "assets/logos/upstreams/nk-\u0161iroki-brijeg.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9889,6 +9891,7 @@
         "Seven's World Series - Australia": "assets/logos/leagues/sevens-world-series-australia.webp",
         "Australia - NPL (W) - Queensland": "assets/logos/leagues/australia-npl-w-queensland.webp",
         "Professional Fighters League": "assets/logos/leagues/professional-fighters-league.webp",
-        "First Professional League": "assets/logos/leagues/first-professional-league.webp"
+        "First Professional League": "assets/logos/leagues/first-professional-league.webp",
+        "WWIN Liga BiH": "assets/logos/leagues/wwin-liga-bih.webp"
     }
 }
