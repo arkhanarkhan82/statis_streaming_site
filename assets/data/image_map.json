@@ -8949,7 +8949,23 @@
         "NQ Cowboys": "assets/logos/upstreams/nq-cowboys.webp",
         "St.George Illawarra": "assets/logos/upstreams/stgeorge-illawarra.webp",
         "Fribourg Olympic Basket": "assets/logos/upstreams/fribourg-olympic-basket.webp",
-        "BBC Monthey-Chablais": "assets/logos/upstreams/bbc-monthey-chablais.webp"
+        "BBC Monthey-Chablais": "assets/logos/upstreams/bbc-monthey-chablais.webp",
+        "Live Montpellier-ATP Quarterfinals; Abu-Dhabi-WTA, Cluj-Napoca-WTA & Ostrava-WTA Semifinals; Davis Cup Qu New Live": "assets/logos/upstreams/live-montpellier-atp-quarterfinals-abu-dhabi-wta-cluj-napoca-wta-ostrava-wta-semifinals-davis-cup-qu-new-live.webp",
+        "T\u00e9nis: Montpellier": "assets/logos/upstreams/t\u00e9nis-montpellier.webp",
+        "ATP World Tour 250": "assets/logos/upstreams/atp-world-tour-250.webp",
+        "Bosnia & Herzegovina": "assets/logos/upstreams/bosnia-herzegovina.webp",
+        "ADO Den Haag (v)": "assets/logos/upstreams/ado-den-haag-v.webp",
+        "Lublin": "assets/logos/upstreams/lublin.webp",
+        "Live Admiral BL: SK Puntigamer Sturm Graz": "assets/logos/upstreams/live-admiral-bl-sk-puntigamer-sturm-graz.webp",
+        "SV Oberbank Ried, 18. Runde": "assets/logos/upstreams/sv-oberbank-ried-18-runde.webp",
+        "Nogomet: Gr\u0161ka liga: Aris": "assets/logos/upstreams/nogomet-gr\u0161ka-liga-aris.webp",
+        "Olympique de Safi": "assets/logos/upstreams/olympique-de-safi.webp",
+        "Olympiako\u03c2": "assets/logos/upstreams/olympiako\u03c2.webp",
+        "Panathinaiko\u03c2": "assets/logos/upstreams/panathinaiko\u03c2.webp",
+        "Sola": "assets/logos/upstreams/sola.webp",
+        "FTC Green Collect": "assets/logos/upstreams/ftc-green-collect.webp",
+        "CSM Bucuresti": "assets/logos/upstreams/csm-bucuresti.webp",
+        "Brest Bretagne Handball": "assets/logos/upstreams/brest-bretagne-handball.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -9810,6 +9826,9 @@
         "ICC Men's T20 World Cup, Group D": "assets/logos/leagues/icc-mens-t20-world-cup-group-d.webp",
         "Davis Cup Single Matches, Group I-V": "assets/logos/leagues/davis-cup-single-matches-group-i-v.webp",
         "National Rugby League": "assets/logos/leagues/national-rugby-league.webp",
-        "Switzerland LNA": "assets/logos/leagues/switzerland-lna.webp"
+        "Switzerland LNA": "assets/logos/leagues/switzerland-lna.webp",
+        "Xi'an Grand Prix": "assets/logos/leagues/xian-grand-prix.webp",
+        "World Group I Playoffs": "assets/logos/leagues/world-group-i-playoffs.webp",
+        "Handball": "assets/logos/leagues/handball.webp"
     }
 }
