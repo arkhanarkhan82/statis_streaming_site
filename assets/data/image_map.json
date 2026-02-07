@@ -9243,7 +9243,14 @@
         "Amar Huseinovic": "assets/logos/upstreams/amar-huseinovic.webp",
         "Aleksa Krivokapic": "assets/logos/upstreams/aleksa-krivokapic.webp",
         "Krish Arora": "assets/logos/upstreams/krish-arora.webp",
-        "Thai-Son Kwiatkowski": "assets/logos/upstreams/thai-son-kwiatkowski.webp"
+        "Thai-Son Kwiatkowski": "assets/logos/upstreams/thai-son-kwiatkowski.webp",
+        "Le Messager Ngozi": "assets/logos/upstreams/le-messager-ngozi.webp",
+        "Real Maldivess Fc": "assets/logos/upstreams/real-maldivess-fc.webp",
+        "Vasteras SK": "assets/logos/upstreams/vasteras-sk.webp",
+        "Steyn Dippenaar": "assets/logos/upstreams/steyn-dippenaar.webp",
+        "Photos Photiades": "assets/logos/upstreams/photos-photiades.webp",
+        "Stefan Micov": "assets/logos/upstreams/stefan-micov.webp",
+        "Petar Jovanovic": "assets/logos/upstreams/petar-jovanovic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10141,6 +10148,7 @@
         "SVNS, Women": "assets/logos/leagues/svns-women.webp",
         "Atp": "assets/logos/leagues/atp.webp",
         "Stoiximan GBL": "assets/logos/leagues/stoiximan-gbl.webp",
-        "Dallas, USA, Qualifying": "assets/logos/leagues/dallas-usa-qualifying.webp"
+        "Dallas, USA, Qualifying": "assets/logos/leagues/dallas-usa-qualifying.webp",
+        "Buenos Aires, Argentina, Qualifying": "assets/logos/leagues/buenos-aires-argentina-qualifying.webp"
     }
 }
