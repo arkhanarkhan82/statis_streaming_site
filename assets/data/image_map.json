@@ -9130,7 +9130,30 @@
         "Ireland Cricket": "assets/logos/streamed/ireland-cricket.webp",
         "St Patrick's Athletic": "assets/logos/streamed/st-patricks-athletic.webp",
         "Kolos Kovalivka": "assets/logos/streamed/kolos-kovalivka.webp",
-        "LNZ Cherkasy": "assets/logos/streamed/lnz-cherkasy.webp"
+        "LNZ Cherkasy": "assets/logos/streamed/lnz-cherkasy.webp",
+        "Beroe Stara Zagora": "assets/logos/upstreams/beroe-stara-zagora.webp",
+        "Bohemian FC": "assets/logos/upstreams/bohemian-fc.webp",
+        "GeVi Napoli Basket": "assets/logos/upstreams/gevi-napoli-basket.webp",
+        "T\u00fcrk Telekom B.K.": "assets/logos/upstreams/t\u00fcrk-telekom-bk.webp",
+        "Nanterre 92": "assets/logos/upstreams/nanterre-92.webp",
+        "Pully Lausanne Foxes": "assets/logos/upstreams/pully-lausanne-foxes.webp",
+        "Igokea m:tel": "assets/logos/upstreams/igokea-mtel.webp",
+        "Kosner Baskonia": "assets/logos/upstreams/kosner-baskonia.webp",
+        "Basket Mestre 1958": "assets/logos/upstreams/basket-mestre-1958.webp",
+        "Creighton Bluejays": "assets/logos/upstreams/creighton-bluejays.webp",
+        "FC Blau Weiss Linz": "assets/logos/upstreams/fc-blau-weiss-linz.webp",
+        "FK IMT Beograd": "assets/logos/upstreams/fk-imt-beograd.webp",
+        "SG Bietigheim-Metterzimmern": "assets/logos/upstreams/sg-bietigheim-metterzimmern.webp",
+        "HC Elbflorenz Dresden": "assets/logos/upstreams/hc-elbflorenz-dresden.webp",
+        "Viveros Balonmano Nava": "assets/logos/upstreams/viveros-balonmano-nava.webp",
+        "BM Villa de Aranda": "assets/logos/upstreams/bm-villa-de-aranda.webp",
+        "El Salvador U17": "assets/logos/upstreams/el-salvador-u17.webp",
+        "Guyana U17": "assets/logos/upstreams/guyana-u17.webp",
+        "Honduras U17": "assets/logos/upstreams/honduras-u17.webp",
+        "Plock": "assets/logos/upstreams/plock.webp",
+        "Oss": "assets/logos/upstreams/oss.webp",
+        "Northhorn-Lingen": "assets/logos/upstreams/northhorn-lingen.webp",
+        "Anton Shepp": "assets/logos/upstreams/anton-shepp.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10010,6 +10033,10 @@
         "Belgium Challenge Pro League": "assets/logos/leagues/belgium-challenge-pro-league.webp",
         "International Friendlies": "assets/logos/leagues/international-friendlies.webp",
         "Peru Liga 1 Apertura": "assets/logos/leagues/peru-liga-1-apertura.webp",
-        "Rotterdam, Netherlands, Qualifying": "assets/logos/leagues/rotterdam-netherlands-qualifying.webp"
+        "Rotterdam, Netherlands, Qualifying": "assets/logos/leagues/rotterdam-netherlands-qualifying.webp",
+        "ICC Men's T20 World Cup, Group B": "assets/logos/leagues/icc-mens-t20-world-cup-group-b.webp",
+        "Davis Cup World Group I Teams": "assets/logos/leagues/davis-cup-world-group-i-teams.webp",
+        "Asobal": "assets/logos/leagues/asobal.webp",
+        "AFC Champions League": "assets/logos/leagues/afc-champions-league.webp"
     }
 }
