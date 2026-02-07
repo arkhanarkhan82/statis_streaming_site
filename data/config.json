@@ -2,7 +2,7 @@
   "site_settings": {
     "sitemap_enabled": true,
     "sitemap_include_leagues": true,
-    "sitemap_static_pages": "about, contact, privacy, terms",
+    "sitemap_static_pages": "about, contact, privacy, terms, copyright-policy",
     "sitemap_lastmod_manual": "2026-02-07",
     "ga4_id": "G-VK24F3EX1K",
     "title_part_1": "Stream",
