@@ -9214,7 +9214,11 @@
         "ATP 250: Open Occitanie": "assets/logos/upstreams/atp-250-open-occitanie.webp",
         "St George-Illawarra Dragons": "assets/logos/streamed/st-george-illawarra-dragons.webp",
         "NA Hussein Dey": "assets/logos/upstreams/na-hussein-dey.webp",
-        "Yannik Alvarez": "assets/logos/upstreams/yannik-alvarez.webp"
+        "Yannik Alvarez": "assets/logos/upstreams/yannik-alvarez.webp",
+        "Scotland Cricket": "assets/logos/streamed/scotland-cricket.webp",
+        "West Indies Cricket": "assets/logos/streamed/west-indies-cricket.webp",
+        "India Cricket": "assets/logos/streamed/india-cricket.webp",
+        "USA Cricket": "assets/logos/streamed/usa-cricket.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
