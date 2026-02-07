@@ -9269,7 +9269,11 @@
         "Oliver Anderson": "assets/logos/upstreams/oliver-anderson.webp",
         "Aoran Wang": "assets/logos/upstreams/aoran-wang.webp",
         "Ty Host": "assets/logos/upstreams/ty-host.webp",
-        "Shreya Lele": "assets/logos/upstreams/shreya-lele.webp"
+        "Shreya Lele": "assets/logos/upstreams/shreya-lele.webp",
+        "Fribourg U23": "assets/logos/upstreams/fribourg-u23.webp",
+        "Jamie Mackenzie": "assets/logos/upstreams/jamie-mackenzie.webp",
+        "Enzo Aguiard": "assets/logos/upstreams/enzo-aguiard.webp",
+        "Ethan Cook": "assets/logos/upstreams/ethan-cook.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10171,6 +10175,7 @@
         "Buenos Aires, Argentina, Qualifying": "assets/logos/leagues/buenos-aires-argentina-qualifying.webp",
         "Serbia Super Liga": "assets/logos/leagues/serbia-super-liga.webp",
         "Cyprus League 2": "assets/logos/leagues/cyprus-league-2.webp",
-        "Brisbane 2, Australia, Qualifying": "assets/logos/leagues/brisbane-2-australia-qualifying.webp"
+        "Brisbane 2, Australia, Qualifying": "assets/logos/leagues/brisbane-2-australia-qualifying.webp",
+        "Czech Chance Liga": "assets/logos/leagues/czech-chance-liga.webp"
     }
 }
