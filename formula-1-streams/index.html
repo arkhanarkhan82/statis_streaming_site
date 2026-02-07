@@ -25,7 +25,7 @@
     
     <!-- SCHEMA -->
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://streameastlive.cc/#organization", "name": "StreamEast", "url": "https://streameastlive.cc/", "logo": {"@type": "ImageObject", "url": "https://streameastlive.cc/assets/streameast-logo.webp", "width": 512, "height": 512}}, {"@type": "WebSite", "@id": "https://streameastlive.cc/#website", "url": "https://streameastlive.cc/", "name": "StreamEast", "publisher": {"@id": "https://streameastlive.cc/#organization"}}, {"@type": "CollectionPage", "@id": "https://streameastlive.cc/formula-1-streams/#leaguepage", "url": "https://streameastlive.cc/formula-1-streams/", "name": "StreamEast Formula 1 Live Streams and Schedules", "description": "Watch Formula 1 live streams and access the full 2026 schedule on StreamEast. Get real-time fixtures, playoffs coverage, and fast HD Motorsport streaming.", "mainEntity": {"@id": "https://streameastlive.cc/formula-1-streams/#matchlist"}, "isPartOf": {"@id": "https://streameastlive.cc/#website"}, "about": {"@id": "https://streameastlive.cc/#organization"}}]}</script>
-<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://streameastlive.cc/formula-1-streams/#matchlist", "itemListElement": []}</script>
+<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://streameastlive.cc/formula-1-streams/#matchlist", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SportsEvent", "name": "Formula 1 2026 - Bahrain Test", "description": "Watch Formula 1 2026 - Bahrain Test live stream. FORMULA 1.", "startDate": "2026-02-11T10:40:00.000Z", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "isAccessibleForFree": true, "url": "https://streameastlive.cc/watch/?livestream=formula-1-2026-bahrain-test-f841a320", "image": ["https://streameastlive.cc/assets/streameast-logo.webp"], "organizer": {"@id": "https://streameastlive.cc/#organization"}, "sport": "Motor Sports"}}]}</script>
 
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -488,13 +488,13 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;">
+        <div id="live-list" style="display:none;" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head">
+            <div class="sec-head" style="border-bottom: 1px solid #333333;">
                 <h2 class="sec-title">
                     <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
                     Formula 1
@@ -502,7 +502,7 @@
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><div class="match-row"><div class="col-time"><span class="time-main">05:40 AM ET</span><span class="time-sub">Feb 11</span></div><div class="teams-wrapper"><div class="league-tag">MOTOR SPORTS</div><div class="team-name" style="justify-content:center; font-weight:600;">Formula 1 2026 - Bahrain Test</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">4d 1h 54m</span></div></div><div class="col-action"><button class="btn-notify" onclick="handleNotify(this)">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://streameastlive.cc/watch/?livestream=formula-1-2026-bahrain-test-f841a320')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><!-- L_SCHED_END -->
             </div>
         </div>
 
