@@ -9351,7 +9351,13 @@
         "Adil Kalyanpur": "assets/logos/upstreams/adil-kalyanpur.webp",
         "Oges Theyjo Jaya Prakash": "assets/logos/upstreams/oges-theyjo-jaya-prakash.webp",
         "Ishaque Eqbal": "assets/logos/upstreams/ishaque-eqbal.webp",
-        "Carl Holder": "assets/logos/upstreams/carl-holder.webp"
+        "Carl Holder": "assets/logos/upstreams/carl-holder.webp",
+        "Sampaio Correa FE": "assets/logos/upstreams/sampaio-correa-fe.webp",
+        "SV Transvaal": "assets/logos/upstreams/sv-transvaal.webp",
+        "SV Leo Victor": "assets/logos/upstreams/sv-leo-victor.webp",
+        "Barcelona SC Guayaquil": "assets/logos/upstreams/barcelona-sc-guayaquil.webp",
+        "Boavista": "assets/logos/upstreams/boavista.webp",
+        "Marc Andre Barriault": "assets/logos/upstreams/marc-andre-barriault.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10259,6 +10265,8 @@
         "1. Liga": "assets/logos/leagues/1-liga.webp",
         "Chennai, India, Qualifying": "assets/logos/leagues/chennai-india-qualifying.webp",
         "Champions League Americas, Group B": "assets/logos/leagues/champions-league-americas-group-b.webp",
-        "Pau, France, Qualifying": "assets/logos/leagues/pau-france-qualifying.webp"
+        "Pau, France, Qualifying": "assets/logos/leagues/pau-france-qualifying.webp",
+        "Brazil Carioca - Taca Guanabara": "assets/logos/leagues/brazil-carioca-taca-guanabara.webp",
+        "Tenerife 2, Spain, Qualifying": "assets/logos/leagues/tenerife-2-spain-qualifying.webp"
     }
 }
