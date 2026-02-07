@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import datetime
 
 # ==========================================
 # 1. CONFIGURATION
@@ -961,7 +962,7 @@ def main():
             vars_map = {
                 '{{NAME}}': name, 
                 '{{SPORT}}': parent_sport, 
-                '{{YEAR}}': "2025", 
+                '{{YEAR}}': str(datetime.datetime.now().year),
                 '{{DOMAIN}}': sett.get('domain', ''),
                 '{{SITE_TITLE}}': site_title_full  # <--- New Shortcode Added
             }
