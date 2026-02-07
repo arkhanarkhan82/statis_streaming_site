@@ -901,9 +901,9 @@
     "sys_status_dot_color": "#06a220",
     "sys_status_dot_size": "8",
     "footer_columns": "3",
-    "footer_show_disclaimer": true,
+    "footer_show_disclaimer": false,
     "footer_slot_1": "brand",
-    "footer_slot_2": "disclaimer",
+    "footer_slot_2": "empty",
     "footer_slot_3": "menu",
     "sys_status_bg_opacity": "0.1",
     "sys_status_bg_transparent": true,
@@ -975,7 +975,7 @@
     "league_intro": "Watch {{NAME}} live streams and access the full {{YEAR}} schedule on {{SITE_TITLE}}. Get real-time fixtures, playoffs coverage, and fast HD {{SPORT}} streaming.",
     "league_live_title": "Trending Live",
     "league_upcoming_prefix": "Upcoming",
-    "league_upcoming_suffix": ""
+    "league_upcoming_suffix": "Matches"
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
