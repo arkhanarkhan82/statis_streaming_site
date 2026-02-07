@@ -213,7 +213,7 @@
     "watch_server_active_bg": "#000000",
     "watch_server_text": "#000000",
     "id_wildcard": "",
-    "id_top_upcoming": "",
+    "id_top_upcoming": "schedule",
     "social_sidebar_bg": "#141414",
     "social_sidebar_border": "#333333",
     "social_btn_bg": "#222222",
