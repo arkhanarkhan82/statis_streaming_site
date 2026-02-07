@@ -719,20 +719,20 @@
     ],
     "footer_static": [
       {
-        "title": "Contact",
-        "url": "#"
+        "title": "Copyright Policy",
+        "url": "/copyright-policy/"
       },
       {
         "title": "Privacy Policy",
-        "url": "#"
+        "url": "/privacy"
       },
       {
         "title": "Terms & Conditions",
-        "url": "#"
+        "url": "/terms"
       },
       {
-        "title": "Copyright Policy",
-        "url": "/copyright-policy/"
+        "title": "Contact",
+        "url": "/contact"
       }
     ],
     "footer_leagues": [
