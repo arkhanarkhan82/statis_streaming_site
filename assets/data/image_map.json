@@ -9235,7 +9235,15 @@
         "Man Utd": "assets/logos/upstreams/man-utd.webp",
         "Peli-Karhut (W)": "assets/logos/upstreams/peli-karhut-w.webp",
         "Dewa United": "assets/logos/upstreams/dewa-united.webp",
-        "Borneo": "assets/logos/upstreams/borneo.webp"
+        "Borneo": "assets/logos/upstreams/borneo.webp",
+        "Georgi Georgiev": "assets/logos/upstreams/georgi-georgiev.webp",
+        "Alex Finkelstein": "assets/logos/upstreams/alex-finkelstein.webp",
+        "Diego Duran": "assets/logos/upstreams/diego-duran.webp",
+        "MeneLaos Efstathiou": "assets/logos/upstreams/menelaos-efstathiou.webp",
+        "Amar Huseinovic": "assets/logos/upstreams/amar-huseinovic.webp",
+        "Aleksa Krivokapic": "assets/logos/upstreams/aleksa-krivokapic.webp",
+        "Krish Arora": "assets/logos/upstreams/krish-arora.webp",
+        "Thai-Son Kwiatkowski": "assets/logos/upstreams/thai-son-kwiatkowski.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10132,6 +10140,7 @@
         "Poland - I League": "assets/logos/leagues/poland-i-league.webp",
         "SVNS, Women": "assets/logos/leagues/svns-women.webp",
         "Atp": "assets/logos/leagues/atp.webp",
-        "Stoiximan GBL": "assets/logos/leagues/stoiximan-gbl.webp"
+        "Stoiximan GBL": "assets/logos/leagues/stoiximan-gbl.webp",
+        "Dallas, USA, Qualifying": "assets/logos/leagues/dallas-usa-qualifying.webp"
     }
 }
