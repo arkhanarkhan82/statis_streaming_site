@@ -663,8 +663,23 @@
     "header": [
       {
         "title": "Schedule",
-        "url": "#",
+        "url": "/#schedule",
         "highlight": true
+      },
+      {
+        "title": "Features",
+        "url": "/#features",
+        "highlight": false
+      },
+      {
+        "title": "FAQs",
+        "url": "/#faqs",
+        "highlight": false
+      },
+      {
+        "title": "Who We Are",
+        "url": "/about",
+        "highlight": false
       }
     ],
     "hero": [
