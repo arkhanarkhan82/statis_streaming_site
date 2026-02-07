@@ -474,55 +474,8 @@
       "canonical_url": "https://streameast.com",
       "h1_align": "left"
     },
-    {
-      "id": "p_1766332109964",
-      "title": "No. #1 NFL Streaming",
-      "slug": "nfl",
-      "layout": "league",
-      "content": "<p>dgdgdgdd</p>",
-      "schemas": {
-        "live": false,
-        "upcoming": false,
-        "org": false,
-        "faq_list": []
-      },
-      "meta_title": "NFL Bite",
-      "meta_desc": "tfdhgdfgd"
-    },
-    {
-      "id": "p_1766335630920",
-      "title": "Streameast - #1 NBA Streaming Site",
-      "slug": "nba",
-      "layout": "league",
-      "content": "",
-      "schemas": {
-        "live": false,
-        "upcoming": false,
-        "org": false,
-        "faq_list": []
-      },
-      "meta_title": "dgdfgd",
-      "meta_desc": "dgdfgdgdgd"
-    },
-    {
-      "id": "p_1766500261942",
-      "title": "DMCA Policy",
-      "slug": "dmca",
-      "layout": "page",
-      "content": "<p>Welcome to&nbsp;<strong>Sportsurge</strong>, your go-to destination for live sports schedules and streaming links! We are dedicated to providing sports enthusiasts with the latest match schedules and access to freely available streaming links for major sporting events, including&nbsp;<strong><a href=\"https://sportsurge.shop/NCAA/\">NCAA</a>, NBA, Soccer, WWE, Boxing,&nbsp;<a href=\"https://sportsurge.shop/UFC/\">MMA</a>, F1, and more</strong>.</p>\n<h3><strong>Our Mission</strong></h3>\n<p>At&nbsp;<strong>Sportsurge</strong>, our goal is to help sports fans find the best free streaming options available on the internet. We understand the excitement of watching live games, and we strive to make it easier for users to access their favorite sports matches without hassle.</p>\n<h3><strong>How We Work</strong></h3>\n<p>We do&nbsp;<strong>not</strong>&nbsp;host or store any video content or streaming media on our website. Instead, we gather publicly available streaming links from third-party websites and embed them to share with our audience. Our platform functions as an aggregator, ensuring that sports lovers can conveniently find streams that are already freely accessible on the internet.</p>\n<h3><strong>Copyright &amp;&nbsp;<a href=\"https://sportsurge.shop/disclaimer/\">Disclaimer</a></strong></h3>\n<p>We&nbsp;<strong>strictly</strong>&nbsp;advise our users to watch matches through legal streaming platforms and avoid any copyrighted content. While we do not host any videos or streams ourselves, the links provided on our platform lead to third-party sources that may host the streams. If you have concerns regarding copyright materials, we recommend checking the&nbsp;<strong>embed link</strong>&nbsp;from the page's source code and reaching out to the original video hosting website for resolution.</p>\n<p>Additionally, any advertisements displayed inside the media player&nbsp;<strong>do not belong to us</strong>. The ad revenue generated within the video player is solely managed by the site that originally hosted the video.</p>\n<h3><strong>Your Responsibility</strong></h3>\n<p>By using&nbsp;<strong>Sportsurge</strong>, you acknowledge that we are not responsible for any copyright issues related to the embedded streams. We encourage all users to support official broadcasting platforms and watch their favorite sports through legitimate services whenever possible.</p>\n<p>For any inquiries, feel free to contact us. Enjoy the game, and stay updated with&nbsp;<strong><a href=\"https://sportsurge.shop/\">Sportsurge</a></strong>!&nbsp;</p>",
-      "schemas": {
-        "org": false,
-        "faq_list": [],
-        "website": false,
-        "faq": false,
-        "about": true
-      },
-      "meta_title": "DMCA Policy",
-      "meta_desc": "sdssdfs",
-      "meta_keywords": "",
-      "canonical_url": "",
-      "h1_align": "left"
-    },
+   
+   
     {
       "id": "p_1766569719411",
       "title": "Watch Now",
