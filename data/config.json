@@ -2,8 +2,8 @@
   "site_settings": {
     "sitemap_enabled": true,
     "sitemap_include_leagues": true,
-    "sitemap_static_pages": "about, contact, dmca, privacy-policy",
-    "sitemap_lastmod_manual": "2026-01-19",
+    "sitemap_static_pages": "about, contact, privacy-policy",
+    "sitemap_lastmod_manual": "2026-02-07",
     "ga4_id": "G-VK24F3EX1K",
     "title_part_1": "Stream",
     "title_part_2": "East",
