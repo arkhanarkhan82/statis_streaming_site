@@ -9153,7 +9153,9 @@
         "Plock": "assets/logos/upstreams/plock.webp",
         "Oss": "assets/logos/upstreams/oss.webp",
         "Northhorn-Lingen": "assets/logos/upstreams/northhorn-lingen.webp",
-        "Anton Shepp": "assets/logos/upstreams/anton-shepp.webp"
+        "Anton Shepp": "assets/logos/upstreams/anton-shepp.webp",
+        "Gornyak-UGMK": "assets/logos/streamed/gornyak-ugmk.webp",
+        "Dinamo St. Petersburg": "assets/logos/streamed/dinamo-st-petersburg.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
