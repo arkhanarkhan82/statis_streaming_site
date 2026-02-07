@@ -225,8 +225,8 @@
     "show_more_btn_hover_bg": "#e50914",
     "show_more_btn_hover_text": "#ffffff",
     "text_section_suffix": "",
-    "league_live_title": "",
-    "league_upcoming_prefix": "",
+    "league_live_title": "Trending Live",
+    "league_upcoming_prefix": "Upcoming",
     "league_upcoming_suffix": "",
     "match_row_radius": "10px",
     "social_btn_radius": "4px",
@@ -987,8 +987,8 @@
     "excluded": "home, about, contact, terms, privacy, copyright-policy",
     "league_h1": "{{SITE_TITLE}} {{NAME}} Live Streams and Schedules",
     "league_intro": "Watch {{NAME}} live streams and access the full {{YEAR}} schedule on {{SITE_TITLE}}. Get real-time fixtures, playoffs coverage, and fast HD {{SPORT}} streaming.",
-    "league_live_title": "",
-    "league_upcoming_prefix": "",
+    "league_live_title": "Trending Live",
+    "league_upcoming_prefix": "Upcoming",
     "league_upcoming_suffix": ""
   },
   "theme_page": {
