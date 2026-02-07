@@ -9155,7 +9155,9 @@
         "Northhorn-Lingen": "assets/logos/upstreams/northhorn-lingen.webp",
         "Anton Shepp": "assets/logos/upstreams/anton-shepp.webp",
         "Gornyak-UGMK": "assets/logos/streamed/gornyak-ugmk.webp",
-        "Dinamo St. Petersburg": "assets/logos/streamed/dinamo-st-petersburg.webp"
+        "Dinamo St. Petersburg": "assets/logos/streamed/dinamo-st-petersburg.webp",
+        "Marco Trungelliti": "assets/logos/upstreams/marco-trungelliti.webp",
+        "Tung-Lin Wu": "assets/logos/upstreams/tung-lin-wu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10039,6 +10041,7 @@
         "ICC Men's T20 World Cup, Group B": "assets/logos/leagues/icc-mens-t20-world-cup-group-b.webp",
         "Davis Cup World Group I Teams": "assets/logos/leagues/davis-cup-world-group-i-teams.webp",
         "Asobal": "assets/logos/leagues/asobal.webp",
-        "AFC Champions League": "assets/logos/leagues/afc-champions-league.webp"
+        "AFC Champions League": "assets/logos/leagues/afc-champions-league.webp",
+        "Liga AUF Uruguaya, Apertura": "assets/logos/leagues/liga-auf-uruguaya-apertura.webp"
     }
 }
