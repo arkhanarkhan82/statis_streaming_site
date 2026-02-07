@@ -242,19 +242,19 @@
       "NFL": {
         "score": 100,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "NBA": {
         "score": 99,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "NCAA": {
         "score": 98,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "MLB": {
