@@ -242,73 +242,73 @@
       "NFL": {
         "score": 100,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "NBA": {
         "score": 99,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "NCAA": {
         "score": 98,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "MLB": {
         "score": 97,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "NHL": {
         "score": 96,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "UFC": {
         "score": 95,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Premier League": {
         "score": 90,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Champions League": {
         "score": 89,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Formula 1": {
         "score": 88,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "MLS": {
         "score": 87,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Africa Cup of Nations": {
         "score": 86,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "La Liga": {
         "score": 85,
         "isLeague": true,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Liga MX": {
@@ -320,7 +320,7 @@
       "Football": {
         "score": 79,
         "isLeague": false,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Basketball": {
@@ -344,13 +344,13 @@
       "Soccer": {
         "score": 60,
         "isLeague": false,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Tennis": {
         "score": 40,
         "isLeague": false,
-        "hasLink": true,
+        "hasLink": false,
         "isHidden": false
       },
       "Golf": {
