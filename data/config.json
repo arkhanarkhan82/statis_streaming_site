@@ -260,61 +260,61 @@
       "MLB": {
         "score": 97,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "NHL": {
         "score": 96,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "UFC": {
         "score": 95,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Premier League": {
         "score": 90,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Champions League": {
         "score": 89,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Formula 1": {
         "score": 88,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "MLS": {
         "score": 87,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Africa Cup of Nations": {
         "score": 86,
-        "isLeague": true,
+        "isLeague": false,
         "hasLink": false,
         "isHidden": false
       },
       "La Liga": {
         "score": 85,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Liga MX": {
         "score": 84,
         "isLeague": true,
-        "hasLink": false,
+        "hasLink": true,
         "isHidden": false
       },
       "Football": {
