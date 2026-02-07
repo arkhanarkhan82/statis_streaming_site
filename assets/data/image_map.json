@@ -9218,7 +9218,13 @@
         "Scotland Cricket": "assets/logos/streamed/scotland-cricket.webp",
         "West Indies Cricket": "assets/logos/streamed/west-indies-cricket.webp",
         "India Cricket": "assets/logos/streamed/india-cricket.webp",
-        "USA Cricket": "assets/logos/streamed/usa-cricket.webp"
+        "USA Cricket": "assets/logos/streamed/usa-cricket.webp",
+        "Iliyan Radulov": "assets/logos/upstreams/iliyan-radulov.webp",
+        "Alexander Vasilev": "assets/logos/upstreams/alexander-vasilev.webp",
+        "Dragos Nicolae Madaras": "assets/logos/upstreams/dragos-nicolae-madaras.webp",
+        "Dillon Blake": "assets/logos/upstreams/dillon-blake.webp",
+        "Justin Barki": "assets/logos/upstreams/justin-barki.webp",
+        "Kwami Stanislas Dussey": "assets/logos/upstreams/kwami-stanislas-dussey.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
