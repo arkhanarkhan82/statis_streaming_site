@@ -7,10 +7,9 @@
     "ga4_id": "G-CNHF08NBNZ",
     "title_part_1": "Stream",
     "title_part_2": "East",
-    "custom_js": "  <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-JXQGYRV7FE\"></script>\n  <script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-JXQGYRV7FE');\n  </script>",
+    "custom_js": "",
     "custom_meta_tags": [
-      "<meta name=\"google-site-verification\" content=\"12345\" />",
-      "<meta name=\"ar-khan-verify\" content=\"12345\" />"
+      "<meta name=\"google-site-verification\" content=\"C7MbhV3eAjVUwCdk-U2bVA3Vnwq7JPi7szIM3Q_wg2A\" />"
     ],
     "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://totalsportek.top/sitemap.xml",
     "domain": "streameastlive.cc",
