@@ -228,7 +228,7 @@
     "text_section_suffix": "",
     "league_live_title": "Trending Live",
     "league_upcoming_prefix": "Upcoming",
-    "league_upcoming_suffix": "",
+    "league_upcoming_suffix": "Matches",
     "match_row_radius": "10px",
     "social_btn_radius": "4px",
     "back_to_top_border_color": "#000000",
@@ -973,9 +973,9 @@
     "excluded": "home, about, contact, terms, privacy, copyright-policy",
     "league_h1": "{{SITE_TITLE}} {{NAME}} Live Streams and Schedules",
     "league_intro": "Watch {{NAME}} live streams and access the full {{YEAR}} schedule on {{SITE_TITLE}}. Get real-time fixtures, playoffs coverage, and fast HD {{SPORT}} streaming.",
-    "league_live_title": "Trending Live",
-    "league_upcoming_prefix": "Upcoming",
-    "league_upcoming_suffix": "Matches"
+    "league_live_title": "",
+    "league_upcoming_prefix": "",
+    "league_upcoming_suffix": ""
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
@@ -1121,9 +1121,9 @@
     "display_hero": "block",
     "static_h1_align": "left",
     "footer_columns": "3",
-    "footer_show_disclaimer": true,
+    "footer_show_disclaimer": false,
     "footer_slot_1": "brand",
-    "footer_slot_2": "disclaimer",
+    "footer_slot_2": "empty",
     "footer_slot_3": "menu",
     "sys_status_bg_opacity": "0.1",
     "sys_status_bg_transparent": false,
