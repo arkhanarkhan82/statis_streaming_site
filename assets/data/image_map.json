@@ -9339,7 +9339,14 @@
         "Valadares Gaia (W)": "assets/logos/upstreams/valadares-gaia-w.webp",
         "Sai Karteek Reddy Ganta": "assets/logos/upstreams/sai-karteek-reddy-ganta.webp",
         "Club Atl\u00e9tico Grau": "assets/logos/upstreams/club-atl\u00e9tico-grau.webp",
-        "Siddhant Banthia": "assets/logos/upstreams/siddhant-banthia.webp"
+        "Siddhant Banthia": "assets/logos/upstreams/siddhant-banthia.webp",
+        "SV Broki": "assets/logos/upstreams/sv-broki.webp",
+        "Hamburgo": "assets/logos/upstreams/hamburgo.webp",
+        "BC Beroe SZ": "assets/logos/upstreams/bc-beroe-sz.webp",
+        "Esperance Sportive Pully": "assets/logos/upstreams/esperance-sportive-pully.webp",
+        "Branko Djuric": "assets/logos/upstreams/branko-djuric.webp",
+        "Pierre Antoine Faut": "assets/logos/upstreams/pierre-antoine-faut.webp",
+        "Leo Raquillet": "assets/logos/upstreams/leo-raquillet.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10245,6 +10252,8 @@
         "Czech Chance Liga": "assets/logos/leagues/czech-chance-liga.webp",
         "PFL Dubai: Nurmagomedov vs. Davis": "assets/logos/leagues/pfl-dubai-nurmagomedov-vs-davis.webp",
         "1. Liga": "assets/logos/leagues/1-liga.webp",
-        "Chennai, India, Qualifying": "assets/logos/leagues/chennai-india-qualifying.webp"
+        "Chennai, India, Qualifying": "assets/logos/leagues/chennai-india-qualifying.webp",
+        "Champions League Americas, Group B": "assets/logos/leagues/champions-league-americas-group-b.webp",
+        "Pau, France, Qualifying": "assets/logos/leagues/pau-france-qualifying.webp"
     }
 }
