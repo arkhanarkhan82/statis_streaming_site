@@ -9317,7 +9317,15 @@
         "BC Straseni": "assets/logos/upstreams/bc-straseni.webp",
         "Rowland Phillips": "assets/logos/upstreams/rowland-phillips.webp",
         "Franco Roncadelli": "assets/logos/upstreams/franco-roncadelli.webp",
-        "Edgars Skr\u012bvers": "assets/logos/upstreams/edgars-skr\u012bvers.webp"
+        "Edgars Skr\u012bvers": "assets/logos/upstreams/edgars-skr\u012bvers.webp",
+        "M. Boleslav": "assets/logos/upstreams/m-boleslav.webp",
+        "Kk Ulcinjska Rivijera Ulcinj": "assets/logos/upstreams/kk-ulcinjska-rivijera-ulcinj.webp",
+        "Zkk Proleter Novi Sad": "assets/logos/upstreams/zkk-proleter-novi-sad.webp",
+        "Bagdala": "assets/logos/upstreams/bagdala.webp",
+        "Lovcen Cetinje": "assets/logos/upstreams/lovcen-cetinje.webp",
+        "Gustavo Heide": "assets/logos/upstreams/gustavo-heide.webp",
+        "Amru  Magomedov": "assets/logos/upstreams/amru-magomedov.webp",
+        "Kolton  Englund": "assets/logos/upstreams/kolton-englund.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10221,6 +10229,7 @@
         "Cyprus League 2": "assets/logos/leagues/cyprus-league-2.webp",
         "Brisbane 2, Australia, Qualifying": "assets/logos/leagues/brisbane-2-australia-qualifying.webp",
         "Czech Chance Liga": "assets/logos/leagues/czech-chance-liga.webp",
-        "PFL Dubai: Nurmagomedov vs. Davis": "assets/logos/leagues/pfl-dubai-nurmagomedov-vs-davis.webp"
+        "PFL Dubai: Nurmagomedov vs. Davis": "assets/logos/leagues/pfl-dubai-nurmagomedov-vs-davis.webp",
+        "1. Liga": "assets/logos/leagues/1-liga.webp"
     }
 }
