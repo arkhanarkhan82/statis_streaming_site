@@ -600,6 +600,25 @@
       "meta_desc": "Copyright policy and DMCA takedown procedure for StreamEast.",
       "meta_keywords": "",
       "canonical_url": ""
+    },
+    {
+      "id": "p_1770449551214",
+      "title": "Contact Us – Streameast",
+      "slug": "contact",
+      "layout": "page",
+      "content": "<p class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Welcome to the Streameast Support Center.</span></strong></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">We value our community and are committed to providing the best user experience possible. Whether you have a suggestion for our development team, a business inquiry, or a legal concern, we are here to listen.</span></p>\n<h3 class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">How Can We Help?</span></h3>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">To ensure your inquiry reaches the right department, please review the categories below before emailing us:</span></p>\n<p class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">1. Technical Support &amp; Feedback</span></strong><br class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Encountering a broken page? Have a suggestion for a new feature? We are constantly improving our search algorithm and interface. Please let us know if you spot any bugs or user interface issues.</span></p>\n<p class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">2. Advertising &amp; Partnership</span></strong><br class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Streameast offers a unique platform for advertisers looking to reach a dedicated sports audience. If you are interested in banner placement or partnership opportunities, please mention \"Advertising\" in your subject line.</span></p>\n<p class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">3. Content Removal (DMCA)</span></strong><br class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">If you are a rights holder and wish to submit a takedown request regarding a specific link indexed on our site, please refer to our&nbsp;</span><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Copyright Policy</span></strong><span class=\"ng-star-inserted\">&nbsp;page for the required format. Improperly formatted requests may be delayed.</span></p>\n<h3 class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Reach Out to Us</span></h3>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">We do not use social media for support to maintain user privacy and data security. The only official way to contact the Streameast administration is via email.</span></p>\n<p class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Official Email: </span></strong><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">admin@streameastlive.cc</span></strong></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Please Note:</span></p>\n<ul class=\"ng-star-inserted\">\n<li class=\"ng-star-inserted\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">We aim to respond to all legitimate inquiries within&nbsp;</span><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">24-48 hours</span></strong><span class=\"ng-star-inserted\">.</span></p>\n</li>\n<li class=\"ng-star-inserted\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Please do not send spam or duplicate emails, as this may result in your address being blacklisted by our server.</span></p>\n</li>\n</ul>",
+      "schemas": {
+        "org": true,
+        "faq_list": [],
+        "website": true,
+        "about": false,
+        "faq": false
+      },
+      "h1_align": "left",
+      "meta_title": "Contact Us – Streameast",
+      "meta_desc": "",
+      "meta_keywords": "",
+      "canonical_url": ""
     }
   ],
   "menus": {
