@@ -9185,7 +9185,31 @@
         "Karol Filar": "assets/logos/upstreams/karol-filar.webp",
         "Jesper De Jong": "assets/logos/upstreams/jesper-de-jong.webp",
         "Tsung-Hao Huang": "assets/logos/upstreams/tsung-hao-huang.webp",
-        "Eero Vasa": "assets/logos/upstreams/eero-vasa.webp"
+        "Eero Vasa": "assets/logos/upstreams/eero-vasa.webp",
+        "FC Rapperswil-Jona": "assets/logos/upstreams/fc-rapperswil-jona.webp",
+        "Znicz Pruszkow": "assets/logos/upstreams/znicz-pruszkow.webp",
+        "Wieczysta Krakow": "assets/logos/upstreams/wieczysta-krakow.webp",
+        "Mied\u017a Legnica": "assets/logos/upstreams/mied\u017a-legnica.webp",
+        "Pogo\u0144 Grodzisk Mazowiecki": "assets/logos/upstreams/pogo\u0144-grodzisk-mazowiecki.webp",
+        "IDK Gipuzkoa": "assets/logos/upstreams/idk-gipuzkoa.webp",
+        "Cb Jairis": "assets/logos/upstreams/cb-jairis.webp",
+        "Monbus Obradoiro": "assets/logos/upstreams/monbus-obradoiro.webp",
+        "Marconi Stallions": "assets/logos/upstreams/marconi-stallions.webp",
+        "APIA Leichhardt": "assets/logos/upstreams/apia-leichhardt.webp",
+        "Sunshine Coast Wanderers (W)": "assets/logos/upstreams/sunshine-coast-wanderers-w.webp",
+        "Palestino": "assets/logos/upstreams/palestino.webp",
+        "Barrow AFC": "assets/logos/upstreams/barrow-afc.webp",
+        "James Watt": "assets/logos/upstreams/james-watt.webp",
+        "Mirza Basic": "assets/logos/upstreams/mirza-basic.webp",
+        "Caixa Brasilia Basquete": "assets/logos/upstreams/caixa-brasilia-basquete.webp",
+        "BC Jonava Hipocredit": "assets/logos/upstreams/bc-jonava-hipocredit.webp",
+        "CF Pachuca": "assets/logos/upstreams/cf-pachuca.webp",
+        "FC Ju\u00e1rez": "assets/logos/upstreams/fc-ju\u00e1rez.webp",
+        "LD Alajuelense": "assets/logos/upstreams/ld-alajuelense.webp",
+        "NWS Spirit": "assets/logos/upstreams/nws-spirit.webp",
+        "Sutherland Sharks": "assets/logos/upstreams/sutherland-sharks.webp",
+        "St George Saints": "assets/logos/upstreams/st-george-saints.webp",
+        "Wollongong Wolves": "assets/logos/upstreams/wollongong-wolves.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10077,6 +10101,8 @@
         "J2/J3 League, West A": "assets/logos/leagues/j2j3-league-west-a.webp",
         "J2/J3 League, West B": "assets/logos/leagues/j2j3-league-west-b.webp",
         "Copa Chile, Group D": "assets/logos/leagues/copa-chile-group-d.webp",
-        "Davis Cup Double Matches": "assets/logos/leagues/davis-cup-double-matches.webp"
+        "Davis Cup Double Matches": "assets/logos/leagues/davis-cup-double-matches.webp",
+        "Poland - Ekstraklasa": "assets/logos/leagues/poland-ekstraklasa.webp",
+        "Poland - I League": "assets/logos/leagues/poland-i-league.webp"
     }
 }
