@@ -4,7 +4,7 @@
     "sitemap_include_leagues": true,
     "sitemap_static_pages": "about, contact, privacy, terms, copyright-policy",
     "sitemap_lastmod_manual": "2026-02-07",
-    "ga4_id": "G-VK24F3EX1K",
+    "ga4_id": "G-CNHF08NBNZ",
     "title_part_1": "Stream",
     "title_part_2": "East",
     "custom_js": "  <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-JXQGYRV7FE\"></script>\n  <script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-JXQGYRV7FE');\n  </script>",
