@@ -499,44 +499,45 @@
         "url": "#"
       },
       {
-        "title": "FAQs",
-        "url": "/#faqs"
+        "title": "Features",
+        "url": "#",
+        "highlight": false
       },
       {
-        "title": "How we comeback",
-        "url": "/#comeback",
+        "title": "FAQ",
+        "url": "#",
+        "highlight": false
+      },
+      {
+        "title": "Who We Are",
+        "url": "#",
         "highlight": true
       }
     ],
     "hero": [
       {
-        "title": "⚾ MLB",
-        "url": "#"
+        "title": "🏈 NFL",
+        "url": "/nfl-streams/"
       },
       {
         "title": "🏀 NBA",
-        "url": "/nba"
+        "url": "/nba-streams/"
+      },
+      {
+        "title": "🏆 NCAA",
+        "url": "/ncaa-streams/"
+      },
+      {
+        "title": "⚾ MLB",
+        "url": "/mlb-streams/"
+      },
+      {
+        "title": "🏒 NHL",
+        "url": "/nhl-streams/"
       },
       {
         "title": "🥊 UFC",
-        "url": "/#ufc",
-        "highlight": false
-      },
-      {
-        "title": "ddddd",
-        "url": "/"
-      },
-      {
-        "title": "ffffff",
-        "url": "/"
-      },
-      {
-        "title": "fffffff",
-        "url": "/"
-      },
-      {
-        "title": "gffdffff",
-        "url": "/"
+        "url": "/ufc-streams/"
       }
     ],
     "footer_links": [
@@ -547,17 +548,16 @@
     ],
     "footer_static": [
       {
-        "title": "DMCA",
-        "url": "/dmca"
+        "title": "Contact",
+        "url": "#"
       },
       {
-        "title": "Contact",
-        "url": "/contact"
+        "title": "Privacy Policy",
+        "url": "#"
       },
       {
         "title": "Terms & Conditions",
-        "url": "/terms",
-        "highlight": false
+        "url": "#"
       }
     ],
     "footer_leagues": [
