@@ -16,8 +16,8 @@
     "domain": "streameastlive.cc",
     "logo_url": "/assets/streameast-logo.webp",
     "favicon_url": "/assets/streameast.png",
-    "footer_copyright": "Copyright",
-    "footer_disclaimer": "Hello world",
+    "footer_copyright": "© 2026 StreamEast — Live sports streaming platform for major leagues and global tournaments in HD.",
+    "footer_disclaimer": "",
     "target_country": "US",
     "param_live": "streams",
     "param_info": "livestream"
