@@ -9209,7 +9209,8 @@
         "NWS Spirit": "assets/logos/upstreams/nws-spirit.webp",
         "Sutherland Sharks": "assets/logos/upstreams/sutherland-sharks.webp",
         "St George Saints": "assets/logos/upstreams/st-george-saints.webp",
-        "Wollongong Wolves": "assets/logos/upstreams/wollongong-wolves.webp"
+        "Wollongong Wolves": "assets/logos/upstreams/wollongong-wolves.webp",
+        "USA 7s": "assets/logos/upstreams/usa-7s.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10103,6 +10104,7 @@
         "Copa Chile, Group D": "assets/logos/leagues/copa-chile-group-d.webp",
         "Davis Cup Double Matches": "assets/logos/leagues/davis-cup-double-matches.webp",
         "Poland - Ekstraklasa": "assets/logos/leagues/poland-ekstraklasa.webp",
-        "Poland - I League": "assets/logos/leagues/poland-i-league.webp"
+        "Poland - I League": "assets/logos/leagues/poland-i-league.webp",
+        "SVNS, Women": "assets/logos/leagues/svns-women.webp"
     }
 }
