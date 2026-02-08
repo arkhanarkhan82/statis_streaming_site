@@ -9450,7 +9450,28 @@
         "I Wen Wan": "assets/logos/upstreams/i-wen-wan.webp",
         "Rianna Alame": "assets/logos/upstreams/rianna-alame.webp",
         "Leilany Ipunesso": "assets/logos/upstreams/leilany-ipunesso.webp",
-        "Xiaoyan Xue": "assets/logos/upstreams/xiaoyan-xue.webp"
+        "Xiaoyan Xue": "assets/logos/upstreams/xiaoyan-xue.webp",
+        "Twente (W)": "assets/logos/upstreams/twente-w.webp",
+        "NK Celje": "assets/logos/upstreams/nk-celje.webp",
+        "Zlin": "assets/logos/upstreams/zlin.webp",
+        "Sporting Cristal": "assets/logos/upstreams/sporting-cristal.webp",
+        "Glasgow City (W)": "assets/logos/upstreams/glasgow-city-w.webp",
+        "US Livorno 1915": "assets/logos/upstreams/us-livorno-1915.webp",
+        "Police Rwanda": "assets/logos/upstreams/police-rwanda.webp",
+        "L\u00f6wen Braunschweig": "assets/logos/upstreams/l\u00f6wen-braunschweig.webp",
+        "Juventud de Las Piedras": "assets/logos/upstreams/juventud-de-las-piedras.webp",
+        "Cerro Largo": "assets/logos/upstreams/cerro-largo.webp",
+        "Nublense": "assets/logos/upstreams/nublense.webp",
+        "Cobreloa": "assets/logos/upstreams/cobreloa.webp",
+        "Club Deportes Antofagasta": "assets/logos/upstreams/club-deportes-antofagasta.webp",
+        "Chrobry Glogow": "assets/logos/upstreams/chrobry-glogow.webp",
+        "MKS Kalisz": "assets/logos/upstreams/mks-kalisz.webp",
+        "Sara Lanca": "assets/logos/upstreams/sara-lanca.webp",
+        "KPR Ostrovia Ostrow": "assets/logos/upstreams/kpr-ostrovia-ostrow.webp",
+        "MMTS Kwidzyn": "assets/logos/upstreams/mmts-kwidzyn.webp",
+        "Sravya Shivani Chilakalapudi": "assets/logos/upstreams/sravya-shivani-chilakalapudi.webp",
+        "Daria Egorova": "assets/logos/upstreams/daria-egorova.webp",
+        "Shruti Ahlawat": "assets/logos/upstreams/shruti-ahlawat.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10367,6 +10388,9 @@
         "Bulgarian Cup": "assets/logos/leagues/bulgarian-cup.webp",
         "Denmark - SuperLeague": "assets/logos/leagues/denmark-superleague.webp",
         "Doha, Qatar": "assets/logos/leagues/doha-qatar.webp",
-        "Oeiras 1, Portugal, Qualifying": "assets/logos/leagues/oeiras-1-portugal-qualifying.webp"
+        "Oeiras 1, Portugal, Qualifying": "assets/logos/leagues/oeiras-1-portugal-qualifying.webp",
+        "Copa Chile, Group C": "assets/logos/leagues/copa-chile-group-c.webp",
+        "WTA - Doha (QAT)": "assets/logos/leagues/wta-doha-qat.webp",
+        "Poland - SuperLeague": "assets/logos/leagues/poland-superleague.webp"
     }
 }
