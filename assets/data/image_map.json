@@ -9577,7 +9577,9 @@
         "Novipi\u00f9 Monferrato Basket": "assets/logos/upstreams/novipi\u00f9-monferrato-basket.webp",
         "Kk Primorje Herceg Novi 1945": "assets/logos/upstreams/kk-primorje-herceg-novi-1945.webp",
         "David Goffin": "assets/logos/upstreams/david-goffin.webp",
-        "Nikolaos Koutroubis": "assets/logos/upstreams/nikolaos-koutroubis.webp"
+        "Nikolaos Koutroubis": "assets/logos/upstreams/nikolaos-koutroubis.webp",
+        "Olympic Safi": "assets/logos/upstreams/olympic-safi.webp",
+        "Kk Susanj": "assets/logos/upstreams/kk-susanj.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10508,6 +10510,9 @@
         "Chennai, India": "assets/logos/leagues/chennai-india.webp",
         "Brisbane 2, Australia": "assets/logos/leagues/brisbane-2-australia.webp",
         "CAF Confederations Cup, Group A": "assets/logos/leagues/caf-confederations-cup-group-a.webp",
-        "Pau, France": "assets/logos/leagues/pau-france.webp"
+        "Pau, France": "assets/logos/leagues/pau-france.webp",
+        "Dallas, USA": "assets/logos/leagues/dallas-usa.webp",
+        "Rotterdam, Netherlands": "assets/logos/leagues/rotterdam-netherlands.webp",
+        "Tenerife 2, Spain": "assets/logos/leagues/tenerife-2-spain.webp"
     }
 }
