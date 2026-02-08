@@ -9511,7 +9511,19 @@
         "En-Shuo Liang": "assets/logos/upstreams/en-shuo-liang.webp",
         "Helena Stevic": "assets/logos/upstreams/helena-stevic.webp",
         "Amelie Justine Hejtmanek": "assets/logos/upstreams/amelie-justine-hejtmanek.webp",
-        "Denisa Zoldakova": "assets/logos/upstreams/denisa-zoldakova.webp"
+        "Denisa Zoldakova": "assets/logos/upstreams/denisa-zoldakova.webp",
+        "Kataja Basket Talents": "assets/logos/upstreams/kataja-basket-talents.webp",
+        "Puhu Junorit": "assets/logos/upstreams/puhu-junorit.webp",
+        "FC Seoul": "assets/logos/upstreams/fc-seoul.webp",
+        "Shanghai Shenhua": "assets/logos/upstreams/shanghai-shenhua.webp",
+        "Tractor Sazi Tabriz": "assets/logos/upstreams/tractor-sazi-tabriz.webp",
+        "Al Sadd Doha": "assets/logos/upstreams/al-sadd-doha.webp",
+        "Al Gharafa": "assets/logos/upstreams/al-gharafa.webp",
+        "Agustinos Alicante": "assets/logos/upstreams/agustinos-alicante.webp",
+        "Sesi Franca Basquete": "assets/logos/upstreams/sesi-franca-basquete.webp",
+        "Gangwon": "assets/logos/upstreams/gangwon.webp",
+        "Shanghai Port": "assets/logos/upstreams/shanghai-port.webp",
+        "Ulsan HD": "assets/logos/upstreams/ulsan-hd.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10433,6 +10445,9 @@
         "WTA - Doha (QAT)": "assets/logos/leagues/wta-doha-qat.webp",
         "Poland - SuperLeague": "assets/logos/leagues/poland-superleague.webp",
         "Spain - LEB Oro": "assets/logos/leagues/spain-leb-oro.webp",
-        "Cricket T20 World Cup": "assets/logos/leagues/cricket-t20-world-cup.webp"
+        "Cricket T20 World Cup": "assets/logos/leagues/cricket-t20-world-cup.webp",
+        "AFC Champions League Elite, East Region": "assets/logos/leagues/afc-champions-league-elite-east-region.webp",
+        "AFC - Champions League - East": "assets/logos/leagues/afc-champions-league-east.webp",
+        "Champions League Americas, Group D": "assets/logos/leagues/champions-league-americas-group-d.webp"
     }
 }
