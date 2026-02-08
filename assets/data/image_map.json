@@ -9593,7 +9593,14 @@
         "Euan McIntosh": "assets/logos/upstreams/euan-mcintosh.webp",
         "Vanesa Sulcova": "assets/logos/upstreams/vanesa-sulcova.webp",
         "Nela Linhartova": "assets/logos/upstreams/nela-linhartova.webp",
-        "Vit Kop\u0159iva": "assets/logos/upstreams/vit-kop\u0159iva.webp"
+        "Vit Kop\u0159iva": "assets/logos/upstreams/vit-kop\u0159iva.webp",
+        "Stal Rzeszow": "assets/logos/upstreams/stal-rzeszow.webp",
+        "Vejle BK": "assets/logos/upstreams/vejle-bk.webp",
+        "Sao Jose RS": "assets/logos/upstreams/sao-jose-rs.webp",
+        "Consultants Desamparados": "assets/logos/upstreams/consultants-desamparados.webp",
+        "Luka Mrsic": "assets/logos/upstreams/luka-mrsic.webp",
+        "Qinwen Zheng": "assets/logos/upstreams/qinwen-zheng.webp",
+        "Damir D\u017eumhur": "assets/logos/upstreams/damir-d\u017eumhur.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10528,6 +10535,8 @@
         "Dallas, USA": "assets/logos/leagues/dallas-usa.webp",
         "Rotterdam, Netherlands": "assets/logos/leagues/rotterdam-netherlands.webp",
         "Tenerife 2, Spain": "assets/logos/leagues/tenerife-2-spain.webp",
-        "Chile Liga de Primera": "assets/logos/leagues/chile-liga-de-primera.webp"
+        "Chile Liga de Primera": "assets/logos/leagues/chile-liga-de-primera.webp",
+        "Germany Am. - BundesLeague (W)": "assets/logos/leagues/germany-am-bundesleague-w.webp",
+        "Brazil - Gaucho Superbet - Serie A1 - Playoff": "assets/logos/leagues/brazil-gaucho-superbet-serie-a1-playoff.webp"
     }
 }
