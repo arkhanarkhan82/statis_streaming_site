@@ -9537,7 +9537,9 @@
         "Madrid C W": "assets/logos/upstreams/madrid-c-w.webp",
         "Dep La Coruna W": "assets/logos/upstreams/dep-la-coruna-w.webp",
         "Aneta Laboutkova": "assets/logos/upstreams/aneta-laboutkova.webp",
-        "MOL Esztergom KC": "assets/logos/upstreams/mol-esztergom-kc.webp"
+        "MOL Esztergom KC": "assets/logos/upstreams/mol-esztergom-kc.webp",
+        "Raphael Calzi": "assets/logos/upstreams/raphael-calzi.webp",
+        "Karine Marion Job": "assets/logos/upstreams/karine-marion-job.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10463,6 +10465,8 @@
         "AFC Champions League Elite, East Region": "assets/logos/leagues/afc-champions-league-elite-east-region.webp",
         "AFC - Champions League - East": "assets/logos/leagues/afc-champions-league-east.webp",
         "Champions League Americas, Group D": "assets/logos/leagues/champions-league-americas-group-d.webp",
-        "Slovenia Prva Liga": "assets/logos/leagues/slovenia-prva-liga.webp"
+        "Slovenia Prva Liga": "assets/logos/leagues/slovenia-prva-liga.webp",
+        "WTA Doha - Quatar Total Open": "assets/logos/leagues/wta-doha-quatar-total-open.webp",
+        "Chennai, India": "assets/logos/leagues/chennai-india.webp"
     }
 }
