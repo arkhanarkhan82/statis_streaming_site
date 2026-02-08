@@ -9526,7 +9526,13 @@
         "Ulsan HD": "assets/logos/upstreams/ulsan-hd.webp",
         "Asem Chisinau (W)": "assets/logos/upstreams/asem-chisinau-w.webp",
         "Basarabeasca (W)": "assets/logos/upstreams/basarabeasca-w.webp",
-        "Kielce": "assets/logos/upstreams/kielce.webp"
+        "Kielce": "assets/logos/upstreams/kielce.webp",
+        "Dukla Prague": "assets/logos/upstreams/dukla-prague.webp",
+        "Karim Ibrahim": "assets/logos/upstreams/karim-ibrahim.webp",
+        "Nicholas Campbell": "assets/logos/upstreams/nicholas-campbell.webp",
+        "Kristijan Janev": "assets/logos/upstreams/kristijan-janev.webp",
+        "Tina Manescu": "assets/logos/upstreams/tina-manescu.webp",
+        "Kim Chiarello": "assets/logos/upstreams/kim-chiarello.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10451,6 +10457,7 @@
         "Cricket T20 World Cup": "assets/logos/leagues/cricket-t20-world-cup.webp",
         "AFC Champions League Elite, East Region": "assets/logos/leagues/afc-champions-league-elite-east-region.webp",
         "AFC - Champions League - East": "assets/logos/leagues/afc-champions-league-east.webp",
-        "Champions League Americas, Group D": "assets/logos/leagues/champions-league-americas-group-d.webp"
+        "Champions League Americas, Group D": "assets/logos/leagues/champions-league-americas-group-d.webp",
+        "Slovenia Prva Liga": "assets/logos/leagues/slovenia-prva-liga.webp"
     }
 }
