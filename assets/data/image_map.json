@@ -9572,7 +9572,11 @@
         "Nyiregyh\u00e1za Spartacus": "assets/logos/upstreams/nyiregyh\u00e1za-spartacus.webp",
         "Mitsuki Wei Kang Leong": "assets/logos/upstreams/mitsuki-wei-kang-leong.webp",
         "S D Prajwal Dev": "assets/logos/upstreams/s-d-prajwal-dev.webp",
-        "Zach Stephens": "assets/logos/upstreams/zach-stephens.webp"
+        "Zach Stephens": "assets/logos/upstreams/zach-stephens.webp",
+        "Liberec": "assets/logos/upstreams/liberec.webp",
+        "Novipi\u00f9 Monferrato Basket": "assets/logos/upstreams/novipi\u00f9-monferrato-basket.webp",
+        "Kk Primorje Herceg Novi 1945": "assets/logos/upstreams/kk-primorje-herceg-novi-1945.webp",
+        "David Goffin": "assets/logos/upstreams/david-goffin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10502,6 +10506,7 @@
         "WTA Doha - Quatar Total Open": "assets/logos/leagues/wta-doha-quatar-total-open.webp",
         "Chennai, India": "assets/logos/leagues/chennai-india.webp",
         "Brisbane 2, Australia": "assets/logos/leagues/brisbane-2-australia.webp",
-        "CAF Confederations Cup, Group A": "assets/logos/leagues/caf-confederations-cup-group-a.webp"
+        "CAF Confederations Cup, Group A": "assets/logos/leagues/caf-confederations-cup-group-a.webp",
+        "Pau, France": "assets/logos/leagues/pau-france.webp"
     }
 }
