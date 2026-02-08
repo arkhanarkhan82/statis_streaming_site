@@ -9554,7 +9554,20 @@
         "Konstantinos Megalemos": "assets/logos/upstreams/konstantinos-megalemos.webp",
         "Bohemians Praha 1905": "assets/logos/upstreams/bohemians-praha-1905.webp",
         "FC Carl Zeiss Jena": "assets/logos/upstreams/fc-carl-zeiss-jena.webp",
-        "Alanya": "assets/logos/upstreams/alanya.webp"
+        "Alanya": "assets/logos/upstreams/alanya.webp",
+        "FC San Pedro": "assets/logos/upstreams/fc-san-pedro.webp",
+        "Sporting Cascades": "assets/logos/upstreams/sporting-cascades.webp",
+        "Etoile Filante Ouagadougou": "assets/logos/upstreams/etoile-filante-ouagadougou.webp",
+        "Cffeb": "assets/logos/upstreams/cffeb.webp",
+        "Leppavaaran Pyrinto": "assets/logos/upstreams/leppavaaran-pyrinto.webp",
+        "Huima": "assets/logos/upstreams/huima.webp",
+        "KTP Basket Kotka II": "assets/logos/upstreams/ktp-basket-kotka-ii.webp",
+        "Zeta 2011 Podgorica": "assets/logos/upstreams/zeta-2011-podgorica.webp",
+        "Srbobran": "assets/logos/upstreams/srbobran.webp",
+        "Rudar 1903": "assets/logos/upstreams/rudar-1903.webp",
+        "CelEastine Avomo Ella": "assets/logos/upstreams/celeastine-avomo-ella.webp",
+        "Ana Prso": "assets/logos/upstreams/ana-prso.webp",
+        "Christopher Kerswell": "assets/logos/upstreams/christopher-kerswell.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10483,6 +10496,7 @@
         "Slovenia Prva Liga": "assets/logos/leagues/slovenia-prva-liga.webp",
         "WTA Doha - Quatar Total Open": "assets/logos/leagues/wta-doha-quatar-total-open.webp",
         "Chennai, India": "assets/logos/leagues/chennai-india.webp",
-        "Brisbane 2, Australia": "assets/logos/leagues/brisbane-2-australia.webp"
+        "Brisbane 2, Australia": "assets/logos/leagues/brisbane-2-australia.webp",
+        "CAF Confederations Cup, Group A": "assets/logos/leagues/caf-confederations-cup-group-a.webp"
     }
 }
