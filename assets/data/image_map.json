@@ -9583,7 +9583,16 @@
         "Loic Namigandet Tenguere": "assets/logos/upstreams/loic-namigandet-tenguere.webp",
         "Pavlos Tsitsipas": "assets/logos/upstreams/pavlos-tsitsipas.webp",
         "Ad\u00e9la Kroisov\u00e1": "assets/logos/upstreams/ad\u00e9la-kroisov\u00e1.webp",
-        "Valentina Vachkova": "assets/logos/upstreams/valentina-vachkova.webp"
+        "Valentina Vachkova": "assets/logos/upstreams/valentina-vachkova.webp",
+        "Sandy Point FC": "assets/logos/upstreams/sandy-point-fc.webp",
+        "Robinhood": "assets/logos/upstreams/robinhood.webp",
+        "FC Inter Wanica": "assets/logos/upstreams/fc-inter-wanica.webp",
+        "Nibak": "assets/logos/upstreams/nibak.webp",
+        "Limache": "assets/logos/upstreams/limache.webp",
+        "Sao Luiz": "assets/logos/upstreams/sao-luiz.webp",
+        "Euan McIntosh": "assets/logos/upstreams/euan-mcintosh.webp",
+        "Vanesa Sulcova": "assets/logos/upstreams/vanesa-sulcova.webp",
+        "Nela Linhartova": "assets/logos/upstreams/nela-linhartova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10517,6 +10526,7 @@
         "Pau, France": "assets/logos/leagues/pau-france.webp",
         "Dallas, USA": "assets/logos/leagues/dallas-usa.webp",
         "Rotterdam, Netherlands": "assets/logos/leagues/rotterdam-netherlands.webp",
-        "Tenerife 2, Spain": "assets/logos/leagues/tenerife-2-spain.webp"
+        "Tenerife 2, Spain": "assets/logos/leagues/tenerife-2-spain.webp",
+        "Chile Liga de Primera": "assets/logos/leagues/chile-liga-de-primera.webp"
     }
 }
