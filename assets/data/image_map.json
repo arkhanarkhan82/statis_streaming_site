@@ -9498,7 +9498,20 @@
         "Luiza Fullana": "assets/logos/upstreams/luiza-fullana.webp",
         "Noemi Basiletti": "assets/logos/upstreams/noemi-basiletti.webp",
         "Donald Nikolas Stoot": "assets/logos/upstreams/donald-nikolas-stoot.webp",
-        "Sasa Markovic": "assets/logos/upstreams/sasa-markovic.webp"
+        "Sasa Markovic": "assets/logos/upstreams/sasa-markovic.webp",
+        "Bielefeld": "assets/logos/upstreams/bielefeld.webp",
+        "Altach": "assets/logos/upstreams/altach.webp",
+        "Athl. Bilbao": "assets/logos/upstreams/athl-bilbao.webp",
+        "Nikola Koprivova": "assets/logos/upstreams/nikola-koprivova.webp",
+        "Julie JIraqova": "assets/logos/upstreams/julie-jiraqova.webp",
+        "Ana Konjuh": "assets/logos/upstreams/ana-konjuh.webp",
+        "Amy Sucha": "assets/logos/upstreams/amy-sucha.webp",
+        "Nadiia Kolb": "assets/logos/upstreams/nadiia-kolb.webp",
+        "Franziska Sziedat": "assets/logos/upstreams/franziska-sziedat.webp",
+        "En-Shuo Liang": "assets/logos/upstreams/en-shuo-liang.webp",
+        "Helena Stevic": "assets/logos/upstreams/helena-stevic.webp",
+        "Amelie Justine Hejtmanek": "assets/logos/upstreams/amelie-justine-hejtmanek.webp",
+        "Denisa Zoldakova": "assets/logos/upstreams/denisa-zoldakova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10419,6 +10432,7 @@
         "Copa Chile, Group C": "assets/logos/leagues/copa-chile-group-c.webp",
         "WTA - Doha (QAT)": "assets/logos/leagues/wta-doha-qat.webp",
         "Poland - SuperLeague": "assets/logos/leagues/poland-superleague.webp",
-        "Spain - LEB Oro": "assets/logos/leagues/spain-leb-oro.webp"
+        "Spain - LEB Oro": "assets/logos/leagues/spain-leb-oro.webp",
+        "Cricket T20 World Cup": "assets/logos/leagues/cricket-t20-world-cup.webp"
     }
 }
