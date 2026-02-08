@@ -9471,7 +9471,18 @@
         "MMTS Kwidzyn": "assets/logos/upstreams/mmts-kwidzyn.webp",
         "Sravya Shivani Chilakalapudi": "assets/logos/upstreams/sravya-shivani-chilakalapudi.webp",
         "Daria Egorova": "assets/logos/upstreams/daria-egorova.webp",
-        "Shruti Ahlawat": "assets/logos/upstreams/shruti-ahlawat.webp"
+        "Shruti Ahlawat": "assets/logos/upstreams/shruti-ahlawat.webp",
+        "Hegelmann": "assets/logos/upstreams/hegelmann.webp",
+        "Quepos Cambute": "assets/logos/upstreams/quepos-cambute.webp",
+        "Eastudiantes": "assets/logos/upstreams/eastudiantes.webp",
+        "Digenis Akritas Morphou": "assets/logos/upstreams/digenis-akritas-morphou.webp",
+        "Kocaeli Ka\u011f\u0131tspor": "assets/logos/upstreams/kocaeli-ka\u011f\u0131tspor.webp",
+        "Herons Basket": "assets/logos/upstreams/herons-basket.webp",
+        "Montecatini Terme Basketball": "assets/logos/upstreams/montecatini-terme-basketball.webp",
+        "Cestistica Citt\u00e0 di San Severo": "assets/logos/upstreams/cestistica-citt\u00e0-di-san-severo.webp",
+        "Chiusi": "assets/logos/upstreams/chiusi.webp",
+        "\u017dKK Partizan Beograd": "assets/logos/upstreams/\u017ekk-partizan-beograd.webp",
+        "Radnicki Beograd": "assets/logos/upstreams/radnicki-beograd.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10391,6 +10402,7 @@
         "Oeiras 1, Portugal, Qualifying": "assets/logos/leagues/oeiras-1-portugal-qualifying.webp",
         "Copa Chile, Group C": "assets/logos/leagues/copa-chile-group-c.webp",
         "WTA - Doha (QAT)": "assets/logos/leagues/wta-doha-qat.webp",
-        "Poland - SuperLeague": "assets/logos/leagues/poland-superleague.webp"
+        "Poland - SuperLeague": "assets/logos/leagues/poland-superleague.webp",
+        "Spain - LEB Oro": "assets/logos/leagues/spain-leb-oro.webp"
     }
 }
