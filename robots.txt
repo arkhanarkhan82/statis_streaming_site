@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow Admin & System Files
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /data/
+Disallow: /scripts/
+
+# Sitemap
+Sitemap: https://streameastlive.cc/sitemap.xml
