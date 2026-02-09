@@ -9603,7 +9603,29 @@
         "Damir D\u017eumhur": "assets/logos/upstreams/damir-d\u017eumhur.webp",
         "Maric\u00e1 FC": "assets/logos/upstreams/maric\u00e1-fc.webp",
         "Inter Moengotapoe": "assets/logos/upstreams/inter-moengotapoe.webp",
-        "D Concepcion": "assets/logos/upstreams/d-concepcion.webp"
+        "D Concepcion": "assets/logos/upstreams/d-concepcion.webp",
+        "\u015al\u0105sk Wroc\u0142aw": "assets/logos/upstreams/\u015bl\u0105sk-wroc\u0142aw.webp",
+        "Tofa\u015f Bursa": "assets/logos/upstreams/tofa\u015f-bursa.webp",
+        "Esteghlal FC": "assets/logos/upstreams/esteghlal-fc.webp",
+        "Al Hussein Irbid": "assets/logos/upstreams/al-hussein-irbid.webp",
+        "Tractor FC": "assets/logos/upstreams/tractor-fc.webp",
+        "HC Erlangen": "assets/logos/upstreams/hc-erlangen.webp",
+        "TSV Hannover Burgdorf": "assets/logos/upstreams/tsv-hannover-burgdorf.webp",
+        "VfL Gummersbach": "assets/logos/upstreams/vfl-gummersbach.webp",
+        "SG Flensburg Handewitt": "assets/logos/upstreams/sg-flensburg-handewitt.webp",
+        "BM Caserio Ciudad Real": "assets/logos/upstreams/bm-caserio-ciudad-real.webp",
+        "CD Bidasoa Ir\u00fan": "assets/logos/upstreams/cd-bidasoa-ir\u00fan.webp",
+        "Purdue Boilermakers": "assets/logos/upstreams/purdue-boilermakers.webp",
+        "Nicaragua U17": "assets/logos/upstreams/nicaragua-u17.webp",
+        "Pachuca W": "assets/logos/upstreams/pachuca-w.webp",
+        "Buducnost Dobanovci": "assets/logos/upstreams/buducnost-dobanovci.webp",
+        "Arkadag": "assets/logos/upstreams/arkadag.webp",
+        "Sepahan": "assets/logos/upstreams/sepahan.webp",
+        "Al Ahli Doha": "assets/logos/upstreams/al-ahli-doha.webp",
+        "Paris FC W": "assets/logos/upstreams/paris-fc-w.webp",
+        "Leuven W": "assets/logos/upstreams/leuven-w.webp",
+        "Rzeszow": "assets/logos/upstreams/rzeszow.webp",
+        "Aluron Warta": "assets/logos/upstreams/aluron-warta.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10540,6 +10562,10 @@
         "Tenerife 2, Spain": "assets/logos/leagues/tenerife-2-spain.webp",
         "Chile Liga de Primera": "assets/logos/leagues/chile-liga-de-primera.webp",
         "Germany Am. - BundesLeague (W)": "assets/logos/leagues/germany-am-bundesleague-w.webp",
-        "Brazil - Gaucho Superbet - Serie A1 - Playoff": "assets/logos/leagues/brazil-gaucho-superbet-serie-a1-playoff.webp"
+        "Brazil - Gaucho Superbet - Serie A1 - Playoff": "assets/logos/leagues/brazil-gaucho-superbet-serie-a1-playoff.webp",
+        "AFC Champions League Two, Knockout stage": "assets/logos/leagues/afc-champions-league-two-knockout-stage.webp",
+        "Serbian Cup": "assets/logos/leagues/serbian-cup.webp",
+        "Scottish Premier": "assets/logos/leagues/scottish-premier.webp",
+        "Olympic Games": "assets/logos/leagues/olympic-games.webp"
     }
 }
