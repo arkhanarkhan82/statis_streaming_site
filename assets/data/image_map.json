@@ -9634,7 +9634,14 @@
         "Gabriela Agra Amorim": "assets/logos/upstreams/gabriela-agra-amorim.webp",
         "Italy Cricket": "assets/logos/streamed/italy-cricket.webp",
         "Oman Cricket": "assets/logos/streamed/oman-cricket.webp",
-        "Zimbabwe Cricket": "assets/logos/streamed/zimbabwe-cricket.webp"
+        "Zimbabwe Cricket": "assets/logos/streamed/zimbabwe-cricket.webp",
+        "Korac Akademija": "assets/logos/upstreams/korac-akademija.webp",
+        "\u017dKK Ras Beograd": "assets/logos/upstreams/\u017ekk-ras-beograd.webp",
+        "Bordo BK": "assets/logos/upstreams/bordo-bk.webp",
+        "Day 2": "assets/logos/upstreams/day-2.webp",
+        "M1 - WTA 1000 Qatar TotalEnergies Open 2026": "assets/logos/upstreams/m1-wta-1000-qatar-totalenergies-open-2026.webp",
+        "Ahniya Vustsina": "assets/logos/upstreams/ahniya-vustsina.webp",
+        "Stanislava Bobrovnikova": "assets/logos/upstreams/stanislava-bobrovnikova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10576,6 +10583,7 @@
         "Serbian Cup": "assets/logos/leagues/serbian-cup.webp",
         "Scottish Premier": "assets/logos/leagues/scottish-premier.webp",
         "Olympic Games": "assets/logos/leagues/olympic-games.webp",
-        "Oeiras 1, Portugal": "assets/logos/leagues/oeiras-1-portugal.webp"
+        "Oeiras 1, Portugal": "assets/logos/leagues/oeiras-1-portugal.webp",
+        "Squash Padel Day 2 M1 Wta 1000 Qatar Totalenergies Open 2026": "assets/logos/leagues/squash-padel-day-2-m1-wta-1000-qatar-totalenergies-open-2026.webp"
     }
 }
