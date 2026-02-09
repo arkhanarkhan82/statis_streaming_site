@@ -9631,7 +9631,10 @@
         "KPR Legionowo": "assets/logos/upstreams/kpr-legionowo.webp",
         "Gwardia Opole": "assets/logos/upstreams/gwardia-opole.webp",
         "Dayeon Back": "assets/logos/upstreams/dayeon-back.webp",
-        "Gabriela Agra Amorim": "assets/logos/upstreams/gabriela-agra-amorim.webp"
+        "Gabriela Agra Amorim": "assets/logos/upstreams/gabriela-agra-amorim.webp",
+        "Italy Cricket": "assets/logos/streamed/italy-cricket.webp",
+        "Oman Cricket": "assets/logos/streamed/oman-cricket.webp",
+        "Zimbabwe Cricket": "assets/logos/streamed/zimbabwe-cricket.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
