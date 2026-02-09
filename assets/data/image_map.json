@@ -9625,7 +9625,12 @@
         "Paris FC W": "assets/logos/upstreams/paris-fc-w.webp",
         "Leuven W": "assets/logos/upstreams/leuven-w.webp",
         "Rzeszow": "assets/logos/upstreams/rzeszow.webp",
-        "Aluron Warta": "assets/logos/upstreams/aluron-warta.webp"
+        "Aluron Warta": "assets/logos/upstreams/aluron-warta.webp",
+        "Cerro": "assets/logos/upstreams/cerro.webp",
+        "Danubio": "assets/logos/upstreams/danubio.webp",
+        "KPR Legionowo": "assets/logos/upstreams/kpr-legionowo.webp",
+        "Gwardia Opole": "assets/logos/upstreams/gwardia-opole.webp",
+        "Dayeon Back": "assets/logos/upstreams/dayeon-back.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
