@@ -9670,7 +9670,9 @@
         "Nikola Hlavata": "assets/logos/upstreams/nikola-hlavata.webp",
         "Agatha Chytilova": "assets/logos/upstreams/agatha-chytilova.webp",
         "Hiroshima": "assets/logos/upstreams/hiroshima.webp",
-        "Johor DT": "assets/logos/upstreams/johor-dt.webp"
+        "Johor DT": "assets/logos/upstreams/johor-dt.webp",
+        "Hong Linh Ha Tinh": "assets/logos/upstreams/hong-linh-ha-tinh.webp",
+        "Liam Oliver": "assets/logos/upstreams/liam-oliver.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10613,6 +10615,7 @@
         "Scottish Premier": "assets/logos/leagues/scottish-premier.webp",
         "Olympic Games": "assets/logos/leagues/olympic-games.webp",
         "Oeiras 1, Portugal": "assets/logos/leagues/oeiras-1-portugal.webp",
-        "Squash Padel Day 2 M1 Wta 1000 Qatar Totalenergies Open 2026": "assets/logos/leagues/squash-padel-day-2-m1-wta-1000-qatar-totalenergies-open-2026.webp"
+        "Squash Padel Day 2 M1 Wta 1000 Qatar Totalenergies Open 2026": "assets/logos/leagues/squash-padel-day-2-m1-wta-1000-qatar-totalenergies-open-2026.webp",
+        "Vietnam V League": "assets/logos/leagues/vietnam-v-league.webp"
     }
 }
