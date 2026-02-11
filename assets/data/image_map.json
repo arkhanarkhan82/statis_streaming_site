@@ -9717,7 +9717,9 @@
         "Latvia U19": "assets/logos/streamed/latvia-u19.webp",
         "Portugal U18": "assets/logos/streamed/portugal-u18.webp",
         "Austria U18": "assets/logos/streamed/austria-u18.webp",
-        "Finland U17": "assets/logos/streamed/finland-u17.webp"
+        "Finland U17": "assets/logos/streamed/finland-u17.webp",
+        "Great Britain Curling": "assets/logos/streamed/great-britain-curling.webp",
+        "Sweden Curling": "assets/logos/streamed/sweden-curling.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
