@@ -8,4 +8,4 @@ Disallow: /data/
 Disallow: /scripts/
 
 # Sitemap
-Sitemap: https://streameastlive.cc/sitemap.xml
+Sitemap: https://infostreameast.live/sitemap.xml
