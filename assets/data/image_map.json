@@ -9719,7 +9719,11 @@
         "Austria U18": "assets/logos/streamed/austria-u18.webp",
         "Finland U17": "assets/logos/streamed/finland-u17.webp",
         "Great Britain Curling": "assets/logos/streamed/great-britain-curling.webp",
-        "Sweden Curling": "assets/logos/streamed/sweden-curling.webp"
+        "Sweden Curling": "assets/logos/streamed/sweden-curling.webp",
+        "Highlanders Super Rugby": "assets/logos/streamed/highlanders-super-rugby.webp",
+        "Crusaders Super Rugby": "assets/logos/streamed/crusaders-super-rugby.webp",
+        "New South Wales Waratahs": "assets/logos/streamed/new-south-wales-waratahs.webp",
+        "Queensland Reds": "assets/logos/streamed/queensland-reds.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
