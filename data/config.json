@@ -11,8 +11,8 @@
     "custom_meta_tags": [
       "<meta name=\"google-site-verification\" content=\"C7MbhV3eAjVUwCdk-U2bVA3Vnwq7JPi7szIM3Q_wg2A\" />"
     ],
-    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameastlive.cc/sitemap.xml",
-    "domain": "streameastlive.cc",
+    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://infostreameast.live/sitemap.xml",
+    "domain": "infostreameast.live",
     "logo_url": "/assets/streameast-logo.webp",
     "favicon_url": "/assets/streameast.png",
     "footer_copyright": "© 2026 StreamEast — Live sports streaming platform for major leagues and global tournaments in HD.",
