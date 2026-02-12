@@ -9733,7 +9733,10 @@
         "Blues": "assets/logos/streamed/blues.webp",
         "Chiefs": "assets/logos/streamed/chiefs.webp",
         "Western Force": "assets/logos/streamed/western-force.webp",
-        "Brumbies": "assets/logos/streamed/brumbies.webp"
+        "Brumbies": "assets/logos/streamed/brumbies.webp",
+        "York Knights": "assets/logos/streamed/york-knights.webp",
+        "Hull K R": "assets/logos/streamed/hull-k-r.webp",
+        "PAU": "assets/logos/streamed/pau.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
