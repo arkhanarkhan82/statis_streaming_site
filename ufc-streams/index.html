@@ -25,7 +25,7 @@
     
     <!-- SCHEMA -->
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://infostreameast.live/#organization", "name": "StreamEast", "url": "https://infostreameast.live/", "logo": {"@type": "ImageObject", "url": "https://infostreameast.live/assets/streameast-logo.webp", "width": 512, "height": 512}}, {"@type": "WebSite", "@id": "https://infostreameast.live/#website", "url": "https://infostreameast.live/", "name": "StreamEast", "publisher": {"@id": "https://infostreameast.live/#organization"}}, {"@type": "CollectionPage", "@id": "https://infostreameast.live/ufc-streams/#leaguepage", "url": "https://infostreameast.live/ufc-streams/", "name": "StreamEast UFC Live Streams and Schedules", "description": "Watch UFC live streams and access the full 2026 schedule on StreamEast. Get real-time fixtures, playoffs coverage, and fast HD MMA streaming.", "mainEntity": {"@id": "https://infostreameast.live/ufc-streams/#matchlist"}, "isPartOf": {"@id": "https://infostreameast.live/#website"}, "about": {"@id": "https://infostreameast.live/#organization"}}]}</script>
-<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://infostreameast.live/ufc-streams/#matchlist", "itemListElement": []}</script>
+<script id="dynamic-schema-placeholder" type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "@id": "https://infostreameast.live/ufc-streams/#matchlist", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SportsEvent", "name": "Strickland vs Hernandez", "description": "Watch Strickland vs Hernandez live stream. UFC Fight Night.", "startDate": "2026-02-21T21:00:00.000Z", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "isAccessibleForFree": true, "url": "https://infostreameast.live/watch/?livestream=strickland-vs-hernandez-b6ab837e", "image": ["https://infostreameast.live/assets/streameast-logo.webp"], "organizer": {"@id": "https://infostreameast.live/#organization"}, "sport": "Fight", "homeTeam": {"@type": "SportsTeam", "name": "Strickland"}, "awayTeam": {"@type": "SportsTeam", "name": "Hernandez"}}}]}</script>
 
     
     <style>html { scroll-behavior: smooth; }</style>
@@ -488,21 +488,21 @@
     <main class="container">
         
         <!-- LIVE SECTION -->
-        <div id="live-list" style="display:none;">
+        <div id="live-list" style="display:none;" style="display:none;">
             <!-- L_LIVE_START --><!-- L_LIVE_END -->
         </div>
 
         <!-- UPCOMING SECTION -->
         <div id="upcoming-container">
-            <div class="sec-head">
+            <div class="sec-head" style="border-bottom: 1px solid #333333;">
                 <h2 class="sec-title">
-                    <span id="upcoming-logo-container" style="font-size:1.2rem; display:inline-flex; align-items:center;">📅</span> 
+                    <img src="/assets/logos/leagues/ufc.webp" alt="UFC" style="width:28px; height:28px; object-fit:contain; margin-right:8px;"> 
                     Upcoming UFC
                 </h2>
             </div>
             <!-- Python replaces this with schedule rows -->
             <div id="schedule-list">
-                <!-- L_SCHED_START --><!-- L_SCHED_END -->
+                <!-- L_SCHED_START --><div class="match-row"><div class="col-time"><span class="time-main">04:00 PM ET</span><span class="time-sub">Feb 21</span></div><div class="teams-wrapper"><div class="league-tag">FIGHT</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#fb8c00">S</span></div> Strickland</div><div class="team-name"><div class="logo-box"><span class="t-logo" style="background:#3949ab">H</span></div> Hernandez</div></div><div class="col-meta"><div style="display:flex; flex-direction:column; align-items:flex-end;"><span style="font-size:0.55rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Starts</span><span class="meta-top" style="color:var(--accent-gold);">9d 5h 54m</span></div></div><div class="col-action"><button class="btn-notify" onclick="handleNotify(this)">🔔 Notify</button><button class="btn-copy-link" onclick="copyText('https://infostreameast.live/watch/?livestream=strickland-vs-hernandez-b6ab837e')"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg> Link</button></div></div><!-- L_SCHED_END -->
             </div>
         </div>
 
