@@ -9727,7 +9727,13 @@
         "Dolphins": "assets/logos/streamed/dolphins.webp",
         "Gold Coast Titans": "assets/logos/streamed/gold-coast-titans.webp",
         "York City Knights": "assets/logos/streamed/york-city-knights.webp",
-        "Hull Kingston Rovers": "assets/logos/streamed/hull-kingston-rovers.webp"
+        "Hull Kingston Rovers": "assets/logos/streamed/hull-kingston-rovers.webp",
+        "Fijian Drua": "assets/logos/streamed/fijian-drua.webp",
+        "Moana Pasifika": "assets/logos/streamed/moana-pasifika.webp",
+        "Blues": "assets/logos/streamed/blues.webp",
+        "Chiefs": "assets/logos/streamed/chiefs.webp",
+        "Western Force": "assets/logos/streamed/western-force.webp",
+        "Brumbies": "assets/logos/streamed/brumbies.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
