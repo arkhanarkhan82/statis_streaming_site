@@ -9737,7 +9737,10 @@
         "York Knights": "assets/logos/streamed/york-knights.webp",
         "Hull K R": "assets/logos/streamed/hull-k-r.webp",
         "PAU": "assets/logos/streamed/pau.webp",
-        "Italy Curling": "assets/logos/streamed/italy-curling.webp"
+        "Italy Curling": "assets/logos/streamed/italy-curling.webp",
+        "Blues Super Rugby": "assets/logos/streamed/blues-super-rugby.webp",
+        "Chiefs Super Rugby": "assets/logos/streamed/chiefs-super-rugby.webp",
+        "ACT Brumbies": "assets/logos/streamed/act-brumbies.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
