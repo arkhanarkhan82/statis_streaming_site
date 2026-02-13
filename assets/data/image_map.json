@@ -9741,7 +9741,10 @@
         "Blues Super Rugby": "assets/logos/streamed/blues-super-rugby.webp",
         "Chiefs Super Rugby": "assets/logos/streamed/chiefs-super-rugby.webp",
         "ACT Brumbies": "assets/logos/streamed/act-brumbies.webp",
-        "Canada Cricket": "assets/logos/streamed/canada-cricket.webp"
+        "Canada Cricket": "assets/logos/streamed/canada-cricket.webp",
+        "Canberra Raiders": "assets/logos/streamed/canberra-raiders.webp",
+        "Melbourne Storm": "assets/logos/streamed/melbourne-storm.webp",
+        "Penrith Panthers": "assets/logos/streamed/penrith-panthers.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
