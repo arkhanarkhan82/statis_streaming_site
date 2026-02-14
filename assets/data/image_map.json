@@ -10006,7 +10006,10 @@
         "EC S\u00e3o Jos\u00e9": "assets/logos/upstreams/ec-s\u00e3o-jos\u00e9.webp",
         "Frydek Mistek": "assets/logos/upstreams/frydek-mistek.webp",
         "Tabor": "assets/logos/upstreams/tabor.webp",
-        "Helios VS Basket": "assets/logos/upstreams/helios-vs-basket.webp"
+        "Helios VS Basket": "assets/logos/upstreams/helios-vs-basket.webp",
+        "USA Curling": "assets/logos/streamed/usa-curling.webp",
+        "Germany Curling": "assets/logos/streamed/germany-curling.webp",
+        "China Curling": "assets/logos/streamed/china-curling.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
