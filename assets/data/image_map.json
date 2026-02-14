@@ -9933,7 +9933,15 @@
         "Nela Silova": "assets/logos/upstreams/nela-silova.webp",
         "Nela Jandova": "assets/logos/upstreams/nela-jandova.webp",
         "Terezia Perhacova": "assets/logos/upstreams/terezia-perhacova.webp",
-        "Jack Bruce Smith": "assets/logos/upstreams/jack-bruce-smith.webp"
+        "Jack Bruce Smith": "assets/logos/upstreams/jack-bruce-smith.webp",
+        "Miedz Legnica": "assets/logos/upstreams/miedz-legnica.webp",
+        "Cab Estepona": "assets/logos/upstreams/cab-estepona.webp",
+        "Perfumer\u00edas Avenida": "assets/logos/upstreams/perfumer\u00edas-avenida.webp",
+        "PrEaston Lions (W)": "assets/logos/upstreams/preaston-lions-w.webp",
+        "St Albans Saints": "assets/logos/upstreams/st-albans-saints.webp",
+        "Dandenong City": "assets/logos/upstreams/dandenong-city.webp",
+        "Avondale FC": "assets/logos/upstreams/avondale-fc.webp",
+        "South Melbourne": "assets/logos/upstreams/south-melbourne.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10901,6 +10909,8 @@
         "Pakistan Women in South Africa, 3 T20I Series": "assets/logos/leagues/pakistan-women-in-south-africa-3-t20i-series.webp",
         "ABA Liga, Championship Round": "assets/logos/leagues/aba-liga-championship-round.webp",
         "NBA All Star Game, Round Robin": "assets/logos/leagues/nba-all-star-game-round-robin.webp",
-        "League 1": "assets/logos/leagues/league-1.webp"
+        "League 1": "assets/logos/leagues/league-1.webp",
+        "Australia - NPL (W) - Victoria": "assets/logos/leagues/australia-npl-w-victoria.webp",
+        "Australia - NPL - Victoria": "assets/logos/leagues/australia-npl-victoria.webp"
     }
 }
