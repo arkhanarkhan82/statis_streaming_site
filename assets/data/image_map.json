@@ -10044,7 +10044,14 @@
         "Falkenberg": "assets/logos/upstreams/falkenberg.webp",
         "OFK Petrovac": "assets/logos/upstreams/ofk-petrovac.webp",
         "FK Bokelj Kotor": "assets/logos/upstreams/fk-bokelj-kotor.webp",
-        "Ogre United": "assets/logos/upstreams/ogre-united.webp"
+        "Ogre United": "assets/logos/upstreams/ogre-united.webp",
+        "Mjallby": "assets/logos/upstreams/mjallby.webp",
+        "Oster": "assets/logos/upstreams/oster.webp",
+        "Ceadir-Lunga": "assets/logos/upstreams/ceadir-lunga.webp",
+        "Iraklis": "assets/logos/upstreams/iraklis.webp",
+        "Nicolas Calixto": "assets/logos/upstreams/nicolas-calixto.webp",
+        "Alexander Guajardo": "assets/logos/upstreams/alexander-guajardo.webp",
+        "William Semler": "assets/logos/upstreams/william-semler.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11028,6 +11035,7 @@
         "Rio de Janeiro, Brazil, Qualifying": "assets/logos/leagues/rio-de-janeiro-brazil-qualifying.webp",
         "FIH Pro League Women": "assets/logos/leagues/fih-pro-league-women.webp",
         "Delray Beach, USA, Qualifying": "assets/logos/leagues/delray-beach-usa-qualifying.webp",
-        "Rugby Europe Championship, Group B": "assets/logos/leagues/rugby-europe-championship-group-b.webp"
+        "Rugby Europe Championship, Group B": "assets/logos/leagues/rugby-europe-championship-group-b.webp",
+        "Greece Basketball League": "assets/logos/leagues/greece-basketball-league.webp"
     }
 }
