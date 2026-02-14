@@ -10017,7 +10017,10 @@
         "Bentleigh Greens": "assets/logos/upstreams/bentleigh-greens.webp",
         "SD Raiders U20": "assets/logos/upstreams/sd-raiders-u20.webp",
         "Sydney Olympic U20": "assets/logos/upstreams/sydney-olympic-u20.webp",
-        "Neslihan Yigit": "assets/logos/upstreams/neslihan-yigit.webp"
+        "Neslihan Yigit": "assets/logos/upstreams/neslihan-yigit.webp",
+        "Nicolas Jarry": "assets/logos/upstreams/nicolas-jarry.webp",
+        "Ghanim AL Sulaiti": "assets/logos/upstreams/ghanim-al-sulaiti.webp",
+        "Sofiia Lavrova": "assets/logos/upstreams/sofiia-lavrova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10999,6 +11002,7 @@
         "NRL Pre-Season: Wests Tigers V Roosters": "assets/logos/leagues/nrl-pre-season-wests-tigers-v-roosters.webp",
         "Turkey - TB2L (W)": "assets/logos/leagues/turkey-tb2l-w.webp",
         "Rio de Janeiro, Brazil, Qualifying": "assets/logos/leagues/rio-de-janeiro-brazil-qualifying.webp",
-        "FIH Pro League Women": "assets/logos/leagues/fih-pro-league-women.webp"
+        "FIH Pro League Women": "assets/logos/leagues/fih-pro-league-women.webp",
+        "Delray Beach, USA, Qualifying": "assets/logos/leagues/delray-beach-usa-qualifying.webp"
     }
 }
