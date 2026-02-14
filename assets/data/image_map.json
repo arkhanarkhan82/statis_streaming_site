@@ -10073,7 +10073,11 @@
         "Tochigi SC": "assets/logos/upstreams/tochigi-sc.webp",
         "Oita Trinita": "assets/logos/upstreams/oita-trinita.webp",
         "Reilac Shiga FC": "assets/logos/upstreams/reilac-shiga-fc.webp",
-        "Tereza Vajsejtlova": "assets/logos/upstreams/tereza-vajsejtlova.webp"
+        "Tereza Vajsejtlova": "assets/logos/upstreams/tereza-vajsejtlova.webp",
+        "Am\u00e9rica Mineiro": "assets/logos/upstreams/am\u00e9rica-mineiro.webp",
+        "Ramkumar Ramanathan": "assets/logos/upstreams/ramkumar-ramanathan.webp",
+        "Uisung Park": "assets/logos/upstreams/uisung-park.webp",
+        "Sasikumar Mukund": "assets/logos/upstreams/sasikumar-mukund.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11059,6 +11063,8 @@
         "Delray Beach, USA, Qualifying": "assets/logos/leagues/delray-beach-usa-qualifying.webp",
         "Rugby Europe Championship, Group B": "assets/logos/leagues/rugby-europe-championship-group-b.webp",
         "Greece Basketball League": "assets/logos/leagues/greece-basketball-league.webp",
-        "Liga 3, Relegation Round, Group 2": "assets/logos/leagues/liga-3-relegation-round-group-2.webp"
+        "Liga 3, Relegation Round, Group 2": "assets/logos/leagues/liga-3-relegation-round-group-2.webp",
+        "Dubai, UAE": "assets/logos/leagues/dubai-uae.webp",
+        "WTA Dubai": "assets/logos/leagues/wta-dubai.webp"
     }
 }
