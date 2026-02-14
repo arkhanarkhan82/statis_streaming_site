@@ -10040,7 +10040,10 @@
         "Stallion Laguna": "assets/logos/upstreams/stallion-laguna.webp",
         "Nikola Kuraica": "assets/logos/upstreams/nikola-kuraica.webp",
         "Vrgorac": "assets/logos/upstreams/vrgorac.webp",
-        "MNK Torcida": "assets/logos/upstreams/mnk-torcida.webp"
+        "MNK Torcida": "assets/logos/upstreams/mnk-torcida.webp",
+        "Falkenberg": "assets/logos/upstreams/falkenberg.webp",
+        "OFK Petrovac": "assets/logos/upstreams/ofk-petrovac.webp",
+        "FK Bokelj Kotor": "assets/logos/upstreams/fk-bokelj-kotor.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11023,6 +11026,7 @@
         "Turkey - TB2L (W)": "assets/logos/leagues/turkey-tb2l-w.webp",
         "Rio de Janeiro, Brazil, Qualifying": "assets/logos/leagues/rio-de-janeiro-brazil-qualifying.webp",
         "FIH Pro League Women": "assets/logos/leagues/fih-pro-league-women.webp",
-        "Delray Beach, USA, Qualifying": "assets/logos/leagues/delray-beach-usa-qualifying.webp"
+        "Delray Beach, USA, Qualifying": "assets/logos/leagues/delray-beach-usa-qualifying.webp",
+        "Rugby Europe Championship, Group B": "assets/logos/leagues/rugby-europe-championship-group-b.webp"
     }
 }
