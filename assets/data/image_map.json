@@ -9913,7 +9913,21 @@
         "Yokohama F Marinos": "assets/logos/streamed/yokohama-f-marinos.webp",
         "Switzerland Curling": "assets/logos/streamed/switzerland-curling.webp",
         "Canada Curling": "assets/logos/streamed/canada-curling.webp",
-        "Newfoundland Rogues": "assets/logos/upstreams/newfoundland-rogues.webp"
+        "Newfoundland Rogues": "assets/logos/upstreams/newfoundland-rogues.webp",
+        "Florida Atlantic Owls": "assets/logos/upstreams/florida-atlantic-owls.webp",
+        "Drake Bulldogs": "assets/logos/upstreams/drake-bulldogs.webp",
+        "North Alabama Lions": "assets/logos/upstreams/north-alabama-lions.webp",
+        "Eastern Kentucky Colonels": "assets/logos/upstreams/eastern-kentucky-colonels.webp",
+        "Team World": "assets/logos/upstreams/team-world.webp",
+        "FK Austria Wien": "assets/logos/upstreams/fk-austria-wien.webp",
+        "CS Gloria 2018 Bistri\u021ba-N\u0103s\u0103ud": "assets/logos/upstreams/cs-gloria-2018-bistri\u021ba-n\u0103s\u0103ud.webp",
+        "HSG Nordhorn-Lingen": "assets/logos/upstreams/hsg-nordhorn-lingen.webp",
+        "THW Kiel": "assets/logos/upstreams/thw-kiel.webp",
+        "SC Magdeburg": "assets/logos/upstreams/sc-magdeburg.webp",
+        "Monterrey W": "assets/logos/upstreams/monterrey-w.webp",
+        "Dobrudzha": "assets/logos/upstreams/dobrudzha.webp",
+        "Macclesfield": "assets/logos/upstreams/macclesfield.webp",
+        "Termalica B-B.": "assets/logos/upstreams/termalica-b-b.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10878,6 +10892,9 @@
         "Liga Nationala Women": "assets/logos/leagues/liga-nationala-women.webp",
         "USA - NBA - All Star": "assets/logos/leagues/usa-nba-all-star.webp",
         "Starligue": "assets/logos/leagues/starligue.webp",
-        "Pakistan Women in South Africa, 3 T20I Series": "assets/logos/leagues/pakistan-women-in-south-africa-3-t20i-series.webp"
+        "Pakistan Women in South Africa, 3 T20I Series": "assets/logos/leagues/pakistan-women-in-south-africa-3-t20i-series.webp",
+        "ABA Liga, Championship Round": "assets/logos/leagues/aba-liga-championship-round.webp",
+        "NBA All Star Game, Round Robin": "assets/logos/leagues/nba-all-star-game-round-robin.webp",
+        "League 1": "assets/logos/leagues/league-1.webp"
     }
 }
