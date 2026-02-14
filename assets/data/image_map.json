@@ -10011,7 +10011,8 @@
         "Germany Curling": "assets/logos/streamed/germany-curling.webp",
         "China Curling": "assets/logos/streamed/china-curling.webp",
         "Daniel Balascak": "assets/logos/upstreams/daniel-balascak.webp",
-        "Sebastian Paulovcak": "assets/logos/upstreams/sebastian-paulovcak.webp"
+        "Sebastian Paulovcak": "assets/logos/upstreams/sebastian-paulovcak.webp",
+        "Argentina W": "assets/logos/upstreams/argentina-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -10992,6 +10993,7 @@
         "Czech - Maxa League": "assets/logos/leagues/czech-maxa-league.webp",
         "NRL Pre-Season: Wests Tigers V Roosters": "assets/logos/leagues/nrl-pre-season-wests-tigers-v-roosters.webp",
         "Turkey - TB2L (W)": "assets/logos/leagues/turkey-tb2l-w.webp",
-        "Rio de Janeiro, Brazil, Qualifying": "assets/logos/leagues/rio-de-janeiro-brazil-qualifying.webp"
+        "Rio de Janeiro, Brazil, Qualifying": "assets/logos/leagues/rio-de-janeiro-brazil-qualifying.webp",
+        "FIH Pro League Women": "assets/logos/leagues/fih-pro-league-women.webp"
     }
 }
