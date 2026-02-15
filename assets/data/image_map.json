@@ -10147,7 +10147,13 @@
         "Drew van Orderlain": "assets/logos/upstreams/drew-van-orderlain.webp",
         "Dillon Beckles": "assets/logos/upstreams/dillon-beckles.webp",
         "Pranav Kumar": "assets/logos/upstreams/pranav-kumar.webp",
-        "Sklar Phillips": "assets/logos/upstreams/sklar-phillips.webp"
+        "Sklar Phillips": "assets/logos/upstreams/sklar-phillips.webp",
+        "HNK Orijent 1919": "assets/logos/upstreams/hnk-orijent-1919.webp",
+        "La Coruna": "assets/logos/upstreams/la-coruna.webp",
+        "Nicolas Esteban Rico Arias": "assets/logos/upstreams/nicolas-esteban-rico-arias.webp",
+        "Juan Sebastian Osorio": "assets/logos/upstreams/juan-sebastian-osorio.webp",
+        "Alex Kobelt": "assets/logos/upstreams/alex-kobelt.webp",
+        "Juan Jose Bianchi": "assets/logos/upstreams/juan-jose-bianchi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11142,6 +11148,7 @@
         "Vtora liga": "assets/logos/leagues/vtora-liga.webp",
         "European League": "assets/logos/leagues/european-league.webp",
         "Champions League (W) - Gr.B": "assets/logos/leagues/champions-league-w-grb.webp",
-        "ABA Liga, Relegation Round": "assets/logos/leagues/aba-liga-relegation-round.webp"
+        "ABA Liga, Relegation Round": "assets/logos/leagues/aba-liga-relegation-round.webp",
+        "Premijer Liga": "assets/logos/leagues/premijer-liga.webp"
     }
 }
