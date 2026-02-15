@@ -10164,7 +10164,12 @@
         "Mariia Tkacheva": "assets/logos/upstreams/mariia-tkacheva.webp",
         "Mary Lewis": "assets/logos/upstreams/mary-lewis.webp",
         "Castleford Tigers": "assets/logos/streamed/castleford-tigers.webp",
-        "Wigan Warriors": "assets/logos/streamed/wigan-warriors.webp"
+        "Wigan Warriors": "assets/logos/streamed/wigan-warriors.webp",
+        "Bengaluru FC": "assets/logos/upstreams/bengaluru-fc.webp",
+        "Sporting Delhi": "assets/logos/upstreams/sporting-delhi.webp",
+        "Andres Guerra": "assets/logos/upstreams/andres-guerra.webp",
+        "Juan Pablo Barriga Martinez": "assets/logos/upstreams/juan-pablo-barriga-martinez.webp",
+        "India W": "assets/logos/upstreams/india-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11162,6 +11167,7 @@
         "ABA Liga, Relegation Round": "assets/logos/leagues/aba-liga-relegation-round.webp",
         "Premijer Liga": "assets/logos/leagues/premijer-liga.webp",
         "Midland, USA, Qualifying": "assets/logos/leagues/midland-usa-qualifying.webp",
-        "South Africa Diski Challenge": "assets/logos/leagues/south-africa-diski-challenge.webp"
+        "South Africa Diski Challenge": "assets/logos/leagues/south-africa-diski-challenge.webp",
+        "Tigre, Argentina, Qualifying": "assets/logos/leagues/tigre-argentina-qualifying.webp"
     }
 }
