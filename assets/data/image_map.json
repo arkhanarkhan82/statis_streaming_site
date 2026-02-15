@@ -10206,7 +10206,13 @@
         "Mia Hasegawa": "assets/logos/upstreams/mia-hasegawa.webp",
         "Yamato Yukawa": "assets/logos/upstreams/yamato-yukawa.webp",
         "Kisvarda": "assets/logos/upstreams/kisvarda.webp",
-        "Kairi Inoue": "assets/logos/upstreams/kairi-inoue.webp"
+        "Kairi Inoue": "assets/logos/upstreams/kairi-inoue.webp",
+        "Italy U18": "assets/logos/streamed/italy-u18.webp",
+        "Ukraine U18": "assets/logos/streamed/ukraine-u18.webp",
+        "Czech Republic U19": "assets/logos/streamed/czech-republic-u19.webp",
+        "Bullom Stars FC": "assets/logos/upstreams/bullom-stars-fc.webp",
+        "KK Rudar Pljevlja": "assets/logos/upstreams/kk-rudar-pljevlja.webp",
+        "Dalibor Svr\u010dina": "assets/logos/upstreams/dalibor-svr\u010dina.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
