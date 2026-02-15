@@ -10111,7 +10111,18 @@
         "Mladost Lucani": "assets/logos/upstreams/mladost-lucani.webp",
         "CA Penarol": "assets/logos/upstreams/ca-penarol.webp",
         "Jakub Paul": "assets/logos/upstreams/jakub-paul.webp",
-        "Luca Sanchez": "assets/logos/upstreams/luca-sanchez.webp"
+        "Luca Sanchez": "assets/logos/upstreams/luca-sanchez.webp",
+        "Gent B": "assets/logos/upstreams/gent-b.webp",
+        "Mallaurie Noel": "assets/logos/upstreams/mallaurie-noel.webp",
+        "Nika Radi\u0161i\u0107": "assets/logos/upstreams/nika-radi\u0161i\u0107.webp",
+        "Herning Ikast (W)": "assets/logos/upstreams/herning-ikast-w.webp",
+        "Odense (W)": "assets/logos/upstreams/odense-w.webp",
+        "VfL Oldenburg": "assets/logos/upstreams/vfl-oldenburg.webp",
+        "Dijon (W)": "assets/logos/upstreams/dijon-w.webp",
+        "Freya Christie": "assets/logos/upstreams/freya-christie.webp",
+        "Teresa Franco Dias": "assets/logos/upstreams/teresa-franco-dias.webp",
+        "Kika Lima": "assets/logos/upstreams/kika-lima.webp",
+        "Makoto Ninomiya": "assets/logos/upstreams/makoto-ninomiya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11104,6 +11115,7 @@
         "Spain - League Endesa (W)": "assets/logos/leagues/spain-league-endesa-w.webp",
         "Carioca S\u00e9rie A \u2013 Mata-mata": "assets/logos/leagues/carioca-s\u00e9rie-a-mata-mata.webp",
         "Vtora liga": "assets/logos/leagues/vtora-liga.webp",
-        "European League": "assets/logos/leagues/european-league.webp"
+        "European League": "assets/logos/leagues/european-league.webp",
+        "Champions League (W) - Gr.B": "assets/logos/leagues/champions-league-w-grb.webp"
     }
 }
