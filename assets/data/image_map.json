@@ -10131,7 +10131,11 @@
         "G\u00fcemes": "assets/logos/upstreams/g\u00fcemes.webp",
         "Nueva Chicago": "assets/logos/upstreams/nueva-chicago.webp",
         "Racing Cordoba": "assets/logos/upstreams/racing-cordoba.webp",
-        "UCV Moquegua": "assets/logos/upstreams/ucv-moquegua.webp"
+        "UCV Moquegua": "assets/logos/upstreams/ucv-moquegua.webp",
+        "HC Topo\u013e\u010dany": "assets/logos/upstreams/hc-topo\u013e\u010dany.webp",
+        "Sonja Zhenikhova": "assets/logos/upstreams/sonja-zhenikhova.webp",
+        "Eden Silva": "assets/logos/upstreams/eden-silva.webp",
+        "Sina Herrmann": "assets/logos/upstreams/sina-herrmann.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11125,6 +11129,7 @@
         "Carioca S\u00e9rie A \u2013 Mata-mata": "assets/logos/leagues/carioca-s\u00e9rie-a-mata-mata.webp",
         "Vtora liga": "assets/logos/leagues/vtora-liga.webp",
         "European League": "assets/logos/leagues/european-league.webp",
-        "Champions League (W) - Gr.B": "assets/logos/leagues/champions-league-w-grb.webp"
+        "Champions League (W) - Gr.B": "assets/logos/leagues/champions-league-w-grb.webp",
+        "ABA Liga, Relegation Round": "assets/logos/leagues/aba-liga-relegation-round.webp"
     }
 }
