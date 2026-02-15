@@ -10227,7 +10227,16 @@
         "Ads Sentinel": "assets/logos/upstreams/ads-sentinel.webp",
         "Lucie Nouzova": "assets/logos/upstreams/lucie-nouzova.webp",
         "Polina Leykina": "assets/logos/upstreams/polina-leykina.webp",
-        "Katarzyna Wysoczanska": "assets/logos/upstreams/katarzyna-wysoczanska.webp"
+        "Katarzyna Wysoczanska": "assets/logos/upstreams/katarzyna-wysoczanska.webp",
+        "Mohammedan": "assets/logos/upstreams/mohammedan.webp",
+        "Austria Lustenau": "assets/logos/upstreams/austria-lustenau.webp",
+        "Kapfenberger": "assets/logos/upstreams/kapfenberger.webp",
+        "SW Bregenz": "assets/logos/upstreams/sw-bregenz.webp",
+        "Admira Wacker": "assets/logos/upstreams/admira-wacker.webp",
+        "Rapid Viena II": "assets/logos/upstreams/rapid-viena-ii.webp",
+        "Austria Salzburg": "assets/logos/upstreams/austria-salzburg.webp",
+        "First Vienna": "assets/logos/upstreams/first-vienna.webp",
+        "St. Polten": "assets/logos/upstreams/st-polten.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11228,6 +11237,8 @@
         "South Africa Diski Challenge": "assets/logos/leagues/south-africa-diski-challenge.webp",
         "Tigre, Argentina, Qualifying": "assets/logos/leagues/tigre-argentina-qualifying.webp",
         "India Women in Australia, 3 T20I Series": "assets/logos/leagues/india-women-in-australia-3-t20i-series.webp",
-        "Delray Beach, USA": "assets/logos/leagues/delray-beach-usa.webp"
+        "Delray Beach, USA": "assets/logos/leagues/delray-beach-usa.webp",
+        "Lille, France": "assets/logos/leagues/lille-france.webp",
+        "India - Super League": "assets/logos/leagues/india-super-league.webp"
     }
 }
