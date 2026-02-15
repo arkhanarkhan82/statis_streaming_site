@@ -10080,7 +10080,28 @@
         "Sasikumar Mukund": "assets/logos/upstreams/sasikumar-mukund.webp",
         "Michael Vrbensky": "assets/logos/upstreams/michael-vrbensky.webp",
         "Barcelona SC": "assets/logos/upstreams/barcelona-sc.webp",
-        "Nacional Potosi": "assets/logos/upstreams/nacional-potosi.webp"
+        "Nacional Potosi": "assets/logos/upstreams/nacional-potosi.webp",
+        "Alhama CF (W)": "assets/logos/upstreams/alhama-cf-w.webp",
+        "Pogon Grodzisk Mazowiecki": "assets/logos/upstreams/pogon-grodzisk-mazowiecki.webp",
+        "Sociedad B": "assets/logos/upstreams/sociedad-b.webp",
+        "Macclesfield FC": "assets/logos/upstreams/macclesfield-fc.webp",
+        "Sedis Basquet (W)": "assets/logos/upstreams/sedis-basquet-w.webp",
+        "Valencia (W)": "assets/logos/upstreams/valencia-w.webp",
+        "Joventut Badalona (W)": "assets/logos/upstreams/joventut-badalona-w.webp",
+        "FK \u017deljezni\u010dar": "assets/logos/upstreams/fk-\u017eeljezni\u010dar.webp",
+        "Colgate Raiders": "assets/logos/upstreams/colgate-raiders.webp",
+        "Jackson State Tigers": "assets/logos/upstreams/jackson-state-tigers.webp",
+        "Bethune-Cookman Wildcats": "assets/logos/upstreams/bethune-cookman-wildcats.webp",
+        "Stony Brook Seawolves": "assets/logos/upstreams/stony-brook-seawolves.webp",
+        "Queretaro W": "assets/logos/upstreams/queretaro-w.webp",
+        "Machida": "assets/logos/upstreams/machida.webp",
+        "Etar": "assets/logos/upstreams/etar.webp",
+        "Fratria": "assets/logos/upstreams/fratria.webp",
+        "Cortina": "assets/logos/upstreams/cortina.webp",
+        "Merano": "assets/logos/upstreams/merano.webp",
+        "Elverum": "assets/logos/upstreams/elverum.webp",
+        "SG Flensburg-Handewitt": "assets/logos/upstreams/sg-flensburg-handewitt.webp",
+        "CD Bidasoa Irun": "assets/logos/upstreams/cd-bidasoa-irun.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11069,6 +11090,10 @@
         "Liga 3, Relegation Round, Group 2": "assets/logos/leagues/liga-3-relegation-round-group-2.webp",
         "Dubai, UAE": "assets/logos/leagues/dubai-uae.webp",
         "WTA Dubai": "assets/logos/leagues/wta-dubai.webp",
-        "Lille, France, Qualifying": "assets/logos/leagues/lille-france-qualifying.webp"
+        "Lille, France, Qualifying": "assets/logos/leagues/lille-france-qualifying.webp",
+        "Spain - League Endesa (W)": "assets/logos/leagues/spain-league-endesa-w.webp",
+        "Carioca S\u00e9rie A \u2013 Mata-mata": "assets/logos/leagues/carioca-s\u00e9rie-a-mata-mata.webp",
+        "Vtora liga": "assets/logos/leagues/vtora-liga.webp",
+        "European League": "assets/logos/leagues/european-league.webp"
     }
 }
