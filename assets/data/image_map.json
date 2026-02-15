@@ -10239,7 +10239,12 @@
         "St. Polten": "assets/logos/upstreams/st-polten.webp",
         "Norway Curling": "assets/logos/streamed/norway-curling.webp",
         "Anastasiya Kolyada": "assets/logos/upstreams/anastasiya-kolyada.webp",
-        "Melissa Boyden": "assets/logos/upstreams/melissa-boyden.webp"
+        "Melissa Boyden": "assets/logos/upstreams/melissa-boyden.webp",
+        "Central Esp": "assets/logos/upstreams/central-esp.webp",
+        "Ypiranga FC": "assets/logos/upstreams/ypiranga-fc.webp",
+        "SV Notch": "assets/logos/upstreams/sv-notch.webp",
+        "Victorian Spirit W": "assets/logos/upstreams/victorian-spirit-w.webp",
+        "Joao Vitor Scramin Do Lago": "assets/logos/upstreams/joao-vitor-scramin-do-lago.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11242,6 +11247,8 @@
         "India Women in Australia, 3 T20I Series": "assets/logos/leagues/india-women-in-australia-3-t20i-series.webp",
         "Delray Beach, USA": "assets/logos/leagues/delray-beach-usa.webp",
         "Lille, France": "assets/logos/leagues/lille-france.webp",
-        "India - Super League": "assets/logos/leagues/india-super-league.webp"
+        "India - Super League": "assets/logos/leagues/india-super-league.webp",
+        "Uruguay Liga AUF": "assets/logos/leagues/uruguay-liga-auf.webp",
+        "Ga\u00facho - Mata-mata": "assets/logos/leagues/ga\u00facho-mata-mata.webp"
     }
 }
