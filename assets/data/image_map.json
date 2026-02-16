@@ -10264,7 +10264,16 @@
         "Bremen (W)": "assets/logos/upstreams/bremen-w.webp",
         "CA Atlanta": "assets/logos/upstreams/ca-atlanta.webp",
         "Ksenia Efremova": "assets/logos/upstreams/ksenia-efremova.webp",
-        "Carol Young-suh Lee": "assets/logos/upstreams/carol-young-suh-lee.webp"
+        "Carol Young-suh Lee": "assets/logos/upstreams/carol-young-suh-lee.webp",
+        "Cerro CA": "assets/logos/upstreams/cerro-ca.webp",
+        "Wybrzeze Gdansk": "assets/logos/upstreams/wybrzeze-gdansk.webp",
+        "Alessandro Battiston": "assets/logos/upstreams/alessandro-battiston.webp",
+        "Nico Hipfl": "assets/logos/upstreams/nico-hipfl.webp",
+        "Caijsa Wilda Hennemann": "assets/logos/upstreams/caijsa-wilda-hennemann.webp",
+        "Ignacio Buse": "assets/logos/upstreams/ignacio-buse.webp",
+        "Ann Akasha Ceuca": "assets/logos/upstreams/ann-akasha-ceuca.webp",
+        "Gaia Maduzzi": "assets/logos/upstreams/gaia-maduzzi.webp",
+        "Stefaniya Pushkar": "assets/logos/upstreams/stefaniya-pushkar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11276,6 +11285,7 @@
         "Korac cup": "assets/logos/leagues/korac-cup.webp",
         "Italian Cup": "assets/logos/leagues/italian-cup.webp",
         "UEFA Europa Cup Women": "assets/logos/leagues/uefa-europa-cup-women.webp",
-        "FA Youth Cup": "assets/logos/leagues/fa-youth-cup.webp"
+        "FA Youth Cup": "assets/logos/leagues/fa-youth-cup.webp",
+        "Rio de Janeiro, Brazil": "assets/logos/leagues/rio-de-janeiro-brazil.webp"
     }
 }
