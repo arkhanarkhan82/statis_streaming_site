@@ -10393,7 +10393,10 @@
         "Mariano Kestelboim": "assets/logos/upstreams/mariano-kestelboim.webp",
         "Albion FC": "assets/logos/upstreams/albion-fc.webp",
         "Sturm Graz II": "assets/logos/upstreams/sturm-graz-ii.webp",
-        "Liefering": "assets/logos/upstreams/liefering.webp"
+        "Liefering": "assets/logos/upstreams/liefering.webp",
+        "Etar Veliko Tarnovo": "assets/logos/upstreams/etar-veliko-tarnovo.webp",
+        "FC Fratria Varna": "assets/logos/upstreams/fc-fratria-varna.webp",
+        "Utenos Juventus": "assets/logos/upstreams/utenos-juventus.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11415,6 +11418,7 @@
         "Midland, USA": "assets/logos/leagues/midland-usa.webp",
         "Denmark SuperLiga": "assets/logos/leagues/denmark-superliga.webp",
         "MLB": "assets/logos/leagues/mlb.webp",
-        "Tigre, Argentina": "assets/logos/leagues/tigre-argentina.webp"
+        "Tigre, Argentina": "assets/logos/leagues/tigre-argentina.webp",
+        "Players Championship": "assets/logos/leagues/players-championship.webp"
     }
 }
