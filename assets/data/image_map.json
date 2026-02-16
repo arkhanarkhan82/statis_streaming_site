@@ -10387,7 +10387,10 @@
         "Carabobo FC": "assets/logos/streamed/carabobo-fc.webp",
         "Sampaio Corr\u00eaa RJ": "assets/logos/streamed/sampaio-corr\u00eaa-rj.webp",
         "Desportiva ES": "assets/logos/streamed/desportiva-es.webp",
-        "Valeryia Darashuk": "assets/logos/upstreams/valeryia-darashuk.webp"
+        "Valeryia Darashuk": "assets/logos/upstreams/valeryia-darashuk.webp",
+        "Lebanon Leprechauns": "assets/logos/upstreams/lebanon-leprechauns.webp",
+        "Calin Apostol": "assets/logos/upstreams/calin-apostol.webp",
+        "Mariano Kestelboim": "assets/logos/upstreams/mariano-kestelboim.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11408,6 +11411,7 @@
         "Bosnia and Herzegovina Premier League": "assets/logos/leagues/bosnia-and-herzegovina-premier-league.webp",
         "Midland, USA": "assets/logos/leagues/midland-usa.webp",
         "Denmark SuperLiga": "assets/logos/leagues/denmark-superliga.webp",
-        "MLB": "assets/logos/leagues/mlb.webp"
+        "MLB": "assets/logos/leagues/mlb.webp",
+        "Tigre, Argentina": "assets/logos/leagues/tigre-argentina.webp"
     }
 }
