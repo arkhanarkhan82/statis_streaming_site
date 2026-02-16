@@ -10396,7 +10396,17 @@
         "Liefering": "assets/logos/upstreams/liefering.webp",
         "Etar Veliko Tarnovo": "assets/logos/upstreams/etar-veliko-tarnovo.webp",
         "FC Fratria Varna": "assets/logos/upstreams/fc-fratria-varna.webp",
-        "Utenos Juventus": "assets/logos/upstreams/utenos-juventus.webp"
+        "Utenos Juventus": "assets/logos/upstreams/utenos-juventus.webp",
+        "Queensland Bulls": "assets/logos/upstreams/queensland-bulls.webp",
+        "CA Claypole": "assets/logos/upstreams/ca-claypole.webp",
+        "RK Vardar 1961": "assets/logos/upstreams/rk-vardar-1961.webp",
+        "Kadetten": "assets/logos/upstreams/kadetten.webp",
+        "Nexe Na\u0161ice": "assets/logos/upstreams/nexe-na\u0161ice.webp",
+        "Skanderborg Aarhus H\u00e5ndbold": "assets/logos/upstreams/skanderborg-aarhus-h\u00e5ndbold.webp",
+        "Kristianstad": "assets/logos/upstreams/kristianstad.webp",
+        "Al Nassr": "assets/logos/upstreams/al-nassr.webp",
+        "Arkadag FK": "assets/logos/upstreams/arkadag-fk.webp",
+        "Sepahan SC": "assets/logos/upstreams/sepahan-sc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11419,6 +11429,12 @@
         "Denmark SuperLiga": "assets/logos/leagues/denmark-superliga.webp",
         "MLB": "assets/logos/leagues/mlb.webp",
         "Tigre, Argentina": "assets/logos/leagues/tigre-argentina.webp",
-        "Players Championship": "assets/logos/leagues/players-championship.webp"
+        "Players Championship": "assets/logos/leagues/players-championship.webp",
+        "EHF - European League - Gr.II": "assets/logos/leagues/ehf-european-league-grii.webp",
+        "EHF - European League - Gr.III": "assets/logos/leagues/ehf-european-league-griii.webp",
+        "EHF - European League - Gr.IV": "assets/logos/leagues/ehf-european-league-griv.webp",
+        "EHF European League, Main Round, Group IV": "assets/logos/leagues/ehf-european-league-main-round-group-iv.webp",
+        "EHF European League, Main Round, Group II": "assets/logos/leagues/ehf-european-league-main-round-group-ii.webp",
+        "AFC - Champions League II - Playoff": "assets/logos/leagues/afc-champions-league-ii-playoff.webp"
     }
 }
