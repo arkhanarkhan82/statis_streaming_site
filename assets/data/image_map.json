@@ -10260,7 +10260,11 @@
         "Szeged": "assets/logos/upstreams/szeged.webp",
         "Oxford Utd U18": "assets/logos/upstreams/oxford-utd-u18.webp",
         "BR Volleys": "assets/logos/upstreams/br-volleys.webp",
-        "GOG": "assets/logos/upstreams/gog.webp"
+        "GOG": "assets/logos/upstreams/gog.webp",
+        "Bremen (W)": "assets/logos/upstreams/bremen-w.webp",
+        "CA Atlanta": "assets/logos/upstreams/ca-atlanta.webp",
+        "Ksenia Efremova": "assets/logos/upstreams/ksenia-efremova.webp",
+        "Carol Young-suh Lee": "assets/logos/upstreams/carol-young-suh-lee.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
