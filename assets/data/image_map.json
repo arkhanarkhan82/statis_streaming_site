@@ -10317,7 +10317,9 @@
         "Alina Nesmianovych": "assets/logos/upstreams/alina-nesmianovych.webp",
         "Kamila Neradova": "assets/logos/upstreams/kamila-neradova.webp",
         "MBA Moscow": "assets/logos/upstreams/mba-moscow.webp",
-        "Safien Boulonois": "assets/logos/upstreams/safien-boulonois.webp"
+        "Safien Boulonois": "assets/logos/upstreams/safien-boulonois.webp",
+        "Albion FC (URU)": "assets/logos/upstreams/albion-fc-uru.webp",
+        "Federico Valle": "assets/logos/upstreams/federico-valle.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11332,6 +11334,7 @@
         "FA Youth Cup": "assets/logos/leagues/fa-youth-cup.webp",
         "Rio de Janeiro, Brazil": "assets/logos/leagues/rio-de-janeiro-brazil.webp",
         "New Zealand - Ford Trophy": "assets/logos/leagues/new-zealand-ford-trophy.webp",
-        "Olympic Games, Knockout Stage": "assets/logos/leagues/olympic-games-knockout-stage.webp"
+        "Olympic Games, Knockout Stage": "assets/logos/leagues/olympic-games-knockout-stage.webp",
+        "Uruguay - Primera Division - Apertura": "assets/logos/leagues/uruguay-primera-division-apertura.webp"
     }
 }
