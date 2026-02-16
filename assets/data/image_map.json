@@ -10383,7 +10383,10 @@
         "Opole": "assets/logos/upstreams/opole.webp",
         "Fredrikstad FK": "assets/logos/upstreams/fredrikstad-fk.webp",
         "KFUM Oslo": "assets/logos/upstreams/kfum-oslo.webp",
-        "Maidstone": "assets/logos/upstreams/maidstone.webp"
+        "Maidstone": "assets/logos/upstreams/maidstone.webp",
+        "Carabobo FC": "assets/logos/streamed/carabobo-fc.webp",
+        "Sampaio Corr\u00eaa RJ": "assets/logos/streamed/sampaio-corr\u00eaa-rj.webp",
+        "Desportiva ES": "assets/logos/streamed/desportiva-es.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
