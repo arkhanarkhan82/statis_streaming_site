@@ -10291,7 +10291,9 @@
         "S.Kenin": "assets/logos/upstreams/skenin.webp",
         "C.Tauson": "assets/logos/upstreams/ctauson.webp",
         "B.Bencic": "assets/logos/upstreams/bbencic.webp",
-        "J.Maneiro": "assets/logos/upstreams/jmaneiro.webp"
+        "J.Maneiro": "assets/logos/upstreams/jmaneiro.webp",
+        "Madalena Matias": "assets/logos/upstreams/madalena-matias.webp",
+        "Mississippi Valley State Delta Devils": "assets/logos/upstreams/mississippi-valley-state-delta-devils.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11305,6 +11307,7 @@
         "UEFA Europa Cup Women": "assets/logos/leagues/uefa-europa-cup-women.webp",
         "FA Youth Cup": "assets/logos/leagues/fa-youth-cup.webp",
         "Rio de Janeiro, Brazil": "assets/logos/leagues/rio-de-janeiro-brazil.webp",
-        "New Zealand - Ford Trophy": "assets/logos/leagues/new-zealand-ford-trophy.webp"
+        "New Zealand - Ford Trophy": "assets/logos/leagues/new-zealand-ford-trophy.webp",
+        "Olympic Games, Knockout Stage": "assets/logos/leagues/olympic-games-knockout-stage.webp"
     }
 }
