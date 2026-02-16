@@ -22,7 +22,7 @@ OUTPUT_DIR = '.'
 # API ENDPOINTS
 NODE_A_ENDPOINT = 'https://streamed.pk/api'
 ADSTRIM_ENDPOINT = 'https://beta.adstrim.ru/api/events'
-TOPEMBED_BASE = 'https://topembed.pw/channel/'
+TOPEMBED_BASE = 'https://viewembed.ru/channel/'
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
