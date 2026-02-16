@@ -10244,7 +10244,23 @@
         "Ypiranga FC": "assets/logos/upstreams/ypiranga-fc.webp",
         "SV Notch": "assets/logos/upstreams/sv-notch.webp",
         "Victorian Spirit W": "assets/logos/upstreams/victorian-spirit-w.webp",
-        "Joao Vitor Scramin Do Lago": "assets/logos/upstreams/joao-vitor-scramin-do-lago.webp"
+        "Joao Vitor Scramin Do Lago": "assets/logos/upstreams/joao-vitor-scramin-do-lago.webp",
+        "Union La Calera": "assets/logos/upstreams/union-la-calera.webp",
+        "Montpellier Handball": "assets/logos/upstreams/montpellier-handball.webp",
+        "Charleston Southern Buccaneers": "assets/logos/upstreams/charleston-southern-buccaneers.webp",
+        "Gardner-Webb Runnin' Bulldogs": "assets/logos/upstreams/gardner-webb-runnin-bulldogs.webp",
+        "Trieste": "assets/logos/upstreams/trieste.webp",
+        "Atl\u00e9tico Ottawa": "assets/logos/upstreams/atl\u00e9tico-ottawa.webp",
+        "Real CD Espa\u00f1a": "assets/logos/upstreams/real-cd-espa\u00f1a.webp",
+        "Hammarby W": "assets/logos/upstreams/hammarby-w.webp",
+        "Sporting Lisbon W": "assets/logos/upstreams/sporting-lisbon-w.webp",
+        "Defence Force": "assets/logos/upstreams/defence-force.webp",
+        "Kentucky Wildcats": "assets/logos/upstreams/kentucky-wildcats.webp",
+        "PPD Zagreb": "assets/logos/upstreams/ppd-zagreb.webp",
+        "Szeged": "assets/logos/upstreams/szeged.webp",
+        "Oxford Utd U18": "assets/logos/upstreams/oxford-utd-u18.webp",
+        "BR Volleys": "assets/logos/upstreams/br-volleys.webp",
+        "GOG": "assets/logos/upstreams/gog.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11249,6 +11265,13 @@
         "Lille, France": "assets/logos/leagues/lille-france.webp",
         "India - Super League": "assets/logos/leagues/india-super-league.webp",
         "Uruguay Liga AUF": "assets/logos/leagues/uruguay-liga-auf.webp",
-        "Ga\u00facho - Mata-mata": "assets/logos/leagues/ga\u00facho-mata-mata.webp"
+        "Ga\u00facho - Mata-mata": "assets/logos/leagues/ga\u00facho-mata-mata.webp",
+        "NBA All Star Game, Final": "assets/logos/leagues/nba-all-star-game-final.webp",
+        "UEFA Champions League, Knockout stage": "assets/logos/leagues/uefa-champions-league-knockout-stage.webp",
+        "EHF European League, Main Round": "assets/logos/leagues/ehf-european-league-main-round.webp",
+        "Korac cup": "assets/logos/leagues/korac-cup.webp",
+        "Italian Cup": "assets/logos/leagues/italian-cup.webp",
+        "UEFA Europa Cup Women": "assets/logos/leagues/uefa-europa-cup-women.webp",
+        "FA Youth Cup": "assets/logos/leagues/fa-youth-cup.webp"
     }
 }
