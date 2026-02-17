@@ -10512,7 +10512,11 @@
         "Juan Dominguez Collado": "assets/logos/upstreams/juan-dominguez-collado.webp",
         "Justin Roberts": "assets/logos/upstreams/justin-roberts.webp",
         "Noah Zamora": "assets/logos/upstreams/noah-zamora.webp",
-        "Tractor": "assets/logos/upstreams/tractor.webp"
+        "Tractor": "assets/logos/upstreams/tractor.webp",
+        "Tori Kinard": "assets/logos/upstreams/tori-kinard.webp",
+        "Nikol Mircheva": "assets/logos/upstreams/nikol-mircheva.webp",
+        "Zdena Safarova": "assets/logos/upstreams/zdena-safarova.webp",
+        "Edda Mamedova": "assets/logos/upstreams/edda-mamedova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11555,6 +11559,7 @@
         "Qatar ExxonMobil Open": "assets/logos/leagues/qatar-exxonmobil-open.webp",
         "WTA - Dubai (EAU)": "assets/logos/leagues/wta-dubai-eau.webp",
         "Champions League Women, Playoffs": "assets/logos/leagues/champions-league-women-playoffs.webp",
-        "ATP Rio de Janeiro": "assets/logos/leagues/atp-rio-de-janeiro.webp"
+        "ATP Rio de Janeiro": "assets/logos/leagues/atp-rio-de-janeiro.webp",
+        "CAF Confederation Cup": "assets/logos/leagues/caf-confederation-cup.webp"
     }
 }
