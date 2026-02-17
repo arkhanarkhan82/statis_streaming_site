@@ -10479,7 +10479,10 @@
         "Alejandro Lopez Escribano": "assets/logos/upstreams/alejandro-lopez-escribano.webp",
         "Tanguy Genier": "assets/logos/upstreams/tanguy-genier.webp",
         "HC Eurofarm Pelister": "assets/logos/upstreams/hc-eurofarm-pelister.webp",
-        "Orlen Wisla Plock": "assets/logos/upstreams/orlen-wisla-plock.webp"
+        "Orlen Wisla Plock": "assets/logos/upstreams/orlen-wisla-plock.webp",
+        "Sara Gvozdenovi\u0107": "assets/logos/upstreams/sara-gvozdenovi\u0107.webp",
+        "Al-Hussein Irbid": "assets/logos/upstreams/al-hussein-irbid.webp",
+        "C\u00f4ng An H\u00e0 N\u1ed9i": "assets/logos/upstreams/c\u00f4ng-an-h\u00e0-n\u1ed9i.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11520,6 +11523,8 @@
         "Liga 2": "assets/logos/leagues/liga-2.webp",
         "Turkey - Cup": "assets/logos/leagues/turkey-cup.webp",
         "Qatar ExxonMobil Open": "assets/logos/leagues/qatar-exxonmobil-open.webp",
-        "WTA - Dubai (EAU)": "assets/logos/leagues/wta-dubai-eau.webp"
+        "WTA - Dubai (EAU)": "assets/logos/leagues/wta-dubai-eau.webp",
+        "Champions League Women, Playoffs": "assets/logos/leagues/champions-league-women-playoffs.webp",
+        "ATP Rio de Janeiro": "assets/logos/leagues/atp-rio-de-janeiro.webp"
     }
 }
