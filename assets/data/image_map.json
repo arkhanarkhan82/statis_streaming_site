@@ -10449,7 +10449,25 @@
         "Alan Raul Sau Franco": "assets/logos/upstreams/alan-raul-sau-franco.webp",
         "Gabriel Alejandro Hidalgo": "assets/logos/upstreams/gabriel-alejandro-hidalgo.webp",
         "Alejo Lorenzo Lingua Lavallen": "assets/logos/upstreams/alejo-lorenzo-lingua-lavallen.webp",
-        "Gardner Webb": "assets/logos/streamed/gardner-webb.webp"
+        "Gardner Webb": "assets/logos/streamed/gardner-webb.webp",
+        "ATP 500 Doha: Fucsovics": "assets/logos/upstreams/atp-500-doha-fucsovics.webp",
+        "Habib": "assets/logos/upstreams/habib.webp",
+        "Torneo de Doha (T2026): Echargui": "assets/logos/upstreams/torneo-de-doha-t2026-echargui.webp",
+        "Tsitsipas": "assets/logos/upstreams/tsitsipas.webp",
+        "ATP 500 Doha: Lehecka": "assets/logos/upstreams/atp-500-doha-lehecka.webp",
+        "Brooksby": "assets/logos/upstreams/brooksby.webp",
+        "Torneo de Doha (T2026): Mochizuki": "assets/logos/upstreams/torneo-de-doha-t2026-mochizuki.webp",
+        "Khachanov": "assets/logos/upstreams/khachanov.webp",
+        "ATP 500 Doha: Humbert": "assets/logos/upstreams/atp-500-doha-humbert.webp",
+        "Marozsan": "assets/logos/upstreams/marozsan.webp",
+        "Torneo de Doha (T2026): Alcaraz": "assets/logos/upstreams/torneo-de-doha-t2026-alcaraz.webp",
+        "Rinderknech": "assets/logos/upstreams/rinderknech.webp",
+        "Santiago Pedro Franchini": "assets/logos/upstreams/santiago-pedro-franchini.webp",
+        "Torneo de Doha (T2026): De Jong": "assets/logos/upstreams/torneo-de-doha-t2026-de-jong.webp",
+        "Rublev": "assets/logos/upstreams/rublev.webp",
+        "Scandicci": "assets/logos/upstreams/scandicci.webp",
+        "Louvain": "assets/logos/upstreams/louvain.webp",
+        "Ankara | 120 min": "assets/logos/upstreams/ankara-120-min.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11488,6 +11506,7 @@
         "Spanish Cup": "assets/logos/leagues/spanish-cup.webp",
         "Copa do Brasil": "assets/logos/leagues/copa-do-brasil.webp",
         "Liga 2": "assets/logos/leagues/liga-2.webp",
-        "Turkey - Cup": "assets/logos/leagues/turkey-cup.webp"
+        "Turkey - Cup": "assets/logos/leagues/turkey-cup.webp",
+        "Qatar ExxonMobil Open": "assets/logos/leagues/qatar-exxonmobil-open.webp"
     }
 }
