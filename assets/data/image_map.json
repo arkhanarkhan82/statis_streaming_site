@@ -10561,7 +10561,13 @@
         "Remi Rice": "assets/logos/upstreams/remi-rice.webp",
         "Gavin Young": "assets/logos/upstreams/gavin-young.webp",
         "Yuelong Z.": "assets/logos/upstreams/yuelong-z.webp",
-        "WSC Hertha Wels": "assets/logos/upstreams/wsc-hertha-wels.webp"
+        "WSC Hertha Wels": "assets/logos/upstreams/wsc-hertha-wels.webp",
+        "Fenerbahce (W)": "assets/logos/upstreams/fenerbahce-w.webp",
+        "Aalborg H\u00e5ndbold": "assets/logos/upstreams/aalborg-h\u00e5ndbold.webp",
+        "Kolstad": "assets/logos/upstreams/kolstad.webp",
+        "Pick Szeged": "assets/logos/upstreams/pick-szeged.webp",
+        "RK Zagreb": "assets/logos/upstreams/rk-zagreb.webp",
+        "Paris Saint-Germain Handball": "assets/logos/upstreams/paris-saint-germain-handball.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11606,6 +11612,10 @@
         "Champions League Women, Playoffs": "assets/logos/leagues/champions-league-women-playoffs.webp",
         "ATP Rio de Janeiro": "assets/logos/leagues/atp-rio-de-janeiro.webp",
         "CAF Confederation Cup": "assets/logos/leagues/caf-confederation-cup.webp",
-        "Players Championship 2026": "assets/logos/leagues/players-championship-2026.webp"
+        "Players Championship 2026": "assets/logos/leagues/players-championship-2026.webp",
+        "EuroLeague (W) - Play-in": "assets/logos/leagues/euroleague-w-play-in.webp",
+        "Italy - Cup": "assets/logos/leagues/italy-cup.webp",
+        "EHF Champions League, Group A": "assets/logos/leagues/ehf-champions-league-group-a.webp",
+        "Champions League - Gr.B": "assets/logos/leagues/champions-league-grb.webp"
     }
 }
