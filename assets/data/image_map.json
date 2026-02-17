@@ -10406,7 +10406,28 @@
         "Kristianstad": "assets/logos/upstreams/kristianstad.webp",
         "Al Nassr": "assets/logos/upstreams/al-nassr.webp",
         "Arkadag FK": "assets/logos/upstreams/arkadag-fk.webp",
-        "Sepahan SC": "assets/logos/upstreams/sepahan-sc.webp"
+        "Sepahan SC": "assets/logos/upstreams/sepahan-sc.webp",
+        "Noah": "assets/logos/upstreams/noah.webp",
+        "Qarabag FK": "assets/logos/upstreams/qarabag-fk.webp",
+        "CA Cerro": "assets/logos/upstreams/ca-cerro.webp",
+        "Ritten": "assets/logos/upstreams/ritten.webp",
+        "MBA-MAI Moscow": "assets/logos/upstreams/mba-mai-moscow.webp",
+        "Sepahan S.C.": "assets/logos/upstreams/sepahan-sc.webp",
+        "Defence Force FC": "assets/logos/upstreams/defence-force-fc.webp",
+        "GOG H\u00e5ndbold": "assets/logos/upstreams/gog-h\u00e5ndbold.webp",
+        "Illinois State Redbirds": "assets/logos/upstreams/illinois-state-redbirds.webp",
+        "Florida Intl": "assets/logos/upstreams/florida-intl.webp",
+        "O&M FC": "assets/logos/upstreams/om-fc.webp",
+        "Vasco da Gama AC": "assets/logos/upstreams/vasco-da-gama-ac.webp",
+        "G-Osaka": "assets/logos/upstreams/g-osaka.webp",
+        "Pohang": "assets/logos/upstreams/pohang.webp",
+        "Voluntari": "assets/logos/upstreams/voluntari.webp",
+        "Steaua Bucuresti": "assets/logos/upstreams/steaua-bucuresti.webp",
+        "Zrinjski": "assets/logos/upstreams/zrinjski.webp",
+        "Vive Kielce": "assets/logos/upstreams/vive-kielce.webp",
+        "Veszprem": "assets/logos/upstreams/veszprem.webp",
+        "Eurofarm Rabotnik": "assets/logos/upstreams/eurofarm-rabotnik.webp",
+        "Cruzeiro Basquete": "assets/logos/upstreams/cruzeiro-basquete.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11435,6 +11456,15 @@
         "EHF - European League - Gr.IV": "assets/logos/leagues/ehf-european-league-griv.webp",
         "EHF European League, Main Round, Group IV": "assets/logos/leagues/ehf-european-league-main-round-group-iv.webp",
         "EHF European League, Main Round, Group II": "assets/logos/leagues/ehf-european-league-main-round-group-ii.webp",
-        "AFC - Champions League II - Playoff": "assets/logos/leagues/afc-champions-league-ii-playoff.webp"
+        "AFC - Champions League II - Playoff": "assets/logos/leagues/afc-champions-league-ii-playoff.webp",
+        "Europa Conference League": "assets/logos/leagues/europa-conference-league.webp",
+        "UEFA Champions League, Women, Knockout stage": "assets/logos/leagues/uefa-champions-league-women-knockout-stage.webp",
+        "Alps Hockey League - The losers' tour - Gr.B": "assets/logos/leagues/alps-hockey-league-the-losers-tour-grb.webp",
+        "Alps Hockey League - The losers' tour - Gr.A": "assets/logos/leagues/alps-hockey-league-the-losers-tour-gra.webp",
+        "Mozzart Kup": "assets/logos/leagues/mozzart-kup.webp",
+        "EHF Champions League, Group B": "assets/logos/leagues/ehf-champions-league-group-b.webp",
+        "Spanish Cup": "assets/logos/leagues/spanish-cup.webp",
+        "Copa do Brasil": "assets/logos/leagues/copa-do-brasil.webp",
+        "Liga 2": "assets/logos/leagues/liga-2.webp"
     }
 }
