@@ -10470,7 +10470,9 @@
         "Ankara | 120 min": "assets/logos/upstreams/ankara-120-min.webp",
         "Rafael Giotis": "assets/logos/upstreams/rafael-giotis.webp",
         "Giorgio Tabacco": "assets/logos/upstreams/giorgio-tabacco.webp",
-        "Drita": "assets/logos/upstreams/drita.webp"
+        "Drita": "assets/logos/upstreams/drita.webp",
+        "Nove Zamky": "assets/logos/upstreams/nove-zamky.webp",
+        "Spartak Dubnica": "assets/logos/upstreams/spartak-dubnica.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11510,6 +11512,7 @@
         "Copa do Brasil": "assets/logos/leagues/copa-do-brasil.webp",
         "Liga 2": "assets/logos/leagues/liga-2.webp",
         "Turkey - Cup": "assets/logos/leagues/turkey-cup.webp",
-        "Qatar ExxonMobil Open": "assets/logos/leagues/qatar-exxonmobil-open.webp"
+        "Qatar ExxonMobil Open": "assets/logos/leagues/qatar-exxonmobil-open.webp",
+        "WTA - Dubai (EAU)": "assets/logos/leagues/wta-dubai-eau.webp"
     }
 }
