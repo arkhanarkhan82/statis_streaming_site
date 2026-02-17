@@ -10427,7 +10427,18 @@
         "Vive Kielce": "assets/logos/upstreams/vive-kielce.webp",
         "Veszprem": "assets/logos/upstreams/veszprem.webp",
         "Eurofarm Rabotnik": "assets/logos/upstreams/eurofarm-rabotnik.webp",
-        "Cruzeiro Basquete": "assets/logos/upstreams/cruzeiro-basquete.webp"
+        "Cruzeiro Basquete": "assets/logos/upstreams/cruzeiro-basquete.webp",
+        "Esenler Erok": "assets/logos/upstreams/esenler-erok.webp",
+        "Lorenzo Beraldo": "assets/logos/upstreams/lorenzo-beraldo.webp",
+        "Alina Granwehr": "assets/logos/upstreams/alina-granwehr.webp",
+        "Marko Topo": "assets/logos/upstreams/marko-topo.webp",
+        "Nicolas Parizzia": "assets/logos/upstreams/nicolas-parizzia.webp",
+        "Jan Jermar": "assets/logos/upstreams/jan-jermar.webp",
+        "Fleur De Bresser": "assets/logos/upstreams/fleur-de-bresser.webp",
+        "Julie Struplova": "assets/logos/upstreams/julie-struplova.webp",
+        "Jan Kumstat": "assets/logos/upstreams/jan-kumstat.webp",
+        "Aneta Kucmova": "assets/logos/upstreams/aneta-kucmova.webp",
+        "Elizabeth Coleman": "assets/logos/upstreams/elizabeth-coleman.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11465,6 +11476,7 @@
         "EHF Champions League, Group B": "assets/logos/leagues/ehf-champions-league-group-b.webp",
         "Spanish Cup": "assets/logos/leagues/spanish-cup.webp",
         "Copa do Brasil": "assets/logos/leagues/copa-do-brasil.webp",
-        "Liga 2": "assets/logos/leagues/liga-2.webp"
+        "Liga 2": "assets/logos/leagues/liga-2.webp",
+        "Turkey - Cup": "assets/logos/leagues/turkey-cup.webp"
     }
 }
