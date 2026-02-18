@@ -10631,7 +10631,9 @@
         "Cong An Ha Noi": "assets/logos/upstreams/cong-an-ha-noi.webp",
         "Rajat Shirur": "assets/logos/upstreams/rajat-shirur.webp",
         "Mathilde Ngijol Carre": "assets/logos/upstreams/mathilde-ngijol-carre.webp",
-        "FC Real Sireti": "assets/logos/upstreams/fc-real-sireti.webp"
+        "FC Real Sireti": "assets/logos/upstreams/fc-real-sireti.webp",
+        "HC ISMM Koprivnice": "assets/logos/upstreams/hc-ismm-koprivnice.webp",
+        "HC Vrchlabi": "assets/logos/upstreams/hc-vrchlabi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11691,6 +11693,7 @@
         "Slovensky Pohar": "assets/logos/leagues/slovensky-pohar.webp",
         "T\u00fcrkiye Kupasi, Final Round": "assets/logos/leagues/t\u00fcrkiye-kupasi-final-round.webp",
         "Portugal - League Revelacao U23 - Gr.Retrogradare": "assets/logos/leagues/portugal-league-revelacao-u23-grretrogradare.webp",
-        "AFC Champions League II": "assets/logos/leagues/afc-champions-league-ii.webp"
+        "AFC Champions League II": "assets/logos/leagues/afc-champions-league-ii.webp",
+        "UEFA Europa Cup, Women": "assets/logos/leagues/uefa-europa-cup-women.webp"
     }
 }
