@@ -10642,7 +10642,15 @@
         "Arsenal --- CN HD": "assets/logos/upstreams/arsenal-cn-hd.webp",
         "Bayer Leverkusen --- GRE": "assets/logos/upstreams/bayer-leverkusen-gre.webp",
         "\u015e\u0259fa": "assets/logos/streamed/\u015f\u0259fa.webp",
-        "Ming\u0259\u00e7evir": "assets/logos/streamed/ming\u0259\u00e7evir.webp"
+        "Ming\u0259\u00e7evir": "assets/logos/streamed/ming\u0259\u00e7evir.webp",
+        "IA Akranes": "assets/logos/upstreams/ia-akranes.webp",
+        "Kahibah FC": "assets/logos/upstreams/kahibah-fc.webp",
+        "Lambton Jaffas": "assets/logos/upstreams/lambton-jaffas.webp",
+        "A'ali": "assets/logos/upstreams/aali.webp",
+        "RK Eurofarm Pelister": "assets/logos/upstreams/rk-eurofarm-pelister.webp",
+        "Nidaros Hockey": "assets/logos/upstreams/nidaros-hockey.webp",
+        "Stjernen Hockey": "assets/logos/upstreams/stjernen-hockey.webp",
+        "Hume City": "assets/logos/upstreams/hume-city.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11707,6 +11715,8 @@
         "Greece Basketball Cup": "assets/logos/leagues/greece-basketball-cup.webp",
         "Romanian Basketball Cup": "assets/logos/leagues/romanian-basketball-cup.webp",
         "French - Leaders Cup LNB": "assets/logos/leagues/french-leaders-cup-lnb.webp",
-        "ATP - Doha (QAT)": "assets/logos/leagues/atp-doha-qat.webp"
+        "ATP - Doha (QAT)": "assets/logos/leagues/atp-doha-qat.webp",
+        "Final Eight": "assets/logos/leagues/final-eight.webp",
+        "Champions League - Gr.A": "assets/logos/leagues/champions-league-gra.webp"
     }
 }
