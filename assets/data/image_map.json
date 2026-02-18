@@ -10591,7 +10591,25 @@
         "Chambery Savoie": "assets/logos/upstreams/chambery-savoie.webp",
         "New Zealand Warriors": "assets/logos/upstreams/new-zealand-warriors.webp",
         "Wests Tigers": "assets/logos/upstreams/wests-tigers.webp",
-        "Jesse Flores": "assets/logos/upstreams/jesse-flores.webp"
+        "Jesse Flores": "assets/logos/upstreams/jesse-flores.webp",
+        "FC Spartak Trnava": "assets/logos/upstreams/fc-spartak-trnava.webp",
+        "\u0160K Slovan Bratislava": "assets/logos/upstreams/\u0161k-slovan-bratislava.webp",
+        "Hudiksvalls HC": "assets/logos/upstreams/hudiksvalls-hc.webp",
+        "Tingsryds AIF": "assets/logos/upstreams/tingsryds-aif.webp",
+        "Jeremy Schifris": "assets/logos/upstreams/jeremy-schifris.webp",
+        "Matteo Fondriest": "assets/logos/upstreams/matteo-fondriest.webp",
+        "Jelle Sels": "assets/logos/upstreams/jelle-sels.webp",
+        "Daniel Verbeek": "assets/logos/upstreams/daniel-verbeek.webp",
+        "Goncalo Da Rosa Castro": "assets/logos/upstreams/goncalo-da-rosa-castro.webp",
+        "Ya-HUSAn Lee": "assets/logos/upstreams/ya-husan-lee.webp",
+        "Luca Potenza": "assets/logos/upstreams/luca-potenza.webp",
+        "Sander Jong": "assets/logos/upstreams/sander-jong.webp",
+        "Georgii Kravchenko": "assets/logos/upstreams/georgii-kravchenko.webp",
+        "Christina Bednarczyk": "assets/logos/upstreams/christina-bednarczyk.webp",
+        "Ida Wobker": "assets/logos/upstreams/ida-wobker.webp",
+        "Mariella Thamm": "assets/logos/upstreams/mariella-thamm.webp",
+        "Haruka Kaji": "assets/logos/upstreams/haruka-kaji.webp",
+        "Martyna Kubka": "assets/logos/upstreams/martyna-kubka.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11647,6 +11665,8 @@
         "Liga II": "assets/logos/leagues/liga-ii.webp",
         "Recopa Sudamericana": "assets/logos/leagues/recopa-sudamericana.webp",
         "CONMEBOL Recopa": "assets/logos/leagues/conmebol-recopa.webp",
-        "Austria - 2.League": "assets/logos/leagues/austria-2league.webp"
+        "Austria - 2.League": "assets/logos/leagues/austria-2league.webp",
+        "Slovensky Pohar": "assets/logos/leagues/slovensky-pohar.webp",
+        "T\u00fcrkiye Kupasi, Final Round": "assets/logos/leagues/t\u00fcrkiye-kupasi-final-round.webp"
     }
 }
