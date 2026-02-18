@@ -10639,7 +10639,8 @@
         "Juventud Las Piedras": "assets/logos/streamed/juventud-las-piedras.webp",
         "Hurricanes": "assets/logos/streamed/hurricanes.webp",
         "Farnborough": "assets/logos/upstreams/farnborough.webp",
-        "Arsenal --- CN HD": "assets/logos/upstreams/arsenal-cn-hd.webp"
+        "Arsenal --- CN HD": "assets/logos/upstreams/arsenal-cn-hd.webp",
+        "Bayer Leverkusen --- GRE": "assets/logos/upstreams/bayer-leverkusen-gre.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11703,6 +11704,7 @@
         "UEFA Europa Cup, Women": "assets/logos/leagues/uefa-europa-cup-women.webp",
         "Greece Basketball Cup": "assets/logos/leagues/greece-basketball-cup.webp",
         "Romanian Basketball Cup": "assets/logos/leagues/romanian-basketball-cup.webp",
-        "French - Leaders Cup LNB": "assets/logos/leagues/french-leaders-cup-lnb.webp"
+        "French - Leaders Cup LNB": "assets/logos/leagues/french-leaders-cup-lnb.webp",
+        "ATP - Doha (QAT)": "assets/logos/leagues/atp-doha-qat.webp"
     }
 }
