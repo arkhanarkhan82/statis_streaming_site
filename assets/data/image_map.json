@@ -10573,7 +10573,24 @@
         "KuPS": "assets/logos/streamed/kups.webp",
         "Shk\u00ebndija": "assets/logos/streamed/shk\u00ebndija.webp",
         "Liverpool M": "assets/logos/upstreams/liverpool-m.webp",
-        "Andre Souza Pinto de Camargo e Silva": "assets/logos/upstreams/andre-souza-pinto-de-camargo-e-silva.webp"
+        "Andre Souza Pinto de Camargo e Silva": "assets/logos/upstreams/andre-souza-pinto-de-camargo-e-silva.webp",
+        "FC Noah": "assets/logos/upstreams/fc-noah.webp",
+        "FC Voluntari": "assets/logos/upstreams/fc-voluntari.webp",
+        "Steaua Bucure\u0219ti": "assets/logos/upstreams/steaua-bucure\u0219ti.webp",
+        "Club Atl\u00e9tico de Madrid": "assets/logos/upstreams/club-atl\u00e9tico-de-madrid.webp",
+        "HBC Nantes": "assets/logos/upstreams/hbc-nantes.webp",
+        "High Point Panthers": "assets/logos/upstreams/high-point-panthers.webp",
+        "North Carolina Asheville Bulldogs": "assets/logos/upstreams/north-carolina-asheville-bulldogs.webp",
+        "Hofstra Pride": "assets/logos/upstreams/hofstra-pride.webp",
+        "Portland State Vikings": "assets/logos/upstreams/portland-state-vikings.webp",
+        "Idaho Vandals": "assets/logos/upstreams/idaho-vandals.webp",
+        "Corinthians Paulista": "assets/logos/upstreams/corinthians-paulista.webp",
+        "Miguelito": "assets/logos/upstreams/miguelito.webp",
+        "Los Angeles Galaxy": "assets/logos/upstreams/los-angeles-galaxy.webp",
+        "Sporting San Miguelito": "assets/logos/upstreams/sporting-san-miguelito.webp",
+        "Chambery Savoie": "assets/logos/upstreams/chambery-savoie.webp",
+        "New Zealand Warriors": "assets/logos/upstreams/new-zealand-warriors.webp",
+        "Wests Tigers": "assets/logos/upstreams/wests-tigers.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11622,6 +11639,13 @@
         "EuroLeague (W) - Play-in": "assets/logos/leagues/euroleague-w-play-in.webp",
         "Italy - Cup": "assets/logos/leagues/italy-cup.webp",
         "EHF Champions League, Group A": "assets/logos/leagues/ehf-champions-league-group-a.webp",
-        "Champions League - Gr.B": "assets/logos/leagues/champions-league-grb.webp"
+        "Champions League - Gr.B": "assets/logos/leagues/champions-league-grb.webp",
+        "UEFA Europa League, Knockout stage": "assets/logos/leagues/uefa-europa-league-knockout-stage.webp",
+        "UEFA Conference League, Knockout Phase": "assets/logos/leagues/uefa-conference-league-knockout-phase.webp",
+        "Copa Del Rey": "assets/logos/leagues/copa-del-rey.webp",
+        "Liga II": "assets/logos/leagues/liga-ii.webp",
+        "Recopa Sudamericana": "assets/logos/leagues/recopa-sudamericana.webp",
+        "CONMEBOL Recopa": "assets/logos/leagues/conmebol-recopa.webp",
+        "Austria - 2.League": "assets/logos/leagues/austria-2league.webp"
     }
 }
