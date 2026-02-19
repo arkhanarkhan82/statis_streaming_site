@@ -10686,7 +10686,8 @@
         "OHiggins": "assets/logos/upstreams/ohiggins.webp",
         "Yaroslav Demin": "assets/logos/upstreams/yaroslav-demin.webp",
         "Athletico": "assets/logos/upstreams/athletico.webp",
-        "Mirza Ba\u0161i\u0107": "assets/logos/upstreams/mirza-ba\u0161i\u0107.webp"
+        "Mirza Ba\u0161i\u0107": "assets/logos/upstreams/mirza-ba\u0161i\u0107.webp",
+        "Kansai Helios Dom\u017eale": "assets/logos/upstreams/kansai-helios-dom\u017eale.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11763,6 +11764,7 @@
         "Segunda Division B - Group 2": "assets/logos/leagues/segunda-division-b-group-2.webp",
         "MLS": "assets/logos/leagues/mls.webp",
         "German Cup": "assets/logos/leagues/german-cup.webp",
-        "NCAA, Regular Season": "assets/logos/leagues/ncaa-regular-season.webp"
+        "NCAA, Regular Season": "assets/logos/leagues/ncaa-regular-season.webp",
+        "Pokal": "assets/logos/leagues/pokal.webp"
     }
 }
