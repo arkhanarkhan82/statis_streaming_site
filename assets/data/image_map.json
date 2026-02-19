@@ -10689,7 +10689,13 @@
         "Mirza Ba\u0161i\u0107": "assets/logos/upstreams/mirza-ba\u0161i\u0107.webp",
         "Kansai Helios Dom\u017eale": "assets/logos/upstreams/kansai-helios-dom\u017eale.webp",
         "Gabriela C\u00e9": "assets/logos/upstreams/gabriela-c\u00e9.webp",
-        "Williams M.": "assets/logos/upstreams/williams-m.webp"
+        "Williams M.": "assets/logos/upstreams/williams-m.webp",
+        "ATP 500 Doha: Lehecka - Fils": "assets/logos/upstreams/atp-500-doha-lehecka-fils.webp",
+        "Hull KR": "assets/logos/upstreams/hull-kr.webp",
+        "Brisbane Broncos": "assets/logos/upstreams/brisbane-broncos.webp",
+        "Nogomet: Gr\u0161ka liga: Asteras": "assets/logos/upstreams/nogomet-gr\u0161ka-liga-asteras.webp",
+        "Nicolas Ezequiel Jara": "assets/logos/upstreams/nicolas-ezequiel-jara.webp",
+        "Lorenzo GerezSuper welterweight": "assets/logos/upstreams/lorenzo-gerezsuper-welterweight.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11767,6 +11773,7 @@
         "MLS": "assets/logos/leagues/mls.webp",
         "German Cup": "assets/logos/leagues/german-cup.webp",
         "NCAA, Regular Season": "assets/logos/leagues/ncaa-regular-season.webp",
-        "Pokal": "assets/logos/leagues/pokal.webp"
+        "Pokal": "assets/logos/leagues/pokal.webp",
+        "World Club Challenge": "assets/logos/leagues/world-club-challenge.webp"
     }
 }
