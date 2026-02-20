@@ -10706,7 +10706,13 @@
         "Zbrojovka Brno": "assets/logos/upstreams/zbrojovka-brno.webp",
         "Ode' Osbourne": "assets/logos/streamed/ode-osbourne.webp",
         "Scotland U17": "assets/logos/streamed/scotland-u17.webp",
-        "Gustavo Almeida": "assets/logos/upstreams/gustavo-almeida.webp"
+        "Gustavo Almeida": "assets/logos/upstreams/gustavo-almeida.webp",
+        "France U17": "assets/logos/streamed/france-u17.webp",
+        "Sweden U17": "assets/logos/streamed/sweden-u17.webp",
+        "Dominican Republic U23": "assets/logos/streamed/dominican-republic-u23.webp",
+        "Las Vegas Lights": "assets/logos/streamed/las-vegas-lights.webp",
+        "Northern Ireland U17": "assets/logos/streamed/northern-ireland-u17.webp",
+        "Norway U17": "assets/logos/streamed/norway-u17.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
