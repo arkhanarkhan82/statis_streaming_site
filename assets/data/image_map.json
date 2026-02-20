@@ -10847,7 +10847,10 @@
         "Charlton Athletic W": "assets/logos/streamed/charlton-athletic-w.webp",
         "Sheffield United W": "assets/logos/streamed/sheffield-united-w.webp",
         "Phil Rowe": "assets/logos/streamed/phil-rowe.webp",
-        "Cincinnati Reds": "assets/logos/streamed/cincinnati-reds.webp"
+        "Cincinnati Reds": "assets/logos/streamed/cincinnati-reds.webp",
+        "Leczna": "assets/logos/upstreams/leczna.webp",
+        "Martin Schindler": "assets/logos/upstreams/martin-schindler.webp",
+        "Boris Kr\u010dmar": "assets/logos/upstreams/boris-kr\u010dmar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11940,6 +11943,8 @@
         "NRL pre-season: Wests Tigers V Panthers": "assets/logos/leagues/nrl-pre-season-wests-tigers-v-panthers.webp",
         "Portugal - I Divisao": "assets/logos/leagues/portugal-i-divisao.webp",
         "Cage Warriors": "assets/logos/leagues/cage-warriors.webp",
-        "MLB Spring Training": "assets/logos/leagues/mlb-spring-training.webp"
+        "MLB Spring Training": "assets/logos/leagues/mlb-spring-training.webp",
+        "Poland Division 1": "assets/logos/leagues/poland-division-1.webp",
+        "Poland Ekstraklasa": "assets/logos/leagues/poland-ekstraklasa.webp"
     }
 }
