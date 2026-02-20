@@ -10850,7 +10850,9 @@
         "Cincinnati Reds": "assets/logos/streamed/cincinnati-reds.webp",
         "Leczna": "assets/logos/upstreams/leczna.webp",
         "Martin Schindler": "assets/logos/upstreams/martin-schindler.webp",
-        "Boris Kr\u010dmar": "assets/logos/upstreams/boris-kr\u010dmar.webp"
+        "Boris Kr\u010dmar": "assets/logos/upstreams/boris-kr\u010dmar.webp",
+        "IFK Skovde FK": "assets/logos/upstreams/ifk-skovde-fk.webp",
+        "IF Brommapojkarna": "assets/logos/upstreams/if-brommapojkarna.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11945,6 +11947,8 @@
         "Cage Warriors": "assets/logos/leagues/cage-warriors.webp",
         "MLB Spring Training": "assets/logos/leagues/mlb-spring-training.webp",
         "Poland Division 1": "assets/logos/leagues/poland-division-1.webp",
-        "Poland Ekstraklasa": "assets/logos/leagues/poland-ekstraklasa.webp"
+        "Poland Ekstraklasa": "assets/logos/leagues/poland-ekstraklasa.webp",
+        "Svenska Cupen, Group 5": "assets/logos/leagues/svenska-cupen-group-5.webp",
+        "Sweden Women Svenska Cupen": "assets/logos/leagues/sweden-women-svenska-cupen.webp"
     }
 }
