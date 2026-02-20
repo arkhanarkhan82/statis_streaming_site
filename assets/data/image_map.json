@@ -10761,7 +10761,16 @@
         "Gold Coast Knights": "assets/logos/upstreams/gold-coast-knights.webp",
         "Pakistan A": "assets/logos/upstreams/pakistan-a.webp",
         "Bradford Bulls": "assets/logos/streamed/bradford-bulls.webp",
-        "Catalans Dragons": "assets/logos/streamed/catalans-dragons.webp"
+        "Catalans Dragons": "assets/logos/streamed/catalans-dragons.webp",
+        "Sambenedettese - Stag. 2026 Ep. 279 | 155 min": "assets/logos/upstreams/sambenedettese-stag-2026-ep-279-155-min.webp",
+        "Lappeenrannan NMKY": "assets/logos/upstreams/lappeenrannan-nmky.webp",
+        "FC Barcelona HB": "assets/logos/upstreams/fc-barcelona-hb.webp",
+        "College Basketball East Carolina vs. UNC": "assets/logos/upstreams/college-basketball-east-carolina-vs-unc.webp",
+        "Leigh Wood": "assets/logos/upstreams/leigh-wood.webp",
+        "Josh Warrington": "assets/logos/upstreams/josh-warrington.webp",
+        "University of Pretoria": "assets/logos/upstreams/university-of-pretoria.webp",
+        "Calcio Giugliano": "assets/logos/upstreams/calcio-giugliano.webp",
+        "Nogomet: Bolgarska liga: CSKA": "assets/logos/upstreams/nogomet-bolgarska-liga-cska.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11848,6 +11857,8 @@
         "BBL Pokal": "assets/logos/leagues/bbl-pokal.webp",
         "ICC Men's T20 World Cup, Super 8, Group 2": "assets/logos/leagues/icc-mens-t20-world-cup-super-8-group-2.webp",
         "Spain - Cup": "assets/logos/leagues/spain-cup.webp",
-        "Australia - NPL -  Queensland": "assets/logos/leagues/australia-npl-queensland.webp"
+        "Australia - NPL -  Queensland": "assets/logos/leagues/australia-npl-queensland.webp",
+        "Prva Crnogorska Liga": "assets/logos/leagues/prva-crnogorska-liga.webp",
+        "NRL Pre-Season: Warriors V Dolphins": "assets/logos/leagues/nrl-pre-season-warriors-v-dolphins.webp"
     }
 }
