@@ -10774,7 +10774,27 @@
         "Siena Saints": "assets/logos/upstreams/siena-saints.webp",
         "Charlotte 49ers": "assets/logos/upstreams/charlotte-49ers.webp",
         "Olimpia Lions": "assets/logos/upstreams/olimpia-lions.webp",
-        "Pampas XV": "assets/logos/upstreams/pampas-xv.webp"
+        "Pampas XV": "assets/logos/upstreams/pampas-xv.webp",
+        "Leoes Porto Salvo": "assets/logos/upstreams/leoes-porto-salvo.webp",
+        "Quinta dos Lombos": "assets/logos/upstreams/quinta-dos-lombos.webp",
+        "Dario Bellandi": "assets/logos/upstreams/dario-bellandi.webp",
+        "Paddy McCorry": "assets/logos/upstreams/paddy-mccorry.webp",
+        "Carli Judice": "assets/logos/upstreams/carli-judice.webp",
+        "Juliana Miller": "assets/logos/upstreams/juliana-miller.webp",
+        "Philip Rowe": "assets/logos/upstreams/philip-rowe.webp",
+        "Jean-Paul Lebosnoyani": "assets/logos/upstreams/jean-paul-lebosnoyani.webp",
+        "Ramiz Brahimaj": "assets/logos/upstreams/ramiz-brahimaj.webp",
+        "Punahele Soriano": "assets/logos/upstreams/punahele-soriano.webp",
+        "Ode Osbourne": "assets/logos/upstreams/ode-osbourne.webp",
+        "Alibi Idiris": "assets/logos/upstreams/alibi-idiris.webp",
+        "Michel Pereira": "assets/logos/upstreams/michel-pereira.webp",
+        "Zachary Reese": "assets/logos/upstreams/zachary-reese.webp",
+        "Serghei Spivac": "assets/logos/upstreams/serghei-spivac.webp",
+        "Ante Delija": "assets/logos/upstreams/ante-delija.webp",
+        "Dan Ige": "assets/logos/upstreams/dan-ige.webp",
+        "Melquizael Costa": "assets/logos/upstreams/melquizael-costa.webp",
+        "Geoff Neal": "assets/logos/upstreams/geoff-neal.webp",
+        "Uros Medic": "assets/logos/upstreams/uros-medic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11863,6 +11883,9 @@
         "Spain - Cup": "assets/logos/leagues/spain-cup.webp",
         "Australia - NPL -  Queensland": "assets/logos/leagues/australia-npl-queensland.webp",
         "Prva Crnogorska Liga": "assets/logos/leagues/prva-crnogorska-liga.webp",
-        "NRL Pre-Season: Warriors V Dolphins": "assets/logos/leagues/nrl-pre-season-warriors-v-dolphins.webp"
+        "NRL Pre-Season: Warriors V Dolphins": "assets/logos/leagues/nrl-pre-season-warriors-v-dolphins.webp",
+        "NRL pre-season: Wests Tigers V Panthers": "assets/logos/leagues/nrl-pre-season-wests-tigers-v-panthers.webp",
+        "Portugal - I Divisao": "assets/logos/leagues/portugal-i-divisao.webp",
+        "Cage Warriors": "assets/logos/leagues/cage-warriors.webp"
     }
 }
