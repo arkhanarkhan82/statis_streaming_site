@@ -10712,7 +10712,33 @@
         "Dominican Republic U23": "assets/logos/streamed/dominican-republic-u23.webp",
         "Las Vegas Lights": "assets/logos/streamed/las-vegas-lights.webp",
         "Northern Ireland U17": "assets/logos/streamed/northern-ireland-u17.webp",
-        "Norway U17": "assets/logos/streamed/norway-u17.webp"
+        "Norway U17": "assets/logos/streamed/norway-u17.webp",
+        "FC Liefering": "assets/logos/upstreams/fc-liefering.webp",
+        "Punjab FC": "assets/logos/upstreams/punjab-fc.webp",
+        "Vasco-AC": "assets/logos/upstreams/vasco-ac.webp",
+        "Lugano Tigers": "assets/logos/upstreams/lugano-tigers.webp",
+        "Spinelli Massagno": "assets/logos/upstreams/spinelli-massagno.webp",
+        "Wake Forest Demon Deacons": "assets/logos/upstreams/wake-forest-demon-deacons.webp",
+        "EWE Baskets Oldenburg": "assets/logos/upstreams/ewe-baskets-oldenburg.webp",
+        "Tennessee State Tigers": "assets/logos/upstreams/tennessee-state-tigers.webp",
+        "SIU Edwardsville Cougars": "assets/logos/upstreams/siu-edwardsville-cougars.webp",
+        "Oklahoma State Cowgirls": "assets/logos/upstreams/oklahoma-state-cowgirls.webp",
+        "South Carolina State Bulldogs": "assets/logos/upstreams/south-carolina-state-bulldogs.webp",
+        "Southeastern Louisiana Lions": "assets/logos/upstreams/southeastern-louisiana-lions.webp",
+        "Texas Rio Grande Valley Vaqueros": "assets/logos/upstreams/texas-rio-grande-valley-vaqueros.webp",
+        "USC Trojans": "assets/logos/upstreams/usc-trojans.webp",
+        "Skurios Volleys Borken": "assets/logos/upstreams/skurios-volleys-borken.webp",
+        "BM Puente Genil": "assets/logos/upstreams/bm-puente-genil.webp",
+        "McNeese State Cowboys": "assets/logos/upstreams/mcneese-state-cowboys.webp",
+        "Texas A&M Corpus Christi Islanders": "assets/logos/upstreams/texas-am-corpus-christi-islanders.webp",
+        "L.A. Lakers": "assets/logos/upstreams/la-lakers.webp",
+        "FC Bihor": "assets/logos/upstreams/fc-bihor.webp",
+        "FC ASA Tg. Mures": "assets/logos/upstreams/fc-asa-tg-mures.webp",
+        "FC Bihor Oradea": "assets/logos/upstreams/fc-bihor-oradea.webp",
+        "ASA T\u00e2rgu Mure\u015f": "assets/logos/upstreams/asa-t\u00e2rgu-mure\u015f.webp",
+        "Pretoria U.": "assets/logos/upstreams/pretoria-u.webp",
+        "Hawaii Rainbow Warriors": "assets/logos/upstreams/hawaii-rainbow-warriors.webp",
+        "Aix": "assets/logos/upstreams/aix.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11794,6 +11820,9 @@
         "World Club Challenge": "assets/logos/leagues/world-club-challenge.webp",
         "The Ford Trophy, Playoffs": "assets/logos/leagues/the-ford-trophy-playoffs.webp",
         "Cricket T20": "assets/logos/leagues/cricket-t20.webp",
-        "Premier League, Night 3": "assets/logos/leagues/premier-league-night-3.webp"
+        "Premier League, Night 3": "assets/logos/leagues/premier-league-night-3.webp",
+        "Copa Betano do Brasil": "assets/logos/leagues/copa-betano-do-brasil.webp",
+        "BBL Pokal": "assets/logos/leagues/bbl-pokal.webp",
+        "ICC Men's T20 World Cup, Super 8, Group 2": "assets/logos/leagues/icc-mens-t20-world-cup-super-8-group-2.webp"
     }
 }
