@@ -10963,7 +10963,10 @@
         "Connor Scutt": "assets/logos/upstreams/connor-scutt.webp",
         "Junior Casale Monferrato": "assets/logos/upstreams/junior-casale-monferrato.webp",
         "Basket Cecina": "assets/logos/upstreams/basket-cecina.webp",
-        "New York City FC": "assets/logos/streamed/new-york-city-fc.webp"
+        "New York City FC": "assets/logos/streamed/new-york-city-fc.webp",
+        "Hartberg": "assets/logos/upstreams/hartberg.webp",
+        "Orlando Luz": "assets/logos/upstreams/orlando-luz.webp",
+        "Patricio Heras": "assets/logos/upstreams/patricio-heras.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12077,6 +12080,7 @@
         "Merida, Mexico, Qualifying": "assets/logos/leagues/merida-mexico-qualifying.webp",
         "Acapulco, Mexico, Qualifying": "assets/logos/leagues/acapulco-mexico-qualifying.webp",
         "UFC Fight Night: Strickland vs. Hernandez": "assets/logos/leagues/ufc-fight-night-strickland-vs-hernandez.webp",
-        "Serie B Interregionale, Division C": "assets/logos/leagues/serie-b-interregionale-division-c.webp"
+        "Serie B Interregionale, Division C": "assets/logos/leagues/serie-b-interregionale-division-c.webp",
+        "Brazil - Paulista - Serie A1 - Playoff": "assets/logos/leagues/brazil-paulista-serie-a1-playoff.webp"
     }
 }
