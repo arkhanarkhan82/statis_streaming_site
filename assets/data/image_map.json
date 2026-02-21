@@ -10939,7 +10939,12 @@
         "Sydney Roosters": "assets/logos/streamed/sydney-roosters.webp",
         "Toulouse Olympique": "assets/logos/streamed/toulouse-olympique.webp",
         "Hull F.C.": "assets/logos/streamed/hull-fc.webp",
-        "\u017dKK Duga \u0160abac": "assets/logos/upstreams/\u017ekk-duga-\u0161abac.webp"
+        "\u017dKK Duga \u0160abac": "assets/logos/upstreams/\u017ekk-duga-\u0161abac.webp",
+        "H\u0160K Posu\u0161je": "assets/logos/upstreams/h\u0161k-posu\u0161je.webp",
+        "Nicolas Villalon Valdes": "assets/logos/upstreams/nicolas-villalon-valdes.webp",
+        "Daniel Antonio Nunez": "assets/logos/upstreams/daniel-antonio-nunez.webp",
+        "Marian Gomez Pezuela Cano": "assets/logos/upstreams/marian-gomez-pezuela-cano.webp",
+        "Carmen Andreea Herea": "assets/logos/upstreams/carmen-andreea-herea.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12049,6 +12054,8 @@
         "Australia - NPL U23 - Queensland": "assets/logos/leagues/australia-npl-u23-queensland.webp",
         "The Ford Trophy, Final": "assets/logos/leagues/the-ford-trophy-final.webp",
         "Santiago, Chile, Qualifying": "assets/logos/leagues/santiago-chile-qualifying.webp",
-        "Austin, USA, Qualifying": "assets/logos/leagues/austin-usa-qualifying.webp"
+        "Austin, USA, Qualifying": "assets/logos/leagues/austin-usa-qualifying.webp",
+        "Merida, Mexico, Qualifying": "assets/logos/leagues/merida-mexico-qualifying.webp",
+        "Acapulco, Mexico, Qualifying": "assets/logos/leagues/acapulco-mexico-qualifying.webp"
     }
 }
