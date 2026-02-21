@@ -10862,7 +10862,17 @@
         "Charlotte FC": "assets/logos/streamed/charlotte-fc.webp",
         "Monika Stanikova": "assets/logos/upstreams/monika-stanikova.webp",
         "Orlando City": "assets/logos/streamed/orlando-city.webp",
-        "Minnesota United": "assets/logos/streamed/minnesota-united.webp"
+        "Minnesota United": "assets/logos/streamed/minnesota-united.webp",
+        "Acad. Viseu": "assets/logos/upstreams/acad-viseu.webp",
+        "FK Radni\u010dki 1923": "assets/logos/upstreams/fk-radni\u010dki-1923.webp",
+        "BK Latvijas Universit\u0101te": "assets/logos/upstreams/bk-latvijas-universit\u0101te.webp",
+        "North Texas Mean Green": "assets/logos/upstreams/north-texas-mean-green.webp",
+        "TVB 1898 Stuttgart": "assets/logos/upstreams/tvb-1898-stuttgart.webp",
+        "Easterns": "assets/logos/upstreams/easterns.webp",
+        "Mpumalanga": "assets/logos/upstreams/mpumalanga.webp",
+        "South Western Districts": "assets/logos/upstreams/south-western-districts.webp",
+        "Northern Cape": "assets/logos/upstreams/northern-cape.webp",
+        "William O'Connor": "assets/logos/upstreams/william-oconnor.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -11961,6 +11971,8 @@
         "Svenska Cupen, Group 5": "assets/logos/leagues/svenska-cupen-group-5.webp",
         "Sweden Women Svenska Cupen": "assets/logos/leagues/sweden-women-svenska-cupen.webp",
         "France Premiere Ligue Women": "assets/logos/leagues/france-premiere-ligue-women.webp",
-        "Rugby Six Nations U20": "assets/logos/leagues/rugby-six-nations-u20.webp"
+        "Rugby Six Nations U20": "assets/logos/leagues/rugby-six-nations-u20.webp",
+        "CSA Provincial One-Day Challenge Division Two": "assets/logos/leagues/csa-provincial-one-day-challenge-division-two.webp",
+        "ICC Men's T20 World Cup, Super 8, Group 1": "assets/logos/leagues/icc-mens-t20-world-cup-super-8-group-1.webp"
     }
 }
