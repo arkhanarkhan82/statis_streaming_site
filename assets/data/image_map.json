@@ -10935,7 +10935,10 @@
         "Belmont Swansea United": "assets/logos/upstreams/belmont-swansea-united.webp",
         "Rochedale Rovers": "assets/logos/upstreams/rochedale-rovers.webp",
         "Wynnum Wolves": "assets/logos/upstreams/wynnum-wolves.webp",
-        "HC Merano": "assets/logos/upstreams/hc-merano.webp"
+        "HC Merano": "assets/logos/upstreams/hc-merano.webp",
+        "Sydney Roosters": "assets/logos/streamed/sydney-roosters.webp",
+        "Toulouse Olympique": "assets/logos/streamed/toulouse-olympique.webp",
+        "Hull F.C.": "assets/logos/streamed/hull-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
