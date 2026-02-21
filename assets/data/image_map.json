@@ -10960,7 +10960,9 @@
         "DUX Logro\u00f1o": "assets/logos/upstreams/dux-logro\u00f1o.webp",
         "FC Badalona": "assets/logos/upstreams/fc-badalona.webp",
         "Etoile Filante Lome": "assets/logos/upstreams/etoile-filante-lome.webp",
-        "Connor Scutt": "assets/logos/upstreams/connor-scutt.webp"
+        "Connor Scutt": "assets/logos/upstreams/connor-scutt.webp",
+        "Junior Casale Monferrato": "assets/logos/upstreams/junior-casale-monferrato.webp",
+        "Basket Cecina": "assets/logos/upstreams/basket-cecina.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12073,6 +12075,7 @@
         "Austin, USA, Qualifying": "assets/logos/leagues/austin-usa-qualifying.webp",
         "Merida, Mexico, Qualifying": "assets/logos/leagues/merida-mexico-qualifying.webp",
         "Acapulco, Mexico, Qualifying": "assets/logos/leagues/acapulco-mexico-qualifying.webp",
-        "UFC Fight Night: Strickland vs. Hernandez": "assets/logos/leagues/ufc-fight-night-strickland-vs-hernandez.webp"
+        "UFC Fight Night: Strickland vs. Hernandez": "assets/logos/leagues/ufc-fight-night-strickland-vs-hernandez.webp",
+        "Serie B Interregionale, Division C": "assets/logos/leagues/serie-b-interregionale-division-c.webp"
     }
 }
