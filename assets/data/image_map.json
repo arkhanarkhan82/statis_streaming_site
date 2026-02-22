@@ -11071,7 +11071,14 @@
         "Cristo Reyes": "assets/logos/upstreams/cristo-reyes.webp",
         "MFK Ru\u017eomberok": "assets/logos/upstreams/mfk-ru\u017eomberok.webp",
         "RCD Espanyol de Barcelona": "assets/logos/upstreams/rcd-espanyol-de-barcelona.webp",
-        "K. Beerschot V.A.": "assets/logos/upstreams/k-beerschot-va.webp"
+        "K. Beerschot V.A.": "assets/logos/upstreams/k-beerschot-va.webp",
+        "Wilberforce Strikers": "assets/logos/upstreams/wilberforce-strikers.webp",
+        "Unstoppable": "assets/logos/upstreams/unstoppable.webp",
+        "Bubali": "assets/logos/upstreams/bubali.webp",
+        "Jatin Nain": "assets/logos/upstreams/jatin-nain.webp",
+        "Neeraj Yashpaul": "assets/logos/upstreams/neeraj-yashpaul.webp",
+        "Sarthak Suden": "assets/logos/upstreams/sarthak-suden.webp",
+        "Vishal Gautam": "assets/logos/upstreams/vishal-gautam.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12203,6 +12210,9 @@
         "Svenska Cupen, Group 7": "assets/logos/leagues/svenska-cupen-group-7.webp",
         "Sweden Svenska Cupen": "assets/logos/leagues/sweden-svenska-cupen.webp",
         "LF Challenge, Regular Season": "assets/logos/leagues/lf-challenge-regular-season.webp",
-        "Nik\u00e9 Liga": "assets/logos/leagues/nik\u00e9-liga.webp"
+        "Nik\u00e9 Liga": "assets/logos/leagues/nik\u00e9-liga.webp",
+        "English Women FA Cup": "assets/logos/leagues/english-women-fa-cup.webp",
+        "Pune, India": "assets/logos/leagues/pune-india.webp",
+        "Santiago, Chile": "assets/logos/leagues/santiago-chile.webp"
     }
 }
