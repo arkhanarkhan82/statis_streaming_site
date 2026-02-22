@@ -9,7 +9,7 @@
     "title_part_2": "East",
     "custom_js": "",
     "custom_meta_tags": [
-      "<meta name=\"google-site-verification\" content=\"32pgNbNmwrEAHUlTHty2rOar8Aq7xyd3gOqF4kz3ZsU\" />"
+      "<meta name=\"google-site-verification\" content=\"mb6DbDxYEkDpj3NIRR4F0it83YC8vPM6ntJXPtNox4k\" />"
     ],
     "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameast.fit/sitemap.xml",
     "domain": "streameast.fit",
