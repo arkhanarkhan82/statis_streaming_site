@@ -10975,7 +10975,12 @@
         "HC Pustertal W\u00f6lfe": "assets/logos/streamed/hc-pustertal-w\u00f6lfe.webp",
         "Volley Milano": "assets/logos/streamed/volley-milano.webp",
         "Powervolley Milano": "assets/logos/streamed/powervolley-milano.webp",
-        "Seattle Sounders FC": "assets/logos/upstreams/seattle-sounders-fc.webp"
+        "Seattle Sounders FC": "assets/logos/upstreams/seattle-sounders-fc.webp",
+        "Boncourt": "assets/logos/upstreams/boncourt.webp",
+        "Farzan Amiri": "assets/logos/upstreams/farzan-amiri.webp",
+        "Dylan Dietrich": "assets/logos/upstreams/dylan-dietrich.webp",
+        "Limpopo": "assets/logos/upstreams/limpopo.webp",
+        "Knights": "assets/logos/upstreams/knights.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12092,6 +12097,8 @@
         "Serie B Interregionale, Division C": "assets/logos/leagues/serie-b-interregionale-division-c.webp",
         "Brazil - Paulista - Serie A1 - Playoff": "assets/logos/leagues/brazil-paulista-serie-a1-playoff.webp",
         "Paulista S\u00e9rie A1 - Playoffs": "assets/logos/leagues/paulista-s\u00e9rie-a1-playoffs.webp",
-        "Pune, India, Qualifying": "assets/logos/leagues/pune-india-qualifying.webp"
+        "Pune, India, Qualifying": "assets/logos/leagues/pune-india-qualifying.webp",
+        "Lugano, Switzerland, Qualifying": "assets/logos/leagues/lugano-switzerland-qualifying.webp",
+        "Pakistan Women in South Africa, 3 ODI Series": "assets/logos/leagues/pakistan-women-in-south-africa-3-odi-series.webp"
     }
 }
