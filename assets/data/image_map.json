@@ -11068,7 +11068,10 @@
         "MCR Lima-Horta Barcelona": "assets/logos/upstreams/mcr-lima-horta-barcelona.webp",
         "Unicaja Mijas Malaga": "assets/logos/upstreams/unicaja-mijas-malaga.webp",
         "Ardoi (W)": "assets/logos/upstreams/ardoi-w.webp",
-        "Cristo Reyes": "assets/logos/upstreams/cristo-reyes.webp"
+        "Cristo Reyes": "assets/logos/upstreams/cristo-reyes.webp",
+        "MFK Ru\u017eomberok": "assets/logos/upstreams/mfk-ru\u017eomberok.webp",
+        "RCD Espanyol de Barcelona": "assets/logos/upstreams/rcd-espanyol-de-barcelona.webp",
+        "K. Beerschot V.A.": "assets/logos/upstreams/k-beerschot-va.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12199,6 +12202,7 @@
         "Dutch Women Eredivisie": "assets/logos/leagues/dutch-women-eredivisie.webp",
         "Svenska Cupen, Group 7": "assets/logos/leagues/svenska-cupen-group-7.webp",
         "Sweden Svenska Cupen": "assets/logos/leagues/sweden-svenska-cupen.webp",
-        "LF Challenge, Regular Season": "assets/logos/leagues/lf-challenge-regular-season.webp"
+        "LF Challenge, Regular Season": "assets/logos/leagues/lf-challenge-regular-season.webp",
+        "Nik\u00e9 Liga": "assets/logos/leagues/nik\u00e9-liga.webp"
     }
 }
