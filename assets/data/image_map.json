@@ -11035,7 +11035,23 @@
         "Adamstown Rosebud": "assets/logos/upstreams/adamstown-rosebud.webp",
         "Martina Colmegna": "assets/logos/upstreams/martina-colmegna.webp",
         "Defne Cirpanli": "assets/logos/upstreams/defne-cirpanli.webp",
-        "Deniz Cakil": "assets/logos/upstreams/deniz-cakil.webp"
+        "Deniz Cakil": "assets/logos/upstreams/deniz-cakil.webp",
+        "IMT Novi Belgrad": "assets/logos/upstreams/imt-novi-belgrad.webp",
+        "\u00dcmraniye": "assets/logos/upstreams/\u00fcmraniye.webp",
+        "AD Tarma": "assets/logos/upstreams/ad-tarma.webp",
+        "Hearts (W)": "assets/logos/upstreams/hearts-w.webp",
+        "Macar\u00e1": "assets/logos/upstreams/macar\u00e1.webp",
+        "Leones del Norte": "assets/logos/upstreams/leones-del-norte.webp",
+        "Central Espa\u00f1ol": "assets/logos/upstreams/central-espa\u00f1ol.webp",
+        "Bor\u00e5s HC": "assets/logos/upstreams/bor\u00e5s-hc.webp",
+        "Jeffrey von der Schulenburg": "assets/logos/upstreams/jeffrey-von-der-schulenburg.webp",
+        "Daniel Jade": "assets/logos/upstreams/daniel-jade.webp",
+        "Tom Paris": "assets/logos/upstreams/tom-paris.webp",
+        "Arthur Nagel": "assets/logos/upstreams/arthur-nagel.webp",
+        "Arthur Reymond": "assets/logos/upstreams/arthur-reymond.webp",
+        "Adrien Gobat": "assets/logos/upstreams/adrien-gobat.webp",
+        "Agustin Libre": "assets/logos/upstreams/agustin-libre.webp",
+        "Energa MKS Kalisz": "assets/logos/upstreams/energa-mks-kalisz.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12160,6 +12176,8 @@
         "A Lyga": "assets/logos/leagues/a-lyga.webp",
         "Svenska Cupen, Group 6": "assets/logos/leagues/svenska-cupen-group-6.webp",
         "LigaPro Serie A, Primera Etapa": "assets/logos/leagues/ligapro-serie-a-primera-etapa.webp",
-        "Antalya, Turkiye, Qualifying": "assets/logos/leagues/antalya-turkiye-qualifying.webp"
+        "Antalya, Turkiye, Qualifying": "assets/logos/leagues/antalya-turkiye-qualifying.webp",
+        "St. Brieuc, France, Qualifying": "assets/logos/leagues/st-brieuc-france-qualifying.webp",
+        "Tigre 2, Argentina, Qualifying": "assets/logos/leagues/tigre-2-argentina-qualifying.webp"
     }
 }
