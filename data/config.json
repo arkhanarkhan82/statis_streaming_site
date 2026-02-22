@@ -3,7 +3,7 @@
     "sitemap_enabled": true,
     "sitemap_include_leagues": true,
     "sitemap_static_pages": "about, contact, privacy, terms, copyright-policy",
-    "sitemap_lastmod_manual": "2026-02-07",
+    "sitemap_lastmod_manual": "2026-02-22",
     "ga4_id": "G-CNHF08NBNZ",
     "title_part_1": "Stream",
     "title_part_2": "East",
@@ -11,15 +11,15 @@
     "custom_meta_tags": [
       "<meta name=\"google-site-verification\" content=\"32pgNbNmwrEAHUlTHty2rOar8Aq7xyd3gOqF4kz3ZsU\" />"
     ],
-    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://infostreameast.live/sitemap.xml",
-    "domain": "infostreameast.live",
+    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameast.fit/sitemap.xml",
+    "domain": "streameast.fit",
     "logo_url": "/assets/streameast-logo.webp",
     "favicon_url": "/assets/streameast.png",
     "footer_copyright": "© 2026 StreamEast — Live sports streaming platform for major leagues and global tournaments in HD.",
     "footer_disclaimer": "",
     "target_country": "US",
-    "param_live": "streams",
-    "param_info": "livestream"
+    "param_live": "streaming",
+    "param_info": "livestreaming"
   },
   "theme": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
@@ -236,7 +236,7 @@
   },
   "sport_priorities": {
     "US": {
-      "_HIDE_OTHERS": false,
+      "_HIDE_OTHERS": true,
       "_BOOST": "",
       "NFL": {
         "score": 100,
@@ -274,18 +274,6 @@
         "hasLink": true,
         "isHidden": false
       },
-      "Premier League": {
-        "score": 90,
-        "isLeague": true,
-        "hasLink": true,
-        "isHidden": false
-      },
-      "Champions League": {
-        "score": 89,
-        "isLeague": true,
-        "hasLink": true,
-        "isHidden": false
-      },
       "Formula 1": {
         "score": 88,
         "isLeague": true,
@@ -296,66 +284,6 @@
         "score": 87,
         "isLeague": true,
         "hasLink": true,
-        "isHidden": false
-      },
-      "Africa Cup of Nations": {
-        "score": 86,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "La Liga": {
-        "score": 85,
-        "isLeague": true,
-        "hasLink": true,
-        "isHidden": false
-      },
-      "Liga MX": {
-        "score": 84,
-        "isLeague": true,
-        "hasLink": true,
-        "isHidden": false
-      },
-      "Football": {
-        "score": 79,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Basketball": {
-        "score": 78,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Baseball": {
-        "score": 77,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Fighting": {
-        "score": 76,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Soccer": {
-        "score": 60,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Tennis": {
-        "score": 40,
-        "isLeague": false,
-        "hasLink": false,
-        "isHidden": false
-      },
-      "Golf": {
-        "score": 30,
-        "isLeague": false,
-        "hasLink": false,
         "isHidden": false
       }
     },
