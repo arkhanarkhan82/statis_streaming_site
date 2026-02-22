@@ -11056,7 +11056,13 @@
         "Border": "assets/logos/upstreams/border.webp",
         "South Africa Emerging": "assets/logos/upstreams/south-africa-emerging.webp",
         "Huddersfield Giants": "assets/logos/streamed/huddersfield-giants.webp",
-        "Wakefield Trinity Wildcats": "assets/logos/streamed/wakefield-trinity-wildcats.webp"
+        "Wakefield Trinity Wildcats": "assets/logos/streamed/wakefield-trinity-wildcats.webp",
+        "Puszcza": "assets/logos/upstreams/puszcza.webp",
+        "S Rzeszow": "assets/logos/upstreams/s-rzeszow.webp",
+        "AZ Alkmaar W": "assets/logos/upstreams/az-alkmaar-w.webp",
+        "PSV W": "assets/logos/upstreams/psv-w.webp",
+        "Costa Adeje Tenerife": "assets/logos/upstreams/costa-adeje-tenerife.webp",
+        "APS Bomet": "assets/logos/upstreams/aps-bomet.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12183,6 +12189,7 @@
         "LigaPro Serie A, Primera Etapa": "assets/logos/leagues/ligapro-serie-a-primera-etapa.webp",
         "Antalya, Turkiye, Qualifying": "assets/logos/leagues/antalya-turkiye-qualifying.webp",
         "St. Brieuc, France, Qualifying": "assets/logos/leagues/st-brieuc-france-qualifying.webp",
-        "Tigre 2, Argentina, Qualifying": "assets/logos/leagues/tigre-2-argentina-qualifying.webp"
+        "Tigre 2, Argentina, Qualifying": "assets/logos/leagues/tigre-2-argentina-qualifying.webp",
+        "Dutch Women Eredivisie": "assets/logos/leagues/dutch-women-eredivisie.webp"
     }
 }
