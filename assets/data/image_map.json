@@ -11106,7 +11106,14 @@
         "Robbie Williams": "assets/logos/upstreams/robbie-williams.webp",
         "Michael Holt": "assets/logos/upstreams/michael-holt.webp",
         "Ben Mertens": "assets/logos/upstreams/ben-mertens.webp",
-        "Martin O'Donnel": "assets/logos/upstreams/martin-odonnel.webp"
+        "Martin O'Donnel": "assets/logos/upstreams/martin-odonnel.webp",
+        "Concordia Chiajna": "assets/logos/upstreams/concordia-chiajna.webp",
+        "FC Corvinul Hunedoara": "assets/logos/upstreams/fc-corvinul-hunedoara.webp",
+        "Fraikin BM Granollers": "assets/logos/upstreams/fraikin-bm-granollers.webp",
+        "Cusco": "assets/logos/upstreams/cusco.webp",
+        "U De Chile": "assets/logos/upstreams/u-de-chile.webp",
+        "Obolon Kiev": "assets/logos/upstreams/obolon-kiev.webp",
+        "Stefan Kostic": "assets/logos/upstreams/stefan-kostic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12244,6 +12251,7 @@
         "Santiago, Chile": "assets/logos/leagues/santiago-chile.webp",
         "St. Brieuc, France": "assets/logos/leagues/st-brieuc-france.webp",
         "Svenska Cupen, Group 3": "assets/logos/leagues/svenska-cupen-group-3.webp",
-        "World Open": "assets/logos/leagues/world-open.webp"
+        "World Open": "assets/logos/leagues/world-open.webp",
+        "Ukraine - Premier League": "assets/logos/leagues/ukraine-premier-league.webp"
     }
 }
