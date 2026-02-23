@@ -11138,7 +11138,23 @@
         "Trinidad & Tobago U20": "assets/logos/upstreams/trinidad-tobago-u20.webp",
         "Bermuda U20": "assets/logos/upstreams/bermuda-u20.webp",
         "Guyana U20": "assets/logos/upstreams/guyana-u20.webp",
-        "Maahi Shah": "assets/logos/upstreams/maahi-shah.webp"
+        "Maahi Shah": "assets/logos/upstreams/maahi-shah.webp",
+        "Puerto Rico U20": "assets/logos/upstreams/puerto-rico-u20.webp",
+        "Saint Kitts and Nevis U20": "assets/logos/upstreams/saint-kitts-and-nevis-u20.webp",
+        "Anguilla U20": "assets/logos/upstreams/anguilla-u20.webp",
+        "Jamaica U20": "assets/logos/upstreams/jamaica-u20.webp",
+        "Liam Highfield": "assets/logos/upstreams/liam-highfield.webp",
+        "Dario Alexandru Ciobotaru": "assets/logos/upstreams/dario-alexandru-ciobotaru.webp",
+        "Aya Manning": "assets/logos/upstreams/aya-manning.webp",
+        "Danielle Young": "assets/logos/upstreams/danielle-young.webp",
+        "Sofiia Sokolvak": "assets/logos/upstreams/sofiia-sokolvak.webp",
+        "El Salvador U20": "assets/logos/upstreams/el-salvador-u20.webp",
+        "Barbados U20": "assets/logos/upstreams/barbados-u20.webp",
+        "Sint Maarten U20": "assets/logos/upstreams/sint-maarten-u20.webp",
+        "Galena Krastenova": "assets/logos/upstreams/galena-krastenova.webp",
+        "Bianca Nica": "assets/logos/upstreams/bianca-nica.webp",
+        "Alexandra Irina Anghel": "assets/logos/upstreams/alexandra-irina-anghel.webp",
+        "Naema Labib": "assets/logos/upstreams/naema-labib.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12282,6 +12298,11 @@
         "Lugano, Switzerland": "assets/logos/leagues/lugano-switzerland.webp",
         "Tigre 2, Argentina": "assets/logos/leagues/tigre-2-argentina.webp",
         "Acapulco, Mexico": "assets/logos/leagues/acapulco-mexico.webp",
-        "CONCACAF Championship U20": "assets/logos/leagues/concacaf-championship-u20.webp"
+        "CONCACAF Championship U20": "assets/logos/leagues/concacaf-championship-u20.webp",
+        "BetVictor Welsh Open": "assets/logos/leagues/betvictor-welsh-open.webp",
+        "Welsh Open": "assets/logos/leagues/welsh-open.webp",
+        "ATP Acapulco": "assets/logos/leagues/atp-acapulco.webp",
+        "ATP Dubai": "assets/logos/leagues/atp-dubai.webp",
+        "Merida, Mexico": "assets/logos/leagues/merida-mexico.webp"
     }
 }
