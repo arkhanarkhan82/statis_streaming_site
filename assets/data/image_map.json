@@ -11180,7 +11180,11 @@
         "Goncalo da Rosa Castro": "assets/logos/upstreams/goncalo-da-rosa-castro.webp",
         "Rin Kojima": "assets/logos/upstreams/rin-kojima.webp",
         "David Lilley": "assets/logos/upstreams/david-lilley.webp",
-        "Odisha FC": "assets/logos/upstreams/odisha-fc.webp"
+        "Odisha FC": "assets/logos/upstreams/odisha-fc.webp",
+        "Ricky Walden": "assets/logos/upstreams/ricky-walden.webp",
+        "Jiang Jun": "assets/logos/upstreams/jiang-jun.webp",
+        "Vafaei Hossein": "assets/logos/upstreams/vafaei-hossein.webp",
+        "Zizins A.": "assets/logos/upstreams/zizins-a.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12329,6 +12333,7 @@
         "Welsh Open": "assets/logos/leagues/welsh-open.webp",
         "ATP Acapulco": "assets/logos/leagues/atp-acapulco.webp",
         "ATP Dubai": "assets/logos/leagues/atp-dubai.webp",
-        "Merida, Mexico": "assets/logos/leagues/merida-mexico.webp"
+        "Merida, Mexico": "assets/logos/leagues/merida-mexico.webp",
+        "Welsh Open 2026": "assets/logos/leagues/welsh-open-2026.webp"
     }
 }
