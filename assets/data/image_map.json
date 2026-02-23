@@ -11191,7 +11191,11 @@
         "Van Spor": "assets/logos/upstreams/van-spor.webp",
         "Daniil Bogatov": "assets/logos/upstreams/daniil-bogatov.webp",
         "David Grace": "assets/logos/upstreams/david-grace.webp",
-        "Dominica U20": "assets/logos/upstreams/dominica-u20.webp"
+        "Dominica U20": "assets/logos/upstreams/dominica-u20.webp",
+        "Live Dubai Duty Free Tennis Championships": "assets/logos/upstreams/live-dubai-duty-free-tennis-championships.webp",
+        "Aviation Club Tennis Centre in Dubai": "assets/logos/upstreams/aviation-club-tennis-centre-in-dubai.webp",
+        "Artem Bogomolov": "assets/logos/upstreams/artem-bogomolov.webp",
+        "Nerman Fatic": "assets/logos/upstreams/nerman-fatic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12342,6 +12346,7 @@
         "ATP Dubai": "assets/logos/leagues/atp-dubai.webp",
         "Merida, Mexico": "assets/logos/leagues/merida-mexico.webp",
         "Welsh Open 2026": "assets/logos/leagues/welsh-open-2026.webp",
-        "Championshipul CONCACAF U20 - Qualifiers": "assets/logos/leagues/championshipul-concacaf-u20-qualifiers.webp"
+        "Championshipul CONCACAF U20 - Qualifiers": "assets/logos/leagues/championshipul-concacaf-u20-qualifiers.webp",
+        "Atp Dubai": "assets/logos/leagues/atp-dubai.webp"
     }
 }
