@@ -11129,7 +11129,16 @@
         "Sporting U19": "assets/logos/upstreams/sporting-u19.webp",
         "Lea Belanska": "assets/logos/upstreams/lea-belanska.webp",
         "Julia Adams": "assets/logos/upstreams/julia-adams.webp",
-        "Koharu Nishikawa": "assets/logos/upstreams/koharu-nishikawa.webp"
+        "Koharu Nishikawa": "assets/logos/upstreams/koharu-nishikawa.webp",
+        "Frankfurt U19": "assets/logos/upstreams/frankfurt-u19.webp",
+        "Suriname U20": "assets/logos/upstreams/suriname-u20.webp",
+        "Belize U20": "assets/logos/upstreams/belize-u20.webp",
+        "Ian Luca Cervantes Tomas": "assets/logos/upstreams/ian-luca-cervantes-tomas.webp",
+        "Pavel Lagutin": "assets/logos/upstreams/pavel-lagutin.webp",
+        "Trinidad & Tobago U20": "assets/logos/upstreams/trinidad-tobago-u20.webp",
+        "Bermuda U20": "assets/logos/upstreams/bermuda-u20.webp",
+        "Guyana U20": "assets/logos/upstreams/guyana-u20.webp",
+        "Maahi Shah": "assets/logos/upstreams/maahi-shah.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12272,6 +12281,7 @@
         "Austin, USA": "assets/logos/leagues/austin-usa.webp",
         "Lugano, Switzerland": "assets/logos/leagues/lugano-switzerland.webp",
         "Tigre 2, Argentina": "assets/logos/leagues/tigre-2-argentina.webp",
-        "Acapulco, Mexico": "assets/logos/leagues/acapulco-mexico.webp"
+        "Acapulco, Mexico": "assets/logos/leagues/acapulco-mexico.webp",
+        "CONCACAF Championship U20": "assets/logos/leagues/concacaf-championship-u20.webp"
     }
 }
