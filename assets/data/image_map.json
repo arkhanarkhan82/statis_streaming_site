@@ -11096,7 +11096,17 @@
         "Yantra Gabrovo": "assets/logos/upstreams/yantra-gabrovo.webp",
         "Concordia": "assets/logos/upstreams/concordia.webp",
         "FC Hunedoara": "assets/logos/upstreams/fc-hunedoara.webp",
-        "Nexe": "assets/logos/upstreams/nexe.webp"
+        "Nexe": "assets/logos/upstreams/nexe.webp",
+        "\u0141KS \u0141\u00f3d\u017a": "assets/logos/upstreams/\u0142ks-\u0142\u00f3d\u017a.webp",
+        "Landskrona BoIS": "assets/logos/upstreams/landskrona-bois.webp",
+        "Riteriai": "assets/logos/upstreams/riteriai.webp",
+        "Manta FC": "assets/logos/upstreams/manta-fc.webp",
+        "Lei Peifan": "assets/logos/upstreams/lei-peifan.webp",
+        "Dylan Emery": "assets/logos/upstreams/dylan-emery.webp",
+        "Robbie Williams": "assets/logos/upstreams/robbie-williams.webp",
+        "Michael Holt": "assets/logos/upstreams/michael-holt.webp",
+        "Ben Mertens": "assets/logos/upstreams/ben-mertens.webp",
+        "Martin O'Donnel": "assets/logos/upstreams/martin-odonnel.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12232,6 +12242,8 @@
         "English Women FA Cup": "assets/logos/leagues/english-women-fa-cup.webp",
         "Pune, India": "assets/logos/leagues/pune-india.webp",
         "Santiago, Chile": "assets/logos/leagues/santiago-chile.webp",
-        "St. Brieuc, France": "assets/logos/leagues/st-brieuc-france.webp"
+        "St. Brieuc, France": "assets/logos/leagues/st-brieuc-france.webp",
+        "Svenska Cupen, Group 3": "assets/logos/leagues/svenska-cupen-group-3.webp",
+        "World Open": "assets/logos/leagues/world-open.webp"
     }
 }
