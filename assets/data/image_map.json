@@ -11206,7 +11206,10 @@
         "Gimnasia de Chivilcoy": "assets/logos/upstreams/gimnasia-de-chivilcoy.webp",
         "Dominican Republic U20": "assets/logos/upstreams/dominican-republic-u20.webp",
         "Trimo Trebnje": "assets/logos/upstreams/trimo-trebnje.webp",
-        "Gimnasia y Esgrima de Chivilcoy": "assets/logos/streamed/gimnasia-y-esgrima-de-chivilcoy.webp"
+        "Gimnasia y Esgrima de Chivilcoy": "assets/logos/streamed/gimnasia-y-esgrima-de-chivilcoy.webp",
+        "Bar\u00e7a Basket": "assets/logos/upstreams/bar\u00e7a-basket.webp",
+        "RK Trimo Trebnje": "assets/logos/upstreams/rk-trimo-trebnje.webp",
+        "MRK Krka": "assets/logos/upstreams/mrk-krka.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12358,6 +12361,7 @@
         "Merida, Mexico": "assets/logos/leagues/merida-mexico.webp",
         "Welsh Open 2026": "assets/logos/leagues/welsh-open-2026.webp",
         "Championshipul CONCACAF U20 - Qualifiers": "assets/logos/leagues/championshipul-concacaf-u20-qualifiers.webp",
-        "Atp Dubai": "assets/logos/leagues/atp-dubai.webp"
+        "Atp Dubai": "assets/logos/leagues/atp-dubai.webp",
+        "1. SRL": "assets/logos/leagues/1-srl.webp"
     }
 }
