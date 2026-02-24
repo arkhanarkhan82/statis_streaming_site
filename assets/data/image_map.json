@@ -11291,7 +11291,8 @@
         "Deportivo Moron": "assets/logos/streamed/deportivo-moron.webp",
         "Guam": "assets/logos/streamed/guam.webp",
         "Chinese Taipei": "assets/logos/streamed/chinese-taipei.webp",
-        "Philippines": "assets/logos/streamed/philippines.webp"
+        "Philippines": "assets/logos/streamed/philippines.webp",
+        "Ajeet Rai": "assets/logos/upstreams/ajeet-rai.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12453,6 +12454,7 @@
         "Slovakia - 1. League - Playoff": "assets/logos/leagues/slovakia-1-league-playoff.webp",
         "WTA - Merida (MEX)": "assets/logos/leagues/wta-merida-mex.webp",
         "German Open - Double": "assets/logos/leagues/german-open-double.webp",
-        "ATP - Dubai (EUA)": "assets/logos/leagues/atp-dubai-eua.webp"
+        "ATP - Dubai (EUA)": "assets/logos/leagues/atp-dubai-eua.webp",
+        "English EFL Trohpy": "assets/logos/leagues/english-efl-trohpy.webp"
     }
 }
