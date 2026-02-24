@@ -11279,7 +11279,15 @@
         "Amy Zhu": "assets/logos/upstreams/amy-zhu.webp",
         "Joel Hansson": "assets/logos/upstreams/joel-hansson.webp",
         "Alexander Ursenbacher": "assets/logos/upstreams/alexander-ursenbacher.webp",
-        "Sonja Zhiyenbayeva": "assets/logos/upstreams/sonja-zhiyenbayeva.webp"
+        "Sonja Zhiyenbayeva": "assets/logos/upstreams/sonja-zhiyenbayeva.webp",
+        "Jackson Page": "assets/logos/upstreams/jackson-page.webp",
+        "Luca Brecel": "assets/logos/upstreams/luca-brecel.webp",
+        "Stan Moody": "assets/logos/upstreams/stan-moody.webp",
+        "Wilson G.": "assets/logos/upstreams/wilson-g.webp",
+        "Sarkhosh Amir": "assets/logos/upstreams/sarkhosh-amir.webp",
+        "Mitchell Mann": "assets/logos/upstreams/mitchell-mann.webp",
+        "Sam Craigie": "assets/logos/upstreams/sam-craigie.webp",
+        "Yang Gao": "assets/logos/upstreams/yang-gao.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12440,6 +12448,7 @@
         "Second Professional League": "assets/logos/leagues/second-professional-league.webp",
         "Slovakia - 1. League - Playoff": "assets/logos/leagues/slovakia-1-league-playoff.webp",
         "WTA - Merida (MEX)": "assets/logos/leagues/wta-merida-mex.webp",
-        "German Open - Double": "assets/logos/leagues/german-open-double.webp"
+        "German Open - Double": "assets/logos/leagues/german-open-double.webp",
+        "ATP - Dubai (EUA)": "assets/logos/leagues/atp-dubai-eua.webp"
     }
 }
