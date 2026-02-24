@@ -11249,7 +11249,28 @@
         "Ryan Day": "assets/logos/upstreams/ryan-day.webp",
         "Bulcsu Revesz": "assets/logos/upstreams/bulcsu-revesz.webp",
         "Robbie McGuigan": "assets/logos/upstreams/robbie-mcguigan.webp",
-        "Liam Pullen": "assets/logos/upstreams/liam-pullen.webp"
+        "Liam Pullen": "assets/logos/upstreams/liam-pullen.webp",
+        "Inter Milan U19": "assets/logos/upstreams/inter-milan-u19.webp",
+        "Lyn FK": "assets/logos/upstreams/lyn-fk.webp",
+        "Bryne": "assets/logos/upstreams/bryne.webp",
+        "Start": "assets/logos/upstreams/start.webp",
+        "Detva": "assets/logos/upstreams/detva.webp",
+        "Alina Yuneva": "assets/logos/upstreams/alina-yuneva.webp",
+        "Fantino Alberca de Las Casas": "assets/logos/upstreams/fantino-alberca-de-las-casas.webp",
+        "Sierra Berry": "assets/logos/upstreams/sierra-berry.webp",
+        "Ilya Snitari": "assets/logos/upstreams/ilya-snitari.webp",
+        "Shelby Prince": "assets/logos/upstreams/shelby-prince.webp",
+        "Michael Seversen": "assets/logos/upstreams/michael-seversen.webp",
+        "Veronika Kliuch": "assets/logos/upstreams/veronika-kliuch.webp",
+        "Isabella Kruger": "assets/logos/upstreams/isabella-kruger.webp",
+        "Iulia Andreea Ionescu": "assets/logos/upstreams/iulia-andreea-ionescu.webp",
+        "Nicaragua U20": "assets/logos/upstreams/nicaragua-u20.webp",
+        "Aruba U20": "assets/logos/upstreams/aruba-u20.webp",
+        "KK Kolubara Lazarevac 2003": "assets/logos/upstreams/kk-kolubara-lazarevac-2003.webp",
+        "Duarte Vale": "assets/logos/upstreams/duarte-vale.webp",
+        "F.Livet Novkirichka": "assets/logos/upstreams/flivet-novkirichka.webp",
+        "Tomas Agustin Galera": "assets/logos/upstreams/tomas-agustin-galera.webp",
+        "Szymon Karpinski": "assets/logos/upstreams/szymon-karpinski.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12406,6 +12427,10 @@
         "Bulgaria - B PFG": "assets/logos/leagues/bulgaria-b-pfg.webp",
         "Scottish - Cup Challenge": "assets/logos/leagues/scottish-cup-challenge.webp",
         "Swiss League, Playoffs": "assets/logos/leagues/swiss-league-playoffs.webp",
-        "Antalya, Turkiye": "assets/logos/leagues/antalya-turkiye.webp"
+        "Antalya, Turkiye": "assets/logos/leagues/antalya-turkiye.webp",
+        "Second Professional League": "assets/logos/leagues/second-professional-league.webp",
+        "Slovakia - 1. League - Playoff": "assets/logos/leagues/slovakia-1-league-playoff.webp",
+        "WTA - Merida (MEX)": "assets/logos/leagues/wta-merida-mex.webp",
+        "German Open - Double": "assets/logos/leagues/german-open-double.webp"
     }
 }
