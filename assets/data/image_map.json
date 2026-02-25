@@ -11373,7 +11373,14 @@
         "Carlton Blues": "assets/logos/upstreams/carlton-blues.webp",
         "Geelong Cats": "assets/logos/upstreams/geelong-cats.webp",
         "Orli Znojmo": "assets/logos/upstreams/orli-znojmo.webp",
-        "Jonas Pelle Hartenstein": "assets/logos/upstreams/jonas-pelle-hartenstein.webp"
+        "Jonas Pelle Hartenstein": "assets/logos/upstreams/jonas-pelle-hartenstein.webp",
+        "Derby U18": "assets/logos/upstreams/derby-u18.webp",
+        "Mathare Utd": "assets/logos/upstreams/mathare-utd.webp",
+        "Shabana": "assets/logos/upstreams/shabana.webp",
+        "Franco Emanuel Egea": "assets/logos/upstreams/franco-emanuel-egea.webp",
+        "Ignacio Calderon": "assets/logos/upstreams/ignacio-calderon.webp",
+        "Andres Gaston Tagliani": "assets/logos/upstreams/andres-gaston-tagliani.webp",
+        "Robertson N.": "assets/logos/upstreams/robertson-n.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12544,6 +12551,7 @@
         "German Open": "assets/logos/leagues/german-open.webp",
         "Zimbabwe Women in New Zealand, 3 T20I Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-t20i-series.webp",
         "AFL": "assets/logos/leagues/afl.webp",
-        "WTA Merida Open": "assets/logos/leagues/wta-merida-open.webp"
+        "WTA Merida Open": "assets/logos/leagues/wta-merida-open.webp",
+        "Cup": "assets/logos/leagues/cup.webp"
     }
 }
