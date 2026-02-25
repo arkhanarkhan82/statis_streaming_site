@@ -11296,7 +11296,27 @@
         "Olympiacos --- CN HD": "assets/logos/upstreams/olympiacos-cn-hd.webp",
         "Trinidad&Tobago U20": "assets/logos/upstreams/trinidadtobago-u20.webp",
         "Liu Wenwei": "assets/logos/upstreams/liu-wenwei.webp",
-        "CSA": "assets/logos/upstreams/csa.webp"
+        "CSA": "assets/logos/upstreams/csa.webp",
+        "St.Louis Cardinals": "assets/logos/streamed/stlouis-cardinals.webp",
+        "Guam Basketball": "assets/logos/streamed/guam-basketball.webp",
+        "Australia Basketball": "assets/logos/streamed/australia-basketball.webp",
+        "Japan Basketball": "assets/logos/streamed/japan-basketball.webp",
+        "China Basketball": "assets/logos/streamed/china-basketball.webp",
+        "Chinese Taipei Basketball": "assets/logos/streamed/chinese-taipei-basketball.webp",
+        "South Korea Basketball": "assets/logos/streamed/south-korea-basketball.webp",
+        "Philippines Basketball": "assets/logos/streamed/philippines-basketball.webp",
+        "New Zealand Basketball": "assets/logos/streamed/new-zealand-basketball.webp",
+        "Nebraska-Omaha Mavericks": "assets/logos/upstreams/nebraska-omaha-mavericks.webp",
+        "Arkansas Razorbacks": "assets/logos/upstreams/arkansas-razorbacks.webp",
+        "San Diego Toreros": "assets/logos/upstreams/san-diego-toreros.webp",
+        "Loyola Marymnt": "assets/logos/upstreams/loyola-marymnt.webp",
+        "Saint Martin U20": "assets/logos/upstreams/saint-martin-u20.webp",
+        "CSS Slatina": "assets/logos/upstreams/css-slatina.webp",
+        "Canada U20": "assets/logos/upstreams/canada-u20.webp",
+        "Luke Michael": "assets/logos/upstreams/luke-michael.webp",
+        "Diego Bandu": "assets/logos/upstreams/diego-bandu.webp",
+        "Costa Rica U20": "assets/logos/upstreams/costa-rica-u20.webp",
+        "Angouleme": "assets/logos/upstreams/angouleme.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12459,6 +12479,8 @@
         "WTA - Merida (MEX)": "assets/logos/leagues/wta-merida-mex.webp",
         "German Open - Double": "assets/logos/leagues/german-open-double.webp",
         "ATP - Dubai (EUA)": "assets/logos/leagues/atp-dubai-eua.webp",
-        "English EFL Trohpy": "assets/logos/leagues/english-efl-trohpy.webp"
+        "English EFL Trohpy": "assets/logos/leagues/english-efl-trohpy.webp",
+        "FIBA World Cup, Asian & Oceanian Qualifiers, Gr. A": "assets/logos/leagues/fiba-world-cup-asian-oceanian-qualifiers-gr-a.webp",
+        "Extreme Fighting Championship": "assets/logos/leagues/extreme-fighting-championship.webp"
     }
 }
