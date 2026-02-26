@@ -11399,7 +11399,29 @@
         "Dominican Republic": "assets/logos/streamed/dominican-republic.webp",
         "Syria": "assets/logos/streamed/syria.webp",
         "Jordan": "assets/logos/streamed/jordan.webp",
-        "Republica Dominicana U20": "assets/logos/upstreams/republica-dominicana-u20.webp"
+        "Republica Dominicana U20": "assets/logos/upstreams/republica-dominicana-u20.webp",
+        "Puerto Rico Basketball": "assets/logos/streamed/puerto-rico-basketball.webp",
+        "Canada Basketball": "assets/logos/streamed/canada-basketball.webp",
+        "Nicaragua Basketball": "assets/logos/streamed/nicaragua-basketball.webp",
+        "Mexico Basketball": "assets/logos/streamed/mexico-basketball.webp",
+        "United States Basketball": "assets/logos/streamed/united-states-basketball.webp",
+        "Dominican Republic Basketball": "assets/logos/streamed/dominican-republic-basketball.webp",
+        "Iraq Basketball": "assets/logos/streamed/iraq-basketball.webp",
+        "Syria Basketball": "assets/logos/streamed/syria-basketball.webp",
+        "Ukraine Basketball": "assets/logos/streamed/ukraine-basketball.webp",
+        "Spain Basketball": "assets/logos/streamed/spain-basketball.webp",
+        "Iran Basketball": "assets/logos/streamed/iran-basketball.webp",
+        "Jordan Basketball": "assets/logos/streamed/jordan-basketball.webp",
+        "Delaware Fightin Blue Hens": "assets/logos/upstreams/delaware-fightin-blue-hens.webp",
+        "Presbyterian Blue Hose": "assets/logos/upstreams/presbyterian-blue-hose.webp",
+        "Turkey": "assets/logos/upstreams/turkey.webp",
+        "Kruger United": "assets/logos/upstreams/kruger-united.webp",
+        "Venda": "assets/logos/upstreams/venda.webp",
+        "Alebrijes Oaxaca": "assets/logos/upstreams/alebrijes-oaxaca.webp",
+        "Bengaluru": "assets/logos/upstreams/bengaluru.webp",
+        "Torpedo Gorky": "assets/logos/upstreams/torpedo-gorky.webp",
+        "CSK VVS": "assets/logos/upstreams/csk-vvs.webp",
+        "Angel Ximenez": "assets/logos/upstreams/angel-ximenez.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12571,6 +12593,9 @@
         "Zimbabwe Women in New Zealand, 3 T20I Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-t20i-series.webp",
         "AFL": "assets/logos/leagues/afl.webp",
         "WTA Merida Open": "assets/logos/leagues/wta-merida-open.webp",
-        "Cup": "assets/logos/leagues/cup.webp"
+        "Cup": "assets/logos/leagues/cup.webp",
+        "Europe: World Cup - Qualification": "assets/logos/leagues/europe-world-cup-qualification.webp",
+        "VHL": "assets/logos/leagues/vhl.webp",
+        "Handball-Bundesliga": "assets/logos/leagues/handball-bundesliga.webp"
     }
 }
