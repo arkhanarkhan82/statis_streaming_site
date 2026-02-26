@@ -11422,7 +11422,14 @@
         "Torpedo Gorky": "assets/logos/upstreams/torpedo-gorky.webp",
         "CSK VVS": "assets/logos/upstreams/csk-vvs.webp",
         "Angel Ximenez": "assets/logos/upstreams/angel-ximenez.webp",
-        "Joel Gibson": "assets/logos/upstreams/joel-gibson.webp"
+        "Joel Gibson": "assets/logos/upstreams/joel-gibson.webp",
+        "Schwarz-Wei\u00df Bregenz": "assets/logos/upstreams/schwarz-wei\u00df-bregenz.webp",
+        "T\u00fcrkiye": "assets/logos/upstreams/t\u00fcrkiye.webp",
+        "Western Michigan Broncos": "assets/logos/upstreams/western-michigan-broncos.webp",
+        "HC Davos U21": "assets/logos/upstreams/hc-davos-u21.webp",
+        "HC Ambri-Piotta U21": "assets/logos/upstreams/hc-ambri-piotta-u21.webp",
+        "Torpedo-Gorky Nizhny Novgorod": "assets/logos/upstreams/torpedo-gorky-nizhny-novgorod.webp",
+        "CSK VVS Samara": "assets/logos/upstreams/csk-vvs-samara.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12597,6 +12604,9 @@
         "Cup": "assets/logos/leagues/cup.webp",
         "Europe: World Cup - Qualification": "assets/logos/leagues/europe-world-cup-qualification.webp",
         "VHL": "assets/logos/leagues/vhl.webp",
-        "Handball-Bundesliga": "assets/logos/leagues/handball-bundesliga.webp"
+        "Handball-Bundesliga": "assets/logos/leagues/handball-bundesliga.webp",
+        "FIBA World Cup, European Qualifiers, Group B": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-b.webp",
+        "FIBA World Cup, European Qualifiers, Group E": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-e.webp",
+        "FIBA World Cup, European Qualifiers, Group C": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-c.webp"
     }
 }
