@@ -11430,7 +11430,9 @@
         "HC Ambri-Piotta U21": "assets/logos/upstreams/hc-ambri-piotta-u21.webp",
         "Torpedo-Gorky Nizhny Novgorod": "assets/logos/upstreams/torpedo-gorky-nizhny-novgorod.webp",
         "CSK VVS Samara": "assets/logos/upstreams/csk-vvs-samara.webp",
-        "Andzhelina Kostova": "assets/logos/upstreams/andzhelina-kostova.webp"
+        "Andzhelina Kostova": "assets/logos/upstreams/andzhelina-kostova.webp",
+        "Brisbane Lions": "assets/logos/upstreams/brisbane-lions.webp",
+        "Gold Coast Suns": "assets/logos/upstreams/gold-coast-suns.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12608,6 +12610,8 @@
         "Handball-Bundesliga": "assets/logos/leagues/handball-bundesliga.webp",
         "FIBA World Cup, European Qualifiers, Group B": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-b.webp",
         "FIBA World Cup, European Qualifiers, Group E": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-e.webp",
-        "FIBA World Cup, European Qualifiers, Group C": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-c.webp"
+        "FIBA World Cup, European Qualifiers, Group C": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-c.webp",
+        "Santiago Open": "assets/logos/leagues/santiago-open.webp",
+        "FIBA World Cup, European Qualifiers, Group G": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-g.webp"
     }
 }
