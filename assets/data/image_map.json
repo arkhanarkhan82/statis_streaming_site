@@ -11483,7 +11483,8 @@
         "Uruguay": "assets/logos/streamed/uruguay.webp",
         "Cuba": "assets/logos/streamed/cuba.webp",
         "Djurg\u00e5rdens IF": "assets/logos/upstreams/djurg\u00e5rdens-if.webp",
-        "Maanav Jain": "assets/logos/upstreams/maanav-jain.webp"
+        "Maanav Jain": "assets/logos/upstreams/maanav-jain.webp",
+        "Warriors": "assets/logos/upstreams/warriors.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12664,6 +12665,7 @@
         "FIBA World Cup, European Qualifiers, Group C": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-c.webp",
         "Santiago Open": "assets/logos/leagues/santiago-open.webp",
         "FIBA World Cup, European Qualifiers, Group G": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-g.webp",
-        "UEFA Conference League": "assets/logos/leagues/uefa-conference-league.webp"
+        "UEFA Conference League": "assets/logos/leagues/uefa-conference-league.webp",
+        "CSA Provincial One-Day Challenge Division One": "assets/logos/leagues/csa-provincial-one-day-challenge-division-one.webp"
     }
 }
