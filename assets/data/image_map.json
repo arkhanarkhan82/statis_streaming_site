@@ -11545,7 +11545,21 @@
         "Brandon Moreno": "assets/logos/upstreams/brandon-moreno.webp",
         "Lone'er Kavanagh": "assets/logos/upstreams/loneer-kavanagh.webp",
         "Ryan Gandra": "assets/logos/upstreams/ryan-gandra.webp",
-        "Jose Medina": "assets/logos/upstreams/jose-medina.webp"
+        "Jose Medina": "assets/logos/upstreams/jose-medina.webp",
+        "Floridsdorfer AC": "assets/logos/upstreams/floridsdorfer-ac.webp",
+        "Dinamo Makhachkala": "assets/logos/upstreams/dinamo-makhachkala.webp",
+        "Greece": "assets/logos/upstreams/greece.webp",
+        "Israel": "assets/logos/upstreams/israel.webp",
+        "Cyprus": "assets/logos/upstreams/cyprus.webp",
+        "Tennessee Martin Skyhawks": "assets/logos/upstreams/tennessee-martin-skyhawks.webp",
+        "Texas Longhorns": "assets/logos/upstreams/texas-longhorns.webp",
+        "Texas Southern Tigers": "assets/logos/upstreams/texas-southern-tigers.webp",
+        "Alabama A&M Bulldogs": "assets/logos/upstreams/alabama-am-bulldogs.webp",
+        "Pacific Tigers": "assets/logos/upstreams/pacific-tigers.webp",
+        "CB Ademar Le\u00f3n": "assets/logos/upstreams/cb-ademar-le\u00f3n.webp",
+        "American Eagles": "assets/logos/upstreams/american-eagles.webp",
+        "MT Melsungen": "assets/logos/upstreams/mt-melsungen.webp",
+        "BM Guadalajara": "assets/logos/upstreams/bm-guadalajara.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12737,6 +12751,14 @@
         "K League 1": "assets/logos/leagues/k-league-1.webp",
         "K-League 2": "assets/logos/leagues/k-league-2.webp",
         "Segunda Division B - Group 1": "assets/logos/leagues/segunda-division-b-group-1.webp",
-        "CONCACAF Championship Women": "assets/logos/leagues/concacaf-championship-women.webp"
+        "CONCACAF Championship Women": "assets/logos/leagues/concacaf-championship-women.webp",
+        "EuroBasket, Pre-Qualifiers Group A": "assets/logos/leagues/eurobasket-pre-qualifiers-group-a.webp",
+        "EuroBasket, Pre-Qualifiers Group C": "assets/logos/leagues/eurobasket-pre-qualifiers-group-c.webp",
+        "EuroBasket, Pre-Qualifiers Group B": "assets/logos/leagues/eurobasket-pre-qualifiers-group-b.webp",
+        "FIBA World Cup, European Qualifiers, Group A": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-a.webp",
+        "FIBA World Cup, European Qualifiers, Group F": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-f.webp",
+        "World Cup 2027 - Europa - Qualifiers - Gr.H": "assets/logos/leagues/world-cup-2027-europa-qualifiers-grh.webp",
+        "FIBA World Cup, European Qualifiers, Group D": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-d.webp",
+        "FIBA World Cup, European Qualifiers, Group H": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-h.webp"
     }
 }
