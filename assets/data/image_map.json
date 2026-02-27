@@ -11573,7 +11573,19 @@
         "ATP500: Dubai Duty Free Tennis Championships": "assets/logos/upstreams/atp500-dubai-duty-free-tennis-championships.webp",
         "ATP500: Abierto Mexicano Telcel presentado por HSBC": "assets/logos/upstreams/atp500-abierto-mexicano-telcel-presentado-por-hsbc.webp",
         "Acapulco": "assets/logos/upstreams/acapulco.webp",
-        "Saint-Rapha\u00ebl": "assets/logos/upstreams/saint-rapha\u00ebl.webp"
+        "Saint-Rapha\u00ebl": "assets/logos/upstreams/saint-rapha\u00ebl.webp",
+        "Namdhari FC": "assets/logos/upstreams/namdhari-fc.webp",
+        "Aizawl FC": "assets/logos/upstreams/aizawl-fc.webp",
+        "LillEastrom": "assets/logos/upstreams/lilleastrom.webp",
+        "Tromso": "assets/logos/upstreams/tromso.webp",
+        "Damian Pinas": "assets/logos/upstreams/damian-pinas.webp",
+        "Wesley Schultz": "assets/logos/upstreams/wesley-schultz.webp",
+        "Sofia  Montenegro": "assets/logos/upstreams/sofia-montenegro.webp",
+        "Ernesta Kareckaite": "assets/logos/upstreams/ernesta-kareckaite.webp",
+        "Douglas Silva de Andrade": "assets/logos/upstreams/douglas-silva-de-andrade.webp",
+        "Javier Reyes": "assets/logos/upstreams/javier-reyes.webp",
+        "Cristian Quinonez": "assets/logos/upstreams/cristian-quinonez.webp",
+        "Kris Moutinho": "assets/logos/upstreams/kris-moutinho.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12777,6 +12789,7 @@
         "India Women in Australia, 3 ODI Series": "assets/logos/leagues/india-women-in-australia-3-odi-series.webp",
         "Japan J League": "assets/logos/leagues/japan-j-league.webp",
         "Rugby Union": "assets/logos/leagues/rugby-union.webp",
-        "Super League Rugby": "assets/logos/leagues/super-league-rugby.webp"
+        "Super League Rugby": "assets/logos/leagues/super-league-rugby.webp",
+        "I-League": "assets/logos/leagues/i-league.webp"
     }
 }
