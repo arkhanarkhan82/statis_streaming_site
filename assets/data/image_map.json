@@ -11592,7 +11592,11 @@
         "Sreenidi Deccan FC": "assets/logos/upstreams/sreenidi-deccan-fc.webp",
         "FC FaMalicao": "assets/logos/upstreams/fc-famalicao.webp",
         "Gimhae City FC": "assets/logos/upstreams/gimhae-city-fc.webp",
-        "Ansan Greeners FC": "assets/logos/upstreams/ansan-greeners-fc.webp"
+        "Ansan Greeners FC": "assets/logos/upstreams/ansan-greeners-fc.webp",
+        "Sofia Montenegro": "assets/logos/upstreams/sofia-montenegro.webp",
+        "ErnEasta Kareckaite": "assets/logos/upstreams/erneasta-kareckaite.webp",
+        "Douglas Silva De Andrade": "assets/logos/upstreams/douglas-silva-de-andrade.webp",
+        "Christian Quinonez": "assets/logos/upstreams/christian-quinonez.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12797,6 +12801,7 @@
         "Japan J League": "assets/logos/leagues/japan-j-league.webp",
         "Rugby Union": "assets/logos/leagues/rugby-union.webp",
         "Super League Rugby": "assets/logos/leagues/super-league-rugby.webp",
-        "I-League": "assets/logos/leagues/i-league.webp"
+        "I-League": "assets/logos/leagues/i-league.webp",
+        "UFC Fight Night: Moreno vs. Kavanagh": "assets/logos/leagues/ufc-fight-night-moreno-vs-kavanagh.webp"
     }
 }
