@@ -11564,7 +11564,11 @@
         "Chartres M\u00e9tropole": "assets/logos/upstreams/chartres-m\u00e9tropole.webp",
         "Grand Besan\u00e7on Doubs Handball": "assets/logos/upstreams/grand-besan\u00e7on-doubs-handball.webp",
         "American University Eagles": "assets/logos/upstreams/american-university-eagles.webp",
-        "Fordham Rams": "assets/logos/upstreams/fordham-rams.webp"
+        "Fordham Rams": "assets/logos/upstreams/fordham-rams.webp",
+        "London W": "assets/logos/upstreams/london-w.webp",
+        "Manchester W": "assets/logos/upstreams/manchester-w.webp",
+        "New Zealand W": "assets/logos/upstreams/new-zealand-w.webp",
+        "Zimbabwe W": "assets/logos/upstreams/zimbabwe-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12764,6 +12768,8 @@
         "FIBA World Cup, European Qualifiers, Group F": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-f.webp",
         "World Cup 2027 - Europa - Qualifiers - Gr.H": "assets/logos/leagues/world-cup-2027-europa-qualifiers-grh.webp",
         "FIBA World Cup, European Qualifiers, Group D": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-d.webp",
-        "FIBA World Cup, European Qualifiers, Group H": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-h.webp"
+        "FIBA World Cup, European Qualifiers, Group H": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-h.webp",
+        "India Women in Australia, 3 ODI Series": "assets/logos/leagues/india-women-in-australia-3-odi-series.webp",
+        "Japan J League": "assets/logos/leagues/japan-j-league.webp"
     }
 }
