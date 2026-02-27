@@ -11484,7 +11484,26 @@
         "Cuba": "assets/logos/streamed/cuba.webp",
         "Djurg\u00e5rdens IF": "assets/logos/upstreams/djurg\u00e5rdens-if.webp",
         "Maanav Jain": "assets/logos/upstreams/maanav-jain.webp",
-        "Warriors": "assets/logos/upstreams/warriors.webp"
+        "Warriors": "assets/logos/upstreams/warriors.webp",
+        "Gornik Leczna": "assets/logos/upstreams/gornik-leczna.webp",
+        "Hobro": "assets/logos/upstreams/hobro.webp",
+        "HB Koge": "assets/logos/upstreams/hb-koge.webp",
+        "Lyngby": "assets/logos/upstreams/lyngby.webp",
+        "Kolding IF": "assets/logos/upstreams/kolding-if.webp",
+        "Aalborg BK": "assets/logos/upstreams/aalborg-bk.webp",
+        "Hillerod": "assets/logos/upstreams/hillerod.webp",
+        "B.93 Copenhagen": "assets/logos/upstreams/b93-copenhagen.webp",
+        "Hvidovre": "assets/logos/upstreams/hvidovre.webp",
+        "Podbeskidzie Bielsko-Biala": "assets/logos/upstreams/podbeskidzie-bielsko-biala.webp",
+        "Chojniczanka Chojnice": "assets/logos/upstreams/chojniczanka-chojnice.webp",
+        "Alianza Atletico": "assets/logos/upstreams/alianza-atletico.webp",
+        "BK Saldus": "assets/logos/upstreams/bk-saldus.webp",
+        "Bayswater City": "assets/logos/upstreams/bayswater-city.webp",
+        "Balcatta Etna": "assets/logos/upstreams/balcatta-etna.webp",
+        "Perth SC": "assets/logos/upstreams/perth-sc.webp",
+        "Olympic Kingsway": "assets/logos/upstreams/olympic-kingsway.webp",
+        "Croydon Kings": "assets/logos/upstreams/croydon-kings.webp",
+        "Para Hills Knights": "assets/logos/upstreams/para-hills-knights.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12666,6 +12685,10 @@
         "Santiago Open": "assets/logos/leagues/santiago-open.webp",
         "FIBA World Cup, European Qualifiers, Group G": "assets/logos/leagues/fiba-world-cup-european-qualifiers-group-g.webp",
         "UEFA Conference League": "assets/logos/leagues/uefa-conference-league.webp",
-        "CSA Provincial One-Day Challenge Division One": "assets/logos/leagues/csa-provincial-one-day-challenge-division-one.webp"
+        "CSA Provincial One-Day Challenge Division One": "assets/logos/leagues/csa-provincial-one-day-challenge-division-one.webp",
+        "Denmark - 1.Division": "assets/logos/leagues/denmark-1division.webp",
+        "Betinia Liga": "assets/logos/leagues/betinia-liga.webp",
+        "Australia - NPL - WEast": "assets/logos/leagues/australia-npl-weast.webp",
+        "Australia - NPL - South": "assets/logos/leagues/australia-npl-south.webp"
     }
 }
