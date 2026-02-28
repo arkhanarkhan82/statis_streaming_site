@@ -11731,7 +11731,10 @@
         "Ailin Perez": "assets/logos/upstreams/ailin-perez.webp",
         "Dempo SC": "assets/logos/upstreams/dempo-sc.webp",
         "Real Kashmir": "assets/logos/upstreams/real-kashmir.webp",
-        "Pedro Iamachkine": "assets/logos/upstreams/pedro-iamachkine.webp"
+        "Pedro Iamachkine": "assets/logos/upstreams/pedro-iamachkine.webp",
+        "ND Beltinci": "assets/logos/upstreams/nd-beltinci.webp",
+        "Marek Dupnica": "assets/logos/upstreams/marek-dupnica.webp",
+        "Antalya": "assets/logos/upstreams/antalya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12949,6 +12952,7 @@
         "NRL Premiership": "assets/logos/leagues/nrl-premiership.webp",
         "SheBelieves Cup, Women": "assets/logos/leagues/shebelieves-cup-women.webp",
         "German Open, Mixed Doubles": "assets/logos/leagues/german-open-mixed-doubles.webp",
-        "Slovakia - 2. League": "assets/logos/leagues/slovakia-2-league.webp"
+        "Slovakia - 2. League": "assets/logos/leagues/slovakia-2-league.webp",
+        "2nd SNL": "assets/logos/leagues/2nd-snl.webp"
     }
 }
