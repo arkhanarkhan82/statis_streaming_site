@@ -11700,7 +11700,30 @@
         "Los Chankas": "assets/logos/upstreams/los-chankas.webp",
         "F\u00fcchse Berlin": "assets/logos/upstreams/f\u00fcchse-berlin.webp",
         "Yongin City FC": "assets/logos/upstreams/yongin-city-fc.webp",
-        "Cheonan City FC": "assets/logos/upstreams/cheonan-city-fc.webp"
+        "Cheonan City FC": "assets/logos/upstreams/cheonan-city-fc.webp",
+        "Tatran Liptovsky Mikulas": "assets/logos/upstreams/tatran-liptovsky-mikulas.webp",
+        "Dukla Banska Bystrica": "assets/logos/upstreams/dukla-banska-bystrica.webp",
+        "Oleksandria": "assets/logos/upstreams/oleksandria.webp",
+        "Inter Bratislava": "assets/logos/upstreams/inter-bratislava.webp",
+        "ND Primorje": "assets/logos/upstreams/nd-primorje.webp",
+        "FC Torpedo Kutaisi": "assets/logos/upstreams/fc-torpedo-kutaisi.webp",
+        "FC Spaeri": "assets/logos/upstreams/fc-spaeri.webp",
+        "Deportes Quindio": "assets/logos/upstreams/deportes-quindio.webp",
+        "Union Magdalena": "assets/logos/upstreams/union-magdalena.webp",
+        "KK Sloboda": "assets/logos/upstreams/kk-sloboda.webp",
+        "Aucas": "assets/logos/upstreams/aucas.webp",
+        "Maritimo de la Guaira": "assets/logos/upstreams/maritimo-de-la-guaira.webp",
+        "Atletico Avila FC": "assets/logos/upstreams/atletico-avila-fc.webp",
+        "Zamora FC Barinas II": "assets/logos/upstreams/zamora-fc-barinas-ii.webp",
+        "Saint Louis City SC 2": "assets/logos/upstreams/saint-louis-city-sc-2.webp",
+        "Sporting Kansas City II": "assets/logos/upstreams/sporting-kansas-city-ii.webp",
+        "Colon de Santa Fe": "assets/logos/upstreams/colon-de-santa-fe.webp",
+        "Storhamar Ishockey": "assets/logos/upstreams/storhamar-ishockey.webp",
+        "Tran\u00e5s AIF": "assets/logos/upstreams/tran\u00e5s-aif.webp",
+        "KK Sombor Basketball City": "assets/logos/upstreams/kk-sombor-basketball-city.webp",
+        "Atletico Bucaramanga": "assets/logos/upstreams/atletico-bucaramanga.webp",
+        "Andrea de Marchi": "assets/logos/upstreams/andrea-de-marchi.webp",
+        "Toufik Sahtali": "assets/logos/upstreams/toufik-sahtali.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12917,6 +12940,7 @@
         "FA Super Cup": "assets/logos/leagues/fa-super-cup.webp",
         "NRL Premiership": "assets/logos/leagues/nrl-premiership.webp",
         "SheBelieves Cup, Women": "assets/logos/leagues/shebelieves-cup-women.webp",
-        "German Open, Mixed Doubles": "assets/logos/leagues/german-open-mixed-doubles.webp"
+        "German Open, Mixed Doubles": "assets/logos/leagues/german-open-mixed-doubles.webp",
+        "Slovakia - 2. League": "assets/logos/leagues/slovakia-2-league.webp"
     }
 }
