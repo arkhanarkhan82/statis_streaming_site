@@ -11692,7 +11692,15 @@
         "Gwangju FC": "assets/logos/upstreams/gwangju-fc.webp",
         "Gyeongnam FC": "assets/logos/upstreams/gyeongnam-fc.webp",
         "Jeonnam Dragons": "assets/logos/upstreams/jeonnam-dragons.webp",
-        "Beijing Guoan": "assets/logos/upstreams/beijing-guoan.webp"
+        "Beijing Guoan": "assets/logos/upstreams/beijing-guoan.webp",
+        "NK Croatia Zmijavci": "assets/logos/upstreams/nk-croatia-zmijavci.webp",
+        "NK Rudes": "assets/logos/upstreams/nk-rudes.webp",
+        "FC Sochi": "assets/logos/upstreams/fc-sochi.webp",
+        "FC Spartak Moscow": "assets/logos/upstreams/fc-spartak-moscow.webp",
+        "Los Chankas": "assets/logos/upstreams/los-chankas.webp",
+        "F\u00fcchse Berlin": "assets/logos/upstreams/f\u00fcchse-berlin.webp",
+        "Yongin City FC": "assets/logos/upstreams/yongin-city-fc.webp",
+        "Cheonan City FC": "assets/logos/upstreams/cheonan-city-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12907,6 +12915,8 @@
         "2. SNL": "assets/logos/leagues/2-snl.webp",
         "South Korea - K League 1": "assets/logos/leagues/south-korea-k-league-1.webp",
         "FA Super Cup": "assets/logos/leagues/fa-super-cup.webp",
-        "NRL Premiership": "assets/logos/leagues/nrl-premiership.webp"
+        "NRL Premiership": "assets/logos/leagues/nrl-premiership.webp",
+        "SheBelieves Cup, Women": "assets/logos/leagues/shebelieves-cup-women.webp",
+        "German Open, Mixed Doubles": "assets/logos/leagues/german-open-mixed-doubles.webp"
     }
 }
