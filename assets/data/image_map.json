@@ -11829,7 +11829,10 @@
         "Saint Mary": "assets/logos/upstreams/saint-mary.webp",
         "Antivari (W)": "assets/logos/upstreams/antivari-w.webp",
         "El Salvador (W)": "assets/logos/upstreams/el-salvador-w.webp",
-        "Albania": "assets/logos/streamed/albania.webp"
+        "Albania": "assets/logos/streamed/albania.webp",
+        "Grove City Whitetails": "assets/logos/upstreams/grove-city-whitetails.webp",
+        "Racing Club Aruba": "assets/logos/upstreams/racing-club-aruba.webp",
+        "Maximilian Neuchrist": "assets/logos/upstreams/maximilian-neuchrist.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
