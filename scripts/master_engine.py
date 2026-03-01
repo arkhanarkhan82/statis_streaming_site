@@ -1043,7 +1043,13 @@ def generate_sitemap(matches):
 
     def add_url(path, prio, freq, date_val):
         clean_path = path.strip('/')
-        loc = f"{base_url}/{clean_path}/" if clean_path else f"{base_url}/"
+        # URL-encode the path to handle non-ASCII characters
+        safe_path = urllib.parse.quote(clean_path, safe='/')
+        loc = f"{base_url}/{safe_path}/" if safe_path else f"{base_url}/"
+        
+        # XML escape the final URL
+        loc = loc.replace("&", "&amp;").replace("'", "&apos;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
+        
         urls.append(f"""    <url>
         <loc>{loc}</loc>
         <lastmod>{date_val}</lastmod>
@@ -1073,9 +1079,15 @@ def generate_sitemap(matches):
     # E. Match Info Pages (Today's Date)
     param_info = s_sett.get('param_info', 'info')
     for mid in visible_ids:
-        full_url = f"{base_url}/watch/?{param_info}={mid}"
+        # URL-encode the match ID to fix non-ASCII characters
+        safe_mid = urllib.parse.quote(mid)
+        full_url = f"{base_url}/watch/?{param_info}={safe_mid}"
+        
+        # XML escape the URL (converts any rogue & into &amp;)
+        safe_full_url = full_url.replace("&", "&amp;").replace("'", "&apos;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
+        
         urls.append(f"""    <url>
-        <loc>{full_url}</loc>
+        <loc>{safe_full_url}</loc>
         <lastmod>{today_date}</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
