@@ -11747,7 +11747,17 @@
         "Chelsea U21": "assets/logos/upstreams/chelsea-u21.webp",
         "FC Anyang": "assets/logos/upstreams/fc-anyang.webp",
         "Busan I Park": "assets/logos/upstreams/busan-i-park.webp",
-        "Seongnam FC": "assets/logos/upstreams/seongnam-fc.webp"
+        "Seongnam FC": "assets/logos/upstreams/seongnam-fc.webp",
+        "Stephanos Schinas": "assets/logos/upstreams/stephanos-schinas.webp",
+        "Allan Gatoto": "assets/logos/upstreams/allan-gatoto.webp",
+        "Etienne Niyigena": "assets/logos/upstreams/etienne-niyigena.webp",
+        "Ryan Nijboer": "assets/logos/upstreams/ryan-nijboer.webp",
+        "Peter Makk": "assets/logos/upstreams/peter-makk.webp",
+        "Michalis Sakellaridis": "assets/logos/upstreams/michalis-sakellaridis.webp",
+        "Jack Loge": "assets/logos/upstreams/jack-loge.webp",
+        "Michiel De Krom": "assets/logos/upstreams/michiel-de-krom.webp",
+        "Denys Klok": "assets/logos/upstreams/denys-klok.webp",
+        "Guy Orly Iradukunda": "assets/logos/upstreams/guy-orly-iradukunda.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12969,6 +12979,9 @@
         "2nd SNL": "assets/logos/leagues/2nd-snl.webp",
         "SheBelieves Cup (W)": "assets/logos/leagues/shebelieves-cup-w.webp",
         "AFC Asian Cup, Women, Group A": "assets/logos/leagues/afc-asian-cup-women-group-a.webp",
-        "AFC - Champions League - Playoff": "assets/logos/leagues/afc-champions-league-playoff.webp"
+        "AFC - Champions League - Playoff": "assets/logos/leagues/afc-champions-league-playoff.webp",
+        "Thionville, France, Qualifying": "assets/logos/leagues/thionville-france-qualifying.webp",
+        "Hersonissos, Greece, Qualifying": "assets/logos/leagues/hersonissos-greece-qualifying.webp",
+        "Kigali, Rwanda, Qualifying": "assets/logos/leagues/kigali-rwanda-qualifying.webp"
     }
 }
