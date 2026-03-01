@@ -11811,7 +11811,21 @@
         "Minnesota United FC 2": "assets/logos/upstreams/minnesota-united-fc-2.webp",
         "Tacoma Defiance": "assets/logos/upstreams/tacoma-defiance.webp",
         "Los Angeles FC 2": "assets/logos/upstreams/los-angeles-fc-2.webp",
-        "Maxence Bertimon": "assets/logos/upstreams/maxence-bertimon.webp"
+        "Maxence Bertimon": "assets/logos/upstreams/maxence-bertimon.webp",
+        "\u017dKK Mega Superbet": "assets/logos/upstreams/\u017ekk-mega-superbet.webp",
+        "BC Baren Kleinbasel": "assets/logos/upstreams/bc-baren-kleinbasel.webp",
+        "Breno Braga": "assets/logos/upstreams/breno-braga.webp",
+        "Ryan Augusto Dos Santos": "assets/logos/upstreams/ryan-augusto-dos-santos.webp",
+        "Luka Bojicic Ono": "assets/logos/upstreams/luka-bojicic-ono.webp",
+        "Miguel Bellorio Pinheiro": "assets/logos/upstreams/miguel-bellorio-pinheiro.webp",
+        "Marcelo Zormann": "assets/logos/upstreams/marcelo-zormann.webp",
+        "Luis Felipe Miguel": "assets/logos/upstreams/luis-felipe-miguel.webp",
+        "Victor Hugo Remondy Pagotto": "assets/logos/upstreams/victor-hugo-remondy-pagotto.webp",
+        "Victor Braga": "assets/logos/upstreams/victor-braga.webp",
+        "Enrique Bogo": "assets/logos/upstreams/enrique-bogo.webp",
+        "Joao Pedro Didoni Bonini": "assets/logos/upstreams/joao-pedro-didoni-bonini.webp",
+        "Rafael Tosetto": "assets/logos/upstreams/rafael-tosetto.webp",
+        "Hong Kong C.": "assets/logos/upstreams/hong-kong-c.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13040,6 +13054,8 @@
         "MLS League": "assets/logos/leagues/mls-league.webp",
         "AFC Champions League Elite": "assets/logos/leagues/afc-champions-league-elite.webp",
         "Super League 2, Championship Round, Group B": "assets/logos/leagues/super-league-2-championship-round-group-b.webp",
-        "Antalya 2, Turkiye, Qualifying": "assets/logos/leagues/antalya-2-turkiye-qualifying.webp"
+        "Antalya 2, Turkiye, Qualifying": "assets/logos/leagues/antalya-2-turkiye-qualifying.webp",
+        "Brasilia, Brazil, Qualifying": "assets/logos/leagues/brasilia-brazil-qualifying.webp",
+        "Kuwait in Hong Kong, China, 4 T20I Series": "assets/logos/leagues/kuwait-in-hong-kong-china-4-t20i-series.webp"
     }
 }
