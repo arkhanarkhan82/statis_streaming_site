@@ -11741,7 +11741,13 @@
         "AD Fundao": "assets/logos/upstreams/ad-fundao.webp",
         "Ferreira Zezere": "assets/logos/upstreams/ferreira-zezere.webp",
         "ADCR Caxinas": "assets/logos/upstreams/adcr-caxinas.webp",
-        "Lone&#x27;er Kavanagh": "assets/logos/streamed/lonex27er-kavanagh.webp"
+        "Lone&#x27;er Kavanagh": "assets/logos/streamed/lonex27er-kavanagh.webp",
+        "Nicaragua W": "assets/logos/upstreams/nicaragua-w.webp",
+        "Mexico W": "assets/logos/upstreams/mexico-w.webp",
+        "Chelsea U21": "assets/logos/upstreams/chelsea-u21.webp",
+        "FC Anyang": "assets/logos/upstreams/fc-anyang.webp",
+        "Busan I Park": "assets/logos/upstreams/busan-i-park.webp",
+        "Seongnam FC": "assets/logos/upstreams/seongnam-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12961,6 +12967,8 @@
         "German Open, Mixed Doubles": "assets/logos/leagues/german-open-mixed-doubles.webp",
         "Slovakia - 2. League": "assets/logos/leagues/slovakia-2-league.webp",
         "2nd SNL": "assets/logos/leagues/2nd-snl.webp",
-        "SheBelieves Cup (W)": "assets/logos/leagues/shebelieves-cup-w.webp"
+        "SheBelieves Cup (W)": "assets/logos/leagues/shebelieves-cup-w.webp",
+        "AFC Asian Cup, Women, Group A": "assets/logos/leagues/afc-asian-cup-women-group-a.webp",
+        "AFC - Champions League - Playoff": "assets/logos/leagues/afc-champions-league-playoff.webp"
     }
 }
