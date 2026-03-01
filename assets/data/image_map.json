@@ -11757,7 +11757,11 @@
         "Jack Loge": "assets/logos/upstreams/jack-loge.webp",
         "Michiel De Krom": "assets/logos/upstreams/michiel-de-krom.webp",
         "Denys Klok": "assets/logos/upstreams/denys-klok.webp",
-        "Guy Orly Iradukunda": "assets/logos/upstreams/guy-orly-iradukunda.webp"
+        "Guy Orly Iradukunda": "assets/logos/upstreams/guy-orly-iradukunda.webp",
+        "Portland Timbers II": "assets/logos/upstreams/portland-timbers-ii.webp",
+        "The Town FC": "assets/logos/upstreams/the-town-fc.webp",
+        "Tennesse": "assets/logos/upstreams/tennesse.webp",
+        "Gray Voelzke": "assets/logos/upstreams/gray-voelzke.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -12982,6 +12986,8 @@
         "AFC - Champions League - Playoff": "assets/logos/leagues/afc-champions-league-playoff.webp",
         "Thionville, France, Qualifying": "assets/logos/leagues/thionville-france-qualifying.webp",
         "Hersonissos, Greece, Qualifying": "assets/logos/leagues/hersonissos-greece-qualifying.webp",
-        "Kigali, Rwanda, Qualifying": "assets/logos/leagues/kigali-rwanda-qualifying.webp"
+        "Kigali, Rwanda, Qualifying": "assets/logos/leagues/kigali-rwanda-qualifying.webp",
+        "MLS League": "assets/logos/leagues/mls-league.webp",
+        "AFC Champions League Elite": "assets/logos/leagues/afc-champions-league-elite.webp"
     }
 }
