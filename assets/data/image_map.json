@@ -11840,7 +11840,9 @@
         "Guabira": "assets/logos/upstreams/guabira.webp",
         "Bermuda W": "assets/logos/upstreams/bermuda-w.webp",
         "Costa Rica W": "assets/logos/upstreams/costa-rica-w.webp",
-        "Podgorica": "assets/logos/upstreams/podgorica.webp"
+        "Podgorica": "assets/logos/upstreams/podgorica.webp",
+        "Gabriele Pennaforti": "assets/logos/upstreams/gabriele-pennaforti.webp",
+        "Melios Efstathiou": "assets/logos/upstreams/melios-efstathiou.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13077,6 +13079,8 @@
         "AFC Asian Cup, Women, Group B": "assets/logos/leagues/afc-asian-cup-women-group-b.webp",
         "World Cup Women 2023": "assets/logos/leagues/world-cup-women-2023.webp",
         "Checkatrade Trophy": "assets/logos/leagues/checkatrade-trophy.webp",
-        "Copa Southamericana - Qualifiers": "assets/logos/leagues/copa-southamericana-qualifiers.webp"
+        "Copa Southamericana - Qualifiers": "assets/logos/leagues/copa-southamericana-qualifiers.webp",
+        "Kigali, Rwanda": "assets/logos/leagues/kigali-rwanda.webp",
+        "Hersonissos, Greece": "assets/logos/leagues/hersonissos-greece.webp"
     }
 }
