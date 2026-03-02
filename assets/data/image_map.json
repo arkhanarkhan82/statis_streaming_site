@@ -11842,7 +11842,18 @@
         "Costa Rica W": "assets/logos/upstreams/costa-rica-w.webp",
         "Podgorica": "assets/logos/upstreams/podgorica.webp",
         "Gabriele Pennaforti": "assets/logos/upstreams/gabriele-pennaforti.webp",
-        "Melios Efstathiou": "assets/logos/upstreams/melios-efstathiou.webp"
+        "Melios Efstathiou": "assets/logos/upstreams/melios-efstathiou.webp",
+        "New York City": "assets/logos/upstreams/new-york-city.webp",
+        "U de Deportes": "assets/logos/upstreams/u-de-deportes.webp",
+        "Hassania Agadir": "assets/logos/upstreams/hassania-agadir.webp",
+        "Raja Casablanca": "assets/logos/upstreams/raja-casablanca.webp",
+        "Alabama Crimson Tide": "assets/logos/upstreams/alabama-crimson-tide.webp",
+        "Orlando City B": "assets/logos/upstreams/orlando-city-b.webp",
+        "Huntsville City FC": "assets/logos/upstreams/huntsville-city-fc.webp",
+        "IFK Kristianstad": "assets/logos/upstreams/ifk-kristianstad.webp",
+        "Pinches B.": "assets/logos/upstreams/pinches-b.webp",
+        "Miah H.": "assets/logos/upstreams/miah-h.webp",
+        "Minghui Zhang": "assets/logos/upstreams/minghui-zhang.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13081,6 +13092,10 @@
         "Checkatrade Trophy": "assets/logos/leagues/checkatrade-trophy.webp",
         "Copa Southamericana - Qualifiers": "assets/logos/leagues/copa-southamericana-qualifiers.webp",
         "Kigali, Rwanda": "assets/logos/leagues/kigali-rwanda.webp",
-        "Hersonissos, Greece": "assets/logos/leagues/hersonissos-greece.webp"
+        "Hersonissos, Greece": "assets/logos/leagues/hersonissos-greece.webp",
+        "Morocco Botola Pro": "assets/logos/leagues/morocco-botola-pro.webp",
+        "Cupa Rom\u00e2niei Betano": "assets/logos/leagues/cupa-rom\u00e2niei-betano.webp",
+        "CONMEBOL Sudamericana, Qualification": "assets/logos/leagues/conmebol-sudamericana-qualification.webp",
+        "EHF European League, Main Round, Group III": "assets/logos/leagues/ehf-european-league-main-round-group-iii.webp"
     }
 }
