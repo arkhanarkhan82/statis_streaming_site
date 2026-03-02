@@ -11892,7 +11892,17 @@
         "Yusuke Kusuhara": "assets/logos/upstreams/yusuke-kusuhara.webp",
         "Wilhelmina Vainikka": "assets/logos/upstreams/wilhelmina-vainikka.webp",
         "Olivia Quigley": "assets/logos/upstreams/olivia-quigley.webp",
-        "Dimitri Bagaric": "assets/logos/upstreams/dimitri-bagaric.webp"
+        "Dimitri Bagaric": "assets/logos/upstreams/dimitri-bagaric.webp",
+        "Denmark W": "assets/logos/upstreams/denmark-w.webp",
+        "Serbia W": "assets/logos/upstreams/serbia-w.webp",
+        "Izyan Ahmad": "assets/logos/upstreams/izyan-ahmad.webp",
+        "Mikeal Carpenter": "assets/logos/upstreams/mikeal-carpenter.webp",
+        "Felix Einig": "assets/logos/upstreams/felix-einig.webp",
+        "Patrick Wyeth": "assets/logos/upstreams/patrick-wyeth.webp",
+        "Marie Krymlova": "assets/logos/upstreams/marie-krymlova.webp",
+        "Ellen Katzer": "assets/logos/upstreams/ellen-katzer.webp",
+        "Ria Dernikovic": "assets/logos/upstreams/ria-dernikovic.webp",
+        "St Louis City": "assets/logos/upstreams/st-louis-city.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13138,6 +13148,7 @@
         "EHF European League, Main Round, Group III": "assets/logos/leagues/ehf-european-league-main-round-group-iii.webp",
         "Svenska Cupen, Group 2": "assets/logos/leagues/svenska-cupen-group-2.webp",
         "Thionville, France": "assets/logos/leagues/thionville-france.webp",
-        "Brasilia, Brazil": "assets/logos/leagues/brasilia-brazil.webp"
+        "Brasilia, Brazil": "assets/logos/leagues/brasilia-brazil.webp",
+        "World Cup Women": "assets/logos/leagues/world-cup-women.webp"
     }
 }
