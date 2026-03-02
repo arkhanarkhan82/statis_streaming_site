@@ -11853,7 +11853,29 @@
         "IFK Kristianstad": "assets/logos/upstreams/ifk-kristianstad.webp",
         "Pinches B.": "assets/logos/upstreams/pinches-b.webp",
         "Miah H.": "assets/logos/upstreams/miah-h.webp",
-        "Minghui Zhang": "assets/logos/upstreams/minghui-zhang.webp"
+        "Minghui Zhang": "assets/logos/upstreams/minghui-zhang.webp",
+        "FC Gagra": "assets/logos/upstreams/fc-gagra.webp",
+        "FC Samgurali Tskhaltubo": "assets/logos/upstreams/fc-samgurali-tskhaltubo.webp",
+        "\u00d6rebro SK": "assets/logos/upstreams/\u00f6rebro-sk.webp",
+        "Sandviken IF": "assets/logos/upstreams/sandviken-if.webp",
+        "Iida Heinonen": "assets/logos/upstreams/iida-heinonen.webp",
+        "Martina Minetti": "assets/logos/upstreams/martina-minetti.webp",
+        "Iben Mol": "assets/logos/upstreams/iben-mol.webp",
+        "Nuppu Palm": "assets/logos/upstreams/nuppu-palm.webp",
+        "Malene Helgo": "assets/logos/upstreams/malene-helgo.webp",
+        "Anastasiia Hnidets": "assets/logos/upstreams/anastasiia-hnidets.webp",
+        "Bianca CompuEasto": "assets/logos/upstreams/bianca-compueasto.webp",
+        "Jun Hao Luo": "assets/logos/upstreams/jun-hao-luo.webp",
+        "Mahika Khanna": "assets/logos/upstreams/mahika-khanna.webp",
+        "Laxmisiri Dandu": "assets/logos/upstreams/laxmisiri-dandu.webp",
+        "Aishwarya Jadhav": "assets/logos/upstreams/aishwarya-jadhav.webp",
+        "Sreemanya Reddy Anugonda": "assets/logos/upstreams/sreemanya-reddy-anugonda.webp",
+        "Snigdha Kanta": "assets/logos/upstreams/snigdha-kanta.webp",
+        "Sandeepti Singh Rao": "assets/logos/upstreams/sandeepti-singh-rao.webp",
+        "Maria Mikhailova": "assets/logos/upstreams/maria-mikhailova.webp",
+        "Lakshmi Prabha Arunkumar": "assets/logos/upstreams/lakshmi-prabha-arunkumar.webp",
+        "Eva Marie Desvignes": "assets/logos/upstreams/eva-marie-desvignes.webp",
+        "Aahan Aahan": "assets/logos/upstreams/aahan-aahan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13096,6 +13118,9 @@
         "Morocco Botola Pro": "assets/logos/leagues/morocco-botola-pro.webp",
         "Cupa Rom\u00e2niei Betano": "assets/logos/leagues/cupa-rom\u00e2niei-betano.webp",
         "CONMEBOL Sudamericana, Qualification": "assets/logos/leagues/conmebol-sudamericana-qualification.webp",
-        "EHF European League, Main Round, Group III": "assets/logos/leagues/ehf-european-league-main-round-group-iii.webp"
+        "EHF European League, Main Round, Group III": "assets/logos/leagues/ehf-european-league-main-round-group-iii.webp",
+        "Svenska Cupen, Group 2": "assets/logos/leagues/svenska-cupen-group-2.webp",
+        "Thionville, France": "assets/logos/leagues/thionville-france.webp",
+        "Brasilia, Brazil": "assets/logos/leagues/brasilia-brazil.webp"
     }
 }
