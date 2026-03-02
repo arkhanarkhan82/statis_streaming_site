@@ -11832,7 +11832,15 @@
         "Albania": "assets/logos/streamed/albania.webp",
         "Grove City Whitetails": "assets/logos/upstreams/grove-city-whitetails.webp",
         "Racing Club Aruba": "assets/logos/upstreams/racing-club-aruba.webp",
-        "Maximilian Neuchrist": "assets/logos/upstreams/maximilian-neuchrist.webp"
+        "Maximilian Neuchrist": "assets/logos/upstreams/maximilian-neuchrist.webp",
+        "Ukraine W": "assets/logos/upstreams/ukraine-w.webp",
+        "England W": "assets/logos/upstreams/england-w.webp",
+        "Stockport": "assets/logos/upstreams/stockport.webp",
+        "Independiente Petrolero": "assets/logos/upstreams/independiente-petrolero.webp",
+        "Guabira": "assets/logos/upstreams/guabira.webp",
+        "Bermuda W": "assets/logos/upstreams/bermuda-w.webp",
+        "Costa Rica W": "assets/logos/upstreams/costa-rica-w.webp",
+        "Podgorica": "assets/logos/upstreams/podgorica.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13065,6 +13073,10 @@
         "Brasilia, Brazil, Qualifying": "assets/logos/leagues/brasilia-brazil-qualifying.webp",
         "Kuwait in Hong Kong, China, 4 T20I Series": "assets/logos/leagues/kuwait-in-hong-kong-china-4-t20i-series.webp",
         "Indian Wells, USA, Qualifying": "assets/logos/leagues/indian-wells-usa-qualifying.webp",
-        "FIBA World Cup, Asian & Oceanian Qualifiers, Gr. D": "assets/logos/leagues/fiba-world-cup-asian-oceanian-qualifiers-gr-d.webp"
+        "FIBA World Cup, Asian & Oceanian Qualifiers, Gr. D": "assets/logos/leagues/fiba-world-cup-asian-oceanian-qualifiers-gr-d.webp",
+        "AFC Asian Cup, Women, Group B": "assets/logos/leagues/afc-asian-cup-women-group-b.webp",
+        "World Cup Women 2023": "assets/logos/leagues/world-cup-women-2023.webp",
+        "Checkatrade Trophy": "assets/logos/leagues/checkatrade-trophy.webp",
+        "Copa Southamericana - Qualifiers": "assets/logos/leagues/copa-southamericana-qualifiers.webp"
     }
 }
