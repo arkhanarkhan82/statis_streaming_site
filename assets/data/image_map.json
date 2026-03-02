@@ -11940,7 +11940,10 @@
         "Mark Joyce": "assets/logos/upstreams/mark-joyce.webp",
         "Billy Joe Castle": "assets/logos/upstreams/billy-joe-castle.webp",
         "Menge Belashangul": "assets/logos/upstreams/menge-belashangul.webp",
-        "Sululta Ketema": "assets/logos/upstreams/sululta-ketema.webp"
+        "Sululta Ketema": "assets/logos/upstreams/sululta-ketema.webp",
+        "Didrik Liljekvist": "assets/logos/upstreams/didrik-liljekvist.webp",
+        "Barry Pinches": "assets/logos/upstreams/barry-pinches.webp",
+        "Hammad Miah": "assets/logos/upstreams/hammad-miah.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13188,6 +13191,7 @@
         "Thionville, France": "assets/logos/leagues/thionville-france.webp",
         "Brasilia, Brazil": "assets/logos/leagues/brasilia-brazil.webp",
         "World Cup Women": "assets/logos/leagues/world-cup-women.webp",
-        "Ethiopia - Higher League": "assets/logos/leagues/ethiopia-higher-league.webp"
+        "Ethiopia - Higher League": "assets/logos/leagues/ethiopia-higher-league.webp",
+        "Mestis Playoffs": "assets/logos/leagues/mestis-playoffs.webp"
     }
 }
