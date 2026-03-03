@@ -11981,7 +11981,10 @@
         "FYR Macedonia W": "assets/logos/upstreams/fyr-macedonia-w.webp",
         "Alianza Atl\u00e9tico": "assets/logos/streamed/alianza-atl\u00e9tico.webp",
         "Uruguay U17": "assets/logos/streamed/uruguay-u17.webp",
-        "Argentina U17": "assets/logos/streamed/argentina-u17.webp"
+        "Argentina U17": "assets/logos/streamed/argentina-u17.webp",
+        "Manta": "assets/logos/upstreams/manta.webp",
+        "Ind del Valle": "assets/logos/upstreams/ind-del-valle.webp",
+        "Ayane Takagi": "assets/logos/upstreams/ayane-takagi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
