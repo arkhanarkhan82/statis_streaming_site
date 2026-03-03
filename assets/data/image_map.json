@@ -12016,7 +12016,12 @@
         "Yu Jin Sim": "assets/logos/upstreams/yu-jin-sim.webp",
         "Yuqi Shi": "assets/logos/upstreams/yuqi-shi.webp",
         "Unnati Hooda": "assets/logos/upstreams/unnati-hooda.webp",
-        "Canada Baseball": "assets/logos/streamed/canada-baseball.webp"
+        "Canada Baseball": "assets/logos/streamed/canada-baseball.webp",
+        "USA Baseball": "assets/logos/streamed/usa-baseball.webp",
+        "Mexico Baseball": "assets/logos/streamed/mexico-baseball.webp",
+        "Dominican Republic Baseball": "assets/logos/streamed/dominican-republic-baseball.webp",
+        "Venezuela Baseball": "assets/logos/streamed/venezuela-baseball.webp",
+        "Puerto Rico Baseball": "assets/logos/streamed/puerto-rico-baseball.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
