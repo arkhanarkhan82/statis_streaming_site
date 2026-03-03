@@ -12021,7 +12021,9 @@
         "Mexico Baseball": "assets/logos/streamed/mexico-baseball.webp",
         "Dominican Republic Baseball": "assets/logos/streamed/dominican-republic-baseball.webp",
         "Venezuela Baseball": "assets/logos/streamed/venezuela-baseball.webp",
-        "Puerto Rico Baseball": "assets/logos/streamed/puerto-rico-baseball.webp"
+        "Puerto Rico Baseball": "assets/logos/streamed/puerto-rico-baseball.webp",
+        "Emil Rast": "assets/logos/upstreams/emil-rast.webp",
+        "Benjamin Vitter": "assets/logos/upstreams/benjamin-vitter.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
