@@ -11963,7 +11963,22 @@
         "Goki Niinomi": "assets/logos/upstreams/goki-niinomi.webp",
         "Yuno Kitahara": "assets/logos/upstreams/yuno-kitahara.webp",
         "Belle Thompson": "assets/logos/upstreams/belle-thompson.webp",
-        "Mia Sara Ribnikar": "assets/logos/upstreams/mia-sara-ribnikar.webp"
+        "Mia Sara Ribnikar": "assets/logos/upstreams/mia-sara-ribnikar.webp",
+        "Graficar Beograd": "assets/logos/upstreams/graficar-beograd.webp",
+        "Macva": "assets/logos/upstreams/macva.webp",
+        "Blooming": "assets/logos/upstreams/blooming.webp",
+        "SA Bulo Bulo": "assets/logos/upstreams/sa-bulo-bulo.webp",
+        "Blooming Santa Cruz": "assets/logos/upstreams/blooming-santa-cruz.webp",
+        "San Antonio Bulo Bulo": "assets/logos/upstreams/san-antonio-bulo-bulo.webp",
+        "Saint Kitts and Nevis W": "assets/logos/upstreams/saint-kitts-and-nevis-w.webp",
+        "Panama W": "assets/logos/upstreams/panama-w.webp",
+        "Jedinstvo U.": "assets/logos/upstreams/jedinstvo-u.webp",
+        "Zemun": "assets/logos/upstreams/zemun.webp",
+        "Trayal Krusevac": "assets/logos/upstreams/trayal-krusevac.webp",
+        "Bistrita": "assets/logos/upstreams/bistrita.webp",
+        "Gloria Bistrita": "assets/logos/upstreams/gloria-bistrita.webp",
+        "Belgium W": "assets/logos/upstreams/belgium-w.webp",
+        "FYR Macedonia W": "assets/logos/upstreams/fyr-macedonia-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13213,6 +13228,12 @@
         "World Cup Women": "assets/logos/leagues/world-cup-women.webp",
         "Ethiopia - Higher League": "assets/logos/leagues/ethiopia-higher-league.webp",
         "Mestis Playoffs": "assets/logos/leagues/mestis-playoffs.webp",
-        "English Premier League U21": "assets/logos/leagues/english-premier-league-u21.webp"
+        "English Premier League U21": "assets/logos/leagues/english-premier-league-u21.webp",
+        "NBL, Play-In": "assets/logos/leagues/nbl-play-in.webp",
+        "Croatia - Cup": "assets/logos/leagues/croatia-cup.webp",
+        "ROmania - Cup": "assets/logos/leagues/romania-cup.webp",
+        "Copa Sudamericana": "assets/logos/leagues/copa-sudamericana.webp",
+        "Cupa Romaniei": "assets/logos/leagues/cupa-romaniei.webp",
+        "European Championship Women": "assets/logos/leagues/european-championship-women.webp"
     }
 }
