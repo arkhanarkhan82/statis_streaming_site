@@ -12026,7 +12026,20 @@
         "Benjamin Vitter": "assets/logos/upstreams/benjamin-vitter.webp",
         "Caracas": "assets/logos/streamed/caracas.webp",
         "Colombia Baseball": "assets/logos/streamed/colombia-baseball.webp",
-        "Atletico Torque": "assets/logos/streamed/atletico-torque.webp"
+        "Atletico Torque": "assets/logos/streamed/atletico-torque.webp",
+        "Libertad FC": "assets/logos/streamed/libertad-fc.webp",
+        "Australia Baseball": "assets/logos/streamed/australia-baseball.webp",
+        "Chinese Taipei Baseball": "assets/logos/streamed/chinese-taipei-baseball.webp",
+        "South Korea Baseball": "assets/logos/streamed/south-korea-baseball.webp",
+        "Czech Republic Baseball": "assets/logos/streamed/czech-republic-baseball.webp",
+        "Pittsburgh Panthers": "assets/logos/upstreams/pittsburgh-panthers.webp",
+        "North Carolina Central": "assets/logos/upstreams/north-carolina-central.webp",
+        "Honduras W": "assets/logos/upstreams/honduras-w.webp",
+        "Trinidad & Tobago W": "assets/logos/upstreams/trinidad-tobago-w.webp",
+        "Norway W": "assets/logos/upstreams/norway-w.webp",
+        "Poland W": "assets/logos/upstreams/poland-w.webp",
+        "Linkopings": "assets/logos/upstreams/linkopings.webp",
+        "Netherlands W": "assets/logos/upstreams/netherlands-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13289,6 +13302,8 @@
         "Puchar Polski": "assets/logos/leagues/puchar-polski.webp",
         "Croatia Cup": "assets/logos/leagues/croatia-cup.webp",
         "Antalya 2, Turkiye": "assets/logos/leagues/antalya-2-turkiye.webp",
-        "ICC Men's T20 World Cup, Semi Final": "assets/logos/leagues/icc-mens-t20-world-cup-semi-final.webp"
+        "ICC Men's T20 World Cup, Semi Final": "assets/logos/leagues/icc-mens-t20-world-cup-semi-final.webp",
+        "EHF Euro Cup W": "assets/logos/leagues/ehf-euro-cup-w.webp",
+        "World Baseball Classic, Pool C": "assets/logos/leagues/world-baseball-classic-pool-c.webp"
     }
 }
