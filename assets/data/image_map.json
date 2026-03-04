@@ -12047,7 +12047,23 @@
         "Great Britain Baseball": "assets/logos/streamed/great-britain-baseball.webp",
         "Orense SC": "assets/logos/streamed/orense-sc.webp",
         "Macara": "assets/logos/streamed/macara.webp",
-        "Avia \u015awidnik": "assets/logos/streamed/avia-\u015bwidnik.webp"
+        "Avia \u015awidnik": "assets/logos/streamed/avia-\u015bwidnik.webp",
+        "Vila Nova FC": "assets/logos/upstreams/vila-nova-fc.webp",
+        "Lagarto": "assets/logos/upstreams/lagarto.webp",
+        "Tuna Luso": "assets/logos/upstreams/tuna-luso.webp",
+        "Tocantinopolis": "assets/logos/upstreams/tocantinopolis.webp",
+        "Porto Vitoria": "assets/logos/upstreams/porto-vitoria.webp",
+        "Capital TO": "assets/logos/upstreams/capital-to.webp",
+        "Manaus": "assets/logos/upstreams/manaus.webp",
+        "Rio Branco-ES": "assets/logos/upstreams/rio-branco-es.webp",
+        "KK Jahorina Pale": "assets/logos/upstreams/kk-jahorina-pale.webp",
+        "KK TFT Skopje": "assets/logos/upstreams/kk-tft-skopje.webp",
+        "North Carolina Central Eagles": "assets/logos/upstreams/north-carolina-central-eagles.webp",
+        "Hannah Allen": "assets/logos/upstreams/hannah-allen.webp",
+        "Phnom Penh Crown": "assets/logos/upstreams/phnom-penh-crown.webp",
+        "Preah Khan Reach Svay Rieng FC": "assets/logos/upstreams/preah-khan-reach-svay-rieng-fc.webp",
+        "CS Dinamo Bucure\u0219ti": "assets/logos/upstreams/cs-dinamo-bucure\u0219ti.webp",
+        "Hong Kong": "assets/logos/upstreams/hong-kong.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13312,6 +13328,11 @@
         "Antalya 2, Turkiye": "assets/logos/leagues/antalya-2-turkiye.webp",
         "ICC Men's T20 World Cup, Semi Final": "assets/logos/leagues/icc-mens-t20-world-cup-semi-final.webp",
         "EHF Euro Cup W": "assets/logos/leagues/ehf-euro-cup-w.webp",
-        "World Baseball Classic, Pool C": "assets/logos/leagues/world-baseball-classic-pool-c.webp"
+        "World Baseball Classic, Pool C": "assets/logos/leagues/world-baseball-classic-pool-c.webp",
+        "Indian Wells, USA": "assets/logos/leagues/indian-wells-usa.webp",
+        "WTA - Indian Wells (USA)": "assets/logos/leagues/wta-indian-wells-usa.webp",
+        "ATP Indian Wells": "assets/logos/leagues/atp-indian-wells.webp",
+        "AFC Challenge League, Knockout Stage": "assets/logos/leagues/afc-challenge-league-knockout-stage.webp",
+        "Mozzart Kup Srbije": "assets/logos/leagues/mozzart-kup-srbije.webp"
     }
 }
