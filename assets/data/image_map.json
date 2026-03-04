@@ -12039,7 +12039,10 @@
         "Norway W": "assets/logos/upstreams/norway-w.webp",
         "Poland W": "assets/logos/upstreams/poland-w.webp",
         "Linkopings": "assets/logos/upstreams/linkopings.webp",
-        "Netherlands W": "assets/logos/upstreams/netherlands-w.webp"
+        "Netherlands W": "assets/logos/upstreams/netherlands-w.webp",
+        "Israel Baseball": "assets/logos/streamed/israel-baseball.webp",
+        "Brazil Baseball": "assets/logos/streamed/brazil-baseball.webp",
+        "Italy Baseball": "assets/logos/streamed/italy-baseball.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
