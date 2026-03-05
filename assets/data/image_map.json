@@ -12101,7 +12101,9 @@
         "Sydney Swans": "assets/logos/upstreams/sydney-swans.webp",
         "Ella Haavisto": "assets/logos/upstreams/ella-haavisto.webp",
         "Omar Rhazali": "assets/logos/upstreams/omar-rhazali.webp",
-        "Mateya Stanisavljevic": "assets/logos/upstreams/mateya-stanisavljevic.webp"
+        "Mateya Stanisavljevic": "assets/logos/upstreams/mateya-stanisavljevic.webp",
+        "Ava Hrastar": "assets/logos/upstreams/ava-hrastar.webp",
+        "Akane Yamaguchi": "assets/logos/upstreams/akane-yamaguchi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13379,6 +13381,7 @@
         "World Baseball Classic, Pool B": "assets/logos/leagues/world-baseball-classic-pool-b.webp",
         "World Baseball Classic, Pool A": "assets/logos/leagues/world-baseball-classic-pool-a.webp",
         "WTA Indian Wells": "assets/logos/leagues/wta-indian-wells.webp",
-        "Romania Cup": "assets/logos/leagues/romania-cup.webp"
+        "Romania Cup": "assets/logos/leagues/romania-cup.webp",
+        "ICE Hockey League, Playoffs": "assets/logos/leagues/ice-hockey-league-playoffs.webp"
     }
 }
