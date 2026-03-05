@@ -12088,7 +12088,14 @@
         "Champagne Chalons-Reims": "assets/logos/upstreams/champagne-chalons-reims.webp",
         "Northern Illinois Huskies": "assets/logos/upstreams/northern-illinois-huskies.webp",
         "FK Vele\u017e Mostar": "assets/logos/upstreams/fk-vele\u017e-mostar.webp",
-        "EON Horneo Alicante": "assets/logos/upstreams/eon-horneo-alicante.webp"
+        "EON Horneo Alicante": "assets/logos/upstreams/eon-horneo-alicante.webp",
+        "Elina Nepliy": "assets/logos/upstreams/elina-nepliy.webp",
+        "Thasaporn Naklo": "assets/logos/upstreams/thasaporn-naklo.webp",
+        "Anna Sedysheva": "assets/logos/upstreams/anna-sedysheva.webp",
+        "Arthur Cazaux": "assets/logos/upstreams/arthur-cazaux.webp",
+        "Alena Kova\u010dkova": "assets/logos/upstreams/alena-kova\u010dkova.webp",
+        "Aoi Ito": "assets/logos/upstreams/aoi-ito.webp",
+        "Viktoria Hrun\u010dakova": "assets/logos/upstreams/viktoria-hrun\u010dakova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13364,6 +13371,7 @@
         "Zimbabwe Women in New Zealand, 3 ODI Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-odi-series.webp",
         "Liga Argentina, Playoffs": "assets/logos/leagues/liga-argentina-playoffs.webp",
         "World Baseball Classic, Pool B": "assets/logos/leagues/world-baseball-classic-pool-b.webp",
-        "World Baseball Classic, Pool A": "assets/logos/leagues/world-baseball-classic-pool-a.webp"
+        "World Baseball Classic, Pool A": "assets/logos/leagues/world-baseball-classic-pool-a.webp",
+        "WTA Indian Wells": "assets/logos/leagues/wta-indian-wells.webp"
     }
 }
