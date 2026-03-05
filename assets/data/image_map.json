@@ -12083,7 +12083,12 @@
         "Italy (W)": "assets/logos/upstreams/italy-w.webp",
         "EC Pinheiros": "assets/logos/upstreams/ec-pinheiros.webp",
         "Aaron Gil Garcia": "assets/logos/upstreams/aaron-gil-garcia.webp",
-        "Titans": "assets/logos/upstreams/titans.webp"
+        "Titans": "assets/logos/upstreams/titans.webp",
+        "Gladbach": "assets/logos/upstreams/gladbach.webp",
+        "Champagne Chalons-Reims": "assets/logos/upstreams/champagne-chalons-reims.webp",
+        "Northern Illinois Huskies": "assets/logos/upstreams/northern-illinois-huskies.webp",
+        "FK Vele\u017e Mostar": "assets/logos/upstreams/fk-vele\u017e-mostar.webp",
+        "EON Horneo Alicante": "assets/logos/upstreams/eon-horneo-alicante.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13356,6 +13361,9 @@
         "Mozzart Kup Srbije": "assets/logos/leagues/mozzart-kup-srbije.webp",
         "Eastonia - Esiliiga A": "assets/logos/leagues/eastonia-esiliiga-a.webp",
         "Poland - Cup": "assets/logos/leagues/poland-cup.webp",
-        "Zimbabwe Women in New Zealand, 3 ODI Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-odi-series.webp"
+        "Zimbabwe Women in New Zealand, 3 ODI Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-odi-series.webp",
+        "Liga Argentina, Playoffs": "assets/logos/leagues/liga-argentina-playoffs.webp",
+        "World Baseball Classic, Pool B": "assets/logos/leagues/world-baseball-classic-pool-b.webp",
+        "World Baseball Classic, Pool A": "assets/logos/leagues/world-baseball-classic-pool-a.webp"
     }
 }
