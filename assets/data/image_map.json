@@ -12105,7 +12105,23 @@
         "Ava Hrastar": "assets/logos/upstreams/ava-hrastar.webp",
         "Akane Yamaguchi": "assets/logos/upstreams/akane-yamaguchi.webp",
         "Posta Rangers": "assets/logos/upstreams/posta-rangers.webp",
-        "Gor Mahia": "assets/logos/upstreams/gor-mahia.webp"
+        "Gor Mahia": "assets/logos/upstreams/gor-mahia.webp",
+        "Jahorina": "assets/logos/upstreams/jahorina.webp",
+        "TFT Skopje": "assets/logos/upstreams/tft-skopje.webp",
+        "Martin": "assets/logos/upstreams/martin.webp",
+        "HK Levice": "assets/logos/upstreams/hk-levice.webp",
+        "North Korea (W)": "assets/logos/upstreams/north-korea-w.webp",
+        "Uzbekistan W": "assets/logos/upstreams/uzbekistan-w.webp",
+        "China W": "assets/logos/upstreams/china-w.webp",
+        "Aizawl": "assets/logos/upstreams/aizawl.webp",
+        "Rajasthan United": "assets/logos/upstreams/rajasthan-united.webp",
+        "EC Idm VSV": "assets/logos/upstreams/ec-idm-vsv.webp",
+        "Pierre Hugues Herbert": "assets/logos/upstreams/pierre-hugues-herbert.webp",
+        "Ailen Oliva": "assets/logos/upstreams/ailen-oliva.webp",
+        "Gabriel Fernandez": "assets/logos/upstreams/gabriel-fernandez.webp",
+        "Juan Noguera": "assets/logos/upstreams/juan-noguera.webp",
+        "Luis Miguel": "assets/logos/upstreams/luis-miguel.webp",
+        "Inter Kashi": "assets/logos/upstreams/inter-kashi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13385,6 +13401,13 @@
         "WTA Indian Wells": "assets/logos/leagues/wta-indian-wells.webp",
         "Romania Cup": "assets/logos/leagues/romania-cup.webp",
         "ICE Hockey League, Playoffs": "assets/logos/leagues/ice-hockey-league-playoffs.webp",
-        "Finland - MEastis - Playoff": "assets/logos/leagues/finland-meastis-playoff.webp"
+        "Finland - MEastis - Playoff": "assets/logos/leagues/finland-meastis-playoff.webp",
+        "Serbia - Cup": "assets/logos/leagues/serbia-cup.webp",
+        "Italy - Serie B - Gr.B": "assets/logos/leagues/italy-serie-b-grb.webp",
+        "ATP - Indian Wells (USA)": "assets/logos/leagues/atp-indian-wells-usa.webp",
+        "Asian Cup Women": "assets/logos/leagues/asian-cup-women.webp",
+        "Asia Cup Women": "assets/logos/leagues/asia-cup-women.webp",
+        "India - I-League": "assets/logos/leagues/india-i-league.webp",
+        "Austria - ICE League - Playoff": "assets/logos/leagues/austria-ice-league-playoff.webp"
     }
 }
