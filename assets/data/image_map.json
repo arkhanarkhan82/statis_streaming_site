@@ -12075,7 +12075,15 @@
         "Anthony Morel": "assets/logos/upstreams/anthony-morel.webp",
         "Paul-Emmanuel Gnaze": "assets/logos/upstreams/paul-emmanuel-gnaze.webp",
         "Yekaterinburg": "assets/logos/upstreams/yekaterinburg.webp",
-        "Hrvace": "assets/logos/upstreams/hrvace.webp"
+        "Hrvace": "assets/logos/upstreams/hrvace.webp",
+        "Tartu JK Welco": "assets/logos/upstreams/tartu-jk-welco.webp",
+        "Tallinna Kalev": "assets/logos/upstreams/tallinna-kalev.webp",
+        "Avia Swidnik": "assets/logos/upstreams/avia-swidnik.webp",
+        "Rakow CzEastochowa": "assets/logos/upstreams/rakow-czeastochowa.webp",
+        "Italy (W)": "assets/logos/upstreams/italy-w.webp",
+        "EC Pinheiros": "assets/logos/upstreams/ec-pinheiros.webp",
+        "Aaron Gil Garcia": "assets/logos/upstreams/aaron-gil-garcia.webp",
+        "Titans": "assets/logos/upstreams/titans.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13345,6 +13353,9 @@
         "WTA - Indian Wells (USA)": "assets/logos/leagues/wta-indian-wells-usa.webp",
         "ATP Indian Wells": "assets/logos/leagues/atp-indian-wells.webp",
         "AFC Challenge League, Knockout Stage": "assets/logos/leagues/afc-challenge-league-knockout-stage.webp",
-        "Mozzart Kup Srbije": "assets/logos/leagues/mozzart-kup-srbije.webp"
+        "Mozzart Kup Srbije": "assets/logos/leagues/mozzart-kup-srbije.webp",
+        "Eastonia - Esiliiga A": "assets/logos/leagues/eastonia-esiliiga-a.webp",
+        "Poland - Cup": "assets/logos/leagues/poland-cup.webp",
+        "Zimbabwe Women in New Zealand, 3 ODI Series": "assets/logos/leagues/zimbabwe-women-in-new-zealand-3-odi-series.webp"
     }
 }
