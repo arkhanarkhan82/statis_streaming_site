@@ -12128,7 +12128,32 @@
         "Goa": "assets/logos/upstreams/goa.webp",
         "Anja Strausak": "assets/logos/upstreams/anja-strausak.webp",
         "Lole Courtois": "assets/logos/upstreams/lole-courtois.webp",
-        "Beograd Woodville": "assets/logos/upstreams/beograd-woodville.webp"
+        "Beograd Woodville": "assets/logos/upstreams/beograd-woodville.webp",
+        "Louisville City FC": "assets/logos/upstreams/louisville-city-fc.webp",
+        "Vietnam (W)": "assets/logos/upstreams/vietnam-w.webp",
+        "Vihren": "assets/logos/upstreams/vihren.webp",
+        "Belasitsa": "assets/logos/upstreams/belasitsa.webp",
+        "Flint": "assets/logos/upstreams/flint.webp",
+        "Bangor 1876": "assets/logos/upstreams/bangor-1876.webp",
+        "Nottingham U18": "assets/logos/upstreams/nottingham-u18.webp",
+        "FK Rostov": "assets/logos/upstreams/fk-rostov.webp",
+        "Baltika": "assets/logos/upstreams/baltika.webp",
+        "Austria Viena II": "assets/logos/upstreams/austria-viena-ii.webp",
+        "Chennaiyin": "assets/logos/upstreams/chennaiyin.webp",
+        "Milford FC": "assets/logos/upstreams/milford-fc.webp",
+        "Sarriana": "assets/logos/upstreams/sarriana.webp",
+        "Loudoun United": "assets/logos/upstreams/loudoun-united.webp",
+        "Defensores Unidos": "assets/logos/upstreams/defensores-unidos.webp",
+        "Villa Dalmine": "assets/logos/upstreams/villa-dalmine.webp",
+        "CharlEaston Battery": "assets/logos/upstreams/charleaston-battery.webp",
+        "Igor Severino": "assets/logos/upstreams/igor-severino.webp",
+        "Khurshed Kakhorov": "assets/logos/upstreams/khurshed-kakhorov.webp",
+        "Jeong Yeong Lee": "assets/logos/upstreams/jeong-yeong-lee.webp",
+        "Gaston Bolanos": "assets/logos/upstreams/gaston-bolanos.webp",
+        "Rafael Tobias": "assets/logos/upstreams/rafael-tobias.webp",
+        "Diyar Nurgozhay": "assets/logos/upstreams/diyar-nurgozhay.webp",
+        "Su Mudaerji": "assets/logos/upstreams/su-mudaerji.webp",
+        "Jesus Santos Aguilar": "assets/logos/upstreams/jesus-santos-aguilar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13416,6 +13441,12 @@
         "Asia Cup Women": "assets/logos/leagues/asia-cup-women.webp",
         "India - I-League": "assets/logos/leagues/india-i-league.webp",
         "Austria - ICE League - Playoff": "assets/logos/leagues/austria-ice-league-playoff.webp",
-        "Premier League, Night 5": "assets/logos/leagues/premier-league-night-5.webp"
+        "Premier League, Night 5": "assets/logos/leagues/premier-league-night-5.webp",
+        "World Baseball Classic, Pool D": "assets/logos/leagues/world-baseball-classic-pool-d.webp",
+        "USL Championship": "assets/logos/leagues/usl-championship.webp",
+        "AFC Asian Cup, Women, Group C": "assets/logos/leagues/afc-asian-cup-women-group-c.webp",
+        "USA - USL Championship": "assets/logos/leagues/usa-usl-championship.webp",
+        "Primera C Metropolitana": "assets/logos/leagues/primera-c-metropolitana.webp",
+        "Primera B Metropolitana": "assets/logos/leagues/primera-b-metropolitana.webp"
     }
 }
