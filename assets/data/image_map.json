@@ -12155,7 +12155,33 @@
         "Su Mudaerji": "assets/logos/upstreams/su-mudaerji.webp",
         "Jesus Santos Aguilar": "assets/logos/upstreams/jesus-santos-aguilar.webp",
         "Nicaragua Baseball": "assets/logos/streamed/nicaragua-baseball.webp",
-        "Guapor\u00e9 FC": "assets/logos/upstreams/guapor\u00e9-fc.webp"
+        "Guapor\u00e9 FC": "assets/logos/upstreams/guapor\u00e9-fc.webp",
+        "MLP Academics Heidelberg": "assets/logos/upstreams/mlp-academics-heidelberg.webp",
+        "Norrk\u00f6ping Dolphins": "assets/logos/upstreams/norrk\u00f6ping-dolphins.webp",
+        "Zaragoza (W)": "assets/logos/upstreams/zaragoza-w.webp",
+        "UMF Njardvik": "assets/logos/upstreams/umf-njardvik.webp",
+        "Shenzhen Peng City": "assets/logos/upstreams/shenzhen-peng-city.webp",
+        "HB K\u00f8ge": "assets/logos/upstreams/hb-k\u00f8ge.webp",
+        "Esbjerg FB": "assets/logos/upstreams/esbjerg-fb.webp",
+        "HC Olomouc": "assets/logos/upstreams/hc-olomouc.webp",
+        "Ilves Tampere U20": "assets/logos/upstreams/ilves-tampere-u20.webp",
+        "JYP Jyvaskyla U20": "assets/logos/upstreams/jyp-jyvaskyla-u20.webp",
+        "FC Dila Gori": "assets/logos/upstreams/fc-dila-gori.webp",
+        "RFS": "assets/logos/upstreams/rfs.webp",
+        "Flora Tallinn U21": "assets/logos/upstreams/flora-tallinn-u21.webp",
+        "Notre Dame Fighting Irish": "assets/logos/upstreams/notre-dame-fighting-irish.webp",
+        "Mississippi State Bulldogs": "assets/logos/upstreams/mississippi-state-bulldogs.webp",
+        "Flint Town United": "assets/logos/upstreams/flint-town-united.webp",
+        "Bangor 1876 FC": "assets/logos/upstreams/bangor-1876-fc.webp",
+        "Baltika Kaliningrad": "assets/logos/upstreams/baltika-kaliningrad.webp",
+        "Loudoun United FC": "assets/logos/upstreams/loudoun-united-fc.webp",
+        "Charleston Battery": "assets/logos/upstreams/charleston-battery.webp",
+        "SC DHfK Leipzig": "assets/logos/upstreams/sc-dhfk-leipzig.webp",
+        "WEast Adelaide (W)": "assets/logos/upstreams/weast-adelaide-w.webp",
+        "Yannik Kelm": "assets/logos/upstreams/yannik-kelm.webp",
+        "Jakub Nicod": "assets/logos/upstreams/jakub-nicod.webp",
+        "Tremblay En France Handball": "assets/logos/upstreams/tremblay-en-france-handball.webp",
+        "Flinders United (W)": "assets/logos/upstreams/flinders-united-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13449,6 +13475,12 @@
         "AFC Asian Cup, Women, Group C": "assets/logos/leagues/afc-asian-cup-women-group-c.webp",
         "USA - USL Championship": "assets/logos/leagues/usa-usl-championship.webp",
         "Primera C Metropolitana": "assets/logos/leagues/primera-c-metropolitana.webp",
-        "Primera B Metropolitana": "assets/logos/leagues/primera-b-metropolitana.webp"
+        "Primera B Metropolitana": "assets/logos/leagues/primera-b-metropolitana.webp",
+        "Chinese Super League": "assets/logos/leagues/chinese-super-league.webp",
+        "EliteHockey Ligaen, Playoffs": "assets/logos/leagues/elitehockey-ligaen-playoffs.webp",
+        "Virsliga": "assets/logos/leagues/virsliga.webp",
+        "FAW Welsh Cup": "assets/logos/leagues/faw-welsh-cup.webp",
+        "EHF Euro Cup, Women, Group A": "assets/logos/leagues/ehf-euro-cup-women-group-a.webp",
+        "Australia - NPL (W) - South": "assets/logos/leagues/australia-npl-w-south.webp"
     }
 }
