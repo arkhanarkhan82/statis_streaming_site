@@ -12220,7 +12220,11 @@
         "Umraniye": "assets/logos/upstreams/umraniye.webp",
         "Germany U23 (W)": "assets/logos/upstreams/germany-u23-w.webp",
         "Belgium U23 (W)": "assets/logos/upstreams/belgium-u23-w.webp",
-        "Austria (W)": "assets/logos/upstreams/austria-w.webp"
+        "Austria (W)": "assets/logos/upstreams/austria-w.webp",
+        "ACS FC Bacau": "assets/logos/upstreams/acs-fc-bacau.webp",
+        "Uniao Barbarense": "assets/logos/upstreams/uniao-barbarense.webp",
+        "Cholan Kayan": "assets/logos/upstreams/cholan-kayan.webp",
+        "Yanqing Wang": "assets/logos/upstreams/yanqing-wang.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13527,6 +13531,9 @@
         "Regionalliga West": "assets/logos/leagues/regionalliga-west.webp",
         "Regionalliga North": "assets/logos/leagues/regionalliga-north.webp",
         "Salibandyliiga": "assets/logos/leagues/salibandyliiga.webp",
-        "Seven's World Series - Canada": "assets/logos/leagues/sevens-world-series-canada.webp"
+        "Seven's World Series - Canada": "assets/logos/leagues/sevens-world-series-canada.webp",
+        "Major League Soccer": "assets/logos/leagues/major-league-soccer.webp",
+        "FIFA World Cup, Women, Qualification, UEFA, Gr. A1": "assets/logos/leagues/fifa-world-cup-women-qualification-uefa-gr-a1.webp",
+        "Champions League Americas, Knockout stage": "assets/logos/leagues/champions-league-americas-knockout-stage.webp"
     }
 }
