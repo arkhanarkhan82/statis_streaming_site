@@ -12207,7 +12207,16 @@
         "ACS FC Bac\u0103u": "assets/logos/upstreams/acs-fc-bac\u0103u.webp",
         "LSU Tigers": "assets/logos/upstreams/lsu-tigers.webp",
         "Bucheon FC 1995": "assets/logos/upstreams/bucheon-fc-1995.webp",
-        "Olga Molchanova": "assets/logos/upstreams/olga-molchanova.webp"
+        "Olga Molchanova": "assets/logos/upstreams/olga-molchanova.webp",
+        "NK Hrvace": "assets/logos/upstreams/nk-hrvace.webp",
+        "Capurso": "assets/logos/upstreams/capurso.webp",
+        "Active Network": "assets/logos/upstreams/active-network.webp",
+        "Dalian Yingbo FC": "assets/logos/upstreams/dalian-yingbo-fc.webp",
+        "Selknam": "assets/logos/upstreams/selknam.webp",
+        "Shandong Taishan": "assets/logos/upstreams/shandong-taishan.webp",
+        "Liaoning Tieren FC": "assets/logos/upstreams/liaoning-tieren-fc.webp",
+        "Tianjin Jinmen Tiger": "assets/logos/upstreams/tianjin-jinmen-tiger.webp",
+        "Chongqing Tonglianglong FC": "assets/logos/upstreams/chongqing-tonglianglong-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13512,6 +13521,8 @@
         "Atp Indian Wells": "assets/logos/leagues/atp-indian-wells.webp",
         "India Women in Australia, One-off Test": "assets/logos/leagues/india-women-in-australia-one-off-test.webp",
         "Regionalliga West": "assets/logos/leagues/regionalliga-west.webp",
-        "Regionalliga North": "assets/logos/leagues/regionalliga-north.webp"
+        "Regionalliga North": "assets/logos/leagues/regionalliga-north.webp",
+        "Salibandyliiga": "assets/logos/leagues/salibandyliiga.webp",
+        "Seven's World Series - Canada": "assets/logos/leagues/sevens-world-series-canada.webp"
     }
 }
