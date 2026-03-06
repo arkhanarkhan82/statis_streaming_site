@@ -12190,7 +12190,24 @@
         "ATP 1000: Indian Wells": "assets/logos/upstreams/atp-1000-indian-wells.webp",
         "BNP Paribas Open": "assets/logos/upstreams/bnp-paribas-open.webp",
         "Ep. 313 - Calcio Serie C 31ga Girone A Giana Erminio/ L.R. Vicenza 07/03/2026 | 125 min": "assets/logos/upstreams/ep-313-calcio-serie-c-31ga-girone-a-giana-erminio-lr-vicenza-07032026-125-min.webp",
-        "Ep. 320 - Calcio Serie C 31ga Girone A Union Brescia/ Triestina 07/03/2026 | 125 min": "assets/logos/upstreams/ep-320-calcio-serie-c-31ga-girone-a-union-brescia-triestina-07032026-125-min.webp"
+        "Ep. 320 - Calcio Serie C 31ga Girone A Union Brescia/ Triestina 07/03/2026 | 125 min": "assets/logos/upstreams/ep-320-calcio-serie-c-31ga-girone-a-union-brescia-triestina-07032026-125-min.webp",
+        "SC Rot-Wei\u00df Oberhausen": "assets/logos/upstreams/sc-rot-wei\u00df-oberhausen.webp",
+        "FC Schalke 04 II U23": "assets/logos/upstreams/fc-schalke-04-ii-u23.webp",
+        "Posusje": "assets/logos/upstreams/posusje.webp",
+        "FK Siauliai": "assets/logos/upstreams/fk-siauliai.webp",
+        "Mainz 05": "assets/logos/upstreams/mainz-05.webp",
+        "Drava Ptuj": "assets/logos/upstreams/drava-ptuj.webp",
+        "N\u00f6ttingen": "assets/logos/upstreams/n\u00f6ttingen.webp",
+        "Afan Lido": "assets/logos/upstreams/afan-lido.webp",
+        "Alcoyano": "assets/logos/upstreams/alcoyano.webp",
+        "Koblenz": "assets/logos/upstreams/koblenz.webp",
+        "Connah\u00b4s Quay": "assets/logos/upstreams/connahs-quay.webp",
+        "Sociedad": "assets/logos/upstreams/sociedad.webp",
+        "Sporting Lissabon": "assets/logos/upstreams/sporting-lissabon.webp",
+        "ACS FC Bac\u0103u": "assets/logos/upstreams/acs-fc-bac\u0103u.webp",
+        "LSU Tigers": "assets/logos/upstreams/lsu-tigers.webp",
+        "Bucheon FC 1995": "assets/logos/upstreams/bucheon-fc-1995.webp",
+        "Olga Molchanova": "assets/logos/upstreams/olga-molchanova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13493,6 +13510,8 @@
         "Australia - NPL (W) - South": "assets/logos/leagues/australia-npl-w-south.webp",
         "Norway - EHL - Playoff": "assets/logos/leagues/norway-ehl-playoff.webp",
         "Atp Indian Wells": "assets/logos/leagues/atp-indian-wells.webp",
-        "India Women in Australia, One-off Test": "assets/logos/leagues/india-women-in-australia-one-off-test.webp"
+        "India Women in Australia, One-off Test": "assets/logos/leagues/india-women-in-australia-one-off-test.webp",
+        "Regionalliga West": "assets/logos/leagues/regionalliga-west.webp",
+        "Regionalliga North": "assets/logos/leagues/regionalliga-north.webp"
     }
 }
