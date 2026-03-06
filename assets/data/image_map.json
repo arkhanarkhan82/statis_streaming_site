@@ -12184,7 +12184,13 @@
         "Flinders United (W)": "assets/logos/upstreams/flinders-united-w.webp",
         "Monteros Voley Club": "assets/logos/upstreams/monteros-voley-club.webp",
         "Cody Garbrandt": "assets/logos/upstreams/cody-garbrandt.webp",
-        "Long Xiao": "assets/logos/upstreams/long-xiao.webp"
+        "Long Xiao": "assets/logos/upstreams/long-xiao.webp",
+        "Vele\u017e": "assets/logos/upstreams/vele\u017e.webp",
+        "Posu\u0161je": "assets/logos/upstreams/posu\u0161je.webp",
+        "ATP 1000: Indian Wells": "assets/logos/upstreams/atp-1000-indian-wells.webp",
+        "BNP Paribas Open": "assets/logos/upstreams/bnp-paribas-open.webp",
+        "Ep. 313 - Calcio Serie C 31ga Girone A Giana Erminio/ L.R. Vicenza 07/03/2026 | 125 min": "assets/logos/upstreams/ep-313-calcio-serie-c-31ga-girone-a-giana-erminio-lr-vicenza-07032026-125-min.webp",
+        "Ep. 320 - Calcio Serie C 31ga Girone A Union Brescia/ Triestina 07/03/2026 | 125 min": "assets/logos/upstreams/ep-320-calcio-serie-c-31ga-girone-a-union-brescia-triestina-07032026-125-min.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13484,6 +13490,9 @@
         "Virsliga": "assets/logos/leagues/virsliga.webp",
         "FAW Welsh Cup": "assets/logos/leagues/faw-welsh-cup.webp",
         "EHF Euro Cup, Women, Group A": "assets/logos/leagues/ehf-euro-cup-women-group-a.webp",
-        "Australia - NPL (W) - South": "assets/logos/leagues/australia-npl-w-south.webp"
+        "Australia - NPL (W) - South": "assets/logos/leagues/australia-npl-w-south.webp",
+        "Norway - EHL - Playoff": "assets/logos/leagues/norway-ehl-playoff.webp",
+        "Atp Indian Wells": "assets/logos/leagues/atp-indian-wells.webp",
+        "India Women in Australia, One-off Test": "assets/logos/leagues/india-women-in-australia-one-off-test.webp"
     }
 }
