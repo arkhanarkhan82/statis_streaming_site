@@ -12491,7 +12491,9 @@
         "Baloncesto Fuenlabrada": "assets/logos/streamed/baloncesto-fuenlabrada.webp",
         "Obradoiro CAB": "assets/logos/streamed/obradoiro-cab.webp",
         "Oviedo CB": "assets/logos/streamed/oviedo-cb.webp",
-        "Cartagena CB": "assets/logos/streamed/cartagena-cb.webp"
+        "Cartagena CB": "assets/logos/streamed/cartagena-cb.webp",
+        "Ty Mitchell": "assets/logos/upstreams/ty-mitchell.webp",
+        "Gabriel Rosado": "assets/logos/upstreams/gabriel-rosado.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
