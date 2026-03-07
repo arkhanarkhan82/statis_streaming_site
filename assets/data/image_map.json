@@ -12246,7 +12246,34 @@
         "Dominican Republic (W)": "assets/logos/upstreams/dominican-republic-w.webp",
         "Thanh Hoa": "assets/logos/upstreams/thanh-hoa.webp",
         "Osaka": "assets/logos/upstreams/osaka.webp",
-        "Shizuka Sakurada": "assets/logos/upstreams/shizuka-sakurada.webp"
+        "Shizuka Sakurada": "assets/logos/upstreams/shizuka-sakurada.webp",
+        "UC Davis Aggies": "assets/logos/upstreams/uc-davis-aggies.webp",
+        "Lakeland Magic": "assets/logos/upstreams/lakeland-magic.webp",
+        "Westchester SC": "assets/logos/upstreams/westchester-sc.webp",
+        "One Knoxville SC": "assets/logos/upstreams/one-knoxville-sc.webp",
+        "SC Jacksonville": "assets/logos/upstreams/sc-jacksonville.webp",
+        "Hartford Athletic": "assets/logos/upstreams/hartford-athletic.webp",
+        "Birmingham Legion FC": "assets/logos/upstreams/birmingham-legion-fc.webp",
+        "FC Tampa Bay Rowdies": "assets/logos/upstreams/fc-tampa-bay-rowdies.webp",
+        "San Antonio FC": "assets/logos/upstreams/san-antonio-fc.webp",
+        "Phoenix Rising FC": "assets/logos/upstreams/phoenix-rising-fc.webp",
+        "Pathum United": "assets/logos/upstreams/pathum-united.webp",
+        "Grosuplje": "assets/logos/upstreams/grosuplje.webp",
+        "Jacksa Spears": "assets/logos/upstreams/jacksa-spears.webp",
+        "Donte Johnson": "assets/logos/upstreams/donte-johnson.webp",
+        "El Paso Locomotive FC": "assets/logos/upstreams/el-paso-locomotive-fc.webp",
+        "Colorado Springs Switchbacks FC": "assets/logos/upstreams/colorado-springs-switchbacks-fc.webp",
+        "Monterey Bay FC": "assets/logos/upstreams/monterey-bay-fc.webp",
+        "Oakland Roots SC": "assets/logos/upstreams/oakland-roots-sc.webp",
+        "AV Alta FC": "assets/logos/upstreams/av-alta-fc.webp",
+        "Richmond Kickers": "assets/logos/upstreams/richmond-kickers.webp",
+        "Sacramento Republic FC": "assets/logos/upstreams/sacramento-republic-fc.webp",
+        "FC Tulsa": "assets/logos/upstreams/fc-tulsa.webp",
+        "Gimcheon Sangmu": "assets/logos/upstreams/gimcheon-sangmu.webp",
+        "Gimpo FC": "assets/logos/upstreams/gimpo-fc.webp",
+        "Cobras": "assets/logos/upstreams/cobras.webp",
+        "Jai Opetaia": "assets/logos/upstreams/jai-opetaia.webp",
+        "Brandon GlantonCruiserweightMeta Apex | Las Vegas, NV": "assets/logos/upstreams/brandon-glantoncruiserweightmeta-apex-las-vegas-nv.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13558,6 +13585,8 @@
         "FIFA World Cup, Women, Qualification, UEFA, Gr. A1": "assets/logos/leagues/fifa-world-cup-women-qualification-uefa-gr-a1.webp",
         "Champions League Americas, Knockout stage": "assets/logos/leagues/champions-league-americas-knockout-stage.webp",
         "Ukraine Premier League": "assets/logos/leagues/ukraine-premier-league.webp",
-        "FIFA World Cup, Women, Qualification, UEFA, Gr. C4": "assets/logos/leagues/fifa-world-cup-women-qualification-uefa-gr-c4.webp"
+        "FIFA World Cup, Women, Qualification, UEFA, Gr. C4": "assets/logos/leagues/fifa-world-cup-women-qualification-uefa-gr-c4.webp",
+        "USL, League One": "assets/logos/leagues/usl-league-one.webp",
+        "Thai Premier League": "assets/logos/leagues/thai-premier-league.webp"
     }
 }
