@@ -12274,7 +12274,29 @@
         "Cobras": "assets/logos/upstreams/cobras.webp",
         "Jai Opetaia": "assets/logos/upstreams/jai-opetaia.webp",
         "Brandon GlantonCruiserweightMeta Apex | Las Vegas, NV": "assets/logos/upstreams/brandon-glantoncruiserweightmeta-apex-las-vegas-nv.webp",
-        "Leix\u00f5es": "assets/logos/streamed/leix\u00f5es.webp"
+        "Leix\u00f5es": "assets/logos/streamed/leix\u00f5es.webp",
+        "Belasitsa Petrich": "assets/logos/upstreams/belasitsa-petrich.webp",
+        "P\u00e4rnu JK Vaprus": "assets/logos/upstreams/p\u00e4rnu-jk-vaprus.webp",
+        "Orebro SK": "assets/logos/upstreams/orebro-sk.webp",
+        "Osters": "assets/logos/upstreams/osters.webp",
+        "Rekord Bielsko-Biala": "assets/logos/upstreams/rekord-bielsko-biala.webp",
+        "Dinamo Tbilisi": "assets/logos/upstreams/dinamo-tbilisi.webp",
+        "FC Copenhaga": "assets/logos/upstreams/fc-copenhaga.webp",
+        "Harju Jalgpallikool": "assets/logos/upstreams/harju-jalgpallikool.webp",
+        "Levadia Tallinn U21": "assets/logos/upstreams/levadia-tallinn-u21.webp",
+        "Nomme Kalju U21": "assets/logos/upstreams/nomme-kalju-u21.webp",
+        "FC Tallinn": "assets/logos/upstreams/fc-tallinn.webp",
+        "Elva": "assets/logos/upstreams/elva.webp",
+        "KR Reykjavik": "assets/logos/upstreams/kr-reykjavik.webp",
+        "South Hobart": "assets/logos/upstreams/south-hobart.webp",
+        "Kingborough Lions United": "assets/logos/upstreams/kingborough-lions-united.webp",
+        "Riverside Olympic": "assets/logos/upstreams/riverside-olympic.webp",
+        "Ulverstone": "assets/logos/upstreams/ulverstone.webp",
+        "Devonport City Strikers": "assets/logos/upstreams/devonport-city-strikers.webp",
+        "Sturt Lions": "assets/logos/upstreams/sturt-lions.webp",
+        "Glenorchy Knights": "assets/logos/upstreams/glenorchy-knights.webp",
+        "FC Naples": "assets/logos/upstreams/fc-naples.webp",
+        "Fort Wayne FC": "assets/logos/upstreams/fort-wayne-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13588,6 +13610,11 @@
         "Ukraine Premier League": "assets/logos/leagues/ukraine-premier-league.webp",
         "FIFA World Cup, Women, Qualification, UEFA, Gr. C4": "assets/logos/leagues/fifa-world-cup-women-qualification-uefa-gr-c4.webp",
         "USL, League One": "assets/logos/leagues/usl-league-one.webp",
-        "Thai Premier League": "assets/logos/leagues/thai-premier-league.webp"
+        "Thai Premier League": "assets/logos/leagues/thai-premier-league.webp",
+        "Eastonia - Meistriliiga": "assets/logos/leagues/eastonia-meistriliiga.webp",
+        "Premium Liiga": "assets/logos/leagues/premium-liiga.webp",
+        "Denmark - Cup": "assets/logos/leagues/denmark-cup.webp",
+        "Australia - NPL - Tasmania": "assets/logos/leagues/australia-npl-tasmania.webp",
+        "Norway - EHL - Gr.Retrogradare": "assets/logos/leagues/norway-ehl-grretrogradare.webp"
     }
 }
