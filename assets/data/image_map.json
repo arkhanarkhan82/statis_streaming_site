@@ -12315,7 +12315,14 @@
         "Canada Women": "assets/logos/streamed/canada-women.webp",
         "Argentina Women": "assets/logos/streamed/argentina-women.webp",
         "USA Women": "assets/logos/streamed/usa-women.webp",
-        "Colombia Women": "assets/logos/streamed/colombia-women.webp"
+        "Colombia Women": "assets/logos/streamed/colombia-women.webp",
+        "NK Brinje Grosuplje": "assets/logos/upstreams/nk-brinje-grosuplje.webp",
+        "Eintracht Norderstedt": "assets/logos/upstreams/eintracht-norderstedt.webp",
+        "FC St Pauli II U23": "assets/logos/upstreams/fc-st-pauli-ii-u23.webp",
+        "NK Maribor": "assets/logos/upstreams/nk-maribor.webp",
+        "Itas Trentino": "assets/logos/upstreams/itas-trentino.webp",
+        "Bergischer HC": "assets/logos/upstreams/bergischer-hc.webp",
+        "BM Torrelavega": "assets/logos/upstreams/bm-torrelavega.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13634,6 +13641,8 @@
         "Premium Liiga": "assets/logos/leagues/premium-liiga.webp",
         "Denmark - Cup": "assets/logos/leagues/denmark-cup.webp",
         "Australia - NPL - Tasmania": "assets/logos/leagues/australia-npl-tasmania.webp",
-        "Norway - EHL - Gr.Retrogradare": "assets/logos/leagues/norway-ehl-grretrogradare.webp"
+        "Norway - EHL - Gr.Retrogradare": "assets/logos/leagues/norway-ehl-grretrogradare.webp",
+        "Serie A1, Playoffs": "assets/logos/leagues/serie-a1-playoffs.webp",
+        "ICC Men's T20 World Cup, Final": "assets/logos/leagues/icc-mens-t20-world-cup-final.webp"
     }
 }
