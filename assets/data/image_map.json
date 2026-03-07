@@ -12322,7 +12322,13 @@
         "NK Maribor": "assets/logos/upstreams/nk-maribor.webp",
         "Itas Trentino": "assets/logos/upstreams/itas-trentino.webp",
         "Bergischer HC": "assets/logos/upstreams/bergischer-hc.webp",
-        "BM Torrelavega": "assets/logos/upstreams/bm-torrelavega.webp"
+        "BM Torrelavega": "assets/logos/upstreams/bm-torrelavega.webp",
+        "West Torrens Birkalla": "assets/logos/streamed/west-torrens-birkalla.webp",
+        "Paju Frontier": "assets/logos/streamed/paju-frontier.webp",
+        "Seoul E-Land": "assets/logos/streamed/seoul-e-land.webp",
+        "Chinese Taipei Women": "assets/logos/streamed/chinese-taipei-women.webp",
+        "Vietnam Women": "assets/logos/streamed/vietnam-women.webp",
+        "Croydon": "assets/logos/streamed/croydon.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
