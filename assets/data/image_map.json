@@ -12308,7 +12308,14 @@
         "Saitama Seibu Lions": "assets/logos/streamed/saitama-seibu-lions.webp",
         "Tokyo Yakult Swallows": "assets/logos/streamed/tokyo-yakult-swallows.webp",
         "Hanshin Tigers": "assets/logos/streamed/hanshin-tigers.webp",
-        "Fukuoka SoftBank Hawks": "assets/logos/streamed/fukuoka-softbank-hawks.webp"
+        "Fukuoka SoftBank Hawks": "assets/logos/streamed/fukuoka-softbank-hawks.webp",
+        "Japan Women": "assets/logos/streamed/japan-women.webp",
+        "England Women": "assets/logos/streamed/england-women.webp",
+        "Iceland Women": "assets/logos/streamed/iceland-women.webp",
+        "Canada Women": "assets/logos/streamed/canada-women.webp",
+        "Argentina Women": "assets/logos/streamed/argentina-women.webp",
+        "USA Women": "assets/logos/streamed/usa-women.webp",
+        "Colombia Women": "assets/logos/streamed/colombia-women.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
