@@ -12471,7 +12471,10 @@
         "Academia Pervanciuc": "assets/logos/upstreams/academia-pervanciuc.webp",
         "BC Avtodor Saratov": "assets/logos/streamed/bc-avtodor-saratov.webp",
         "FH Hafnarfjordur": "assets/logos/streamed/fh-hafnarfjordur.webp",
-        "Moss": "assets/logos/streamed/moss.webp"
+        "Moss": "assets/logos/streamed/moss.webp",
+        "ES Mostaganem": "assets/logos/streamed/es-mostaganem.webp",
+        "ES Ben Aknoun": "assets/logos/streamed/es-ben-aknoun.webp",
+        "El Bayadh": "assets/logos/streamed/el-bayadh.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
