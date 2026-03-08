@@ -12542,7 +12542,15 @@
         "Cayman Islands": "assets/logos/upstreams/cayman-islands.webp",
         "Suriname": "assets/logos/upstreams/suriname.webp",
         "Oakland Roots": "assets/logos/streamed/oakland-roots.webp",
-        "Sacramento Republic": "assets/logos/streamed/sacramento-republic.webp"
+        "Sacramento Republic": "assets/logos/streamed/sacramento-republic.webp",
+        "Preston Lions": "assets/logos/streamed/preston-lions.webp",
+        "Sydney FC Youth": "assets/logos/streamed/sydney-fc-youth.webp",
+        "Brisbane Roar Youth": "assets/logos/streamed/brisbane-roar-youth.webp",
+        "Melbourne City Youth": "assets/logos/streamed/melbourne-city-youth.webp",
+        "Chungbuk Cheongju": "assets/logos/streamed/chungbuk-cheongju.webp",
+        "Ansan Greeners": "assets/logos/streamed/ansan-greeners.webp",
+        "Busan IPark": "assets/logos/streamed/busan-ipark.webp",
+        "Magic United": "assets/logos/streamed/magic-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
