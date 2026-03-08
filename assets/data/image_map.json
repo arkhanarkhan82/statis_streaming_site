@@ -12598,7 +12598,9 @@
         "Nino Serdarusic": "assets/logos/upstreams/nino-serdarusic.webp",
         "Zorya Luhansk": "assets/logos/streamed/zorya-luhansk.webp",
         "Poltava": "assets/logos/streamed/poltava.webp",
-        "Wuhan Three Towns": "assets/logos/streamed/wuhan-three-towns.webp"
+        "Wuhan Three Towns": "assets/logos/streamed/wuhan-three-towns.webp",
+        "BC Lokomotiv Plovdiv": "assets/logos/streamed/bc-lokomotiv-plovdiv.webp",
+        "BC Cherno More": "assets/logos/streamed/bc-cherno-more.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
