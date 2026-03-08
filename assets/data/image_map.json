@@ -12506,7 +12506,9 @@
         "D.C. United": "assets/logos/upstreams/dc-united.webp",
         "Sporting JAX": "assets/logos/streamed/sporting-jax.webp",
         "AC Boise": "assets/logos/streamed/ac-boise.webp",
-        "Jeonbuk Hyundai Motors": "assets/logos/streamed/jeonbuk-hyundai-motors.webp"
+        "Jeonbuk Hyundai Motors": "assets/logos/streamed/jeonbuk-hyundai-motors.webp",
+        "Dusko Todorovic": "assets/logos/upstreams/dusko-todorovic.webp",
+        "Raul Rosas Jr": "assets/logos/upstreams/raul-rosas-jr.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13833,6 +13835,7 @@
         "Segunda FEB, Group West": "assets/logos/leagues/segunda-feb-group-west.webp",
         "U20 CONMEBOL Libertadores, Group A": "assets/logos/leagues/u20-conmebol-libertadores-group-a.webp",
         "U20 CONMEBOL Libertadores, Group B": "assets/logos/leagues/u20-conmebol-libertadores-group-b.webp",
-        "Southland Conference, Playoffs": "assets/logos/leagues/southland-conference-playoffs.webp"
+        "Southland Conference, Playoffs": "assets/logos/leagues/southland-conference-playoffs.webp",
+        "UFC 326 : Holloway vs. Oliveira 2": "assets/logos/leagues/ufc-326-holloway-vs-oliveira-2.webp"
     }
 }
