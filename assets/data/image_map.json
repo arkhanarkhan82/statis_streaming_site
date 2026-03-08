@@ -12566,7 +12566,13 @@
         "Varbergs BoIS": "assets/logos/upstreams/varbergs-bois.webp",
         "Skala IF": "assets/logos/upstreams/skala-if.webp",
         "HB Torshavn": "assets/logos/upstreams/hb-torshavn.webp",
-        "Victoria Mulville": "assets/logos/upstreams/victoria-mulville.webp"
+        "Victoria Mulville": "assets/logos/upstreams/victoria-mulville.webp",
+        "Gimhae FC": "assets/logos/streamed/gimhae-fc.webp",
+        "Cheonan City": "assets/logos/streamed/cheonan-city.webp",
+        "Zhejiang Professional": "assets/logos/streamed/zhejiang-professional.webp",
+        "Qingdao West Coast": "assets/logos/streamed/qingdao-west-coast.webp",
+        "Yuzhny Ural Orsk": "assets/logos/streamed/yuzhny-ural-orsk.webp",
+        "Kristall Saratov": "assets/logos/streamed/kristall-saratov.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
