@@ -12624,7 +12624,10 @@
         "Costone": "assets/logos/upstreams/costone.webp",
         "CBC Valladolid": "assets/logos/upstreams/cbc-valladolid.webp",
         "Tekstilac Od\u017eaci": "assets/logos/streamed/tekstilac-od\u017eaci.webp",
-        "Loznica": "assets/logos/streamed/loznica.webp"
+        "Loznica": "assets/logos/streamed/loznica.webp",
+        "Racing Ferrol": "assets/logos/upstreams/racing-ferrol.webp",
+        "NK Bravo": "assets/logos/upstreams/nk-bravo.webp",
+        "Milledge Cossu": "assets/logos/upstreams/milledge-cossu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13962,6 +13965,7 @@
         "Kigali 2, Rwanda, Qualifying": "assets/logos/leagues/kigali-2-rwanda-qualifying.webp",
         "Super Liga, Championship Round": "assets/logos/leagues/super-liga-championship-round.webp",
         "China CBA All Star Game": "assets/logos/leagues/china-cba-all-star-game.webp",
-        "Italy - Serie B - Gr.A": "assets/logos/leagues/italy-serie-b-gra.webp"
+        "Italy - Serie B - Gr.A": "assets/logos/leagues/italy-serie-b-gra.webp",
+        "Spain - Primera Federacion - Gr.1": "assets/logos/leagues/spain-primera-federacion-gr1.webp"
     }
 }
