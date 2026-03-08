@@ -12628,7 +12628,20 @@
         "Racing Ferrol": "assets/logos/upstreams/racing-ferrol.webp",
         "NK Bravo": "assets/logos/upstreams/nk-bravo.webp",
         "Milledge Cossu": "assets/logos/upstreams/milledge-cossu.webp",
-        "Mali": "assets/logos/streamed/mali.webp"
+        "Mali": "assets/logos/streamed/mali.webp",
+        "NK Karlovac": "assets/logos/upstreams/nk-karlovac.webp",
+        "FK Silute": "assets/logos/upstreams/fk-silute.webp",
+        "Nomme United U21": "assets/logos/upstreams/nomme-united-u21.webp",
+        "FC Sevilla": "assets/logos/upstreams/fc-sevilla.webp",
+        "Macc. Haifa": "assets/logos/upstreams/macc-haifa.webp",
+        "Kaposvari R.": "assets/logos/upstreams/kaposvari-r.webp",
+        "Patrick Brady": "assets/logos/upstreams/patrick-brady.webp",
+        "Yanis Ghazouani Durand": "assets/logos/upstreams/yanis-ghazouani-durand.webp",
+        "Paul Jan-Henrik": "assets/logos/upstreams/paul-jan-henrik.webp",
+        "Matisse Bobichon": "assets/logos/upstreams/matisse-bobichon.webp",
+        "Jarno Jans": "assets/logos/upstreams/jarno-jans.webp",
+        "Cleeve Harper": "assets/logos/upstreams/cleeve-harper.webp",
+        "Nicolas Ifi": "assets/logos/upstreams/nicolas-ifi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13967,6 +13980,7 @@
         "Super Liga, Championship Round": "assets/logos/leagues/super-liga-championship-round.webp",
         "China CBA All Star Game": "assets/logos/leagues/china-cba-all-star-game.webp",
         "Italy - Serie B - Gr.A": "assets/logos/leagues/italy-serie-b-gra.webp",
-        "Spain - Primera Federacion - Gr.1": "assets/logos/leagues/spain-primera-federacion-gr1.webp"
+        "Spain - Primera Federacion - Gr.1": "assets/logos/leagues/spain-primera-federacion-gr1.webp",
+        "Cherbourg-en-Cotentin, France, Qualifying": "assets/logos/leagues/cherbourg-en-cotentin-france-qualifying.webp"
     }
 }
