@@ -12668,7 +12668,16 @@
         "BC Minyor 2015": "assets/logos/streamed/bc-minyor-2015.webp",
         "BC Levski Sofia": "assets/logos/streamed/bc-levski-sofia.webp",
         "Katsina United": "assets/logos/streamed/katsina-united.webp",
-        "Kwara United": "assets/logos/streamed/kwara-united.webp"
+        "Kwara United": "assets/logos/streamed/kwara-united.webp",
+        "Abia Warriors": "assets/logos/upstreams/abia-warriors.webp",
+        "Jungwon Park": "assets/logos/upstreams/jungwon-park.webp",
+        "Palmeiras U20": "assets/logos/upstreams/palmeiras-u20.webp",
+        "Universidad Cat\u00f3lica del Ecuador U20": "assets/logos/upstreams/universidad-cat\u00f3lica-del-ecuador-u20.webp",
+        "Freek van Donselaar": "assets/logos/upstreams/freek-van-donselaar.webp",
+        "Jaden Dewandaka Tan": "assets/logos/upstreams/jaden-dewandaka-tan.webp",
+        "Michael Dylan Jimenez": "assets/logos/upstreams/michael-dylan-jimenez.webp",
+        "Azuna Ichioka": "assets/logos/upstreams/azuna-ichioka.webp",
+        "Ran Inaba": "assets/logos/upstreams/ran-inaba.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14008,6 +14017,7 @@
         "China CBA All Star Game": "assets/logos/leagues/china-cba-all-star-game.webp",
         "Italy - Serie B - Gr.A": "assets/logos/leagues/italy-serie-b-gra.webp",
         "Spain - Primera Federacion - Gr.1": "assets/logos/leagues/spain-primera-federacion-gr1.webp",
-        "Cherbourg-en-Cotentin, France, Qualifying": "assets/logos/leagues/cherbourg-en-cotentin-france-qualifying.webp"
+        "Cherbourg-en-Cotentin, France, Qualifying": "assets/logos/leagues/cherbourg-en-cotentin-france-qualifying.webp",
+        "Nigeria - Premier League": "assets/logos/leagues/nigeria-premier-league.webp"
     }
 }
