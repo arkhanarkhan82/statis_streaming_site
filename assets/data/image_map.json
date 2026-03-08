@@ -12644,7 +12644,9 @@
         "Nicolas Ifi": "assets/logos/upstreams/nicolas-ifi.webp",
         "AKM": "assets/logos/streamed/akm.webp",
         "Olympique Akbou": "assets/logos/streamed/olympique-akbou.webp",
-        "JS Saoura": "assets/logos/streamed/js-saoura.webp"
+        "JS Saoura": "assets/logos/streamed/js-saoura.webp",
+        "Tirana": "assets/logos/streamed/tirana.webp",
+        "Elbasani": "assets/logos/streamed/elbasani.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
