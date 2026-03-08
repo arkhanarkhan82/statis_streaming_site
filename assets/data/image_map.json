@@ -12502,7 +12502,10 @@
         "Sporting Cristal U20": "assets/logos/upstreams/sporting-cristal-u20.webp",
         "Olimpia U20": "assets/logos/upstreams/olimpia-u20.webp",
         "Alexde Minaur": "assets/logos/upstreams/alexde-minaur.webp",
-        "One Knoxville": "assets/logos/streamed/one-knoxville.webp"
+        "One Knoxville": "assets/logos/streamed/one-knoxville.webp",
+        "D.C. United": "assets/logos/upstreams/dc-united.webp",
+        "Sporting JAX": "assets/logos/streamed/sporting-jax.webp",
+        "AC Boise": "assets/logos/streamed/ac-boise.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
