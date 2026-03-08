@@ -12553,7 +12553,20 @@
         "Magic United": "assets/logos/streamed/magic-united.webp",
         "Reilac Shiga": "assets/logos/streamed/reilac-shiga.webp",
         "Sagamihara": "assets/logos/streamed/sagamihara.webp",
-        "Imabari": "assets/logos/streamed/imabari.webp"
+        "Imabari": "assets/logos/streamed/imabari.webp",
+        "South Sydney Rabbitohs": "assets/logos/streamed/south-sydney-rabbitohs.webp",
+        "Real Racing Club de Santander (W)": "assets/logos/upstreams/real-racing-club-de-santander-w.webp",
+        "FK Auda": "assets/logos/upstreams/fk-auda.webp",
+        "SK Super Nova": "assets/logos/upstreams/sk-super-nova.webp",
+        "RFC Seraing": "assets/logos/upstreams/rfc-seraing.webp",
+        "B36 Torshavn": "assets/logos/upstreams/b36-torshavn.webp",
+        "EB/Streymur": "assets/logos/upstreams/ebstreymur.webp",
+        "NSI Runavik": "assets/logos/upstreams/nsi-runavik.webp",
+        "Vikingur Gota": "assets/logos/upstreams/vikingur-gota.webp",
+        "Varbergs BoIS": "assets/logos/upstreams/varbergs-bois.webp",
+        "Skala IF": "assets/logos/upstreams/skala-if.webp",
+        "HB Torshavn": "assets/logos/upstreams/hb-torshavn.webp",
+        "Victoria Mulville": "assets/logos/upstreams/victoria-mulville.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13882,6 +13895,7 @@
         "U20 CONMEBOL Libertadores, Group B": "assets/logos/leagues/u20-conmebol-libertadores-group-b.webp",
         "Southland Conference, Playoffs": "assets/logos/leagues/southland-conference-playoffs.webp",
         "UFC 326 : Holloway vs. Oliveira 2": "assets/logos/leagues/ufc-326-holloway-vs-oliveira-2.webp",
-        "Antalya 3, Turkiye, Qualifying": "assets/logos/leagues/antalya-3-turkiye-qualifying.webp"
+        "Antalya 3, Turkiye, Qualifying": "assets/logos/leagues/antalya-3-turkiye-qualifying.webp",
+        "Faroe Islands - Premier League": "assets/logos/leagues/faroe-islands-premier-league.webp"
     }
 }
