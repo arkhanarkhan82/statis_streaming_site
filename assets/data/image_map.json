@@ -12520,7 +12520,27 @@
         "El Paso Locomotive": "assets/logos/streamed/el-paso-locomotive.webp",
         "Colorado Springs Switchbacks": "assets/logos/streamed/colorado-springs-switchbacks.webp",
         "South East United": "assets/logos/streamed/south-east-united.webp",
-        "Clarence Zebras": "assets/logos/streamed/clarence-zebras.webp"
+        "Clarence Zebras": "assets/logos/streamed/clarence-zebras.webp",
+        "FCI Levadia Tallinn": "assets/logos/upstreams/fci-levadia-tallinn.webp",
+        "FC Kuressaare": "assets/logos/upstreams/fc-kuressaare.webp",
+        "KKS Kalisz": "assets/logos/upstreams/kks-kalisz.webp",
+        "Tartu JK Tammeka": "assets/logos/upstreams/tartu-jk-tammeka.webp",
+        "Helsingborgs IF": "assets/logos/upstreams/helsingborgs-if.webp",
+        "Connecticut United": "assets/logos/upstreams/connecticut-united.webp",
+        "New York City FC II": "assets/logos/upstreams/new-york-city-fc-ii.webp",
+        "FC Cincinnati 2": "assets/logos/upstreams/fc-cincinnati-2.webp",
+        "Openjobmetis Varese": "assets/logos/upstreams/openjobmetis-varese.webp",
+        "Vanoli Basket Cremona": "assets/logos/upstreams/vanoli-basket-cremona.webp",
+        "Renaissance Zemamra": "assets/logos/upstreams/renaissance-zemamra.webp",
+        "Carolina Core FC": "assets/logos/upstreams/carolina-core-fc.webp",
+        "Faroe Islands (W)": "assets/logos/upstreams/faroe-islands-w.webp",
+        "APIA Leichhardt FC (W)": "assets/logos/upstreams/apia-leichhardt-fc-w.webp",
+        "Artilheiros": "assets/logos/upstreams/artilheiros.webp",
+        "Soloda Adwa": "assets/logos/upstreams/soloda-adwa.webp",
+        "Irem Kurt": "assets/logos/upstreams/irem-kurt.webp",
+        "Ekaterina Reyngold": "assets/logos/upstreams/ekaterina-reyngold.webp",
+        "Cayman Islands": "assets/logos/upstreams/cayman-islands.webp",
+        "Suriname": "assets/logos/upstreams/suriname.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -13848,6 +13868,7 @@
         "U20 CONMEBOL Libertadores, Group A": "assets/logos/leagues/u20-conmebol-libertadores-group-a.webp",
         "U20 CONMEBOL Libertadores, Group B": "assets/logos/leagues/u20-conmebol-libertadores-group-b.webp",
         "Southland Conference, Playoffs": "assets/logos/leagues/southland-conference-playoffs.webp",
-        "UFC 326 : Holloway vs. Oliveira 2": "assets/logos/leagues/ufc-326-holloway-vs-oliveira-2.webp"
+        "UFC 326 : Holloway vs. Oliveira 2": "assets/logos/leagues/ufc-326-holloway-vs-oliveira-2.webp",
+        "Antalya 3, Turkiye, Qualifying": "assets/logos/leagues/antalya-3-turkiye-qualifying.webp"
     }
 }
