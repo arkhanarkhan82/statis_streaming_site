@@ -12769,7 +12769,10 @@
         "Bayreuth": "assets/logos/streamed/bayreuth.webp",
         "Malaika Rapolu": "assets/logos/upstreams/malaika-rapolu.webp",
         "Cedric Stanke": "assets/logos/upstreams/cedric-stanke.webp",
-        "Arjun Rathi": "assets/logos/upstreams/arjun-rathi.webp"
+        "Arjun Rathi": "assets/logos/upstreams/arjun-rathi.webp",
+        "BC Balkan Botevgrad": "assets/logos/streamed/bc-balkan-botevgrad.webp",
+        "BC Botev Vratsa": "assets/logos/streamed/bc-botev-vratsa.webp",
+        "BC Beroe": "assets/logos/streamed/bc-beroe.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
