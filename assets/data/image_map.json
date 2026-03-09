@@ -12719,7 +12719,12 @@
         "Majestic": "assets/logos/streamed/majestic.webp",
         "AJEB": "assets/logos/streamed/ajeb.webp",
         "SONABEL": "assets/logos/streamed/sonabel.webp",
-        "Vitesse Burkina Faso": "assets/logos/streamed/vitesse-burkina-faso.webp"
+        "Vitesse Burkina Faso": "assets/logos/streamed/vitesse-burkina-faso.webp",
+        "Defensor Sp": "assets/logos/upstreams/defensor-sp.webp",
+        "Union Touarga": "assets/logos/upstreams/union-touarga.webp",
+        "Sam Thompson": "assets/logos/upstreams/sam-thompson.webp",
+        "Riley Breen": "assets/logos/upstreams/riley-breen.webp",
+        "Izabela Heinzova": "assets/logos/upstreams/izabela-heinzova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14067,6 +14072,7 @@
         "Australia - NPL 2 - Victoria": "assets/logos/leagues/australia-npl-2-victoria.webp",
         "Horizon League, Playoffs": "assets/logos/leagues/horizon-league-playoffs.webp",
         "NBL, Playoffs": "assets/logos/leagues/nbl-playoffs.webp",
-        "World Baseball Classic": "assets/logos/leagues/world-baseball-classic.webp"
+        "World Baseball Classic": "assets/logos/leagues/world-baseball-classic.webp",
+        "Cherbourg-en-Cotentin, France": "assets/logos/leagues/cherbourg-en-cotentin-france.webp"
     }
 }
