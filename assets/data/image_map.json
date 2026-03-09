@@ -12773,7 +12773,17 @@
         "BC Balkan Botevgrad": "assets/logos/streamed/bc-balkan-botevgrad.webp",
         "BC Botev Vratsa": "assets/logos/streamed/bc-botev-vratsa.webp",
         "BC Beroe": "assets/logos/streamed/bc-beroe.webp",
-        "Amador Salazar": "assets/logos/upstreams/amador-salazar.webp"
+        "Amador Salazar": "assets/logos/upstreams/amador-salazar.webp",
+        "Belgrano U20": "assets/logos/upstreams/belgrano-u20.webp",
+        "LDU Quito U20": "assets/logos/upstreams/ldu-quito-u20.webp",
+        "Nacional U20": "assets/logos/upstreams/nacional-u20.webp",
+        "Santiago Wanderers U20": "assets/logos/upstreams/santiago-wanderers-u20.webp",
+        "Zen Uehling": "assets/logos/upstreams/zen-uehling.webp",
+        "Youssef Kadiri Hassani": "assets/logos/upstreams/youssef-kadiri-hassani.webp",
+        "Lyric Bonilla": "assets/logos/upstreams/lyric-bonilla.webp",
+        "Leevi Saatela": "assets/logos/upstreams/leevi-saatela.webp",
+        "Edouard Villoslada": "assets/logos/upstreams/edouard-villoslada.webp",
+        "Andrea M'chich": "assets/logos/upstreams/andrea-mchich.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14122,6 +14132,8 @@
         "Horizon League, Playoffs": "assets/logos/leagues/horizon-league-playoffs.webp",
         "NBL, Playoffs": "assets/logos/leagues/nbl-playoffs.webp",
         "World Baseball Classic": "assets/logos/leagues/world-baseball-classic.webp",
-        "Cherbourg-en-Cotentin, France": "assets/logos/leagues/cherbourg-en-cotentin-france.webp"
+        "Cherbourg-en-Cotentin, France": "assets/logos/leagues/cherbourg-en-cotentin-france.webp",
+        "U20 CONMEBOL Libertadores, Group C": "assets/logos/leagues/u20-conmebol-libertadores-group-c.webp",
+        "Cap Cana, Dominican Republic, Qualifying": "assets/logos/leagues/cap-cana-dominican-republic-qualifying.webp"
     }
 }
