@@ -12845,7 +12845,9 @@
         "Everton U21": "assets/logos/upstreams/everton-u21.webp",
         "Leicester U21": "assets/logos/upstreams/leicester-u21.webp",
         "Dynamo-Altay Barnaul": "assets/logos/streamed/dynamo-altay-barnaul.webp",
-        "Metallurg Novokuznetsk": "assets/logos/streamed/metallurg-novokuznetsk.webp"
+        "Metallurg Novokuznetsk": "assets/logos/streamed/metallurg-novokuznetsk.webp",
+        "HC Yugra": "assets/logos/streamed/hc-yugra.webp",
+        "Khimik": "assets/logos/streamed/khimik.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
