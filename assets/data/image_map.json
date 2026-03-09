@@ -12843,7 +12843,9 @@
         "Sunderland U21": "assets/logos/upstreams/sunderland-u21.webp",
         "Reading U21": "assets/logos/upstreams/reading-u21.webp",
         "Everton U21": "assets/logos/upstreams/everton-u21.webp",
-        "Leicester U21": "assets/logos/upstreams/leicester-u21.webp"
+        "Leicester U21": "assets/logos/upstreams/leicester-u21.webp",
+        "Dynamo-Altay Barnaul": "assets/logos/streamed/dynamo-altay-barnaul.webp",
+        "Metallurg Novokuznetsk": "assets/logos/streamed/metallurg-novokuznetsk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
