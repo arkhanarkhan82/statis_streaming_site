@@ -12835,7 +12835,10 @@
         "Honoka Uchiyama": "assets/logos/upstreams/honoka-uchiyama.webp",
         "Africa Guzman Garcia": "assets/logos/upstreams/africa-guzman-garcia.webp",
         "Misa Malkin": "assets/logos/upstreams/misa-malkin.webp",
-        "Al-Duhail": "assets/logos/streamed/al-duhail.webp"
+        "Al-Duhail": "assets/logos/streamed/al-duhail.webp",
+        "Horsens": "assets/logos/upstreams/horsens.webp",
+        "Sarah Victoria Majesty Nita": "assets/logos/upstreams/sarah-victoria-majesty-nita.webp",
+        "Natsumi Shioya": "assets/logos/upstreams/natsumi-shioya.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14190,6 +14193,7 @@
         "Big Sky Conference, Playoffs": "assets/logos/leagues/big-sky-conference-playoffs.webp",
         "Phoenix, USA, Qualifying": "assets/logos/leagues/phoenix-usa-qualifying.webp",
         "Bulgaria efbet League": "assets/logos/leagues/bulgaria-efbet-league.webp",
-        "India ISL": "assets/logos/leagues/india-isl.webp"
+        "India ISL": "assets/logos/leagues/india-isl.webp",
+        "Denmark Division 1": "assets/logos/leagues/denmark-division-1.webp"
     }
 }
