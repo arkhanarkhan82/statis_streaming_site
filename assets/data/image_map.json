@@ -12703,7 +12703,16 @@
         "North Korea Women": "assets/logos/streamed/north-korea-women.webp",
         "China Women": "assets/logos/streamed/china-women.webp",
         "Thitsar Arman": "assets/logos/streamed/thitsar-arman.webp",
-        "Dagon Star United": "assets/logos/streamed/dagon-star-united.webp"
+        "Dagon Star United": "assets/logos/streamed/dagon-star-united.webp",
+        "Metalist 1925 Kharkiv": "assets/logos/streamed/metalist-1925-kharkiv.webp",
+        "Pol. Warschau": "assets/logos/upstreams/pol-warschau.webp",
+        "Arjay Murray": "assets/logos/upstreams/arjay-murray.webp",
+        "Melbourne Victory II": "assets/logos/upstreams/melbourne-victory-ii.webp",
+        "Bulleen Lions": "assets/logos/upstreams/bulleen-lions.webp",
+        "Detroit Titans": "assets/logos/upstreams/detroit-titans.webp",
+        "Hannover-Burgdorf": "assets/logos/upstreams/hannover-burgdorf.webp",
+        "Jonas Gundacker": "assets/logos/upstreams/jonas-gundacker.webp",
+        "Michal Lusovsky": "assets/logos/upstreams/michal-lusovsky.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14047,6 +14056,10 @@
         "Nigeria - Premier League": "assets/logos/leagues/nigeria-premier-league.webp",
         "Kigali 2, Rwanda": "assets/logos/leagues/kigali-2-rwanda.webp",
         "Spanish La Liga": "assets/logos/leagues/spanish-la-liga.webp",
-        "Hersonissos 2, Greece": "assets/logos/leagues/hersonissos-2-greece.webp"
+        "Hersonissos 2, Greece": "assets/logos/leagues/hersonissos-2-greece.webp",
+        "Australia - NPL 2 - Victoria": "assets/logos/leagues/australia-npl-2-victoria.webp",
+        "Horizon League, Playoffs": "assets/logos/leagues/horizon-league-playoffs.webp",
+        "NBL, Playoffs": "assets/logos/leagues/nbl-playoffs.webp",
+        "World Baseball Classic": "assets/logos/leagues/world-baseball-classic.webp"
     }
 }
