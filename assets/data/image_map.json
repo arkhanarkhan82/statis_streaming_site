@@ -12783,7 +12783,14 @@
         "Lyric Bonilla": "assets/logos/upstreams/lyric-bonilla.webp",
         "Leevi Saatela": "assets/logos/upstreams/leevi-saatela.webp",
         "Edouard Villoslada": "assets/logos/upstreams/edouard-villoslada.webp",
-        "Andrea M'chich": "assets/logos/upstreams/andrea-mchich.webp"
+        "Andrea M'chich": "assets/logos/upstreams/andrea-mchich.webp",
+        "Montana Grizzlies": "assets/logos/upstreams/montana-grizzlies.webp",
+        "Northern Colorado Bears": "assets/logos/upstreams/northern-colorado-bears.webp",
+        "Charlie Pade": "assets/logos/upstreams/charlie-pade.webp",
+        "Olivia Rook": "assets/logos/upstreams/olivia-rook.webp",
+        "Alberto Puello": "assets/logos/upstreams/alberto-puello.webp",
+        "Botond Nagy": "assets/logos/upstreams/botond-nagy.webp",
+        "Valeriia Artemeva": "assets/logos/upstreams/valeriia-artemeva.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14134,6 +14141,7 @@
         "World Baseball Classic": "assets/logos/leagues/world-baseball-classic.webp",
         "Cherbourg-en-Cotentin, France": "assets/logos/leagues/cherbourg-en-cotentin-france.webp",
         "U20 CONMEBOL Libertadores, Group C": "assets/logos/leagues/u20-conmebol-libertadores-group-c.webp",
-        "Cap Cana, Dominican Republic, Qualifying": "assets/logos/leagues/cap-cana-dominican-republic-qualifying.webp"
+        "Cap Cana, Dominican Republic, Qualifying": "assets/logos/leagues/cap-cana-dominican-republic-qualifying.webp",
+        "Big Sky Conference, Playoffs": "assets/logos/leagues/big-sky-conference-playoffs.webp"
     }
 }
