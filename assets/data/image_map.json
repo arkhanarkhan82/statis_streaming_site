@@ -12907,7 +12907,18 @@
         "Yu Xiao Tan": "assets/logos/upstreams/yu-xiao-tan.webp",
         "Dai Wang": "assets/logos/upstreams/dai-wang.webp",
         "Tian Yao Dong": "assets/logos/upstreams/tian-yao-dong.webp",
-        "Milena Schnider": "assets/logos/upstreams/milena-schnider.webp"
+        "Milena Schnider": "assets/logos/upstreams/milena-schnider.webp",
+        "Mercyhurst Lakers": "assets/logos/upstreams/mercyhurst-lakers.webp",
+        "Jacob Brumm": "assets/logos/upstreams/jacob-brumm.webp",
+        "Rzeszow W": "assets/logos/upstreams/rzeszow-w.webp",
+        "Elena Milovanovi\u0107": "assets/logos/upstreams/elena-milovanovi\u0107.webp",
+        "Andrea Brignacca": "assets/logos/upstreams/andrea-brignacca.webp",
+        "Claudia Sofia Mart\u00ednez Sol\u00eds": "assets/logos/upstreams/claudia-sofia-mart\u00ednez-sol\u00eds.webp",
+        "Wozuko Mdlulwa": "assets/logos/upstreams/wozuko-mdlulwa.webp",
+        "Amanda Nava Elkin": "assets/logos/upstreams/amanda-nava-elkin.webp",
+        "Nicolas Tepmahc": "assets/logos/upstreams/nicolas-tepmahc.webp",
+        "Ingrid Carolina Millan": "assets/logos/upstreams/ingrid-carolina-millan.webp",
+        "Ron Hsien Justin Tay": "assets/logos/upstreams/ron-hsien-justin-tay.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14279,6 +14290,9 @@
         "Atlantic Coast Conference, Playoffs": "assets/logos/leagues/atlantic-coast-conference-playoffs.webp",
         "Conference USA, Playoffs": "assets/logos/leagues/conference-usa-playoffs.webp",
         "Atlantic 10 Conference, Playoffs": "assets/logos/leagues/atlantic-10-conference-playoffs.webp",
-        "Alps Hockey League, Knockout Stage": "assets/logos/leagues/alps-hockey-league-knockout-stage.webp"
+        "Alps Hockey League, Knockout Stage": "assets/logos/leagues/alps-hockey-league-knockout-stage.webp",
+        "Northeast Conference, Playoffs": "assets/logos/leagues/northeast-conference-playoffs.webp",
+        "Metro Atlantic Athletic Conference, Playoffs": "assets/logos/leagues/metro-atlantic-athletic-conference-playoffs.webp",
+        "Patriot League, Playoffs": "assets/logos/leagues/patriot-league-playoffs.webp"
     }
 }
