@@ -12894,7 +12894,12 @@
         "Aaliyah Zakaria": "assets/logos/upstreams/aaliyah-zakaria.webp",
         "Sheng Xuan Luo": "assets/logos/upstreams/sheng-xuan-luo.webp",
         "Thamonwan Nithiittikrai": "assets/logos/upstreams/thamonwan-nithiittikrai.webp",
-        "Chi Wa Pui": "assets/logos/upstreams/chi-wa-pui.webp"
+        "Chi Wa Pui": "assets/logos/upstreams/chi-wa-pui.webp",
+        "HKK \u0160iroki": "assets/logos/upstreams/hkk-\u0161iroki.webp",
+        "MZT Skopje Aerodrom": "assets/logos/upstreams/mzt-skopje-aerodrom.webp",
+        "HC Vardar": "assets/logos/upstreams/hc-vardar.webp",
+        "New Mexico State Aggies": "assets/logos/upstreams/new-mexico-state-aggies.webp",
+        "Andrea Bacaloni": "assets/logos/upstreams/andrea-bacaloni.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14262,6 +14267,9 @@
         "West Coast Conference, Playoffs": "assets/logos/leagues/west-coast-conference-playoffs.webp",
         "Eurocup, Playoffs": "assets/logos/leagues/eurocup-playoffs.webp",
         "FIBA World Cup Qualification, Women, Group B": "assets/logos/leagues/fiba-world-cup-qualification-women-group-b.webp",
-        "DFB Pokal, Women": "assets/logos/leagues/dfb-pokal-women.webp"
+        "DFB Pokal, Women": "assets/logos/leagues/dfb-pokal-women.webp",
+        "Atlantic Coast Conference, Playoffs": "assets/logos/leagues/atlantic-coast-conference-playoffs.webp",
+        "Conference USA, Playoffs": "assets/logos/leagues/conference-usa-playoffs.webp",
+        "Atlantic 10 Conference, Playoffs": "assets/logos/leagues/atlantic-10-conference-playoffs.webp"
     }
 }
