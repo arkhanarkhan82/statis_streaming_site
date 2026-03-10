@@ -12900,7 +12900,14 @@
         "HC Vardar": "assets/logos/upstreams/hc-vardar.webp",
         "New Mexico State Aggies": "assets/logos/upstreams/new-mexico-state-aggies.webp",
         "Andrea Bacaloni": "assets/logos/upstreams/andrea-bacaloni.webp",
-        "DEAC": "assets/logos/streamed/deac.webp"
+        "DEAC": "assets/logos/streamed/deac.webp",
+        "Brice Patoux": "assets/logos/upstreams/brice-patoux.webp",
+        "Adam Jones": "assets/logos/upstreams/adam-jones.webp",
+        "Lai Yin Chung": "assets/logos/upstreams/lai-yin-chung.webp",
+        "Yu Xiao Tan": "assets/logos/upstreams/yu-xiao-tan.webp",
+        "Dai Wang": "assets/logos/upstreams/dai-wang.webp",
+        "Tian Yao Dong": "assets/logos/upstreams/tian-yao-dong.webp",
+        "Milena Schnider": "assets/logos/upstreams/milena-schnider.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14271,6 +14278,7 @@
         "DFB Pokal, Women": "assets/logos/leagues/dfb-pokal-women.webp",
         "Atlantic Coast Conference, Playoffs": "assets/logos/leagues/atlantic-coast-conference-playoffs.webp",
         "Conference USA, Playoffs": "assets/logos/leagues/conference-usa-playoffs.webp",
-        "Atlantic 10 Conference, Playoffs": "assets/logos/leagues/atlantic-10-conference-playoffs.webp"
+        "Atlantic 10 Conference, Playoffs": "assets/logos/leagues/atlantic-10-conference-playoffs.webp",
+        "Alps Hockey League, Knockout Stage": "assets/logos/leagues/alps-hockey-league-knockout-stage.webp"
     }
 }
