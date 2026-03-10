@@ -12949,7 +12949,10 @@
         "Alfreton Town": "assets/logos/streamed/alfreton-town.webp",
         "Radcliffe": "assets/logos/streamed/radcliffe.webp",
         "Darlington": "assets/logos/streamed/darlington.webp",
-        "Buxton": "assets/logos/streamed/buxton.webp"
+        "Buxton": "assets/logos/streamed/buxton.webp",
+        "Horsham": "assets/logos/streamed/horsham.webp",
+        "Hornchurch": "assets/logos/streamed/hornchurch.webp",
+        "Chelmsford City": "assets/logos/streamed/chelmsford-city.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
