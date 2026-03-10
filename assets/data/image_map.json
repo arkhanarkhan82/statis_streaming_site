@@ -12854,7 +12854,11 @@
         "Anna Hsu": "assets/logos/upstreams/anna-hsu.webp",
         "Mikal Statham": "assets/logos/upstreams/mikal-statham.webp",
         "Lucia Gale": "assets/logos/upstreams/lucia-gale.webp",
-        "Roberto Cid Subervi": "assets/logos/upstreams/roberto-cid-subervi.webp"
+        "Roberto Cid Subervi": "assets/logos/upstreams/roberto-cid-subervi.webp",
+        "Spain W": "assets/logos/upstreams/spain-w.webp",
+        "Senegal W": "assets/logos/upstreams/senegal-w.webp",
+        "Sand W": "assets/logos/upstreams/sand-w.webp",
+        "Hungary W": "assets/logos/upstreams/hungary-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14212,6 +14216,9 @@
         "India ISL": "assets/logos/leagues/india-isl.webp",
         "Denmark Division 1": "assets/logos/leagues/denmark-division-1.webp",
         "WTA Indian Well": "assets/logos/leagues/wta-indian-well.webp",
-        "Cap Cana, Dominican Republic": "assets/logos/leagues/cap-cana-dominican-republic.webp"
+        "Cap Cana, Dominican Republic": "assets/logos/leagues/cap-cana-dominican-republic.webp",
+        "FIBA World Cup Qualification, Women, Group A": "assets/logos/leagues/fiba-world-cup-qualification-women-group-a.webp",
+        "FIBA World Cup Qualification, Women, Group C": "assets/logos/leagues/fiba-world-cup-qualification-women-group-c.webp",
+        "DFB Pokal Women": "assets/logos/leagues/dfb-pokal-women.webp"
     }
 }
