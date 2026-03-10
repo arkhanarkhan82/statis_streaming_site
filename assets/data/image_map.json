@@ -12867,7 +12867,19 @@
         "TSV Hannover-Burgdorf": "assets/logos/streamed/tsv-hannover-burgdorf.webp",
         "BM Granollers": "assets/logos/streamed/bm-granollers.webp",
         "Elverum H\u00e5ndball": "assets/logos/streamed/elverum-h\u00e5ndball.webp",
-        "Fredericia HK": "assets/logos/streamed/fredericia-hk.webp"
+        "Fredericia HK": "assets/logos/streamed/fredericia-hk.webp",
+        "U De Concepcion": "assets/logos/upstreams/u-de-concepcion.webp",
+        "Vancouver PWHL W": "assets/logos/upstreams/vancouver-pwhl-w.webp",
+        "Rinko Matsuda": "assets/logos/upstreams/rinko-matsuda.webp",
+        "Kei Yau Cheung": "assets/logos/upstreams/kei-yau-cheung.webp",
+        "SC Sand": "assets/logos/upstreams/sc-sand.webp",
+        "Joaquin Bianchi": "assets/logos/upstreams/joaquin-bianchi.webp",
+        "Matic Dimic": "assets/logos/upstreams/matic-dimic.webp",
+        "Eleni Tsetsou": "assets/logos/upstreams/eleni-tsetsou.webp",
+        "Julia Stamatova": "assets/logos/upstreams/julia-stamatova.webp",
+        "Alen Mujakic": "assets/logos/upstreams/alen-mujakic.webp",
+        "Silvio Mencaglia": "assets/logos/upstreams/silvio-mencaglia.webp",
+        "Damien Salvestre": "assets/logos/upstreams/damien-salvestre.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14231,6 +14243,10 @@
         "DFB Pokal Women": "assets/logos/leagues/dfb-pokal-women.webp",
         "Antalya 3, Turkiye": "assets/logos/leagues/antalya-3-turkiye.webp",
         "Phoenix, USA": "assets/logos/leagues/phoenix-usa.webp",
-        "Bahrain in Malaysia, 3 T20I Series": "assets/logos/leagues/bahrain-in-malaysia-3-t20i-series.webp"
+        "Bahrain in Malaysia, 3 T20I Series": "assets/logos/leagues/bahrain-in-malaysia-3-t20i-series.webp",
+        "West Coast Conference, Playoffs": "assets/logos/leagues/west-coast-conference-playoffs.webp",
+        "Eurocup, Playoffs": "assets/logos/leagues/eurocup-playoffs.webp",
+        "FIBA World Cup Qualification, Women, Group B": "assets/logos/leagues/fiba-world-cup-qualification-women-group-b.webp",
+        "DFB Pokal, Women": "assets/logos/leagues/dfb-pokal-women.webp"
     }
 }
