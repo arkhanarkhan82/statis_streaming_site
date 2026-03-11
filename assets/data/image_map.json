@@ -12974,7 +12974,9 @@
         "DC Power (W)": "assets/logos/upstreams/dc-power-w.webp",
         "Dallas Trinity (W)": "assets/logos/upstreams/dallas-trinity-w.webp",
         "LOVB Houston": "assets/logos/upstreams/lovb-houston.webp",
-        "LOVB Austin": "assets/logos/upstreams/lovb-austin.webp"
+        "LOVB Austin": "assets/logos/upstreams/lovb-austin.webp",
+        "Hantharwady United": "assets/logos/streamed/hantharwady-united.webp",
+        "Rakhine United": "assets/logos/streamed/rakhine-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
