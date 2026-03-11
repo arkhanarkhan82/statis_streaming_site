@@ -12978,7 +12978,16 @@
         "Hantharwady United": "assets/logos/streamed/hantharwady-united.webp",
         "Rakhine United": "assets/logos/streamed/rakhine-united.webp",
         "ISPE": "assets/logos/streamed/ispe.webp",
-        "Dagon Port": "assets/logos/streamed/dagon-port.webp"
+        "Dagon Port": "assets/logos/streamed/dagon-port.webp",
+        "Amed": "assets/logos/streamed/amed.webp",
+        "Shandong Hi-Speed Kirin": "assets/logos/streamed/shandong-hi-speed-kirin.webp",
+        "AC Sparta Praha": "assets/logos/upstreams/ac-sparta-praha.webp",
+        "AEK Athen": "assets/logos/upstreams/aek-athen.webp",
+        "Menorca B\u00e0squet": "assets/logos/upstreams/menorca-b\u00e0squet.webp",
+        "Yeonwoo Ku": "assets/logos/upstreams/yeonwoo-ku.webp",
+        "Kurea Hayasaka": "assets/logos/upstreams/kurea-hayasaka.webp",
+        "Yudai Okimoto": "assets/logos/upstreams/yudai-okimoto.webp",
+        "Dounia Pelupessy": "assets/logos/upstreams/dounia-pelupessy.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14356,6 +14365,11 @@
         "Patriot League, Playoffs": "assets/logos/leagues/patriot-league-playoffs.webp",
         "Pokal Slovenije": "assets/logos/leagues/pokal-slovenije.webp",
         "USA - USL Super League (W)": "assets/logos/leagues/usa-usl-super-league-w.webp",
-        "LOVB Pro, Women": "assets/logos/leagues/lovb-pro-women.webp"
+        "LOVB Pro, Women": "assets/logos/leagues/lovb-pro-women.webp",
+        "EuroCup - Playoff": "assets/logos/leagues/eurocup-playoff.webp",
+        "FIBA - Europe Cup - Playoff": "assets/logos/leagues/fiba-europe-cup-playoff.webp",
+        "FIBA Europe Cup, Playoffs": "assets/logos/leagues/fiba-europe-cup-playoffs.webp",
+        "Pakistan in Bangladesh, 3 ODI Series": "assets/logos/leagues/pakistan-in-bangladesh-3-odi-series.webp",
+        "Swiss Open": "assets/logos/leagues/swiss-open.webp"
     }
 }
