@@ -12991,7 +12991,19 @@
         "Israel Basketball Women": "assets/logos/streamed/israel-basketball-women.webp",
         "Bosnia-Herzegovina Basketball Women": "assets/logos/streamed/bosnia-herzegovina-basketball-women.webp",
         "Paris FC Women": "assets/logos/streamed/paris-fc-women.webp",
-        "Strasbourg Women": "assets/logos/streamed/strasbourg-women.webp"
+        "Strasbourg Women": "assets/logos/streamed/strasbourg-women.webp",
+        "Manauara EC": "assets/logos/upstreams/manauara-ec.webp",
+        "Am\u00e9rica-RN": "assets/logos/upstreams/am\u00e9rica-rn.webp",
+        "Transcom P\u00e4rnu": "assets/logos/upstreams/transcom-p\u00e4rnu.webp",
+        "Vitoria BA": "assets/logos/upstreams/vitoria-ba.webp",
+        "Castanhal": "assets/logos/upstreams/castanhal.webp",
+        "Porto Velho": "assets/logos/upstreams/porto-velho.webp",
+        "Shiho Shibata": "assets/logos/upstreams/shiho-shibata.webp",
+        "Ashmitha Easwaramurthi": "assets/logos/upstreams/ashmitha-easwaramurthi.webp",
+        "Fuzinar": "assets/logos/upstreams/fuzinar.webp",
+        "Astrid Wanja Brune Olsen": "assets/logos/upstreams/astrid-wanja-brune-olsen.webp",
+        "James van Herzeele": "assets/logos/upstreams/james-van-herzeele.webp",
+        "Chirag Duhan": "assets/logos/upstreams/chirag-duhan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14374,6 +14386,8 @@
         "FIBA - Europe Cup - Playoff": "assets/logos/leagues/fiba-europe-cup-playoff.webp",
         "FIBA Europe Cup, Playoffs": "assets/logos/leagues/fiba-europe-cup-playoffs.webp",
         "Pakistan in Bangladesh, 3 ODI Series": "assets/logos/leagues/pakistan-in-bangladesh-3-odi-series.webp",
-        "Swiss Open": "assets/logos/leagues/swiss-open.webp"
+        "Swiss Open": "assets/logos/leagues/swiss-open.webp",
+        "Sweden - Allsvenskan - Playoff": "assets/logos/leagues/sweden-allsvenskan-playoff.webp",
+        "Slovenia - Cup": "assets/logos/leagues/slovenia-cup.webp"
     }
 }
