@@ -12966,7 +12966,15 @@
         "Diablos de Miranda": "assets/logos/upstreams/diablos-de-miranda.webp",
         "Marinos de Oriente": "assets/logos/upstreams/marinos-de-oriente.webp",
         "Lachlan James McFadzean": "assets/logos/upstreams/lachlan-james-mcfadzean.webp",
-        "Emily Dunn": "assets/logos/upstreams/emily-dunn.webp"
+        "Emily Dunn": "assets/logos/upstreams/emily-dunn.webp",
+        "Maryland-Eastern Shore": "assets/logos/upstreams/maryland-eastern-shore.webp",
+        "Mount Pleasant FA": "assets/logos/upstreams/mount-pleasant-fa.webp",
+        "Bravo U19": "assets/logos/upstreams/bravo-u19.webp",
+        "Nafta": "assets/logos/upstreams/nafta.webp",
+        "DC Power (W)": "assets/logos/upstreams/dc-power-w.webp",
+        "Dallas Trinity (W)": "assets/logos/upstreams/dallas-trinity-w.webp",
+        "LOVB Houston": "assets/logos/upstreams/lovb-houston.webp",
+        "LOVB Austin": "assets/logos/upstreams/lovb-austin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14341,6 +14349,9 @@
         "Alps Hockey League, Knockout Stage": "assets/logos/leagues/alps-hockey-league-knockout-stage.webp",
         "Northeast Conference, Playoffs": "assets/logos/leagues/northeast-conference-playoffs.webp",
         "Metro Atlantic Athletic Conference, Playoffs": "assets/logos/leagues/metro-atlantic-athletic-conference-playoffs.webp",
-        "Patriot League, Playoffs": "assets/logos/leagues/patriot-league-playoffs.webp"
+        "Patriot League, Playoffs": "assets/logos/leagues/patriot-league-playoffs.webp",
+        "Pokal Slovenije": "assets/logos/leagues/pokal-slovenije.webp",
+        "USA - USL Super League (W)": "assets/logos/leagues/usa-usl-super-league-w.webp",
+        "LOVB Pro, Women": "assets/logos/leagues/lovb-pro-women.webp"
     }
 }
