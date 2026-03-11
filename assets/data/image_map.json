@@ -12976,7 +12976,9 @@
         "LOVB Houston": "assets/logos/upstreams/lovb-houston.webp",
         "LOVB Austin": "assets/logos/upstreams/lovb-austin.webp",
         "Hantharwady United": "assets/logos/streamed/hantharwady-united.webp",
-        "Rakhine United": "assets/logos/streamed/rakhine-united.webp"
+        "Rakhine United": "assets/logos/streamed/rakhine-united.webp",
+        "ISPE": "assets/logos/streamed/ispe.webp",
+        "Dagon Port": "assets/logos/streamed/dagon-port.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
