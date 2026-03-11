@@ -13013,7 +13013,8 @@
         "Bulgaria Basketball Women": "assets/logos/streamed/bulgaria-basketball-women.webp",
         "Azerbaijan Basketball Women": "assets/logos/streamed/azerbaijan-basketball-women.webp",
         "Latvia Basketball Women": "assets/logos/streamed/latvia-basketball-women.webp",
-        "Slovenia Basketball Women": "assets/logos/streamed/slovenia-basketball-women.webp"
+        "Slovenia Basketball Women": "assets/logos/streamed/slovenia-basketball-women.webp",
+        "Tasmania": "assets/logos/upstreams/tasmania.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14398,6 +14399,7 @@
         "Pakistan in Bangladesh, 3 ODI Series": "assets/logos/leagues/pakistan-in-bangladesh-3-odi-series.webp",
         "Swiss Open": "assets/logos/leagues/swiss-open.webp",
         "Sweden - Allsvenskan - Playoff": "assets/logos/leagues/sweden-allsvenskan-playoff.webp",
-        "Slovenia - Cup": "assets/logos/leagues/slovenia-cup.webp"
+        "Slovenia - Cup": "assets/logos/leagues/slovenia-cup.webp",
+        "One Day Cup, Final": "assets/logos/leagues/one-day-cup-final.webp"
     }
 }
