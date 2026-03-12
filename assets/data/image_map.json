@@ -13046,7 +13046,12 @@
         "David Brock": "assets/logos/upstreams/david-brock.webp",
         "Tam Mustafa": "assets/logos/upstreams/tam-mustafa.webp",
         "Billy Lee": "assets/logos/upstreams/billy-lee.webp",
-        "Sean O'Sullivan": "assets/logos/upstreams/sean-osullivan.webp"
+        "Sean O'Sullivan": "assets/logos/upstreams/sean-osullivan.webp",
+        "Maryland Eastern Shore Hawks": "assets/logos/upstreams/maryland-eastern-shore-hawks.webp",
+        "FAC Viena": "assets/logos/upstreams/fac-viena.webp",
+        "Lada": "assets/logos/upstreams/lada.webp",
+        "Konstantinos Ntelis": "assets/logos/upstreams/konstantinos-ntelis.webp",
+        "Leon Aliu": "assets/logos/upstreams/leon-aliu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14436,6 +14441,8 @@
         "1st Liga, Playoffs": "assets/logos/leagues/1st-liga-playoffs.webp",
         "PBA Commissioner's Cup": "assets/logos/leagues/pba-commissioners-cup.webp",
         "Big 12 Conference, Playoffs": "assets/logos/leagues/big-12-conference-playoffs.webp",
-        "UEFA Europa Conference League, Knockout stage": "assets/logos/leagues/uefa-europa-conference-league-knockout-stage.webp"
+        "UEFA Europa Conference League, Knockout stage": "assets/logos/leagues/uefa-europa-conference-league-knockout-stage.webp",
+        "Mid-Eastern Athletic Conference, Playoffs": "assets/logos/leagues/mid-eastern-athletic-conference-playoffs.webp",
+        "AFC Asian Cup, Women, Knockout stage": "assets/logos/leagues/afc-asian-cup-women-knockout-stage.webp"
     }
 }
