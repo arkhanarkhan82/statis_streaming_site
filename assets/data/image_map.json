@@ -13077,7 +13077,10 @@
         "Figueirense": "assets/logos/upstreams/figueirense.webp",
         "Finn Emslie Robson": "assets/logos/upstreams/finn-emslie-robson.webp",
         "Younes Lalami Laaroussi": "assets/logos/upstreams/younes-lalami-laaroussi.webp",
-        "Thi Trang Vu": "assets/logos/upstreams/thi-trang-vu.webp"
+        "Thi Trang Vu": "assets/logos/upstreams/thi-trang-vu.webp",
+        "Richmond Tigers": "assets/logos/upstreams/richmond-tigers.webp",
+        "Benjamin Berger": "assets/logos/upstreams/benjamin-berger.webp",
+        "Mokaev": "assets/logos/upstreams/mokaev.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14474,6 +14477,8 @@
         "Slovakia - ExtraLeague - Playoff": "assets/logos/leagues/slovakia-extraleague-playoff.webp",
         "CAF Champions League, Knockout stage": "assets/logos/leagues/caf-champions-league-knockout-stage.webp",
         "Austrian Bundesliga, Championship Round": "assets/logos/leagues/austrian-bundesliga-championship-round.webp",
-        "SuperLiga, Relegation round": "assets/logos/leagues/superliga-relegation-round.webp"
+        "SuperLiga, Relegation round": "assets/logos/leagues/superliga-relegation-round.webp",
+        "Sweden - Allsvenskan - Playout": "assets/logos/leagues/sweden-allsvenskan-playout.webp",
+        "National League, Play-in": "assets/logos/leagues/national-league-play-in.webp"
     }
 }
