@@ -13088,7 +13088,9 @@
         "Maria Fernanda Navarro Oliva": "assets/logos/upstreams/maria-fernanda-navarro-oliva.webp",
         "Maria Fernanda Herazo Gonzalez": "assets/logos/upstreams/maria-fernanda-herazo-gonzalez.webp",
         "Essendon Bombers": "assets/logos/streamed/essendon-bombers.webp",
-        "Hawthorn Hawks": "assets/logos/streamed/hawthorn-hawks.webp"
+        "Hawthorn Hawks": "assets/logos/streamed/hawthorn-hawks.webp",
+        "Southampton U21": "assets/logos/upstreams/southampton-u21.webp",
+        "Miomir Kecmanovi\u0107": "assets/logos/upstreams/miomir-kecmanovi\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14487,6 +14489,8 @@
         "Austrian Bundesliga, Championship Round": "assets/logos/leagues/austrian-bundesliga-championship-round.webp",
         "SuperLiga, Relegation round": "assets/logos/leagues/superliga-relegation-round.webp",
         "Sweden - Allsvenskan - Playout": "assets/logos/leagues/sweden-allsvenskan-playout.webp",
-        "National League, Play-in": "assets/logos/leagues/national-league-play-in.webp"
+        "National League, Play-in": "assets/logos/leagues/national-league-play-in.webp",
+        "Southwestern Athletic Conference, Playoffs": "assets/logos/leagues/southwestern-athletic-conference-playoffs.webp",
+        "Mountain West Conference, Playoffs": "assets/logos/leagues/mountain-west-conference-playoffs.webp"
     }
 }
