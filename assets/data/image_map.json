@@ -13051,7 +13051,26 @@
         "FAC Viena": "assets/logos/upstreams/fac-viena.webp",
         "Lada": "assets/logos/upstreams/lada.webp",
         "Konstantinos Ntelis": "assets/logos/upstreams/konstantinos-ntelis.webp",
-        "Leon Aliu": "assets/logos/upstreams/leon-aliu.webp"
+        "Leon Aliu": "assets/logos/upstreams/leon-aliu.webp",
+        "Bumamuru": "assets/logos/upstreams/bumamuru.webp",
+        "Paysandu SC": "assets/logos/upstreams/paysandu-sc.webp",
+        "Dukla Michalovce": "assets/logos/upstreams/dukla-michalovce.webp",
+        "Perspektiva Ilirija": "assets/logos/upstreams/perspektiva-ilirija.webp",
+        "FC Hertha Wels": "assets/logos/upstreams/fc-hertha-wels.webp",
+        "Lada Togliatti": "assets/logos/upstreams/lada-togliatti.webp",
+        "ThSV Eisenach": "assets/logos/upstreams/thsv-eisenach.webp",
+        "HSV Hamburg": "assets/logos/upstreams/hsv-hamburg.webp",
+        "Ping-Hsien Huang": "assets/logos/upstreams/ping-hsien-huang.webp",
+        "Zi Jun Wang": "assets/logos/upstreams/zi-jun-wang.webp",
+        "Chao Sun": "assets/logos/upstreams/chao-sun.webp",
+        "Tae Bin Yoo": "assets/logos/upstreams/tae-bin-yoo.webp",
+        "Cheng Han Tsai": "assets/logos/upstreams/cheng-han-tsai.webp",
+        "Ching Ping Huang": "assets/logos/upstreams/ching-ping-huang.webp",
+        "Saloni Samirbhai Mehta": "assets/logos/upstreams/saloni-samirbhai-mehta.webp",
+        "So Yul Lee": "assets/logos/upstreams/so-yul-lee.webp",
+        "Ka Wing Liang": "assets/logos/upstreams/ka-wing-liang.webp",
+        "Koo Takahashi": "assets/logos/upstreams/koo-takahashi.webp",
+        "Wen Jing Xu": "assets/logos/upstreams/wen-jing-xu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14443,6 +14462,11 @@
         "Big 12 Conference, Playoffs": "assets/logos/leagues/big-12-conference-playoffs.webp",
         "UEFA Europa Conference League, Knockout stage": "assets/logos/leagues/uefa-europa-conference-league-knockout-stage.webp",
         "Mid-Eastern Athletic Conference, Playoffs": "assets/logos/leagues/mid-eastern-athletic-conference-playoffs.webp",
-        "AFC Asian Cup, Women, Knockout stage": "assets/logos/leagues/afc-asian-cup-women-knockout-stage.webp"
+        "AFC Asian Cup, Women, Knockout stage": "assets/logos/leagues/afc-asian-cup-women-knockout-stage.webp",
+        "Czech - ExtraLeague - Playoff": "assets/logos/leagues/czech-extraleague-playoff.webp",
+        "Slovakia - ExtraLeague - Playoff": "assets/logos/leagues/slovakia-extraleague-playoff.webp",
+        "CAF Champions League, Knockout stage": "assets/logos/leagues/caf-champions-league-knockout-stage.webp",
+        "Austrian Bundesliga, Championship Round": "assets/logos/leagues/austrian-bundesliga-championship-round.webp",
+        "SuperLiga, Relegation round": "assets/logos/leagues/superliga-relegation-round.webp"
     }
 }
