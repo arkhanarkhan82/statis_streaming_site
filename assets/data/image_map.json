@@ -13158,7 +13158,16 @@
         "Western Australia Women": "assets/logos/upstreams/western-australia-women.webp",
         "WEastern Province (W)": "assets/logos/upstreams/weastern-province-w.webp",
         "Cal State Northridge Matadors": "assets/logos/upstreams/cal-state-northridge-matadors.webp",
-        "UMBC Retrievers": "assets/logos/upstreams/umbc-retrievers.webp"
+        "UMBC Retrievers": "assets/logos/upstreams/umbc-retrievers.webp",
+        "CS Fullerton": "assets/logos/upstreams/cs-fullerton.webp",
+        "Bia Mesquita": "assets/logos/upstreams/bia-mesquita.webp",
+        "Montserrat Rendon": "assets/logos/upstreams/montserrat-rendon.webp",
+        "Luan Luiz Lacerda": "assets/logos/upstreams/luan-luiz-lacerda.webp",
+        "Hecher Sosa": "assets/logos/upstreams/hecher-sosa.webp",
+        "Bolaji Oki": "assets/logos/upstreams/bolaji-oki.webp",
+        "Manoel Sousa": "assets/logos/upstreams/manoel-sousa.webp",
+        "Brad Tavares": "assets/logos/upstreams/brad-tavares.webp",
+        "Eryk Anders": "assets/logos/upstreams/eryk-anders.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14578,6 +14587,7 @@
         "ROmania - SuperLeague - Playout": "assets/logos/leagues/romania-superleague-playout.webp",
         "Big Ten Conference, Playoffs": "assets/logos/leagues/big-ten-conference-playoffs.webp",
         "Australia - NPL (W)": "assets/logos/leagues/australia-npl-w.webp",
-        "Big West Conference, Playoffs": "assets/logos/leagues/big-west-conference-playoffs.webp"
+        "Big West Conference, Playoffs": "assets/logos/leagues/big-west-conference-playoffs.webp",
+        "Seven's World Series - USA": "assets/logos/leagues/sevens-world-series-usa.webp"
     }
 }
