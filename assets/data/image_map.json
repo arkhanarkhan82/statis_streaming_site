@@ -13167,7 +13167,12 @@
         "Bolaji Oki": "assets/logos/upstreams/bolaji-oki.webp",
         "Manoel Sousa": "assets/logos/upstreams/manoel-sousa.webp",
         "Brad Tavares": "assets/logos/upstreams/brad-tavares.webp",
-        "Eryk Anders": "assets/logos/upstreams/eryk-anders.webp"
+        "Eryk Anders": "assets/logos/upstreams/eryk-anders.webp",
+        "Prairie View A&M Panthers": "assets/logos/upstreams/prairie-view-am-panthers.webp",
+        "1. FC N\u00fcrnberg II": "assets/logos/upstreams/1-fc-n\u00fcrnberg-ii.webp",
+        "SpVgg Unterhaching": "assets/logos/upstreams/spvgg-unterhaching.webp",
+        "Rodez Aveyron": "assets/logos/upstreams/rodez-aveyron.webp",
+        "Gaiteros del Zulia": "assets/logos/upstreams/gaiteros-del-zulia.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14588,6 +14593,8 @@
         "Big Ten Conference, Playoffs": "assets/logos/leagues/big-ten-conference-playoffs.webp",
         "Australia - NPL (W)": "assets/logos/leagues/australia-npl-w.webp",
         "Big West Conference, Playoffs": "assets/logos/leagues/big-west-conference-playoffs.webp",
-        "Seven's World Series - USA": "assets/logos/leagues/sevens-world-series-usa.webp"
+        "Seven's World Series - USA": "assets/logos/leagues/sevens-world-series-usa.webp",
+        "Liga 1, Championship round": "assets/logos/leagues/liga-1-championship-round.webp",
+        "Regionalliga Bavaria": "assets/logos/leagues/regionalliga-bavaria.webp"
     }
 }
