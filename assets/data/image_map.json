@@ -13156,7 +13156,9 @@
         "Legnica": "assets/logos/upstreams/legnica.webp",
         "Jay McFarlane": "assets/logos/upstreams/jay-mcfarlane.webp",
         "Western Australia Women": "assets/logos/upstreams/western-australia-women.webp",
-        "WEastern Province (W)": "assets/logos/upstreams/weastern-province-w.webp"
+        "WEastern Province (W)": "assets/logos/upstreams/weastern-province-w.webp",
+        "Cal State Northridge Matadors": "assets/logos/upstreams/cal-state-northridge-matadors.webp",
+        "UMBC Retrievers": "assets/logos/upstreams/umbc-retrievers.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14573,6 +14575,9 @@
         "Austrian Bundesliga, Relegation Round": "assets/logos/leagues/austrian-bundesliga-relegation-round.webp",
         "CAF Confederations Cup, Knockout stage": "assets/logos/leagues/caf-confederations-cup-knockout-stage.webp",
         "Bundesliga, Relegation Round": "assets/logos/leagues/bundesliga-relegation-round.webp",
-        "ROmania - SuperLeague - Playout": "assets/logos/leagues/romania-superleague-playout.webp"
+        "ROmania - SuperLeague - Playout": "assets/logos/leagues/romania-superleague-playout.webp",
+        "Big Ten Conference, Playoffs": "assets/logos/leagues/big-ten-conference-playoffs.webp",
+        "Australia - NPL (W)": "assets/logos/leagues/australia-npl-w.webp",
+        "Big West Conference, Playoffs": "assets/logos/leagues/big-west-conference-playoffs.webp"
     }
 }
