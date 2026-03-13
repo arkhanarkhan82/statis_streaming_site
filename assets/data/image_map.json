@@ -13154,7 +13154,9 @@
         "Ji Hoon Choi": "assets/logos/upstreams/ji-hoon-choi.webp",
         "Furth": "assets/logos/upstreams/furth.webp",
         "Legnica": "assets/logos/upstreams/legnica.webp",
-        "Jay McFarlane": "assets/logos/upstreams/jay-mcfarlane.webp"
+        "Jay McFarlane": "assets/logos/upstreams/jay-mcfarlane.webp",
+        "Western Australia Women": "assets/logos/upstreams/western-australia-women.webp",
+        "WEastern Province (W)": "assets/logos/upstreams/weastern-province-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14569,6 +14571,8 @@
         "Metal Ligaen, Playoffs": "assets/logos/leagues/metal-ligaen-playoffs.webp",
         "NWSL": "assets/logos/leagues/nwsl.webp",
         "Austrian Bundesliga, Relegation Round": "assets/logos/leagues/austrian-bundesliga-relegation-round.webp",
-        "CAF Confederations Cup, Knockout stage": "assets/logos/leagues/caf-confederations-cup-knockout-stage.webp"
+        "CAF Confederations Cup, Knockout stage": "assets/logos/leagues/caf-confederations-cup-knockout-stage.webp",
+        "Bundesliga, Relegation Round": "assets/logos/leagues/bundesliga-relegation-round.webp",
+        "ROmania - SuperLeague - Playout": "assets/logos/leagues/romania-superleague-playout.webp"
     }
 }
