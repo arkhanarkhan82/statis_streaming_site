@@ -13107,7 +13107,32 @@
         "Elijah Smith": "assets/logos/streamed/elijah-smith.webp",
         "Shaktar Donetsk": "assets/logos/upstreams/shaktar-donetsk.webp",
         "V\u00e4ster\u00e5s IK": "assets/logos/upstreams/v\u00e4ster\u00e5s-ik.webp",
-        "Oper\u00e1rio-MS": "assets/logos/upstreams/oper\u00e1rio-ms.webp"
+        "Oper\u00e1rio-MS": "assets/logos/upstreams/oper\u00e1rio-ms.webp",
+        "Werder Bremen Women": "assets/logos/streamed/werder-bremen-women.webp",
+        "Eintracht Frankfurt Women": "assets/logos/streamed/eintracht-frankfurt-women.webp",
+        "RB Leipzig Women": "assets/logos/streamed/rb-leipzig-women.webp",
+        "Union Berlin Women": "assets/logos/streamed/union-berlin-women.webp",
+        "Nigeria W": "assets/logos/upstreams/nigeria-w.webp",
+        "Philippines W": "assets/logos/upstreams/philippines-w.webp",
+        "South Korea W": "assets/logos/upstreams/south-korea-w.webp",
+        "Sebastiani": "assets/logos/upstreams/sebastiani.webp",
+        "Dusseldorf": "assets/logos/upstreams/dusseldorf.webp",
+        "Detroit City": "assets/logos/upstreams/detroit-city.webp",
+        "Sporting Jax": "assets/logos/upstreams/sporting-jax.webp",
+        "Miami FC": "assets/logos/upstreams/miami-fc.webp",
+        "Lexington": "assets/logos/upstreams/lexington.webp",
+        "Seung Chul Lee": "assets/logos/upstreams/seung-chul-lee.webp",
+        "Fabio Henrique Dourado": "assets/logos/upstreams/fabio-henrique-dourado.webp",
+        "Nilufer Bld. W": "assets/logos/upstreams/nilufer-bld-w.webp",
+        "Viadana": "assets/logos/upstreams/viadana.webp",
+        "Adrian Bartosinski": "assets/logos/upstreams/adrian-bartosinski.webp",
+        "Madars Bertholds-Fleminas": "assets/logos/upstreams/madars-bertholds-fleminas.webp",
+        "Michael Terrill": "assets/logos/upstreams/michael-terrill.webp",
+        "Jay McFarlaneLightweightNewcastle": "assets/logos/upstreams/jay-mcfarlanelightweightnewcastle.webp",
+        "Cesson Rennes-Metropole": "assets/logos/upstreams/cesson-rennes-metropole.webp",
+        "Bruno Silva": "assets/logos/upstreams/bruno-silva.webp",
+        "Josh Emmett": "assets/logos/upstreams/josh-emmett.webp",
+        "Kevin Vallejos": "assets/logos/upstreams/kevin-vallejos.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14513,6 +14538,10 @@
         "Champions League America - Gr.D": "assets/logos/leagues/champions-league-america-grd.webp",
         "HockeyAllsvenskan, Playout": "assets/logos/leagues/hockeyallsvenskan-playout.webp",
         "SuperLiga, Championship round": "assets/logos/leagues/superliga-championship-round.webp",
-        "Latvia - NBL": "assets/logos/leagues/latvia-nbl.webp"
+        "Latvia - NBL": "assets/logos/leagues/latvia-nbl.webp",
+        "Austria - BundesLeague - Gr.Retrogradare": "assets/logos/leagues/austria-bundesleague-grretrogradare.webp",
+        "NWSL Women": "assets/logos/leagues/nwsl-women.webp",
+        "World Baseball Classic, Final Round": "assets/logos/leagues/world-baseball-classic-final-round.webp",
+        "UFC Fight Night: Emmett vs. Vallejos": "assets/logos/leagues/ufc-fight-night-emmett-vs-vallejos.webp"
     }
 }
