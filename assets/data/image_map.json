@@ -13241,7 +13241,14 @@
         "Pirin Blagoevgrad": "assets/logos/upstreams/pirin-blagoevgrad.webp",
         "Watsonians": "assets/logos/upstreams/watsonians.webp",
         "St. George Illawara Dragons": "assets/logos/streamed/st-george-illawara-dragons.webp",
-        "Soyoung You": "assets/logos/upstreams/soyoung-you.webp"
+        "Soyoung You": "assets/logos/upstreams/soyoung-you.webp",
+        "FS Jelgava": "assets/logos/upstreams/fs-jelgava.webp",
+        "Orlando Pride": "assets/logos/upstreams/orlando-pride.webp",
+        "Seattle Reign FC": "assets/logos/upstreams/seattle-reign-fc.webp",
+        "Christopher Curtis": "assets/logos/upstreams/christopher-curtis.webp",
+        "JDA Dijon Basket": "assets/logos/upstreams/jda-dijon-basket.webp",
+        "Lions de Gen\u00e8ve pwd by Grand-Saconnex": "assets/logos/upstreams/lions-de-gen\u00e8ve-pwd-by-grand-saconnex.webp",
+        "CB Ciudad de Logro\u00f1o": "assets/logos/upstreams/cb-ciudad-de-logro\u00f1o.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14670,6 +14677,8 @@
         "SynotTip Virsliga": "assets/logos/leagues/synottip-virsliga.webp",
         "Women's League Cup - Final": "assets/logos/leagues/womens-league-cup-final.webp",
         "Irish League Cup": "assets/logos/leagues/irish-league-cup.webp",
-        "Austria - BundesLeague - Gr.Championship": "assets/logos/leagues/austria-bundesleague-grchampionship.webp"
+        "Austria - BundesLeague - Gr.Championship": "assets/logos/leagues/austria-bundesleague-grchampionship.webp",
+        "Danish Superliga, Championship round": "assets/logos/leagues/danish-superliga-championship-round.webp",
+        "Liga 1, Relegation round": "assets/logos/leagues/liga-1-relegation-round.webp"
     }
 }
