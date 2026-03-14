@@ -13298,7 +13298,12 @@
         "NK Dugopolje": "assets/logos/upstreams/nk-dugopolje.webp",
         "Terek Grozny": "assets/logos/upstreams/terek-grozny.webp",
         "Michal Milko": "assets/logos/upstreams/michal-milko.webp",
-        "Kaiserslautern U19": "assets/logos/upstreams/kaiserslautern-u19.webp"
+        "Kaiserslautern U19": "assets/logos/upstreams/kaiserslautern-u19.webp",
+        "VfL Wolfsburg Women": "assets/logos/streamed/vfl-wolfsburg-women.webp",
+        "Bayer Leverkusen Women": "assets/logos/streamed/bayer-leverkusen-women.webp",
+        "Trinidad and Tobago": "assets/logos/streamed/trinidad-and-tobago.webp",
+        "Angel City W": "assets/logos/streamed/angel-city-w.webp",
+        "Chicago Red Stars W": "assets/logos/streamed/chicago-red-stars-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
