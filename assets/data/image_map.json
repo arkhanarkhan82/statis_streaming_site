@@ -13312,7 +13312,23 @@
         "Ryan Searle": "assets/logos/upstreams/ryan-searle.webp",
         "Richard Veenstra": "assets/logos/upstreams/richard-veenstra.webp",
         "Durban City FC": "assets/logos/upstreams/durban-city-fc.webp",
-        "Niels Zonneveld": "assets/logos/upstreams/niels-zonneveld.webp"
+        "Niels Zonneveld": "assets/logos/upstreams/niels-zonneveld.webp",
+        "Spokane Velocity FC": "assets/logos/upstreams/spokane-velocity-fc.webp",
+        "Union Omaha SC": "assets/logos/upstreams/union-omaha-sc.webp",
+        "BKK Radni\u010dki Beograd": "assets/logos/upstreams/bkk-radni\u010dki-beograd.webp",
+        "Guaiqueries de Margarita": "assets/logos/upstreams/guaiqueries-de-margarita.webp",
+        "Angel City FC": "assets/logos/upstreams/angel-city-fc.webp",
+        "Chicago Stars FC": "assets/logos/upstreams/chicago-stars-fc.webp",
+        "Guillermo Tunas": "assets/logos/upstreams/guillermo-tunas.webp",
+        "Maniema": "assets/logos/upstreams/maniema.webp",
+        "Bruno Oliveira": "assets/logos/upstreams/bruno-oliveira.webp",
+        "Federico Gaston Gonzalez Benitez": "assets/logos/upstreams/federico-gaston-gonzalez-benitez.webp",
+        "Luis Britto": "assets/logos/upstreams/luis-britto.webp",
+        "Johannes Ingildsen": "assets/logos/upstreams/johannes-ingildsen.webp",
+        "Thea Frodin": "assets/logos/upstreams/thea-frodin.webp",
+        "Reese Brantmeier": "assets/logos/upstreams/reese-brantmeier.webp",
+        "Emanuel Ivanisevic": "assets/logos/upstreams/emanuel-ivanisevic.webp",
+        "Ariana Gilbert": "assets/logos/upstreams/ariana-gilbert.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14756,6 +14772,12 @@
         "South Africa in New Zealand, 5 T20I Series": "assets/logos/leagues/south-africa-in-new-zealand-5-t20i-series.webp",
         "Suncorp Super Netball": "assets/logos/leagues/suncorp-super-netball.webp",
         "American Conference, Playoffs": "assets/logos/leagues/american-conference-playoffs.webp",
-        "European Darts Trophy": "assets/logos/leagues/european-darts-trophy.webp"
+        "European Darts Trophy": "assets/logos/leagues/european-darts-trophy.webp",
+        "Morelos, Mexico, Qualifying": "assets/logos/leagues/morelos-mexico-qualifying.webp",
+        "Asuncion, Paraguay, Qualifying": "assets/logos/leagues/asuncion-paraguay-qualifying.webp",
+        "Miami, USA, Qualifying": "assets/logos/leagues/miami-usa-qualifying.webp",
+        "Zadar, Croatia": "assets/logos/leagues/zadar-croatia.webp",
+        "Murcia, Spain": "assets/logos/leagues/murcia-spain.webp",
+        "Asuncion, Paraguay": "assets/logos/leagues/asuncion-paraguay.webp"
     }
 }
