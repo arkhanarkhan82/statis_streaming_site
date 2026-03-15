@@ -13328,7 +13328,10 @@
         "Thea Frodin": "assets/logos/upstreams/thea-frodin.webp",
         "Reese Brantmeier": "assets/logos/upstreams/reese-brantmeier.webp",
         "Emanuel Ivanisevic": "assets/logos/upstreams/emanuel-ivanisevic.webp",
-        "Ariana Gilbert": "assets/logos/upstreams/ariana-gilbert.webp"
+        "Ariana Gilbert": "assets/logos/upstreams/ariana-gilbert.webp",
+        "CA Sarmiento": "assets/logos/upstreams/ca-sarmiento.webp",
+        "Andrea Fiorentini": "assets/logos/upstreams/andrea-fiorentini.webp",
+        "Gerard Campana Lee": "assets/logos/upstreams/gerard-campana-lee.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14779,6 +14782,8 @@
         "Zadar, Croatia": "assets/logos/leagues/zadar-croatia.webp",
         "Murcia, Spain": "assets/logos/leagues/murcia-spain.webp",
         "Asuncion, Paraguay": "assets/logos/leagues/asuncion-paraguay.webp",
-        "Morelos, Mexico": "assets/logos/leagues/morelos-mexico.webp"
+        "Morelos, Mexico": "assets/logos/leagues/morelos-mexico.webp",
+        "Zadar, Croatia, Qualifying": "assets/logos/leagues/zadar-croatia-qualifying.webp",
+        "Murcia, Spain, Qualifying": "assets/logos/leagues/murcia-spain-qualifying.webp"
     }
 }
