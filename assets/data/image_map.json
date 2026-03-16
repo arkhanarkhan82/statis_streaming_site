@@ -13331,7 +13331,11 @@
         "Ariana Gilbert": "assets/logos/upstreams/ariana-gilbert.webp",
         "CA Sarmiento": "assets/logos/upstreams/ca-sarmiento.webp",
         "Andrea Fiorentini": "assets/logos/upstreams/andrea-fiorentini.webp",
-        "Gerard Campana Lee": "assets/logos/upstreams/gerard-campana-lee.webp"
+        "Gerard Campana Lee": "assets/logos/upstreams/gerard-campana-lee.webp",
+        "Rio Claro": "assets/logos/upstreams/rio-claro.webp",
+        "Atl. Madrid U19": "assets/logos/upstreams/atl-madrid-u19.webp",
+        "PSG U23": "assets/logos/upstreams/psg-u23.webp",
+        "Vermont Green": "assets/logos/upstreams/vermont-green.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14784,6 +14788,7 @@
         "Asuncion, Paraguay": "assets/logos/leagues/asuncion-paraguay.webp",
         "Morelos, Mexico": "assets/logos/leagues/morelos-mexico.webp",
         "Zadar, Croatia, Qualifying": "assets/logos/leagues/zadar-croatia-qualifying.webp",
-        "Murcia, Spain, Qualifying": "assets/logos/leagues/murcia-spain-qualifying.webp"
+        "Murcia, Spain, Qualifying": "assets/logos/leagues/murcia-spain-qualifying.webp",
+        "US Open Cup": "assets/logos/leagues/us-open-cup.webp"
     }
 }
