@@ -13407,7 +13407,11 @@
         "Ulcinjska Rivijera Ulcinj": "assets/logos/upstreams/ulcinjska-rivijera-ulcinj.webp",
         "Steel City FC": "assets/logos/upstreams/steel-city-fc.webp",
         "Michigan Rangers FC": "assets/logos/upstreams/michigan-rangers-fc.webp",
-        "Mili Polji\u010dak": "assets/logos/upstreams/mili-polji\u010dak.webp"
+        "Mili Polji\u010dak": "assets/logos/upstreams/mili-polji\u010dak.webp",
+        "Drogheda": "assets/logos/upstreams/drogheda.webp",
+        "Marina Melnikova": "assets/logos/upstreams/marina-melnikova.webp",
+        "J.P.Didoni Bonini": "assets/logos/upstreams/jpdidoni-bonini.webp",
+        "Mariano KEastelboim": "assets/logos/upstreams/mariano-keastelboim.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14868,6 +14872,7 @@
         "Slovenia - League Nova KBM": "assets/logos/leagues/slovenia-league-nova-kbm.webp",
         "South Africa Women in New Zealand, 5 T20I Series": "assets/logos/leagues/south-africa-women-in-new-zealand-5-t20i-series.webp",
         "Danish Superliga, Relegation round": "assets/logos/leagues/danish-superliga-relegation-round.webp",
-        "Hockey Allsvenskan, Playoffs": "assets/logos/leagues/hockey-allsvenskan-playoffs.webp"
+        "Hockey Allsvenskan, Playoffs": "assets/logos/leagues/hockey-allsvenskan-playoffs.webp",
+        "Ireland Premier Division": "assets/logos/leagues/ireland-premier-division.webp"
     }
 }
