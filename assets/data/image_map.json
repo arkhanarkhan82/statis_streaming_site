@@ -13357,7 +13357,11 @@
         "Han Fuyuan": "assets/logos/upstreams/han-fuyuan.webp",
         "Takeru Yuzuki": "assets/logos/upstreams/takeru-yuzuki.webp",
         "Timothee Andriveau": "assets/logos/upstreams/timothee-andriveau.webp",
-        "Diana Maria Ilie": "assets/logos/upstreams/diana-maria-ilie.webp"
+        "Diana Maria Ilie": "assets/logos/upstreams/diana-maria-ilie.webp",
+        "Sencur": "assets/logos/upstreams/sencur.webp",
+        "Jackson Hinderberger": "assets/logos/upstreams/jackson-hinderberger.webp",
+        "Miko Lapalme": "assets/logos/upstreams/miko-lapalme.webp",
+        "Caroline Manzi": "assets/logos/upstreams/caroline-manzi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14814,6 +14818,7 @@
         "US Open Cup": "assets/logos/leagues/us-open-cup.webp",
         "ABA League 2, Playoffs": "assets/logos/leagues/aba-league-2-playoffs.webp",
         "Ekstraliga, Playoffs": "assets/logos/leagues/ekstraliga-playoffs.webp",
-        "World Open 2026": "assets/logos/leagues/world-open-2026.webp"
+        "World Open 2026": "assets/logos/leagues/world-open-2026.webp",
+        "Slovenia - League Nova KBM": "assets/logos/leagues/slovenia-league-nova-kbm.webp"
     }
 }
