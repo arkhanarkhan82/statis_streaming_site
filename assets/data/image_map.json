@@ -13336,7 +13336,25 @@
         "Atl. Madrid U19": "assets/logos/upstreams/atl-madrid-u19.webp",
         "PSG U23": "assets/logos/upstreams/psg-u23.webp",
         "Vermont Green": "assets/logos/upstreams/vermont-green.webp",
-        "Lola Radivojevi\u0107": "assets/logos/upstreams/lola-radivojevi\u0107.webp"
+        "Lola Radivojevi\u0107": "assets/logos/upstreams/lola-radivojevi\u0107.webp",
+        "He Guoqiang": "assets/logos/upstreams/he-guoqiang.webp",
+        "Xu Jiarui": "assets/logos/upstreams/xu-jiarui.webp",
+        "ERA Nymburk": "assets/logos/upstreams/era-nymburk.webp",
+        "AS Denain": "assets/logos/upstreams/as-denain.webp",
+        "Hermine de Nantes Atlantique": "assets/logos/upstreams/hermine-de-nantes-atlantique.webp",
+        "Paris Saint-Germain U19": "assets/logos/upstreams/paris-saint-germain-u19.webp",
+        "Vermont Green FC": "assets/logos/upstreams/vermont-green-fc.webp",
+        "La Serena": "assets/logos/upstreams/la-serena.webp",
+        "Mariam Bolkvadze": "assets/logos/upstreams/mariam-bolkvadze.webp",
+        "Noah Thurner": "assets/logos/upstreams/noah-thurner.webp",
+        "Louis Dussin": "assets/logos/upstreams/louis-dussin.webp",
+        "Niklas Guttau": "assets/logos/upstreams/niklas-guttau.webp",
+        "Lenny Couturier": "assets/logos/upstreams/lenny-couturier.webp",
+        "Sandesh Dattatray Kurale": "assets/logos/upstreams/sandesh-dattatray-kurale.webp",
+        "Vishnu Vardhan": "assets/logos/upstreams/vishnu-vardhan.webp",
+        "Totten C.": "assets/logos/upstreams/totten-c.webp",
+        "Ka Wai Cheung": "assets/logos/upstreams/ka-wai-cheung.webp",
+        "Han Fuyuan": "assets/logos/upstreams/han-fuyuan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14790,6 +14808,9 @@
         "Morelos, Mexico": "assets/logos/leagues/morelos-mexico.webp",
         "Zadar, Croatia, Qualifying": "assets/logos/leagues/zadar-croatia-qualifying.webp",
         "Murcia, Spain, Qualifying": "assets/logos/leagues/murcia-spain-qualifying.webp",
-        "US Open Cup": "assets/logos/leagues/us-open-cup.webp"
+        "US Open Cup": "assets/logos/leagues/us-open-cup.webp",
+        "ABA League 2, Playoffs": "assets/logos/leagues/aba-league-2-playoffs.webp",
+        "Ekstraliga, Playoffs": "assets/logos/leagues/ekstraliga-playoffs.webp",
+        "World Open 2026": "assets/logos/leagues/world-open-2026.webp"
     }
 }
