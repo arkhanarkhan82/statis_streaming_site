@@ -13403,7 +13403,10 @@
         "Colorado Springs": "assets/logos/streamed/colorado-springs.webp",
         "Azteca": "assets/logos/streamed/azteca.webp",
         "Des Moines Menace": "assets/logos/streamed/des-moines-menace.webp",
-        "San Ramon": "assets/logos/streamed/san-ramon.webp"
+        "San Ramon": "assets/logos/streamed/san-ramon.webp",
+        "Ulcinjska Rivijera Ulcinj": "assets/logos/upstreams/ulcinjska-rivijera-ulcinj.webp",
+        "Steel City FC": "assets/logos/upstreams/steel-city-fc.webp",
+        "Michigan Rangers FC": "assets/logos/upstreams/michigan-rangers-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
