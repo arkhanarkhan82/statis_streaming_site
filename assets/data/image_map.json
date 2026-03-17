@@ -13435,7 +13435,9 @@
         "Ruirui Zou": "assets/logos/upstreams/ruirui-zou.webp",
         "Yuhan Wang": "assets/logos/upstreams/yuhan-wang.webp",
         "Huang Yujia": "assets/logos/upstreams/huang-yujia.webp",
-        "Sayaka Ishii": "assets/logos/upstreams/sayaka-ishii.webp"
+        "Sayaka Ishii": "assets/logos/upstreams/sayaka-ishii.webp",
+        "LDU": "assets/logos/upstreams/ldu.webp",
+        "Yao Pengcheng": "assets/logos/upstreams/yao-pengcheng.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14900,6 +14902,7 @@
         "Ireland Premier Division": "assets/logos/leagues/ireland-premier-division.webp",
         "King Cup": "assets/logos/leagues/king-cup.webp",
         "King's Cup": "assets/logos/leagues/kings-cup.webp",
-        "Korisliiga, Qualifying round": "assets/logos/leagues/korisliiga-qualifying-round.webp"
+        "Korisliiga, Qualifying round": "assets/logos/leagues/korisliiga-qualifying-round.webp",
+        "DEL, Playoffs": "assets/logos/leagues/del-playoffs.webp"
     }
 }
