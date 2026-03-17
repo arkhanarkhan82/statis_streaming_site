@@ -13459,7 +13459,9 @@
         "Takuma Obayashi": "assets/logos/upstreams/takuma-obayashi.webp",
         "Sin Yan Happy Lo": "assets/logos/upstreams/sin-yan-happy-lo.webp",
         "Juliane Piron": "assets/logos/upstreams/juliane-piron.webp",
-        "Yaro van Delsen": "assets/logos/upstreams/yaro-van-delsen.webp"
+        "Yaro van Delsen": "assets/logos/upstreams/yaro-van-delsen.webp",
+        "Linda \u0160ev\u010d\u00edkov\u00e1": "assets/logos/upstreams/linda-\u0161ev\u010d\u00edkov\u00e1.webp",
+        "Iljo van Delsen": "assets/logos/upstreams/iljo-van-delsen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14927,6 +14929,7 @@
         "Korisliiga, Qualifying round": "assets/logos/leagues/korisliiga-qualifying-round.webp",
         "DEL, Playoffs": "assets/logos/leagues/del-playoffs.webp",
         "Miami, USA": "assets/logos/leagues/miami-usa.webp",
-        "Orleans Masters - Double": "assets/logos/leagues/orleans-masters-double.webp"
+        "Orleans Masters - Double": "assets/logos/leagues/orleans-masters-double.webp",
+        "Sweden - SHL - Playoff": "assets/logos/leagues/sweden-shl-playoff.webp"
     }
 }
