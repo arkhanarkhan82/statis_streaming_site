@@ -13426,7 +13426,16 @@
         "Vallefoglia W": "assets/logos/upstreams/vallefoglia-w.webp",
         "San Ramon FC": "assets/logos/upstreams/san-ramon-fc.webp",
         "UMBC": "assets/logos/streamed/umbc.webp",
-        "Western Australia": "assets/logos/upstreams/western-australia.webp"
+        "Western Australia": "assets/logos/upstreams/western-australia.webp",
+        "Ey\u00fcp": "assets/logos/upstreams/ey\u00fcp.webp",
+        "FC Motown": "assets/logos/upstreams/fc-motown.webp",
+        "Sakura Tsuji": "assets/logos/upstreams/sakura-tsuji.webp",
+        "Anna Pushkareva": "assets/logos/upstreams/anna-pushkareva.webp",
+        "Meiling Wang": "assets/logos/upstreams/meiling-wang.webp",
+        "Ruirui Zou": "assets/logos/upstreams/ruirui-zou.webp",
+        "Yuhan Wang": "assets/logos/upstreams/yuhan-wang.webp",
+        "Huang Yujia": "assets/logos/upstreams/huang-yujia.webp",
+        "Sayaka Ishii": "assets/logos/upstreams/sayaka-ishii.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14889,6 +14898,8 @@
         "Danish Superliga, Relegation round": "assets/logos/leagues/danish-superliga-relegation-round.webp",
         "Hockey Allsvenskan, Playoffs": "assets/logos/leagues/hockey-allsvenskan-playoffs.webp",
         "Ireland Premier Division": "assets/logos/leagues/ireland-premier-division.webp",
-        "King Cup": "assets/logos/leagues/king-cup.webp"
+        "King Cup": "assets/logos/leagues/king-cup.webp",
+        "King's Cup": "assets/logos/leagues/kings-cup.webp",
+        "Korisliiga, Qualifying round": "assets/logos/leagues/korisliiga-qualifying-round.webp"
     }
 }
