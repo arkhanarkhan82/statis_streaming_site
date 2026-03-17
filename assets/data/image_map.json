@@ -13437,7 +13437,19 @@
         "Huang Yujia": "assets/logos/upstreams/huang-yujia.webp",
         "Sayaka Ishii": "assets/logos/upstreams/sayaka-ishii.webp",
         "LDU": "assets/logos/upstreams/ldu.webp",
-        "Yao Pengcheng": "assets/logos/upstreams/yao-pengcheng.webp"
+        "Yao Pengcheng": "assets/logos/upstreams/yao-pengcheng.webp",
+        "FK Kosice": "assets/logos/upstreams/fk-kosice.webp",
+        "Richard Antoni": "assets/logos/upstreams/richard-antoni.webp",
+        "Radu Mihai Papoe": "assets/logos/upstreams/radu-mihai-papoe.webp",
+        "Ziga Sesko": "assets/logos/upstreams/ziga-sesko.webp",
+        "Kenny de Schepper": "assets/logos/upstreams/kenny-de-schepper.webp",
+        "Muhamad Rifqi Fitriadi": "assets/logos/upstreams/muhamad-rifqi-fitriadi.webp",
+        "Thanapet Chanta": "assets/logos/upstreams/thanapet-chanta.webp",
+        "Arnav Vijay Paparkar": "assets/logos/upstreams/arnav-vijay-paparkar.webp",
+        "Tiana Tian Deng": "assets/logos/upstreams/tiana-tian-deng.webp",
+        "Aaron Gabet": "assets/logos/upstreams/aaron-gabet.webp",
+        "Rachel Sugden": "assets/logos/upstreams/rachel-sugden.webp",
+        "Sakura Masuki": "assets/logos/upstreams/sakura-masuki.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14903,6 +14915,7 @@
         "King Cup": "assets/logos/leagues/king-cup.webp",
         "King's Cup": "assets/logos/leagues/kings-cup.webp",
         "Korisliiga, Qualifying round": "assets/logos/leagues/korisliiga-qualifying-round.webp",
-        "DEL, Playoffs": "assets/logos/leagues/del-playoffs.webp"
+        "DEL, Playoffs": "assets/logos/leagues/del-playoffs.webp",
+        "Miami, USA": "assets/logos/leagues/miami-usa.webp"
     }
 }
