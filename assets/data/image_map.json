@@ -13474,7 +13474,9 @@
         "Ryan Haviland": "assets/logos/upstreams/ryan-haviland.webp",
         "Christasha McNeil": "assets/logos/upstreams/christasha-mcneil.webp",
         "Jim Hendrikx": "assets/logos/upstreams/jim-hendrikx.webp",
-        "Avi Shugar": "assets/logos/upstreams/avi-shugar.webp"
+        "Avi Shugar": "assets/logos/upstreams/avi-shugar.webp",
+        "Thomas Linley": "assets/logos/upstreams/thomas-linley.webp",
+        "Evan Wen": "assets/logos/upstreams/evan-wen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14945,6 +14947,8 @@
         "Orleans Masters - Double": "assets/logos/leagues/orleans-masters-double.webp",
         "Sweden - SHL - Playoff": "assets/logos/leagues/sweden-shl-playoff.webp",
         "NCAA Division I, Championship": "assets/logos/leagues/ncaa-division-i-championship.webp",
-        "WTA Miami": "assets/logos/leagues/wta-miami.webp"
+        "WTA Miami": "assets/logos/leagues/wta-miami.webp",
+        "Finland - Korisliiga (W) - Playoff": "assets/logos/leagues/finland-korisliiga-w-playoff.webp",
+        "Korisliiga, Women, Playoffs": "assets/logos/leagues/korisliiga-women-playoffs.webp"
     }
 }
