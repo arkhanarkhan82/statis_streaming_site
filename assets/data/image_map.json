@@ -13468,7 +13468,13 @@
         "Northern Virginia FC": "assets/logos/upstreams/northern-virginia-fc.webp",
         "Andreja Petrovic": "assets/logos/upstreams/andreja-petrovic.webp",
         "Maxwell Exsted": "assets/logos/upstreams/maxwell-exsted.webp",
-        "Jens Holger Nissen": "assets/logos/upstreams/jens-holger-nissen.webp"
+        "Jens Holger Nissen": "assets/logos/upstreams/jens-holger-nissen.webp",
+        "Abril Cardenas Olivares": "assets/logos/upstreams/abril-cardenas-olivares.webp",
+        "Martin Maldonado": "assets/logos/upstreams/martin-maldonado.webp",
+        "Ryan Haviland": "assets/logos/upstreams/ryan-haviland.webp",
+        "Christasha McNeil": "assets/logos/upstreams/christasha-mcneil.webp",
+        "Jim Hendrikx": "assets/logos/upstreams/jim-hendrikx.webp",
+        "Avi Shugar": "assets/logos/upstreams/avi-shugar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14938,6 +14944,7 @@
         "Miami, USA": "assets/logos/leagues/miami-usa.webp",
         "Orleans Masters - Double": "assets/logos/leagues/orleans-masters-double.webp",
         "Sweden - SHL - Playoff": "assets/logos/leagues/sweden-shl-playoff.webp",
-        "NCAA Division I, Championship": "assets/logos/leagues/ncaa-division-i-championship.webp"
+        "NCAA Division I, Championship": "assets/logos/leagues/ncaa-division-i-championship.webp",
+        "WTA Miami": "assets/logos/leagues/wta-miami.webp"
     }
 }
