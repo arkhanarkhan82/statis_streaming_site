@@ -13461,7 +13461,10 @@
         "Juliane Piron": "assets/logos/upstreams/juliane-piron.webp",
         "Yaro van Delsen": "assets/logos/upstreams/yaro-van-delsen.webp",
         "Linda \u0160ev\u010d\u00edkov\u00e1": "assets/logos/upstreams/linda-\u0161ev\u010d\u00edkov\u00e1.webp",
-        "Iljo van Delsen": "assets/logos/upstreams/iljo-van-delsen.webp"
+        "Iljo van Delsen": "assets/logos/upstreams/iljo-van-delsen.webp",
+        "Ian Burns": "assets/logos/upstreams/ian-burns.webp",
+        "Dominique Rolland": "assets/logos/upstreams/dominique-rolland.webp",
+        "Linda Klimovi\u010dov\u00e1": "assets/logos/upstreams/linda-klimovi\u010dov\u00e1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14930,6 +14933,7 @@
         "DEL, Playoffs": "assets/logos/leagues/del-playoffs.webp",
         "Miami, USA": "assets/logos/leagues/miami-usa.webp",
         "Orleans Masters - Double": "assets/logos/leagues/orleans-masters-double.webp",
-        "Sweden - SHL - Playoff": "assets/logos/leagues/sweden-shl-playoff.webp"
+        "Sweden - SHL - Playoff": "assets/logos/leagues/sweden-shl-playoff.webp",
+        "NCAA Division I, Championship": "assets/logos/leagues/ncaa-division-i-championship.webp"
     }
 }
