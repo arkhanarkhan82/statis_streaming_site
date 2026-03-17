@@ -13416,7 +13416,15 @@
         "N\u00fcssle F.": "assets/logos/upstreams/n\u00fcssle-f.webp",
         "Marco Fu.": "assets/logos/upstreams/marco-fu.webp",
         "Boiko I.": "assets/logos/upstreams/boiko-i.webp",
-        "Steven Hallworth": "assets/logos/upstreams/steven-hallworth.webp"
+        "Steven Hallworth": "assets/logos/upstreams/steven-hallworth.webp",
+        "Azteca FC [CA]": "assets/logos/upstreams/azteca-fc-ca.webp",
+        "Sunderland U18": "assets/logos/upstreams/sunderland-u18.webp",
+        "Motown": "assets/logos/upstreams/motown.webp",
+        "Hartford": "assets/logos/upstreams/hartford.webp",
+        "Lahti Basketball": "assets/logos/upstreams/lahti-basketball.webp",
+        "Bisons Loimaa": "assets/logos/upstreams/bisons-loimaa.webp",
+        "Vallefoglia W": "assets/logos/upstreams/vallefoglia-w.webp",
+        "San Ramon FC": "assets/logos/upstreams/san-ramon-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14878,6 +14886,7 @@
         "South Africa Women in New Zealand, 5 T20I Series": "assets/logos/leagues/south-africa-women-in-new-zealand-5-t20i-series.webp",
         "Danish Superliga, Relegation round": "assets/logos/leagues/danish-superliga-relegation-round.webp",
         "Hockey Allsvenskan, Playoffs": "assets/logos/leagues/hockey-allsvenskan-playoffs.webp",
-        "Ireland Premier Division": "assets/logos/leagues/ireland-premier-division.webp"
+        "Ireland Premier Division": "assets/logos/leagues/ireland-premier-division.webp",
+        "King Cup": "assets/logos/leagues/king-cup.webp"
     }
 }
