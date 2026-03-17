@@ -13498,7 +13498,8 @@
         "Florida Badgers FC": "assets/logos/upstreams/florida-badgers-fc.webp",
         "Miami Red Force": "assets/logos/upstreams/miami-red-force.webp",
         "Southern Indiana FC": "assets/logos/upstreams/southern-indiana-fc.webp",
-        "SC Vistula Garfield": "assets/logos/upstreams/sc-vistula-garfield.webp"
+        "SC Vistula Garfield": "assets/logos/upstreams/sc-vistula-garfield.webp",
+        "Allan Taylor": "assets/logos/upstreams/allan-taylor.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14971,6 +14972,7 @@
         "NCAA Division I, Championship": "assets/logos/leagues/ncaa-division-i-championship.webp",
         "WTA Miami": "assets/logos/leagues/wta-miami.webp",
         "Finland - Korisliiga (W) - Playoff": "assets/logos/leagues/finland-korisliiga-w-playoff.webp",
-        "Korisliiga, Women, Playoffs": "assets/logos/leagues/korisliiga-women-playoffs.webp"
+        "Korisliiga, Women, Playoffs": "assets/logos/leagues/korisliiga-women-playoffs.webp",
+        "WTA - Miami (USA)": "assets/logos/leagues/wta-miami-usa.webp"
     }
 }
