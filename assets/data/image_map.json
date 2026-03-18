@@ -13580,7 +13580,8 @@
         "Ristozi FC": "assets/logos/upstreams/ristozi-fc.webp",
         "Flint City Bucks": "assets/logos/upstreams/flint-city-bucks.webp",
         "Flower City Union": "assets/logos/upstreams/flower-city-union.webp",
-        "NY Renegades FC": "assets/logos/upstreams/ny-renegades-fc.webp"
+        "NY Renegades FC": "assets/logos/upstreams/ny-renegades-fc.webp",
+        "Rytas": "assets/logos/upstreams/rytas.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15069,6 +15070,7 @@
         "Sweden - SHL - Playout": "assets/logos/leagues/sweden-shl-playout.webp",
         "Coppa Italia Serie C": "assets/logos/leagues/coppa-italia-serie-c.webp",
         "Ecuador - Serie B": "assets/logos/leagues/ecuador-serie-b.webp",
-        "AFC Asian Cup, Women, Playoffs": "assets/logos/leagues/afc-asian-cup-women-playoffs.webp"
+        "AFC Asian Cup, Women, Playoffs": "assets/logos/leagues/afc-asian-cup-women-playoffs.webp",
+        "Slovakia Cup": "assets/logos/leagues/slovakia-cup.webp"
     }
 }
