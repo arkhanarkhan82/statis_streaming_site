@@ -13569,7 +13569,10 @@
         "Lucia Santos Sanchez": "assets/logos/upstreams/lucia-santos-sanchez.webp",
         "Neus Torner Sensano": "assets/logos/upstreams/neus-torner-sensano.webp",
         "Kuzey Cekirge": "assets/logos/upstreams/kuzey-cekirge.webp",
-        "Ela Nala Mili\u0107": "assets/logos/upstreams/ela-nala-mili\u0107.webp"
+        "Ela Nala Mili\u0107": "assets/logos/upstreams/ela-nala-mili\u0107.webp",
+        "Latina Calcio": "assets/logos/upstreams/latina-calcio.webp",
+        "Vinotinto": "assets/logos/upstreams/vinotinto.webp",
+        "Vargas Torres": "assets/logos/upstreams/vargas-torres.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15055,6 +15058,8 @@
         "Orleans Masters (W)": "assets/logos/leagues/orleans-masters-w.webp",
         "Orleans Masters": "assets/logos/leagues/orleans-masters.webp",
         "ATP Miami": "assets/logos/leagues/atp-miami.webp",
-        "Sweden - SHL - Playout": "assets/logos/leagues/sweden-shl-playout.webp"
+        "Sweden - SHL - Playout": "assets/logos/leagues/sweden-shl-playout.webp",
+        "Coppa Italia Serie C": "assets/logos/leagues/coppa-italia-serie-c.webp",
+        "Ecuador - Serie B": "assets/logos/leagues/ecuador-serie-b.webp"
     }
 }
