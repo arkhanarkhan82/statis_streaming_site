@@ -13594,7 +13594,9 @@
         "Ela Nala Milic": "assets/logos/upstreams/ela-nala-milic.webp",
         "Nurullah Sarac": "assets/logos/upstreams/nurullah-sarac.webp",
         "Adam Konczol": "assets/logos/upstreams/adam-konczol.webp",
-        "Leksands IF": "assets/logos/upstreams/leksands-if.webp"
+        "Leksands IF": "assets/logos/upstreams/leksands-if.webp",
+        "Michael Antonius": "assets/logos/upstreams/michael-antonius.webp",
+        "Artemijs Zizins": "assets/logos/upstreams/artemijs-zizins.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15085,6 +15087,7 @@
         "Ecuador - Serie B": "assets/logos/leagues/ecuador-serie-b.webp",
         "AFC Asian Cup, Women, Playoffs": "assets/logos/leagues/afc-asian-cup-women-playoffs.webp",
         "Slovakia Cup": "assets/logos/leagues/slovakia-cup.webp",
-        "SHL, Relegation": "assets/logos/leagues/shl-relegation.webp"
+        "SHL, Relegation": "assets/logos/leagues/shl-relegation.webp",
+        "U20 CONMEBOL Libertadores, Knockout stage": "assets/logos/leagues/u20-conmebol-libertadores-knockout-stage.webp"
     }
 }
