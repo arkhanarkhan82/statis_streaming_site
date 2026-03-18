@@ -13563,7 +13563,13 @@
         "Miles Jones": "assets/logos/upstreams/miles-jones.webp",
         "Volodymyr Iakubenko": "assets/logos/upstreams/volodymyr-iakubenko.webp",
         "Page J.": "assets/logos/upstreams/page-j.webp",
-        "Anna Tatranova": "assets/logos/upstreams/anna-tatranova.webp"
+        "Anna Tatranova": "assets/logos/upstreams/anna-tatranova.webp",
+        "Xu Si.": "assets/logos/upstreams/xu-si.webp",
+        "Matthew Selt": "assets/logos/upstreams/matthew-selt.webp",
+        "Lucia Santos Sanchez": "assets/logos/upstreams/lucia-santos-sanchez.webp",
+        "Neus Torner Sensano": "assets/logos/upstreams/neus-torner-sensano.webp",
+        "Kuzey Cekirge": "assets/logos/upstreams/kuzey-cekirge.webp",
+        "Ela Nala Mili\u0107": "assets/logos/upstreams/ela-nala-mili\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15047,6 +15053,7 @@
         "Extraliga, Playoff": "assets/logos/leagues/extraliga-playoff.webp",
         "Murcia, Spain, Doubles": "assets/logos/leagues/murcia-spain-doubles.webp",
         "Orleans Masters (W)": "assets/logos/leagues/orleans-masters-w.webp",
-        "Orleans Masters": "assets/logos/leagues/orleans-masters.webp"
+        "Orleans Masters": "assets/logos/leagues/orleans-masters.webp",
+        "ATP Miami": "assets/logos/leagues/atp-miami.webp"
     }
 }
