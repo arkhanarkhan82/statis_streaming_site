@@ -13506,7 +13506,30 @@
         "Valley 559": "assets/logos/streamed/valley-559.webp",
         "Hawthorn Football Club": "assets/logos/streamed/hawthorn-football-club.webp",
         "Cruizers FC": "assets/logos/upstreams/cruizers-fc.webp",
-        "Laguna United FC": "assets/logos/upstreams/laguna-united-fc.webp"
+        "Laguna United FC": "assets/logos/upstreams/laguna-united-fc.webp",
+        "South Korea (W)": "assets/logos/upstreams/south-korea-w.webp",
+        "Japan (W)": "assets/logos/upstreams/japan-w.webp",
+        "Vicente FC U23": "assets/logos/upstreams/vicente-fc-u23.webp",
+        "Al Ittihad Jeddah": "assets/logos/upstreams/al-ittihad-jeddah.webp",
+        "West Ham (W)": "assets/logos/upstreams/west-ham-w.webp",
+        "Man Utd (W)": "assets/logos/upstreams/man-utd-w.webp",
+        "Asheville City": "assets/logos/upstreams/asheville-city.webp",
+        "Paysandu PA": "assets/logos/upstreams/paysandu-pa.webp",
+        "Operario-PR": "assets/logos/upstreams/operario-pr.webp",
+        "Azteca FC": "assets/logos/upstreams/azteca-fc.webp",
+        "Gimnasia Esgrima Mendoza": "assets/logos/upstreams/gimnasia-esgrima-mendoza.webp",
+        "Melbourne City (W)": "assets/logos/upstreams/melbourne-city-w.webp",
+        "Adelaide United (W)": "assets/logos/upstreams/adelaide-united-w.webp",
+        "Anyang": "assets/logos/upstreams/anyang.webp",
+        "Daejeon Citizen": "assets/logos/upstreams/daejeon-citizen.webp",
+        "Tampa Bay Sun (W)": "assets/logos/upstreams/tampa-bay-sun-w.webp",
+        "Brooklyn (W)": "assets/logos/upstreams/brooklyn-w.webp",
+        "Red Force FC": "assets/logos/upstreams/red-force-fc.webp",
+        "Lexington SC (W)": "assets/logos/upstreams/lexington-sc-w.webp",
+        "New Mexicoo United": "assets/logos/upstreams/new-mexicoo-united.webp",
+        "Chinese Taipei W": "assets/logos/upstreams/chinese-taipei-w.webp",
+        "North Korea W": "assets/logos/upstreams/north-korea-w.webp",
+        "Orange County": "assets/logos/upstreams/orange-county.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -14980,6 +15003,11 @@
         "WTA Miami": "assets/logos/leagues/wta-miami.webp",
         "Finland - Korisliiga (W) - Playoff": "assets/logos/leagues/finland-korisliiga-w-playoff.webp",
         "Korisliiga, Women, Playoffs": "assets/logos/leagues/korisliiga-women-playoffs.webp",
-        "WTA - Miami (USA)": "assets/logos/leagues/wta-miami-usa.webp"
+        "WTA - Miami (USA)": "assets/logos/leagues/wta-miami-usa.webp",
+        "USA - Cup": "assets/logos/leagues/usa-cup.webp",
+        "U23 Liga Revelacao, Qualifying Round": "assets/logos/leagues/u23-liga-revelacao-qualifying-round.webp",
+        "Kings Cup": "assets/logos/leagues/kings-cup.webp",
+        "Brazil Copa": "assets/logos/leagues/brazil-copa.webp",
+        "Ecuador - Serie A - Phase 1": "assets/logos/leagues/ecuador-serie-a-phase-1.webp"
     }
 }
