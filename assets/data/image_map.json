@@ -13541,7 +13541,29 @@
         "Melbourne City FC Women": "assets/logos/streamed/melbourne-city-fc-women.webp",
         "Adelaide United Women": "assets/logos/streamed/adelaide-united-women.webp",
         "Canterbury Bankstown Bulldogs": "assets/logos/streamed/canterbury-bankstown-bulldogs.webp",
-        "Tohoku Rakuten Golden Eagles": "assets/logos/streamed/tohoku-rakuten-golden-eagles.webp"
+        "Tohoku Rakuten Golden Eagles": "assets/logos/streamed/tohoku-rakuten-golden-eagles.webp",
+        "Atmosfera": "assets/logos/upstreams/atmosfera.webp",
+        "BE1 NFA": "assets/logos/upstreams/be1-nfa.webp",
+        "Hegelmann B": "assets/logos/upstreams/hegelmann-b.webp",
+        "Ignacio Parisca Romera": "assets/logos/upstreams/ignacio-parisca-romera.webp",
+        "Oscar Jose Gutierrez": "assets/logos/upstreams/oscar-jose-gutierrez.webp",
+        "Jordi Garcia Mestre": "assets/logos/upstreams/jordi-garcia-mestre.webp",
+        "Leonid Sheyngezikht": "assets/logos/upstreams/leonid-sheyngezikht.webp",
+        "Dimitris Azoidis": "assets/logos/upstreams/dimitris-azoidis.webp",
+        "Benjamin Pietri": "assets/logos/upstreams/benjamin-pietri.webp",
+        "Maria Garcia Cid": "assets/logos/upstreams/maria-garcia-cid.webp",
+        "Robert Watzka": "assets/logos/upstreams/robert-watzka.webp",
+        "Carlos Giraldi": "assets/logos/upstreams/carlos-giraldi.webp",
+        "Hiromasa Koyama": "assets/logos/upstreams/hiromasa-koyama.webp",
+        "Darrshan Suresh": "assets/logos/upstreams/darrshan-suresh.webp",
+        "Benoit Torcq": "assets/logos/upstreams/benoit-torcq.webp",
+        "Brancaccio R / de la Cierva Sanchez P": "assets/logos/upstreams/brancaccio-r-de-la-cierva-sanchez-p.webp",
+        "Llamas Ruiz P / Winter L\u00f3pez B": "assets/logos/upstreams/llamas-ruiz-p-winter-l\u00f3pez-b.webp",
+        "Adan Freire Da Silva": "assets/logos/upstreams/adan-freire-da-silva.webp",
+        "Miles Jones": "assets/logos/upstreams/miles-jones.webp",
+        "Volodymyr Iakubenko": "assets/logos/upstreams/volodymyr-iakubenko.webp",
+        "Page J.": "assets/logos/upstreams/page-j.webp",
+        "Anna Tatranova": "assets/logos/upstreams/anna-tatranova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15020,6 +15042,11 @@
         "U23 Liga Revelacao, Qualifying Round": "assets/logos/leagues/u23-liga-revelacao-qualifying-round.webp",
         "Kings Cup": "assets/logos/leagues/kings-cup.webp",
         "Brazil Copa": "assets/logos/leagues/brazil-copa.webp",
-        "Ecuador - Serie A - Phase 1": "assets/logos/leagues/ecuador-serie-a-phase-1.webp"
+        "Ecuador - Serie A - Phase 1": "assets/logos/leagues/ecuador-serie-a-phase-1.webp",
+        "Bahrain - Super Cup": "assets/logos/leagues/bahrain-super-cup.webp",
+        "Extraliga, Playoff": "assets/logos/leagues/extraliga-playoff.webp",
+        "Murcia, Spain, Doubles": "assets/logos/leagues/murcia-spain-doubles.webp",
+        "Orleans Masters (W)": "assets/logos/leagues/orleans-masters-w.webp",
+        "Orleans Masters": "assets/logos/leagues/orleans-masters.webp"
     }
 }
