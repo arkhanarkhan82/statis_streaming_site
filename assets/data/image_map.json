@@ -13624,7 +13624,10 @@
         "WEast indies (W)": "assets/logos/upstreams/weast-indies-w.webp",
         "Australia (W)": "assets/logos/upstreams/australia-w.webp",
         "Williams R.": "assets/logos/upstreams/williams-r.webp",
-        "Zhang A.": "assets/logos/upstreams/zhang-a.webp"
+        "Zhang A.": "assets/logos/upstreams/zhang-a.webp",
+        "Gino van Steenis": "assets/logos/upstreams/gino-van-steenis.webp",
+        "Mark Ewen": "assets/logos/upstreams/mark-ewen.webp",
+        "Aleksa \u0106iri\u0107": "assets/logos/upstreams/aleksa-\u0107iri\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15118,6 +15121,7 @@
         "SHL, Relegation": "assets/logos/leagues/shl-relegation.webp",
         "U20 CONMEBOL Libertadores, Knockout stage": "assets/logos/leagues/u20-conmebol-libertadores-knockout-stage.webp",
         "1. Division A, Playoffs": "assets/logos/leagues/1-division-a-playoffs.webp",
-        "NRL - Regular Season": "assets/logos/leagues/nrl-regular-season.webp"
+        "NRL - Regular Season": "assets/logos/leagues/nrl-regular-season.webp",
+        "PFL Madrid: Van Steenis vs. Edwards": "assets/logos/leagues/pfl-madrid-van-steenis-vs-edwards.webp"
     }
 }
