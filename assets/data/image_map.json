@@ -13643,7 +13643,16 @@
         "Antonio Trocoli": "assets/logos/streamed/antonio-trocoli.webp",
         "Mario Pinto": "assets/logos/streamed/mario-pinto.webp",
         "Vanderbilt Commodores": "assets/logos/upstreams/vanderbilt-commodores.webp",
-        "Yusuf Yasar": "assets/logos/upstreams/yusuf-yasar.webp"
+        "Yusuf Yasar": "assets/logos/upstreams/yusuf-yasar.webp",
+        "Billy USArez": "assets/logos/upstreams/billy-usarez.webp",
+        "Dmitriy Panarin": "assets/logos/upstreams/dmitriy-panarin.webp",
+        "Collins Valentine Filimon": "assets/logos/upstreams/collins-valentine-filimon.webp",
+        "Ade Resky Dwicahyo": "assets/logos/upstreams/ade-resky-dwicahyo.webp",
+        "Milan Dratva": "assets/logos/upstreams/milan-dratva.webp",
+        "Ines Castillo": "assets/logos/upstreams/ines-castillo.webp",
+        "Disha Gupta": "assets/logos/upstreams/disha-gupta.webp",
+        "Yasmine Hamza": "assets/logos/upstreams/yasmine-hamza.webp",
+        "Weronika Gorniak": "assets/logos/upstreams/weronika-gorniak.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15155,6 +15164,8 @@
         "UTR PTT Gyor Women 01, Group C": "assets/logos/leagues/utr-ptt-gyor-women-01-group-c.webp",
         "UTR PTT Moraga Men +H 01, Group A": "assets/logos/leagues/utr-ptt-moraga-men-h-01-group-a.webp",
         "UTR PTT Newport Beach Men 06, Group D": "assets/logos/leagues/utr-ptt-newport-beach-men-06-group-d.webp",
-        "UTR PTT Gyor Women 01, Group B": "assets/logos/leagues/utr-ptt-gyor-women-01-group-b.webp"
+        "UTR PTT Gyor Women 01, Group B": "assets/logos/leagues/utr-ptt-gyor-women-01-group-b.webp",
+        "National League, Playoffs": "assets/logos/leagues/national-league-playoffs.webp",
+        "UTR PTT Gyor Women 01, Group D": "assets/logos/leagues/utr-ptt-gyor-women-01-group-d.webp"
     }
 }
