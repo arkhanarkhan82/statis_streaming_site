@@ -13662,7 +13662,14 @@
         "Naxara": "assets/logos/upstreams/naxara.webp",
         "Movsar Evloev": "assets/logos/upstreams/movsar-evloev.webp",
         "Lerone Murphy": "assets/logos/upstreams/lerone-murphy.webp",
-        "Axel Sola": "assets/logos/upstreams/axel-sola.webp"
+        "Axel Sola": "assets/logos/upstreams/axel-sola.webp",
+        "Ningbo FC": "assets/logos/upstreams/ningbo-fc.webp",
+        "St Marys": "assets/logos/upstreams/st-marys.webp",
+        "Shenzhen Juniors FC": "assets/logos/upstreams/shenzhen-juniors-fc.webp",
+        "CD El Nacional": "assets/logos/upstreams/cd-el-nacional.webp",
+        "Independiente Juniors": "assets/logos/upstreams/independiente-juniors.webp",
+        "Macau B.Bears": "assets/logos/upstreams/macau-bbears.webp",
+        "West Indies Women": "assets/logos/upstreams/west-indies-women.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15180,6 +15187,7 @@
         "Liga 2, Promotion Round": "assets/logos/leagues/liga-2-promotion-round.webp",
         "Golden League - Denmark": "assets/logos/leagues/golden-league-denmark.webp",
         "Swiss - NLA - Playoff": "assets/logos/leagues/swiss-nla-playoff.webp",
-        "UFC Fight Night: Evloev vs. Murphy": "assets/logos/leagues/ufc-fight-night-evloev-vs-murphy.webp"
+        "UFC Fight Night: Evloev vs. Murphy": "assets/logos/leagues/ufc-fight-night-evloev-vs-murphy.webp",
+        "Australia Women in West Indies, 3 T20I Series": "assets/logos/leagues/australia-women-in-west-indies-3-t20i-series.webp"
     }
 }
