@@ -13652,7 +13652,17 @@
         "Ines Castillo": "assets/logos/upstreams/ines-castillo.webp",
         "Disha Gupta": "assets/logos/upstreams/disha-gupta.webp",
         "Yasmine Hamza": "assets/logos/upstreams/yasmine-hamza.webp",
-        "Weronika Gorniak": "assets/logos/upstreams/weronika-gorniak.webp"
+        "Weronika Gorniak": "assets/logos/upstreams/weronika-gorniak.webp",
+        "Deportivo Rinc\u00f3n": "assets/logos/streamed/deportivo-rinc\u00f3n.webp",
+        "St Kilda Football Club": "assets/logos/streamed/st-kilda-football-club.webp",
+        "California Baptist Lancers": "assets/logos/upstreams/california-baptist-lancers.webp",
+        "Blackburn U18": "assets/logos/upstreams/blackburn-u18.webp",
+        "BSK Bijelo Brdo": "assets/logos/upstreams/bsk-bijelo-brdo.webp",
+        "Gernika Club": "assets/logos/upstreams/gernika-club.webp",
+        "Naxara": "assets/logos/upstreams/naxara.webp",
+        "Movsar Evloev": "assets/logos/upstreams/movsar-evloev.webp",
+        "Lerone Murphy": "assets/logos/upstreams/lerone-murphy.webp",
+        "Axel Sola": "assets/logos/upstreams/axel-sola.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15166,6 +15176,10 @@
         "UTR PTT Newport Beach Men 06, Group D": "assets/logos/leagues/utr-ptt-newport-beach-men-06-group-d.webp",
         "UTR PTT Gyor Women 01, Group B": "assets/logos/leagues/utr-ptt-gyor-women-01-group-b.webp",
         "National League, Playoffs": "assets/logos/leagues/national-league-playoffs.webp",
-        "UTR PTT Gyor Women 01, Group D": "assets/logos/leagues/utr-ptt-gyor-women-01-group-d.webp"
+        "UTR PTT Gyor Women 01, Group D": "assets/logos/leagues/utr-ptt-gyor-women-01-group-d.webp",
+        "Liga 2, Promotion Round": "assets/logos/leagues/liga-2-promotion-round.webp",
+        "Golden League - Denmark": "assets/logos/leagues/golden-league-denmark.webp",
+        "Swiss - NLA - Playoff": "assets/logos/leagues/swiss-nla-playoff.webp",
+        "UFC Fight Night: Evloev vs. Murphy": "assets/logos/leagues/ufc-fight-night-evloev-vs-murphy.webp"
     }
 }
