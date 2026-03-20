@@ -13708,7 +13708,9 @@
         "Scott Williams": "assets/logos/upstreams/scott-williams.webp",
         "Ricky Evans": "assets/logos/upstreams/ricky-evans.webp",
         "Enosis Neon Paralimniou": "assets/logos/upstreams/enosis-neon-paralimniou.webp",
-        "Centauros de Portuguesa": "assets/logos/upstreams/centauros-de-portuguesa.webp"
+        "Centauros de Portuguesa": "assets/logos/upstreams/centauros-de-portuguesa.webp",
+        "Racing Power FC": "assets/logos/upstreams/racing-power-fc.webp",
+        "Thibault Tricole": "assets/logos/upstreams/thibault-tricole.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15237,6 +15239,7 @@
         "1. Bundesliga, Women, Playoffs": "assets/logos/leagues/1-bundesliga-women-playoffs.webp",
         "Belgian Darts Open": "assets/logos/leagues/belgian-darts-open.webp",
         "Cyprus League by Stoiximan, Relegation group": "assets/logos/leagues/cyprus-league-by-stoiximan-relegation-group.webp",
-        "China Super League": "assets/logos/leagues/china-super-league.webp"
+        "China Super League": "assets/logos/leagues/china-super-league.webp",
+        "NCAA College Basketball": "assets/logos/leagues/ncaa-college-basketball.webp"
     }
 }
