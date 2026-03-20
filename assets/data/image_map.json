@@ -13669,7 +13669,15 @@
         "CD El Nacional": "assets/logos/upstreams/cd-el-nacional.webp",
         "Independiente Juniors": "assets/logos/upstreams/independiente-juniors.webp",
         "Macau B.Bears": "assets/logos/upstreams/macau-bbears.webp",
-        "West Indies Women": "assets/logos/upstreams/west-indies-women.webp"
+        "West Indies Women": "assets/logos/upstreams/west-indies-women.webp",
+        "Bochum U19": "assets/logos/upstreams/bochum-u19.webp",
+        "Stuttgart U19": "assets/logos/upstreams/stuttgart-u19.webp",
+        "NK Bsk Bijelo Brdo": "assets/logos/upstreams/nk-bsk-bijelo-brdo.webp",
+        "Ried": "assets/logos/upstreams/ried.webp",
+        "Paris Acad\u00e9mie Respect Int\u00e9grit\u00e9 Sport": "assets/logos/upstreams/paris-acad\u00e9mie-respect-int\u00e9grit\u00e9-sport.webp",
+        "BCM Gravelines-Dunkerque II": "assets/logos/upstreams/bcm-gravelines-dunkerque-ii.webp",
+        "ADA Blois Basket": "assets/logos/upstreams/ada-blois-basket.webp",
+        "West Indies W": "assets/logos/upstreams/west-indies-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15188,6 +15196,9 @@
         "Golden League - Denmark": "assets/logos/leagues/golden-league-denmark.webp",
         "Swiss - NLA - Playoff": "assets/logos/leagues/swiss-nla-playoff.webp",
         "UFC Fight Night: Evloev vs. Murphy": "assets/logos/leagues/ufc-fight-night-evloev-vs-murphy.webp",
-        "Australia Women in West Indies, 3 T20I Series": "assets/logos/leagues/australia-women-in-west-indies-3-t20i-series.webp"
+        "Australia Women in West Indies, 3 T20I Series": "assets/logos/leagues/australia-women-in-west-indies-3-t20i-series.webp",
+        "Nationale 3 - Poule F": "assets/logos/leagues/nationale-3-poule-f.webp",
+        "Golden League": "assets/logos/leagues/golden-league.webp",
+        "EHF Champions League, Women, Playoffs": "assets/logos/leagues/ehf-champions-league-women-playoffs.webp"
     }
 }
