@@ -13677,7 +13677,10 @@
         "Paris Acad\u00e9mie Respect Int\u00e9grit\u00e9 Sport": "assets/logos/upstreams/paris-acad\u00e9mie-respect-int\u00e9grit\u00e9-sport.webp",
         "BCM Gravelines-Dunkerque II": "assets/logos/upstreams/bcm-gravelines-dunkerque-ii.webp",
         "ADA Blois Basket": "assets/logos/upstreams/ada-blois-basket.webp",
-        "West Indies W": "assets/logos/upstreams/west-indies-w.webp"
+        "West Indies W": "assets/logos/upstreams/west-indies-w.webp",
+        "Vion Zlate Moravce": "assets/logos/upstreams/vion-zlate-moravce.webp",
+        "Sl. Bratislava B": "assets/logos/upstreams/sl-bratislava-b.webp",
+        "Trotamundos de Carabobo": "assets/logos/upstreams/trotamundos-de-carabobo.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15199,6 +15202,7 @@
         "Australia Women in West Indies, 3 T20I Series": "assets/logos/leagues/australia-women-in-west-indies-3-t20i-series.webp",
         "Nationale 3 - Poule F": "assets/logos/leagues/nationale-3-poule-f.webp",
         "Golden League": "assets/logos/leagues/golden-league.webp",
-        "EHF Champions League, Women, Playoffs": "assets/logos/leagues/ehf-champions-league-women-playoffs.webp"
+        "EHF Champions League, Women, Playoffs": "assets/logos/leagues/ehf-champions-league-women-playoffs.webp",
+        "Liiga Playoffs": "assets/logos/leagues/liiga-playoffs.webp"
     }
 }
