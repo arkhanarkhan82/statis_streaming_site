@@ -13704,7 +13704,9 @@
         "Losene Keita": "assets/logos/upstreams/losene-keita.webp",
         "Kurtis Campbell": "assets/logos/upstreams/kurtis-campbell.webp",
         "Iwo Baraniewski": "assets/logos/upstreams/iwo-baraniewski.webp",
-        "Alex Mol\u010dan": "assets/logos/upstreams/alex-mol\u010dan.webp"
+        "Alex Mol\u010dan": "assets/logos/upstreams/alex-mol\u010dan.webp",
+        "Scott Williams": "assets/logos/upstreams/scott-williams.webp",
+        "Ricky Evans": "assets/logos/upstreams/ricky-evans.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15230,6 +15232,7 @@
         "Liiga Playoffs": "assets/logos/leagues/liiga-playoffs.webp",
         "Primera RFEF 2": "assets/logos/leagues/primera-rfef-2.webp",
         "Prva liga": "assets/logos/leagues/prva-liga.webp",
-        "1. Bundesliga, Women, Playoffs": "assets/logos/leagues/1-bundesliga-women-playoffs.webp"
+        "1. Bundesliga, Women, Playoffs": "assets/logos/leagues/1-bundesliga-women-playoffs.webp",
+        "Belgian Darts Open": "assets/logos/leagues/belgian-darts-open.webp"
     }
 }
