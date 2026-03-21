@@ -13724,7 +13724,8 @@
         "Lester Martinez": "assets/logos/upstreams/lester-martinez.webp",
         "Immanuwel AleemSuper middleweightSan bernardino": "assets/logos/upstreams/immanuwel-aleemsuper-middleweightsan-bernardino.webp",
         "Luke Riley": "assets/logos/upstreams/luke-riley.webp",
-        "Istanbul GSK": "assets/logos/upstreams/istanbul-gsk.webp"
+        "Istanbul GSK": "assets/logos/upstreams/istanbul-gsk.webp",
+        "Edwards": "assets/logos/upstreams/edwards.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15258,6 +15259,9 @@
         "UTR PTT Gyor Women 01, 1-4 Playoff": "assets/logos/leagues/utr-ptt-gyor-women-01-1-4-playoff.webp",
         "UTR PTT Gyor Women 01, 17-20 Playoff": "assets/logos/leagues/utr-ptt-gyor-women-01-17-20-playoff.webp",
         "Regionalliga Nordost": "assets/logos/leagues/regionalliga-nordost.webp",
-        "Primera B": "assets/logos/leagues/primera-b.webp"
+        "Primera B": "assets/logos/leagues/primera-b.webp",
+        "UTR PTT Gyor Women 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-gyor-women-01-5-8-playoff.webp",
+        "UTR PTT Gyor Women 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-gyor-women-01-9-12-playoff.webp",
+        "MMA PFL": "assets/logos/leagues/mma-pfl.webp"
     }
 }
