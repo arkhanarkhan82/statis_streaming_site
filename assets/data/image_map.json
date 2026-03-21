@@ -13775,7 +13775,9 @@
         "Koshiro Moriguchi": "assets/logos/upstreams/koshiro-moriguchi.webp",
         "Gr\u00eamio": "assets/logos/streamed/gr\u00eamio.webp",
         "Siddharth Bharadwaj": "assets/logos/upstreams/siddharth-bharadwaj.webp",
-        "Mackenzie Lukin": "assets/logos/upstreams/mackenzie-lukin.webp"
+        "Mackenzie Lukin": "assets/logos/upstreams/mackenzie-lukin.webp",
+        "Saar Rogovski": "assets/logos/upstreams/saar-rogovski.webp",
+        "Lennon Roark Jones": "assets/logos/upstreams/lennon-roark-jones.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15342,6 +15344,8 @@
         "UTR PTT Newport Beach Men 06, 13-16 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-13-16-playoff.webp",
         "UTR PTT Newport Beach Women 06, 13-16 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-13-16-playoff.webp",
         "UTR PTT Newport Beach Women 06, 17-20 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-17-20-playoff.webp",
-        "UTR PTT Newport Beach Men 06, 17-20 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-17-20-playoff.webp"
+        "UTR PTT Newport Beach Men 06, 17-20 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-17-20-playoff.webp",
+        "ATP - Miami (USA)": "assets/logos/leagues/atp-miami-usa.webp",
+        "Yokkaichi, Japan, Qualifying": "assets/logos/leagues/yokkaichi-japan-qualifying.webp"
     }
 }
