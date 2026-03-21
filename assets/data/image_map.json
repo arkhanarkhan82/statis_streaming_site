@@ -13757,7 +13757,13 @@
         "Hubei Istar": "assets/logos/upstreams/hubei-istar.webp",
         "Guangzhou Dandelion Alpha FC": "assets/logos/upstreams/guangzhou-dandelion-alpha-fc.webp",
         "New South Wales W": "assets/logos/upstreams/new-south-wales-w.webp",
-        "Queensland Fire W": "assets/logos/upstreams/queensland-fire-w.webp"
+        "Queensland Fire W": "assets/logos/upstreams/queensland-fire-w.webp",
+        "Castello": "assets/logos/upstreams/castello.webp",
+        "Indios de Mayag\u00fcez": "assets/logos/upstreams/indios-de-mayag\u00fcez.webp",
+        "Leones de Ponce": "assets/logos/upstreams/leones-de-ponce.webp",
+        "Phoenix Fuel Masters": "assets/logos/upstreams/phoenix-fuel-masters.webp",
+        "Wei Xu": "assets/logos/upstreams/wei-xu.webp",
+        "Hyuga Takano": "assets/logos/upstreams/hyuga-takano.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15303,6 +15309,13 @@
         "Turkey KBSL, Women, Playoffs": "assets/logos/leagues/turkey-kbsl-women-playoffs.webp",
         "Sweden - Leaguen - Playoff": "assets/logos/leagues/sweden-leaguen-playoff.webp",
         "China - League 2": "assets/logos/leagues/china-league-2.webp",
-        "UTR PTT Boca Raton Women 04, 1-4 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-1-4-playoff.webp"
+        "UTR PTT Boca Raton Women 04, 1-4 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-1-4-playoff.webp",
+        "Zweite Liga, Playoffs": "assets/logos/leagues/zweite-liga-playoffs.webp",
+        "Swiss - NLA - Playout": "assets/logos/leagues/swiss-nla-playout.webp",
+        "UTR PTT Boca Raton Women 04, 9-12 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-9-12-playoff.webp",
+        "Puerto Rico BSN": "assets/logos/leagues/puerto-rico-bsn.webp",
+        "UTR PTT Moraga Men +H 01, 1-4 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-1-4-playoff.webp",
+        "UTR PTT Moraga Men +H 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-5-8-playoff.webp",
+        "UTR PTT Boca Raton Women 04, 13-16 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-13-16-playoff.webp"
     }
 }
