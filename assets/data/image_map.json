@@ -13766,7 +13766,11 @@
         "Hyuga Takano": "assets/logos/upstreams/hyuga-takano.webp",
         "LSK Kvinner FK": "assets/logos/upstreams/lsk-kvinner-fk.webp",
         "R\u00f8a": "assets/logos/upstreams/r\u00f8a.webp",
-        "FC Fleury 91": "assets/logos/upstreams/fc-fleury-91.webp"
+        "FC Fleury 91": "assets/logos/upstreams/fc-fleury-91.webp",
+        "Brillantes del Zulia": "assets/logos/upstreams/brillantes-del-zulia.webp",
+        "Pioneros del Avila": "assets/logos/upstreams/pioneros-del-avila.webp",
+        "Ottawa Charge": "assets/logos/upstreams/ottawa-charge.webp",
+        "Montreal Victoire": "assets/logos/upstreams/montreal-victoire.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15325,6 +15329,9 @@
         "UTR PTT Moraga Men +H 01, 17-20 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-17-20-playoff.webp",
         "UTR PTT Newport Beach Men 06, 1-4 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-1-4-playoff.webp",
         "UTR PTT Newport Beach Women 06, 1-4 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-1-4-playoff.webp",
-        "UTR PTT Moraga Men +H 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-9-12-playoff.webp"
+        "UTR PTT Moraga Men +H 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-9-12-playoff.webp",
+        "UTR PTT Newport Beach Men 06, 5-8 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-5-8-playoff.webp",
+        "UTR PTT Newport Beach Women 06, 5-8 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-5-8-playoff.webp",
+        "UTR PTT Newport Beach Women 06, 9-12 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-9-12-playoff.webp"
     }
 }
