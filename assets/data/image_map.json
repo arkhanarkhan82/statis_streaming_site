@@ -13770,7 +13770,9 @@
         "Brillantes del Zulia": "assets/logos/upstreams/brillantes-del-zulia.webp",
         "Pioneros del Avila": "assets/logos/upstreams/pioneros-del-avila.webp",
         "Ottawa Charge": "assets/logos/upstreams/ottawa-charge.webp",
-        "Montreal Victoire": "assets/logos/upstreams/montreal-victoire.webp"
+        "Montreal Victoire": "assets/logos/upstreams/montreal-victoire.webp",
+        "Sayuri N Parandian": "assets/logos/upstreams/sayuri-n-parandian.webp",
+        "Koshiro Moriguchi": "assets/logos/upstreams/koshiro-moriguchi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15332,6 +15334,10 @@
         "UTR PTT Moraga Men +H 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-9-12-playoff.webp",
         "UTR PTT Newport Beach Men 06, 5-8 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-5-8-playoff.webp",
         "UTR PTT Newport Beach Women 06, 5-8 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-5-8-playoff.webp",
-        "UTR PTT Newport Beach Women 06, 9-12 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-9-12-playoff.webp"
+        "UTR PTT Newport Beach Women 06, 9-12 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-9-12-playoff.webp",
+        "UTR PTT Newport Beach Men 06, 9-12 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-9-12-playoff.webp",
+        "UTR PTT Newport Beach Men 06, 13-16 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-13-16-playoff.webp",
+        "UTR PTT Newport Beach Women 06, 13-16 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-13-16-playoff.webp",
+        "UTR PTT Newport Beach Women 06, 17-20 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-17-20-playoff.webp"
     }
 }
