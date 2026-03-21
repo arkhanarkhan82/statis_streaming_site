@@ -13763,7 +13763,10 @@
         "Leones de Ponce": "assets/logos/upstreams/leones-de-ponce.webp",
         "Phoenix Fuel Masters": "assets/logos/upstreams/phoenix-fuel-masters.webp",
         "Wei Xu": "assets/logos/upstreams/wei-xu.webp",
-        "Hyuga Takano": "assets/logos/upstreams/hyuga-takano.webp"
+        "Hyuga Takano": "assets/logos/upstreams/hyuga-takano.webp",
+        "LSK Kvinner FK": "assets/logos/upstreams/lsk-kvinner-fk.webp",
+        "R\u00f8a": "assets/logos/upstreams/r\u00f8a.webp",
+        "FC Fleury 91": "assets/logos/upstreams/fc-fleury-91.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15316,6 +15319,12 @@
         "Puerto Rico BSN": "assets/logos/leagues/puerto-rico-bsn.webp",
         "UTR PTT Moraga Men +H 01, 1-4 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-1-4-playoff.webp",
         "UTR PTT Moraga Men +H 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-5-8-playoff.webp",
-        "UTR PTT Boca Raton Women 04, 13-16 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-13-16-playoff.webp"
+        "UTR PTT Boca Raton Women 04, 13-16 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-women-04-13-16-playoff.webp",
+        "Toppserien, Women": "assets/logos/leagues/toppserien-women.webp",
+        "UTR PTT Moraga Men +H 01, 13-16 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-13-16-playoff.webp",
+        "UTR PTT Moraga Men +H 01, 17-20 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-17-20-playoff.webp",
+        "UTR PTT Newport Beach Men 06, 1-4 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-1-4-playoff.webp",
+        "UTR PTT Newport Beach Women 06, 1-4 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-women-06-1-4-playoff.webp",
+        "UTR PTT Moraga Men +H 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-moraga-men-h-01-9-12-playoff.webp"
     }
 }
