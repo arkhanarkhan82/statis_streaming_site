@@ -13782,7 +13782,20 @@
         "KK Dynamic": "assets/logos/upstreams/kk-dynamic.webp",
         "Mladost Zemun": "assets/logos/upstreams/mladost-zemun.webp",
         "Grau": "assets/logos/upstreams/grau.webp",
-        "St John": "assets/logos/upstreams/st-john.webp"
+        "St John": "assets/logos/upstreams/st-john.webp",
+        "Atl\u00e9ticos de San Germ\u00e1n": "assets/logos/upstreams/atl\u00e9ticos-de-san-germ\u00e1n.webp",
+        "Osos de Manat\u00ed": "assets/logos/upstreams/osos-de-manat\u00ed.webp",
+        "Joao Victor Couto Loureiro": "assets/logos/upstreams/joao-victor-couto-loureiro.webp",
+        "Matt Kleiman": "assets/logos/upstreams/matt-kleiman.webp",
+        "Cangrejeros De Santurce": "assets/logos/upstreams/cangrejeros-de-santurce.webp",
+        "Vaqueros de Bayam\u00f3n": "assets/logos/upstreams/vaqueros-de-bayam\u00f3n.webp",
+        "Rodina Moscow": "assets/logos/upstreams/rodina-moscow.webp",
+        "Chayka Peschanokopskoye": "assets/logos/upstreams/chayka-peschanokopskoye.webp",
+        "Camilo Andres Erazo": "assets/logos/upstreams/camilo-andres-erazo.webp",
+        "Andre Souza Pinto de Camargo E Silva": "assets/logos/upstreams/andre-souza-pinto-de-camargo-e-silva.webp",
+        "Joao Goncalves": "assets/logos/upstreams/joao-goncalves.webp",
+        "Glauco Pinheiro Da Cruz Junior": "assets/logos/upstreams/glauco-pinheiro-da-cruz-junior.webp",
+        "Nicolas Hollender": "assets/logos/upstreams/nicolas-hollender.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15354,6 +15367,10 @@
         "Yokkaichi, Japan, Qualifying": "assets/logos/leagues/yokkaichi-japan-qualifying.webp",
         "World Open 2026 Final": "assets/logos/leagues/world-open-2026-final.webp",
         "Baller League": "assets/logos/leagues/baller-league.webp",
-        "Denmark Superliga": "assets/logos/leagues/denmark-superliga.webp"
+        "Denmark Superliga": "assets/logos/leagues/denmark-superliga.webp",
+        "Morelia, Mexico, Qualifying": "assets/logos/leagues/morelia-mexico-qualifying.webp",
+        "First League": "assets/logos/leagues/first-league.webp",
+        "Yokkaichi, Japan": "assets/logos/leagues/yokkaichi-japan.webp",
+        "UTR PTT Trnava Men 03, Group A": "assets/logos/leagues/utr-ptt-trnava-men-03-group-a.webp"
     }
 }
