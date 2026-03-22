@@ -146,6 +146,46 @@
             --w-srv-text: {{THEME_WATCH_SERVER_TEXT}};
         }
 
+
+
+
+          #sc-overlay {
+        display: none; /* Starts hidden so page is clickable */
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 2147483647; /* Sits on top of everything */
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    /* Modal Box Styles */
+    .sc-box {
+        background: #111; width: 90%; max-width: 400px; padding: 40px 20px;
+        border-radius: 24px; text-align: center; border: 1px solid #333;
+        color: white; box-shadow: 0 0 30px rgba(88, 101, 242, 0.2);
+    }
+    .sc-btn {
+        display: block; text-decoration: none; padding: 16px;
+        border-radius: 12px; margin-bottom: 12px; font-weight: bold;
+        color: white; transition: 0.3s;
+    }
+    .sc-telegram { background: #0088cc; }
+    .sc-discord { background: #5865F2; }
+    .sc-status { display: block; font-size: 12px; opacity: 0.8; margin-top: 5px; }
+    .sc-dot { height: 8px; width: 8px; background: #3ba55c; border-radius: 50%; display: inline-block; }
+    .sc-close { margin-top: 20px; cursor: pointer; color: #666; font-size: 13px; text-decoration: underline; }
+
+
+
+
+
+
+
+        
+
         /* --- BASE --- */
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { margin: 0; font-family: var(--font-family-base); background: var(--bg-body); color: var(--text-main); font-size: 14px; overflow-x: hidden; padding-bottom: 80px; }
@@ -718,6 +758,41 @@
                 <div class="leagues-grid">{{FOOTER_LEAGUES}}</div>
             </div>
         </div>
+
+
+
+
+
+            <!-- CORRECTED OVERLAY HTML -->
+<div id="sc-overlay" style="display: none;">
+    <div class="sc-box">
+        <h2>Stay Connected! 🚀</h2>
+        <p>Domains change often. Join our community to get instant access to new links and live updates.</p>
+        
+        <!-- Telegram -->
+        <a href="https://t.me/Sports_Streams247" target="_blank" class="sc-telegram sc-btn">
+            Join Telegram Channel
+        </a>
+
+        <!-- Discord -->
+        <a href="#" id="sc-discord-link-new" target="_blank" class="sc-discord sc-btn">
+            Join Discord Server
+            <span class="sc-status">
+                <span class="sc-dot"></span> <span id="sc-online-count-new">...</span> Members Online
+            </span>
+        </a>
+
+        <div class="sc-close" onclick="closeSC()">Close and continue watching</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+        
 
     </main>
 
@@ -1611,5 +1686,74 @@ function generateArticle(m) {
         document.addEventListener('DOMContentLoaded', init);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+
+
+
+
+    <script>
+(function() {
+    // --- CONFIGURATION ---
+    const DISCORD_ID = "1422384816472457288"; // Replace with your actual ID
+    const COOLDOWN_MIN = 5; // 5 minute reset
+    const TARGET_PATH = "/watch"; 
+    // ---------------------
+
+    const overlay = document.getElementById('sc-overlay');
+    const cooldownMS = COOLDOWN_MIN * 60 * 1000;
+
+    // Function to fetch Discord Data
+    function updateDiscordData() {
+        fetch(`https://discord.com/api/guilds/${DISCORD_ID}/widget.json`)
+            .then(res => res.json())
+            .then(data => {
+                const countEl = document.getElementById('sc-online-count-new');
+                const linkEl = document.getElementById('sc-discord-link-new');
+                if(countEl) countEl.innerText = data.presence_count || "Many";
+                if(linkEl && data.instant_invite) linkEl.href = data.instant_invite;
+            }).catch(e => console.log("Discord widget disabled or error."));
+    }
+
+    // Handle Clicks
+    document.addEventListener('click', function(e) {
+        // If clicking inside the modal or if modal is already open, don't trigger
+        if (overlay.style.display === 'flex' || overlay.contains(e.target)) return;
+
+        // Check if on watch page
+        if (window.location.pathname.toLowerCase().includes(TARGET_PATH)) {
+            const now = Date.now();
+            const lastPop = localStorage.getItem('sc_last_seen_time');
+
+            // Logic: No lastPop OR 5 minutes have passed
+            if (!lastPop || (now - lastPop) > cooldownMS) {
+                
+                // Show Overlay
+                overlay.style.display = 'flex';
+                updateDiscordData();
+                
+                // Save time
+                localStorage.setItem('sc_last_seen_time', now);
+                
+                // Block the original click so user must see the overlay
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        }
+    }, true); // Use capture phase to ensure we catch the click first
+
+    // Function to close
+    window.closeSC = function() {
+        overlay.style.display = 'none';
+    };
+})();
+</script>
+
+
+
+
+
+
+
+
+    
 </body>
 </html>
