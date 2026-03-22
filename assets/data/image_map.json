@@ -13778,7 +13778,9 @@
         "Mackenzie Lukin": "assets/logos/upstreams/mackenzie-lukin.webp",
         "Saar Rogovski": "assets/logos/upstreams/saar-rogovski.webp",
         "Lennon Roark Jones": "assets/logos/upstreams/lennon-roark-jones.webp",
-        "O'Sullivan R.": "assets/logos/upstreams/osullivan-r.webp"
+        "O'Sullivan R.": "assets/logos/upstreams/osullivan-r.webp",
+        "KK Dynamic": "assets/logos/upstreams/kk-dynamic.webp",
+        "Mladost Zemun": "assets/logos/upstreams/mladost-zemun.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15348,6 +15350,7 @@
         "UTR PTT Newport Beach Men 06, 17-20 Playoff": "assets/logos/leagues/utr-ptt-newport-beach-men-06-17-20-playoff.webp",
         "ATP - Miami (USA)": "assets/logos/leagues/atp-miami-usa.webp",
         "Yokkaichi, Japan, Qualifying": "assets/logos/leagues/yokkaichi-japan-qualifying.webp",
-        "World Open 2026 Final": "assets/logos/leagues/world-open-2026-final.webp"
+        "World Open 2026 Final": "assets/logos/leagues/world-open-2026-final.webp",
+        "Baller League": "assets/logos/leagues/baller-league.webp"
     }
 }
