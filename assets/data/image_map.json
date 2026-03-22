@@ -13795,7 +13795,9 @@
         "Andre Souza Pinto de Camargo E Silva": "assets/logos/upstreams/andre-souza-pinto-de-camargo-e-silva.webp",
         "Joao Goncalves": "assets/logos/upstreams/joao-goncalves.webp",
         "Glauco Pinheiro Da Cruz Junior": "assets/logos/upstreams/glauco-pinheiro-da-cruz-junior.webp",
-        "Nicolas Hollender": "assets/logos/upstreams/nicolas-hollender.webp"
+        "Nicolas Hollender": "assets/logos/upstreams/nicolas-hollender.webp",
+        "Mariano Tammaro": "assets/logos/upstreams/mariano-tammaro.webp",
+        "Andrej Nedi\u0107": "assets/logos/upstreams/andrej-nedi\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15371,6 +15373,11 @@
         "Morelia, Mexico, Qualifying": "assets/logos/leagues/morelia-mexico-qualifying.webp",
         "First League": "assets/logos/leagues/first-league.webp",
         "Yokkaichi, Japan": "assets/logos/leagues/yokkaichi-japan.webp",
-        "UTR PTT Trnava Men 03, Group A": "assets/logos/leagues/utr-ptt-trnava-men-03-group-a.webp"
+        "UTR PTT Trnava Men 03, Group A": "assets/logos/leagues/utr-ptt-trnava-men-03-group-a.webp",
+        "Naples, Italy, Qualifying": "assets/logos/leagues/naples-italy-qualifying.webp",
+        "Split, Croatia, Qualifying": "assets/logos/leagues/split-croatia-qualifying.webp",
+        "UTR PTT Trnava Men 03, Group B": "assets/logos/leagues/utr-ptt-trnava-men-03-group-b.webp",
+        "Naples, Italy": "assets/logos/leagues/naples-italy.webp",
+        "Split, Croatia": "assets/logos/leagues/split-croatia.webp"
     }
 }
