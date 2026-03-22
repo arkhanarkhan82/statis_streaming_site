@@ -1287,7 +1287,7 @@
     "watch_show_ad1": true,
     "watch_show_discord": true,
     "watch_show_ad2": true,
-    "watch_discord_order": "bottom",
+    "watch_discord_order": "top",
     "watch_discord_title": "",
     "watch_discord_btn_text": "",
     "chat_header_title": "",
