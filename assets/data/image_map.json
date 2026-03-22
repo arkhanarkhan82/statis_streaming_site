@@ -13780,7 +13780,9 @@
         "Lennon Roark Jones": "assets/logos/upstreams/lennon-roark-jones.webp",
         "O'Sullivan R.": "assets/logos/upstreams/osullivan-r.webp",
         "KK Dynamic": "assets/logos/upstreams/kk-dynamic.webp",
-        "Mladost Zemun": "assets/logos/upstreams/mladost-zemun.webp"
+        "Mladost Zemun": "assets/logos/upstreams/mladost-zemun.webp",
+        "Grau": "assets/logos/upstreams/grau.webp",
+        "St John": "assets/logos/upstreams/st-john.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15351,6 +15353,7 @@
         "ATP - Miami (USA)": "assets/logos/leagues/atp-miami-usa.webp",
         "Yokkaichi, Japan, Qualifying": "assets/logos/leagues/yokkaichi-japan-qualifying.webp",
         "World Open 2026 Final": "assets/logos/leagues/world-open-2026-final.webp",
-        "Baller League": "assets/logos/leagues/baller-league.webp"
+        "Baller League": "assets/logos/leagues/baller-league.webp",
+        "Denmark Superliga": "assets/logos/leagues/denmark-superliga.webp"
     }
 }
