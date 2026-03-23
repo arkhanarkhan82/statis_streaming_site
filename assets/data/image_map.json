@@ -13820,7 +13820,12 @@
         "Yan Kodjoed": "assets/logos/upstreams/yan-kodjoed.webp",
         "Antonin Chapuis": "assets/logos/upstreams/antonin-chapuis.webp",
         "Nikolas Paulovic": "assets/logos/upstreams/nikolas-paulovic.webp",
-        "Alexander Orlov": "assets/logos/upstreams/alexander-orlov.webp"
+        "Alexander Orlov": "assets/logos/upstreams/alexander-orlov.webp",
+        "Dian Nedev": "assets/logos/upstreams/dian-nedev.webp",
+        "Mateo Martinovic": "assets/logos/upstreams/mateo-martinovic.webp",
+        "Dominik Matic": "assets/logos/upstreams/dominik-matic.webp",
+        "Peter Goldsteiner": "assets/logos/upstreams/peter-goldsteiner.webp",
+        "Melinda Biro": "assets/logos/upstreams/melinda-biro.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15410,6 +15415,8 @@
         "UTR PTT Umag Men 01, Group C": "assets/logos/leagues/utr-ptt-umag-men-01-group-c.webp",
         "Morelia, Mexico": "assets/logos/leagues/morelia-mexico.webp",
         "UTR PTT Boca Raton Men 03, Group B": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-b.webp",
-        "UTR PTT Boca Raton Men 03, Group C": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-c.webp"
+        "UTR PTT Boca Raton Men 03, Group C": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-c.webp",
+        "UTR PTT Trnava Men 03, Group D": "assets/logos/leagues/utr-ptt-trnava-men-03-group-d.webp",
+        "UTR PTT Umag Men 01, Group D": "assets/logos/leagues/utr-ptt-umag-men-01-group-d.webp"
     }
 }
