@@ -13816,7 +13816,9 @@
         "Christopher Li": "assets/logos/upstreams/christopher-li.webp",
         "Daniel Cukierman": "assets/logos/upstreams/daniel-cukierman.webp",
         "Mikail Alimli": "assets/logos/upstreams/mikail-alimli.webp",
-        "Remy Dugardin": "assets/logos/upstreams/remy-dugardin.webp"
+        "Remy Dugardin": "assets/logos/upstreams/remy-dugardin.webp",
+        "Yan Kodjoed": "assets/logos/upstreams/yan-kodjoed.webp",
+        "Antonin Chapuis": "assets/logos/upstreams/antonin-chapuis.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15404,6 +15406,8 @@
         "Korisliiga, Playoffs": "assets/logos/leagues/korisliiga-playoffs.webp",
         "UTR PTT Boca Raton Men 03, Group D": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-d.webp",
         "UTR PTT Umag Men 01, Group C": "assets/logos/leagues/utr-ptt-umag-men-01-group-c.webp",
-        "Morelia, Mexico": "assets/logos/leagues/morelia-mexico.webp"
+        "Morelia, Mexico": "assets/logos/leagues/morelia-mexico.webp",
+        "UTR PTT Boca Raton Men 03, Group B": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-b.webp",
+        "UTR PTT Boca Raton Men 03, Group C": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-c.webp"
     }
 }
