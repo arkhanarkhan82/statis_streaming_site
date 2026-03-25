@@ -13866,7 +13866,11 @@
         "Equatorial Guinea": "assets/logos/streamed/equatorial-guinea.webp",
         "Sportivo Barracas": "assets/logos/streamed/sportivo-barracas.webp",
         "Real Pilar": "assets/logos/streamed/real-pilar.webp",
-        "Moldova": "assets/logos/streamed/moldova.webp"
+        "Moldova": "assets/logos/streamed/moldova.webp",
+        "Gibraltar": "assets/logos/streamed/gibraltar.webp",
+        "Malta": "assets/logos/streamed/malta.webp",
+        "Bosnia-Herzegovina": "assets/logos/streamed/bosnia-herzegovina.webp",
+        "N.Ireland": "assets/logos/streamed/nireland.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15459,6 +15463,7 @@
         "UTR PTT Boca Raton Men 03, Group C": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-c.webp",
         "UTR PTT Trnava Men 03, Group D": "assets/logos/leagues/utr-ptt-trnava-men-03-group-d.webp",
         "UTR PTT Umag Men 01, Group D": "assets/logos/leagues/utr-ptt-umag-men-01-group-d.webp",
-        "UTR PTT Umag Men 01, Group A": "assets/logos/leagues/utr-ptt-umag-men-01-group-a.webp"
+        "UTR PTT Umag Men 01, Group A": "assets/logos/leagues/utr-ptt-umag-men-01-group-a.webp",
+        "USA - MLB": "assets/logos/leagues/usa-mlb.webp"
     }
 }
