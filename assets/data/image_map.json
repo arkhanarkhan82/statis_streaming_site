@@ -13914,7 +13914,8 @@
         "Samuel Battistone": "assets/logos/upstreams/samuel-battistone.webp",
         "Hamad Medjedovi\u0107": "assets/logos/upstreams/hamad-medjedovi\u0107.webp",
         "LOVB Atlanta": "assets/logos/upstreams/lovb-atlanta.webp",
-        "LOVB Nebraska": "assets/logos/upstreams/lovb-nebraska.webp"
+        "LOVB Nebraska": "assets/logos/upstreams/lovb-nebraska.webp",
+        "Victoria": "assets/logos/upstreams/victoria.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15522,6 +15523,7 @@
         "FIFA World Cup Qual, Inter-Confed. Playoffs": "assets/logos/leagues/fifa-world-cup-qual-inter-confed-playoffs.webp",
         "Latvian Hockey League, Playoffs": "assets/logos/leagues/latvian-hockey-league-playoffs.webp",
         "U21 Friendly Games": "assets/logos/leagues/u21-friendly-games.webp",
-        "AFC Asian Cup, Qualification Group E": "assets/logos/leagues/afc-asian-cup-qualification-group-e.webp"
+        "AFC Asian Cup, Qualification Group E": "assets/logos/leagues/afc-asian-cup-qualification-group-e.webp",
+        "Sheffield Shield, Final": "assets/logos/leagues/sheffield-shield-final.webp"
     }
 }
