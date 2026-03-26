@@ -13986,7 +13986,11 @@
         "Raluka Serban": "assets/logos/upstreams/raluka-serban.webp",
         "Bonaire": "assets/logos/upstreams/bonaire.webp",
         "James Quattro": "assets/logos/upstreams/james-quattro.webp",
-        "Bejnamin Torres": "assets/logos/upstreams/bejnamin-torres.webp"
+        "Bejnamin Torres": "assets/logos/upstreams/bejnamin-torres.webp",
+        "Biblioteca Atenas": "assets/logos/upstreams/biblioteca-atenas.webp",
+        "Romania U20": "assets/logos/upstreams/romania-u20.webp",
+        "Poland U20": "assets/logos/upstreams/poland-u20.webp",
+        "Die Eulen Ludwigshafen": "assets/logos/upstreams/die-eulen-ludwigshafen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15611,6 +15615,7 @@
         "NCAA Women's March Madness": "assets/logos/leagues/ncaa-womens-march-madness.webp",
         "Africa League, Group Kalahari": "assets/logos/leagues/africa-league-group-kalahari.webp",
         "International Friendly Games": "assets/logos/leagues/international-friendly-games.webp",
-        "UTR PTT Boca Raton Men 03, Group A": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-a.webp"
+        "UTR PTT Boca Raton Men 03, Group A": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-a.webp",
+        "Elite League U20": "assets/logos/leagues/elite-league-u20.webp"
     }
 }
