@@ -13996,7 +13996,9 @@
         "Deni \u017dmak": "assets/logos/upstreams/deni-\u017emak.webp",
         "Lukas Rohseano": "assets/logos/upstreams/lukas-rohseano.webp",
         "Gabriela Andrea Knutson": "assets/logos/upstreams/gabriela-andrea-knutson.webp",
-        "Gibraltar U21": "assets/logos/upstreams/gibraltar-u21.webp"
+        "Gibraltar U21": "assets/logos/upstreams/gibraltar-u21.webp",
+        "Qalandars": "assets/logos/upstreams/qalandars.webp",
+        "Kingsmen": "assets/logos/upstreams/kingsmen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15624,6 +15626,7 @@
         "UTR PTT Boca Raton Men 03, Group A": "assets/logos/leagues/utr-ptt-boca-raton-men-03-group-a.webp",
         "Elite League U20": "assets/logos/leagues/elite-league-u20.webp",
         "NRL": "assets/logos/leagues/nrl.webp",
-        "U21 EURO, Qualification, Group B": "assets/logos/leagues/u21-euro-qualification-group-b.webp"
+        "U21 EURO, Qualification, Group B": "assets/logos/leagues/u21-euro-qualification-group-b.webp",
+        "Cricket Pakistan League": "assets/logos/leagues/cricket-pakistan-league.webp"
     }
 }
