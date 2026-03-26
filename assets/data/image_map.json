@@ -13915,7 +13915,28 @@
         "Hamad Medjedovi\u0107": "assets/logos/upstreams/hamad-medjedovi\u0107.webp",
         "LOVB Atlanta": "assets/logos/upstreams/lovb-atlanta.webp",
         "LOVB Nebraska": "assets/logos/upstreams/lovb-nebraska.webp",
-        "Victoria": "assets/logos/upstreams/victoria.webp"
+        "Victoria": "assets/logos/upstreams/victoria.webp",
+        "New Caledonia": "assets/logos/upstreams/new-caledonia.webp",
+        "Cape Verde": "assets/logos/upstreams/cape-verde.webp",
+        "Brisbane Roar W": "assets/logos/upstreams/brisbane-roar-w.webp",
+        "Bosnia and Herzegovina U21": "assets/logos/upstreams/bosnia-and-herzegovina-u21.webp",
+        "Slovenia U21": "assets/logos/upstreams/slovenia-u21.webp",
+        "Kosovo U21": "assets/logos/upstreams/kosovo-u21.webp",
+        "ROmania U21": "assets/logos/upstreams/romania-u21.webp",
+        "Belgium U21": "assets/logos/upstreams/belgium-u21.webp",
+        "Austria U21": "assets/logos/upstreams/austria-u21.webp",
+        "Swiss U21": "assets/logos/upstreams/swiss-u21.webp",
+        "Faroe Islands U21": "assets/logos/upstreams/faroe-islands-u21.webp",
+        "Czech U21": "assets/logos/upstreams/czech-u21.webp",
+        "Germany U21": "assets/logos/upstreams/germany-u21.webp",
+        "Ireland de North U21": "assets/logos/upstreams/ireland-de-north-u21.webp",
+        "Ghana": "assets/logos/upstreams/ghana.webp",
+        "Norway U21": "assets/logos/upstreams/norway-u21.webp",
+        "Netherlands U21": "assets/logos/upstreams/netherlands-u21.webp",
+        "Ukraine U21": "assets/logos/upstreams/ukraine-u21.webp",
+        "Lithuania U21": "assets/logos/upstreams/lithuania-u21.webp",
+        "Tara Galilor U21": "assets/logos/upstreams/tara-galilor-u21.webp",
+        "Belarus U21": "assets/logos/upstreams/belarus-u21.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15524,6 +15545,14 @@
         "Latvian Hockey League, Playoffs": "assets/logos/leagues/latvian-hockey-league-playoffs.webp",
         "U21 Friendly Games": "assets/logos/leagues/u21-friendly-games.webp",
         "AFC Asian Cup, Qualification Group E": "assets/logos/leagues/afc-asian-cup-qualification-group-e.webp",
-        "Sheffield Shield, Final": "assets/logos/leagues/sheffield-shield-final.webp"
+        "Sheffield Shield, Final": "assets/logos/leagues/sheffield-shield-final.webp",
+        "Finland - KorisLeague - Playoff": "assets/logos/leagues/finland-korisleague-playoff.webp",
+        "EURO U21 2027 - Qualifiers - Gr.G": "assets/logos/leagues/euro-u21-2027-qualifiers-grg.webp",
+        "EURO U21 2027 - Qualifiers - Gr.A": "assets/logos/leagues/euro-u21-2027-qualifiers-gra.webp",
+        "EURO U21 2027 - Qualifiers - Gr.I": "assets/logos/leagues/euro-u21-2027-qualifiers-gri.webp",
+        "EURO U21 2027 - Qualifiers - Gr.C": "assets/logos/leagues/euro-u21-2027-qualifiers-grc.webp",
+        "EURO U21 2027 - Qualifiers - Gr.F": "assets/logos/leagues/euro-u21-2027-qualifiers-grf.webp",
+        "Euro U21": "assets/logos/leagues/euro-u21.webp",
+        "EURO U21 2027 - Qualifiers - Gr.H": "assets/logos/leagues/euro-u21-2027-qualifiers-grh.webp"
     }
 }
