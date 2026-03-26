@@ -14026,7 +14026,8 @@
         "Dartmouth Big Green": "assets/logos/upstreams/dartmouth-big-green.webp",
         "Castleford": "assets/logos/upstreams/castleford.webp",
         "Azerbaijan U21": "assets/logos/upstreams/azerbaijan-u21.webp",
-        "Portugal U21": "assets/logos/upstreams/portugal-u21.webp"
+        "Portugal U21": "assets/logos/upstreams/portugal-u21.webp",
+        "Czech Rep.": "assets/logos/upstreams/czech-rep.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15658,6 +15659,7 @@
         "Cricket Pakistan League": "assets/logos/leagues/cricket-pakistan-league.webp",
         "Cyprus Basketball Division A, Championship Round": "assets/logos/leagues/cyprus-basketball-division-a-championship-round.webp",
         "NCAA, National Championship, Division 1": "assets/logos/leagues/ncaa-national-championship-division-1.webp",
-        "Premier League, Night 8": "assets/logos/leagues/premier-league-night-8.webp"
+        "Premier League, Night 8": "assets/logos/leagues/premier-league-night-8.webp",
+        "WC Qualification, UEFA, Playoffs": "assets/logos/leagues/wc-qualification-uefa-playoffs.webp"
     }
 }
