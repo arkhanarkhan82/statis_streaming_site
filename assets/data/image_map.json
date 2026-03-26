@@ -13966,7 +13966,17 @@
         "\u00cdR Reykjav\u00edk": "assets/logos/upstreams/\u00edr-reykjav\u00edk.webp",
         "El Salvador": "assets/logos/upstreams/el-salvador.webp",
         "Insulele Cayman": "assets/logos/upstreams/insulele-cayman.webp",
-        "British Virgin Islands": "assets/logos/upstreams/british-virgin-islands.webp"
+        "British Virgin Islands": "assets/logos/upstreams/british-virgin-islands.webp",
+        "Wales U21": "assets/logos/upstreams/wales-u21.webp",
+        "Northern Ireland U21": "assets/logos/upstreams/northern-ireland-u21.webp",
+        "Switzerland U21": "assets/logos/upstreams/switzerland-u21.webp",
+        "Bosnia & Herzegovina U21": "assets/logos/upstreams/bosnia-herzegovina-u21.webp",
+        "Romania U21": "assets/logos/upstreams/romania-u21.webp",
+        "Toronto Sceptres": "assets/logos/upstreams/toronto-sceptres.webp",
+        "Boston Fleet": "assets/logos/upstreams/boston-fleet.webp",
+        "Arm\u00e9e Patriotique Rwandaise": "assets/logos/upstreams/arm\u00e9e-patriotique-rwandaise.webp",
+        "Al Ahly Benghazi": "assets/logos/upstreams/al-ahly-benghazi.webp",
+        "Aneta Ku\u010dmov\u00e1": "assets/logos/upstreams/aneta-ku\u010dmov\u00e1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15583,6 +15593,12 @@
         "EURO U21 2027 - Qualifiers - Gr.C": "assets/logos/leagues/euro-u21-2027-qualifiers-grc.webp",
         "EURO U21 2027 - Qualifiers - Gr.F": "assets/logos/leagues/euro-u21-2027-qualifiers-grf.webp",
         "Euro U21": "assets/logos/leagues/euro-u21.webp",
-        "EURO U21 2027 - Qualifiers - Gr.H": "assets/logos/leagues/euro-u21-2027-qualifiers-grh.webp"
+        "EURO U21 2027 - Qualifiers - Gr.H": "assets/logos/leagues/euro-u21-2027-qualifiers-grh.webp",
+        "U21 EURO, Qualification, Group G": "assets/logos/leagues/u21-euro-qualification-group-g.webp",
+        "U21 EURO, Qualification, Group H": "assets/logos/leagues/u21-euro-qualification-group-h.webp",
+        "U21 EURO, Qualification, Group I": "assets/logos/leagues/u21-euro-qualification-group-i.webp",
+        "U21 EURO, Qualification, Group F": "assets/logos/leagues/u21-euro-qualification-group-f.webp",
+        "NCAA Women's March Madness": "assets/logos/leagues/ncaa-womens-march-madness.webp",
+        "Africa League, Group Kalahari": "assets/logos/leagues/africa-league-group-kalahari.webp"
     }
 }
