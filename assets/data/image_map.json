@@ -14114,7 +14114,13 @@
         "Romania U19": "assets/logos/upstreams/romania-u19.webp",
         "Northern Ireland U19": "assets/logos/upstreams/northern-ireland-u19.webp",
         "Liverpool FC XI": "assets/logos/upstreams/liverpool-fc-xi.webp",
-        "Borussia Dortmund Legends": "assets/logos/upstreams/borussia-dortmund-legends.webp"
+        "Borussia Dortmund Legends": "assets/logos/upstreams/borussia-dortmund-legends.webp",
+        "St Kitts and Nevis": "assets/logos/streamed/st-kitts-and-nevis.webp",
+        "Gabon": "assets/logos/streamed/gabon.webp",
+        "Kenya": "assets/logos/streamed/kenya.webp",
+        "Rwanda": "assets/logos/streamed/rwanda.webp",
+        "American Samoa": "assets/logos/streamed/american-samoa.webp",
+        "Mili Poljicak": "assets/logos/upstreams/mili-poljicak.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
