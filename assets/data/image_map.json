@@ -14132,7 +14132,8 @@
         "Denmark U19": "assets/logos/upstreams/denmark-u19.webp",
         "S\u00e3o Tom\u00e9 and Pr\u00edncipe": "assets/logos/upstreams/s\u00e3o-tom\u00e9-and-pr\u00edncipe.webp",
         "Switzerland U20": "assets/logos/upstreams/switzerland-u20.webp",
-        "Kataja Basket": "assets/logos/upstreams/kataja-basket.webp"
+        "Kataja Basket": "assets/logos/upstreams/kataja-basket.webp",
+        "Haukat": "assets/logos/upstreams/haukat.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15790,6 +15791,8 @@
         "Pakistan Super League": "assets/logos/leagues/pakistan-super-league.webp",
         "U19 UEFA European Championship, Elite round Gr. 5": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-5.webp",
         "U19 UEFA European Championship, Elite round Gr. 4": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-4.webp",
-        "Africa Cup of Nations, Qualification, Preliminary": "assets/logos/leagues/africa-cup-of-nations-qualification-preliminary.webp"
+        "Africa Cup of Nations, Qualification, Preliminary": "assets/logos/leagues/africa-cup-of-nations-qualification-preliminary.webp",
+        "Tipsport Liga, Relegation/Promotion round ": "assets/logos/leagues/tipsport-liga-relegationpromotion-round.webp",
+        "Mestis Promotion/Relegation": "assets/logos/leagues/mestis-promotionrelegation.webp"
     }
 }
