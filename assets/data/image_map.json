@@ -14110,7 +14110,11 @@
         "Darwin Hearts FC": "assets/logos/upstreams/darwin-hearts-fc.webp",
         "Goteborg": "assets/logos/upstreams/goteborg.webp",
         "Quetta Gladiators": "assets/logos/upstreams/quetta-gladiators.webp",
-        "Karachi Kings": "assets/logos/upstreams/karachi-kings.webp"
+        "Karachi Kings": "assets/logos/upstreams/karachi-kings.webp",
+        "Romania U19": "assets/logos/upstreams/romania-u19.webp",
+        "Northern Ireland U19": "assets/logos/upstreams/northern-ireland-u19.webp",
+        "Liverpool FC XI": "assets/logos/upstreams/liverpool-fc-xi.webp",
+        "Borussia Dortmund Legends": "assets/logos/upstreams/borussia-dortmund-legends.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15765,6 +15769,7 @@
         "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp",
         "MMA": "assets/logos/leagues/mma.webp",
         "Australia - FNT - Premier League": "assets/logos/leagues/australia-fnt-premier-league.webp",
-        "Pakistan Super League": "assets/logos/leagues/pakistan-super-league.webp"
+        "Pakistan Super League": "assets/logos/leagues/pakistan-super-league.webp",
+        "U19 UEFA European Championship, Elite round Gr. 5": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-5.webp"
     }
 }
