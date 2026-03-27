@@ -14137,7 +14137,8 @@
         "Germany U19": "assets/logos/upstreams/germany-u19.webp",
         "Wakefield": "assets/logos/upstreams/wakefield.webp",
         "Leinster Rugby": "assets/logos/upstreams/leinster-rugby.webp",
-        "North Carolina W": "assets/logos/upstreams/north-carolina-w.webp"
+        "North Carolina W": "assets/logos/upstreams/north-carolina-w.webp",
+        "Wakefield Trinity": "assets/logos/upstreams/wakefield-trinity.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15803,6 +15804,8 @@
         "UTR PTT Trnava Men 03, 13-16 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-13-16-playoff.webp",
         "UTR PTT Umag Men 01, 9-12 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-9-12-playoff.webp",
         "Betfred Super League": "assets/logos/leagues/betfred-super-league.webp",
-        "UTR PTT Trnava Men 03, 17-20 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-17-20-playoff.webp"
+        "UTR PTT Trnava Men 03, 17-20 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-17-20-playoff.webp",
+        "UTR PTT Umag Men 01, 1-4 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-1-4-playoff.webp",
+        "UTR PTT Umag Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-5-8-playoff.webp"
     }
 }
