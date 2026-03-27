@@ -14101,7 +14101,10 @@
         "Teodora Kostovi\u0107": "assets/logos/upstreams/teodora-kostovi\u0107.webp",
         "Darwin Hearts FC (W)": "assets/logos/upstreams/darwin-hearts-fc-w.webp",
         "Dar City Basketball Team": "assets/logos/upstreams/dar-city-basketball-team.webp",
-        "St Lucia": "assets/logos/streamed/st-lucia.webp"
+        "St Lucia": "assets/logos/streamed/st-lucia.webp",
+        "Electrico": "assets/logos/upstreams/electrico.webp",
+        "Fabia Sintes": "assets/logos/upstreams/fabia-sintes.webp",
+        "Abdul Karim Badakhshi": "assets/logos/upstreams/abdul-karim-badakhshi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15752,6 +15755,7 @@
         "U19 UEFA European Championship, Elite round Gr. 2": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-2.webp",
         "FIFA Series, Australia": "assets/logos/leagues/fifa-series-australia.webp",
         "EHF - European Cup (W)": "assets/logos/leagues/ehf-european-cup-w.webp",
-        "Basketball African League": "assets/logos/leagues/basketball-african-league.webp"
+        "Basketball African League": "assets/logos/leagues/basketball-african-league.webp",
+        "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp"
     }
 }
