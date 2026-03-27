@@ -14105,7 +14105,9 @@
         "Electrico": "assets/logos/upstreams/electrico.webp",
         "Fabia Sintes": "assets/logos/upstreams/fabia-sintes.webp",
         "Abdul Karim Badakhshi": "assets/logos/upstreams/abdul-karim-badakhshi.webp",
-        "HJK": "assets/logos/upstreams/hjk.webp"
+        "HJK": "assets/logos/upstreams/hjk.webp",
+        "Palmerston Rovers": "assets/logos/upstreams/palmerston-rovers.webp",
+        "Darwin Hearts FC": "assets/logos/upstreams/darwin-hearts-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15758,6 +15760,7 @@
         "EHF - European Cup (W)": "assets/logos/leagues/ehf-european-cup-w.webp",
         "Basketball African League": "assets/logos/leagues/basketball-african-league.webp",
         "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp",
-        "MMA": "assets/logos/leagues/mma.webp"
+        "MMA": "assets/logos/leagues/mma.webp",
+        "Australia - FNT - Premier League": "assets/logos/leagues/australia-fnt-premier-league.webp"
     }
 }
