@@ -14138,7 +14138,8 @@
         "Wakefield": "assets/logos/upstreams/wakefield.webp",
         "Leinster Rugby": "assets/logos/upstreams/leinster-rugby.webp",
         "North Carolina W": "assets/logos/upstreams/north-carolina-w.webp",
-        "Wakefield Trinity": "assets/logos/upstreams/wakefield-trinity.webp"
+        "Wakefield Trinity": "assets/logos/upstreams/wakefield-trinity.webp",
+        "Asuncion Nacional": "assets/logos/upstreams/asuncion-nacional.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15806,6 +15807,8 @@
         "Betfred Super League": "assets/logos/leagues/betfred-super-league.webp",
         "UTR PTT Trnava Men 03, 17-20 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-17-20-playoff.webp",
         "UTR PTT Umag Men 01, 1-4 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-1-4-playoff.webp",
-        "UTR PTT Umag Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-5-8-playoff.webp"
+        "UTR PTT Umag Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-5-8-playoff.webp",
+        "UTR PTT Trnava Men 03, 1-4 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-1-4-playoff.webp",
+        "MLB Baseball": "assets/logos/leagues/mlb-baseball.webp"
     }
 }
