@@ -14046,7 +14046,12 @@
         "Louisville Kings": "assets/logos/streamed/louisville-kings.webp",
         "Birmingham Stallions": "assets/logos/streamed/birmingham-stallions.webp",
         "Iceland U17": "assets/logos/streamed/iceland-u17.webp",
-        "Finland U19": "assets/logos/streamed/finland-u19.webp"
+        "Finland U19": "assets/logos/streamed/finland-u19.webp",
+        "Naegohyang Womens FC": "assets/logos/upstreams/naegohyang-womens-fc.webp",
+        "Ho Chi Minh": "assets/logos/upstreams/ho-chi-minh.webp",
+        "Nairobi City Thunder": "assets/logos/upstreams/nairobi-city-thunder.webp",
+        "Dar City": "assets/logos/upstreams/dar-city.webp",
+        "Sunrisers Hyderabad": "assets/logos/upstreams/sunrisers-hyderabad.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
