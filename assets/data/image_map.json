@@ -14085,7 +14085,10 @@
         "Nippon TV Tokyo Verdy Beleza": "assets/logos/upstreams/nippon-tv-tokyo-verdy-beleza.webp",
         "Stallion Laguna FC": "assets/logos/upstreams/stallion-laguna-fc.webp",
         "Portugal x S\u00e9rvia": "assets/logos/upstreams/portugal-x-s\u00e9rvia.webp",
-        "Sele\u00e7\u00e3o Sub-19 - Qualif. Euro 2026": "assets/logos/upstreams/sele\u00e7\u00e3o-sub-19-qualif-euro-2026.webp"
+        "Sele\u00e7\u00e3o Sub-19 - Qualif. Euro 2026": "assets/logos/upstreams/sele\u00e7\u00e3o-sub-19-qualif-euro-2026.webp",
+        "Portugal U19": "assets/logos/upstreams/portugal-u19.webp",
+        "Serbia U19": "assets/logos/upstreams/serbia-u19.webp",
+        "Greater Western Sydney": "assets/logos/upstreams/greater-western-sydney.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15732,6 +15735,7 @@
         "Australia - NPL - Capital": "assets/logos/leagues/australia-npl-capital.webp",
         "Sheffield Shield, Final day 5": "assets/logos/leagues/sheffield-shield-final-day-5.webp",
         "Euro U19": "assets/logos/leagues/euro-u19.webp",
-        "KHL Playoffs": "assets/logos/leagues/khl-playoffs.webp"
+        "KHL Playoffs": "assets/logos/leagues/khl-playoffs.webp",
+        "U19 UEFA European Championship, Elite round Gr. 2": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-2.webp"
     }
 }
