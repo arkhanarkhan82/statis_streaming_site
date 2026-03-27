@@ -14028,7 +14028,21 @@
         "Azerbaijan U21": "assets/logos/upstreams/azerbaijan-u21.webp",
         "Portugal U21": "assets/logos/upstreams/portugal-u21.webp",
         "Czech Rep.": "assets/logos/upstreams/czech-rep.webp",
-        "Kokomo Bobkats": "assets/logos/upstreams/kokomo-bobkats.webp"
+        "Kokomo Bobkats": "assets/logos/upstreams/kokomo-bobkats.webp",
+        "Tennessee Volunteers": "assets/logos/upstreams/tennessee-volunteers.webp",
+        "Beleza W": "assets/logos/upstreams/beleza-w.webp",
+        "Stallion W": "assets/logos/upstreams/stallion-w.webp",
+        "Chippa Utd. U23": "assets/logos/upstreams/chippa-utd-u23.webp",
+        "Stellenbosch U23": "assets/logos/upstreams/stellenbosch-u23.webp",
+        "Naegohyang FC": "assets/logos/upstreams/naegohyang-fc.webp",
+        "H\u1ed3 Ch\u00ed Minh City": "assets/logos/upstreams/h\u1ed3-ch\u00ed-minh-city.webp",
+        "Magesi U23": "assets/logos/upstreams/magesi-u23.webp",
+        "HFC": "assets/logos/upstreams/hfc.webp",
+        "C\u00f4te d'Ivoire": "assets/logos/upstreams/c\u00f4te-divoire.webp",
+        "Serbia U17": "assets/logos/upstreams/serbia-u17.webp",
+        "Tofiq Musayev": "assets/logos/upstreams/tofiq-musayev.webp",
+        "Johnny Eblen": "assets/logos/upstreams/johnny-eblen.webp",
+        "Bryan Battle": "assets/logos/upstreams/bryan-battle.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15661,6 +15675,13 @@
         "Cyprus Basketball Division A, Championship Round": "assets/logos/leagues/cyprus-basketball-division-a-championship-round.webp",
         "NCAA, National Championship, Division 1": "assets/logos/leagues/ncaa-national-championship-division-1.webp",
         "Premier League, Night 8": "assets/logos/leagues/premier-league-night-8.webp",
-        "WC Qualification, UEFA, Playoffs": "assets/logos/leagues/wc-qualification-uefa-playoffs.webp"
+        "WC Qualification, UEFA, Playoffs": "assets/logos/leagues/wc-qualification-uefa-playoffs.webp",
+        "NCAA Men's March Madness": "assets/logos/leagues/ncaa-mens-march-madness.webp",
+        "AFC Champions League Women": "assets/logos/leagues/afc-champions-league-women.webp",
+        "AFC Champions League, Women, Knockout Stage": "assets/logos/leagues/afc-champions-league-women-knockout-stage.webp",
+        "Euro U17": "assets/logos/leagues/euro-u17.webp",
+        "USL": "assets/logos/leagues/usl.webp",
+        "UFC Fight Night: Adesanya vs. Pyfer": "assets/logos/leagues/ufc-fight-night-adesanya-vs-pyfer.webp",
+        "Indian Premier League": "assets/logos/leagues/indian-premier-league.webp"
     }
 }
