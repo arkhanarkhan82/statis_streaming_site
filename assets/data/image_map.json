@@ -14063,7 +14063,11 @@
         "Swiss U20": "assets/logos/upstreams/swiss-u20.webp",
         "Andorra U21": "assets/logos/upstreams/andorra-u21.webp",
         "England U21": "assets/logos/upstreams/england-u21.webp",
-        "Queen of The South": "assets/logos/upstreams/queen-of-the-south.webp"
+        "Queen of The South": "assets/logos/upstreams/queen-of-the-south.webp",
+        "Poland U21": "assets/logos/upstreams/poland-u21.webp",
+        "Armenia U21": "assets/logos/upstreams/armenia-u21.webp",
+        "Monaro Panthers": "assets/logos/upstreams/monaro-panthers.webp",
+        "Tuggeranong United": "assets/logos/upstreams/tuggeranong-united.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15705,6 +15709,8 @@
         "UFC Fight Night: Adesanya vs. Pyfer": "assets/logos/leagues/ufc-fight-night-adesanya-vs-pyfer.webp",
         "Indian Premier League": "assets/logos/leagues/indian-premier-league.webp",
         "U20 Friendly Games": "assets/logos/leagues/u20-friendly-games.webp",
-        "Argentina - Cup": "assets/logos/leagues/argentina-cup.webp"
+        "Argentina - Cup": "assets/logos/leagues/argentina-cup.webp",
+        "Tipsport Liga, Playoffs": "assets/logos/leagues/tipsport-liga-playoffs.webp",
+        "Australia - NPL - Capital": "assets/logos/leagues/australia-npl-capital.webp"
     }
 }
