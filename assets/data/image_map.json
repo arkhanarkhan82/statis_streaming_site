@@ -14098,7 +14098,8 @@
         "Nib FC": "assets/logos/upstreams/nib-fc.webp",
         "Bench Maji Bunna": "assets/logos/upstreams/bench-maji-bunna.webp",
         "JS Djijel": "assets/logos/upstreams/js-djijel.webp",
-        "Teodora Kostovi\u0107": "assets/logos/upstreams/teodora-kostovi\u0107.webp"
+        "Teodora Kostovi\u0107": "assets/logos/upstreams/teodora-kostovi\u0107.webp",
+        "Darwin Hearts FC (W)": "assets/logos/upstreams/darwin-hearts-fc-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15747,6 +15748,7 @@
         "Euro U19": "assets/logos/leagues/euro-u19.webp",
         "KHL Playoffs": "assets/logos/leagues/khl-playoffs.webp",
         "U19 UEFA European Championship, Elite round Gr. 2": "assets/logos/leagues/u19-uefa-european-championship-elite-round-gr-2.webp",
-        "FIFA Series, Australia": "assets/logos/leagues/fifa-series-australia.webp"
+        "FIFA Series, Australia": "assets/logos/leagues/fifa-series-australia.webp",
+        "EHF - European Cup (W)": "assets/logos/leagues/ehf-european-cup-w.webp"
     }
 }
