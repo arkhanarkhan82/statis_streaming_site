@@ -14042,7 +14042,11 @@
         "Serbia U17": "assets/logos/upstreams/serbia-u17.webp",
         "Tofiq Musayev": "assets/logos/upstreams/tofiq-musayev.webp",
         "Johnny Eblen": "assets/logos/upstreams/johnny-eblen.webp",
-        "Bryan Battle": "assets/logos/upstreams/bryan-battle.webp"
+        "Bryan Battle": "assets/logos/upstreams/bryan-battle.webp",
+        "Louisville Kings": "assets/logos/streamed/louisville-kings.webp",
+        "Birmingham Stallions": "assets/logos/streamed/birmingham-stallions.webp",
+        "Iceland U17": "assets/logos/streamed/iceland-u17.webp",
+        "Finland U19": "assets/logos/streamed/finland-u19.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
