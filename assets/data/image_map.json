@@ -14104,7 +14104,8 @@
         "St Lucia": "assets/logos/streamed/st-lucia.webp",
         "Electrico": "assets/logos/upstreams/electrico.webp",
         "Fabia Sintes": "assets/logos/upstreams/fabia-sintes.webp",
-        "Abdul Karim Badakhshi": "assets/logos/upstreams/abdul-karim-badakhshi.webp"
+        "Abdul Karim Badakhshi": "assets/logos/upstreams/abdul-karim-badakhshi.webp",
+        "HJK": "assets/logos/upstreams/hjk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15756,6 +15757,7 @@
         "FIFA Series, Australia": "assets/logos/leagues/fifa-series-australia.webp",
         "EHF - European Cup (W)": "assets/logos/leagues/ehf-european-cup-w.webp",
         "Basketball African League": "assets/logos/leagues/basketball-african-league.webp",
-        "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp"
+        "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp",
+        "MMA": "assets/logos/leagues/mma.webp"
     }
 }
