@@ -14079,7 +14079,13 @@
         "California Legion": "assets/logos/streamed/california-legion.webp",
         "Anthem RC": "assets/logos/streamed/anthem-rc.webp",
         "Marcin Tybura": "assets/logos/streamed/marcin-tybura.webp",
-        "Chase Hooper": "assets/logos/streamed/chase-hooper.webp"
+        "Chase Hooper": "assets/logos/streamed/chase-hooper.webp",
+        "Bosna in Hercegovina": "assets/logos/upstreams/bosna-in-hercegovina.webp",
+        "Slovenija": "assets/logos/upstreams/slovenija.webp",
+        "Nippon TV Tokyo Verdy Beleza": "assets/logos/upstreams/nippon-tv-tokyo-verdy-beleza.webp",
+        "Stallion Laguna FC": "assets/logos/upstreams/stallion-laguna-fc.webp",
+        "Portugal x S\u00e9rvia": "assets/logos/upstreams/portugal-x-s\u00e9rvia.webp",
+        "Sele\u00e7\u00e3o Sub-19 - Qualif. Euro 2026": "assets/logos/upstreams/sele\u00e7\u00e3o-sub-19-qualif-euro-2026.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15724,6 +15730,8 @@
         "Argentina - Cup": "assets/logos/leagues/argentina-cup.webp",
         "Tipsport Liga, Playoffs": "assets/logos/leagues/tipsport-liga-playoffs.webp",
         "Australia - NPL - Capital": "assets/logos/leagues/australia-npl-capital.webp",
-        "Sheffield Shield, Final day 5": "assets/logos/leagues/sheffield-shield-final-day-5.webp"
+        "Sheffield Shield, Final day 5": "assets/logos/leagues/sheffield-shield-final-day-5.webp",
+        "Euro U19": "assets/logos/leagues/euro-u19.webp",
+        "KHL Playoffs": "assets/logos/leagues/khl-playoffs.webp"
     }
 }
