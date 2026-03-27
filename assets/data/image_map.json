@@ -14107,7 +14107,10 @@
         "Abdul Karim Badakhshi": "assets/logos/upstreams/abdul-karim-badakhshi.webp",
         "HJK": "assets/logos/upstreams/hjk.webp",
         "Palmerston Rovers": "assets/logos/upstreams/palmerston-rovers.webp",
-        "Darwin Hearts FC": "assets/logos/upstreams/darwin-hearts-fc.webp"
+        "Darwin Hearts FC": "assets/logos/upstreams/darwin-hearts-fc.webp",
+        "Goteborg": "assets/logos/upstreams/goteborg.webp",
+        "Quetta Gladiators": "assets/logos/upstreams/quetta-gladiators.webp",
+        "Karachi Kings": "assets/logos/upstreams/karachi-kings.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15761,6 +15764,7 @@
         "Basketball African League": "assets/logos/leagues/basketball-african-league.webp",
         "Way of Warrior": "assets/logos/leagues/way-of-warrior.webp",
         "MMA": "assets/logos/leagues/mma.webp",
-        "Australia - FNT - Premier League": "assets/logos/leagues/australia-fnt-premier-league.webp"
+        "Australia - FNT - Premier League": "assets/logos/leagues/australia-fnt-premier-league.webp",
+        "Pakistan Super League": "assets/logos/leagues/pakistan-super-league.webp"
     }
 }
