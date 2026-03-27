@@ -14120,7 +14120,11 @@
         "Kenya": "assets/logos/streamed/kenya.webp",
         "Rwanda": "assets/logos/streamed/rwanda.webp",
         "American Samoa": "assets/logos/streamed/american-samoa.webp",
-        "Mili Poljicak": "assets/logos/upstreams/mili-poljicak.webp"
+        "Mili Poljicak": "assets/logos/upstreams/mili-poljicak.webp",
+        "Mets de Guaynabo": "assets/logos/upstreams/mets-de-guaynabo.webp",
+        "Capitanes de Arecibo": "assets/logos/upstreams/capitanes-de-arecibo.webp",
+        "Quebradillas": "assets/logos/upstreams/quebradillas.webp",
+        "Bayamon": "assets/logos/upstreams/bayamon.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
