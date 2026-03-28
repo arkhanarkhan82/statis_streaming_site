@@ -14240,7 +14240,10 @@
         "Kakamega Homeboyz": "assets/logos/upstreams/kakamega-homeboyz.webp",
         "\u017dKK Radni\u010dki Kragujevac": "assets/logos/upstreams/\u017ekk-radni\u010dki-kragujevac.webp",
         "Liverpool FC Legends": "assets/logos/upstreams/liverpool-fc-legends.webp",
-        "Emanuela Lares": "assets/logos/upstreams/emanuela-lares.webp"
+        "Emanuela Lares": "assets/logos/upstreams/emanuela-lares.webp",
+        "Multan Sultans": "assets/logos/upstreams/multan-sultans.webp",
+        "Islamabad United": "assets/logos/upstreams/islamabad-united.webp",
+        "Ji Sung Nam": "assets/logos/upstreams/ji-sung-nam.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15929,6 +15932,7 @@
         "Houston, USA, Qualifying": "assets/logos/leagues/houston-usa-qualifying.webp",
         "UTR PTT Trnava Men 03, 9-12 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-9-12-playoff.webp",
         "Bogota, Colombia, Qualifying": "assets/logos/leagues/bogota-colombia-qualifying.webp",
-        "ICC Men's T20 World Cup Africa Sub Regional Qualifier B": "assets/logos/leagues/icc-mens-t20-world-cup-africa-sub-regional-qualifier-b.webp"
+        "ICC Men's T20 World Cup Africa Sub Regional Qualifier B": "assets/logos/leagues/icc-mens-t20-world-cup-africa-sub-regional-qualifier-b.webp",
+        "UTR PTT Boca Raton Men 03, 13-16 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-men-03-13-16-playoff.webp"
     }
 }
