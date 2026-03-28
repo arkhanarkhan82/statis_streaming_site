@@ -14252,7 +14252,9 @@
         "A.C. PAOK": "assets/logos/upstreams/ac-paok.webp",
         "Bursa Bbsk": "assets/logos/upstreams/bursa-bbsk.webp",
         "Yuta Kikuchi": "assets/logos/upstreams/yuta-kikuchi.webp",
-        "HMNK Rijeka": "assets/logos/upstreams/hmnk-rijeka.webp"
+        "HMNK Rijeka": "assets/logos/upstreams/hmnk-rijeka.webp",
+        "Paris SG (W)": "assets/logos/upstreams/paris-sg-w.webp",
+        "Cezar Cretu": "assets/logos/upstreams/cezar-cretu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15945,6 +15947,8 @@
         "UTR PTT Boca Raton Men 03, 13-16 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-men-03-13-16-playoff.webp",
         "European Cup, Women": "assets/logos/leagues/european-cup-women.webp",
         "UTR PTT Boca Raton Men 03, 5-8 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-men-03-5-8-playoff.webp",
-        "Bucharest, Romania, Qualifying": "assets/logos/leagues/bucharest-romania-qualifying.webp"
+        "Bucharest, Romania, Qualifying": "assets/logos/leagues/bucharest-romania-qualifying.webp",
+        "Division 1, Women": "assets/logos/leagues/division-1-women.webp",
+        "Barletta, Italy, Qualifying": "assets/logos/leagues/barletta-italy-qualifying.webp"
     }
 }
