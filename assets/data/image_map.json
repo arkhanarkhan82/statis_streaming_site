@@ -14140,7 +14140,29 @@
         "North Carolina W": "assets/logos/upstreams/north-carolina-w.webp",
         "Wakefield Trinity": "assets/logos/upstreams/wakefield-trinity.webp",
         "Asuncion Nacional": "assets/logos/upstreams/asuncion-nacional.webp",
-        "Atl Rafaela": "assets/logos/upstreams/atl-rafaela.webp"
+        "Atl Rafaela": "assets/logos/upstreams/atl-rafaela.webp",
+        "Basketball Braunschweig": "assets/logos/upstreams/basketball-braunschweig.webp",
+        "FC Nasaf": "assets/logos/upstreams/fc-nasaf.webp",
+        "Orlando Pirates U23": "assets/logos/upstreams/orlando-pirates-u23.webp",
+        "Chernomorets 1919": "assets/logos/upstreams/chernomorets-1919.webp",
+        "Dunav Ruse": "assets/logos/upstreams/dunav-ruse.webp",
+        "Heerenveen W": "assets/logos/upstreams/heerenveen-w.webp",
+        "Feyenoord W": "assets/logos/upstreams/feyenoord-w.webp",
+        "Glasgow City": "assets/logos/upstreams/glasgow-city.webp",
+        "Rangers Women": "assets/logos/upstreams/rangers-women.webp",
+        "Casey O'Neill": "assets/logos/upstreams/casey-oneill.webp",
+        "Gabriella Fernandes": "assets/logos/upstreams/gabriella-fernandes.webp",
+        "Tyrell Fortune": "assets/logos/upstreams/tyrell-fortune.webp",
+        "Terrance McKinney": "assets/logos/upstreams/terrance-mckinney.webp",
+        "Kyle Nelson": "assets/logos/upstreams/kyle-nelson.webp",
+        "Mansur Abdul-Malik": "assets/logos/upstreams/mansur-abdul-malik.webp",
+        "Yousri Belgaroui": "assets/logos/upstreams/yousri-belgaroui.webp",
+        "Julian Erosa": "assets/logos/upstreams/julian-erosa.webp",
+        "Lerryan Douglas": "assets/logos/upstreams/lerryan-douglas.webp",
+        "Michael Chiesa": "assets/logos/upstreams/michael-chiesa.webp",
+        "Alexa Grasso": "assets/logos/upstreams/alexa-grasso.webp",
+        "Maycee Barber": "assets/logos/upstreams/maycee-barber.webp",
+        "NFH Nyk W": "assets/logos/upstreams/nfh-nyk-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15813,6 +15835,8 @@
         "MLB Baseball": "assets/logos/leagues/mlb-baseball.webp",
         "UTR PTT Umag Men 01, 13-16 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-13-16-playoff.webp",
         "UTR PTT Umag Men 01, 17-20 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-17-20-playoff.webp",
-        "UTR PTT Trnava Men 03, 5-8 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-5-8-playoff.webp"
+        "UTR PTT Trnava Men 03, 5-8 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-5-8-playoff.webp",
+        "Swiss - LNA": "assets/logos/leagues/swiss-lna.webp",
+        "FA WC Women": "assets/logos/leagues/fa-wc-women.webp"
     }
 }
