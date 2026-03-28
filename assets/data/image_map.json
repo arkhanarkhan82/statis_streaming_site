@@ -14223,7 +14223,9 @@
         "Melbourne Maverick W": "assets/logos/upstreams/melbourne-maverick-w.webp",
         "Melbourne Vixens W": "assets/logos/upstreams/melbourne-vixens-w.webp",
         "Mario Popovic": "assets/logos/upstreams/mario-popovic.webp",
-        "Lance Gibson Jr.": "assets/logos/upstreams/lance-gibson-jr.webp"
+        "Lance Gibson Jr.": "assets/logos/upstreams/lance-gibson-jr.webp",
+        "Jeffrey John Wolf": "assets/logos/upstreams/jeffrey-john-wolf.webp",
+        "Gabriel Debru": "assets/logos/upstreams/gabriel-debru.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15909,6 +15911,7 @@
         "Australia - NPL - Victoria U23": "assets/logos/leagues/australia-npl-victoria-u23.webp",
         "UTR PTT Boca Raton Men 03, 9-12 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-men-03-9-12-playoff.webp",
         "UTR PTT Boca Raton Men 03, 1-4 Playoff": "assets/logos/leagues/utr-ptt-boca-raton-men-03-1-4-playoff.webp",
-        "Houston, USA, Qualifying": "assets/logos/leagues/houston-usa-qualifying.webp"
+        "Houston, USA, Qualifying": "assets/logos/leagues/houston-usa-qualifying.webp",
+        "UTR PTT Trnava Men 03, 9-12 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-9-12-playoff.webp"
     }
 }
