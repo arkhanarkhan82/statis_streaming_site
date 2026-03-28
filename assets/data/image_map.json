@@ -14195,7 +14195,14 @@
         "Belconnen United": "assets/logos/upstreams/belconnen-united.webp",
         "Kolkata Knight Riders": "assets/logos/upstreams/kolkata-knight-riders.webp",
         "Podlesniy": "assets/logos/upstreams/podlesniy.webp",
-        "Trois-Rivi\u00e8res": "assets/logos/streamed/trois-rivi\u00e8res.webp"
+        "Trois-Rivi\u00e8res": "assets/logos/streamed/trois-rivi\u00e8res.webp",
+        "Lyn": "assets/logos/upstreams/lyn.webp",
+        "Gloria Bistrita Nasaud (W)": "assets/logos/upstreams/gloria-bistrita-nasaud-w.webp",
+        "Karlskrona HK": "assets/logos/upstreams/karlskrona-hk.webp",
+        "Jeanne d'Arc Dijon": "assets/logos/upstreams/jeanne-darc-dijon.webp",
+        "San Mart\u00edn Formosa": "assets/logos/upstreams/san-mart\u00edn-formosa.webp",
+        "SUBT": "assets/logos/upstreams/subt.webp",
+        "Inter Willemstad": "assets/logos/upstreams/inter-willemstad.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15872,6 +15879,9 @@
         "Swiss - LNA": "assets/logos/leagues/swiss-lna.webp",
         "FA WC Women": "assets/logos/leagues/fa-wc-women.webp",
         "Greece - GBL": "assets/logos/leagues/greece-gbl.webp",
-        "Estonian-Latvian Basketball League, Playoffs": "assets/logos/leagues/estonian-latvian-basketball-league-playoffs.webp"
+        "Estonian-Latvian Basketball League, Playoffs": "assets/logos/leagues/estonian-latvian-basketball-league-playoffs.webp",
+        "U23 Friendly Games": "assets/logos/leagues/u23-friendly-games.webp",
+        "Champions League (W) - Playoff": "assets/logos/leagues/champions-league-w-playoff.webp",
+        "EHF European League, Women, Knockout stage": "assets/logos/leagues/ehf-european-league-women-knockout-stage.webp"
     }
 }
