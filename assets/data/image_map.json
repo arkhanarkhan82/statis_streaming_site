@@ -14202,7 +14202,11 @@
         "Jeanne d'Arc Dijon": "assets/logos/upstreams/jeanne-darc-dijon.webp",
         "San Mart\u00edn Formosa": "assets/logos/upstreams/san-mart\u00edn-formosa.webp",
         "SUBT": "assets/logos/upstreams/subt.webp",
-        "Inter Willemstad": "assets/logos/upstreams/inter-willemstad.webp"
+        "Inter Willemstad": "assets/logos/upstreams/inter-willemstad.webp",
+        "Eskilstuna United (W)": "assets/logos/upstreams/eskilstuna-united-w.webp",
+        "Vittsjo GIK (W)": "assets/logos/upstreams/vittsjo-gik-w.webp",
+        "Boxing : Joel Mafauad": "assets/logos/upstreams/boxing-joel-mafauad.webp",
+        "Mariano Farias": "assets/logos/upstreams/mariano-farias.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15882,6 +15886,7 @@
         "Estonian-Latvian Basketball League, Playoffs": "assets/logos/leagues/estonian-latvian-basketball-league-playoffs.webp",
         "U23 Friendly Games": "assets/logos/leagues/u23-friendly-games.webp",
         "Champions League (W) - Playoff": "assets/logos/leagues/champions-league-w-playoff.webp",
-        "EHF European League, Women, Knockout stage": "assets/logos/leagues/ehf-european-league-women-knockout-stage.webp"
+        "EHF European League, Women, Knockout stage": "assets/logos/leagues/ehf-european-league-women-knockout-stage.webp",
+        "Sweden - Damallsvenskan (W)": "assets/logos/leagues/sweden-damallsvenskan-w.webp"
     }
 }
