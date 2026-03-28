@@ -14213,7 +14213,12 @@
         "Houston Gamblers": "assets/logos/streamed/houston-gamblers.webp",
         "Liverpool Legends": "assets/logos/streamed/liverpool-legends.webp",
         "Hume City U23": "assets/logos/upstreams/hume-city-u23.webp",
-        "PrEaston Lions U23": "assets/logos/upstreams/preaston-lions-u23.webp"
+        "PrEaston Lions U23": "assets/logos/upstreams/preaston-lions-u23.webp",
+        "Bernex Basket": "assets/logos/upstreams/bernex-basket.webp",
+        "Meyrin Basket": "assets/logos/upstreams/meyrin-basket.webp",
+        "Reale Mutua Torino": "assets/logos/upstreams/reale-mutua-torino.webp",
+        "Criollos de Caguas": "assets/logos/upstreams/criollos-de-caguas.webp",
+        "San German": "assets/logos/upstreams/san-german.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
