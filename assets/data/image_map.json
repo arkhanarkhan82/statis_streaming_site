@@ -14175,7 +14175,26 @@
         "Macau": "assets/logos/streamed/macau.webp",
         "Aruba": "assets/logos/streamed/aruba.webp",
         "Liechtenstein": "assets/logos/streamed/liechtenstein.webp",
-        "Olimpo Bahia Blanca": "assets/logos/streamed/olimpo-bahia-blanca.webp"
+        "Olimpo Bahia Blanca": "assets/logos/streamed/olimpo-bahia-blanca.webp",
+        "Brisbane City U23": "assets/logos/upstreams/brisbane-city-u23.webp",
+        "Darwin Olympic": "assets/logos/upstreams/darwin-olympic.webp",
+        "Smiltene": "assets/logos/upstreams/smiltene.webp",
+        "Rezekne": "assets/logos/upstreams/rezekne.webp",
+        "Leevon Ppk": "assets/logos/upstreams/leevon-ppk.webp",
+        "Schalke U19": "assets/logos/upstreams/schalke-u19.webp",
+        "Kiel U19": "assets/logos/upstreams/kiel-u19.webp",
+        "Urbas Fuenlabrada": "assets/logos/upstreams/urbas-fuenlabrada.webp",
+        "WEast Adelaide (R)": "assets/logos/upstreams/weast-adelaide-r.webp",
+        "Campbelltown City (R)": "assets/logos/upstreams/campbelltown-city-r.webp",
+        "Tigers FC U23": "assets/logos/upstreams/tigers-fc-u23.webp",
+        "O'Connor Knights U23": "assets/logos/upstreams/oconnor-knights-u23.webp",
+        "Garuda FC": "assets/logos/upstreams/garuda-fc.webp",
+        "Port Darwin FC": "assets/logos/upstreams/port-darwin-fc.webp",
+        "Johannesburg Giants": "assets/logos/upstreams/johannesburg-giants.webp",
+        "Canberra White Eagles": "assets/logos/upstreams/canberra-white-eagles.webp",
+        "Belconnen United": "assets/logos/upstreams/belconnen-united.webp",
+        "Kolkata Knight Riders": "assets/logos/upstreams/kolkata-knight-riders.webp",
+        "Podlesniy": "assets/logos/upstreams/podlesniy.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15850,6 +15869,8 @@
         "UTR PTT Umag Men 01, 17-20 Playoff": "assets/logos/leagues/utr-ptt-umag-men-01-17-20-playoff.webp",
         "UTR PTT Trnava Men 03, 5-8 Playoff": "assets/logos/leagues/utr-ptt-trnava-men-03-5-8-playoff.webp",
         "Swiss - LNA": "assets/logos/leagues/swiss-lna.webp",
-        "FA WC Women": "assets/logos/leagues/fa-wc-women.webp"
+        "FA WC Women": "assets/logos/leagues/fa-wc-women.webp",
+        "Greece - GBL": "assets/logos/leagues/greece-gbl.webp",
+        "Estonian-Latvian Basketball League, Playoffs": "assets/logos/leagues/estonian-latvian-basketball-league-playoffs.webp"
     }
 }
