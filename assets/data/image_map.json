@@ -14260,7 +14260,11 @@
         "Ivan Lopez Martos": "assets/logos/upstreams/ivan-lopez-martos.webp",
         "Pietro Verno": "assets/logos/upstreams/pietro-verno.webp",
         "Sergio Martos Gornes": "assets/logos/upstreams/sergio-martos-gornes.webp",
-        "Joan Nadal Vives": "assets/logos/upstreams/joan-nadal-vives.webp"
+        "Joan Nadal Vives": "assets/logos/upstreams/joan-nadal-vives.webp",
+        "Orlando Storm": "assets/logos/streamed/orlando-storm.webp",
+        "Columbus Aviators": "assets/logos/streamed/columbus-aviators.webp",
+        "Sierra Leone": "assets/logos/upstreams/sierra-leone.webp",
+        "San Lorenzo (R)": "assets/logos/upstreams/san-lorenzo-r.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -15957,6 +15961,7 @@
         "Division 1, Women": "assets/logos/leagues/division-1-women.webp",
         "Barletta, Italy, Qualifying": "assets/logos/leagues/barletta-italy-qualifying.webp",
         "Menorca, Spain, Qualifying": "assets/logos/leagues/menorca-spain-qualifying.webp",
-        "Marrakech, Morocco, Qualifying": "assets/logos/leagues/marrakech-morocco-qualifying.webp"
+        "Marrakech, Morocco, Qualifying": "assets/logos/leagues/marrakech-morocco-qualifying.webp",
+        "Paraguay - Primera Division - Apertura (R)": "assets/logos/leagues/paraguay-primera-division-apertura-r.webp"
     }
 }
