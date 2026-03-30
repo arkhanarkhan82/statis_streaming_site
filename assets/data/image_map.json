@@ -14330,7 +14330,8 @@
         "AFC Totton": "assets/logos/upstreams/afc-totton.webp",
         "August Brostroem Poulsen": "assets/logos/upstreams/august-brostroem-poulsen.webp",
         "Ind Yumbo": "assets/logos/upstreams/ind-yumbo.webp",
-        "U Magdalena": "assets/logos/upstreams/u-magdalena.webp"
+        "U Magdalena": "assets/logos/upstreams/u-magdalena.webp",
+        "Valentina Khrebtova": "assets/logos/upstreams/valentina-khrebtova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16065,6 +16066,8 @@
         "UTR PTT Krakow Men 03, Group B": "assets/logos/leagues/utr-ptt-krakow-men-03-group-b.webp",
         "UTR PTT Krakow Men 03, Group D": "assets/logos/leagues/utr-ptt-krakow-men-03-group-d.webp",
         "UTR PTT Trnava Women 03, Group D": "assets/logos/leagues/utr-ptt-trnava-women-03-group-d.webp",
-        "Colombia Primera B": "assets/logos/leagues/colombia-primera-b.webp"
+        "Colombia Primera B": "assets/logos/leagues/colombia-primera-b.webp",
+        "UTR PTT Carvoeiro Men +H 05, Group C": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-group-c.webp",
+        "UTR PTT Carvoeiro Women +H 05, Group D": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-group-d.webp"
     }
 }
