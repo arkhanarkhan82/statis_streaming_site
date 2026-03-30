@@ -14327,7 +14327,8 @@
         "Sean Maddocks": "assets/logos/upstreams/sean-maddocks.webp",
         "Pedro Vives Marcos": "assets/logos/upstreams/pedro-vives-marcos.webp",
         "Andrew Paulson": "assets/logos/upstreams/andrew-paulson.webp",
-        "AFC Totton": "assets/logos/upstreams/afc-totton.webp"
+        "AFC Totton": "assets/logos/upstreams/afc-totton.webp",
+        "August Brostroem Poulsen": "assets/logos/upstreams/august-brostroem-poulsen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16057,6 +16058,10 @@
         "Barletta, Italy": "assets/logos/leagues/barletta-italy.webp",
         "San Luis Potosi, Mexico, Qualifying": "assets/logos/leagues/san-luis-potosi-mexico-qualifying.webp",
         "Tour Championship": "assets/logos/leagues/tour-championship.webp",
-        "Menorca, Spain": "assets/logos/leagues/menorca-spain.webp"
+        "Menorca, Spain": "assets/logos/leagues/menorca-spain.webp",
+        "UTR PTT Krakow Men 03, Group A": "assets/logos/leagues/utr-ptt-krakow-men-03-group-a.webp",
+        "UTR PTT Krakow Men 03, Group B": "assets/logos/leagues/utr-ptt-krakow-men-03-group-b.webp",
+        "UTR PTT Krakow Men 03, Group D": "assets/logos/leagues/utr-ptt-krakow-men-03-group-d.webp",
+        "UTR PTT Trnava Women 03, Group D": "assets/logos/leagues/utr-ptt-trnava-women-03-group-d.webp"
     }
 }
