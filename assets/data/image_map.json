@@ -14400,7 +14400,10 @@
         "Ondrej Horak": "assets/logos/upstreams/ondrej-horak.webp",
         "Richard Lalance": "assets/logos/upstreams/richard-lalance.webp",
         "David Jeanne-Grandinot": "assets/logos/upstreams/david-jeanne-grandinot.webp",
-        "Sadbaroy Kholdarova": "assets/logos/upstreams/sadbaroy-kholdarova.webp"
+        "Sadbaroy Kholdarova": "assets/logos/upstreams/sadbaroy-kholdarova.webp",
+        "John Patrick Popowich": "assets/logos/upstreams/john-patrick-popowich.webp",
+        "Freddy Murray": "assets/logos/upstreams/freddy-murray.webp",
+        "Santiago Lora": "assets/logos/upstreams/santiago-lora.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16152,6 +16155,7 @@
         "Bucharest": "assets/logos/leagues/bucharest.webp",
         "Atp 250": "assets/logos/leagues/atp-250.webp",
         "U20 AFC Asian Cup, Group A, Women": "assets/logos/leagues/u20-afc-asian-cup-group-a-women.webp",
-        "UTR PTT Nashville Men +H 01, Group A": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-a.webp"
+        "UTR PTT Nashville Men +H 01, Group A": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-a.webp",
+        "UTR PTT Nashville Men +H 01, Group D": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-d.webp"
     }
 }
