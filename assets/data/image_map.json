@@ -14395,7 +14395,12 @@
         "Ziraat": "assets/logos/upstreams/ziraat.webp",
         "ATP 250: Fayez Sarofim & Co. U.S. Men's Clay Court Championship": "assets/logos/upstreams/atp-250-fayez-sarofim-co-us-mens-clay-court-championship.webp",
         "China U20": "assets/logos/upstreams/china-u20.webp",
-        "Vietnam U20": "assets/logos/upstreams/vietnam-u20.webp"
+        "Vietnam U20": "assets/logos/upstreams/vietnam-u20.webp",
+        "Eric Crivei": "assets/logos/upstreams/eric-crivei.webp",
+        "Ondrej Horak": "assets/logos/upstreams/ondrej-horak.webp",
+        "Richard Lalance": "assets/logos/upstreams/richard-lalance.webp",
+        "David Jeanne-Grandinot": "assets/logos/upstreams/david-jeanne-grandinot.webp",
+        "Sadbaroy Kholdarova": "assets/logos/upstreams/sadbaroy-kholdarova.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16146,6 +16151,7 @@
         "Finland - Liiga - Playoff": "assets/logos/leagues/finland-liiga-playoff.webp",
         "Bucharest": "assets/logos/leagues/bucharest.webp",
         "Atp 250": "assets/logos/leagues/atp-250.webp",
-        "U20 AFC Asian Cup, Group A, Women": "assets/logos/leagues/u20-afc-asian-cup-group-a-women.webp"
+        "U20 AFC Asian Cup, Group A, Women": "assets/logos/leagues/u20-afc-asian-cup-group-a-women.webp",
+        "UTR PTT Nashville Men +H 01, Group A": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-a.webp"
     }
 }
