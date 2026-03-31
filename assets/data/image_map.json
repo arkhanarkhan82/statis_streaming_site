@@ -14405,7 +14405,9 @@
         "Freddy Murray": "assets/logos/upstreams/freddy-murray.webp",
         "Santiago Lora": "assets/logos/upstreams/santiago-lora.webp",
         "Alejandro Juan Mano": "assets/logos/upstreams/alejandro-juan-mano.webp",
-        "Lewie Lane": "assets/logos/upstreams/lewie-lane.webp"
+        "Lewie Lane": "assets/logos/upstreams/lewie-lane.webp",
+        "Kathleen Kanev": "assets/logos/upstreams/kathleen-kanev.webp",
+        "Sinead Lohan": "assets/logos/upstreams/sinead-lohan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16161,6 +16163,7 @@
         "UTR PTT Nashville Men +H 01, Group D": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-d.webp",
         "ATP Bucharest": "assets/logos/leagues/atp-bucharest.webp",
         "ATP Marrakech": "assets/logos/leagues/atp-marrakech.webp",
-        "ATP Houston": "assets/logos/leagues/atp-houston.webp"
+        "ATP Houston": "assets/logos/leagues/atp-houston.webp",
+        "UTR PTT Carvoeiro Women +H 05, Group A": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-group-a.webp"
     }
 }
