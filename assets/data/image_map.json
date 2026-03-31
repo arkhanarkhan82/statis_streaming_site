@@ -14403,7 +14403,9 @@
         "Sadbaroy Kholdarova": "assets/logos/upstreams/sadbaroy-kholdarova.webp",
         "John Patrick Popowich": "assets/logos/upstreams/john-patrick-popowich.webp",
         "Freddy Murray": "assets/logos/upstreams/freddy-murray.webp",
-        "Santiago Lora": "assets/logos/upstreams/santiago-lora.webp"
+        "Santiago Lora": "assets/logos/upstreams/santiago-lora.webp",
+        "Alejandro Juan Mano": "assets/logos/upstreams/alejandro-juan-mano.webp",
+        "Lewie Lane": "assets/logos/upstreams/lewie-lane.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16156,6 +16158,9 @@
         "Atp 250": "assets/logos/leagues/atp-250.webp",
         "U20 AFC Asian Cup, Group A, Women": "assets/logos/leagues/u20-afc-asian-cup-group-a-women.webp",
         "UTR PTT Nashville Men +H 01, Group A": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-a.webp",
-        "UTR PTT Nashville Men +H 01, Group D": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-d.webp"
+        "UTR PTT Nashville Men +H 01, Group D": "assets/logos/leagues/utr-ptt-nashville-men-h-01-group-d.webp",
+        "ATP Bucharest": "assets/logos/leagues/atp-bucharest.webp",
+        "ATP Marrakech": "assets/logos/leagues/atp-marrakech.webp",
+        "ATP Houston": "assets/logos/leagues/atp-houston.webp"
     }
 }
