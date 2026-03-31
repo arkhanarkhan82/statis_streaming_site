@@ -14342,7 +14342,13 @@
         "Oman U23": "assets/logos/streamed/oman-u23.webp",
         "Chile U20": "assets/logos/streamed/chile-u20.webp",
         "Peru U20": "assets/logos/streamed/peru-u20.webp",
-        "Rep. Of Ireland": "assets/logos/streamed/rep-of-ireland.webp"
+        "Rep. Of Ireland": "assets/logos/streamed/rep-of-ireland.webp",
+        "Enisey Krasnoyarsk": "assets/logos/upstreams/enisey-krasnoyarsk.webp",
+        "Reale Mutua Fenera Chieri '76": "assets/logos/upstreams/reale-mutua-fenera-chieri-76.webp",
+        "Tapiolan Honka Espoo": "assets/logos/upstreams/tapiolan-honka-espoo.webp",
+        "Lucknow Super Giants": "assets/logos/upstreams/lucknow-super-giants.webp",
+        "Sykes O.": "assets/logos/upstreams/sykes-o.webp",
+        "Barrett J.": "assets/logos/upstreams/barrett-j.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16085,6 +16091,9 @@
         "UTR PTT Carvoeiro Men +H 05, Group A": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-group-a.webp",
         "UTR PTT Krakow Men 03, Group C": "assets/logos/leagues/utr-ptt-krakow-men-03-group-c.webp",
         "UTR PTT Trnava Women 03, Group A": "assets/logos/leagues/utr-ptt-trnava-women-03-group-a.webp",
-        "UTR PTT Carvoeiro Men +H 05, Group B": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-group-b.webp"
+        "UTR PTT Carvoeiro Men +H 05, Group B": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-group-b.webp",
+        "WTA Charleston": "assets/logos/leagues/wta-charleston.webp",
+        "Champions League, Playoffs": "assets/logos/leagues/champions-league-playoffs.webp",
+        "CEV Cup, Women": "assets/logos/leagues/cev-cup-women.webp"
     }
 }
