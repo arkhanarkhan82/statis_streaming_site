@@ -14447,7 +14447,22 @@
         "Karim AL-Amin": "assets/logos/upstreams/karim-al-amin.webp",
         "Victoria Mann": "assets/logos/upstreams/victoria-mann.webp",
         "Oklahoma Sooners": "assets/logos/upstreams/oklahoma-sooners.webp",
-        "Congo DR": "assets/logos/streamed/congo-dr.webp"
+        "Congo DR": "assets/logos/streamed/congo-dr.webp",
+        "Stab\u00e6k Fotball": "assets/logos/upstreams/stab\u00e6k-fotball.webp",
+        "Thailand U20": "assets/logos/upstreams/thailand-u20.webp",
+        "Bangladesh U20": "assets/logos/upstreams/bangladesh-u20.webp",
+        "F\u00fatbol Club Barcelona": "assets/logos/upstreams/f\u00fatbol-club-barcelona.webp",
+        "Atlantico Deportivo": "assets/logos/upstreams/atlantico-deportivo.webp",
+        "FC San Nicolas": "assets/logos/upstreams/fc-san-nicolas.webp",
+        "Goi\u00e1s": "assets/logos/upstreams/goi\u00e1s.webp",
+        "Nautico PE": "assets/logos/upstreams/nautico-pe.webp",
+        "Haka Valkeakoski": "assets/logos/upstreams/haka-valkeakoski.webp",
+        "Gabriele Maria Noce": "assets/logos/upstreams/gabriele-maria-noce.webp",
+        "Alexander Tokar": "assets/logos/upstreams/alexander-tokar.webp",
+        "M. Alvarez Sarmiento": "assets/logos/upstreams/m-alvarez-sarmiento.webp",
+        "Yuliana Lizarazo": "assets/logos/upstreams/yuliana-lizarazo.webp",
+        "Anna Klasen": "assets/logos/upstreams/anna-klasen.webp",
+        "Francesca Gandolfi": "assets/logos/upstreams/francesca-gandolfi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16215,6 +16230,7 @@
         "Iceland Basketball Premier League, Playoffs": "assets/logos/leagues/iceland-basketball-premier-league-playoffs.webp",
         "Tour Championship 2026": "assets/logos/leagues/tour-championship-2026.webp",
         "CBC": "assets/logos/leagues/cbc.webp",
-        "College Basketball Crown": "assets/logos/leagues/college-basketball-crown.webp"
+        "College Basketball Crown": "assets/logos/leagues/college-basketball-crown.webp",
+        "EHF Champions League, Playoffs": "assets/logos/leagues/ehf-champions-league-playoffs.webp"
     }
 }
