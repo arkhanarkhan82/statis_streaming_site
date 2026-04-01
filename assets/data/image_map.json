@@ -14487,7 +14487,9 @@
         "Gigantes de Carolina": "assets/logos/upstreams/gigantes-de-carolina.webp",
         "Aliz Simon": "assets/logos/upstreams/aliz-simon.webp",
         "Aleksandra Weslawowicz": "assets/logos/upstreams/aleksandra-weslawowicz.webp",
-        "Veysel Tasdemir": "assets/logos/upstreams/veysel-tasdemir.webp"
+        "Veysel Tasdemir": "assets/logos/upstreams/veysel-tasdemir.webp",
+        "Alessandro Gozzini": "assets/logos/upstreams/alessandro-gozzini.webp",
+        "Edvin Hadzihalilovic": "assets/logos/upstreams/edvin-hadzihalilovic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16261,6 +16263,7 @@
         "WTA - CharlEaston (USA)": "assets/logos/leagues/wta-charleaston-usa.webp",
         "WTA - Bogota (COL)": "assets/logos/leagues/wta-bogota-col.webp",
         "ATP - Houston (USA)": "assets/logos/leagues/atp-houston-usa.webp",
-        "UTR PTT Newport Beach Men 07, Group A": "assets/logos/leagues/utr-ptt-newport-beach-men-07-group-a.webp"
+        "UTR PTT Newport Beach Men 07, Group A": "assets/logos/leagues/utr-ptt-newport-beach-men-07-group-a.webp",
+        "Asian Cup U20": "assets/logos/leagues/asian-cup-u20.webp"
     }
 }
