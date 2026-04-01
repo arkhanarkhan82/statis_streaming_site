@@ -14491,7 +14491,13 @@
         "Alessandro Gozzini": "assets/logos/upstreams/alessandro-gozzini.webp",
         "Edvin Hadzihalilovic": "assets/logos/upstreams/edvin-hadzihalilovic.webp",
         "Mateusz Golas": "assets/logos/upstreams/mateusz-golas.webp",
-        "Arthur Chardain": "assets/logos/upstreams/arthur-chardain.webp"
+        "Arthur Chardain": "assets/logos/upstreams/arthur-chardain.webp",
+        "TK Hannover": "assets/logos/upstreams/tk-hannover.webp",
+        "Mitteldeutscher BC": "assets/logos/upstreams/mitteldeutscher-bc.webp",
+        "Mehmet Can Toremis": "assets/logos/upstreams/mehmet-can-toremis.webp",
+        "Luca-Stefan Pandele": "assets/logos/upstreams/luca-stefan-pandele.webp",
+        "Safin Emran": "assets/logos/upstreams/safin-emran.webp",
+        "Michael Tomic": "assets/logos/upstreams/michael-tomic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16267,6 +16273,7 @@
         "ATP - Houston (USA)": "assets/logos/leagues/atp-houston-usa.webp",
         "UTR PTT Newport Beach Men 07, Group A": "assets/logos/leagues/utr-ptt-newport-beach-men-07-group-a.webp",
         "Asian Cup U20": "assets/logos/leagues/asian-cup-u20.webp",
-        "Basketball Europe Cup": "assets/logos/leagues/basketball-europe-cup.webp"
+        "Basketball Europe Cup": "assets/logos/leagues/basketball-europe-cup.webp",
+        "1st DBBL, Playoffs": "assets/logos/leagues/1st-dbbl-playoffs.webp"
     }
 }
