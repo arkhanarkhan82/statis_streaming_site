@@ -14445,7 +14445,8 @@
         "Felipe Virgili Berini": "assets/logos/upstreams/felipe-virgili-berini.webp",
         "Barceloneta": "assets/logos/upstreams/barceloneta.webp",
         "Karim AL-Amin": "assets/logos/upstreams/karim-al-amin.webp",
-        "Victoria Mann": "assets/logos/upstreams/victoria-mann.webp"
+        "Victoria Mann": "assets/logos/upstreams/victoria-mann.webp",
+        "Oklahoma Sooners": "assets/logos/upstreams/oklahoma-sooners.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16211,6 +16212,8 @@
         "LEN Champions League": "assets/logos/leagues/len-champions-league.webp",
         "Poland - PHL - Playoff": "assets/logos/leagues/poland-phl-playoff.webp",
         "Iceland Basketball Premier League, Playoffs": "assets/logos/leagues/iceland-basketball-premier-league-playoffs.webp",
-        "Tour Championship 2026": "assets/logos/leagues/tour-championship-2026.webp"
+        "Tour Championship 2026": "assets/logos/leagues/tour-championship-2026.webp",
+        "CBC": "assets/logos/leagues/cbc.webp",
+        "College Basketball Crown": "assets/logos/leagues/college-basketball-crown.webp"
     }
 }
