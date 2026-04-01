@@ -14468,7 +14468,11 @@
         "Josip Simundza": "assets/logos/upstreams/josip-simundza.webp",
         "Michiel de Krom": "assets/logos/upstreams/michiel-de-krom.webp",
         "Claus Piening": "assets/logos/upstreams/claus-piening.webp",
-        "Gaia Squarcialupi": "assets/logos/upstreams/gaia-squarcialupi.webp"
+        "Gaia Squarcialupi": "assets/logos/upstreams/gaia-squarcialupi.webp",
+        "Mara Sugar": "assets/logos/upstreams/mara-sugar.webp",
+        "Jared Horwood": "assets/logos/upstreams/jared-horwood.webp",
+        "Carty A.": "assets/logos/upstreams/carty-a.webp",
+        "Irina Fetecau": "assets/logos/upstreams/irina-fetecau.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16237,6 +16241,10 @@
         "Tour Championship 2026": "assets/logos/leagues/tour-championship-2026.webp",
         "CBC": "assets/logos/leagues/cbc.webp",
         "College Basketball Crown": "assets/logos/leagues/college-basketball-crown.webp",
-        "EHF Champions League, Playoffs": "assets/logos/leagues/ehf-champions-league-playoffs.webp"
+        "EHF Champions League, Playoffs": "assets/logos/leagues/ehf-champions-league-playoffs.webp",
+        "ATP - BucurEasti (ROM)": "assets/logos/leagues/atp-bucureasti-rom.webp",
+        "WTA - CharlEaston (USA)": "assets/logos/leagues/wta-charleaston-usa.webp",
+        "WTA - Bogota (COL)": "assets/logos/leagues/wta-bogota-col.webp",
+        "ATP - Houston (USA)": "assets/logos/leagues/atp-houston-usa.webp"
     }
 }
