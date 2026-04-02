@@ -14530,7 +14530,8 @@
         "Brazil Juniors": "assets/logos/upstreams/brazil-juniors.webp",
         "Rouen M\u00e9tropole Basket": "assets/logos/upstreams/rouen-m\u00e9tropole-basket.webp",
         "Ilan Hediger": "assets/logos/upstreams/ilan-hediger.webp",
-        "HC Pre\u0161ov": "assets/logos/upstreams/hc-pre\u0161ov.webp"
+        "HC Pre\u0161ov": "assets/logos/upstreams/hc-pre\u0161ov.webp",
+        "Chinese Taipei U20": "assets/logos/upstreams/chinese-taipei-u20.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16309,6 +16310,7 @@
         "Basketball Europe Cup": "assets/logos/leagues/basketball-europe-cup.webp",
         "1st DBBL, Playoffs": "assets/logos/leagues/1st-dbbl-playoffs.webp",
         "1st Liga Playoffs": "assets/logos/leagues/1st-liga-playoffs.webp",
-        "ICC CWC League 2": "assets/logos/leagues/icc-cwc-league-2.webp"
+        "ICC CWC League 2": "assets/logos/leagues/icc-cwc-league-2.webp",
+        "U20 AFC Asian Cup, Group C, Women": "assets/logos/leagues/u20-afc-asian-cup-group-c-women.webp"
     }
 }
