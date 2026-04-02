@@ -14551,7 +14551,9 @@
         "Leon Seiwald": "assets/logos/upstreams/leon-seiwald.webp",
         "Muh Azahbru B. Karsa": "assets/logos/upstreams/muh-azahbru-b-karsa.webp",
         "Olympique Dcheira": "assets/logos/upstreams/olympique-dcheira.webp",
-        "FC Grenoble Rugby": "assets/logos/upstreams/fc-grenoble-rugby.webp"
+        "FC Grenoble Rugby": "assets/logos/upstreams/fc-grenoble-rugby.webp",
+        "V\u00e4xj\u00f6 DFF": "assets/logos/upstreams/v\u00e4xj\u00f6-dff.webp",
+        "Eskilstuna Utd DFF": "assets/logos/upstreams/eskilstuna-utd-dff.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16345,6 +16347,10 @@
         "Premier League 2026, Night 9": "assets/logos/leagues/premier-league-2026-night-9.webp",
         "Premier League, Night 9": "assets/logos/leagues/premier-league-night-9.webp",
         "UTR PTT Nashville Men +H 01, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-nashville-men-h-01-5-8-playoffs.webp",
-        "UTR PTT Nashville Men +H 01, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-nashville-men-h-01-1-4-playoffs.webp"
+        "UTR PTT Nashville Men +H 01, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-nashville-men-h-01-1-4-playoffs.webp",
+        "Betinia Liga, Promotion Group": "assets/logos/leagues/betinia-liga-promotion-group.webp",
+        "Denmark - 1. Division - Gr.Retrogradare": "assets/logos/leagues/denmark-1-division-grretrogradare.webp",
+        "Denmark - 1. Division - Gr.Promovare": "assets/logos/leagues/denmark-1-division-grpromovare.webp",
+        "Damallsvenskan": "assets/logos/leagues/damallsvenskan.webp"
     }
 }
