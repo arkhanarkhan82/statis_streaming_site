@@ -14668,7 +14668,25 @@
         "GKS Katowice (W)": "assets/logos/upstreams/gks-katowice-w.webp",
         "Sokol Kleczew": "assets/logos/upstreams/sokol-kleczew.webp",
         "Skanstes SK": "assets/logos/upstreams/skanstes-sk.webp",
-        "Harju Laagri": "assets/logos/upstreams/harju-laagri.webp"
+        "Harju Laagri": "assets/logos/upstreams/harju-laagri.webp",
+        "Chengdu Rongcheng B": "assets/logos/upstreams/chengdu-rongcheng-b.webp",
+        "Inter Turku": "assets/logos/upstreams/inter-turku.webp",
+        "VPS": "assets/logos/upstreams/vps.webp",
+        "Hangzhou Linping Wuyue": "assets/logos/upstreams/hangzhou-linping-wuyue.webp",
+        "Shenzhen 2028 FC": "assets/logos/upstreams/shenzhen-2028-fc.webp",
+        "Wuhan Three Towns B": "assets/logos/upstreams/wuhan-three-towns-b.webp",
+        "Wenzhou Professional FC": "assets/logos/upstreams/wenzhou-professional-fc.webp",
+        "Guizhou Zhucheng Athletic": "assets/logos/upstreams/guizhou-zhucheng-athletic.webp",
+        "Jiangxi Lushan": "assets/logos/upstreams/jiangxi-lushan.webp",
+        "HJK Helsinki": "assets/logos/upstreams/hjk-helsinki.webp",
+        "SJK Seinajoki": "assets/logos/upstreams/sjk-seinajoki.webp",
+        "BFA Vilnius": "assets/logos/upstreams/bfa-vilnius.webp",
+        "FF Jaro": "assets/logos/upstreams/ff-jaro.webp",
+        "FC Lahti": "assets/logos/upstreams/fc-lahti.webp",
+        "Mariehamn": "assets/logos/upstreams/mariehamn.webp",
+        "Dalian Kuncheng City": "assets/logos/upstreams/dalian-kuncheng-city.webp",
+        "Wuxi Wuguo": "assets/logos/upstreams/wuxi-wuguo.webp",
+        "Shanxi Chongde Ronghai": "assets/logos/upstreams/shanxi-chongde-ronghai.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16498,6 +16516,13 @@
         "UTR PTT Carvoeiro Men +H 05, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-5-8-playoffs.webp",
         "UTR PTT Krakow Men 03, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-krakow-men-03-17-20-playoffs.webp",
         "UTR PTT Carvoeiro Women +H 05, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-9-12-playoffs.webp",
-        "UTR PTT Trnava Women 03, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-1-4-playoffs.webp"
+        "UTR PTT Trnava Women 03, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-1-4-playoffs.webp",
+        "Veikkausliiga": "assets/logos/leagues/veikkausliiga.webp",
+        "Finland - Veikkausliiga": "assets/logos/leagues/finland-veikkausliiga.webp",
+        "Pro League, Relegation Round": "assets/logos/leagues/pro-league-relegation-round.webp",
+        "UTR PTT Carvoeiro Men +H 05, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-9-12-playoffs.webp",
+        "UTR PTT Carvoeiro Men +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-17-20-playoffs.webp",
+        "UTR PTT Krakow Men 03, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-krakow-men-03-5-8-playoffs.webp",
+        "UTR PTT Trnava Women 03, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-13-16-playoffs.webp"
     }
 }
