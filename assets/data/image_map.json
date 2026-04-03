@@ -14636,7 +14636,8 @@
         "Charleston: Day 5": "assets/logos/upstreams/charleston-day-5.webp",
         "WTA 500": "assets/logos/upstreams/wta-500.webp",
         "Nella Nyqvist": "assets/logos/upstreams/nella-nyqvist.webp",
-        "Connor Huertas del Pino": "assets/logos/upstreams/connor-huertas-del-pino.webp"
+        "Connor Huertas del Pino": "assets/logos/upstreams/connor-huertas-del-pino.webp",
+        "Cibalia-Vinkovci": "assets/logos/upstreams/cibalia-vinkovci.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16449,6 +16450,7 @@
         "Ettan, Norra": "assets/logos/leagues/ettan-norra.webp",
         "Ettan, Sodra": "assets/logos/leagues/ettan-sodra.webp",
         "Ykkosliiga": "assets/logos/leagues/ykkosliiga.webp",
-        "UTR PTT Nashville Men +H 01, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-nashville-men-h-01-9-12-playoffs.webp"
+        "UTR PTT Nashville Men +H 01, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-nashville-men-h-01-9-12-playoffs.webp",
+        "2. HNL": "assets/logos/leagues/2-hnl.webp"
     }
 }
