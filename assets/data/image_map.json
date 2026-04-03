@@ -14691,7 +14691,11 @@
         "Ethyn Ewing": "assets/logos/upstreams/ethyn-ewing.webp",
         "Rafael Estevam": "assets/logos/upstreams/rafael-estevam.webp",
         "Tommy McMillen": "assets/logos/upstreams/tommy-mcmillen.webp",
-        "Manolo Zecchini": "assets/logos/upstreams/manolo-zecchini.webp"
+        "Manolo Zecchini": "assets/logos/upstreams/manolo-zecchini.webp",
+        "Nutribullet Treviso Basket": "assets/logos/upstreams/nutribullet-treviso-basket.webp",
+        "Avenida (W)": "assets/logos/upstreams/avenida-w.webp",
+        "Baloncesto Legan\u00e9s": "assets/logos/upstreams/baloncesto-legan\u00e9s.webp",
+        "AE Sedis B\u00e0squet": "assets/logos/upstreams/ae-sedis-b\u00e0squet.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16529,6 +16533,8 @@
         "UTR PTT Carvoeiro Men +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-17-20-playoffs.webp",
         "UTR PTT Krakow Men 03, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-krakow-men-03-5-8-playoffs.webp",
         "UTR PTT Trnava Women 03, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-13-16-playoffs.webp",
-        "UFC Fight Night: Moicano vs. Duncan": "assets/logos/leagues/ufc-fight-night-moicano-vs-duncan.webp"
+        "UFC Fight Night: Moicano vs. Duncan": "assets/logos/leagues/ufc-fight-night-moicano-vs-duncan.webp",
+        "UTR PTT Carvoeiro Men +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-1-4-playoffs.webp",
+        "UTR PTT Carvoeiro Women +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-1-4-playoffs.webp"
     }
 }
