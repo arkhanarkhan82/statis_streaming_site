@@ -14612,7 +14612,10 @@
         "BK Olympic": "assets/logos/upstreams/bk-olympic.webp",
         "Trollhattan": "assets/logos/upstreams/trollhattan.webp",
         "Hassleholms IF": "assets/logos/upstreams/hassleholms-if.webp",
-        "Gustavo Perez Alvarez": "assets/logos/upstreams/gustavo-perez-alvarez.webp"
+        "Gustavo Perez Alvarez": "assets/logos/upstreams/gustavo-perez-alvarez.webp",
+        "PK-35": "assets/logos/upstreams/pk-35.webp",
+        "EIF": "assets/logos/upstreams/eif.webp",
+        "Stephanie Pineiro Aquino": "assets/logos/upstreams/stephanie-pineiro-aquino.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16423,6 +16426,7 @@
         "Nik\u00e9 Liga, Championship Round": "assets/logos/leagues/nik\u00e9-liga-championship-round.webp",
         "Campeonato de Portugal, Group D": "assets/logos/leagues/campeonato-de-portugal-group-d.webp",
         "Ettan, Norra": "assets/logos/leagues/ettan-norra.webp",
-        "Ettan, Sodra": "assets/logos/leagues/ettan-sodra.webp"
+        "Ettan, Sodra": "assets/logos/leagues/ettan-sodra.webp",
+        "Ykkosliiga": "assets/logos/leagues/ykkosliiga.webp"
     }
 }
