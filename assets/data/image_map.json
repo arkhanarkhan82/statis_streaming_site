@@ -14589,7 +14589,16 @@
         "Tresean Gore": "assets/logos/upstreams/tresean-gore.webp",
         "New England Free Jacks": "assets/logos/upstreams/new-england-free-jacks.webp",
         "Stewart Nicoll": "assets/logos/streamed/stewart-nicoll.webp",
-        "Alessandro Costa": "assets/logos/streamed/alessandro-costa.webp"
+        "Alessandro Costa": "assets/logos/streamed/alessandro-costa.webp",
+        "Guimaraes B": "assets/logos/upstreams/guimaraes-b.webp",
+        "DAC 1904": "assets/logos/upstreams/dac-1904.webp",
+        "FC Alverca B": "assets/logos/upstreams/fc-alverca-b.webp",
+        "GD Alcochetense": "assets/logos/upstreams/gd-alcochetense.webp",
+        "S\u00f8nderjyske Fodbold": "assets/logos/upstreams/s\u00f8nderjyske-fodbold.webp",
+        "KK Basket \u017divinice": "assets/logos/upstreams/kk-basket-\u017eivinice.webp",
+        "HKK Zrinjski Mostar": "assets/logos/upstreams/hkk-zrinjski-mostar.webp",
+        "Union Neuch\u00e2tel": "assets/logos/upstreams/union-neuch\u00e2tel.webp",
+        "HFX Wanderers FC": "assets/logos/upstreams/hfx-wanderers-fc.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16396,6 +16405,8 @@
         "Slovakia - 1. League - Gr. Championship": "assets/logos/leagues/slovakia-1-league-gr-championship.webp",
         "Canadian Premier League": "assets/logos/leagues/canadian-premier-league.webp",
         "Serie D": "assets/logos/leagues/serie-d.webp",
-        "Major League Rugby": "assets/logos/leagues/major-league-rugby.webp"
+        "Major League Rugby": "assets/logos/leagues/major-league-rugby.webp",
+        "Nik\u00e9 Liga, Championship Round": "assets/logos/leagues/nik\u00e9-liga-championship-round.webp",
+        "Campeonato de Portugal, Group D": "assets/logos/leagues/campeonato-de-portugal-group-d.webp"
     }
 }
