@@ -14686,7 +14686,12 @@
         "Mariehamn": "assets/logos/upstreams/mariehamn.webp",
         "Dalian Kuncheng City": "assets/logos/upstreams/dalian-kuncheng-city.webp",
         "Wuxi Wuguo": "assets/logos/upstreams/wuxi-wuguo.webp",
-        "Shanxi Chongde Ronghai": "assets/logos/upstreams/shanxi-chongde-ronghai.webp"
+        "Shanxi Chongde Ronghai": "assets/logos/upstreams/shanxi-chongde-ronghai.webp",
+        "Dakota  Hope": "assets/logos/upstreams/dakota-hope.webp",
+        "Ethyn Ewing": "assets/logos/upstreams/ethyn-ewing.webp",
+        "Rafael Estevam": "assets/logos/upstreams/rafael-estevam.webp",
+        "Tommy McMillen": "assets/logos/upstreams/tommy-mcmillen.webp",
+        "Manolo Zecchini": "assets/logos/upstreams/manolo-zecchini.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16523,6 +16528,7 @@
         "UTR PTT Carvoeiro Men +H 05, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-9-12-playoffs.webp",
         "UTR PTT Carvoeiro Men +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-17-20-playoffs.webp",
         "UTR PTT Krakow Men 03, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-krakow-men-03-5-8-playoffs.webp",
-        "UTR PTT Trnava Women 03, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-13-16-playoffs.webp"
+        "UTR PTT Trnava Women 03, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-13-16-playoffs.webp",
+        "UFC Fight Night: Moicano vs. Duncan": "assets/logos/leagues/ufc-fight-night-moicano-vs-duncan.webp"
     }
 }
