@@ -14600,7 +14600,19 @@
         "Union Neuch\u00e2tel": "assets/logos/upstreams/union-neuch\u00e2tel.webp",
         "HFX Wanderers FC": "assets/logos/upstreams/hfx-wanderers-fc.webp",
         "Pedro Taduran": "assets/logos/upstreams/pedro-taduran.webp",
-        "Gustavo Perez AlvarezMinimumweightTemecula": "assets/logos/upstreams/gustavo-perez-alvarezminimumweighttemecula.webp"
+        "Gustavo Perez AlvarezMinimumweightTemecula": "assets/logos/upstreams/gustavo-perez-alvarezminimumweighttemecula.webp",
+        "FC Arlanda": "assets/logos/upstreams/fc-arlanda.webp",
+        "Vasalunds IF": "assets/logos/upstreams/vasalunds-if.webp",
+        "Ariana FC": "assets/logos/upstreams/ariana-fc.webp",
+        "Kristianstad FC": "assets/logos/upstreams/kristianstad-fc.webp",
+        "Angelholms FF": "assets/logos/upstreams/angelholms-ff.webp",
+        "FBK Karlstad": "assets/logos/upstreams/fbk-karlstad.webp",
+        "Gefle IF": "assets/logos/upstreams/gefle-if.webp",
+        "Utsiktens BK": "assets/logos/upstreams/utsiktens-bk.webp",
+        "BK Olympic": "assets/logos/upstreams/bk-olympic.webp",
+        "Trollhattan": "assets/logos/upstreams/trollhattan.webp",
+        "Hassleholms IF": "assets/logos/upstreams/hassleholms-if.webp",
+        "Gustavo Perez Alvarez": "assets/logos/upstreams/gustavo-perez-alvarez.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16409,6 +16421,8 @@
         "Serie D": "assets/logos/leagues/serie-d.webp",
         "Major League Rugby": "assets/logos/leagues/major-league-rugby.webp",
         "Nik\u00e9 Liga, Championship Round": "assets/logos/leagues/nik\u00e9-liga-championship-round.webp",
-        "Campeonato de Portugal, Group D": "assets/logos/leagues/campeonato-de-portugal-group-d.webp"
+        "Campeonato de Portugal, Group D": "assets/logos/leagues/campeonato-de-portugal-group-d.webp",
+        "Ettan, Norra": "assets/logos/leagues/ettan-norra.webp",
+        "Ettan, Sodra": "assets/logos/leagues/ettan-sodra.webp"
     }
 }
