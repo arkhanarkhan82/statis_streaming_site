@@ -14739,7 +14739,13 @@
         "Alianza Panama": "assets/logos/upstreams/alianza-panama.webp",
         "Spd Radni\u010dki Kragujevac": "assets/logos/upstreams/spd-radni\u010dki-kragujevac.webp",
         "Tauro FC": "assets/logos/upstreams/tauro-fc.webp",
-        "Plaza Amador": "assets/logos/upstreams/plaza-amador.webp"
+        "Plaza Amador": "assets/logos/upstreams/plaza-amador.webp",
+        "Enk\u00f6pings SK": "assets/logos/upstreams/enk\u00f6pings-sk.webp",
+        "IFK Stocksund": "assets/logos/upstreams/ifk-stocksund.webp",
+        "Eskilsminne IF": "assets/logos/upstreams/eskilsminne-if.webp",
+        "Laholms FK": "assets/logos/upstreams/laholms-fk.webp",
+        "FC Roseng\u00e5rd": "assets/logos/upstreams/fc-roseng\u00e5rd.webp",
+        "Lunds BK": "assets/logos/upstreams/lunds-bk.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16585,6 +16591,8 @@
         "Stoiximan Super League, Championship Round": "assets/logos/leagues/stoiximan-super-league-championship-round.webp",
         "UTR PTT Carvoeiro Women +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-17-20-playoffs.webp",
         "Belgium - Pro League -  Gr.Championship": "assets/logos/leagues/belgium-pro-league-grchampionship.webp",
-        "UTR PTT Carvoeiro Women +H 05, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-13-16-playoffs.webp"
+        "UTR PTT Carvoeiro Women +H 05, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-13-16-playoffs.webp",
+        "UTR PTT Carvoeiro Men +H 05, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-13-16-playoffs.webp",
+        "UTR PTT Carvoeiro Women +H 05, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-5-8-playoffs.webp"
     }
 }
