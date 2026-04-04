@@ -14695,7 +14695,25 @@
         "Nutribullet Treviso Basket": "assets/logos/upstreams/nutribullet-treviso-basket.webp",
         "Avenida (W)": "assets/logos/upstreams/avenida-w.webp",
         "Baloncesto Legan\u00e9s": "assets/logos/upstreams/baloncesto-legan\u00e9s.webp",
-        "AE Sedis B\u00e0squet": "assets/logos/upstreams/ae-sedis-b\u00e0squet.webp"
+        "AE Sedis B\u00e0squet": "assets/logos/upstreams/ae-sedis-b\u00e0squet.webp",
+        "Pari NN 2": "assets/logos/upstreams/pari-nn-2.webp",
+        "Charlton W": "assets/logos/upstreams/charlton-w.webp",
+        "Tampa Bay Sun W": "assets/logos/upstreams/tampa-bay-sun-w.webp",
+        "Carolina Ascent W": "assets/logos/upstreams/carolina-ascent-w.webp",
+        "Bay FC W": "assets/logos/upstreams/bay-fc-w.webp",
+        "Pacific FC": "assets/logos/upstreams/pacific-fc.webp",
+        "Cavalry": "assets/logos/upstreams/cavalry.webp",
+        "Abdul-Rakhman Yakhyaev": "assets/logos/upstreams/abdul-rakhman-yakhyaev.webp",
+        "Brendson Ribeiro": "assets/logos/upstreams/brendson-ribeiro.webp",
+        "Andres Cortes": "assets/logos/upstreams/andres-cortes.webp",
+        "Eridson GarciaLightweightMeta Apex | Las Vegas, NV": "assets/logos/upstreams/eridson-garcialightweightmeta-apex-las-vegas-nv.webp",
+        "Virna Jandiroba": "assets/logos/upstreams/virna-jandiroba.webp",
+        "Tabatha Ricci": "assets/logos/upstreams/tabatha-ricci.webp",
+        "Caroline Dubois": "assets/logos/upstreams/caroline-dubois.webp",
+        "Terri HarperLightweightLondon": "assets/logos/upstreams/terri-harperlightweightlondon.webp",
+        "Jose Delano": "assets/logos/upstreams/jose-delano.webp",
+        "Robert Ruchala": "assets/logos/upstreams/robert-ruchala.webp",
+        "Renato Moicano": "assets/logos/upstreams/renato-moicano.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16535,6 +16553,7 @@
         "UTR PTT Trnava Women 03, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-trnava-women-03-13-16-playoffs.webp",
         "UFC Fight Night: Moicano vs. Duncan": "assets/logos/leagues/ufc-fight-night-moicano-vs-duncan.webp",
         "UTR PTT Carvoeiro Men +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-1-4-playoffs.webp",
-        "UTR PTT Carvoeiro Women +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-1-4-playoffs.webp"
+        "UTR PTT Carvoeiro Women +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-1-4-playoffs.webp",
+        "USL Super League Women": "assets/logos/leagues/usl-super-league-women.webp"
     }
 }
