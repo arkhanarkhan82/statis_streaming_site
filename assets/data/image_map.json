@@ -14714,7 +14714,13 @@
         "Jose Delano": "assets/logos/upstreams/jose-delano.webp",
         "Robert Ruchala": "assets/logos/upstreams/robert-ruchala.webp",
         "Renato Moicano": "assets/logos/upstreams/renato-moicano.webp",
-        "Essendon Football Club": "assets/logos/streamed/essendon-football-club.webp"
+        "Essendon Football Club": "assets/logos/streamed/essendon-football-club.webp",
+        "FK \u017deleziarne Podbrezov\u00e1": "assets/logos/upstreams/fk-\u017eeleziarne-podbrezov\u00e1.webp",
+        "Atletico MG": "assets/logos/upstreams/atletico-mg.webp",
+        "Atletico PR": "assets/logos/upstreams/atletico-pr.webp",
+        "Cavalry FC": "assets/logos/upstreams/cavalry-fc.webp",
+        "Allianz MTV Stuttgart": "assets/logos/upstreams/allianz-mtv-stuttgart.webp",
+        "Recoletas Atl\u00e9tico Valladolid": "assets/logos/upstreams/recoletas-atl\u00e9tico-valladolid.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16555,6 +16561,8 @@
         "UFC Fight Night: Moicano vs. Duncan": "assets/logos/leagues/ufc-fight-night-moicano-vs-duncan.webp",
         "UTR PTT Carvoeiro Men +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-men-h-05-1-4-playoffs.webp",
         "UTR PTT Carvoeiro Women +H 05, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-1-4-playoffs.webp",
-        "USL Super League Women": "assets/logos/leagues/usl-super-league-women.webp"
+        "USL Super League Women": "assets/logos/leagues/usl-super-league-women.webp",
+        "Stoiximan Super League, Qualifying Round": "assets/logos/leagues/stoiximan-super-league-qualifying-round.webp",
+        "Stoiximan Super League, Championship Round": "assets/logos/leagues/stoiximan-super-league-championship-round.webp"
     }
 }
