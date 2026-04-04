@@ -14772,7 +14772,16 @@
         "Henan Songshan": "assets/logos/upstreams/henan-songshan.webp",
         "IFK Mariehamn": "assets/logos/upstreams/ifk-mariehamn.webp",
         "TPS": "assets/logos/upstreams/tps.webp",
-        "Warrington": "assets/logos/upstreams/warrington.webp"
+        "Warrington": "assets/logos/upstreams/warrington.webp",
+        "ARGES": "assets/logos/upstreams/arges.webp",
+        "DINAMO B": "assets/logos/upstreams/dinamo-b.webp",
+        "Racing Avellaneda": "assets/logos/upstreams/racing-avellaneda.webp",
+        "FC Famalic\u00e3o": "assets/logos/upstreams/fc-famalic\u00e3o.webp",
+        "Damaiense": "assets/logos/upstreams/damaiense.webp",
+        "Troppmann K.": "assets/logos/upstreams/troppmann-k.webp",
+        "UFC Fight Night | Moicano": "assets/logos/upstreams/ufc-fight-night-moicano.webp",
+        "Duncan": "assets/logos/upstreams/duncan.webp",
+        "WS Wanderers": "assets/logos/upstreams/ws-wanderers.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16627,6 +16636,12 @@
         "German Darts Grand Prix": "assets/logos/leagues/german-darts-grand-prix.webp",
         "Stoiximan Super League, Relegation Round": "assets/logos/leagues/stoiximan-super-league-relegation-round.webp",
         "European Tour 4 - German Darts Grand Prix 2026": "assets/logos/leagues/european-tour-4-german-darts-grand-prix-2026.webp",
-        "Slovakia Nike liga": "assets/logos/leagues/slovakia-nike-liga.webp"
+        "Slovakia Nike liga": "assets/logos/leagues/slovakia-nike-liga.webp",
+        "Egyptian Premier League, Relegation Round": "assets/logos/leagues/egyptian-premier-league-relegation-round.webp",
+        "Liga 1pitesti 1 Dinamo Bucuresti": "assets/logos/leagues/liga-1pitesti-1-dinamo-bucuresti.webp",
+        "Primera Division Racingclub": "assets/logos/leagues/primera-division-racingclub.webp",
+        "Liga Sagres Famalicao": "assets/logos/leagues/liga-sagres-famalicao.webp",
+        "Fight Night Guilherme Pat Thomas Petersen": "assets/logos/leagues/fight-night-guilherme-pat-thomas-petersen.webp",
+        "Fight Night": "assets/logos/leagues/fight-night.webp"
     }
 }
