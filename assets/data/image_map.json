@@ -14762,7 +14762,10 @@
         "Adelaide Thunderbirds W": "assets/logos/upstreams/adelaide-thunderbirds-w.webp",
         "Yeka": "assets/logos/upstreams/yeka.webp",
         "FK Transinvest": "assets/logos/upstreams/fk-transinvest.webp",
-        "Sebastian Bia\u0142ecki": "assets/logos/upstreams/sebastian-bia\u0142ecki.webp"
+        "Sebastian Bia\u0142ecki": "assets/logos/upstreams/sebastian-bia\u0142ecki.webp",
+        "SJK": "assets/logos/upstreams/sjk.webp",
+        "Ryan Joyce": "assets/logos/upstreams/ryan-joyce.webp",
+        "Behrens F.": "assets/logos/upstreams/behrens-f.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16614,6 +16617,7 @@
         "One Day International Women": "assets/logos/leagues/one-day-international-women.webp",
         "South Korea K League": "assets/logos/leagues/south-korea-k-league.webp",
         "TOPLYGA": "assets/logos/leagues/toplyga.webp",
-        "German Darts Grand Prix": "assets/logos/leagues/german-darts-grand-prix.webp"
+        "German Darts Grand Prix": "assets/logos/leagues/german-darts-grand-prix.webp",
+        "Stoiximan Super League, Relegation Round": "assets/logos/leagues/stoiximan-super-league-relegation-round.webp"
     }
 }
