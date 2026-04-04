@@ -14720,7 +14720,26 @@
         "Atletico PR": "assets/logos/upstreams/atletico-pr.webp",
         "Cavalry FC": "assets/logos/upstreams/cavalry-fc.webp",
         "Allianz MTV Stuttgart": "assets/logos/upstreams/allianz-mtv-stuttgart.webp",
-        "Recoletas Atl\u00e9tico Valladolid": "assets/logos/upstreams/recoletas-atl\u00e9tico-valladolid.webp"
+        "Recoletas Atl\u00e9tico Valladolid": "assets/logos/upstreams/recoletas-atl\u00e9tico-valladolid.webp",
+        "OFK Banik Lehota Pod Vtacnikom": "assets/logos/upstreams/ofk-banik-lehota-pod-vtacnikom.webp",
+        "AFC Eskilstuna": "assets/logos/upstreams/afc-eskilstuna.webp",
+        "FC J\u00e4rf\u00e4lla": "assets/logos/upstreams/fc-j\u00e4rf\u00e4lla.webp",
+        "Sollentuna FF": "assets/logos/upstreams/sollentuna-ff.webp",
+        "Karlbergs BK": "assets/logos/upstreams/karlbergs-bk.webp",
+        "IF Gnistan": "assets/logos/upstreams/if-gnistan.webp",
+        "AC Oulu": "assets/logos/upstreams/ac-oulu.webp",
+        "San Francisco FC": "assets/logos/upstreams/san-francisco-fc.webp",
+        "Veraguas": "assets/logos/upstreams/veraguas.webp",
+        "Real Potosi": "assets/logos/upstreams/real-potosi.webp",
+        "CD Aurora": "assets/logos/upstreams/cd-aurora.webp",
+        "KK Tami\u0161": "assets/logos/upstreams/kk-tami\u0161.webp",
+        "CD San Antonio": "assets/logos/upstreams/cd-san-antonio.webp",
+        "Oriente Petrolero": "assets/logos/upstreams/oriente-petrolero.webp",
+        "Umecit": "assets/logos/upstreams/umecit.webp",
+        "Alianza Panama": "assets/logos/upstreams/alianza-panama.webp",
+        "Spd Radni\u010dki Kragujevac": "assets/logos/upstreams/spd-radni\u010dki-kragujevac.webp",
+        "Tauro FC": "assets/logos/upstreams/tauro-fc.webp",
+        "Plaza Amador": "assets/logos/upstreams/plaza-amador.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16564,6 +16583,8 @@
         "USL Super League Women": "assets/logos/leagues/usl-super-league-women.webp",
         "Stoiximan Super League, Qualifying Round": "assets/logos/leagues/stoiximan-super-league-qualifying-round.webp",
         "Stoiximan Super League, Championship Round": "assets/logos/leagues/stoiximan-super-league-championship-round.webp",
-        "UTR PTT Carvoeiro Women +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-17-20-playoffs.webp"
+        "UTR PTT Carvoeiro Women +H 05, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-17-20-playoffs.webp",
+        "Belgium - Pro League -  Gr.Championship": "assets/logos/leagues/belgium-pro-league-grchampionship.webp",
+        "UTR PTT Carvoeiro Women +H 05, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-carvoeiro-women-h-05-13-16-playoffs.webp"
     }
 }
