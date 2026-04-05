@@ -14820,7 +14820,24 @@
         "Bogota: Day 7": "assets/logos/upstreams/bogota-day-7.webp",
         "WTA 250": "assets/logos/upstreams/wta-250.webp",
         "SKU Amstetten": "assets/logos/upstreams/sku-amstetten.webp",
-        "St Louis Cardinals": "assets/logos/upstreams/st-louis-cardinals.webp"
+        "St Louis Cardinals": "assets/logos/upstreams/st-louis-cardinals.webp",
+        "Deportivo La Coruna (W)": "assets/logos/upstreams/deportivo-la-coruna-w.webp",
+        "Beijing Institute Technology": "assets/logos/upstreams/beijing-institute-technology.webp",
+        "Lanzhou Longyuan": "assets/logos/upstreams/lanzhou-longyuan.webp",
+        "Changchun Xidu": "assets/logos/upstreams/changchun-xidu.webp",
+        "Sotra": "assets/logos/upstreams/sotra.webp",
+        "Lysekloster IL": "assets/logos/upstreams/lysekloster-il.webp",
+        "Feyenoord Rotterdam (W)": "assets/logos/upstreams/feyenoord-rotterdam-w.webp",
+        "Assyriska FF": "assets/logos/upstreams/assyriska-ff.webp",
+        "FC Stockholm Internazionale": "assets/logos/upstreams/fc-stockholm-internazionale.webp",
+        "Atvidaberg FF": "assets/logos/upstreams/atvidaberg-ff.webp",
+        "Delf\u00edn": "assets/logos/upstreams/delf\u00edn.webp",
+        "T\u00e9cnico Universitario": "assets/logos/upstreams/t\u00e9cnico-universitario.webp",
+        "Patronato": "assets/logos/upstreams/patronato.webp",
+        "Universitario de Vinto": "assets/logos/upstreams/universitario-de-vinto.webp",
+        "Carlota Corte": "assets/logos/upstreams/carlota-corte.webp",
+        "Carmen L\u00f3pez Mart\u00ednez": "assets/logos/upstreams/carmen-l\u00f3pez-mart\u00ednez.webp",
+        "Yvonne Cavalle-Reimers": "assets/logos/upstreams/yvonne-cavalle-reimers.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16694,6 +16711,9 @@
         "ROmania - SuperLeague - Playoff": "assets/logos/leagues/romania-superleague-playoff.webp",
         "NSW Cup": "assets/logos/leagues/nsw-cup.webp",
         "Atp Marrakech": "assets/logos/leagues/atp-marrakech.webp",
-        "WTA Bogota": "assets/logos/leagues/wta-bogota.webp"
+        "WTA Bogota": "assets/logos/leagues/wta-bogota.webp",
+        "2nd Division, Group 1": "assets/logos/leagues/2nd-division-group-1.webp",
+        "Pro League, Conference League Playoffs": "assets/logos/leagues/pro-league-conference-league-playoffs.webp",
+        "ATP Monte Carlo": "assets/logos/leagues/atp-monte-carlo.webp"
     }
 }
