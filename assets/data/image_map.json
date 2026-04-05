@@ -14810,7 +14810,11 @@
         "Xiamen Feilu": "assets/logos/upstreams/xiamen-feilu.webp",
         "Nicoll Stewart": "assets/logos/upstreams/nicoll-stewart.webp",
         "Luke Woodhouse": "assets/logos/upstreams/luke-woodhouse.webp",
-        "Kim Huybrechts": "assets/logos/upstreams/kim-huybrechts.webp"
+        "Kim Huybrechts": "assets/logos/upstreams/kim-huybrechts.webp",
+        "Bayern II": "assets/logos/upstreams/bayern-ii.webp",
+        "Vilzing": "assets/logos/upstreams/vilzing.webp",
+        "Parramatta Eels II": "assets/logos/upstreams/parramatta-eels-ii.webp",
+        "Western Suburbs": "assets/logos/upstreams/western-suburbs.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16679,6 +16683,9 @@
         "Norway - 1.Division": "assets/logos/leagues/norway-1division.webp",
         "Denmark - SuperLeague - Gr.Retrogradare": "assets/logos/leagues/denmark-superleague-grretrogradare.webp",
         "Linz, Austria, Qualifying": "assets/logos/leagues/linz-austria-qualifying.webp",
-        "Monza, Italy, Qualifying": "assets/logos/leagues/monza-italy-qualifying.webp"
+        "Monza, Italy, Qualifying": "assets/logos/leagues/monza-italy-qualifying.webp",
+        "Regionalliga Bayern": "assets/logos/leagues/regionalliga-bayern.webp",
+        "ROmania - SuperLeague - Playoff": "assets/logos/leagues/romania-superleague-playoff.webp",
+        "NSW Cup": "assets/logos/leagues/nsw-cup.webp"
     }
 }
