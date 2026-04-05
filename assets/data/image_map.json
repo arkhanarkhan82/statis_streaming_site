@@ -14900,7 +14900,10 @@
         "Trnava": "assets/logos/upstreams/trnava.webp",
         "MFK Karvina": "assets/logos/upstreams/mfk-karvina.webp",
         "Chavdar Troyan": "assets/logos/upstreams/chavdar-troyan.webp",
-        "Haras El Hodood": "assets/logos/upstreams/haras-el-hodood.webp"
+        "Haras El Hodood": "assets/logos/upstreams/haras-el-hodood.webp",
+        "GV San Jos\u00e9": "assets/logos/upstreams/gv-san-jos\u00e9.webp",
+        "Academia de Balompi\u00e9 Boliviano": "assets/logos/upstreams/academia-de-balompi\u00e9-boliviano.webp",
+        "Dinko Dinev": "assets/logos/upstreams/dinko-dinev.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16788,6 +16791,8 @@
         "PDC European Tour": "assets/logos/leagues/pdc-european-tour.webp",
         "1st Liga, Relegation/Promotion Playoffs": "assets/logos/leagues/1st-liga-relegationpromotion-playoffs.webp",
         "Egyptian Premier League, Championship Round": "assets/logos/leagues/egyptian-premier-league-championship-round.webp",
-        "Egypt Premier League": "assets/logos/leagues/egypt-premier-league.webp"
+        "Egypt Premier League": "assets/logos/leagues/egypt-premier-league.webp",
+        "Madrid, Spain": "assets/logos/leagues/madrid-spain.webp",
+        "Monza, Italy": "assets/logos/leagues/monza-italy.webp"
     }
 }
