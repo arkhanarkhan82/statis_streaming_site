@@ -14849,7 +14849,10 @@
         "Pablo Manzano Lapuerta": "assets/logos/upstreams/pablo-manzano-lapuerta.webp",
         "Marie Villet": "assets/logos/upstreams/marie-villet.webp",
         "Tenika Mcgiffin": "assets/logos/upstreams/tenika-mcgiffin.webp",
-        "Lea Tholey": "assets/logos/upstreams/lea-tholey.webp"
+        "Lea Tholey": "assets/logos/upstreams/lea-tholey.webp",
+        "Daniel Lara Salmeron": "assets/logos/upstreams/daniel-lara-salmeron.webp",
+        "Benjamin Kittay": "assets/logos/upstreams/benjamin-kittay.webp",
+        "Teodor Davidov": "assets/logos/upstreams/teodor-davidov.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16728,6 +16731,7 @@
         "Pro League, Conference League Playoffs": "assets/logos/leagues/pro-league-conference-league-playoffs.webp",
         "ATP Monte Carlo": "assets/logos/leagues/atp-monte-carlo.webp",
         "Madrid, Spain, Qualifying": "assets/logos/leagues/madrid-spain-qualifying.webp",
-        "Campinas, Brazil, Qualifying": "assets/logos/leagues/campinas-brazil-qualifying.webp"
+        "Campinas, Brazil, Qualifying": "assets/logos/leagues/campinas-brazil-qualifying.webp",
+        "Sarasota, USA, Qualifying": "assets/logos/leagues/sarasota-usa-qualifying.webp"
     }
 }
