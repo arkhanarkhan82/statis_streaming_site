@@ -14859,7 +14859,10 @@
         "Abhilasha Bista": "assets/logos/upstreams/abhilasha-bista.webp",
         "Luisa Schruff": "assets/logos/upstreams/luisa-schruff.webp",
         "Carlota Vila Salles": "assets/logos/upstreams/carlota-vila-salles.webp",
-        "Bruna Liotto de Carvalho": "assets/logos/upstreams/bruna-liotto-de-carvalho.webp"
+        "Bruna Liotto de Carvalho": "assets/logos/upstreams/bruna-liotto-de-carvalho.webp",
+        "Adareva Tenerife (W)": "assets/logos/upstreams/adareva-tenerife-w.webp",
+        "South Korea U20": "assets/logos/upstreams/south-korea-u20.webp",
+        "Carlo Arena Fava": "assets/logos/upstreams/carlo-arena-fava.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16739,6 +16742,8 @@
         "ATP Monte Carlo": "assets/logos/leagues/atp-monte-carlo.webp",
         "Madrid, Spain, Qualifying": "assets/logos/leagues/madrid-spain-qualifying.webp",
         "Campinas, Brazil, Qualifying": "assets/logos/leagues/campinas-brazil-qualifying.webp",
-        "Sarasota, USA, Qualifying": "assets/logos/leagues/sarasota-usa-qualifying.webp"
+        "Sarasota, USA, Qualifying": "assets/logos/leagues/sarasota-usa-qualifying.webp",
+        "U20 AFC Asian Cup, Group B, Women": "assets/logos/leagues/u20-afc-asian-cup-group-b-women.webp",
+        "Mexico City, Mexico, Qualifying": "assets/logos/leagues/mexico-city-mexico-qualifying.webp"
     }
 }
