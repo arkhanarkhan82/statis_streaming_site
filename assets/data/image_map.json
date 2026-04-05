@@ -14899,7 +14899,8 @@
         "BC Yambol": "assets/logos/upstreams/bc-yambol.webp",
         "Trnava": "assets/logos/upstreams/trnava.webp",
         "MFK Karvina": "assets/logos/upstreams/mfk-karvina.webp",
-        "Chavdar Troyan": "assets/logos/upstreams/chavdar-troyan.webp"
+        "Chavdar Troyan": "assets/logos/upstreams/chavdar-troyan.webp",
+        "Haras El Hodood": "assets/logos/upstreams/haras-el-hodood.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16785,6 +16786,8 @@
         "Russia Premier League": "assets/logos/leagues/russia-premier-league.webp",
         "Bundesliga, Championship Round": "assets/logos/leagues/bundesliga-championship-round.webp",
         "PDC European Tour": "assets/logos/leagues/pdc-european-tour.webp",
-        "1st Liga, Relegation/Promotion Playoffs": "assets/logos/leagues/1st-liga-relegationpromotion-playoffs.webp"
+        "1st Liga, Relegation/Promotion Playoffs": "assets/logos/leagues/1st-liga-relegationpromotion-playoffs.webp",
+        "Egyptian Premier League, Championship Round": "assets/logos/leagues/egyptian-premier-league-championship-round.webp",
+        "Egypt Premier League": "assets/logos/leagues/egypt-premier-league.webp"
     }
 }
