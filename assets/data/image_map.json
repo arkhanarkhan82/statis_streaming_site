@@ -14903,7 +14903,10 @@
         "Haras El Hodood": "assets/logos/upstreams/haras-el-hodood.webp",
         "GV San Jos\u00e9": "assets/logos/upstreams/gv-san-jos\u00e9.webp",
         "Academia de Balompi\u00e9 Boliviano": "assets/logos/upstreams/academia-de-balompi\u00e9-boliviano.webp",
-        "Dinko Dinev": "assets/logos/upstreams/dinko-dinev.webp"
+        "Dinko Dinev": "assets/logos/upstreams/dinko-dinev.webp",
+        "Club FC Universitario": "assets/logos/upstreams/club-fc-universitario.webp",
+        "Ilias Zimmermann": "assets/logos/upstreams/ilias-zimmermann.webp",
+        "Alexa Karatantcheva": "assets/logos/upstreams/alexa-karatantcheva.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16793,6 +16796,8 @@
         "Egyptian Premier League, Championship Round": "assets/logos/leagues/egyptian-premier-league-championship-round.webp",
         "Egypt Premier League": "assets/logos/leagues/egypt-premier-league.webp",
         "Madrid, Spain": "assets/logos/leagues/madrid-spain.webp",
-        "Monza, Italy": "assets/logos/leagues/monza-italy.webp"
+        "Monza, Italy": "assets/logos/leagues/monza-italy.webp",
+        "UTR PTT Belgrade Women 03, Group C": "assets/logos/leagues/utr-ptt-belgrade-women-03-group-c.webp",
+        "UTR PTT Belgrade Women 03, Group A": "assets/logos/leagues/utr-ptt-belgrade-women-03-group-a.webp"
     }
 }
