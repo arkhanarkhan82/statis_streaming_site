@@ -14881,7 +14881,17 @@
         "Raymond Smith": "assets/logos/upstreams/raymond-smith.webp",
         "Kovacs Patrik": "assets/logos/upstreams/kovacs-patrik.webp",
         "F\u00fcrstenfeld Panthers": "assets/logos/upstreams/f\u00fcrstenfeld-panthers.webp",
-        "Traiskirchen Lions": "assets/logos/upstreams/traiskirchen-lions.webp"
+        "Traiskirchen Lions": "assets/logos/upstreams/traiskirchen-lions.webp",
+        "Ostrava": "assets/logos/upstreams/ostrava.webp",
+        "North Korea U20": "assets/logos/upstreams/north-korea-u20.webp",
+        "FK Panevezys": "assets/logos/upstreams/fk-panevezys.webp",
+        "Vihar Aitos": "assets/logos/upstreams/vihar-aitos.webp",
+        "HC Dukla Senica": "assets/logos/upstreams/hc-dukla-senica.webp",
+        "Jermaine Wattimena": "assets/logos/upstreams/jermaine-wattimena.webp",
+        "Jefferson Wendler Filho": "assets/logos/upstreams/jefferson-wendler-filho.webp",
+        "Luis David Martinez": "assets/logos/upstreams/luis-david-martinez.webp",
+        "Cristian Rodriguez": "assets/logos/upstreams/cristian-rodriguez.webp",
+        "Preston Brown": "assets/logos/upstreams/preston-brown.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16766,6 +16776,7 @@
         "Mexico City, Mexico, Qualifying": "assets/logos/leagues/mexico-city-mexico-qualifying.webp",
         "Russia Premier League": "assets/logos/leagues/russia-premier-league.webp",
         "Bundesliga, Championship Round": "assets/logos/leagues/bundesliga-championship-round.webp",
-        "PDC European Tour": "assets/logos/leagues/pdc-european-tour.webp"
+        "PDC European Tour": "assets/logos/leagues/pdc-european-tour.webp",
+        "1st Liga, Relegation/Promotion Playoffs": "assets/logos/leagues/1st-liga-relegationpromotion-playoffs.webp"
     }
 }
