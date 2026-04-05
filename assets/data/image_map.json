@@ -14814,7 +14814,13 @@
         "Bayern II": "assets/logos/upstreams/bayern-ii.webp",
         "Vilzing": "assets/logos/upstreams/vilzing.webp",
         "Parramatta Eels II": "assets/logos/upstreams/parramatta-eels-ii.webp",
-        "Western Suburbs": "assets/logos/upstreams/western-suburbs.webp"
+        "Western Suburbs": "assets/logos/upstreams/western-suburbs.webp",
+        "Jose Mauro Delano": "assets/logos/upstreams/jose-mauro-delano.webp",
+        "Live Marrakech-ATP Singles Final New Live": "assets/logos/upstreams/live-marrakech-atp-singles-final-new-live.webp",
+        "Bogota: Day 7": "assets/logos/upstreams/bogota-day-7.webp",
+        "WTA 250": "assets/logos/upstreams/wta-250.webp",
+        "SKU Amstetten": "assets/logos/upstreams/sku-amstetten.webp",
+        "St Louis Cardinals": "assets/logos/upstreams/st-louis-cardinals.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16686,6 +16692,8 @@
         "Monza, Italy, Qualifying": "assets/logos/leagues/monza-italy-qualifying.webp",
         "Regionalliga Bayern": "assets/logos/leagues/regionalliga-bayern.webp",
         "ROmania - SuperLeague - Playoff": "assets/logos/leagues/romania-superleague-playoff.webp",
-        "NSW Cup": "assets/logos/leagues/nsw-cup.webp"
+        "NSW Cup": "assets/logos/leagues/nsw-cup.webp",
+        "Atp Marrakech": "assets/logos/leagues/atp-marrakech.webp",
+        "WTA Bogota": "assets/logos/leagues/wta-bogota.webp"
     }
 }
