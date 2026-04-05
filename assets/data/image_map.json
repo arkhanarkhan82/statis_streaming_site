@@ -14868,7 +14868,11 @@
         "CD Zamarat": "assets/logos/upstreams/cd-zamarat.webp",
         "N. Meira Anastasia": "assets/logos/upstreams/n-meira-anastasia.webp",
         "Lorena Schaedel": "assets/logos/upstreams/lorena-schaedel.webp",
-        "C. Benedetti Ravon": "assets/logos/upstreams/c-benedetti-ravon.webp"
+        "C. Benedetti Ravon": "assets/logos/upstreams/c-benedetti-ravon.webp",
+        "Pari NN": "assets/logos/upstreams/pari-nn.webp",
+        "Muranga": "assets/logos/upstreams/muranga.webp",
+        "Yusra Irakoze": "assets/logos/upstreams/yusra-irakoze.webp",
+        "Patrik Kov\u00e1cs": "assets/logos/upstreams/patrik-kov\u00e1cs.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16750,6 +16754,7 @@
         "Campinas, Brazil, Qualifying": "assets/logos/leagues/campinas-brazil-qualifying.webp",
         "Sarasota, USA, Qualifying": "assets/logos/leagues/sarasota-usa-qualifying.webp",
         "U20 AFC Asian Cup, Group B, Women": "assets/logos/leagues/u20-afc-asian-cup-group-b-women.webp",
-        "Mexico City, Mexico, Qualifying": "assets/logos/leagues/mexico-city-mexico-qualifying.webp"
+        "Mexico City, Mexico, Qualifying": "assets/logos/leagues/mexico-city-mexico-qualifying.webp",
+        "Russia Premier League": "assets/logos/leagues/russia-premier-league.webp"
     }
 }
