@@ -14979,7 +14979,9 @@
         "Tvaakers IF": "assets/logos/upstreams/tvaakers-if.webp",
         "Basquetebol: FC Barcelona x Panathinaikos": "assets/logos/upstreams/basquetebol-fc-barcelona-x-panathinaikos.webp",
         "Euroliga": "assets/logos/upstreams/euroliga.webp",
-        "Meritxell Teixido Garcia": "assets/logos/upstreams/meritxell-teixido-garcia.webp"
+        "Meritxell Teixido Garcia": "assets/logos/upstreams/meritxell-teixido-garcia.webp",
+        "Stefania Bojica": "assets/logos/upstreams/stefania-bojica.webp",
+        "Masa Jankovic": "assets/logos/upstreams/masa-jankovic.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16889,6 +16891,7 @@
         "Sarasota, USA": "assets/logos/leagues/sarasota-usa.webp",
         "UTR PTT Cordoba Men +H 03, Group B": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-b.webp",
         "UTR PTT Cordoba Men +H 03, Group C": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-c.webp",
-        "UTR PTT Cordoba Men +H 03, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-a.webp"
+        "UTR PTT Cordoba Men +H 03, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-a.webp",
+        "UTR PTT Belgrade Women 03, Group D": "assets/logos/leagues/utr-ptt-belgrade-women-03-group-d.webp"
     }
 }
