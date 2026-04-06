@@ -14910,7 +14910,10 @@
         "George Lazarov": "assets/logos/upstreams/george-lazarov.webp",
         "Dusan Milanovic": "assets/logos/upstreams/dusan-milanovic.webp",
         "Gimnasia Y Tiro": "assets/logos/streamed/gimnasia-y-tiro.webp",
-        "Deportivo Armenio": "assets/logos/streamed/deportivo-armenio.webp"
+        "Deportivo Armenio": "assets/logos/streamed/deportivo-armenio.webp",
+        "Club Independiente": "assets/logos/upstreams/club-independiente.webp",
+        "Ruslan Tiukaev": "assets/logos/upstreams/ruslan-tiukaev.webp",
+        "Stefan Popovi\u0107": "assets/logos/upstreams/stefan-popovi\u0107.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16806,6 +16809,9 @@
         "UTR PTT Belgrade Women 03, Group B": "assets/logos/leagues/utr-ptt-belgrade-women-03-group-b.webp",
         "Copa Libertadores - Gr.C": "assets/logos/leagues/copa-libertadores-grc.webp",
         "Copa Southamericana - Gr.G": "assets/logos/leagues/copa-southamericana-grg.webp",
-        "Copa Southamericana - Gr.E": "assets/logos/leagues/copa-southamericana-gre.webp"
+        "Copa Southamericana - Gr.E": "assets/logos/leagues/copa-southamericana-gre.webp",
+        "CONMEBOL Libertadores, Group C": "assets/logos/leagues/conmebol-libertadores-group-c.webp",
+        "CONMEBOL Sudamericana, Group G": "assets/logos/leagues/conmebol-sudamericana-group-g.webp",
+        "CONMEBOL Sudamericana, Group E": "assets/logos/leagues/conmebol-sudamericana-group-e.webp"
     }
 }
