@@ -15015,7 +15015,11 @@
         "Thomas Patton": "assets/logos/upstreams/thomas-patton.webp",
         "Evan Vasiliadis": "assets/logos/upstreams/evan-vasiliadis.webp",
         "Qian Sun": "assets/logos/upstreams/qian-sun.webp",
-        "Zhao Zhao": "assets/logos/upstreams/zhao-zhao.webp"
+        "Zhao Zhao": "assets/logos/upstreams/zhao-zhao.webp",
+        "Lillestrom": "assets/logos/upstreams/lillestrom.webp",
+        "Kevin Doets": "assets/logos/upstreams/kevin-doets.webp",
+        "Michael (2007) Smith": "assets/logos/upstreams/michael-2007-smith.webp",
+        "Jasmine Adams": "assets/logos/upstreams/jasmine-adams.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16940,6 +16944,8 @@
         "ATP - Monte Carlo (MCO)": "assets/logos/leagues/atp-monte-carlo-mco.webp",
         "WTA - Linz (AUT)": "assets/logos/leagues/wta-linz-aut.webp",
         "UTR PTT Melbourne Men 01, Group C": "assets/logos/leagues/utr-ptt-melbourne-men-01-group-c.webp",
-        "WTA Linz": "assets/logos/leagues/wta-linz.webp"
+        "WTA Linz": "assets/logos/leagues/wta-linz.webp",
+        "UTR PTT Melbourne Men 01, Group A": "assets/logos/leagues/utr-ptt-melbourne-men-01-group-a.webp",
+        "UTR PTT Melbourne Women 01, Group D": "assets/logos/leagues/utr-ptt-melbourne-women-01-group-d.webp"
     }
 }
