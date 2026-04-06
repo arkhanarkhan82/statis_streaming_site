@@ -14913,7 +14913,19 @@
         "Deportivo Armenio": "assets/logos/streamed/deportivo-armenio.webp",
         "Club Independiente": "assets/logos/upstreams/club-independiente.webp",
         "Ruslan Tiukaev": "assets/logos/upstreams/ruslan-tiukaev.webp",
-        "Stefan Popovi\u0107": "assets/logos/upstreams/stefan-popovi\u0107.webp"
+        "Stefan Popovi\u0107": "assets/logos/upstreams/stefan-popovi\u0107.webp",
+        "Stal Rzesz\u00f3w": "assets/logos/upstreams/stal-rzesz\u00f3w.webp",
+        "Asane": "assets/logos/upstreams/asane.webp",
+        "Odd BK": "assets/logos/upstreams/odd-bk.webp",
+        "Sogndal": "assets/logos/upstreams/sogndal.webp",
+        "Norrk\u00f6ping DFK": "assets/logos/upstreams/norrk\u00f6ping-dfk.webp",
+        "IK Start": "assets/logos/upstreams/ik-start.webp",
+        "Daniel Womersley": "assets/logos/upstreams/daniel-womersley.webp",
+        "Haris Tahir": "assets/logos/upstreams/haris-tahir.webp",
+        "Connor Benzey": "assets/logos/upstreams/connor-benzey.webp",
+        "Alfie Burden": "assets/logos/upstreams/alfie-burden.webp",
+        "Ken Doherty": "assets/logos/upstreams/ken-doherty.webp",
+        "Patrick Whelan": "assets/logos/upstreams/patrick-whelan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16812,6 +16824,7 @@
         "Copa Southamericana - Gr.E": "assets/logos/leagues/copa-southamericana-gre.webp",
         "CONMEBOL Libertadores, Group C": "assets/logos/leagues/conmebol-libertadores-group-c.webp",
         "CONMEBOL Sudamericana, Group G": "assets/logos/leagues/conmebol-sudamericana-group-g.webp",
-        "CONMEBOL Sudamericana, Group E": "assets/logos/leagues/conmebol-sudamericana-group-e.webp"
+        "CONMEBOL Sudamericana, Group E": "assets/logos/leagues/conmebol-sudamericana-group-e.webp",
+        "Denmark - SuperLeague - Gr.Championship": "assets/logos/leagues/denmark-superleague-grchampionship.webp"
     }
 }
