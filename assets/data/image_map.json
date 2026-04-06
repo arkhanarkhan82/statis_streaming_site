@@ -14972,7 +14972,9 @@
         "ATP Masters Monte Carlo: F. Cerundolo": "assets/logos/upstreams/atp-masters-monte-carlo-f-cerundolo.webp",
         "ATP Masters Monte Carlo: Cobolli - Comesana": "assets/logos/upstreams/atp-masters-monte-carlo-cobolli-comesana.webp",
         "ATP Masters Monte Carlo: Vacherot": "assets/logos/upstreams/atp-masters-monte-carlo-vacherot.webp",
-        "J.M. Cerundolo": "assets/logos/upstreams/jm-cerundolo.webp"
+        "J.M. Cerundolo": "assets/logos/upstreams/jm-cerundolo.webp",
+        "SJK Akatemia": "assets/logos/upstreams/sjk-akatemia.webp",
+        "MP": "assets/logos/upstreams/mp.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16881,6 +16883,7 @@
         "Campinas, Brazil": "assets/logos/leagues/campinas-brazil.webp",
         "Sarasota, USA": "assets/logos/leagues/sarasota-usa.webp",
         "UTR PTT Cordoba Men +H 03, Group B": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-b.webp",
-        "UTR PTT Cordoba Men +H 03, Group C": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-c.webp"
+        "UTR PTT Cordoba Men +H 03, Group C": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-c.webp",
+        "UTR PTT Cordoba Men +H 03, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-03-group-a.webp"
     }
 }
