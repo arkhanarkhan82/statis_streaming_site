@@ -15023,7 +15023,9 @@
         "Always Ready": "assets/logos/streamed/always-ready.webp",
         "LDU de Quito": "assets/logos/streamed/ldu-de-quito.webp",
         "U. Catolica": "assets/logos/streamed/u-catolica.webp",
-        "Zawisza Bydgoszcz": "assets/logos/streamed/zawisza-bydgoszcz.webp"
+        "Zawisza Bydgoszcz": "assets/logos/streamed/zawisza-bydgoszcz.webp",
+        "Callum Smith": "assets/logos/upstreams/callum-smith.webp",
+        "Noah Haase": "assets/logos/upstreams/noah-haase.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
