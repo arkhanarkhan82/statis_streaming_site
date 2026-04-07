@@ -15026,7 +15026,11 @@
         "Zawisza Bydgoszcz": "assets/logos/streamed/zawisza-bydgoszcz.webp",
         "Callum Smith": "assets/logos/upstreams/callum-smith.webp",
         "Noah Haase": "assets/logos/upstreams/noah-haase.webp",
-        "Difaa Hassani Jadidi": "assets/logos/upstreams/difaa-hassani-jadidi.webp"
+        "Difaa Hassani Jadidi": "assets/logos/upstreams/difaa-hassani-jadidi.webp",
+        "Arlington Renegades": "assets/logos/upstreams/arlington-renegades.webp",
+        "St. Louis Battlehawks": "assets/logos/upstreams/st-louis-battlehawks.webp",
+        "Lerumo Lions": "assets/logos/upstreams/lerumo-lions.webp",
+        "Romania W": "assets/logos/upstreams/romania-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16954,6 +16958,12 @@
         "WTA Linz": "assets/logos/leagues/wta-linz.webp",
         "UTR PTT Melbourne Men 01, Group A": "assets/logos/leagues/utr-ptt-melbourne-men-01-group-a.webp",
         "UTR PTT Melbourne Women 01, Group D": "assets/logos/leagues/utr-ptt-melbourne-women-01-group-d.webp",
-        "Botola Pro D1": "assets/logos/leagues/botola-pro-d1.webp"
+        "Botola Pro D1": "assets/logos/leagues/botola-pro-d1.webp",
+        "CONMEBOL Sudamericana, Group C": "assets/logos/leagues/conmebol-sudamericana-group-c.webp",
+        "CONMEBOL Libertadores, Group G": "assets/logos/leagues/conmebol-libertadores-group-g.webp",
+        "CONMEBOL Libertadores, Group D": "assets/logos/leagues/conmebol-libertadores-group-d.webp",
+        "CONMEBOL Libertadores, Group B": "assets/logos/leagues/conmebol-libertadores-group-b.webp",
+        "Copa Libertadores - Gr.G": "assets/logos/leagues/copa-libertadores-grg.webp",
+        "Copa Southamericana - Gr.D": "assets/logos/leagues/copa-southamericana-grd.webp"
     }
 }
