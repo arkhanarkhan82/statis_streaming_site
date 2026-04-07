@@ -15137,7 +15137,9 @@
         "Muhammad Dossani": "assets/logos/upstreams/muhammad-dossani.webp",
         "Mahta Khanloo": "assets/logos/upstreams/mahta-khanloo.webp",
         "Famalicao U23": "assets/logos/upstreams/famalicao-u23.webp",
-        "Jargal Altansarnai": "assets/logos/upstreams/jargal-altansarnai.webp"
+        "Jargal Altansarnai": "assets/logos/upstreams/jargal-altansarnai.webp",
+        "Andijan": "assets/logos/upstreams/andijan.webp",
+        "Stefan Storch": "assets/logos/upstreams/stefan-storch.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17077,6 +17079,8 @@
         "Copa Southamericana - Gr.C": "assets/logos/leagues/copa-southamericana-grc.webp",
         "Copa Libertadores - Gr.B": "assets/logos/leagues/copa-libertadores-grb.webp",
         "USA - USL League One": "assets/logos/leagues/usa-usl-league-one.webp",
-        "World Championship Qualifiers 2026": "assets/logos/leagues/world-championship-qualifiers-2026.webp"
+        "World Championship Qualifiers 2026": "assets/logos/leagues/world-championship-qualifiers-2026.webp",
+        "Russian Cup, Qualification": "assets/logos/leagues/russian-cup-qualification.webp",
+        "Singles Matches": "assets/logos/leagues/singles-matches.webp"
     }
 }
