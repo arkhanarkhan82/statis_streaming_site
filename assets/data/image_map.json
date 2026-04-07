@@ -15039,7 +15039,16 @@
         "Sandnes": "assets/logos/upstreams/sandnes.webp",
         "Dyip": "assets/logos/upstreams/dyip.webp",
         "Kreishh Gurbaxani": "assets/logos/upstreams/kreishh-gurbaxani.webp",
-        "Sahil Nayyar": "assets/logos/upstreams/sahil-nayyar.webp"
+        "Sahil Nayyar": "assets/logos/upstreams/sahil-nayyar.webp",
+        "Zijiang Yang": "assets/logos/upstreams/zijiang-yang.webp",
+        "Seongwoo Cho": "assets/logos/upstreams/seongwoo-cho.webp",
+        "Duanrui Gao": "assets/logos/upstreams/duanrui-gao.webp",
+        "Yajing Cao": "assets/logos/upstreams/yajing-cao.webp",
+        "Shiho Tsujioka": "assets/logos/upstreams/shiho-tsujioka.webp",
+        "Anja Blazina": "assets/logos/upstreams/anja-blazina.webp",
+        "Jelena Buchberger": "assets/logos/upstreams/jelena-buchberger.webp",
+        "Cecilia Wang": "assets/logos/upstreams/cecilia-wang.webp",
+        "Vivien Sandorhazi": "assets/logos/upstreams/vivien-sandorhazi.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -16973,6 +16982,8 @@
         "CONMEBOL Libertadores, Group D": "assets/logos/leagues/conmebol-libertadores-group-d.webp",
         "CONMEBOL Libertadores, Group B": "assets/logos/leagues/conmebol-libertadores-group-b.webp",
         "Copa Libertadores - Gr.G": "assets/logos/leagues/copa-libertadores-grg.webp",
-        "Copa Southamericana - Gr.D": "assets/logos/leagues/copa-southamericana-grd.webp"
+        "Copa Southamericana - Gr.D": "assets/logos/leagues/copa-southamericana-grd.webp",
+        "CONMEBOL Sudamericana, Group D": "assets/logos/leagues/conmebol-sudamericana-group-d.webp",
+        "CONMEBOL Sudamericana, Group F": "assets/logos/leagues/conmebol-sudamericana-group-f.webp"
     }
 }
