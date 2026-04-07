@@ -15142,7 +15142,13 @@
         "Stefan Storch": "assets/logos/upstreams/stefan-storch.webp",
         "Duncan S / Dutra Da Silva D": "assets/logos/upstreams/duncan-s-dutra-da-silva-d.webp",
         "Krueger M / Zink T": "assets/logos/upstreams/krueger-m-zink-t.webp",
-        "Tristan Suarez": "assets/logos/streamed/tristan-suarez.webp"
+        "Tristan Suarez": "assets/logos/streamed/tristan-suarez.webp",
+        "Arsenal --- CH 2 HD": "assets/logos/upstreams/arsenal-ch-2-hd.webp",
+        "Arsenal --- CH 3 HD": "assets/logos/upstreams/arsenal-ch-3-hd.webp",
+        "Thailand U20 W": "assets/logos/upstreams/thailand-u20-w.webp",
+        "Bangladesh U20 W": "assets/logos/upstreams/bangladesh-u20-w.webp",
+        "Dominique Schaefer": "assets/logos/upstreams/dominique-schaefer.webp",
+        "Malwina Rowinska": "assets/logos/upstreams/malwina-rowinska.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17085,6 +17091,7 @@
         "World Championship Qualifiers 2026": "assets/logos/leagues/world-championship-qualifiers-2026.webp",
         "Russian Cup, Qualification": "assets/logos/leagues/russian-cup-qualification.webp",
         "Singles Matches": "assets/logos/leagues/singles-matches.webp",
-        "Sarasota, USA, Doubles": "assets/logos/leagues/sarasota-usa-doubles.webp"
+        "Sarasota, USA, Doubles": "assets/logos/leagues/sarasota-usa-doubles.webp",
+        "AFC Asian Cup Women U20": "assets/logos/leagues/afc-asian-cup-women-u20.webp"
     }
 }
