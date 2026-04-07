@@ -15139,7 +15139,9 @@
         "Famalicao U23": "assets/logos/upstreams/famalicao-u23.webp",
         "Jargal Altansarnai": "assets/logos/upstreams/jargal-altansarnai.webp",
         "Andijan": "assets/logos/upstreams/andijan.webp",
-        "Stefan Storch": "assets/logos/upstreams/stefan-storch.webp"
+        "Stefan Storch": "assets/logos/upstreams/stefan-storch.webp",
+        "Duncan S / Dutra Da Silva D": "assets/logos/upstreams/duncan-s-dutra-da-silva-d.webp",
+        "Krueger M / Zink T": "assets/logos/upstreams/krueger-m-zink-t.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17081,6 +17083,7 @@
         "USA - USL League One": "assets/logos/leagues/usa-usl-league-one.webp",
         "World Championship Qualifiers 2026": "assets/logos/leagues/world-championship-qualifiers-2026.webp",
         "Russian Cup, Qualification": "assets/logos/leagues/russian-cup-qualification.webp",
-        "Singles Matches": "assets/logos/leagues/singles-matches.webp"
+        "Singles Matches": "assets/logos/leagues/singles-matches.webp",
+        "Sarasota, USA, Doubles": "assets/logos/leagues/sarasota-usa-doubles.webp"
     }
 }
