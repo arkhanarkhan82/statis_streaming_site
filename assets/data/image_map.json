@@ -15101,7 +15101,9 @@
         "Yuqi Liu": "assets/logos/upstreams/yuqi-liu.webp",
         "Cangrejeros Santurce": "assets/logos/upstreams/cangrejeros-santurce.webp",
         "Aguada Santeros": "assets/logos/upstreams/aguada-santeros.webp",
-        "Criollas de Caguas": "assets/logos/upstreams/criollas-de-caguas.webp"
+        "Criollas de Caguas": "assets/logos/upstreams/criollas-de-caguas.webp",
+        "ATP Masters Monte Carlo: Humbert - Sinner": "assets/logos/upstreams/atp-masters-monte-carlo-humbert-sinner.webp",
+        "Wongharuthai N.": "assets/logos/upstreams/wongharuthai-n.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17040,6 +17042,7 @@
         "CONMEBOL Sudamericana, Group F": "assets/logos/leagues/conmebol-sudamericana-group-f.webp",
         "Copa Southamericana - Gr.C": "assets/logos/leagues/copa-southamericana-grc.webp",
         "Copa Libertadores - Gr.B": "assets/logos/leagues/copa-libertadores-grb.webp",
-        "USA - USL League One": "assets/logos/leagues/usa-usl-league-one.webp"
+        "USA - USL League One": "assets/logos/leagues/usa-usl-league-one.webp",
+        "World Championship Qualifiers 2026": "assets/logos/leagues/world-championship-qualifiers-2026.webp"
     }
 }
