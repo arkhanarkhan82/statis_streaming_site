@@ -15222,7 +15222,9 @@
         "Jiangsu Phoenix": "assets/logos/upstreams/jiangsu-phoenix.webp",
         "Sichuan Blue Whale": "assets/logos/upstreams/sichuan-blue-whale.webp",
         "Xinjiang Wojiang": "assets/logos/upstreams/xinjiang-wojiang.webp",
-        "Shanxi Xing Rui Flame": "assets/logos/upstreams/shanxi-xing-rui-flame.webp"
+        "Shanxi Xing Rui Flame": "assets/logos/upstreams/shanxi-xing-rui-flame.webp",
+        "Dinamo Samarkand": "assets/logos/upstreams/dinamo-samarkand.webp",
+        "Zawisza": "assets/logos/upstreams/zawisza.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17181,6 +17183,8 @@
         "Korean Basketball League": "assets/logos/leagues/korean-basketball-league.webp",
         "Thailand Cup": "assets/logos/leagues/thailand-cup.webp",
         "WCBA, Playoffs": "assets/logos/leagues/wcba-playoffs.webp",
-        "Super League, Relegation Round": "assets/logos/leagues/super-league-relegation-round.webp"
+        "Super League, Relegation Round": "assets/logos/leagues/super-league-relegation-round.webp",
+        "Russian Cup": "assets/logos/leagues/russian-cup.webp",
+        "Poland Cup": "assets/logos/leagues/poland-cup.webp"
     }
 }
