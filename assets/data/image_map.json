@@ -15224,7 +15224,9 @@
         "Xinjiang Wojiang": "assets/logos/upstreams/xinjiang-wojiang.webp",
         "Shanxi Xing Rui Flame": "assets/logos/upstreams/shanxi-xing-rui-flame.webp",
         "Dinamo Samarkand": "assets/logos/upstreams/dinamo-samarkand.webp",
-        "Zawisza": "assets/logos/upstreams/zawisza.webp"
+        "Zawisza": "assets/logos/upstreams/zawisza.webp",
+        "UCV": "assets/logos/streamed/ucv.webp",
+        "Deportivo Camioneros": "assets/logos/streamed/deportivo-camioneros.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
