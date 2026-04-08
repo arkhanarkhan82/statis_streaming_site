@@ -15216,7 +15216,11 @@
         "Khongorzul Aldarkhishig": "assets/logos/upstreams/khongorzul-aldarkhishig.webp",
         "Akaki Kality": "assets/logos/upstreams/akaki-kality.webp",
         "Celia Cervi\u00f1o Ruiz": "assets/logos/upstreams/celia-cervi\u00f1o-ruiz.webp",
-        "Iulian Boiko": "assets/logos/upstreams/iulian-boiko.webp"
+        "Iulian Boiko": "assets/logos/upstreams/iulian-boiko.webp",
+        "OKMK": "assets/logos/upstreams/okmk.webp",
+        "Termez Surkhon": "assets/logos/upstreams/termez-surkhon.webp",
+        "Jiangsu Phoenix": "assets/logos/upstreams/jiangsu-phoenix.webp",
+        "Sichuan Blue Whale": "assets/logos/upstreams/sichuan-blue-whale.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17172,6 +17176,8 @@
         "CONMEBOL Libertadores, Group H": "assets/logos/leagues/conmebol-libertadores-group-h.webp",
         "EHF Euro Women, Qualification Phase 2 Group 4": "assets/logos/leagues/ehf-euro-women-qualification-phase-2-group-4.webp",
         "EHF Euro Women, Qualification Phase 2 Group 5": "assets/logos/leagues/ehf-euro-women-qualification-phase-2-group-5.webp",
-        "Korean Basketball League": "assets/logos/leagues/korean-basketball-league.webp"
+        "Korean Basketball League": "assets/logos/leagues/korean-basketball-league.webp",
+        "Thailand Cup": "assets/logos/leagues/thailand-cup.webp",
+        "WCBA, Playoffs": "assets/logos/leagues/wcba-playoffs.webp"
     }
 }
