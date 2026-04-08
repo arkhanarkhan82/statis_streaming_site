@@ -15161,7 +15161,20 @@
         "Montenegro W": "assets/logos/upstreams/montenegro-w.webp",
         "Matunga Djikasa": "assets/logos/upstreams/matunga-djikasa.webp",
         "Club Jouventut Badalona": "assets/logos/upstreams/club-jouventut-badalona.webp",
-        "Sri Lanka A": "assets/logos/upstreams/sri-lanka-a.webp"
+        "Sri Lanka A": "assets/logos/upstreams/sri-lanka-a.webp",
+        "Sampaio Correa RJ": "assets/logos/upstreams/sampaio-correa-rj.webp",
+        "Primavera MT": "assets/logos/upstreams/primavera-mt.webp",
+        "Tristan USArez": "assets/logos/upstreams/tristan-usarez.webp",
+        "Yuquan Jin": "assets/logos/upstreams/yuquan-jin.webp",
+        "Jiayi Wang": "assets/logos/upstreams/jiayi-wang.webp",
+        "Lan Yuhao": "assets/logos/upstreams/lan-yuhao.webp",
+        "Chatchapong Nasa": "assets/logos/upstreams/chatchapong-nasa.webp",
+        "Haydon Pinhey": "assets/logos/upstreams/haydon-pinhey.webp",
+        "Jamie Rhys Clarke": "assets/logos/upstreams/jamie-rhys-clarke.webp",
+        "Zhao Hanyang": "assets/logos/upstreams/zhao-hanyang.webp",
+        "Mahmoud El Hareedy": "assets/logos/upstreams/mahmoud-el-hareedy.webp",
+        "Farakh Ajaib": "assets/logos/upstreams/farakh-ajaib.webp",
+        "Umut Dikme": "assets/logos/upstreams/umut-dikme.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17111,6 +17124,9 @@
         "CONMEBOL Libertadores, Group F": "assets/logos/leagues/conmebol-libertadores-group-f.webp",
         "CONMEBOL Sudamericana, Group B": "assets/logos/leagues/conmebol-sudamericana-group-b.webp",
         "Copa Libertadores - Gr.H": "assets/logos/leagues/copa-libertadores-grh.webp",
-        "Copa Southamericana - Gr.B": "assets/logos/leagues/copa-southamericana-grb.webp"
+        "Copa Southamericana - Gr.B": "assets/logos/leagues/copa-southamericana-grb.webp",
+        "CONMEBOL Sudamericana, Group A": "assets/logos/leagues/conmebol-sudamericana-group-a.webp",
+        "Germany - DEL - Playoff": "assets/logos/leagues/germany-del-playoff.webp",
+        "CONMEBOL Libertadores, Group H": "assets/logos/leagues/conmebol-libertadores-group-h.webp"
     }
 }
