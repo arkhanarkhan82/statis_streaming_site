@@ -15155,7 +15155,11 @@
         "Jerome Pauquet": "assets/logos/upstreams/jerome-pauquet.webp",
         "Kian-yu Oei": "assets/logos/upstreams/kian-yu-oei.webp",
         "Kristin Kuuba": "assets/logos/upstreams/kristin-kuuba.webp",
-        "Felipe De Dios": "assets/logos/upstreams/felipe-de-dios.webp"
+        "Felipe De Dios": "assets/logos/upstreams/felipe-de-dios.webp",
+        "Universidad Central Venezuela": "assets/logos/upstreams/universidad-central-venezuela.webp",
+        "Portugal W": "assets/logos/upstreams/portugal-w.webp",
+        "Montenegro W": "assets/logos/upstreams/montenegro-w.webp",
+        "Matunga Djikasa": "assets/logos/upstreams/matunga-djikasa.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17099,6 +17103,12 @@
         "Russian Cup, Qualification": "assets/logos/leagues/russian-cup-qualification.webp",
         "Singles Matches": "assets/logos/leagues/singles-matches.webp",
         "Sarasota, USA, Doubles": "assets/logos/leagues/sarasota-usa-doubles.webp",
-        "AFC Asian Cup Women U20": "assets/logos/leagues/afc-asian-cup-women-u20.webp"
+        "AFC Asian Cup Women U20": "assets/logos/leagues/afc-asian-cup-women-u20.webp",
+        "CONMEBOL Sudamericana, Group H": "assets/logos/leagues/conmebol-sudamericana-group-h.webp",
+        "CONMEBOL Libertadores, Group A": "assets/logos/leagues/conmebol-libertadores-group-a.webp",
+        "CONMEBOL Libertadores, Group F": "assets/logos/leagues/conmebol-libertadores-group-f.webp",
+        "CONMEBOL Sudamericana, Group B": "assets/logos/leagues/conmebol-sudamericana-group-b.webp",
+        "Copa Libertadores - Gr.H": "assets/logos/leagues/copa-libertadores-grh.webp",
+        "Copa Southamericana - Gr.B": "assets/logos/leagues/copa-southamericana-grb.webp"
     }
 }
