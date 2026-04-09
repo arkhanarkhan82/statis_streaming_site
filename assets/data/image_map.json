@@ -15243,7 +15243,12 @@
         "Odisha": "assets/logos/upstreams/odisha.webp",
         "Real Garcilaso": "assets/logos/upstreams/real-garcilaso.webp",
         "SC Atletiko Salina": "assets/logos/upstreams/sc-atletiko-salina.webp",
-        "Dep Cuenca": "assets/logos/upstreams/dep-cuenca.webp"
+        "Dep Cuenca": "assets/logos/upstreams/dep-cuenca.webp",
+        "Rio Branco ES": "assets/logos/upstreams/rio-branco-es.webp",
+        "Camioneros": "assets/logos/upstreams/camioneros.webp",
+        "Manawatu Jets": "assets/logos/upstreams/manawatu-jets.webp",
+        "Taranaki Airs": "assets/logos/upstreams/taranaki-airs.webp",
+        "Julie \u0160truplov\u00e1": "assets/logos/upstreams/julie-\u0161truplov\u00e1.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17210,6 +17215,7 @@
         "Bosnia and Herzegovina - Premier League": "assets/logos/leagues/bosnia-and-herzegovina-premier-league.webp",
         "CONMEBOL Nations League Women": "assets/logos/leagues/conmebol-nations-league-women.webp",
         "Billie Jean King Cup, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-qualifiers.webp",
-        "Copa Libertadores, Group A": "assets/logos/leagues/copa-libertadores-group-a.webp"
+        "Copa Libertadores, Group A": "assets/logos/leagues/copa-libertadores-group-a.webp",
+        "New Zealand NBL": "assets/logos/leagues/new-zealand-nbl.webp"
     }
 }
