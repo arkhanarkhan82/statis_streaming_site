@@ -15240,7 +15240,10 @@
         "Michele Clemente": "assets/logos/upstreams/michele-clemente.webp",
         "Theophilous Kpakpo Allotey": "assets/logos/upstreams/theophilous-kpakpo-allotey.webp",
         "Jonas ErastusSuper flyweightBukom Boxing Arena | Accra": "assets/logos/upstreams/jonas-erastussuper-flyweightbukom-boxing-arena-accra.webp",
-        "Odisha": "assets/logos/upstreams/odisha.webp"
+        "Odisha": "assets/logos/upstreams/odisha.webp",
+        "Real Garcilaso": "assets/logos/upstreams/real-garcilaso.webp",
+        "SC Atletiko Salina": "assets/logos/upstreams/sc-atletiko-salina.webp",
+        "Dep Cuenca": "assets/logos/upstreams/dep-cuenca.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17206,6 +17209,7 @@
         "ABA League - Playout": "assets/logos/leagues/aba-league-playout.webp",
         "Bosnia and Herzegovina - Premier League": "assets/logos/leagues/bosnia-and-herzegovina-premier-league.webp",
         "CONMEBOL Nations League Women": "assets/logos/leagues/conmebol-nations-league-women.webp",
-        "Billie Jean King Cup, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-qualifiers.webp"
+        "Billie Jean King Cup, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-qualifiers.webp",
+        "Copa Libertadores, Group A": "assets/logos/leagues/copa-libertadores-group-a.webp"
     }
 }
