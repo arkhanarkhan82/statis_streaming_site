@@ -15254,7 +15254,9 @@
         "Fremantle": "assets/logos/streamed/fremantle.webp",
         "Crvena Zvezda Meridianbet Belgrade": "assets/logos/streamed/crvena-zvezda-meridianbet-belgrade.webp",
         "Melbourne": "assets/logos/streamed/melbourne.webp",
-        "Essendon": "assets/logos/streamed/essendon.webp"
+        "Essendon": "assets/logos/streamed/essendon.webp",
+        "Southland Sharks": "assets/logos/upstreams/southland-sharks.webp",
+        "Otago Nuggets": "assets/logos/upstreams/otago-nuggets.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
