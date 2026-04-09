@@ -15248,7 +15248,13 @@
         "Camioneros": "assets/logos/upstreams/camioneros.webp",
         "Manawatu Jets": "assets/logos/upstreams/manawatu-jets.webp",
         "Taranaki Airs": "assets/logos/upstreams/taranaki-airs.webp",
-        "Julie \u0160truplov\u00e1": "assets/logos/upstreams/julie-\u0161truplov\u00e1.webp"
+        "Julie \u0160truplov\u00e1": "assets/logos/upstreams/julie-\u0161truplov\u00e1.webp",
+        "Manila Digger": "assets/logos/streamed/manila-digger.webp",
+        "Grobi\u0146as": "assets/logos/streamed/grobi\u0146as.webp",
+        "Fremantle": "assets/logos/streamed/fremantle.webp",
+        "Crvena Zvezda Meridianbet Belgrade": "assets/logos/streamed/crvena-zvezda-meridianbet-belgrade.webp",
+        "Melbourne": "assets/logos/streamed/melbourne.webp",
+        "Essendon": "assets/logos/streamed/essendon.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17216,6 +17222,7 @@
         "CONMEBOL Nations League Women": "assets/logos/leagues/conmebol-nations-league-women.webp",
         "Billie Jean King Cup, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-qualifiers.webp",
         "Copa Libertadores, Group A": "assets/logos/leagues/copa-libertadores-group-a.webp",
-        "New Zealand NBL": "assets/logos/leagues/new-zealand-nbl.webp"
+        "New Zealand NBL": "assets/logos/leagues/new-zealand-nbl.webp",
+        "CONCACAF Champions League": "assets/logos/leagues/concacaf-champions-league.webp"
     }
 }
