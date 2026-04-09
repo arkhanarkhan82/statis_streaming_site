@@ -15228,7 +15228,19 @@
         "UCV": "assets/logos/streamed/ucv.webp",
         "Deportivo Camioneros": "assets/logos/streamed/deportivo-camioneros.webp",
         "Katja Wiersholm": "assets/logos/upstreams/katja-wiersholm.webp",
-        "Y.Lugiana Muelle Valdez": "assets/logos/upstreams/ylugiana-muelle-valdez.webp"
+        "Y.Lugiana Muelle Valdez": "assets/logos/upstreams/ylugiana-muelle-valdez.webp",
+        "Atl. Madrid B": "assets/logos/upstreams/atl-madrid-b.webp",
+        "Marbella": "assets/logos/upstreams/marbella.webp",
+        "Ferreira": "assets/logos/upstreams/ferreira.webp",
+        "Newcastle Utd U21": "assets/logos/upstreams/newcastle-utd-u21.webp",
+        "Peru W": "assets/logos/upstreams/peru-w.webp",
+        "Uruguay W": "assets/logos/upstreams/uruguay-w.webp",
+        "Ecuador W": "assets/logos/upstreams/ecuador-w.webp",
+        "Nkosi Ndebele": "assets/logos/upstreams/nkosi-ndebele.webp",
+        "Michele Clemente": "assets/logos/upstreams/michele-clemente.webp",
+        "Theophilous Kpakpo Allotey": "assets/logos/upstreams/theophilous-kpakpo-allotey.webp",
+        "Jonas ErastusSuper flyweightBukom Boxing Arena | Accra": "assets/logos/upstreams/jonas-erastussuper-flyweightbukom-boxing-arena-accra.webp",
+        "Odisha": "assets/logos/upstreams/odisha.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17189,6 +17201,11 @@
         "WCBA, Playoffs": "assets/logos/leagues/wcba-playoffs.webp",
         "Super League, Relegation Round": "assets/logos/leagues/super-league-relegation-round.webp",
         "Russian Cup": "assets/logos/leagues/russian-cup.webp",
-        "Poland Cup": "assets/logos/leagues/poland-cup.webp"
+        "Poland Cup": "assets/logos/leagues/poland-cup.webp",
+        "CONMEBOL Libertadores, Group E": "assets/logos/leagues/conmebol-libertadores-group-e.webp",
+        "ABA League - Playout": "assets/logos/leagues/aba-league-playout.webp",
+        "Bosnia and Herzegovina - Premier League": "assets/logos/leagues/bosnia-and-herzegovina-premier-league.webp",
+        "CONMEBOL Nations League Women": "assets/logos/leagues/conmebol-nations-league-women.webp",
+        "Billie Jean King Cup, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-qualifiers.webp"
     }
 }
