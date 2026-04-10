@@ -15388,7 +15388,27 @@
         "Supra du Qu\u00e9bec": "assets/logos/streamed/supra-du-qu\u00e9bec.webp",
         "American Samoa W": "assets/logos/streamed/american-samoa-w.webp",
         "Leticia Alessia Bazan Bazan": "assets/logos/upstreams/leticia-alessia-bazan-bazan.webp",
-        "Yleymi Lugiana Muelle Valdez": "assets/logos/upstreams/yleymi-lugiana-muelle-valdez.webp"
+        "Yleymi Lugiana Muelle Valdez": "assets/logos/upstreams/yleymi-lugiana-muelle-valdez.webp",
+        "Dempo": "assets/logos/upstreams/dempo.webp",
+        "Guangxi Hengchen": "assets/logos/upstreams/guangxi-hengchen.webp",
+        "Diamond Harbour": "assets/logos/upstreams/diamond-harbour.webp",
+        "Loudoun": "assets/logos/upstreams/loudoun.webp",
+        "Inter Miami II": "assets/logos/upstreams/inter-miami-ii.webp",
+        "Atlanta United II": "assets/logos/upstreams/atlanta-united-ii.webp",
+        "Giessen": "assets/logos/upstreams/giessen.webp",
+        "Tigers Tubingen": "assets/logos/upstreams/tigers-tubingen.webp",
+        "Gwangju": "assets/logos/upstreams/gwangju.webp",
+        "Paju Citizen": "assets/logos/upstreams/paju-citizen.webp",
+        "Hwaseong": "assets/logos/upstreams/hwaseong.webp",
+        "Shaanxi Union": "assets/logos/upstreams/shaanxi-union.webp",
+        "Shenzhen Juniors": "assets/logos/upstreams/shenzhen-juniors.webp",
+        "SBB Wolmirstedt": "assets/logos/upstreams/sbb-wolmirstedt.webp",
+        "Massy Essonne": "assets/logos/upstreams/massy-essonne.webp",
+        "Kaylah Mcphee": "assets/logos/upstreams/kaylah-mcphee.webp",
+        "Yongin City": "assets/logos/upstreams/yongin-city.webp",
+        "Daegu": "assets/logos/upstreams/daegu.webp",
+        "Gifu": "assets/logos/upstreams/gifu.webp",
+        "Auckland Huskies": "assets/logos/upstreams/auckland-huskies.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17379,6 +17399,13 @@
         "UTR PTT Melbourne Men 01, 13-16 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-men-01-13-16-playoffs.webp",
         "PFL Africa 1: Pretoria": "assets/logos/leagues/pfl-africa-1-pretoria.webp",
         "International Friendly (W)": "assets/logos/leagues/international-friendly-w.webp",
-        "RFL Challenge Cup": "assets/logos/leagues/rfl-challenge-cup.webp"
+        "RFL Challenge Cup": "assets/logos/leagues/rfl-challenge-cup.webp",
+        "Japan - J2/J3 League": "assets/logos/leagues/japan-j2j3-league.webp",
+        "USA - MLS Next Pro": "assets/logos/leagues/usa-mls-next-pro.webp",
+        "Germany - Pro A": "assets/logos/leagues/germany-pro-a.webp",
+        "Japan - J1 League": "assets/logos/leagues/japan-j1-league.webp",
+        "South Korea - K League 2": "assets/logos/leagues/south-korea-k-league-2.webp",
+        "UTR PTT Melbourne Women 01": "assets/logos/leagues/utr-ptt-melbourne-women-01.webp",
+        "New Zealand - NBL": "assets/logos/leagues/new-zealand-nbl.webp"
     }
 }
