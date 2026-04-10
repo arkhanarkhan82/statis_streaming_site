@@ -15325,7 +15325,17 @@
         "RB Leipzig U19": "assets/logos/upstreams/rb-leipzig-u19.webp",
         "M\u00f6nchengladbach U19": "assets/logos/upstreams/m\u00f6nchengladbach-u19.webp",
         "Deportes Magallanes": "assets/logos/upstreams/deportes-magallanes.webp",
-        "FC Supra Du Quebec": "assets/logos/upstreams/fc-supra-du-quebec.webp"
+        "FC Supra Du Quebec": "assets/logos/upstreams/fc-supra-du-quebec.webp",
+        "J\u00e4PS": "assets/logos/upstreams/j\u00e4ps.webp",
+        "MP Mikkeli": "assets/logos/upstreams/mp-mikkeli.webp",
+        "Torneo Montecarlo (T2026): Auger-Aliassime": "assets/logos/upstreams/torneo-montecarlo-t2026-auger-aliassime.webp",
+        "Sinner": "assets/logos/upstreams/sinner.webp",
+        "S\u00e9lestat Alsace Handball": "assets/logos/upstreams/s\u00e9lestat-alsace-handball.webp",
+        "Jiri Prochazka": "assets/logos/upstreams/jiri-prochazka.webp",
+        "Carlos Ulberg": "assets/logos/upstreams/carlos-ulberg.webp",
+        "Patricio Freire": "assets/logos/upstreams/patricio-freire.webp",
+        "Aaron Pico": "assets/logos/upstreams/aaron-pico.webp",
+        "Eva Marie Voracek": "assets/logos/upstreams/eva-marie-voracek.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17300,6 +17310,8 @@
         "Premier League, Night 10": "assets/logos/leagues/premier-league-night-10.webp",
         "Iceland - Urvalsdeild": "assets/logos/leagues/iceland-urvalsdeild.webp",
         "Six Nations Women": "assets/logos/leagues/six-nations-women.webp",
-        "UFC 327: Proch\u00e1zka vs. Ulberg": "assets/logos/leagues/ufc-327-proch\u00e1zka-vs-ulberg.webp"
+        "UFC 327: Proch\u00e1zka vs. Ulberg": "assets/logos/leagues/ufc-327-proch\u00e1zka-vs-ulberg.webp",
+        "Billie Jean King Cup, Singles Matches, Qualifiers": "assets/logos/leagues/billie-jean-king-cup-singles-matches-qualifiers.webp",
+        "UTR PTT Melbourne Men 01, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-men-01-5-8-playoffs.webp"
     }
 }
