@@ -15436,7 +15436,11 @@
         "Gimhae": "assets/logos/upstreams/gimhae.webp",
         "Geelong Football Club": "assets/logos/streamed/geelong-football-club.webp",
         "Richmond Football Club": "assets/logos/streamed/richmond-football-club.webp",
-        "Rigas FS II": "assets/logos/upstreams/rigas-fs-ii.webp"
+        "Rigas FS II": "assets/logos/upstreams/rigas-fs-ii.webp",
+        "Qingdao WEast Coast": "assets/logos/upstreams/qingdao-weast-coast.webp",
+        "Dibba Fujairah": "assets/logos/upstreams/dibba-fujairah.webp",
+        "Orlando City II": "assets/logos/upstreams/orlando-city-ii.webp",
+        "Benfica de Macau": "assets/logos/upstreams/benfica-de-macau.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17439,6 +17443,9 @@
         "SuperSport HNL": "assets/logos/leagues/supersport-hnl.webp",
         "Segunda Division B - Group 5": "assets/logos/leagues/segunda-division-b-group-5.webp",
         "Division Profesional": "assets/logos/leagues/division-profesional.webp",
-        "UTR PTT Belgrade Women 03": "assets/logos/leagues/utr-ptt-belgrade-women-03.webp"
+        "UTR PTT Belgrade Women 03": "assets/logos/leagues/utr-ptt-belgrade-women-03.webp",
+        "China - Super League": "assets/logos/leagues/china-super-league.webp",
+        "Scottish - Premiership": "assets/logos/leagues/scottish-premiership.webp",
+        "USA - MLS": "assets/logos/leagues/usa-mls.webp"
     }
 }
