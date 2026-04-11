@@ -15474,7 +15474,9 @@
         "Stephen Hendry": "assets/logos/upstreams/stephen-hendry.webp",
         "University Azzurri FC": "assets/logos/upstreams/university-azzurri-fc.webp",
         "Nakhon Ratchasima FC": "assets/logos/upstreams/nakhon-ratchasima-fc.webp",
-        "Kings XI Punjab": "assets/logos/upstreams/kings-xi-punjab.webp"
+        "Kings XI Punjab": "assets/logos/upstreams/kings-xi-punjab.webp",
+        "Zamarat (W)": "assets/logos/upstreams/zamarat-w.webp",
+        "Lima-Horta Barcelona (W)": "assets/logos/upstreams/lima-horta-barcelona-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17493,6 +17495,7 @@
         "UTR PTT Belgrade Women 03, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-5-8-playoffs.webp",
         "Munich, Germany, Qualifying": "assets/logos/leagues/munich-germany-qualifying.webp",
         "Rouen, France, Qualifying": "assets/logos/leagues/rouen-france-qualifying.webp",
-        "Stuttgart, Germany, Qualifying": "assets/logos/leagues/stuttgart-germany-qualifying.webp"
+        "Stuttgart, Germany, Qualifying": "assets/logos/leagues/stuttgart-germany-qualifying.webp",
+        "Halo World Championship": "assets/logos/leagues/halo-world-championship.webp"
     }
 }
