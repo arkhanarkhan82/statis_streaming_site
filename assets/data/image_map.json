@@ -15470,7 +15470,8 @@
         "University of NSW U20": "assets/logos/upstreams/university-of-nsw-u20.webp",
         "APIA Leichhardt U20": "assets/logos/upstreams/apia-leichhardt-u20.webp",
         "Leone Crowley": "assets/logos/upstreams/leone-crowley.webp",
-        "Maria Kozyreva": "assets/logos/upstreams/maria-kozyreva.webp"
+        "Maria Kozyreva": "assets/logos/upstreams/maria-kozyreva.webp",
+        "Stephen Hendry": "assets/logos/upstreams/stephen-hendry.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17482,6 +17483,8 @@
         "UTR PTT Melbourne Men 01": "assets/logos/leagues/utr-ptt-melbourne-men-01.webp",
         "WTA Billie Jean King Cup": "assets/logos/leagues/wta-billie-jean-king-cup.webp",
         "Atp Monte Carlo": "assets/logos/leagues/atp-monte-carlo.webp",
-        "UTR PTT Belgrade Women 03, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-1-4-playoffs.webp"
+        "UTR PTT Belgrade Women 03, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-1-4-playoffs.webp",
+        "Barcelona, Spain, Qualifying": "assets/logos/leagues/barcelona-spain-qualifying.webp",
+        "UTR PTT Belgrade Women 03, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-9-12-playoffs.webp"
     }
 }
