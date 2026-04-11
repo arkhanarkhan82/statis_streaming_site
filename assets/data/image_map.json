@@ -15433,7 +15433,10 @@
         "Cheongju": "assets/logos/upstreams/cheongju.webp",
         "Seongnam": "assets/logos/upstreams/seongnam.webp",
         "Chungnam Asan": "assets/logos/upstreams/chungnam-asan.webp",
-        "Gimhae": "assets/logos/upstreams/gimhae.webp"
+        "Gimhae": "assets/logos/upstreams/gimhae.webp",
+        "Geelong Football Club": "assets/logos/streamed/geelong-football-club.webp",
+        "Richmond Football Club": "assets/logos/streamed/richmond-football-club.webp",
+        "Rigas FS II": "assets/logos/upstreams/rigas-fs-ii.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17435,6 +17438,7 @@
         "UTR PTT Belgrade Women 03, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-17-20-playoffs.webp",
         "SuperSport HNL": "assets/logos/leagues/supersport-hnl.webp",
         "Segunda Division B - Group 5": "assets/logos/leagues/segunda-division-b-group-5.webp",
-        "Division Profesional": "assets/logos/leagues/division-profesional.webp"
+        "Division Profesional": "assets/logos/leagues/division-profesional.webp",
+        "UTR PTT Belgrade Women 03": "assets/logos/leagues/utr-ptt-belgrade-women-03.webp"
     }
 }
