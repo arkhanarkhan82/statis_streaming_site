@@ -15456,7 +15456,9 @@
         "ABB": "assets/logos/upstreams/abb.webp",
         "Huntsville City": "assets/logos/streamed/huntsville-city.webp",
         "Great Britain W": "assets/logos/upstreams/great-britain-w.webp",
-        "Anna Lena Friedsam": "assets/logos/upstreams/anna-lena-friedsam.webp"
+        "Anna Lena Friedsam": "assets/logos/upstreams/anna-lena-friedsam.webp",
+        "Lysekloster": "assets/logos/upstreams/lysekloster.webp",
+        "Vidar": "assets/logos/upstreams/vidar.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
