@@ -15440,7 +15440,15 @@
         "Qingdao WEast Coast": "assets/logos/upstreams/qingdao-weast-coast.webp",
         "Dibba Fujairah": "assets/logos/upstreams/dibba-fujairah.webp",
         "Orlando City II": "assets/logos/upstreams/orlando-city-ii.webp",
-        "Benfica de Macau": "assets/logos/upstreams/benfica-de-macau.webp"
+        "Benfica de Macau": "assets/logos/upstreams/benfica-de-macau.webp",
+        "Follo": "assets/logos/upstreams/follo.webp",
+        "Kjelsas": "assets/logos/upstreams/kjelsas.webp",
+        "Pors": "assets/logos/upstreams/pors.webp",
+        "AC Bra": "assets/logos/upstreams/ac-bra.webp",
+        "Gefle": "assets/logos/upstreams/gefle.webp",
+        "FC Jarfalla": "assets/logos/upstreams/fc-jarfalla.webp",
+        "Hammarby Talang": "assets/logos/upstreams/hammarby-talang.webp",
+        "Eva Marie Vorace": "assets/logos/upstreams/eva-marie-vorace.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17446,6 +17454,7 @@
         "UTR PTT Belgrade Women 03": "assets/logos/leagues/utr-ptt-belgrade-women-03.webp",
         "China - Super League": "assets/logos/leagues/china-super-league.webp",
         "Scottish - Premiership": "assets/logos/leagues/scottish-premiership.webp",
-        "USA - MLS": "assets/logos/leagues/usa-mls.webp"
+        "USA - MLS": "assets/logos/leagues/usa-mls.webp",
+        "Sweden - Ettan Norra": "assets/logos/leagues/sweden-ettan-norra.webp"
     }
 }
