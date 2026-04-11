@@ -15448,7 +15448,12 @@
         "Gefle": "assets/logos/upstreams/gefle.webp",
         "FC Jarfalla": "assets/logos/upstreams/fc-jarfalla.webp",
         "Hammarby Talang": "assets/logos/upstreams/hammarby-talang.webp",
-        "Eva Marie Vorace": "assets/logos/upstreams/eva-marie-vorace.webp"
+        "Eva Marie Vorace": "assets/logos/upstreams/eva-marie-vorace.webp",
+        "Granville Rage": "assets/logos/upstreams/granville-rage.webp",
+        "Bankstown United": "assets/logos/upstreams/bankstown-united.webp",
+        "Ekenas": "assets/logos/upstreams/ekenas.webp",
+        "CA San Miguel": "assets/logos/upstreams/ca-san-miguel.webp",
+        "ABB": "assets/logos/upstreams/abb.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17455,6 +17460,7 @@
         "China - Super League": "assets/logos/leagues/china-super-league.webp",
         "Scottish - Premiership": "assets/logos/leagues/scottish-premiership.webp",
         "USA - MLS": "assets/logos/leagues/usa-mls.webp",
-        "Sweden - Ettan Norra": "assets/logos/leagues/sweden-ettan-norra.webp"
+        "Sweden - Ettan Norra": "assets/logos/leagues/sweden-ettan-norra.webp",
+        "Australia - NSW - Premier League 2": "assets/logos/leagues/australia-nsw-premier-league-2.webp"
     }
 }
