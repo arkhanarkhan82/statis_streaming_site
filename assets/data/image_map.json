@@ -15454,7 +15454,8 @@
         "Ekenas": "assets/logos/upstreams/ekenas.webp",
         "CA San Miguel": "assets/logos/upstreams/ca-san-miguel.webp",
         "ABB": "assets/logos/upstreams/abb.webp",
-        "Huntsville City": "assets/logos/streamed/huntsville-city.webp"
+        "Huntsville City": "assets/logos/streamed/huntsville-city.webp",
+        "Great Britain W": "assets/logos/upstreams/great-britain-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17463,6 +17464,8 @@
         "USA - MLS": "assets/logos/leagues/usa-mls.webp",
         "Sweden - Ettan Norra": "assets/logos/leagues/sweden-ettan-norra.webp",
         "Australia - NSW - Premier League 2": "assets/logos/leagues/australia-nsw-premier-league-2.webp",
-        "UTR PTT Melbourne Men 01": "assets/logos/leagues/utr-ptt-melbourne-men-01.webp"
+        "UTR PTT Melbourne Men 01": "assets/logos/leagues/utr-ptt-melbourne-men-01.webp",
+        "WTA Billie Jean King Cup": "assets/logos/leagues/wta-billie-jean-king-cup.webp",
+        "Atp Monte Carlo": "assets/logos/leagues/atp-monte-carlo.webp"
     }
 }
