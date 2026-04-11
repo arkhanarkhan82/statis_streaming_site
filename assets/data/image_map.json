@@ -15408,7 +15408,32 @@
         "Yongin City": "assets/logos/upstreams/yongin-city.webp",
         "Daegu": "assets/logos/upstreams/daegu.webp",
         "Gifu": "assets/logos/upstreams/gifu.webp",
-        "Auckland Huskies": "assets/logos/upstreams/auckland-huskies.webp"
+        "Auckland Huskies": "assets/logos/upstreams/auckland-huskies.webp",
+        "Cub Swanson": "assets/logos/upstreams/cub-swanson.webp",
+        "Nate Landwehr": "assets/logos/upstreams/nate-landwehr.webp",
+        "Sreenidi Deccan": "assets/logos/upstreams/sreenidi-deccan.webp",
+        "Gokulam": "assets/logos/upstreams/gokulam.webp",
+        "Belupo": "assets/logos/upstreams/belupo.webp",
+        "Rayo Vallecano B": "assets/logos/upstreams/rayo-vallecano-b.webp",
+        "CF Intercity": "assets/logos/upstreams/cf-intercity.webp",
+        "Academica": "assets/logos/upstreams/academica.webp",
+        "Real Oruro": "assets/logos/upstreams/real-oruro.webp",
+        "Azamat Murzakanov": "assets/logos/upstreams/azamat-murzakanov.webp",
+        "Paulo Costa": "assets/logos/upstreams/paulo-costa.webp",
+        "Maki Pitolo": "assets/logos/upstreams/maki-pitolo.webp",
+        "Harry ColtraneLight heavyweightNeal Blaisdell Arena | Honolulu": "assets/logos/upstreams/harry-coltranelight-heavyweightneal-blaisdell-arena-honolulu.webp",
+        "Hagen": "assets/logos/upstreams/hagen.webp",
+        "Coburg 2000": "assets/logos/upstreams/coburg-2000.webp",
+        "Bosnia & Herzegovina W": "assets/logos/upstreams/bosnia-herzegovina-w.webp",
+        "Slovenia W": "assets/logos/upstreams/slovenia-w.webp",
+        "Joshua Van": "assets/logos/upstreams/joshua-van.webp",
+        "Tatsuro Taira": "assets/logos/upstreams/tatsuro-taira.webp",
+        "Suwon Bluewings": "assets/logos/upstreams/suwon-bluewings.webp",
+        "Gimpo": "assets/logos/upstreams/gimpo.webp",
+        "Cheongju": "assets/logos/upstreams/cheongju.webp",
+        "Seongnam": "assets/logos/upstreams/seongnam.webp",
+        "Chungnam Asan": "assets/logos/upstreams/chungnam-asan.webp",
+        "Gimhae": "assets/logos/upstreams/gimhae.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17407,6 +17432,9 @@
         "South Korea - K League 2": "assets/logos/leagues/south-korea-k-league-2.webp",
         "UTR PTT Melbourne Women 01": "assets/logos/leagues/utr-ptt-melbourne-women-01.webp",
         "New Zealand - NBL": "assets/logos/leagues/new-zealand-nbl.webp",
-        "UTR PTT Belgrade Women 03, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-17-20-playoffs.webp"
+        "UTR PTT Belgrade Women 03, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-03-17-20-playoffs.webp",
+        "SuperSport HNL": "assets/logos/leagues/supersport-hnl.webp",
+        "Segunda Division B - Group 5": "assets/logos/leagues/segunda-division-b-group-5.webp",
+        "Division Profesional": "assets/logos/leagues/division-profesional.webp"
     }
 }
