@@ -15549,7 +15549,9 @@
         "Sant Antoni": "assets/logos/upstreams/sant-antoni.webp",
         "Jaen Paraiso Interior Cb": "assets/logos/upstreams/jaen-paraiso-interior-cb.webp",
         "Trotamundos Carabobo": "assets/logos/upstreams/trotamundos-carabobo.webp",
-        "Goyang Orions": "assets/logos/upstreams/goyang-orions.webp"
+        "Goyang Orions": "assets/logos/upstreams/goyang-orions.webp",
+        "West Coast": "assets/logos/upstreams/west-coast.webp",
+        "West Perth": "assets/logos/upstreams/west-perth.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17574,6 +17576,7 @@
         "PFL Chicago: Pettis vs. McKee": "assets/logos/leagues/pfl-chicago-pettis-vs-mckee.webp",
         "UTR PTT Cordoba Men 03": "assets/logos/leagues/utr-ptt-cordoba-men-03.webp",
         "UTR PTT Melbourne Men 02, Group D": "assets/logos/leagues/utr-ptt-melbourne-men-02-group-d.webp",
-        "Busan, Korea Republic, Qualifying": "assets/logos/leagues/busan-korea-republic-qualifying.webp"
+        "Busan, Korea Republic, Qualifying": "assets/logos/leagues/busan-korea-republic-qualifying.webp",
+        "WAFL": "assets/logos/leagues/wafl.webp"
     }
 }
