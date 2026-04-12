@@ -15511,7 +15511,18 @@
         "Real Monarchs": "assets/logos/upstreams/real-monarchs.webp",
         "Wellington": "assets/logos/upstreams/wellington.webp",
         "Mindil Aces": "assets/logos/upstreams/mindil-aces.webp",
-        "Jil Teichmann": "assets/logos/upstreams/jil-teichmann.webp"
+        "Jil Teichmann": "assets/logos/upstreams/jil-teichmann.webp",
+        "Defensores Belgrano": "assets/logos/upstreams/defensores-belgrano.webp",
+        "Gimnasia y Esgrima Jujuy": "assets/logos/upstreams/gimnasia-y-esgrima-jujuy.webp",
+        "CA All Boys": "assets/logos/upstreams/ca-all-boys.webp",
+        "Central Norte Salta": "assets/logos/upstreams/central-norte-salta.webp",
+        "San Jose de Oruro": "assets/logos/upstreams/san-jose-de-oruro.webp",
+        "Nagano Parceiro": "assets/logos/upstreams/nagano-parceiro.webp",
+        "Tochigi": "assets/logos/upstreams/tochigi.webp",
+        "Vanraure Hachnohe": "assets/logos/upstreams/vanraure-hachnohe.webp",
+        "Ehime": "assets/logos/upstreams/ehime.webp",
+        "Zwiegen Kanazawa": "assets/logos/upstreams/zwiegen-kanazawa.webp",
+        "Ryukyu": "assets/logos/upstreams/ryukyu.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17534,6 +17545,7 @@
         "Halo World Championship": "assets/logos/leagues/halo-world-championship.webp",
         "Montenegro - I A MCKL": "assets/logos/leagues/montenegro-i-a-mckl.webp",
         "PFL Chicago: Pettis vs. McKee": "assets/logos/leagues/pfl-chicago-pettis-vs-mckee.webp",
-        "UTR PTT Cordoba Men 03": "assets/logos/leagues/utr-ptt-cordoba-men-03.webp"
+        "UTR PTT Cordoba Men 03": "assets/logos/leagues/utr-ptt-cordoba-men-03.webp",
+        "UTR PTT Melbourne Men 02, Group D": "assets/logos/leagues/utr-ptt-melbourne-men-02-group-d.webp"
     }
 }
