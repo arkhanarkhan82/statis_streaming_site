@@ -15523,7 +15523,9 @@
         "Ehime": "assets/logos/upstreams/ehime.webp",
         "Zwiegen Kanazawa": "assets/logos/upstreams/zwiegen-kanazawa.webp",
         "Ryukyu": "assets/logos/upstreams/ryukyu.webp",
-        "Leo Vithoontien": "assets/logos/upstreams/leo-vithoontien.webp"
+        "Leo Vithoontien": "assets/logos/upstreams/leo-vithoontien.webp",
+        "Dong Ju Kim": "assets/logos/upstreams/dong-ju-kim.webp",
+        "Woobin Shin": "assets/logos/upstreams/woobin-shin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17547,6 +17549,7 @@
         "Montenegro - I A MCKL": "assets/logos/leagues/montenegro-i-a-mckl.webp",
         "PFL Chicago: Pettis vs. McKee": "assets/logos/leagues/pfl-chicago-pettis-vs-mckee.webp",
         "UTR PTT Cordoba Men 03": "assets/logos/leagues/utr-ptt-cordoba-men-03.webp",
-        "UTR PTT Melbourne Men 02, Group D": "assets/logos/leagues/utr-ptt-melbourne-men-02-group-d.webp"
+        "UTR PTT Melbourne Men 02, Group D": "assets/logos/leagues/utr-ptt-melbourne-men-02-group-d.webp",
+        "Busan, Korea Republic, Qualifying": "assets/logos/leagues/busan-korea-republic-qualifying.webp"
     }
 }
