@@ -15623,7 +15623,15 @@
         "Katerina Melicharova": "assets/logos/upstreams/katerina-melicharova.webp",
         "Zala Bizjak": "assets/logos/upstreams/zala-bizjak.webp",
         "Armenia (W)": "assets/logos/upstreams/armenia-w.webp",
-        "Belarus (W)": "assets/logos/upstreams/belarus-w.webp"
+        "Belarus (W)": "assets/logos/upstreams/belarus-w.webp",
+        "Raul Clarijs": "assets/logos/upstreams/raul-clarijs.webp",
+        "Moos van Donk": "assets/logos/upstreams/moos-van-donk.webp",
+        "Alesia Breaz": "assets/logos/upstreams/alesia-breaz.webp",
+        "Amadatus Admiraal": "assets/logos/upstreams/amadatus-admiraal.webp",
+        "Sarah Olff": "assets/logos/upstreams/sarah-olff.webp",
+        "Yana Morderger": "assets/logos/upstreams/yana-morderger.webp",
+        "Stefanie Auer": "assets/logos/upstreams/stefanie-auer.webp",
+        "Federico Coria": "assets/logos/upstreams/federico-coria.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17661,6 +17669,7 @@
         "Finland - Cup": "assets/logos/leagues/finland-cup.webp",
         "NBA, Play-IN Tournament": "assets/logos/leagues/nba-play-in-tournament.webp",
         "Busan, Korea Republic": "assets/logos/leagues/busan-korea-republic.webp",
-        "UTR PTT Melbourne Women 02, Group A": "assets/logos/leagues/utr-ptt-melbourne-women-02-group-a.webp"
+        "UTR PTT Melbourne Women 02, Group A": "assets/logos/leagues/utr-ptt-melbourne-women-02-group-a.webp",
+        "WTA Rouen": "assets/logos/leagues/wta-rouen.webp"
     }
 }
