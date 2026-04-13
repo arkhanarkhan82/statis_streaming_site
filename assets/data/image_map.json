@@ -15597,7 +15597,12 @@
         "New York City II": "assets/logos/upstreams/new-york-city-ii.webp",
         "Real Tomayapo": "assets/logos/upstreams/real-tomayapo.webp",
         "San Martin de San Juan": "assets/logos/upstreams/san-martin-de-san-juan.webp",
-        "Ben Woollaston": "assets/logos/upstreams/ben-woollaston.webp"
+        "Ben Woollaston": "assets/logos/upstreams/ben-woollaston.webp",
+        "Gilla FC": "assets/logos/upstreams/gilla-fc.webp",
+        "PPJ": "assets/logos/upstreams/ppj.webp",
+        "Georgiana Ruhrig": "assets/logos/upstreams/georgiana-ruhrig.webp",
+        "Vaajakoski": "assets/logos/upstreams/vaajakoski.webp",
+        "JJK Jyvaskyla": "assets/logos/upstreams/jjk-jyvaskyla.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17631,6 +17636,7 @@
         "ATP Munich": "assets/logos/leagues/atp-munich.webp",
         "ATP Barcelona": "assets/logos/leagues/atp-barcelona.webp",
         "WTA Stuttgart": "assets/logos/leagues/wta-stuttgart.webp",
-        "Oeiras 3, Portugal": "assets/logos/leagues/oeiras-3-portugal.webp"
+        "Oeiras 3, Portugal": "assets/logos/leagues/oeiras-3-portugal.webp",
+        "Finland - Cup": "assets/logos/leagues/finland-cup.webp"
     }
 }
