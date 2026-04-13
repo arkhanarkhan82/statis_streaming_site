@@ -15602,7 +15602,10 @@
         "PPJ": "assets/logos/upstreams/ppj.webp",
         "Georgiana Ruhrig": "assets/logos/upstreams/georgiana-ruhrig.webp",
         "Vaajakoski": "assets/logos/upstreams/vaajakoski.webp",
-        "JJK Jyvaskyla": "assets/logos/upstreams/jjk-jyvaskyla.webp"
+        "JJK Jyvaskyla": "assets/logos/upstreams/jjk-jyvaskyla.webp",
+        "Thanongsak Simsri": "assets/logos/upstreams/thanongsak-simsri.webp",
+        "Sergio Mendoza CordovaLight flyweightTokyo": "assets/logos/upstreams/sergio-mendoza-cordovalight-flyweighttokyo.webp",
+        "Yun Seong Chung": "assets/logos/upstreams/yun-seong-chung.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17638,6 +17641,8 @@
         "WTA Stuttgart": "assets/logos/leagues/wta-stuttgart.webp",
         "Oeiras 3, Portugal": "assets/logos/leagues/oeiras-3-portugal.webp",
         "Finland - Cup": "assets/logos/leagues/finland-cup.webp",
-        "NBA, Play-IN Tournament": "assets/logos/leagues/nba-play-in-tournament.webp"
+        "NBA, Play-IN Tournament": "assets/logos/leagues/nba-play-in-tournament.webp",
+        "Busan, Korea Republic": "assets/logos/leagues/busan-korea-republic.webp",
+        "UTR PTT Melbourne Women 02, Group A": "assets/logos/leagues/utr-ptt-melbourne-women-02-group-a.webp"
     }
 }
