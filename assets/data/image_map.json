@@ -15652,7 +15652,10 @@
         "Martin O'Donnell": "assets/logos/upstreams/martin-odonnell.webp",
         "Taranaki Mountainairs": "assets/logos/upstreams/taranaki-mountainairs.webp",
         "Matthew Stevens": "assets/logos/upstreams/matthew-stevens.webp",
-        "Juan Pablo II": "assets/logos/upstreams/juan-pablo-ii.webp"
+        "Juan Pablo II": "assets/logos/upstreams/juan-pablo-ii.webp",
+        "Club Universitario de Deportes": "assets/logos/upstreams/club-universitario-de-deportes.webp",
+        "Steaua Bucure\u015fti": "assets/logos/upstreams/steaua-bucure\u015fti.webp",
+        "Bihor Oradea": "assets/logos/upstreams/bihor-oradea.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17701,6 +17704,7 @@
         "UTR PTT Belgrade Men 03, Group C": "assets/logos/leagues/utr-ptt-belgrade-men-03-group-c.webp",
         "UTR PTT Cordoba Men +H 04, Group B": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-b.webp",
         "UTR PTT Cordoba Men +H 04, Group C": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-c.webp",
-        "UTR PTT Cordoba Men +H 04, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-a.webp"
+        "UTR PTT Cordoba Men +H 04, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-a.webp",
+        "CEV Cup Hague": "assets/logos/leagues/cev-cup-hague.webp"
     }
 }
