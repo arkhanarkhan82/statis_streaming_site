@@ -15752,7 +15752,9 @@
         "Sichuan Blue Whale (W)": "assets/logos/upstreams/sichuan-blue-whale-w.webp",
         "Adriana Reami": "assets/logos/upstreams/adriana-reami.webp",
         "Felipe Dreer": "assets/logos/upstreams/felipe-dreer.webp",
-        "Hapk": "assets/logos/upstreams/hapk.webp"
+        "Hapk": "assets/logos/upstreams/hapk.webp",
+        "Tenis: Turniej ATP w Barcelonie": "assets/logos/upstreams/tenis-turniej-atp-w-barcelonie.webp",
+        "mecz 2. rundy gry pojedynczej": "assets/logos/upstreams/mecz-2-rundy-gry-pojedynczej.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17804,6 +17806,7 @@
         "UTR PTT Cordoba Men +H 04, Group A": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-a.webp",
         "CEV Cup Hague": "assets/logos/leagues/cev-cup-hague.webp",
         "UTR PTT Belgrade Women 04, Group B": "assets/logos/leagues/utr-ptt-belgrade-women-04-group-b.webp",
-        "UTR PTT Cordoba Men +H 04, Group D": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-d.webp"
+        "UTR PTT Cordoba Men +H 04, Group D": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-group-d.webp",
+        "Atp Barcelona": "assets/logos/leagues/atp-barcelona.webp"
     }
 }
