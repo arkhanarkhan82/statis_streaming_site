@@ -15763,7 +15763,10 @@
         "Darragh Kelly": "assets/logos/upstreams/darragh-kelly.webp",
         "Jay-Jay Wilson": "assets/logos/upstreams/jay-jay-wilson.webp",
         "Saint Louis City": "assets/logos/upstreams/saint-louis-city.webp",
-        "Vissel Kobe, AFC Champions League": "assets/logos/upstreams/vissel-kobe-afc-champions-league.webp"
+        "Vissel Kobe, AFC Champions League": "assets/logos/upstreams/vissel-kobe-afc-champions-league.webp",
+        "PSG --- CN": "assets/logos/upstreams/psg-cn.webp",
+        "La Guaira": "assets/logos/upstreams/la-guaira.webp",
+        "Al Qadsiah": "assets/logos/upstreams/al-qadsiah.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17819,6 +17822,7 @@
         "Atp Barcelona": "assets/logos/leagues/atp-barcelona.webp",
         "Atp Barcelona De Minaur Alex Hamadmedjedovic": "assets/logos/leagues/atp-barcelona-de-minaur-alex-hamadmedjedovic.webp",
         "Stuttgart, Germany": "assets/logos/leagues/stuttgart-germany.webp",
-        "Tallahassee, USA": "assets/logos/leagues/tallahassee-usa.webp"
+        "Tallahassee, USA": "assets/logos/leagues/tallahassee-usa.webp",
+        "Copa Libertadores, Group C": "assets/logos/leagues/copa-libertadores-group-c.webp"
     }
 }
