@@ -15844,7 +15844,12 @@
         "Heroes de Moca": "assets/logos/upstreams/heroes-de-moca.webp",
         "Vidabasket Vidin": "assets/logos/upstreams/vidabasket-vidin.webp",
         "Gian van Veen": "assets/logos/upstreams/gian-van-veen.webp",
-        "Stuttgart: Day 5": "assets/logos/upstreams/stuttgart-day-5.webp"
+        "Stuttgart: Day 5": "assets/logos/upstreams/stuttgart-day-5.webp",
+        "Fraport Skyliners II": "assets/logos/upstreams/fraport-skyliners-ii.webp",
+        "Dragons Rhoendorf": "assets/logos/upstreams/dragons-rhoendorf.webp",
+        "Orange A.": "assets/logos/upstreams/orange-a.webp",
+        "Union Schwelm": "assets/logos/upstreams/union-schwelm.webp",
+        "BG Hessing Leitershofen": "assets/logos/upstreams/bg-hessing-leitershofen.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17919,6 +17924,7 @@
         "UTR PTT Belgrade Men 03, Group A": "assets/logos/leagues/utr-ptt-belgrade-men-03-group-a.webp",
         "UTR PTT Cordoba Men 04": "assets/logos/leagues/utr-ptt-cordoba-men-04.webp",
         "Premier League Darts": "assets/logos/leagues/premier-league-darts.webp",
-        "Atp Munich": "assets/logos/leagues/atp-munich.webp"
+        "Atp Munich": "assets/logos/leagues/atp-munich.webp",
+        "Germany - Pro B": "assets/logos/leagues/germany-pro-b.webp"
     }
 }
