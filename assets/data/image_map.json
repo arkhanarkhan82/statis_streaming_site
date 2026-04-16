@@ -15813,7 +15813,17 @@
         "Porto Caravel": "assets/logos/upstreams/porto-caravel.webp",
         "FC Ylivieska": "assets/logos/upstreams/fc-ylivieska.webp",
         "JBK": "assets/logos/upstreams/jbk.webp",
-        "Udelas": "assets/logos/upstreams/udelas.webp"
+        "Udelas": "assets/logos/upstreams/udelas.webp",
+        "Euroliga de baloncesto (T25/26): M\u00f3naco": "assets/logos/upstreams/euroliga-de-baloncesto-t2526-m\u00f3naco.webp",
+        "Hapoel": "assets/logos/upstreams/hapoel.webp",
+        "CFR CLUJ": "assets/logos/upstreams/cfr-cluj.webp",
+        "Acad\u00e9mico x CD Feirense": "assets/logos/upstreams/acad\u00e9mico-x-cd-feirense.webp",
+        "UC Sampdoria": "assets/logos/upstreams/uc-sampdoria.webp",
+        "AC Monza": "assets/logos/upstreams/ac-monza.webp",
+        "Rio Ave FC x AFS": "assets/logos/upstreams/rio-ave-fc-x-afs.webp",
+        "OTELUL": "assets/logos/upstreams/otelul.webp",
+        "UTA ARAD": "assets/logos/upstreams/uta-arad.webp",
+        "CR Belouizdad - SF 2nd Leg": "assets/logos/upstreams/cr-belouizdad-sf-2nd-leg.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17876,6 +17886,13 @@
         "1. DOL Women": "assets/logos/leagues/1-dol-women.webp",
         "UTR PTT Melbourne Women 02": "assets/logos/leagues/utr-ptt-melbourne-women-02.webp",
         "Faroe Islands - Cup": "assets/logos/leagues/faroe-islands-cup.webp",
-        "Wta Stuttgart": "assets/logos/leagues/wta-stuttgart.webp"
+        "Wta Stuttgart": "assets/logos/leagues/wta-stuttgart.webp",
+        "Euroleaguekaunas": "assets/logos/leagues/euroleaguekaunas.webp",
+        "Liga 1pitesti 1": "assets/logos/leagues/liga-1pitesti-1.webp",
+        "Primera Division Uniondesantafe": "assets/logos/leagues/primera-division-uniondesantafe.webp",
+        "Sevens World Series Hong Kong": "assets/logos/leagues/sevens-world-series-hong-kong.webp",
+        "SVNS, Championship": "assets/logos/leagues/svns-championship.webp",
+        "Caf Confederations Cup Crbelouizdad": "assets/logos/leagues/caf-confederations-cup-crbelouizdad.webp",
+        "Aviva Premiership Bristol": "assets/logos/leagues/aviva-premiership-bristol.webp"
     }
 }
