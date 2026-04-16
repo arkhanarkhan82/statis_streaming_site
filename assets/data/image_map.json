@@ -15827,7 +15827,9 @@
         "Pindiz": "assets/logos/upstreams/pindiz.webp",
         "Bo Mi Re Shin": "assets/logos/upstreams/bo-mi-re-shin.webp",
         "Hyderabad": "assets/logos/upstreams/hyderabad.webp",
-        "Pepijn van Leeuwen": "assets/logos/upstreams/pepijn-van-leeuwen.webp"
+        "Pepijn van Leeuwen": "assets/logos/upstreams/pepijn-van-leeuwen.webp",
+        "Panteras de MIranda": "assets/logos/upstreams/panteras-de-miranda.webp",
+        "Metros de Santiago": "assets/logos/upstreams/metros-de-santiago.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17897,6 +17899,7 @@
         "Sevens World Series Hong Kong": "assets/logos/leagues/sevens-world-series-hong-kong.webp",
         "SVNS, Championship": "assets/logos/leagues/svns-championship.webp",
         "Caf Confederations Cup Crbelouizdad": "assets/logos/leagues/caf-confederations-cup-crbelouizdad.webp",
-        "Aviva Premiership Bristol": "assets/logos/leagues/aviva-premiership-bristol.webp"
+        "Aviva Premiership Bristol": "assets/logos/leagues/aviva-premiership-bristol.webp",
+        "Dominican Republic - LNB": "assets/logos/leagues/dominican-republic-lnb.webp"
     }
 }
