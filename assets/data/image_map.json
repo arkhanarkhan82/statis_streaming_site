@@ -15796,7 +15796,20 @@
         "Verena Meliss": "assets/logos/upstreams/verena-meliss.webp",
         "Muaither SC": "assets/logos/upstreams/muaither-sc.webp",
         "Johor Darul Takzim FC": "assets/logos/streamed/johor-darul-takzim-fc.webp",
-        "Real Madrid --- CN": "assets/logos/upstreams/real-madrid-cn.webp"
+        "Real Madrid --- CN": "assets/logos/upstreams/real-madrid-cn.webp",
+        "Benfica Youth": "assets/logos/streamed/benfica-youth.webp",
+        "Germany 7s": "assets/logos/upstreams/germany-7s.webp",
+        "Kenya 7s": "assets/logos/upstreams/kenya-7s.webp",
+        "Crystal Palace U18": "assets/logos/upstreams/crystal-palace-u18.webp",
+        "Haiti W": "assets/logos/upstreams/haiti-w.webp",
+        "Spain 7s W": "assets/logos/upstreams/spain-7s-w.webp",
+        "South Africa 7s W": "assets/logos/upstreams/south-africa-7s-w.webp",
+        "Brazil 7s W": "assets/logos/upstreams/brazil-7s-w.webp",
+        "Calcit Kamnik W": "assets/logos/upstreams/calcit-kamnik-w.webp",
+        "Alycia Baumgardner": "assets/logos/upstreams/alycia-baumgardner.webp",
+        "Bo Mi Re ShinSuper featherweightNew York": "assets/logos/upstreams/bo-mi-re-shinsuper-featherweightnew-york.webp",
+        "Odbojka (\u017d): Prva liga Slovenije: Calcit Volley": "assets/logos/upstreams/odbojka-\u017e-prva-liga-slovenije-calcit-volley.webp",
+        "OTP banka Branik": "assets/logos/upstreams/otp-banka-branik.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17854,6 +17867,8 @@
         "Stuttgart, Germany": "assets/logos/leagues/stuttgart-germany.webp",
         "Tallahassee, USA": "assets/logos/leagues/tallahassee-usa.webp",
         "Copa Libertadores, Group C": "assets/logos/leagues/copa-libertadores-group-c.webp",
-        "Santa Cruz, Bolivia": "assets/logos/leagues/santa-cruz-bolivia.webp"
+        "Santa Cruz, Bolivia": "assets/logos/leagues/santa-cruz-bolivia.webp",
+        "Seven's World Series - Hong Kong": "assets/logos/leagues/sevens-world-series-hong-kong.webp",
+        "1. DOL Women": "assets/logos/leagues/1-dol-women.webp"
     }
 }
