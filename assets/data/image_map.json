@@ -15849,7 +15849,30 @@
         "Dragons Rhoendorf": "assets/logos/upstreams/dragons-rhoendorf.webp",
         "Orange A.": "assets/logos/upstreams/orange-a.webp",
         "Union Schwelm": "assets/logos/upstreams/union-schwelm.webp",
-        "BG Hessing Leitershofen": "assets/logos/upstreams/bg-hessing-leitershofen.webp"
+        "BG Hessing Leitershofen": "assets/logos/upstreams/bg-hessing-leitershofen.webp",
+        "Georgia Women": "assets/logos/streamed/georgia-women.webp",
+        "FC United of Manchester": "assets/logos/streamed/fc-united-of-manchester.webp",
+        "Hyde United": "assets/logos/streamed/hyde-united.webp",
+        "J.J. Aldrich": "assets/logos/upstreams/jj-aldrich.webp",
+        "Jamey-Lyn Horth": "assets/logos/upstreams/jamey-lyn-horth.webp",
+        "Vitoria ES": "assets/logos/upstreams/vitoria-es.webp",
+        "Guatemala W": "assets/logos/upstreams/guatemala-w.webp",
+        "Chris Camozzi": "assets/logos/upstreams/chris-camozzi.webp",
+        "Esteban RodriguezCruiserweightDenver": "assets/logos/upstreams/esteban-rodriguezcruiserweightdenver.webp",
+        "Colorno": "assets/logos/upstreams/colorno.webp",
+        "Borac Zemun": "assets/logos/upstreams/borac-zemun.webp",
+        "John Castaneda": "assets/logos/upstreams/john-castaneda.webp",
+        "Mark Vologdin": "assets/logos/upstreams/mark-vologdin.webp",
+        "Melissa Croden": "assets/logos/upstreams/melissa-croden.webp",
+        "Darya Zheleznyakova": "assets/logos/upstreams/darya-zheleznyakova.webp",
+        "Tanner Boser": "assets/logos/upstreams/tanner-boser.webp",
+        "Gokhan Saricam": "assets/logos/upstreams/gokhan-saricam.webp",
+        "Gyeongnam": "assets/logos/upstreams/gyeongnam.webp",
+        "Germany (W)": "assets/logos/upstreams/germany-w.webp",
+        "Gilbert Burns": "assets/logos/upstreams/gilbert-burns.webp",
+        "Mike Malott": "assets/logos/upstreams/mike-malott.webp",
+        "Julien Leblanc": "assets/logos/upstreams/julien-leblanc.webp",
+        "Robert Valentin": "assets/logos/upstreams/robert-valentin.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17926,6 +17949,7 @@
         "Premier League Darts": "assets/logos/leagues/premier-league-darts.webp",
         "Atp Munich": "assets/logos/leagues/atp-munich.webp",
         "Germany - Pro B": "assets/logos/leagues/germany-pro-b.webp",
-        "UTR PTT Melbourne Women 02, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-women-02-1-4-playoffs.webp"
+        "UTR PTT Melbourne Women 02, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-women-02-1-4-playoffs.webp",
+        "DHB Pokal": "assets/logos/leagues/dhb-pokal.webp"
     }
 }
