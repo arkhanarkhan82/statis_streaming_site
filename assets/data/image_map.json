@@ -15887,7 +15887,8 @@
         "CRVENA ZVEZDA": "assets/logos/upstreams/crvena-zvezda.webp",
         "VOJVODINA": "assets/logos/upstreams/vojvodina.webp",
         "Argentina 7s W": "assets/logos/upstreams/argentina-7s-w.webp",
-        "Puerto Rico W": "assets/logos/upstreams/puerto-rico-w.webp"
+        "Puerto Rico W": "assets/logos/upstreams/puerto-rico-w.webp",
+        "Cardiff Metropolitan": "assets/logos/upstreams/cardiff-metropolitan.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17968,6 +17969,7 @@
         "DHB Pokal": "assets/logos/leagues/dhb-pokal.webp",
         "Mozzart Bet Superliga, Championship Round": "assets/logos/leagues/mozzart-bet-superliga-championship-round.webp",
         "UTR PTT Melbourne Men 02, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-men-02-17-20-playoffs.webp",
-        "NBA, Playoffs": "assets/logos/leagues/nba-playoffs.webp"
+        "NBA, Playoffs": "assets/logos/leagues/nba-playoffs.webp",
+        "Cymru Premier": "assets/logos/leagues/cymru-premier.webp"
     }
 }
