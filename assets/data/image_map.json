@@ -15885,7 +15885,9 @@
         "SOCHI": "assets/logos/upstreams/sochi.webp",
         "MVV": "assets/logos/upstreams/mvv.webp",
         "CRVENA ZVEZDA": "assets/logos/upstreams/crvena-zvezda.webp",
-        "VOJVODINA": "assets/logos/upstreams/vojvodina.webp"
+        "VOJVODINA": "assets/logos/upstreams/vojvodina.webp",
+        "Argentina 7s W": "assets/logos/upstreams/argentina-7s-w.webp",
+        "Puerto Rico W": "assets/logos/upstreams/puerto-rico-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
