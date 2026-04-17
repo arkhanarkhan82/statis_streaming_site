@@ -15905,7 +15905,9 @@
         "Ben Whittaker": "assets/logos/upstreams/ben-whittaker.webp",
         "Braian Nahuel Suarez": "assets/logos/upstreams/braian-nahuel-suarez.webp",
         "Pepijn Van Leeuwen": "assets/logos/upstreams/pepijn-van-leeuwen.webp",
-        "Baskets Juniors TSG WEasterstede": "assets/logos/upstreams/baskets-juniors-tsg-weasterstede.webp"
+        "Baskets Juniors TSG WEasterstede": "assets/logos/upstreams/baskets-juniors-tsg-weasterstede.webp",
+        "Wessel Nijman": "assets/logos/upstreams/wessel-nijman.webp",
+        "White Ian": "assets/logos/upstreams/white-ian.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -17988,6 +17990,7 @@
         "UTR PTT Melbourne Men 02, 17-20 Playoffs": "assets/logos/leagues/utr-ptt-melbourne-men-02-17-20-playoffs.webp",
         "NBA, Playoffs": "assets/logos/leagues/nba-playoffs.webp",
         "Cymru Premier": "assets/logos/leagues/cymru-premier.webp",
-        "Legacy Fighting Alliance": "assets/logos/leagues/legacy-fighting-alliance.webp"
+        "Legacy Fighting Alliance": "assets/logos/leagues/legacy-fighting-alliance.webp",
+        "European Darts Grand Prix": "assets/logos/leagues/european-darts-grand-prix.webp"
     }
 }
