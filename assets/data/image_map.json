@@ -15979,7 +15979,9 @@
         "Reales de la Vega": "assets/logos/upstreams/reales-de-la-vega.webp",
         "NY Cosmos": "assets/logos/upstreams/ny-cosmos.webp",
         "Shabab Al-Ahli": "assets/logos/upstreams/shabab-al-ahli.webp",
-        "Brighton --- HD": "assets/logos/upstreams/brighton-hd.webp"
+        "Brighton --- HD": "assets/logos/upstreams/brighton-hd.webp",
+        "Tobiasz Le": "assets/logos/upstreams/tobiasz-le.webp",
+        "Sebastian Decowski": "assets/logos/upstreams/sebastian-decowski.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18091,6 +18093,7 @@
         "UTR PTT Belgrade Women 04, 5-8 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-women-04-5-8-playoffs.webp",
         "UTR PTT Belgrade Men 03, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-belgrade-men-03-9-12-playoffs.webp",
         "UTR PTT Cordoba Men +H 04, 1-4 Playoffs": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-1-4-playoffs.webp",
-        "UTR PTT Cordoba Men +H 04, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-9-12-playoffs.webp"
+        "UTR PTT Cordoba Men +H 04, 9-12 Playoffs": "assets/logos/leagues/utr-ptt-cordoba-men-h-04-9-12-playoffs.webp",
+        "KSW 117: Pawlak vs Khalidov": "assets/logos/leagues/ksw-117-pawlak-vs-khalidov.webp"
     }
 }
