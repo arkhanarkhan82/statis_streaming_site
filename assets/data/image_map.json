@@ -16043,7 +16043,13 @@
         "Sarina Schnyder": "assets/logos/upstreams/sarina-schnyder.webp",
         "Sofia Alekseeva": "assets/logos/upstreams/sofia-alekseeva.webp",
         "Ana Frommenwiler": "assets/logos/upstreams/ana-frommenwiler.webp",
-        "Fatih Sisic": "assets/logos/upstreams/fatih-sisic.webp"
+        "Fatih Sisic": "assets/logos/upstreams/fatih-sisic.webp",
+        "Korihait": "assets/logos/upstreams/korihait.webp",
+        "CA Hurac\u00e1n": "assets/logos/upstreams/ca-hurac\u00e1n.webp",
+        "Fenerbahce | Viertelfinale": "assets/logos/upstreams/fenerbahce-viertelfinale.webp",
+        "Live Admiral BL: SV Oberbank Ried": "assets/logos/upstreams/live-admiral-bl-sv-oberbank-ried.webp",
+        "Grazer AK 1902, 28. Runde": "assets/logos/upstreams/grazer-ak-1902-28-runde.webp",
+        "\u0160iroki": "assets/logos/upstreams/\u0161iroki.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18168,6 +18174,9 @@
         "Abidjan, Cote d Ivoire": "assets/logos/leagues/abidjan-cote-d-ivoire.webp",
         "Euroleague, Play-in": "assets/logos/leagues/euroleague-play-in.webp",
         "AFC Champions League Elite, Knockout stage": "assets/logos/leagues/afc-champions-league-elite-knockout-stage.webp",
-        "WCH U18": "assets/logos/leagues/wch-u18.webp"
+        "WCH U18": "assets/logos/leagues/wch-u18.webp",
+        "Primera Divisionarg Lanus": "assets/logos/leagues/primera-divisionarg-lanus.webp",
+        "Primera Division Huracan": "assets/logos/leagues/primera-division-huracan.webp",
+        "Turkish Cup Fenerbahce": "assets/logos/leagues/turkish-cup-fenerbahce.webp"
     }
 }
