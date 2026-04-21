@@ -16122,7 +16122,26 @@
         "Celta de Vigo": "assets/logos/upstreams/celta-de-vigo.webp",
         "Luke McMillan": "assets/logos/upstreams/luke-mcmillan.webp",
         "Chengyou Wu": "assets/logos/upstreams/chengyou-wu.webp",
-        "Shanghui Li": "assets/logos/upstreams/shanghui-li.webp"
+        "Shanghui Li": "assets/logos/upstreams/shanghui-li.webp",
+        "Gr\u010dka liga: Playout: Asteras - Panetolikos": "assets/logos/upstreams/gr\u010dka-liga-playout-asteras-panetolikos.webp",
+        "Mutua Madrid Open (T2026): Marcinko": "assets/logos/upstreams/mutua-madrid-open-t2026-marcinko.webp",
+        "Kasintseva (VO)": "assets/logos/upstreams/kasintseva-vo.webp",
+        "Mutua Madrid Open (T2026): Maria": "assets/logos/upstreams/mutua-madrid-open-t2026-maria.webp",
+        "Samson (VO)": "assets/logos/upstreams/samson-vo.webp",
+        "Mutua Madrid Open (T2026): Siegemund": "assets/logos/upstreams/mutua-madrid-open-t2026-siegemund.webp",
+        "Begu": "assets/logos/upstreams/begu.webp",
+        "Mutua Madrid Open (T2026): Badosa": "assets/logos/upstreams/mutua-madrid-open-t2026-badosa.webp",
+        "WTA 1000 Madrid: Bondar - Golubic": "assets/logos/upstreams/wta-1000-madrid-bondar-golubic.webp",
+        "Mutua Madrid Open (T2026): Montgomery": "assets/logos/upstreams/mutua-madrid-open-t2026-montgomery.webp",
+        "Mutua Madrid Open (T2026): Quevedo": "assets/logos/upstreams/mutua-madrid-open-t2026-quevedo.webp",
+        "Williams": "assets/logos/upstreams/williams.webp",
+        "Mutua Madrid Open (T2026): Stearns": "assets/logos/upstreams/mutua-madrid-open-t2026-stearns.webp",
+        "Boisson (VO)": "assets/logos/upstreams/boisson-vo.webp",
+        "Mutua Madrid Open (T2026): Zakharova": "assets/logos/upstreams/mutua-madrid-open-t2026-zakharova.webp",
+        "Osorio (VO)": "assets/logos/upstreams/osorio-vo.webp",
+        "TENIS ATP 500 BARCELONA \u2018TROFEO CONDE DE GOD\u00d3\u2019 1\u00ba PARTIDO N. BORGES": "assets/logos/upstreams/tenis-atp-500-barcelona-trofeo-conde-de-god\u00f3-1\u00ba-partido-n-borges.webp",
+        "T. ETCHEVERDESDEBARCELONA": "assets/logos/upstreams/t-etcheverdesdebarcelona.webp",
+        "Luneburg, finale G2": "assets/logos/upstreams/luneburg-finale-g2.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18258,6 +18277,7 @@
         "UTR PTT Yokohama Men 05, Group B": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-b.webp",
         "UTR PTT Yokohama Men 05, Group D": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-d.webp",
         "UTR PTT Yokohama Men 05, Group C": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-c.webp",
-        "WTA Madrid": "assets/logos/leagues/wta-madrid.webp"
+        "WTA Madrid": "assets/logos/leagues/wta-madrid.webp",
+        "ATP Madrid": "assets/logos/leagues/atp-madrid.webp"
     }
 }
