@@ -917,15 +917,15 @@
     "excluded": "home, about, contact, terms, privacy, copyright-policy",
     "league_h1": "{{SITE_TITLE}} {{NAME}} Live Streams and Schedules",
     "league_intro": "Watch {{NAME}} live streams and access the full {{YEAR}} schedule on {{SITE_TITLE}}. Get real-time fixtures, playoffs coverage, and fast HD {{SPORT}} streaming.",
-    "league_live_title": "Trending Live",
-    "league_upcoming_prefix": "Upcoming",
-    "league_upcoming_suffix": "Matches"
+    "league_live_title": "",
+    "league_upcoming_prefix": "",
+    "league_upcoming_suffix": ""
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
     "font_family_headings": "inherit",
     "border_radius_base": "4",
-    "container_max_width": "1100",
+    "container_max_width": "1050",
     "static_h1_color": "#ffffff",
     "static_h1_border_width": "2",
     "static_h1_border_color": "#9e050d",
