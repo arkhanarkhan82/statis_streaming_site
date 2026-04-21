@@ -1135,7 +1135,7 @@
     "font_family_base": "system-ui, -apple-system, sans-serif",
     "font_family_headings": "inherit",
     "border_radius_base": "4",
-    "container_max_width": "1100",
+    "container_max_width": "1050",
     "static_h1_color": "#ffffff",
     "static_h1_align": "left",
     "static_h1_border_width": "2",
