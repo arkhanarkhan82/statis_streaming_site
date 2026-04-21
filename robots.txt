@@ -8,4 +8,4 @@ Disallow: /data/
 Disallow: /scripts/
 
 # Sitemap
-Sitemap: https://streameast.homes/sitemap.xml
+Sitemap: https://streameast.click/sitemap.xml
