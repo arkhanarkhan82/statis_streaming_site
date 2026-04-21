@@ -3,23 +3,21 @@
     "sitemap_enabled": true,
     "sitemap_include_leagues": true,
     "sitemap_static_pages": "about, contact, privacy, terms, copyright-policy",
-    "sitemap_lastmod_manual": "2026-04-11",
+    "sitemap_lastmod_manual": "2026-04-21",
     "ga4_id": "G-CNHF08NBNZ",
     "title_part_1": "Stream",
     "title_part_2": "East",
     "custom_js": "",
-    "custom_meta_tags": [
-      "<meta name=\"referrer\" content=\"no-referrer-when-downgrade\" />"
-    ],
-    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameast.fit/sitemap.xml",
-    "domain": "streameast.homes",
+    "custom_meta_tags": [],
+    "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameast.click/sitemap.xml",
+    "domain": "streameast.click",
     "logo_url": "/assets/streameast-logo.webp",
     "favicon_url": "/assets/streameast.png",
     "footer_copyright": "© 2026 StreamEast — Live sports streaming platform for major leagues and global tournaments in HD.",
     "footer_disclaimer": "",
     "target_country": "US",
-    "param_live": "streaming",
-    "param_info": "livestreaming"
+    "param_live": "live",
+    "param_info": "information"
   },
   "theme": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
