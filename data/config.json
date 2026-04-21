@@ -705,7 +705,7 @@
     "font_family_base": "system-ui, -apple-system, sans-serif",
     "font_family_headings": "inherit",
     "border_radius_base": "8",
-    "container_max_width": "1100",
+    "container_max_width": "1050",
     "brand_primary": "#e50914",
     "brand_dark": "#b81d24",
     "accent_gold": "#ffd700",
@@ -917,9 +917,9 @@
     "excluded": "home, about, contact, terms, privacy, copyright-policy",
     "league_h1": "{{SITE_TITLE}} {{NAME}} Live Streams and Schedules",
     "league_intro": "Watch {{NAME}} live streams and access the full {{YEAR}} schedule on {{SITE_TITLE}}. Get real-time fixtures, playoffs coverage, and fast HD {{SPORT}} streaming.",
-    "league_live_title": "",
-    "league_upcoming_prefix": "",
-    "league_upcoming_suffix": ""
+    "league_live_title": "Trending Live",
+    "league_upcoming_prefix": "Upcoming",
+    "league_upcoming_suffix": "Matches"
   },
   "theme_page": {
     "font_family_base": "system-ui, -apple-system, sans-serif",
