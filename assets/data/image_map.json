@@ -16121,7 +16121,8 @@
         "Excelsior/Bar. (W)": "assets/logos/upstreams/excelsiorbar-w.webp",
         "Celta de Vigo": "assets/logos/upstreams/celta-de-vigo.webp",
         "Luke McMillan": "assets/logos/upstreams/luke-mcmillan.webp",
-        "Chengyou Wu": "assets/logos/upstreams/chengyou-wu.webp"
+        "Chengyou Wu": "assets/logos/upstreams/chengyou-wu.webp",
+        "Shanghui Li": "assets/logos/upstreams/shanghui-li.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18255,6 +18256,7 @@
         "Savannah, USA": "assets/logos/leagues/savannah-usa.webp",
         "Turkiye Kupasi, Knockout stage": "assets/logos/leagues/turkiye-kupasi-knockout-stage.webp",
         "UTR PTT Yokohama Men 05, Group B": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-b.webp",
-        "UTR PTT Yokohama Men 05, Group D": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-d.webp"
+        "UTR PTT Yokohama Men 05, Group D": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-d.webp",
+        "UTR PTT Yokohama Men 05, Group C": "assets/logos/leagues/utr-ptt-yokohama-men-05-group-c.webp"
     }
 }
