@@ -16216,7 +16216,9 @@
         "R.Collignon": "assets/logos/upstreams/rcollignon.webp",
         "M.Berrettini": "assets/logos/upstreams/mberrettini.webp",
         "Amber Maalderink": "assets/logos/upstreams/amber-maalderink.webp",
-        "Djurg\u00e5rden": "assets/logos/streamed/djurg\u00e5rden.webp"
+        "Djurg\u00e5rden": "assets/logos/streamed/djurg\u00e5rden.webp",
+        "Ilirija U19": "assets/logos/upstreams/ilirija-u19.webp",
+        "KK Partizan Mozzart Bet U19": "assets/logos/upstreams/kk-partizan-mozzart-bet-u19.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18371,6 +18373,7 @@
         "UTR PTT Yokohama Men 05, 9-12 Playoff": "assets/logos/leagues/utr-ptt-yokohama-men-05-9-12-playoff.webp",
         "ASEAN Club Championship": "assets/logos/leagues/asean-club-championship.webp",
         "Montenegro - Cup": "assets/logos/leagues/montenegro-cup.webp",
-        "UTR PTT Yokohama Men 05": "assets/logos/leagues/utr-ptt-yokohama-men-05.webp"
+        "UTR PTT Yokohama Men 05": "assets/logos/leagues/utr-ptt-yokohama-men-05.webp",
+        "U19 ABA League, Placement Matches": "assets/logos/leagues/u19-aba-league-placement-matches.webp"
     }
 }
