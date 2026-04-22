@@ -16229,7 +16229,9 @@
         "Bbc Coburg": "assets/logos/upstreams/bbc-coburg.webp",
         "SK Rapid": "assets/logos/upstreams/sk-rapid.webp",
         "Olimpija U19": "assets/logos/upstreams/olimpija-u19.webp",
-        "KK Zadar U19": "assets/logos/upstreams/kk-zadar-u19.webp"
+        "KK Zadar U19": "assets/logos/upstreams/kk-zadar-u19.webp",
+        "Yannic Nittmann": "assets/logos/upstreams/yannic-nittmann.webp",
+        "Salvador Price": "assets/logos/upstreams/salvador-price.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
