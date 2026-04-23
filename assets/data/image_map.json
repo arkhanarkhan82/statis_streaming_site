@@ -16233,7 +16233,16 @@
         "Yannic Nittmann": "assets/logos/upstreams/yannic-nittmann.webp",
         "Salvador Price": "assets/logos/upstreams/salvador-price.webp",
         "Oswaldo Alejandro Reyes Tirado": "assets/logos/upstreams/oswaldo-alejandro-reyes-tirado.webp",
-        "Jesus Amezcua": "assets/logos/upstreams/jesus-amezcua.webp"
+        "Jesus Amezcua": "assets/logos/upstreams/jesus-amezcua.webp",
+        "Ville de Dakar": "assets/logos/upstreams/ville-de-dakar.webp",
+        "Club Africain": "assets/logos/upstreams/club-africain.webp",
+        "JCA Kings": "assets/logos/upstreams/jca-kings.webp",
+        "Yucatan": "assets/logos/upstreams/yucatan.webp",
+        "Denmark U18": "assets/logos/upstreams/denmark-u18.webp",
+        "Horneo Alicante": "assets/logos/upstreams/horneo-alicante.webp",
+        "Glamorgan": "assets/logos/upstreams/glamorgan.webp",
+        "Leicestershire": "assets/logos/upstreams/leicestershire.webp",
+        "FC Alverca x FC Arouca": "assets/logos/upstreams/fc-alverca-x-fc-arouca.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18389,6 +18398,9 @@
         "ASEAN Club Championship": "assets/logos/leagues/asean-club-championship.webp",
         "Montenegro - Cup": "assets/logos/leagues/montenegro-cup.webp",
         "UTR PTT Yokohama Men 05": "assets/logos/leagues/utr-ptt-yokohama-men-05.webp",
-        "U19 ABA League, Placement Matches": "assets/logos/leagues/u19-aba-league-placement-matches.webp"
+        "U19 ABA League, Placement Matches": "assets/logos/leagues/u19-aba-league-placement-matches.webp",
+        "Liga Mexicana de B\u00e9isbol": "assets/logos/leagues/liga-mexicana-de-b\u00e9isbol.webp",
+        "County Championship, Division 1": "assets/logos/leagues/county-championship-division-1.webp",
+        "County Championship": "assets/logos/leagues/county-championship.webp"
     }
 }
