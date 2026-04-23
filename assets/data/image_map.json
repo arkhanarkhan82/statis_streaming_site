@@ -16258,7 +16258,10 @@
         "York": "assets/logos/streamed/york.webp",
         "La Fama": "assets/logos/upstreams/la-fama.webp",
         "Timo Legout": "assets/logos/upstreams/timo-legout.webp",
-        "Anyang KKC": "assets/logos/upstreams/anyang-kkc.webp"
+        "Anyang KKC": "assets/logos/upstreams/anyang-kkc.webp",
+        "Afturelding": "assets/logos/upstreams/afturelding.webp",
+        "Fylkir Reykjavik": "assets/logos/upstreams/fylkir-reykjavik.webp",
+        "Aegir": "assets/logos/upstreams/aegir.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
