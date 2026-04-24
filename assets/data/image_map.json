@@ -16261,7 +16261,34 @@
         "Anyang KKC": "assets/logos/upstreams/anyang-kkc.webp",
         "Afturelding": "assets/logos/upstreams/afturelding.webp",
         "Fylkir Reykjavik": "assets/logos/upstreams/fylkir-reykjavik.webp",
-        "Aegir": "assets/logos/upstreams/aegir.webp"
+        "Aegir": "assets/logos/upstreams/aegir.webp",
+        "Australia Rugby": "assets/logos/streamed/australia-rugby.webp",
+        "New Zealand Rugby": "assets/logos/streamed/new-zealand-rugby.webp",
+        "New York Liberty": "assets/logos/streamed/new-york-liberty.webp",
+        "Indiana Fever": "assets/logos/streamed/indiana-fever.webp",
+        "Phoenix Mercury": "assets/logos/streamed/phoenix-mercury.webp",
+        "Chicago Sky": "assets/logos/streamed/chicago-sky.webp",
+        "Washington Mystics": "assets/logos/streamed/washington-mystics.webp",
+        "Minnesota Lynx": "assets/logos/streamed/minnesota-lynx.webp",
+        "Justin Burlinson": "assets/logos/upstreams/justin-burlinson.webp",
+        "Sean Clancy Jr.": "assets/logos/upstreams/sean-clancy-jr.webp",
+        "Maktown Flyers": "assets/logos/upstreams/maktown-flyers.webp",
+        "Porto-BA": "assets/logos/upstreams/porto-ba.webp",
+        "York Utd": "assets/logos/upstreams/york-utd.webp",
+        "Quentin Gaskin": "assets/logos/upstreams/quentin-gaskin.webp",
+        "Matt GuymonSuper welterweightClearwater, FL": "assets/logos/upstreams/matt-guymonsuper-welterweightclearwater-fl.webp",
+        "Sweden U18": "assets/logos/upstreams/sweden-u18.webp",
+        "Llandovery": "assets/logos/upstreams/llandovery.webp",
+        "RGC 1404": "assets/logos/upstreams/rgc-1404.webp",
+        "Sedriques Dumas": "assets/logos/upstreams/sedriques-dumas.webp",
+        "Jackson Mcvey": "assets/logos/upstreams/jackson-mcvey.webp",
+        "Mayra Bueno Silva": "assets/logos/upstreams/mayra-bueno-silva.webp",
+        "Michelle Montague": "assets/logos/upstreams/michelle-montague.webp",
+        "Talita Alencar": "assets/logos/upstreams/talita-alencar.webp",
+        "Julia Polastri": "assets/logos/upstreams/julia-polastri.webp",
+        "Lucas Rocha": "assets/logos/upstreams/lucas-rocha.webp",
+        "Deportivo Rayo Zuliano": "assets/logos/upstreams/deportivo-rayo-zuliano.webp",
+        "Washington Mystics (W)": "assets/logos/upstreams/washington-mystics-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18423,6 +18450,9 @@
         "County Championship": "assets/logos/leagues/county-championship.webp",
         "Africa League, Group Sahara": "assets/logos/leagues/africa-league-group-sahara.webp",
         "UTR PTT Yokohama Men 05, 1-4 Playoff": "assets/logos/leagues/utr-ptt-yokohama-men-05-1-4-playoff.webp",
-        "UTR PTT Clemson Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-clemson-men-01-5-8-playoff.webp"
+        "UTR PTT Clemson Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-clemson-men-01-5-8-playoff.webp",
+        "USL Cup": "assets/logos/leagues/usl-cup.webp",
+        "Super Rygbi Cymru": "assets/logos/leagues/super-rygbi-cymru.webp",
+        "USA - WNBA (W) - Preseason": "assets/logos/leagues/usa-wnba-w-preseason.webp"
     }
 }
