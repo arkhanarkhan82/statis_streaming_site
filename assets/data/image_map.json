@@ -16358,7 +16358,9 @@
         "Puritat Arree": "assets/logos/upstreams/puritat-arree.webp",
         "Bay FC (W)": "assets/logos/upstreams/bay-fc-w.webp",
         "Betancourt P / De Rozas R J": "assets/logos/upstreams/betancourt-p-de-rozas-r-j.webp",
-        "Hayen A / Roddick J": "assets/logos/upstreams/hayen-a-roddick-j.webp"
+        "Hayen A / Roddick J": "assets/logos/upstreams/hayen-a-roddick-j.webp",
+        "Bombers Fc": "assets/logos/upstreams/bombers-fc.webp",
+        "South East": "assets/logos/upstreams/south-east.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18523,6 +18525,7 @@
         "UTR PTT Clemson Men 01, 5-8 Playoff": "assets/logos/leagues/utr-ptt-clemson-men-01-5-8-playoff.webp",
         "USL Cup": "assets/logos/leagues/usl-cup.webp",
         "Super Rygbi Cymru": "assets/logos/leagues/super-rygbi-cymru.webp",
-        "USA - WNBA (W) - Preseason": "assets/logos/leagues/usa-wnba-w-preseason.webp"
+        "USA - WNBA (W) - Preseason": "assets/logos/leagues/usa-wnba-w-preseason.webp",
+        "Dominica - Premier League": "assets/logos/leagues/dominica-premier-league.webp"
     }
 }
