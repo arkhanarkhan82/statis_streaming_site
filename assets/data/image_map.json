@@ -16414,7 +16414,9 @@
         "Maroons": "assets/logos/upstreams/maroons.webp",
         "Uganda Police": "assets/logos/upstreams/uganda-police.webp",
         "Tiffany Ho": "assets/logos/upstreams/tiffany-ho.webp",
-        "Faye Huo": "assets/logos/upstreams/faye-huo.webp"
+        "Faye Huo": "assets/logos/upstreams/faye-huo.webp",
+        "Surrey": "assets/logos/upstreams/surrey.webp",
+        "Essex": "assets/logos/upstreams/essex.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18585,6 +18587,7 @@
         "First Professional League, Relegation Round": "assets/logos/leagues/first-professional-league-relegation-round.webp",
         "Brasileiro U20": "assets/logos/leagues/brasileiro-u20.webp",
         "Malawi - Super League": "assets/logos/leagues/malawi-super-league.webp",
-        "Uganda - Premier League": "assets/logos/leagues/uganda-premier-league.webp"
+        "Uganda - Premier League": "assets/logos/leagues/uganda-premier-league.webp",
+        "County Championship One": "assets/logos/leagues/county-championship-one.webp"
     }
 }
