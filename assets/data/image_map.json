@@ -16360,7 +16360,29 @@
         "Betancourt P / De Rozas R J": "assets/logos/upstreams/betancourt-p-de-rozas-r-j.webp",
         "Hayen A / Roddick J": "assets/logos/upstreams/hayen-a-roddick-j.webp",
         "Bombers Fc": "assets/logos/upstreams/bombers-fc.webp",
-        "South East": "assets/logos/upstreams/south-east.webp"
+        "South East": "assets/logos/upstreams/south-east.webp",
+        "Golden State Valkyries": "assets/logos/streamed/golden-state-valkyries.webp",
+        "Seattle Storm": "assets/logos/streamed/seattle-storm.webp",
+        "Arka Gdynia Basketball": "assets/logos/streamed/arka-gdynia-basketball.webp",
+        "America MG U20": "assets/logos/upstreams/america-mg-u20.webp",
+        "Athletico-PR U19": "assets/logos/upstreams/athletico-pr-u19.webp",
+        "Arsenal Sarandi": "assets/logos/upstreams/arsenal-sarandi.webp",
+        "Marcus Almeida": "assets/logos/upstreams/marcus-almeida.webp",
+        "Ryan Spann": "assets/logos/upstreams/ryan-spann.webp",
+        "Norma Dumont": "assets/logos/upstreams/norma-dumont.webp",
+        "Joselito Velasquez": "assets/logos/upstreams/joselito-velasquez.webp",
+        "Andres Olivas AlvarezFlyweightTorreon": "assets/logos/upstreams/andres-olivas-alvarezflyweighttorreon.webp",
+        "Rafa Garcia": "assets/logos/upstreams/rafa-garcia.webp",
+        "Atletico La Paz": "assets/logos/upstreams/atletico-la-paz.webp",
+        "Tampico Madero": "assets/logos/upstreams/tampico-madero.webp",
+        "Juan Adrian Luna Martinetti": "assets/logos/upstreams/juan-adrian-luna-martinetti.webp",
+        "Davey Grant": "assets/logos/upstreams/davey-grant.webp",
+        "Montel Jackson": "assets/logos/upstreams/montel-jackson.webp",
+        "Raoni Barcelos": "assets/logos/upstreams/raoni-barcelos.webp",
+        "PSV (v)": "assets/logos/upstreams/psv-v.webp",
+        "FK Austria Wien, 29. Runde": "assets/logos/upstreams/fk-austria-wien-29-runde.webp",
+        "Bugarska liga: Arda - Botev Plovdiv": "assets/logos/upstreams/bugarska-liga-arda-botev-plovdiv.webp",
+        "Brasileirao (T2026): Atl\u00e9tico Mineiro": "assets/logos/upstreams/brasileirao-t2026-atl\u00e9tico-mineiro.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18526,6 +18548,9 @@
         "USL Cup": "assets/logos/leagues/usl-cup.webp",
         "Super Rygbi Cymru": "assets/logos/leagues/super-rygbi-cymru.webp",
         "USA - WNBA (W) - Preseason": "assets/logos/leagues/usa-wnba-w-preseason.webp",
-        "Dominica - Premier League": "assets/logos/leagues/dominica-premier-league.webp"
+        "Dominica - Premier League": "assets/logos/leagues/dominica-premier-league.webp",
+        "Liga de Expansion MX, Clausura, Playoffs": "assets/logos/leagues/liga-de-expansion-mx-clausura-playoffs.webp",
+        "First Professional League, Relegation Round": "assets/logos/leagues/first-professional-league-relegation-round.webp",
+        "Brasileiro U20": "assets/logos/leagues/brasileiro-u20.webp"
     }
 }
