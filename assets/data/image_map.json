@@ -16410,7 +16410,9 @@
         "WEastern Sydney Wanderers": "assets/logos/upstreams/weastern-sydney-wanderers.webp",
         "Bielefeld U19": "assets/logos/upstreams/bielefeld-u19.webp",
         "Paderborn 07 U19": "assets/logos/upstreams/paderborn-07-u19.webp",
-        "G Universe": "assets/logos/upstreams/g-universe.webp"
+        "G Universe": "assets/logos/upstreams/g-universe.webp",
+        "Maroons": "assets/logos/upstreams/maroons.webp",
+        "Uganda Police": "assets/logos/upstreams/uganda-police.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18580,6 +18582,7 @@
         "Liga de Expansion MX, Clausura, Playoffs": "assets/logos/leagues/liga-de-expansion-mx-clausura-playoffs.webp",
         "First Professional League, Relegation Round": "assets/logos/leagues/first-professional-league-relegation-round.webp",
         "Brasileiro U20": "assets/logos/leagues/brasileiro-u20.webp",
-        "Malawi - Super League": "assets/logos/leagues/malawi-super-league.webp"
+        "Malawi - Super League": "assets/logos/leagues/malawi-super-league.webp",
+        "Uganda - Premier League": "assets/logos/leagues/uganda-premier-league.webp"
     }
 }
