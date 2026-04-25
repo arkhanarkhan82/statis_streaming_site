@@ -16387,7 +16387,19 @@
         "1. FC Magdeburg II": "assets/logos/upstreams/1-fc-magdeburg-ii.webp",
         "CRKSV Jong Colombia": "assets/logos/upstreams/crksv-jong-colombia.webp",
         "C.r.k.s.v. Jong Holland": "assets/logos/upstreams/crksv-jong-holland.webp",
-        "Ville De Dakar": "assets/logos/upstreams/ville-de-dakar.webp"
+        "Ville De Dakar": "assets/logos/upstreams/ville-de-dakar.webp",
+        "Mighty Wanderers": "assets/logos/upstreams/mighty-wanderers.webp",
+        "Karonga United": "assets/logos/upstreams/karonga-united.webp",
+        "Moyale Barracks": "assets/logos/upstreams/moyale-barracks.webp",
+        "Dedza Dynamos": "assets/logos/upstreams/dedza-dynamos.webp",
+        "Civil Sporting": "assets/logos/upstreams/civil-sporting.webp",
+        "Nyasa Big Bullets": "assets/logos/upstreams/nyasa-big-bullets.webp",
+        "Kamuzu Barracks": "assets/logos/upstreams/kamuzu-barracks.webp",
+        "Silver Strikers": "assets/logos/upstreams/silver-strikers.webp",
+        "HK Kopavogur": "assets/logos/upstreams/hk-kopavogur.webp",
+        "Grotta": "assets/logos/upstreams/grotta.webp",
+        "Volsungur": "assets/logos/upstreams/volsungur.webp",
+        "Leiknir Reykjavik": "assets/logos/upstreams/leiknir-reykjavik.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18556,6 +18568,7 @@
         "Dominica - Premier League": "assets/logos/leagues/dominica-premier-league.webp",
         "Liga de Expansion MX, Clausura, Playoffs": "assets/logos/leagues/liga-de-expansion-mx-clausura-playoffs.webp",
         "First Professional League, Relegation Round": "assets/logos/leagues/first-professional-league-relegation-round.webp",
-        "Brasileiro U20": "assets/logos/leagues/brasileiro-u20.webp"
+        "Brasileiro U20": "assets/logos/leagues/brasileiro-u20.webp",
+        "Malawi - Super League": "assets/logos/leagues/malawi-super-league.webp"
     }
 }
