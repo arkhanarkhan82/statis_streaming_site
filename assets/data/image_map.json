@@ -16482,7 +16482,9 @@
         "Elizaveta Gurianova": "assets/logos/upstreams/elizaveta-gurianova.webp",
         "Tukums 2000": "assets/logos/upstreams/tukums-2000.webp",
         "FC Gandzasar": "assets/logos/upstreams/fc-gandzasar.webp",
-        "Siti Zulaikha": "assets/logos/upstreams/siti-zulaikha.webp"
+        "Siti Zulaikha": "assets/logos/upstreams/siti-zulaikha.webp",
+        "Red Lions": "assets/logos/upstreams/red-lions.webp",
+        "Mitundu Baptist": "assets/logos/upstreams/mitundu-baptist.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18663,6 +18665,7 @@
         "VFL": "assets/logos/leagues/vfl.webp",
         "EHF - European Cup": "assets/logos/leagues/ehf-european-cup.webp",
         "Mauthausen, Austria, Qualifying": "assets/logos/leagues/mauthausen-austria-qualifying.webp",
-        "Latvia Virsliga": "assets/logos/leagues/latvia-virsliga.webp"
+        "Latvia Virsliga": "assets/logos/leagues/latvia-virsliga.webp",
+        "Saint-Malo, France, Qualifying": "assets/logos/leagues/saint-malo-france-qualifying.webp"
     }
 }
