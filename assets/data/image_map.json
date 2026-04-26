@@ -16471,7 +16471,11 @@
         "Niklas Waldner": "assets/logos/upstreams/niklas-waldner.webp",
         "Alexander Wagner": "assets/logos/upstreams/alexander-wagner.webp",
         "Trey Hilderbrand": "assets/logos/upstreams/trey-hilderbrand.webp",
-        "Bastian Berenz": "assets/logos/upstreams/bastian-berenz.webp"
+        "Bastian Berenz": "assets/logos/upstreams/bastian-berenz.webp",
+        "ROman Postolka": "assets/logos/upstreams/roman-postolka.webp",
+        "Martin Doskocil": "assets/logos/upstreams/martin-doskocil.webp",
+        "Jakub Kusy": "assets/logos/upstreams/jakub-kusy.webp",
+        "Pawel Juszczak": "assets/logos/upstreams/pawel-juszczak.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18650,6 +18654,7 @@
         "WNBA Basketball": "assets/logos/leagues/wnba-basketball.webp",
         "ECHL, Playoffs": "assets/logos/leagues/echl-playoffs.webp",
         "VFL": "assets/logos/leagues/vfl.webp",
-        "EHF - European Cup": "assets/logos/leagues/ehf-european-cup.webp"
+        "EHF - European Cup": "assets/logos/leagues/ehf-european-cup.webp",
+        "Mauthausen, Austria, Qualifying": "assets/logos/leagues/mauthausen-austria-qualifying.webp"
     }
 }
