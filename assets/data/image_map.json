@@ -16456,7 +16456,10 @@
         "Gold Coast Suns 2": "assets/logos/upstreams/gold-coast-suns-2.webp",
         "Union Berlin U19": "assets/logos/upstreams/union-berlin-u19.webp",
         "Milena Steinkamp": "assets/logos/upstreams/milena-steinkamp.webp",
-        "Polina Skliar": "assets/logos/upstreams/polina-skliar.webp"
+        "Polina Skliar": "assets/logos/upstreams/polina-skliar.webp",
+        "Mohamed Abdelaziz Ouchefoun": "assets/logos/upstreams/mohamed-abdelaziz-ouchefoun.webp",
+        "Ines Costero": "assets/logos/upstreams/ines-costero.webp",
+        "Tanawat Yimjit": "assets/logos/upstreams/tanawat-yimjit.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18634,6 +18637,7 @@
         "Cage Warriors 205: Burlinson vs. Clancy Jr.": "assets/logos/leagues/cage-warriors-205-burlinson-vs-clancy-jr.webp",
         "WNBA Basketball": "assets/logos/leagues/wnba-basketball.webp",
         "ECHL, Playoffs": "assets/logos/leagues/echl-playoffs.webp",
-        "VFL": "assets/logos/leagues/vfl.webp"
+        "VFL": "assets/logos/leagues/vfl.webp",
+        "EHF - European Cup": "assets/logos/leagues/ehf-european-cup.webp"
     }
 }
