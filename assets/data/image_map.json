@@ -16426,7 +16426,11 @@
         "Odd": "assets/logos/upstreams/odd.webp",
         "GV San Jose": "assets/logos/upstreams/gv-san-jose.webp",
         "Liberty W": "assets/logos/upstreams/liberty-w.webp",
-        "Inter Toronto": "assets/logos/upstreams/inter-toronto.webp"
+        "Inter Toronto": "assets/logos/upstreams/inter-toronto.webp",
+        "Wellington Saints": "assets/logos/upstreams/wellington-saints.webp",
+        "Nautico": "assets/logos/upstreams/nautico.webp",
+        "South Africa U20": "assets/logos/upstreams/south-africa-u20.webp",
+        "Germany U18": "assets/logos/upstreams/germany-u18.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
