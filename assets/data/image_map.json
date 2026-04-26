@@ -16451,7 +16451,9 @@
         "Yuxiang Tian": "assets/logos/upstreams/yuxiang-tian.webp",
         "Elizaveta Rozhkova": "assets/logos/upstreams/elizaveta-rozhkova.webp",
         "University of Macau": "assets/logos/upstreams/university-of-macau.webp",
-        "Zhengyu Sun": "assets/logos/upstreams/zhengyu-sun.webp"
+        "Zhengyu Sun": "assets/logos/upstreams/zhengyu-sun.webp",
+        "St Kilda Saints 2": "assets/logos/upstreams/st-kilda-saints-2.webp",
+        "Gold Coast Suns 2": "assets/logos/upstreams/gold-coast-suns-2.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18628,6 +18630,7 @@
         "Spain - Segunda FEB": "assets/logos/leagues/spain-segunda-feb.webp",
         "Cage Warriors 205: Burlinson vs. Clancy Jr.": "assets/logos/leagues/cage-warriors-205-burlinson-vs-clancy-jr.webp",
         "WNBA Basketball": "assets/logos/leagues/wnba-basketball.webp",
-        "ECHL, Playoffs": "assets/logos/leagues/echl-playoffs.webp"
+        "ECHL, Playoffs": "assets/logos/leagues/echl-playoffs.webp",
+        "VFL": "assets/logos/leagues/vfl.webp"
     }
 }
