@@ -16587,7 +16587,9 @@
         "Vestmannaeyjar": "assets/logos/upstreams/vestmannaeyjar.webp",
         "Estoril U23": "assets/logos/upstreams/estoril-u23.webp",
         "Scarborough Athletic": "assets/logos/streamed/scarborough-athletic.webp",
-        "Weston-super-Mare": "assets/logos/streamed/weston-super-mare.webp"
+        "Weston-super-Mare": "assets/logos/streamed/weston-super-mare.webp",
+        "Akranes": "assets/logos/upstreams/akranes.webp",
+        "Valur": "assets/logos/upstreams/valur.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
