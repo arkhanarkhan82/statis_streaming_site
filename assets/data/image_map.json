@@ -16593,7 +16593,10 @@
         "Chester": "assets/logos/streamed/chester.webp",
         "Liverpool U18": "assets/logos/upstreams/liverpool-u18.webp",
         "Ringkobing W": "assets/logos/upstreams/ringkobing-w.webp",
-        "EH Aalborg W": "assets/logos/upstreams/eh-aalborg-w.webp"
+        "EH Aalborg W": "assets/logos/upstreams/eh-aalborg-w.webp",
+        "Toronto Tempo": "assets/logos/streamed/toronto-tempo.webp",
+        "Connecticut Sun": "assets/logos/streamed/connecticut-sun.webp",
+        "Atlanta Dream": "assets/logos/streamed/atlanta-dream.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
