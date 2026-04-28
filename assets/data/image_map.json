@@ -16589,7 +16589,11 @@
         "Scarborough Athletic": "assets/logos/streamed/scarborough-athletic.webp",
         "Weston-super-Mare": "assets/logos/streamed/weston-super-mare.webp",
         "Akranes": "assets/logos/upstreams/akranes.webp",
-        "Valur": "assets/logos/upstreams/valur.webp"
+        "Valur": "assets/logos/upstreams/valur.webp",
+        "Chester": "assets/logos/streamed/chester.webp",
+        "Liverpool U18": "assets/logos/upstreams/liverpool-u18.webp",
+        "Ringkobing W": "assets/logos/upstreams/ringkobing-w.webp",
+        "EH Aalborg W": "assets/logos/upstreams/eh-aalborg-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18780,6 +18784,9 @@
         "La Bisbal D Emporda, Spain, Qualifying": "assets/logos/leagues/la-bisbal-d-emporda-spain-qualifying.webp",
         "League ABA": "assets/logos/leagues/league-aba.webp",
         "La Bisbal D Emporda, Spain": "assets/logos/leagues/la-bisbal-d-emporda-spain.webp",
-        "Iceland League": "assets/logos/leagues/iceland-league.webp"
+        "Iceland League": "assets/logos/leagues/iceland-league.webp",
+        "Womens Scottish Premier League": "assets/logos/leagues/womens-scottish-premier-league.webp",
+        "Scottish Women's Premier League": "assets/logos/leagues/scottish-womens-premier-league.webp",
+        "Bambusa Kvindeligaen": "assets/logos/leagues/bambusa-kvindeligaen.webp"
     }
 }
