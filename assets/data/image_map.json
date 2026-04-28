@@ -16596,7 +16596,11 @@
         "EH Aalborg W": "assets/logos/upstreams/eh-aalborg-w.webp",
         "Toronto Tempo": "assets/logos/streamed/toronto-tempo.webp",
         "Connecticut Sun": "assets/logos/streamed/connecticut-sun.webp",
-        "Atlanta Dream": "assets/logos/streamed/atlanta-dream.webp"
+        "Atlanta Dream": "assets/logos/streamed/atlanta-dream.webp",
+        "Bosna BH Telecom": "assets/logos/upstreams/bosna-bh-telecom.webp",
+        "Mutua Madrid Open (T2026): Mensik": "assets/logos/upstreams/mutua-madrid-open-t2026-mensik.webp",
+        "Zverev": "assets/logos/upstreams/zverev.webp",
+        "Enisey, G2": "assets/logos/upstreams/enisey-g2.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
