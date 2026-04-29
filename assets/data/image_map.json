@@ -16615,7 +16615,8 @@
         "Lokomotiv, PF1 G4": "assets/logos/upstreams/lokomotiv-pf1-g4.webp",
         "Ko\u0161arka (M): 1. SKL: Terme Olimia Pod\u010detrtek": "assets/logos/upstreams/ko\u0161arka-m-1-skl-terme-olimia-pod\u010detrtek.webp",
         "Fudbal": "assets/logos/upstreams/fudbal.webp",
-        "Bugarski kup: 1/2 Finale (2nd leg): Lokomotiv Plovdiv - Arda": "assets/logos/upstreams/bugarski-kup-12-finale-2nd-leg-lokomotiv-plovdiv-arda.webp"
+        "Bugarski kup: 1/2 Finale (2nd leg): Lokomotiv Plovdiv - Arda": "assets/logos/upstreams/bugarski-kup-12-finale-2nd-leg-lokomotiv-plovdiv-arda.webp",
+        "FK Jedinstvo Ub": "assets/logos/upstreams/fk-jedinstvo-ub.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18811,6 +18812,7 @@
         "Scottish Women's Premier League": "assets/logos/leagues/scottish-womens-premier-league.webp",
         "Bambusa Kvindeligaen": "assets/logos/leagues/bambusa-kvindeligaen.webp",
         "Finland Cup": "assets/logos/leagues/finland-cup.webp",
-        "Khlomsk Lokomotivyaroslavl": "assets/logos/leagues/khlomsk-lokomotivyaroslavl.webp"
+        "Khlomsk Lokomotivyaroslavl": "assets/logos/leagues/khlomsk-lokomotivyaroslavl.webp",
+        "UEFA Conference League, Knockout stage": "assets/logos/leagues/uefa-conference-league-knockout-stage.webp"
     }
 }
