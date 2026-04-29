@@ -16610,7 +16610,12 @@
         "Malut United": "assets/logos/upstreams/malut-united.webp",
         "Scarborough": "assets/logos/upstreams/scarborough.webp",
         "Hemel Hempstead": "assets/logos/upstreams/hemel-hempstead.webp",
-        "Bayern Munchen --- CN": "assets/logos/upstreams/bayern-munchen-cn.webp"
+        "Bayern Munchen --- CN": "assets/logos/upstreams/bayern-munchen-cn.webp",
+        "Avangard": "assets/logos/upstreams/avangard.webp",
+        "Lokomotiv, PF1 G4": "assets/logos/upstreams/lokomotiv-pf1-g4.webp",
+        "Ko\u0161arka (M): 1. SKL: Terme Olimia Pod\u010detrtek": "assets/logos/upstreams/ko\u0161arka-m-1-skl-terme-olimia-pod\u010detrtek.webp",
+        "Fudbal": "assets/logos/upstreams/fudbal.webp",
+        "Bugarski kup: 1/2 Finale (2nd leg): Lokomotiv Plovdiv - Arda": "assets/logos/upstreams/bugarski-kup-12-finale-2nd-leg-lokomotiv-plovdiv-arda.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18805,6 +18810,7 @@
         "Womens Scottish Premier League": "assets/logos/leagues/womens-scottish-premier-league.webp",
         "Scottish Women's Premier League": "assets/logos/leagues/scottish-womens-premier-league.webp",
         "Bambusa Kvindeligaen": "assets/logos/leagues/bambusa-kvindeligaen.webp",
-        "Finland Cup": "assets/logos/leagues/finland-cup.webp"
+        "Finland Cup": "assets/logos/leagues/finland-cup.webp",
+        "Khlomsk Lokomotivyaroslavl": "assets/logos/leagues/khlomsk-lokomotivyaroslavl.webp"
     }
 }
