@@ -16622,7 +16622,10 @@
         "Okayama": "assets/logos/upstreams/okayama.webp",
         "Kyoto": "assets/logos/upstreams/kyoto.webp",
         "Dallas Wings": "assets/logos/streamed/dallas-wings.webp",
-        "Andranik": "assets/logos/upstreams/andranik.webp"
+        "Andranik": "assets/logos/upstreams/andranik.webp",
+        "Vikingur": "assets/logos/upstreams/vikingur.webp",
+        "Hoyvik": "assets/logos/upstreams/hoyvik.webp",
+        "Toftir": "assets/logos/upstreams/toftir.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
@@ -18819,6 +18822,7 @@
         "Bambusa Kvindeligaen": "assets/logos/leagues/bambusa-kvindeligaen.webp",
         "Finland Cup": "assets/logos/leagues/finland-cup.webp",
         "Khlomsk Lokomotivyaroslavl": "assets/logos/leagues/khlomsk-lokomotivyaroslavl.webp",
-        "UEFA Conference League, Knockout stage": "assets/logos/leagues/uefa-conference-league-knockout-stage.webp"
+        "UEFA Conference League, Knockout stage": "assets/logos/leagues/uefa-conference-league-knockout-stage.webp",
+        "Faroe Islands Premier League": "assets/logos/leagues/faroe-islands-premier-league.webp"
     }
 }
