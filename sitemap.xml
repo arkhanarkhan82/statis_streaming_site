@@ -91,55 +91,7 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=vasco-da-gama-vs-barracas-central-9967e079</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=penarol-vs-santa-fe-1d05ed1b</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=new-york-knicks-vs-cleveland-cavaliers-4297716c</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=montreal-canadiens-vs-carolina-hurricanes-cd77e902</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=los-angeles-dodgers-vs-colorado-rockies-46ef3c75</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=chicago-white-sox-vs-minnesota-twins-1923a2c9</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=cyprus-u19-vs-greece-u19-934d3ebc</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=bonn-vs-wurzburg-73c5254f</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=independiente-del-valle-vs-rosario-central-c402b524</loc>
+        <loc>https://streameast.click/watch/?information=baltimore-orioles-vs-tampa-bay-rays-837d2bd3</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -157,31 +109,25 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=pittsburgh-pirates-vs-chicago-cubs-fef977be</loc>
+        <loc>https://streameast.click/watch/?information=bragantino-vs-carabobo-61188d34</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=willow-cricket-e7360aab</loc>
+        <loc>https://streameast.click/watch/?information=detroit-tigers-vs-los-angeles-angels-f4e3606d</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=seattle-storm-vs-washington-mystics-d79dc29a</loc>
+        <loc>https://streameast.click/watch/?information=athletics-vs-seattle-mariners-db67a10e</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=tennis-channel-e7360aab</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=cleveland-guardians-vs-washington-nationals-9981763b</loc>
+        <loc>https://streameast.click/watch/?information=roland-garros-french-open-e816d666</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -193,25 +139,91 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://streameast.click/watch/?information=crystal-palace-vs-rayo-vallecano-2946e332</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=chicago-sky-vs-toronto-tempo-0d5d7e1c</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=seattle-storm-vs-washington-mystics-d79dc29a</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=rally-tv-e7360aab</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=kansas-city-royals-vs-new-york-yankees-9e5d239d</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://streameast.click/watch/?information=alba-berlin-vs-rasta-vechta-bfa6ac8c</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=toronto-blue-jays-vs-miami-marlins-d4df9758</loc>
+        <loc>https://streameast.click/watch/?information=bol%C3%ADvar-vs-independiente-rivadavia-c11fdc96</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=song-vs-figueiredo-dd5b03a2</loc>
+        <loc>https://streameast.click/watch/?information=new-york-liberty-vs-phoenix-mercury-a2298050</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=pittsburgh-pirates-vs-chicago-cubs-57eb401a</loc>
+        <loc>https://streameast.click/watch/?information=boston-red-sox-vs-atlanta-braves-a4dfb5a2</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=minnesota-lynx-vs-atlanta-dream-cc03e5b9</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=boston-red-sox-vs-atlanta-braves-f33ce064</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=rajasthan-royals-vs-sunrisers-hyderabad-f7167f90</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=everett-silvertips-vs-kelowna-rockets-11440d1d</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=penarol-vs-santa-fe-1d05ed1b</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=texas-rangers-vs-houston-astros-ef35225c</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -229,85 +241,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=boston-red-sox-vs-atlanta-braves-a4dfb5a2</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=texas-rangers-vs-houston-astros-ef35225c</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=fluminense-vs-deportivo-la-guaira-8c7e862c</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=boston-red-sox-vs-atlanta-braves-f33ce064</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=kansas-city-royals-vs-new-york-yankees-9e5d239d</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=roland-garros-french-open-e816d666</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=baltimore-orioles-vs-tampa-bay-rays-837d2bd3</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=rally-tv-e7360aab</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=detroit-tigers-vs-los-angeles-angels-f4e3606d</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=corinthians-vs-platense-cd2242aa</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=new-york-liberty-vs-phoenix-mercury-a2298050</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=cienciano-vs-juventud-las-piedras-ac65b8c8</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=baltimore-orioles-vs-toronto-blue-jays-eff2d83f</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=athletics-vs-seattle-mariners-db67a10e</loc>
+        <loc>https://streameast.click/watch/?information=aew-wednesday-night-dynamite-497d397c</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -319,61 +253,31 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=new-south-wales-blues-vs-queensland-maroons-a4945980</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://streameast.click/watch/?information=san-diego-padres-vs-philadelphia-phillies-f9727710</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=bragantino-vs-carabobo-61188d34</loc>
+        <loc>https://streameast.click/watch/?information=baltimore-orioles-vs-toronto-blue-jays-eff2d83f</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=minnesota-lynx-vs-atlanta-dream-cc03e5b9</loc>
+        <loc>https://streameast.click/watch/?information=cienciano-vs-juventud-las-piedras-ac65b8c8</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=bol%C3%ADvar-vs-independiente-rivadavia-c11fdc96</loc>
+        <loc>https://streameast.click/watch/?information=willow-cricket-e7360aab</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=chicago-white-sox-vs-minnesota-twins-021a2c91</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=river-plate-vs-blooming-75eb6c00</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=everett-silvertips-vs-kelowna-rockets-11440d1d</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=aew-wednesday-night-dynamite-497d397c</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.click/watch/?information=detroit-tigers-vs-los-angeles-angels-cc6c015f</loc>
+        <loc>https://streameast.click/watch/?information=vasco-da-gama-vs-barracas-central-9967e079</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -385,19 +289,49 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=rajasthan-royals-vs-sunrisers-hyderabad-f7167f90</loc>
+        <loc>https://streameast.click/watch/?information=song-vs-figueiredo-dd5b03a2</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=caracas-vs-botafogo-e5fe4444</loc>
+        <loc>https://streameast.click/watch/?information=cleveland-guardians-vs-washington-nationals-9981763b</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=racing-club-vs-independiente-petrolero-6be66613</loc>
+        <loc>https://streameast.click/watch/?information=new-south-wales-blues-vs-queensland-maroons-a4945980</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=corinthians-vs-platense-cd2242aa</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=pittsburgh-pirates-vs-chicago-cubs-57eb401a</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=fluminense-vs-deportivo-la-guaira-8c7e862c</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=chicago-white-sox-vs-minnesota-twins-1923a2c9</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=independiente-del-valle-vs-rosario-central-c402b524</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -409,19 +343,85 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=chicago-sky-vs-toronto-tempo-0d5d7e1c</loc>
+        <loc>https://streameast.click/watch/?information=tennis-channel-e7360aab</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.click/watch/?information=crystal-palace-vs-rayo-vallecano-2946e332</loc>
+        <loc>https://streameast.click/watch/?information=toronto-blue-jays-vs-miami-marlins-d4df9758</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=racing-club-vs-independiente-petrolero-6be66613</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=new-york-knicks-vs-cleveland-cavaliers-4297716c</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=detroit-tigers-vs-los-angeles-angels-cc6c015f</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=caracas-vs-botafogo-e5fe4444</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=montreal-canadiens-vs-carolina-hurricanes-cd77e902</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=bonn-vs-wurzburg-73c5254f</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=cyprus-u19-vs-greece-u19-934d3ebc</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=pittsburgh-pirates-vs-chicago-cubs-fef977be</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=los-angeles-dodgers-vs-colorado-rockies-46ef3c75</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=chicago-white-sox-vs-minnesota-twins-021a2c91</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://streameast.click/watch/?information=libertad-asuncion-vs-ucv-bd8764d6</loc>
+        <lastmod>2026-05-27</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.click/watch/?information=river-plate-vs-blooming-75eb6c00</loc>
         <lastmod>2026-05-27</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
