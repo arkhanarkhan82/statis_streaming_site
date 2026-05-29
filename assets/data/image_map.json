@@ -16731,7 +16731,13 @@
         "Colombia U20": "assets/logos/streamed/colombia-u20.webp",
         "England U17": "assets/logos/streamed/england-u17.webp",
         "Ottawa Redblacks": "assets/logos/streamed/ottawa-redblacks.webp",
-        "Montreal Alouettes": "assets/logos/streamed/montreal-alouettes.webp"
+        "Montreal Alouettes": "assets/logos/streamed/montreal-alouettes.webp",
+        "Toronto Argonauts": "assets/logos/streamed/toronto-argonauts.webp",
+        "Hamilton Tiger-Cats": "assets/logos/streamed/hamilton-tiger-cats.webp",
+        "Winnipeg Blue Bombers": "assets/logos/streamed/winnipeg-blue-bombers.webp",
+        "BC Lions": "assets/logos/streamed/bc-lions.webp",
+        "Edmonton Elks": "assets/logos/streamed/edmonton-elks.webp",
+        "Calgary Stampeders": "assets/logos/streamed/calgary-stampeders.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
