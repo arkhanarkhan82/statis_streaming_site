@@ -285,6 +285,12 @@
         "isLeague": true,
         "hasLink": true,
         "isHidden": false
+      },
+      "FIFA": {
+        "score": 50,
+        "isLeague": false,
+        "hasLink": false,
+        "isHidden": false
       }
     },
     "UK": {
