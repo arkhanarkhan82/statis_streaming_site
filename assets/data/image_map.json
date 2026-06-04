@@ -16744,7 +16744,11 @@
         "Latvia U17": "assets/logos/streamed/latvia-u17.webp",
         "Albania U17": "assets/logos/streamed/albania-u17.webp",
         "Cambodia": "assets/logos/streamed/cambodia.webp",
-        "Sweden U20": "assets/logos/streamed/sweden-u20.webp"
+        "Sweden U20": "assets/logos/streamed/sweden-u20.webp",
+        "Central African Republic": "assets/logos/streamed/central-african-republic.webp",
+        "Uganda": "assets/logos/streamed/uganda.webp",
+        "Angola": "assets/logos/streamed/angola.webp",
+        "North Macedonia W": "assets/logos/streamed/north-macedonia-w.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
