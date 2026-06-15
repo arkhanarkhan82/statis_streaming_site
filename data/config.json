@@ -8,7 +8,9 @@
     "title_part_1": "Stream",
     "title_part_2": "East",
     "custom_js": "",
-    "custom_meta_tags": [],
+    "custom_meta_tags": [
+      "<meta name=\"referrer\" content=\"no-referrer-when-downgrade\" />"
+    ],
     "robots_txt": "User-agent: *\nAllow: /\n\n# Disallow Admin & System Files\nDisallow: /admin/\nDisallow: /assets/\nDisallow: /data/\nDisallow: /scripts/\n\n# Sitemap\nSitemap: https://streameast.christmas/sitemap.xml",
     "domain": "resellscripts.info",
     "logo_url": "/assets/streameast-logo.webp",
