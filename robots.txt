@@ -8,4 +8,4 @@ Disallow: /data/
 Disallow: /scripts/
 
 # Sitemap
-Sitemap: https://streameast.christmas/sitemap.xml
+Sitemap: https://resellscripts.info/sitemap.xml
