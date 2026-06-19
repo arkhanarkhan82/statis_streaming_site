@@ -16801,7 +16801,10 @@
         "Seattle Storm W": "assets/logos/streamed/seattle-storm-w.webp",
         "Phoenix Mercury W": "assets/logos/streamed/phoenix-mercury-w.webp",
         "Las Vegas Aces W": "assets/logos/streamed/las-vegas-aces-w.webp",
-        "Atlanta Dream W": "assets/logos/streamed/atlanta-dream-w.webp"
+        "Atlanta Dream W": "assets/logos/streamed/atlanta-dream-w.webp",
+        "South Africa Rugby": "assets/logos/streamed/south-africa-rugby.webp",
+        "Barbarians": "assets/logos/streamed/barbarians.webp",
+        "Manel Kape": "assets/logos/streamed/manel-kape.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
