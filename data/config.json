@@ -237,7 +237,7 @@
   "sport_priorities": {
     "US": {
       "_HIDE_OTHERS": true,
-      "_BOOST": "FIFA",
+      "_BOOST": "FIFA, Football",
       "NFL": {
         "score": 99,
         "isLeague": true,
@@ -479,7 +479,7 @@
       },
       "title": "StreamEast 2026: Free Live Sports Streaming in HD – NFL, NBA, UFC, Soccer & More",
       "layout": "home",
-      "meta_title": "StreamEast: Free Live Sports HD (FIFA - 2026) | NFL, NBA, UFC, Soccer",
+      "meta_title": "StreamEast: Free Live Sports Streaming HD | NFL, NBA, UFC, Soccer",
       "meta_desc": "Watch live sports free on StreamEast – HD streams for NFL, NBA, UFC, NHL, MLB, F1, boxing & soccer. No sign-up, no fees. Works on Firestick, iPhone, TV.",
       "meta_keywords": "Streameast, Streameast Live",
       "canonical_url": "",
