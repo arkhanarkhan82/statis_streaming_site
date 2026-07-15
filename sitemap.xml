@@ -103,55 +103,13 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=indiana-fever-vs-golden-state-valkyries-f049aa3b</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=la-knight-riders-vs-sf-unicorns-8856b7f6</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=san-antonio-spurs-vs-utah-jazz-2d856dd9</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=los-angeles-clippers-vs-washington-wizards-ef4649b0</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=new-york-knicks-vs-golden-state-warriors-85028731</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=cleveland-cavaliers-vs-new-orleans-pelicans-97d29154</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=philadelphia-76ers-vs-orlando-magic-3350cc36</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=vitoria-vs-vasco-da-gama-54c89074</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://streameast.boats/watch/?info=detroit-pistons-vs-phoenix-suns-a819bf38</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=forge-vs-pacific-4ea2e338</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -163,13 +121,25 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=indiana-fever-w-vs-golden-state-valkyries-w-1bc9dd80</loc>
+        <loc>https://streameast.boats/watch/?info=racing-club-vs-defensa-y-justicia-1965ab55</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=atlanta-hawks-vs-memphis-grizzlies-e131d5ff</loc>
+        <loc>https://streameast.boats/watch/?info=houston-rockets-vs-brooklyn-nets-62583e0e</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=denver-nuggets-vs-portland-trail-blazers-7154b2a2</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=england-vs-argentina-a4d8151c</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -181,13 +151,37 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=france-vs-semifinal-2-loser-ecd441ec</loc>
+        <loc>https://streameast.boats/watch/?info=formula-1-2026-belgium-gp-2f4e8317</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=forge-vs-pacific-4ea2e338</loc>
+        <loc>https://streameast.boats/watch/?info=la-knight-riders-vs-sf-unicorns-8856b7f6</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=aew-wednesday-night-dynamite-b5022d9a</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=new-york-knicks-vs-golden-state-warriors-85028731</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=atlanta-hawks-vs-memphis-grizzlies-e131d5ff</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=cleveland-cavaliers-vs-new-orleans-pelicans-97d29154</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -205,55 +199,13 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=charlotte-hornets-vs-milwaukee-bucks-8d027423</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=houston-rockets-vs-brooklyn-nets-62583e0e</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=england-vs-argentina-a4d8151c</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://streameast.boats/watch/?info=geelong-cats-vs-st-kilda-saints-0cc70be0</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=botafogo-vs-santos-dbd70f41</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=cf-montreal-vs-toronto-fc-402a498c</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=formula-1-2026-belgium-gp-2f4e8317</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=aew-wednesday-night-dynamite-b5022d9a</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=chicago-bulls-vs-los-angeles-lakers-afd4ce00</loc>
+        <loc>https://streameast.boats/watch/?info=indiana-fever-vs-golden-state-valkyries-f049aa3b</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -265,13 +217,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=minnesota-lynx-vs-los-angeles-sparks-af508808</loc>
-        <lastmod>2026-07-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://streameast.boats/watch/?info=racing-club-vs-defensa-y-justicia-1965ab55</loc>
+        <loc>https://streameast.boats/watch/?info=san-antonio-spurs-vs-utah-jazz-2d856dd9</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
@@ -283,7 +229,55 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://streameast.boats/watch/?info=denver-nuggets-vs-portland-trail-blazers-7154b2a2</loc>
+        <loc>https://streameast.boats/watch/?info=chicago-bulls-vs-los-angeles-lakers-afd4ce00</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=indiana-fever-w-vs-golden-state-valkyries-w-1bc9dd80</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=cf-montreal-vs-toronto-fc-402a498c</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=philadelphia-76ers-vs-orlando-magic-3350cc36</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=charlotte-hornets-vs-milwaukee-bucks-8d027423</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=vitoria-vs-vasco-da-gama-54c89074</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=france-vs-semifinal-2-loser-ecd441ec</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=los-angeles-clippers-vs-washington-wizards-ef4649b0</loc>
+        <lastmod>2026-07-15</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://streameast.boats/watch/?info=botafogo-vs-santos-dbd70f41</loc>
         <lastmod>2026-07-15</lastmod>
         <changefreq>hourly</changefreq>
         <priority>0.6</priority>
