@@ -17245,7 +17245,11 @@
         "\u017delezni\u010dar Pan\u010devo": "assets/logos/streamed/\u017eelezni\u010dar-pan\u010devo.webp",
         "Tasman": "assets/logos/streamed/tasman.webp",
         "North Harbour": "assets/logos/streamed/north-harbour.webp",
-        "Birmingham Phoenix": "assets/logos/streamed/birmingham-phoenix.webp"
+        "Birmingham Phoenix": "assets/logos/streamed/birmingham-phoenix.webp",
+        "Counties Manukau": "assets/logos/streamed/counties-manukau.webp",
+        "Taranaki": "assets/logos/streamed/taranaki.webp",
+        "Southland": "assets/logos/streamed/southland.webp",
+        "Otago": "assets/logos/streamed/otago.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
