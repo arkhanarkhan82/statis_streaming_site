@@ -17344,7 +17344,10 @@
         "Stade Mouscronnois": "assets/logos/streamed/stade-mouscronnois.webp",
         "Mons": "assets/logos/streamed/mons.webp",
         "Vilanova": "assets/logos/streamed/vilanova.webp",
-        "Langreo": "assets/logos/streamed/langreo.webp"
+        "Langreo": "assets/logos/streamed/langreo.webp",
+        "Cincinnati Bengals": "assets/logos/streamed/cincinnati-bengals.webp",
+        "Detroit Lions": "assets/logos/streamed/detroit-lions.webp",
+        "Indianapolis Colts": "assets/logos/streamed/indianapolis-colts.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
