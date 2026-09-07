@@ -17525,7 +17525,13 @@
         "Central Washington": "assets/logos/streamed/central-washington.webp",
         "Louisiana": "assets/logos/streamed/louisiana.webp",
         "Lane": "assets/logos/streamed/lane.webp",
-        "Pogon": "assets/logos/streamed/pogon.webp"
+        "Pogon": "assets/logos/streamed/pogon.webp",
+        "AEK Athens Youth": "assets/logos/streamed/aek-athens-youth.webp",
+        "LASK Youth": "assets/logos/streamed/lask-youth.webp",
+        "Porto U19": "assets/logos/streamed/porto-u19.webp",
+        "Aston Villa Youth": "assets/logos/streamed/aston-villa-youth.webp",
+        "Lille U19": "assets/logos/streamed/lille-u19.webp",
+        "Tottenham Hotspur U21": "assets/logos/streamed/tottenham-hotspur-u21.webp"
     },
     "leagues": {
         "Bangladesh - Premier League": "assets/logos/leagues/bangladesh-premier-league.webp",
